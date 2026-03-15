@@ -24,8 +24,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* ヒーローセクション */}
-      <section className="hero min-h-[70vh] bg-gradient-to-r from-primary to-secondary text-primary-content">
-        <div className="hero-content text-center">
+      <section className="hero min-h-[70vh] bg-gradient-to-r from-primary to-secondary text-primary-content relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
+        <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">
               害虫でお困りですか？
