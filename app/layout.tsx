@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "害虫駆除110番 - あなたの街の害虫駆除業者比較サイト",
   description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を料金・サービスで比較。地域別の料金相場と業者選びのポイントを詳しく解説します。",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
