@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -101,8 +102,16 @@ export default function GokiburiPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* ヒーローセクション */}
-      <section className="hero min-h-[50vh] bg-gradient-to-r from-red-700 to-red-900 text-white">
-        <div className="hero-content text-center">
+      <section className="hero min-h-[50vh] bg-gradient-to-r from-red-700 to-red-900 text-white relative overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&h=1080&fit=crop"
+          alt="ゴキブリ駆除サービス"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
+        <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <div className="text-6xl mb-6">🪳</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
