@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -109,8 +110,16 @@ export default function KoumoriPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* ヒーローセクション */}
-      <section className="hero min-h-[50vh] bg-gradient-to-r from-purple-700 to-purple-900 text-white">
-        <div className="hero-content text-center">
+      <section className="hero min-h-[50vh] bg-gradient-to-r from-purple-700 to-purple-900 text-white relative overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1574869542393-7750e0c57b8c?w=1920&h=1080&fit=crop"
+          alt="コウモリ駆除サービス"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
+        <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <div className="text-6xl mb-6">🦇</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
