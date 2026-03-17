@@ -212,9 +212,9 @@ export default function ShiroariPage() {
           {/* 害獣プロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-warning badge-lg">👑 1</span>
-                <h3 className="text-2xl font-bold">害獣プロテック（シロアリ駆除）</h3>
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <h3 className="text-2xl font-bold text-gray-900">害獣プロテック（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -306,9 +306,9 @@ export default function ShiroariPage() {
           {/* 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold">駆除ザウルス（シロアリ駆除）</h3>
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <h3 className="text-2xl font-bold text-gray-900">駆除ザウルス（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
