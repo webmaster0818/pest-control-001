@@ -303,6 +303,398 @@ export default function ShiroariPage() {
             </div>
           </div>
 
+          {/* 駆除ザウルス */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <h3 className="text-2xl font-bold">駆除ザウルス（シロアリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">駆除ザウルスの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>創業19年の長年にわたり蓄積された専門知識と実績</li>
+                <li>自治体、施設、企業向けに専門講習を提供する経験豊かなプロフェッショナル集団</li>
+                <li>国家資格を含む様々な資格を持つ専門家が多数在籍</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼相談・調査・見積もり完全無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆駆除ザウルスの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>全国対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>24時間365日・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>イタチ・テン・ネズミ・ハクビシン・アライグマ・コウモリ・アナグマ・トコジラミ・シロアリ・その他害獣害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>ネズミ 9,680円〜／コウモリ 9,680円〜／ハクビシン 9,680円〜など</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>最長10年間（施工内容により異なる）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>銀行振込・クレジットカード・電子マネー・QRコード決済</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆駆除ザウルスの口コミ</h4>
+                <a href="https://www.google.com/search?q=駆除ザウルス+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    4月から、１階の天井裏に凄い音がしました。電話の予約も、担当して頂いた方も迅速な対応でした。写真と映像で確認しながら施工して下さって安心でした。精神面でもサポートしてもらえました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    とても親切で、対応も迅速で助かりました。屋根裏の害獣のせいで寝不足が続いていましたが、初めてのことなので色んな業者に話を聞いてみようと思い見積もりをお願いしましたが、担当の方がとても感じが良く親切だったためその日に契約しました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    コウモリの駆除をお願いしました。見積もりの現地調査で、ネズミの被害も見つかり驚きましたが、とても丁寧に説明をしていただいたので駆除を依頼することにしました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼相談・調査・見積もり完全無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 街角害虫駆除相談所 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <h3 className="text-2xl font-bold">街角害虫駆除相談所（シロアリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">街角害虫駆除相談所の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>天井や床下の詳細な撮影を伴う、無料の現地調査と見積もりを提供</li>
+                <li>ムカデ、クモなど、あらゆる種類の害獣駆除に対応可能</li>
+                <li>関東エリア内での現地への到着を最短30分で実現し、素早く対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆街角害虫駆除相談所の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>全国対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>6時〜20時・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>シロアリ・ゴキブリ・ハチ・ムカデ・クモ など害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>駆除基本料金1,100円/㎡～</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>最長5年間（施工1年度に無料点検実施）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆街角害虫駆除相談所の口コミ</h4>
+                <a href="https://www.google.com/search?q=街角害虫駆除相談所+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    迅速な対応で、見積もりも丁寧に説明していただきました。駆除作業も手際よく、アフターフォローもしっかりしていて安心できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    床下の写真を撮って見せてくれたので、被害状況がよく分かりました。説明も分かりやすく、信頼してお任せできました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    電話してから30分以内に来てくれました。急いでいたので本当に助かりました。料金も明確で安心しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* ラッター */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">4</span>
+                <h3 className="text-2xl font-bold">ラッター（ネズミ駆除専門）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">ラッターの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>ネズミ駆除専門であるため、高度なノウハウが蓄積され、精度の高い駆除を実現</li>
+                <li>住宅設備関係者が多数在籍しており、家や建物の構造に精通しているため、より効果的な対策が可能</li>
+                <li>ネズミ駆除に特化することで、作業の効率が向上し、同時にコストも削減</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆ラッターの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>東京23区、八王子市、町田市、府中市、多摩市、西東京市、立川市、日野市、小平市、国分寺市、調布市、東村山市、青梅市、稲城市、狛江市</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>不定休・9時〜21時・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ネズミ専門</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>10,000円〜（ネズミ駆除作業料金＋再発防止費用含む）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>最長5年間（期間内再発無料対応）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>クレジットカード・QRコード決済（PayPay）</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆ラッターの口コミ</h4>
+                <a href="https://www.google.com/search?q=ラッター+ネズミ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    ねずみ駆除を頼んだのは初めてでしたが、感じの良い方が来てくれて安心しました。頼んだらすぐ来てくれて助かりました。ありがとうございました！
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    ネズミによってお客様からの評判が落ちてしまわないか心配で害獣退治屋さんに連絡しました。迅速に対応してくれて、自分でできる予防策まで教えてくれたので大変助かりました！
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    ネズミやゴキブリの被害を受けないよう、かなり気を配っていたのですが、外部からの侵入などは自分たちでは防ぎようがなく、害獣退治屋さんにお願いをしました。処置も迅速でしたし、説明も丁寧でとても安心しました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* キャッツ */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">5</span>
+                <h3 className="text-2xl font-bold">キャッツ（シロアリ駆除専門）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">キャッツの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>シロアリの生態を徹底的に理解しているため、どんな状況下でも効果的な駆除が可能</li>
+                <li>シロアリの発生場所や被害状況を詳細に分析し、最適な工法と薬剤を選択</li>
+                <li>事前に建物の構造を詳細に調査し、その特性に合わせた適切な処理を行う</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼365日対応・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆キャッツの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>全国対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>365日対応・9時〜18時・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>シロアリ専門</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>880円/㎡～</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>最長5年間（年に一度無料点検実施）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>HPに記載なし</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆キャッツの口コミ</h4>
+                <a href="https://www.google.com/search?q=キャッツ+シロアリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    調査・工事とも親切丁寧にしていただきました。工事前日の確認電話連絡も適切に行なっていただきました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    事前説明もいただき、時間も正確で信頼してお任せできました。作業も丁寧です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    工事の説明を明確にしてくれているので安心して任せられると感じます。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼365日対応・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
