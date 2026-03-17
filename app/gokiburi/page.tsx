@@ -104,8 +104,8 @@ export default function GokiburiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-red-700 to-red-900 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&h=1080&fit=crop"
-          alt="ゴキブリ駆除サービス"
+          src="https://images.unsplash.com/photo-2iNv2jXonQw?w=1920&h=1080&fit=crop"
+          alt="ゴキブリ駆除の専門業者"
           fill
           className="object-cover"
           priority

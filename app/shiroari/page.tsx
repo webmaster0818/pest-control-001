@@ -70,8 +70,8 @@ export default function ShiroariPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-amber-600 to-amber-800 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1530092376999-2431865aa8b0?w=1920&h=1080&fit=crop"
-          alt="シロアリ駆除サービス"
+          src="https://images.unsplash.com/photo-m9WIzi5i6Mc?w=1920&h=1080&fit=crop"
+          alt="シロアリ駆除の専門業者"
           fill
           className="object-cover"
           priority

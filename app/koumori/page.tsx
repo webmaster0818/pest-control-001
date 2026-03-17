@@ -112,8 +112,8 @@ export default function KoumoriPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-purple-700 to-purple-900 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1574869542393-7750e0c57b8c?w=1920&h=1080&fit=crop"
-          alt="コウモリ駆除サービス"
+          src="https://images.unsplash.com/photo-35J2ODtMdPU?w=1920&h=1080&fit=crop"
+          alt="コウモリ駆除の専門業者"
           fill
           className="object-cover"
           priority

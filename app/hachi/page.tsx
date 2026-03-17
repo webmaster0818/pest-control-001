@@ -103,8 +103,8 @@ export default function HachiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?w=1920&h=1080&fit=crop"
-          alt="ハチ駆除サービス"
+          src="https://images.unsplash.com/photo-H1c3VbKMAuo?w=1920&h=1080&fit=crop"
+          alt="ハチ駆除の専門業者"
           fill
           className="object-cover"
           priority

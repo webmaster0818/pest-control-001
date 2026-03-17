@@ -151,7 +151,7 @@ export default function NagoyaPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-green-600 to-green-800 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1555148682-5fc1b2325f8e?w=1920&h=1080&fit=crop"
+          src="https://images.unsplash.com/photo-JpcnBpFRBt4?w=1920&h=1080&fit=crop"
           alt="名古屋の害虫駆除サービス"
           fill
           className="object-cover"

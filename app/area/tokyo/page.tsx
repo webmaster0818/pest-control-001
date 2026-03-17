@@ -151,7 +151,7 @@ export default function TokyoPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1920&h=1080&fit=crop"
+          src="https://images.unsplash.com/photo-xeo1csXebMQ?w=1920&h=1080&fit=crop"
           alt="東京の害虫駆除サービス"
           fill
           className="object-cover"

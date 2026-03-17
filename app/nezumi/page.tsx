@@ -127,8 +127,8 @@ export default function NezumiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-gray-700 to-gray-900 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1629042915672-68c0b6e6e00e?w=1920&h=1080&fit=crop"
-          alt="ネズミ駆除サービス"
+          src="https://images.unsplash.com/photo-35J2ODtMdPU?w=1920&h=1080&fit=crop"
+          alt="ネズミ駆除の専門業者"
           fill
           className="object-cover"
           priority

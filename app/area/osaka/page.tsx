@@ -151,7 +151,7 @@ export default function OsakaPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-orange-600 to-orange-800 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=1920&h=1080&fit=crop"
+          src="https://images.unsplash.com/photo--k21HOghnxc?w=1920&h=1080&fit=crop"
           alt="大阪の害虫駆除サービス"
           fill
           className="object-cover"
