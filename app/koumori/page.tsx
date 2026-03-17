@@ -141,7 +141,7 @@ export default function KoumoriPage() {
       {/* コウモリの生態と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">コウモリの被害</h2>
+          <h2 className="heading-primary text-center">コウモリの被害</h2>
           <div className="card bg-white shadow-xl mb-8">
             <div className="card-body">
               <h3 className="card-title text-2xl">アブラコウモリ（イエコウモリ）</h3>
@@ -188,7 +188,7 @@ export default function KoumoriPage() {
       {/* コウモリ駆除と法律 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">コウモリ駆除と法律</h2>
+          <h2 className="heading-primary text-center">コウモリ駆除と法律</h2>
           <div className="space-y-6">
             {lawPoints.map((point, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -220,7 +220,7 @@ export default function KoumoriPage() {
       {/* コウモリの追い出し方法 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">コウモリの追い出し方法（4ステップ）</h2>
+          <h2 className="heading-primary text-center">コウモリの追い出し方法（4ステップ）</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {methods.map((method) => (
               <div key={method.step} className="card bg-white shadow-xl">
@@ -250,7 +250,7 @@ export default function KoumoriPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">コウモリ駆除の料金相場</h2>
+          <h2 className="heading-primary text-center">コウモリ駆除の料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -280,7 +280,7 @@ export default function KoumoriPage() {
       {/* 業者選びのポイント */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者選びのポイント</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
@@ -312,7 +312,7 @@ export default function KoumoriPage() {
       {/* 地域別リンク */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別のコウモリ駆除業者</h2>
+          <h2 className="heading-primary text-center">地域別のコウモリ駆除業者</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -336,7 +336,7 @@ export default function KoumoriPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-purple-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             コウモリ駆除は法律知識のある専門業者へ
           </h2>
           <p className="text-lg mb-8">

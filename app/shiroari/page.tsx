@@ -96,7 +96,7 @@ export default function ShiroariPage() {
       {/* シロアリとは */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">シロアリとは？見分け方と被害の実態</h2>
+          <h2 className="heading-primary">シロアリとは？見分け方と被害の実態</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-white shadow-xl">
               <div className="card-body">
@@ -134,7 +134,7 @@ export default function ShiroariPage() {
       {/* 駆除方法 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">シロアリ駆除の方法</h2>
+          <h2 className="heading-primary text-center">シロアリ駆除の方法</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {methods.map((method) => (
               <div key={method.name} className="card bg-white shadow-xl">
@@ -175,7 +175,7 @@ export default function ShiroariPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">料金相場（2026年最新版）</h2>
+          <h2 className="heading-primary text-center">料金相場（2026年最新版）</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -205,7 +205,7 @@ export default function ShiroariPage() {
       {/* 業者選びのポイント */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者選びのポイント</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
@@ -225,7 +225,7 @@ export default function ShiroariPage() {
       {/* 地域別リンク */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別のシロアリ駆除業者</h2>
+          <h2 className="heading-primary text-center">地域別のシロアリ駆除業者</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -249,7 +249,7 @@ export default function ShiroariPage() {
       {/* FAQ */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">よくある質問</h2>
+          <h2 className="heading-primary text-center">よくある質問</h2>
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
               <div key={idx} className="collapse collapse-plus bg-white shadow-lg">
@@ -267,7 +267,7 @@ export default function ShiroariPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             シロアリ駆除のご相談は今すぐ
           </h2>
           <p className="text-lg mb-8">

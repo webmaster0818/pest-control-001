@@ -60,7 +60,7 @@ export default function Home() {
       {/* 害虫の種類から探す */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">害虫の種類から探す</h2>
+          <h2 className="heading-primary text-center">害虫の種類から探す</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {pests.map((pest) => (
               <Link
@@ -81,7 +81,7 @@ export default function Home() {
       {/* 地域から探す */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">お住まいの地域から探す</h2>
+          <h2 className="heading-primary text-center">お住まいの地域から探す</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -105,7 +105,7 @@ export default function Home() {
       {/* なぜ選ばれるのか */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="heading-primary text-center">
             なぜ害虫駆除110番が選ばれるのか
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +127,7 @@ export default function Home() {
       {/* CTAセクション */}
       <section className="py-16 px-4 bg-primary text-primary-content">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             害虫駆除のご相談は今すぐ無料で
           </h2>
           <p className="text-lg mb-8">

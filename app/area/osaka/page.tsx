@@ -178,7 +178,7 @@ export default function OsakaPage() {
       {/* 大阪で多い害虫トップ5 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">大阪で多い害虫トップ5</h2>
+          <h2 className="heading-primary text-center">大阪で多い害虫トップ5</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
@@ -208,7 +208,7 @@ export default function OsakaPage() {
       {/* 大阪の害虫駆除料金相場 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">大阪の害虫駆除料金相場</h2>
+          <h2 className="heading-primary text-center">大阪の害虫駆除料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -250,7 +250,7 @@ export default function OsakaPage() {
       {/* 大阪の害虫カレンダー */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">大阪の害虫カレンダー</h2>
+          <h2 className="heading-primary text-center">大阪の害虫カレンダー</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -281,7 +281,7 @@ export default function OsakaPage() {
       {/* 大阪府内の害虫駆除業者 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">大阪府内の害虫駆除業者エリア</h2>
+          <h2 className="heading-primary text-center">大阪府内の害虫駆除業者エリア</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -307,7 +307,7 @@ export default function OsakaPage() {
       {/* 大阪府の相談窓口 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">大阪府の害虫相談窓口</h2>
+          <h2 className="heading-primary text-center">大阪府の害虫相談窓口</h2>
           <div className="space-y-4">
             {consultations.map((org, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -339,7 +339,7 @@ export default function OsakaPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-orange-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             大阪の害虫駆除は地域に詳しい業者へ
           </h2>
           <p className="text-lg mb-8">

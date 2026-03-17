@@ -130,7 +130,7 @@ export default function GokiburiPage() {
       {/* ゴキブリの種類と生態 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ゴキブリの種類と生態</h2>
+          <h2 className="heading-primary text-center">ゴキブリの種類と生態</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {types.map((type) => (
               <div key={type.name} className="card bg-white shadow-xl">
@@ -157,7 +157,7 @@ export default function GokiburiPage() {
       {/* 自力駆除 vs 業者駆除 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">自力駆除 vs 業者駆除</h2>
+          <h2 className="heading-primary text-center">自力駆除 vs 業者駆除</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {comparison.map((item, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -204,7 +204,7 @@ export default function GokiburiPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ゴキブリ駆除の料金相場</h2>
+          <h2 className="heading-primary text-center">ゴキブリ駆除の料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -234,7 +234,7 @@ export default function GokiburiPage() {
       {/* 業者選びのポイント */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者選びのポイント</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
@@ -254,7 +254,7 @@ export default function GokiburiPage() {
       {/* 再発防止の予防策 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">再発させないための予防策</h2>
+          <h2 className="heading-primary text-center">再発させないための予防策</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {prevention.map((item, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -287,7 +287,7 @@ export default function GokiburiPage() {
       {/* 地域別リンク */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別のゴキブリ駆除業者</h2>
+          <h2 className="heading-primary text-center">地域別のゴキブリ駆除業者</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -311,7 +311,7 @@ export default function GokiburiPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-red-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             ゴキブリ駆除は早めの対策が重要
           </h2>
           <p className="text-lg mb-8">

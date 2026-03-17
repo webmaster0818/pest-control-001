@@ -153,7 +153,7 @@ export default function NezumiPage() {
       {/* ネズミの種類と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ネズミの種類</h2>
+          <h2 className="heading-primary text-center">ネズミの種類</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {types.map((type) => (
               <div key={type.name} className="card bg-white shadow-xl">
@@ -180,7 +180,7 @@ export default function NezumiPage() {
       {/* 被害事例 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ネズミによる被害</h2>
+          <h2 className="heading-primary text-center">ネズミによる被害</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {damages.map((damage, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -214,7 +214,7 @@ export default function NezumiPage() {
       {/* ネズミ駆除が難しい理由 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ネズミ駆除が難しい理由</h2>
+          <h2 className="heading-primary text-center">ネズミ駆除が難しい理由</h2>
           <div className="space-y-6">
             {difficulties.map((item, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -234,7 +234,7 @@ export default function NezumiPage() {
       {/* 駆除方法 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ネズミ駆除の方法</h2>
+          <h2 className="heading-primary text-center">ネズミ駆除の方法</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {methods.map((method) => (
               <div key={method.name} className="card bg-white shadow-xl">
@@ -288,7 +288,7 @@ export default function NezumiPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ネズミ駆除の料金相場</h2>
+          <h2 className="heading-primary text-center">ネズミ駆除の料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -318,7 +318,7 @@ export default function NezumiPage() {
       {/* 業者選びのポイント */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者選びのポイント</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
@@ -347,7 +347,7 @@ export default function NezumiPage() {
       {/* 地域別リンク */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別のネズミ駆除業者</h2>
+          <h2 className="heading-primary text-center">地域別のネズミ駆除業者</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -371,7 +371,7 @@ export default function NezumiPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-gray-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             ネズミ駆除は早期対策が重要
           </h2>
           <p className="text-lg mb-8">

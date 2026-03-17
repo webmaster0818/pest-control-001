@@ -132,7 +132,7 @@ export default function HachiPage() {
       {/* ハチの種類と危険性 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ハチの種類と危険性</h2>
+          <h2 className="heading-primary text-center">ハチの種類と危険性</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {beeTypes.map((bee) => (
               <div key={bee.name} className="card bg-white shadow-xl">
@@ -159,7 +159,7 @@ export default function HachiPage() {
       {/* 緊急対処法 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center text-error">
+          <h2 className="heading-primary text-center text-error">
             緊急！ハチに刺された時の対処法
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -188,7 +188,7 @@ export default function HachiPage() {
       {/* ハチの巣を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ハチの巣を見つけたら</h2>
+          <h2 className="heading-primary text-center">ハチの巣を見つけたら</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
@@ -243,7 +243,7 @@ export default function HachiPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">ハチ駆除の料金相場</h2>
+          <h2 className="heading-primary text-center">ハチ駆除の料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table table-zebra bg-white shadow-xl">
               <thead>
@@ -279,7 +279,7 @@ export default function HachiPage() {
       {/* 季節別対策カレンダー */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">季節別ハチ対策カレンダー</h2>
+          <h2 className="heading-primary text-center">季節別ハチ対策カレンダー</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season) => (
               <div key={season.season} className="card bg-white shadow-xl">
@@ -306,7 +306,7 @@ export default function HachiPage() {
       {/* 業者選びのポイント */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者選びのポイント</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
@@ -326,7 +326,7 @@ export default function HachiPage() {
       {/* 地域別リンク */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別のハチ駆除業者</h2>
+          <h2 className="heading-primary text-center">地域別のハチ駆除業者</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area) => (
               <Link
@@ -350,7 +350,7 @@ export default function HachiPage() {
       {/* CTA */}
       <section className="py-16 px-4 bg-gradient-to-r from-yellow-500 to-orange-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="heading-primary">
             ハチ駆除は今すぐプロに相談を
           </h2>
           <p className="text-lg mb-8">
