@@ -129,6 +129,278 @@ export default function HachiPage() {
         </div>
       </section>
 
+      {/* 業者比較表 */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center mb-8">ハチ駆除業者の比較</h2>
+          
+          <div className="overflow-x-auto">
+            <table className="table table-zebra w-full">
+              <thead>
+                <tr>
+                  <th className="bg-primary text-primary-content"></th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="株式会社三共消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社三共消毒</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社アサンテ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社アサンテ</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="有限会社北日本消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>有限会社北日本消毒</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">4</span>
+                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="株式会社あい営繕" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社あい営繕</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">5</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社ミヤコ消毒</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">6</span>
+                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="株式会社こだま" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社こだま</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">7</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="大洋防疫研究所" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>大洋防疫研究所</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">8</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社第一環研" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>株式会社第一環研</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">9</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ハチお助け本舗" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>ハチお助け本舗</strong>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="bg-base-200">対応エリア</th>
+                  <td className="text-center">◎ 関東・関西・東海</td>
+                  <td className="text-center">◎ 関東・東海</td>
+                  <td className="text-center">○ 北陸4県</td>
+                  <td className="text-center">○ 北九州・福岡・下関</td>
+                  <td className="text-center">◎ 関東・長野・新潟</td>
+                  <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
+                  <td className="text-center">◎ 関西・関東・中部</td>
+                  <td className="text-center">○ 福井県</td>
+                  <td className="text-center">◎ 全国対応</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">電話受付時間</th>
+                  <td className="text-center">24時間365日</td>
+                  <td className="text-center">8:30〜19:30</td>
+                  <td className="text-center">8:30〜17:30</td>
+                  <td className="text-center">8:00〜20:00</td>
+                  <td className="text-center">9:00〜18:00</td>
+                  <td className="text-center">8:00〜17:00</td>
+                  <td className="text-center">9:00〜17:00</td>
+                  <td className="text-center">9:00〜17:00</td>
+                  <td className="text-center">24時間365日</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">対応害虫・害獣</th>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害鳥獣全般</td>
+                  <td className="text-center">害虫全般</td>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">ハチ専門</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">無料診断</th>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">キャンセル</th>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 可能</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">公式サイト</th>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 className="heading-primary text-center mt-16 mb-8">おすすめハチ駆除業者 詳細紹介</h2>
+
+          {/* 株式会社三共消毒 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-warning badge-lg">👑 1</span>
+                <h3 className="text-2xl font-bold">株式会社三共消毒（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社三共消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
+                <li>24時間年中無休で受付、地元密着のスピード対応</li>
+                <li>プロのスタッフが徹底調査、万が一の再発には無料で再施工</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社三共消毒の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>東京都、神奈川県、千葉県、埼玉県、栃木県、群馬県、大阪府、愛知県、静岡県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>24時間365日・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ・シロアリ・ネズミなど害虫・害獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>スズメバチ駆除 33,000円〜／アシナガバチ駆除 16,500円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>保証あり（詳細は要確認）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社三共消毒の口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社三共消毒+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    創業100年近い老舗だけあって、対応が迅速で丁寧でした。スズメバチの巣を安全に駆除していただき、再発防止の対策もしっかりしていただきました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    24時間対応というのが本当に助かりました。夜間にハチに遭遇してパニックになりましたが、すぐに駆けつけてくれて安心しました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    プロのスタッフが来てくれて、作業の説明も分かりやすく、料金も明確でした。万が一の再発保証もあり、信頼してお任せできました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* ハチの種類と危険性 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
