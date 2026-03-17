@@ -98,96 +98,103 @@ export default function ShiroariPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">おすすめシロアリ駆除業者比較</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra w-full">
+            <table className="table w-full">
               <thead>
                 <tr>
-                  <th>業者名</th>
-                  <th>対応エリア</th>
-                  <th>電話受付時間</th>
-                  <th>対応害虫・害獣</th>
-                  <th>無料診断</th>
-                  <th>キャンセル</th>
-                  <th>公式サイト</th>
+                  <th className="bg-base-200">項目</th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-warning badge-lg">1</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>害獣プロテック</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-accent badge-lg">2</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>駆除ザウルス</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-neutral badge-lg">3</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>街角害虫駆除相談所</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">4</span>
+                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>ラッター</strong>
+                    </div>
+                  </th>
+                  <th className="text-center">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">5</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="キャッツ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>キャッツ</strong>
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-warning">👑金</span>
-                      <strong>害獣プロテック</strong>
-                    </div>
-                  </td>
-                  <td>◎ 全国対応</td>
-                  <td>24時間365日</td>
-                  <td>害獣・害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-base-200">対応エリア</th>
+                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">○ 23区＋14市</td>
+                  <td className="text-center">◎ 全国対応</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-accent">👑銀</span>
-                      <strong>駆除ザウルス</strong>
-                    </div>
-                  </td>
-                  <td>◎ 全国対応</td>
-                  <td>24時間365日</td>
-                  <td>害獣・害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>○ 可能</td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-base-200">電話受付時間</th>
+                  <td className="text-center">24時間365日</td>
+                  <td className="text-center">24時間365日</td>
+                  <td className="text-center">6:00〜20:00</td>
+                  <td className="text-center">9:00〜21:00</td>
+                  <td className="text-center">9:00〜18:00（365日）</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-neutral">👑銅</span>
-                      <strong>街角害虫駆除相談所</strong>
-                    </div>
-                  </td>
-                  <td>◎ 全国対応</td>
-                  <td>6:00〜20:00</td>
-                  <td>害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>○ 可能</td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-base-200">対応害虫・害獣</th>
+                  <td className="text-center">害獣・害虫全般</td>
+                  <td className="text-center">害獣・害虫全般</td>
+                  <td className="text-center">害虫全般</td>
+                  <td className="text-center">ネズミ専門</td>
+                  <td className="text-center">シロアリ専門</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="badge">4</span>
-                      <strong>ラッター</strong>
-                    </div>
-                  </td>
-                  <td>○ 23区＋14市</td>
-                  <td>9:00〜21:00</td>
-                  <td>ネズミ専門</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-base-200">無料診断</th>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 完全無料</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="badge">5</span>
-                      <strong>キャッツ</strong>
-                    </div>
+                  <th className="bg-base-200">キャンセル</th>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">△ 記載なし</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200">公式サイト</th>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
-                  <td>◎ 全国対応</td>
-                  <td>9:00〜18:00（365日）</td>
-                  <td>シロアリ専門</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
+                  </td>
+                  <td className="text-center">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
@@ -204,9 +211,12 @@ export default function ShiroariPage() {
 
           {/* 害獣プロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="badge badge-warning badge-lg">👑 1位</span>
-              <h3 className="text-2xl font-bold">害獣プロテック（シロアリ駆除）</h3>
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-warning badge-lg">1</span>
+                <h3 className="text-2xl font-bold">害獣プロテック（シロアリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -260,19 +270,24 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆害獣プロテックの口コミ</h4>
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆害獣プロテックの口コミ</h4>
+                <a href="https://www.google.com/search?q=害獣プロテック+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
               <div className="space-y-4">
-                <div className="bg-base-100 p-4 rounded-lg">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
                     1週間前に、シロアリの駆除を害獣プロテックさんにお願いしました。多くの駆除業者の中から口コミの評価やその内容を確認して、電話で相談したら、とても丁寧な対応だったので、その場で打合せ日を決めました。
                   </p>
                 </div>
-                <div className="bg-base-100 p-4 rounded-lg">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
                     依頼した当日に対応してくださり本当に助かりました。予算が厳しいと伝えると予算内でできる範囲の対策をしっかりと教えてくださり、ほぼ通常の駆除対策と変わらないレベルの対応をしてくれました。
                   </p>
                 </div>
-                <div className="bg-base-100 p-4 rounded-lg">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
                     インターネットで調べた電話番号に相談したら翌日すぐに見積もりと現場確認に来てくれました。心強かったです。
                   </p>
