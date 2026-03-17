@@ -57,6 +57,104 @@ export default function Home() {
         </div>
       </section>
 
+      {/* おすすめ業者比較 */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center">おすすめ害虫駆除業者比較</h2>
+          <div className="overflow-x-auto">
+            <table className="table table-zebra w-full">
+              <thead>
+                <tr>
+                  <th>業者名</th>
+                  <th>対応エリア</th>
+                  <th>電話受付時間</th>
+                  <th>対応害虫・害獣</th>
+                  <th>無料診断</th>
+                  <th>公式サイト</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="flex items-center gap-2">
+                      <span className="badge badge-warning">1位 👑</span>
+                      <strong>害獣プロテック</strong>
+                    </div>
+                  </td>
+                  <td>東京全域</td>
+                  <td>24時間365日</td>
+                  <td>害獣・害虫全般</td>
+                  <td>
+                    <span className="badge badge-success">無料</span>
+                  </td>
+                  <td>
+                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="flex items-center gap-2">
+                      <span className="badge badge-accent">2位 🥈</span>
+                      <strong>駆除ザウルス</strong>
+                    </div>
+                  </td>
+                  <td>東京全域</td>
+                  <td>24時間365日</td>
+                  <td>害獣・害虫全般</td>
+                  <td>
+                    <span className="badge badge-success">無料</span>
+                  </td>
+                  <td>
+                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="flex items-center gap-2">
+                      <span className="badge badge-neutral">3位 🥉</span>
+                      <strong>街角害虫駆除相談所</strong>
+                    </div>
+                  </td>
+                  <td>東京全域</td>
+                  <td>6:00〜20:00</td>
+                  <td>害虫全般</td>
+                  <td>
+                    <span className="badge badge-success">無料</span>
+                  </td>
+                  <td>
+                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>ラッター</strong></td>
+                  <td>23区＋14市</td>
+                  <td>9:00〜21:00</td>
+                  <td>ネズミ専門</td>
+                  <td>
+                    <span className="badge badge-success">無料</span>
+                  </td>
+                  <td>
+                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>キャッツ</strong></td>
+                  <td>東京全域</td>
+                  <td>9:00〜18:00（365日）</td>
+                  <td>シロアリ専門</td>
+                  <td>
+                    <span className="badge badge-success">無料</span>
+                  </td>
+                  <td>
+                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* 害虫の種類から探す */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
