@@ -138,7 +138,7 @@ export default function HachiPage() {
             <table className="table table-zebra w-full">
               <thead>
                 <tr>
-                  <th className="bg-primary text-primary-content"></th>
+                  <th className="bg-base-200"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
@@ -305,14 +305,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社三共消毒（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社三共消毒（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社三共消毒の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社三共消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
                 <li>24時間年中無休で受付、地元密着のスピード対応</li>
                 <li>プロのスタッフが徹底調査、万が一の再発には無料で再施工</li>
@@ -327,7 +327,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社三共消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社三共消毒の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -366,24 +366,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社三共消毒の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社三共消毒の口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社三共消毒+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     創業100年近い老舗だけあって、対応が迅速で丁寧でした。スズメバチの巣を安全に駆除していただき、再発防止の対策もしっかりしていただきました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     24時間対応というのが本当に助かりました。夜間にハチに遭遇してパニックになりましたが、すぐに駆けつけてくれて安心しました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     プロのスタッフが来てくれて、作業の説明も分かりやすく、料金も明確でした。万が一の再発保証もあり、信頼してお任せできました。
                   </p>
                 </div>
@@ -403,14 +403,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社アサンテ（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社アサンテ（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社アサンテの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の確かな施工実績</li>
                 <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
                 <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
@@ -425,7 +425,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社アサンテの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社アサンテの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -464,24 +464,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社アサンテの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社アサンテの口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社アサンテ+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     即日対応していただき、とても助かりました。自社スタッフの方が来てくださり、作業も丁寧で安心してお任せできました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     累計60万件以上の実績があるだけあって、対応が素早く、説明も分かりやすかったです。再発保証もあり、安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
                   </p>
                 </div>
@@ -501,14 +501,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold text-gray-900">有限会社北日本消毒（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">有限会社北日本消毒の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
                 <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
                 <li>創業約50年、実績と技術を兼ね備えた防護服のプロスタッフが巣ごと撤去</li>
@@ -523,7 +523,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆有限会社北日本消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆有限会社北日本消毒の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -562,24 +562,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆有限会社北日本消毒の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆有限会社北日本消毒の口コミ</h4>
                 <a href="https://www.google.com/search?q=有限会社北日本消毒+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     巣の場所がわからなかったのですが、無料で調査してもらえました。プロのスタッフが防護服で安全に駆除してくれて安心しました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     環境に優しい薬剤を使用してくれるので、小さな子どもやペットがいる我が家でも安心してお願いできました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     創業約50年の実績があり、官公庁や病院などでも対応しているとのことで信頼してお任せしました。高所作業にも対応していただけました。
                   </p>
                 </div>
@@ -599,14 +599,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">4</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社あい営繕（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社あい営繕（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社あい営繕の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社あい営繕の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
                 <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
                 <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除からご相談OK</li>
@@ -621,7 +621,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社あい営繕の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社あい営繕の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -660,24 +660,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社あい営繕の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社あい営繕の口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社あい営繕+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     緊急で連絡したところ、最短30分で来ていただけました。低価格で自社施工なので、安心してお任せできました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     軒下、天井裏、床下など、あらゆる場所の蜂の巣に対応してくださいました。現地調査・見積りも無料で、明確な料金設定でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     大手ホームセンターとの取引実績があるとのことで、信頼してお願いしました。シーズン保証もあり、安心です。
                   </p>
                 </div>
@@ -697,14 +697,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">5</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社ミヤコ消毒（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社ミヤコ消毒の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社ミヤコ消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
                 <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
                 <li>知識と資格をもった専門スタッフが在籍、日本ペストコントロール協会からの優良事業所認証</li>
@@ -719,7 +719,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社ミヤコ消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社ミヤコ消毒の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -758,24 +758,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社ミヤコ消毒の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社ミヤコ消毒の口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社ミヤコ消毒+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     リピート率75.6%というのに惹かれて依頼しました。期待以上の丁寧な対応で、蜂の種類がわからなくても丁寧に対応していただけました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     高所にできた巣でしたが、専門スタッフが安全に駆除してくれました。厚生労働省認可の安全な薬剤を使用しているので安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     日本ペストコントロール協会からの優良事業所認証を受けているとのことで、信頼してお任せできました。
                   </p>
                 </div>
@@ -795,14 +795,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">6</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社こだま（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社こだま（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社こだまの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社こだまの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>高い技術力を持ったスタッフが対応</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
                 <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
@@ -817,7 +817,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社こだまの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社こだまの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -856,24 +856,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社こだまの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社こだまの口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社こだま+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     高い技術力のスタッフが来てくださり、安全かつ迅速に駆除していただきました。日本ペストコントロール協会加盟で安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     三重県内で探していたので、地元密着の業者さんで助かりました。料金も明確で、保証もしっかりしています。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
@@ -893,14 +893,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">7</span>
-                <h3 className="text-2xl font-bold text-gray-900">大洋防疫研究所（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">大洋防疫研究所（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">大洋防疫研究所の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">大洋防疫研究所の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>メディア出演多数、即日対応</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
                 <li>関西、関東、中部エリアに対応</li>
@@ -915,7 +915,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆大洋防疫研究所の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆大洋防疫研究所の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -954,24 +954,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆大洋防疫研究所の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆大洋防疫研究所の口コミ</h4>
                 <a href="https://www.google.com/search?q=大洋防疫研究所+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     メディアに出演されているのを見て依頼しました。即日対応していただき、プロの技術で安全に駆除してくれました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     日本ペストコントロール協会加盟で安心してお任せできました。関西エリアで探していたのでちょうど良かったです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
@@ -991,14 +991,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">8</span>
-                <h3 className="text-2xl font-bold text-gray-900">株式会社第一環研（ハチ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社第一環研（ハチ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">株式会社第一環研の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">株式会社第一環研の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
                 <li>福井県エリアに対応</li>
@@ -1013,7 +1013,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆株式会社第一環研の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆株式会社第一環研の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -1052,24 +1052,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆株式会社第一環研の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆株式会社第一環研の口コミ</h4>
                 <a href="https://www.google.com/search?q=株式会社第一環研+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     日本ペストコントロール協会加盟で、プロの技術で安全に駆除してくれました。福井県内で探していたので助かりました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
@@ -1089,14 +1089,14 @@ export default function HachiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">9</span>
-                <h3 className="text-2xl font-bold text-gray-900">ハチお助け本舗（ハチ駆除専門）</h3>
+                <h3 className="text-2xl font-bold text-black">ハチお助け本舗（ハチ駆除専門）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">ハチお助け本舗の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">ハチお助け本舗の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
                 <li>24時間365日受付で、最短受付から10分で現地到着</li>
                 <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
@@ -1111,7 +1111,7 @@ export default function HachiPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆ハチお助け本舗の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆ハチお助け本舗の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -1150,24 +1150,24 @@ export default function HachiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆ハチお助け本舗の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆ハチお助け本舗の口コミ</h4>
                 <a href="https://www.google.com/search?q=ハチお助け本舗+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     24時間365日対応で、深夜にハチに遭遇してパニックになったときもすぐに駆けつけてくれました。最短10分で来てくれるのは本当に助かります。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     全国対応なので、地方に住んでいる私でもすぐに来てもらえました。料金も作業前に見積もりしてくれて、明朗会計で安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     ハチ専門の業者さんなので、技術力が高く、安全かつ迅速に駆除してくれました。再発保証もあり、安心してお任せできました。
                   </p>
                 </div>

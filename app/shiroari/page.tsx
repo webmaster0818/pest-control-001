@@ -214,14 +214,14 @@ export default function ShiroariPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
-                <h3 className="text-2xl font-bold text-gray-900">害獣プロテック（シロアリ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">害獣プロテックの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>「コールセンターでの相談→調査見積り→駆除作業」まで自社スタッフがワンストップで担当</li>
                 <li>20年以上続くリフォーム会社が母体となっているため、住宅構造を理解した施工技術も◎</li>
                 <li>弊社施工箇所が破損した場合、保証期間内であれば無償対応ですぐに駆けつけ</li>
@@ -236,7 +236,7 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆害獣プロテックの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -271,24 +271,24 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆害獣プロテックの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
                 <a href="https://www.google.com/search?q=害獣プロテック+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     1週間前に、シロアリの駆除を害獣プロテックさんにお願いしました。多くの駆除業者の中から口コミの評価やその内容を確認して、電話で相談したら、とても丁寧な対応だったので、その場で打合せ日を決めました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     依頼した当日に対応してくださり本当に助かりました。予算が厳しいと伝えると予算内でできる範囲の対策をしっかりと教えてくださり、ほぼ通常の駆除対策と変わらないレベルの対応をしてくれました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     インターネットで調べた電話番号に相談したら翌日すぐに見積もりと現場確認に来てくれました。心強かったです。
                   </p>
                 </div>
@@ -308,14 +308,14 @@ export default function ShiroariPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold text-gray-900">駆除ザウルス（シロアリ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">駆除ザウルス（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">駆除ザウルスの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業19年の長年にわたり蓄積された専門知識と実績</li>
                 <li>自治体、施設、企業向けに専門講習を提供する経験豊かなプロフェッショナル集団</li>
                 <li>国家資格を含む様々な資格を持つ専門家が多数在籍</li>
@@ -330,7 +330,7 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆駆除ザウルスの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -369,24 +369,24 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆駆除ザウルスの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
                 <a href="https://www.google.com/search?q=駆除ザウルス+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     4月から、１階の天井裏に凄い音がしました。電話の予約も、担当して頂いた方も迅速な対応でした。写真と映像で確認しながら施工して下さって安心でした。精神面でもサポートしてもらえました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     とても親切で、対応も迅速で助かりました。屋根裏の害獣のせいで寝不足が続いていましたが、初めてのことなので色んな業者に話を聞いてみようと思い見積もりをお願いしましたが、担当の方がとても感じが良く親切だったためその日に契約しました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     コウモリの駆除をお願いしました。見積もりの現地調査で、ネズミの被害も見つかり驚きましたが、とても丁寧に説明をしていただいたので駆除を依頼することにしました。
                   </p>
                 </div>
@@ -406,14 +406,14 @@ export default function ShiroariPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold text-gray-900">街角害虫駆除相談所（シロアリ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">街角害虫駆除相談所の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">街角害虫駆除相談所の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>天井や床下の詳細な撮影を伴う、無料の現地調査と見積もりを提供</li>
                 <li>ムカデ、クモなど、あらゆる種類の害獣駆除に対応可能</li>
                 <li>関東エリア内での現地への到着を最短30分で実現し、素早く対応</li>
@@ -428,7 +428,7 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆街角害虫駆除相談所の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆街角害虫駆除相談所の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -467,24 +467,24 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆街角害虫駆除相談所の口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆街角害虫駆除相談所の口コミ</h4>
                 <a href="https://www.google.com/search?q=街角害虫駆除相談所+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     迅速な対応で、見積もりも丁寧に説明していただきました。駆除作業も手際よく、アフターフォローもしっかりしていて安心できました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     床下の写真を撮って見せてくれたので、被害状況がよく分かりました。説明も分かりやすく、信頼してお任せできました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     電話してから30分以内に来てくれました。急いでいたので本当に助かりました。料金も明確で安心しました。
                   </p>
                 </div>
@@ -504,14 +504,14 @@ export default function ShiroariPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">4</span>
-                <h3 className="text-2xl font-bold text-gray-900">サンキョークリーンサービス（シロアリ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">サンキョークリーンサービスの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業から28年の経験と実績、高い信頼性と透明性が魅力の完全自社施工業者</li>
                 <li>駆除を担当するスタッフのプロフィールや保有資格、施工事例や口コミを多数掲載</li>
                 <li>日本ペストコントロール協会と日本しろあり対策協会の両方に加盟しており、施工品質の高さはお墨付き</li>
@@ -526,7 +526,7 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆サンキョークリーンサービスの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆サンキョークリーンサービスの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -565,24 +565,24 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆サンキョークリーンサービスの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆サンキョークリーンサービスの口コミ</h4>
                 <a href="https://www.google.com/search?q=サンキョークリーンサービス+シロアリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     事前の説明が丁寧で、スタッフの方の専門知識も豊富でした。シロアリ駆除の施工も丁寧で、アフターフォローもしっかりしていて安心できました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     公式サイトで施工事例を見て依頼しました。実際に来てくださった方も写真で見たスタッフの方で、安心してお任せできました。作業も期待以上に丁寧でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     創業28年の実績に惹かれて依頼しました。現地調査も無料で、見積もりも明確。施工後の定期点検も含めて、長く付き合えそうな業者さんだと感じました。
                   </p>
                 </div>
@@ -602,14 +602,14 @@ export default function ShiroariPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">5</span>
-                <h3 className="text-2xl font-bold text-gray-900">キャッツ（シロアリ駆除専門）</h3>
+                <h3 className="text-2xl font-bold text-black">キャッツ（シロアリ駆除専門）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">キャッツの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+              <h4 className="font-bold text-lg text-black mb-3">キャッツの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>シロアリの生態を徹底的に理解しているため、どんな状況下でも効果的な駆除が可能</li>
                 <li>シロアリの発生場所や被害状況を詳細に分析し、最適な工法と薬剤を選択</li>
                 <li>事前に建物の構造を詳細に調査し、その特性に合わせた適切な処理を行う</li>
@@ -624,7 +624,7 @@ export default function ShiroariPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆キャッツの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆キャッツの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
@@ -663,24 +663,24 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆キャッツの口コミ</h4>
+                <h4 className="font-bold text-lg text-black">◆キャッツの口コミ</h4>
                 <a href="https://www.google.com/search?q=キャッツ+シロアリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     調査・工事とも親切丁寧にしていただきました。工事前日の確認電話連絡も適切に行なっていただきました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     事前説明もいただき、時間も正確で信頼してお任せできました。作業も丁寧です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-base-content/80">
+                  <p className="text-sm text-gray-900">
                     工事の説明を明確にしてくれているので安心して任せられると感じます。
                   </p>
                 </div>
@@ -748,7 +748,7 @@ export default function ShiroariPage() {
                   <p className="text-base-content/70 mb-4">{method.description}</p>
                   
                   <div className="mb-4">
-                    <h4 className="font-bold text-lg mb-2 text-success">メリット</h4>
+                    <h4 className="font-bold text-lg text-black mb-2 text-success">メリット</h4>
                     <ul className="list-disc list-inside space-y-1">
                       {method.pros.map((pro, idx) => (
                         <li key={idx} className="text-sm">{pro}</li>
@@ -757,7 +757,7 @@ export default function ShiroariPage() {
                   </div>
 
                   <div className="mb-4">
-                    <h4 className="font-bold text-lg mb-2 text-error">デメリット</h4>
+                    <h4 className="font-bold text-lg text-black mb-2 text-error">デメリット</h4>
                     <ul className="list-disc list-inside space-y-1">
                       {method.cons.map((con, idx) => (
                         <li key={idx} className="text-sm">{con}</li>
