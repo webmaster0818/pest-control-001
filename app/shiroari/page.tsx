@@ -104,21 +104,21 @@ export default function ShiroariPage() {
                   <th className="bg-base-200">項目</th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">1</span>
+                      <span className="badge badge-warning badge-lg">👑 1</span>
                       <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong>害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-accent badge-lg">2</span>
+                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                       <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong>駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-neutral badge-lg">3</span>
+                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                       <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
                       <strong>街角害虫駆除相談所</strong>
                     </div>
@@ -213,7 +213,7 @@ export default function ShiroariPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
               <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-warning badge-lg">1</span>
+                <span className="badge badge-warning badge-lg">👑 1</span>
                 <h3 className="text-2xl font-bold">害獣プロテック（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
