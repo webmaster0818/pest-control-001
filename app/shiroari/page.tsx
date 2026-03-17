@@ -404,9 +404,9 @@ export default function ShiroariPage() {
           {/* 街角害虫駆除相談所 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold">街角害虫駆除相談所（シロアリ駆除）</h3>
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <h3 className="text-2xl font-bold text-gray-900">街角害虫駆除相談所（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -502,9 +502,9 @@ export default function ShiroariPage() {
           {/* サンキョークリーンサービス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-lg">4</span>
-                <h3 className="text-2xl font-bold">サンキョークリーンサービス（シロアリ駆除）</h3>
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg text-base">4</span>
+                <h3 className="text-2xl font-bold text-gray-900">サンキョークリーンサービス（シロアリ駆除）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -600,9 +600,9 @@ export default function ShiroariPage() {
           {/* キャッツ */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="badge badge-lg">5</span>
-                <h3 className="text-2xl font-bold">キャッツ（シロアリ駆除専門）</h3>
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg text-base">5</span>
+                <h3 className="text-2xl font-bold text-gray-900">キャッツ（シロアリ駆除専門）</h3>
               </div>
               <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
             </div>
