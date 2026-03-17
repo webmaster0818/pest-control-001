@@ -210,7 +210,7 @@ export default function ShiroariPage() {
           <h2 className="heading-primary text-center mb-12">おすすめシロアリ駆除業者詳細</h2>
 
           {/* 害獣プロテック */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
@@ -304,7 +304,7 @@ export default function ShiroariPage() {
           </div>
 
           {/* 駆除ザウルス */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
@@ -402,7 +402,7 @@ export default function ShiroariPage() {
           </div>
 
           {/* 街角害虫駆除相談所 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
@@ -500,7 +500,7 @@ export default function ShiroariPage() {
           </div>
 
           {/* サンキョークリーンサービス */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">4</span>
@@ -598,7 +598,7 @@ export default function ShiroariPage() {
           </div>
 
           {/* キャッツ */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">5</span>

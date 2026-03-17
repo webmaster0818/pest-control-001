@@ -47,9 +47,9 @@ body {
 }
 
 /* 個別業者紹介セクションのテキスト色を強制（比較表を除外） */
-.bg-white.shadow-lg h3,
-.bg-white.shadow-lg h4,
-.bg-white.shadow-lg li,
-.bg-white.shadow-lg p {
+.company-detail h3,
+.company-detail h4,
+.company-detail li,
+.company-detail p {
   color: #000000 !important;
 }

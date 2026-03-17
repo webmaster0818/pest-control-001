@@ -301,7 +301,7 @@ export default function HachiPage() {
           <h2 className="heading-primary text-center mt-16 mb-8">おすすめハチ駆除業者 詳細紹介</h2>
 
           {/* 株式会社三共消毒 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
@@ -399,7 +399,7 @@ export default function HachiPage() {
           </div>
 
           {/* 株式会社アサンテ */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
@@ -497,7 +497,7 @@ export default function HachiPage() {
           </div>
 
           {/* 有限会社北日本消毒 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
@@ -595,7 +595,7 @@ export default function HachiPage() {
           </div>
 
           {/* 株式会社あい営繕 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">4</span>
@@ -693,7 +693,7 @@ export default function HachiPage() {
           </div>
 
           {/* 株式会社ミヤコ消毒 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">5</span>
@@ -791,7 +791,7 @@ export default function HachiPage() {
           </div>
 
           {/* 株式会社こだま */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">6</span>
@@ -889,7 +889,7 @@ export default function HachiPage() {
           </div>
 
           {/* 大洋防疫研究所 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">7</span>
@@ -987,7 +987,7 @@ export default function HachiPage() {
           </div>
 
           {/* 株式会社第一環研 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">8</span>
@@ -1085,7 +1085,7 @@ export default function HachiPage() {
           </div>
 
           {/* ハチお助け本舗 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">9</span>
