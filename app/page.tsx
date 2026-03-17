@@ -70,6 +70,7 @@ export default function Home() {
                   <th>電話受付時間</th>
                   <th>対応害虫・害獣</th>
                   <th>無料診断</th>
+                  <th>キャンセル</th>
                   <th>公式サイト</th>
                 </tr>
               </thead>
@@ -77,76 +78,81 @@ export default function Home() {
                 <tr>
                   <td>
                     <div className="flex items-center gap-2">
-                      <span className="badge badge-warning">1位 👑</span>
+                      <span className="badge badge-warning">👑金</span>
                       <strong>害獣プロテック</strong>
                     </div>
                   </td>
-                  <td>東京全域</td>
+                  <td>◎ 東京全域</td>
                   <td>24時間365日</td>
                   <td>害獣・害虫全般</td>
+                  <td>◎ 完全無料</td>
+                  <td>△ 記載なし</td>
                   <td>
-                    <span className="badge badge-success">無料</span>
-                  </td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <div className="flex items-center gap-2">
-                      <span className="badge badge-accent">2位 🥈</span>
+                      <span className="badge badge-accent">👑銀</span>
                       <strong>駆除ザウルス</strong>
                     </div>
                   </td>
-                  <td>東京全域</td>
+                  <td>◎ 東京全域</td>
                   <td>24時間365日</td>
                   <td>害獣・害虫全般</td>
+                  <td>◎ 完全無料</td>
+                  <td>○ 可能</td>
                   <td>
-                    <span className="badge badge-success">無料</span>
-                  </td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <div className="flex items-center gap-2">
-                      <span className="badge badge-neutral">3位 🥉</span>
+                      <span className="badge badge-neutral">👑銅</span>
                       <strong>街角害虫駆除相談所</strong>
                     </div>
                   </td>
-                  <td>東京全域</td>
+                  <td>◎ 東京全域</td>
                   <td>6:00〜20:00</td>
                   <td>害虫全般</td>
+                  <td>◎ 完全無料</td>
+                  <td>○ 可能</td>
                   <td>
-                    <span className="badge badge-success">無料</span>
-                  </td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td><strong>ラッター</strong></td>
-                  <td>23区＋14市</td>
+                  <td>
+                    <div className="flex items-center gap-2">
+                      <span className="badge">4</span>
+                      <strong>ラッター</strong>
+                    </div>
+                  </td>
+                  <td>○ 23区＋14市</td>
                   <td>9:00〜21:00</td>
-                  <td>ネズミ専門</td>
+                  <td>ネズミ</td>
+                  <td>◎ 完全無料</td>
+                  <td>△ 記載なし</td>
                   <td>
-                    <span className="badge badge-success">無料</span>
-                  </td>
-                  <td>
-                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td><strong>キャッツ</strong></td>
-                  <td>東京全域</td>
-                  <td>9:00〜18:00（365日）</td>
-                  <td>シロアリ専門</td>
                   <td>
-                    <span className="badge badge-success">無料</span>
+                    <div className="flex items-center gap-2">
+                      <span className="badge">5</span>
+                      <strong>キャッツ</strong>
+                    </div>
                   </td>
+                  <td>◎ 東京全域</td>
+                  <td>9:00〜18:00（365日）</td>
+                  <td>シロアリ</td>
+                  <td>◎ 完全無料</td>
+                  <td>△ 記載なし</td>
                   <td>
-                    <a href="#" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
               </tbody>
