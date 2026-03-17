@@ -264,6 +264,100 @@ export default function ShiroariPage() {
         </div>
       </section>
 
+      {/* おすすめ業者詳細 */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center mb-12">おすすめシロアリ駆除業者</h2>
+
+          {/* 害獣プロテック */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="badge badge-warning badge-lg">👑 1位</span>
+              <h3 className="text-2xl font-bold">害獣プロテック（シロアリ駆除）</h3>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">害獣プロテックの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>「コールセンターでの相談→調査見積り→駆除作業」まで自社スタッフがワンストップで担当</li>
+                <li>20年以上続くリフォーム会社が母体となっているため、住宅構造を理解した施工技術も◎</li>
+                <li>弊社施工箇所が破損した場合、保証期間内であれば無償対応ですぐに駆けつけ</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆害獣プロテックの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>全国対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>24時間365日・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥・ムササビ・アナグマ・シロアリ・ハチ・その他害獣害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>最長10年間</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金払い・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆害獣プロテックの口コミ</h4>
+              <div className="space-y-4">
+                <div className="bg-base-100 p-4 rounded-lg">
+                  <p className="text-sm text-base-content/80">
+                    1週間前に、シロアリの駆除を害獣プロテックさんにお願いしました。多くの駆除業者の中から口コミの評価やその内容を確認して、電話で相談したら、とても丁寧な対応だったので、その場で打合せ日を決めました。
+                  </p>
+                </div>
+                <div className="bg-base-100 p-4 rounded-lg">
+                  <p className="text-sm text-base-content/80">
+                    依頼した当日に対応してくださり本当に助かりました。予算が厳しいと伝えると予算内でできる範囲の対策をしっかりと教えてくださり、ほぼ通常の駆除対策と変わらないレベルの対応をしてくれました。
+                  </p>
+                </div>
+                <div className="bg-base-100 p-4 rounded-lg">
+                  <p className="text-sm text-base-content/80">
+                    インターネットで調べた電話番号に相談したら翌日すぐに見積もりと現場確認に来てくれました。心強かったです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 px-4 bg-amber-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
