@@ -126,8 +126,8 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
-                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>ラッター</strong>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center">
@@ -145,7 +145,7 @@ export default function ShiroariPage() {
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
-                  <td className="text-center">○ 23区＋14市</td>
+                  <td className="text-center">○ 関東6県</td>
                   <td className="text-center">◎ 全国対応</td>
                 </tr>
                 <tr>
@@ -153,7 +153,7 @@ export default function ShiroariPage() {
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">6:00〜20:00</td>
-                  <td className="text-center">9:00〜21:00</td>
+                  <td className="text-center">8:00〜20:00</td>
                   <td className="text-center">9:00〜18:00（365日）</td>
                 </tr>
                 <tr>
@@ -161,7 +161,7 @@ export default function ShiroariPage() {
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害虫全般</td>
-                  <td className="text-center">ネズミ専門</td>
+                  <td className="text-center">シロアリ専門</td>
                   <td className="text-center">シロアリ専門</td>
                 </tr>
                 <tr>
@@ -499,56 +499,56 @@ export default function ShiroariPage() {
             </div>
           </div>
 
-          {/* ラッター */}
+          {/* サンキョークリーンサービス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
             <div className="mb-4">
               <div className="flex items-center gap-2 mb-3">
                 <span className="badge badge-lg">4</span>
-                <h3 className="text-2xl font-bold">ラッター（ネズミ駆除専門）</h3>
+                <h3 className="text-2xl font-bold">サンキョークリーンサービス（シロアリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">ラッターの特徴</h4>
+              <h4 className="font-bold text-lg mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-base-content/80">
-                <li>ネズミ駆除専門であるため、高度なノウハウが蓄積され、精度の高い駆除を実現</li>
-                <li>住宅設備関係者が多数在籍しており、家や建物の構造に精通しているため、より効果的な対策が可能</li>
-                <li>ネズミ駆除に特化することで、作業の効率が向上し、同時にコストも削減</li>
+                <li>創業から28年の経験と実績、高い信頼性と透明性が魅力の完全自社施工業者</li>
+                <li>駆除を担当するスタッフのプロフィールや保有資格、施工事例や口コミを多数掲載</li>
+                <li>日本ペストコントロール協会と日本しろあり対策協会の両方に加盟しており、施工品質の高さはお墨付き</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                ＼年中無休・通話無料／<br />
                 無料相談はこちら
               </a>
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg mb-3">◆ラッターの基本情報</h4>
+              <h4 className="font-bold text-lg mb-3">◆サンキョークリーンサービスの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
-                      <td>東京23区、八王子市、町田市、府中市、多摩市、西東京市、立川市、日野市、小平市、国分寺市、調布市、東村山市、青梅市、稲城市、狛江市</td>
+                      <td>東京都、埼玉県、千葉県、神奈川県、茨城県、栃木県</td>
                     </tr>
                     <tr>
                       <th className="bg-base-200">電話受付時間</th>
-                      <td>不定休・9時〜21時・通話無料</td>
+                      <td>8:00〜20:00・年中無休</td>
                     </tr>
                     <tr>
                       <th className="bg-base-200">対応可能な害獣・害虫</th>
-                      <td>ネズミ専門</td>
+                      <td>シロアリ専門</td>
                     </tr>
                     <tr>
                       <th className="bg-base-200">駆除最低料金</th>
-                      <td>10,000円〜（ネズミ駆除作業料金＋再発防止費用含む）</td>
+                      <td>2,566円〜／㎡</td>
                     </tr>
                     <tr>
                       <th className="bg-base-200">保証期間</th>
-                      <td>最長5年間（期間内再発無料対応）</td>
+                      <td>最長5年間（定期点検1・3・5年目）</td>
                     </tr>
                     <tr>
                       <th className="bg-base-200">無料診断の有無</th>
@@ -556,7 +556,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-base-200">支払い方法</th>
-                      <td>クレジットカード・QRコード決済（PayPay）</td>
+                      <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
                 </table>
@@ -565,25 +565,25 @@ export default function ShiroariPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg">◆ラッターの口コミ</h4>
-                <a href="https://www.google.com/search?q=ラッター+ネズミ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg">◆サンキョークリーンサービスの口コミ</h4>
+                <a href="https://www.google.com/search?q=サンキョークリーンサービス+シロアリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
-                    ねずみ駆除を頼んだのは初めてでしたが、感じの良い方が来てくれて安心しました。頼んだらすぐ来てくれて助かりました。ありがとうございました！
+                    事前の説明が丁寧で、スタッフの方の専門知識も豊富でした。シロアリ駆除の施工も丁寧で、アフターフォローもしっかりしていて安心できました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
-                    ネズミによってお客様からの評判が落ちてしまわないか心配で害獣退治屋さんに連絡しました。迅速に対応してくれて、自分でできる予防策まで教えてくれたので大変助かりました！
+                    公式サイトで施工事例を見て依頼しました。実際に来てくださった方も写真で見たスタッフの方で、安心してお任せできました。作業も期待以上に丁寧でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <p className="text-sm text-base-content/80">
-                    ネズミやゴキブリの被害を受けないよう、かなり気を配っていたのですが、外部からの侵入などは自分たちでは防ぎようがなく、害獣退治屋さんにお願いをしました。処置も迅速でしたし、説明も丁寧でとても安心しました。
+                    創業28年の実績に惹かれて依頼しました。現地調査も無料で、見積もりも明確。施工後の定期点検も含めて、長く付き合えそうな業者さんだと感じました。
                   </p>
                 </div>
               </div>
@@ -591,7 +591,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                ＼年中無休・通話無料／<br />
                 無料相談はこちら
               </a>
             </div>
