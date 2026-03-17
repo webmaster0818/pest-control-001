@@ -398,6 +398,790 @@ export default function HachiPage() {
             </div>
           </div>
 
+          {/* 株式会社アサンテ */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <h3 className="text-2xl font-bold">株式会社アサンテ（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社アサンテの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>累計60万件以上の確かな施工実績</li>
+                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
+                <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社アサンテの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>東京都、神奈川県、千葉県、愛知県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>8:30〜19:30・年中無休</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ・シロアリ・ゴキブリなど害虫・害獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>同年の再発に限り無償で再駆除</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社アサンテの口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社アサンテ+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    即日対応していただき、とても助かりました。自社スタッフの方が来てくださり、作業も丁寧で安心してお任せできました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    累計60万件以上の実績があるだけあって、対応が素早く、説明も分かりやすかったです。再発保証もあり、安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 有限会社北日本消毒 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <h3 className="text-2xl font-bold">有限会社北日本消毒（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">有限会社北日本消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>人体・環境に優しい薬剤を使用</li>
+                <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
+                <li>創業約50年、実績と技術を兼ね備えた防護服のプロスタッフが巣ごと撤去</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼土日祝日・時間外も対応／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆有限会社北日本消毒の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>富山県、石川県、新潟県、岐阜県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>8:30〜17:30・土日祝日・時間外も対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ・ネズミなど不快害虫・害獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>1〜3ヵ月間の保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆有限会社北日本消毒の口コミ</h4>
+                <a href="https://www.google.com/search?q=有限会社北日本消毒+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    巣の場所がわからなかったのですが、無料で調査してもらえました。プロのスタッフが防護服で安全に駆除してくれて安心しました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    環境に優しい薬剤を使用してくれるので、小さな子どもやペットがいる我が家でも安心してお願いできました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    創業約50年の実績があり、官公庁や病院などでも対応しているとのことで信頼してお任せしました。高所作業にも対応していただけました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼土日祝日・時間外も対応／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 株式会社あい営繕 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">4</span>
+                <h3 className="text-2xl font-bold">株式会社あい営繕（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社あい営繕の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
+                <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除からご相談OK</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社あい営繕の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>福岡市、北九州市、下関市</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>8:00〜20:00・年中無休</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ・ネズミなど害虫・害獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>蜂の巣駆除 16,500円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>12月までのシーズン保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社あい営繕の口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社あい営繕+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    緊急で連絡したところ、最短30分で来ていただけました。低価格で自社施工なので、安心してお任せできました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    軒下、天井裏、床下など、あらゆる場所の蜂の巣に対応してくださいました。現地調査・見積りも無料で、明確な料金設定でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    大手ホームセンターとの取引実績があるとのことで、信頼してお願いしました。シーズン保証もあり、安心です。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 株式会社ミヤコ消毒 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">5</span>
+                <h3 className="text-2xl font-bold">株式会社ミヤコ消毒（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社ミヤコ消毒の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
+                <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
+                <li>知識と資格をもった専門スタッフが在籍、日本ペストコントロール協会からの優良事業所認証</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社ミヤコ消毒の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>東京都、神奈川県、千葉県、埼玉県、群馬県、栃木県、茨城県、山梨県、長野県、新潟県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>9:00〜18:00・土曜・日曜定休</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ・シロアリなど害虫・害鳥獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>蜂の駆除 10,780円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社ミヤコ消毒の口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社ミヤコ消毒+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    リピート率75.6%というのに惹かれて依頼しました。期待以上の丁寧な対応で、蜂の種類がわからなくても丁寧に対応していただけました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    高所にできた巣でしたが、専門スタッフが安全に駆除してくれました。厚生労働省認可の安全な薬剤を使用しているので安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    日本ペストコントロール協会からの優良事業所認証を受けているとのことで、信頼してお任せできました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 株式会社こだま */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">6</span>
+                <h3 className="text-2xl font-bold">株式会社こだま（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社こだまの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>高い技術力を持ったスタッフが対応</li>
+                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社こだまの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>三重県、愛知県、静岡県、岐阜県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>8:00〜17:00・日祝休み</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社こだまの口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社こだま+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    高い技術力のスタッフが来てくださり、安全かつ迅速に駆除していただきました。日本ペストコントロール協会加盟で安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    三重県内で探していたので、地元密着の業者さんで助かりました。料金も明確で、保証もしっかりしています。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 大洋防疫研究所 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">7</span>
+                <h3 className="text-2xl font-bold">大洋防疫研究所（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">大洋防疫研究所の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>メディア出演多数、即日対応</li>
+                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>関西、関東、中部エリアに対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆大洋防疫研究所の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>関西、関東、中部</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>平日 9:00〜17:00・土曜 9:00〜12:00</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチなど害虫・害獣全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆大洋防疫研究所の口コミ</h4>
+                <a href="https://www.google.com/search?q=大洋防疫研究所+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    メディアに出演されているのを見て依頼しました。即日対応していただき、プロの技術で安全に駆除してくれました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    日本ペストコントロール協会加盟で安心してお任せできました。関西エリアで探していたのでちょうど良かったです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 株式会社第一環研 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">8</span>
+                <h3 className="text-2xl font-bold">株式会社第一環研（ハチ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">株式会社第一環研の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
+                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>福井県エリアに対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆株式会社第一環研の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>福井県</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>9:00〜17:00・土日祝定休</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>保証あり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆株式会社第一環研の口コミ</h4>
+                <a href="https://www.google.com/search?q=株式会社第一環研+ハチ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    日本ペストコントロール協会加盟で、プロの技術で安全に駆除してくれました。福井県内で探していたので助かりました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* ハチお助け本舗 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8">
+            <div className="mb-4">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="badge badge-lg">9</span>
+                <h3 className="text-2xl font-bold">ハチお助け本舗（ハチ駆除専門）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">ハチお助け本舗の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-base-content/80">
+                <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
+                <li>24時間365日受付で、最短受付から10分で現地到着</li>
+                <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg mb-3">◆ハチお助け本舗の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200">対応エリア</th>
+                      <td>全国対応（一部地域を除く）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">電話受付時間</th>
+                      <td>24時間365日・通話無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <td>ハチ専門</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">駆除最低料金</th>
+                      <td>スズメバチ 13,000円〜／アシナガバチ 8,800円〜／ミツバチ 10,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">保証期間</th>
+                      <td>作業後1週間以内の再発は無料対応</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">無料診断の有無</th>
+                      <td>相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200">支払い方法</th>
+                      <td>現金・クレジットカード・電子マネー</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg">◆ハチお助け本舗の口コミ</h4>
+                <a href="https://www.google.com/search?q=ハチお助け本舗+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    24時間365日対応で、深夜にハチに遭遇してパニックになったときもすぐに駆けつけてくれました。最短10分で来てくれるのは本当に助かります。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    全国対応なので、地方に住んでいる私でもすぐに来てもらえました。料金も作業前に見積もりしてくれて、明朗会計で安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-base-content/80">
+                    ハチ専門の業者さんなので、技術力が高く、安全かつ迅速に駆除してくれました。再発保証もあり、安心してお任せできました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
