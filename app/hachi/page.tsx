@@ -1195,7 +1195,7 @@ export default function HachiPage() {
                 <div className="card-body">
                   <h3 className="card-title text-2xl">{bee.name}</h3>
                   <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-base-content/70 mt-4">{bee.description}</p>
+                  <p className="text-gray-700 mt-4">{bee.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
                     {bee.features.map((feature, idx) => (
@@ -1224,7 +1224,7 @@ export default function HachiPage() {
                 <div className="card-body">
                   <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
                   <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-base-content/70">{step.description}</p>
+                  <p className="text-gray-700">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -1314,7 +1314,7 @@ export default function HachiPage() {
                   <tr key={idx}>
                     <td className="font-bold">{row.size}</td>
                     <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
+                    <td className="text-sm text-gray-700">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1351,7 +1351,7 @@ export default function HachiPage() {
                     </div>
                   </div>
                   <p className="font-bold text-primary mb-2">{season.activity}</p>
-                  <p className="text-base-content/70">{season.advice}</p>
+                  <p className="text-gray-700">{season.advice}</p>
                 </div>
               </div>
             ))}
@@ -1392,7 +1392,7 @@ export default function HachiPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でハチ駆除</h3>
-                  <p className="text-base-content/70 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>
