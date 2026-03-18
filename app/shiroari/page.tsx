@@ -98,22 +98,22 @@ export default function ShiroariPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">おすすめシロアリ駆除業者比較</h2>
           <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black">
+            <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200">項目</th>
+                  <th className="bg-base-200 text-black">項目</th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
                       <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害獣プロテック</strong>
+                      <strong className="text-black">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                       <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>駆除ザウルス</strong>
+                      <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
@@ -141,7 +141,7 @@ export default function ShiroariPage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200">対応エリア</th>
+                  <th className="bg-base-200 text-black">対応エリア</th>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
@@ -149,7 +149,7 @@ export default function ShiroariPage() {
                   <td className="text-center">◎ 全国対応</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200">電話受付時間</th>
+                  <th className="bg-base-200 text-black">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">6:00〜20:00</td>
@@ -157,7 +157,7 @@ export default function ShiroariPage() {
                   <td className="text-center">9:00〜18:00（365日）</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200">対応害虫・害獣</th>
+                  <th className="bg-base-200 text-black">対応害虫・害獣</th>
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害虫全般</td>
@@ -165,7 +165,7 @@ export default function ShiroariPage() {
                   <td className="text-center">シロアリ専門</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200">無料診断</th>
+                  <th className="bg-base-200 text-black">無料診断</th>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
@@ -173,7 +173,7 @@ export default function ShiroariPage() {
                   <td className="text-center">◎ 完全無料</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200">キャンセル</th>
+                  <th className="bg-base-200 text-black">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
                   <td className="text-center">○ 可能</td>
@@ -181,7 +181,7 @@ export default function ShiroariPage() {
                   <td className="text-center">△ 記載なし</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200">公式サイト</th>
+                  <th className="bg-base-200 text-black">公式サイト</th>
                   <td className="text-center">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
@@ -238,30 +238,30 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
+                <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200">対応エリア</th>
+                      <th className="bg-base-200 text-black">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">電話受付時間</th>
+                      <th className="bg-base-200 text-black">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-black">対応可能な害獣・害虫</th>
                       <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥・ムササビ・アナグマ・シロアリ・ハチ・その他害獣害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">保証期間</th>
+                      <th className="bg-base-200 text-black">保証期間</th>
                       <td>最長10年間</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">無料診断の有無</th>
+                      <th className="bg-base-200 text-black">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">支払い方法</th>
+                      <th className="bg-base-200 text-black">支払い方法</th>
                       <td>現金払い・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -332,34 +332,34 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
+                <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200">対応エリア</th>
+                      <th className="bg-base-200 text-black">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">電話受付時間</th>
+                      <th className="bg-base-200 text-black">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-black">対応可能な害獣・害虫</th>
                       <td>イタチ・テン・ネズミ・ハクビシン・アライグマ・コウモリ・アナグマ・トコジラミ・シロアリ・その他害獣害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">駆除最低料金</th>
+                      <th className="bg-base-200 text-black">駆除最低料金</th>
                       <td>ネズミ 9,680円〜／コウモリ 9,680円〜／ハクビシン 9,680円〜など</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">保証期間</th>
+                      <th className="bg-base-200 text-black">保証期間</th>
                       <td>最長10年間（施工内容により異なる）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">無料診断の有無</th>
+                      <th className="bg-base-200 text-black">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">支払い方法</th>
+                      <th className="bg-base-200 text-black">支払い方法</th>
                       <td>銀行振込・クレジットカード・電子マネー・QRコード決済</td>
                     </tr>
                   </tbody>
@@ -430,34 +430,34 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆街角害虫駆除相談所の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
+                <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200">対応エリア</th>
+                      <th className="bg-base-200 text-black">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">電話受付時間</th>
+                      <th className="bg-base-200 text-black">電話受付時間</th>
                       <td>6時〜20時・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-black">対応可能な害獣・害虫</th>
                       <td>シロアリ・ゴキブリ・ハチ・ムカデ・クモ など害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">駆除最低料金</th>
+                      <th className="bg-base-200 text-black">駆除最低料金</th>
                       <td>駆除基本料金1,100円/㎡～</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">保証期間</th>
+                      <th className="bg-base-200 text-black">保証期間</th>
                       <td>最長5年間（施工1年度に無料点検実施）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">無料診断の有無</th>
+                      <th className="bg-base-200 text-black">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">支払い方法</th>
+                      <th className="bg-base-200 text-black">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -528,34 +528,34 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆サンキョークリーンサービスの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
+                <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200">対応エリア</th>
+                      <th className="bg-base-200 text-black">対応エリア</th>
                       <td>東京都、埼玉県、千葉県、神奈川県、茨城県、栃木県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">電話受付時間</th>
+                      <th className="bg-base-200 text-black">電話受付時間</th>
                       <td>8:00〜20:00・年中無休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-black">対応可能な害獣・害虫</th>
                       <td>シロアリ専門</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">駆除最低料金</th>
+                      <th className="bg-base-200 text-black">駆除最低料金</th>
                       <td>2,566円〜／㎡</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">保証期間</th>
+                      <th className="bg-base-200 text-black">保証期間</th>
                       <td>最長5年間（定期点検1・3・5年目）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">無料診断の有無</th>
+                      <th className="bg-base-200 text-black">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">支払い方法</th>
+                      <th className="bg-base-200 text-black">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -626,34 +626,34 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆キャッツの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
+                <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200">対応エリア</th>
+                      <th className="bg-base-200 text-black">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">電話受付時間</th>
+                      <th className="bg-base-200 text-black">電話受付時間</th>
                       <td>365日対応・9時〜18時・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-black">対応可能な害獣・害虫</th>
                       <td>シロアリ専門</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">駆除最低料金</th>
+                      <th className="bg-base-200 text-black">駆除最低料金</th>
                       <td>880円/㎡～</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">保証期間</th>
+                      <th className="bg-base-200 text-black">保証期間</th>
                       <td>最長5年間（年に一度無料点検実施）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">無料診断の有無</th>
+                      <th className="bg-base-200 text-black">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200">支払い方法</th>
+                      <th className="bg-base-200 text-black">支払い方法</th>
                       <td>HPに記載なし</td>
                     </tr>
                   </tbody>
