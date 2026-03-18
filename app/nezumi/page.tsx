@@ -160,7 +160,7 @@ export default function NezumiPage() {
                 <div className="card-body">
                   <h3 className="card-title text-2xl">{type.name}</h3>
                   <div className={`badge ${type.color} badge-lg`}>{type.habitat}</div>
-                  <p className="text-base-content/70 mt-4">{type.description}</p>
+                  <p className="text-gray-700 mt-4">{type.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
                     {type.features.map((feature, idx) => (
@@ -223,7 +223,7 @@ export default function NezumiPage() {
                     <div className="badge badge-error badge-lg">{idx + 1}</div>
                     <h3 className="card-title text-xl">{item.title}</h3>
                   </div>
-                  <p className="text-base-content/70 mt-2">{item.description}</p>
+                  <p className="text-gray-700 mt-2">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -247,7 +247,7 @@ export default function NezumiPage() {
                   }`}>
                     効果: {method.effectiveness}
                   </div>
-                  <p className="text-base-content/70 mt-4">{method.description}</p>
+                  <p className="text-gray-700 mt-4">{method.description}</p>
                   
                   <div className="mt-4">
                     <h4 className="font-bold text-sm mb-2 text-success">メリット</h4>
@@ -303,13 +303,13 @@ export default function NezumiPage() {
                   <tr key={idx}>
                     <td className="font-bold">{row.type}</td>
                     <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
+                    <td className="text-sm text-gray-700">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-base-content/60 mt-4 text-center">
+          <p className="text-sm text-gray-700 mt-4 text-center">
             ※ 被害の程度や建物の構造、侵入口の数によって料金は変動します。
           </p>
         </div>
@@ -357,7 +357,7 @@ export default function NezumiPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でネズミ駆除</h3>
-                  <p className="text-base-content/70 text-sm">地域の料金相場と業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の料金相場と業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

@@ -145,7 +145,7 @@ export default function KoumoriPage() {
           <div className="card bg-white shadow-xl mb-8">
             <div className="card-body">
               <h3 className="card-title text-2xl">アブラコウモリ（イエコウモリ）</h3>
-              <p className="text-base-content/70">
+              <p className="text-gray-700">
                 日本の住宅に侵入する唯一のコウモリ。体長4〜6cm、体重5〜11g。
                 わずか1〜2cmの隙間があれば侵入可能。夜行性で、昼間は天井裏や壁の中で休息。
               </p>
@@ -168,7 +168,7 @@ export default function KoumoriPage() {
                   } badge-lg mx-auto`}>
                     深刻度: {damage.severity}
                   </div>
-                  <p className="text-base-content/70 mt-4 text-sm">{damage.description}</p>
+                  <p className="text-gray-700 mt-4 text-sm">{damage.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
                     {damage.examples.map((example, i) => (
@@ -197,7 +197,7 @@ export default function KoumoriPage() {
                     <div className="text-5xl">{point.icon}</div>
                     <h3 className="card-title text-xl">{point.title}</h3>
                   </div>
-                  <p className="text-base-content/70 mt-4">{point.description}</p>
+                  <p className="text-gray-700 mt-4">{point.description}</p>
                 </div>
               </div>
             ))}
@@ -227,7 +227,7 @@ export default function KoumoriPage() {
                 <div className="card-body">
                   <div className="badge badge-primary badge-lg mb-4">ステップ {method.step}</div>
                   <h3 className="card-title text-xl">{method.title}</h3>
-                  <p className="text-base-content/70">{method.description}</p>
+                  <p className="text-gray-700">{method.description}</p>
                 </div>
               </div>
             ))}
@@ -265,13 +265,13 @@ export default function KoumoriPage() {
                   <tr key={idx}>
                     <td className="font-bold">{row.item}</td>
                     <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
+                    <td className="text-sm text-gray-700">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-base-content/60 mt-4 text-center">
+          <p className="text-sm text-gray-700 mt-4 text-center">
             ※ 被害の程度や建物の構造により料金は変動します。侵入口の数が多い場合は追加費用が発生します。
           </p>
         </div>
@@ -322,7 +322,7 @@ export default function KoumoriPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でコウモリ駆除</h3>
-                  <p className="text-base-content/70 text-sm">法律知識のある専門業者情報</p>
+                  <p className="text-gray-700 text-sm">法律知識のある専門業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>
