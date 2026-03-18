@@ -238,7 +238,7 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -332,7 +332,7 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -430,7 +430,7 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆街角害虫駆除相談所の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -528,7 +528,7 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆サンキョークリーンサービスの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -626,7 +626,7 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆キャッツの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -782,7 +782,7 @@ export default function ShiroariPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">料金相場（2026年最新版）</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
+            <table className="table w-full bg-white text-black shadow-xl">
               <thead>
                 <tr>
                   <th>地域</th>

@@ -329,7 +329,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社三共消毒の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -427,7 +427,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社アサンテの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -525,7 +525,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆有限会社北日本消毒の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -623,7 +623,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社あい営繕の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -721,7 +721,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社ミヤコ消毒の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -819,7 +819,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社こだまの基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -917,7 +917,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆大洋防疫研究所の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -1015,7 +1015,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆株式会社第一環研の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -1113,7 +1113,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">◆ハチお助け本舗の基本情報</h4>
               <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
                       <th className="bg-base-200">対応エリア</th>
@@ -1301,7 +1301,7 @@ export default function HachiPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">ハチ駆除の料金相場</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
+            <table className="table w-full bg-white text-black shadow-xl">
               <thead>
                 <tr>
                   <th>巣のサイズ・場所</th>
