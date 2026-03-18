@@ -135,7 +135,7 @@ export default function HachiPage() {
           <h2 className="heading-primary text-center mb-8">ハチ駆除業者の比較</h2>
           
           <div className="overflow-x-auto">
-            <table className="table table-zebra w-full">
+            <table className="table w-full bg-white text-black">
               <thead>
                 <tr>
                   <th className="bg-base-200"></th>

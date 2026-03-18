@@ -98,7 +98,7 @@ export default function ShiroariPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">おすすめシロアリ駆除業者比較</h2>
           <div className="overflow-x-auto">
-            <table className="table w-full">
+            <table className="table w-full bg-white text-black">
               <thead>
                 <tr>
                   <th className="bg-base-200">項目</th>
