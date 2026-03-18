@@ -706,7 +706,7 @@ export default function ShiroariPage() {
             <div className="card bg-white shadow-xl">
               <div className="card-body">
                 <h3 className="card-title text-xl">ヤマトシロアリ</h3>
-                <p className="text-base-content/70">
+                <p className="text-gray-700">
                   日本全国に分布する最も一般的なシロアリ。湿った木材を好み、
                   床下や浴室周辺で被害が多い。
                 </p>
@@ -716,7 +716,7 @@ export default function ShiroariPage() {
             <div className="card bg-white shadow-xl">
               <div className="card-body">
                 <h3 className="card-title text-xl">イエシロアリ</h3>
-                <p className="text-base-content/70">
+                <p className="text-gray-700">
                   主に温暖な地域に分布。巨大な巣を作り、被害が深刻化しやすい。
                   水を運ぶ能力があり、建物全体に被害が広がる。
                 </p>
@@ -745,7 +745,7 @@ export default function ShiroariPage() {
               <div key={method.name} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-2xl text-primary">{method.name}</h3>
-                  <p className="text-base-content/70 mb-4">{method.description}</p>
+                  <p className="text-gray-700 mb-4">{method.description}</p>
                   
                   <div className="mb-4">
                     <h4 className="font-bold text-lg text-black mb-2 text-success">メリット</h4>
@@ -767,7 +767,7 @@ export default function ShiroariPage() {
 
                   <div className="divider"></div>
                   <div className="text-center">
-                    <p className="text-sm text-base-content/60">料金目安</p>
+                    <p className="text-sm text-gray-700">料金目安</p>
                     <p className="text-2xl font-bold text-primary">{method.price}</p>
                   </div>
                 </div>
@@ -795,13 +795,13 @@ export default function ShiroariPage() {
                   <tr key={row.area}>
                     <td className="font-bold">{row.area}</td>
                     <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
+                    <td className="text-sm text-gray-700">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-base-content/60 mt-4 text-center">
+          <p className="text-sm text-gray-700 mt-4 text-center">
             ※ 30坪の住宅で計算すると、全国平均で30万円〜45万円程度が目安です。
           </p>
         </div>
@@ -840,7 +840,7 @@ export default function ShiroariPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でシロアリ駆除</h3>
-                  <p className="text-base-content/70 text-sm">地域の料金相場と業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の料金相場と業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>
@@ -861,7 +861,7 @@ export default function ShiroariPage() {
                 <input type="checkbox" />
                 <div className="collapse-title text-xl font-medium">{faq.q}</div>
                 <div className="collapse-content">
-                  <p className="text-base-content/70">{faq.a}</p>
+                  <p className="text-gray-700">{faq.a}</p>
                 </div>
               </div>
             ))}
