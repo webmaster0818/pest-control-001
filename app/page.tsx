@@ -62,96 +62,96 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">おすすめ害虫駆除業者比較</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra w-full">
+            <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th>業者名</th>
-                  <th>対応エリア</th>
-                  <th>電話受付時間</th>
-                  <th>対応害虫・害獣</th>
-                  <th>無料診断</th>
-                  <th>キャンセル</th>
-                  <th>公式サイト</th>
+                  <th className="bg-base-200 text-white border border-gray-300">業者名</th>
+                  <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                  <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                  <th className="bg-base-200 text-white border border-gray-300">対応害虫・害獣</th>
+                  <th className="bg-base-200 text-white border border-gray-300">無料診断</th>
+                  <th className="bg-base-200 text-white border border-gray-300">キャンセル</th>
+                  <th className="bg-base-200 text-white border border-gray-300">公式サイト</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>
+                  <td className="border border-gray-300">
                     <div className="flex items-center gap-2">
                       <span className="badge badge-warning">👑金</span>
                       <strong>害獣プロテック</strong>
                     </div>
                   </td>
-                  <td>◎ 東京全域</td>
-                  <td>24時間365日</td>
-                  <td>害獣・害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
+                  <td className="border border-gray-300">◎ 東京全域</td>
+                  <td className="border border-gray-300">24時間365日</td>
+                  <td className="border border-gray-300">害獣・害虫全般</td>
+                  <td className="border border-gray-300">◎ 完全無料</td>
+                  <td className="border border-gray-300">△ 記載なし</td>
+                  <td className="border border-gray-300">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="border border-gray-300">
                     <div className="flex items-center gap-2">
                       <span className="badge badge-accent">👑銀</span>
                       <strong>駆除ザウルス</strong>
                     </div>
                   </td>
-                  <td>◎ 東京全域</td>
-                  <td>24時間365日</td>
-                  <td>害獣・害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>○ 可能</td>
-                  <td>
+                  <td className="border border-gray-300">◎ 東京全域</td>
+                  <td className="border border-gray-300">24時間365日</td>
+                  <td className="border border-gray-300">害獣・害虫全般</td>
+                  <td className="border border-gray-300">◎ 完全無料</td>
+                  <td className="border border-gray-300">○ 可能</td>
+                  <td className="border border-gray-300">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="border border-gray-300">
                     <div className="flex items-center gap-2">
                       <span className="badge badge-neutral">👑銅</span>
                       <strong>街角害虫駆除相談所</strong>
                     </div>
                   </td>
-                  <td>◎ 東京全域</td>
-                  <td>6:00〜20:00</td>
-                  <td>害虫全般</td>
-                  <td>◎ 完全無料</td>
-                  <td>○ 可能</td>
-                  <td>
+                  <td className="border border-gray-300">◎ 東京全域</td>
+                  <td className="border border-gray-300">6:00〜20:00</td>
+                  <td className="border border-gray-300">害虫全般</td>
+                  <td className="border border-gray-300">◎ 完全無料</td>
+                  <td className="border border-gray-300">○ 可能</td>
+                  <td className="border border-gray-300">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="border border-gray-300">
                     <div className="flex items-center gap-2">
                       <span className="badge">4</span>
                       <strong>ラッター</strong>
                     </div>
                   </td>
-                  <td>○ 23区＋14市</td>
-                  <td>9:00〜21:00</td>
-                  <td>ネズミ</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
+                  <td className="border border-gray-300">○ 23区＋14市</td>
+                  <td className="border border-gray-300">9:00〜21:00</td>
+                  <td className="border border-gray-300">ネズミ</td>
+                  <td className="border border-gray-300">◎ 完全無料</td>
+                  <td className="border border-gray-300">△ 記載なし</td>
+                  <td className="border border-gray-300">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td className="border border-gray-300">
                     <div className="flex items-center gap-2">
                       <span className="badge">5</span>
                       <strong>キャッツ</strong>
                     </div>
                   </td>
-                  <td>◎ 東京全域</td>
-                  <td>9:00〜18:00（365日）</td>
-                  <td>シロアリ</td>
-                  <td>◎ 完全無料</td>
-                  <td>△ 記載なし</td>
-                  <td>
+                  <td className="border border-gray-300">◎ 東京全域</td>
+                  <td className="border border-gray-300">9:00〜18:00（365日）</td>
+                  <td className="border border-gray-300">シロアリ</td>
+                  <td className="border border-gray-300">◎ 完全無料</td>
+                  <td className="border border-gray-300">△ 記載なし</td>
+                  <td className="border border-gray-300">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
                 </tr>
@@ -195,7 +195,7 @@ export default function Home() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-2xl">{area.name}</h3>
-                  <p className="text-base-content/70">地域別の料金相場と業者情報</p>
+                  <p className="text-gray-700">地域別の料金相場と業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>
@@ -220,7 +220,7 @@ export default function Home() {
                     {String(index + 1).padStart(2, "0")}
                   </div>
                   <h3 className="card-title text-xl mb-2">{feature.title}</h3>
-                  <p className="text-base-content/70">{feature.description}</p>
+                  <p className="text-gray-700">{feature.description}</p>
                 </div>
               </div>
             ))}
