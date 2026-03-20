@@ -209,43 +209,43 @@ export default function GokiburiPage() {
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white">項目</th>
-                  <th className="text-center">
+                  <th className="bg-base-200 text-white border border-gray-300">項目</th>
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
                       <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害虫の生活救急車" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫の生活救急車</strong>
                     </div>
                   </th>
-                  <th className="text-center">
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                       <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="すまサポ" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">すまサポ</strong>
                     </div>
                   </th>
-                  <th className="text-center">
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                       <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害虫獣SOS" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫獣SOS</strong>
                     </div>
                   </th>
-                  <th className="text-center">
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
                       <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害虫駆除屋" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫駆除屋</strong>
                     </div>
                   </th>
-                  <th className="text-center">
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
                       <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="リベルタコントロール" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">リベルタコントロール</strong>
                     </div>
                   </th>
-                  <th className="text-center">
+                  <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
                       <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
@@ -256,40 +256,40 @@ export default function GokiburiPage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200 text-white">対応エリア</th>
-                  <td className="text-center">全国</td>
-                  <td className="text-center">全国（一部除く）</td>
-                  <td className="text-center">関東</td>
-                  <td className="text-center">全国</td>
-                  <td className="text-center">関東</td>
-                  <td className="text-center">全国</td>
+                  <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                  <td className="text-center border border-gray-300">全国</td>
+                  <td className="text-center border border-gray-300">全国（一部除く）</td>
+                  <td className="text-center border border-gray-300">関東</td>
+                  <td className="text-center border border-gray-300">全国</td>
+                  <td className="text-center border border-gray-300">関東</td>
+                  <td className="text-center border border-gray-300">全国</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">電話受付時間</th>
-                  <td className="text-center">6時〜25時</td>
-                  <td className="text-center">24時間365日</td>
-                  <td className="text-center">24時間365日</td>
-                  <td className="text-center">24時間365日</td>
-                  <td className="text-center">24時間365日</td>
-                  <td className="text-center">24時間365日</td>
+                  <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                  <td className="text-center border border-gray-300">6時〜25時</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">料金目安</th>
-                  <td className="text-center text-primary font-bold">4,200円〜</td>
-                  <td className="text-center text-primary font-bold">初回5,000円</td>
-                  <td className="text-center text-primary font-bold">5,000円〜</td>
-                  <td className="text-center text-primary font-bold">8,800円〜</td>
-                  <td className="text-center text-primary font-bold">12,000円〜</td>
-                  <td className="text-center text-primary font-bold">14,300円〜</td>
+                  <th className="bg-base-200 text-white border border-gray-300">料金目安</th>
+                  <td className="text-center text-primary font-bold border border-gray-300">4,200円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">初回5,000円</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">5,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">8,800円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">12,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">14,300円〜</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">特徴</th>
-                  <td className="text-sm">東証1部上場企業<br/>年中無休<br/>即日対応可能</td>
-                  <td className="text-sm">戸建て住宅専用<br/>築10年以上対象<br/>24時間受付</td>
-                  <td className="text-sm">最短15分到着<br/>関東最安値保証<br/>即日対応</td>
-                  <td className="text-sm">年間3万件実績<br/>見積無料<br/>全国対応</td>
-                  <td className="text-sm">2カ月保証<br/>侵入口封鎖<br/>関東専門</td>
-                  <td className="text-sm">1年保証<br/>追加料金なし<br/>24時間対応</td>
+                  <th className="bg-base-200 text-white border border-gray-300">特徴</th>
+                  <td className="text-sm border border-gray-300">東証1部上場企業<br/>年中無休<br/>即日対応可能</td>
+                  <td className="text-sm border border-gray-300">戸建て住宅専用<br/>築10年以上対象<br/>24時間受付</td>
+                  <td className="text-sm border border-gray-300">最短15分到着<br/>関東最安値保証<br/>即日対応</td>
+                  <td className="text-sm border border-gray-300">年間3万件実績<br/>見積無料<br/>全国対応</td>
+                  <td className="text-sm border border-gray-300">2カ月保証<br/>侵入口封鎖<br/>関東専門</td>
+                  <td className="text-sm border border-gray-300">1年保証<br/>追加料金なし<br/>24時間対応</td>
                 </tr>
               </tbody>
             </table>
