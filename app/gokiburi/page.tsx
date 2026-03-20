@@ -127,84 +127,10 @@ export default function GokiburiPage() {
         </div>
       </section>
 
-      {/* ゴキブリの種類と生態 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ゴキブリの種類と生態</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {types.map((type) => (
-              <div key={type.name} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-2xl">{type.name}</h3>
-                  <div className={`badge ${type.color} badge-lg`}>{type.habitat}</div>
-                  <p className="text-gray-700 mt-4">{type.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {type.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 自力駆除 vs 業者駆除 */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">自力駆除 vs 業者駆除</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {comparison.map((item, idx) => (
-              <div key={idx} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-2xl text-primary">{item.method}</h3>
-                  <div className="badge badge-lg badge-outline">{item.cost}</div>
-                  <p className="text-gray-700 mt-4 font-semibold">{item.effectiveness}</p>
-                  
-                  <div className="mt-4">
-                    <h4 className="font-bold text-lg mb-2 text-success">メリット</h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      {item.pros.map((pro, i) => (
-                        <li key={i} className="text-sm">{pro}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="mt-4">
-                    <h4 className="font-bold text-lg mb-2 text-error">デメリット</h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      {item.cons.map((con, i) => (
-                        <li key={i} className="text-sm">{con}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="divider"></div>
-                  <div className="alert alert-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <div>
-                      <h4 className="font-bold text-sm">おすすめ：</h4>
-                      <p className="text-xs">{item.recommended}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* おすすめ業者比較 */}
+      {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">おすすめゴキブリ駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">おすすめゴキブリ駆除業者比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -294,181 +220,669 @@ export default function GokiburiPage() {
               </tbody>
             </table>
           </div>
+
+          <h2 className="heading-primary text-center mt-16 mb-8">おすすめゴキブリ駆除業者 詳細紹介</h2>
+
+          {/* 1. 害虫の生活救急車 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-warning badge-lg">👑 1</span>
+                <h3 className="text-2xl font-bold text-black">害虫の生活救急車（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害虫の生活救急車" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害虫の生活救急車の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>東証1部上場企業が運営する大手駆除サービス</li>
+                <li>全国対応で即日施工が可能、年中無休</li>
+                <li>業界最安値に挑戦、コストパフォーマンスに優れている</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫の生活救急車の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">6時〜25時・年中無休</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">4,200円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">保証あり（詳細は要確認）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害虫の生活救急車の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫の生活救急車+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    東証1部上場企業だけあって、対応が迅速で丁寧でした。ゴキブリの侵入口を特定して徹底的に封鎖していただき、再発もありません。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    年中無休で即日対応していただけました。見積もりも明確で、追加料金もなく安心してお任せできました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    業界最安値に挑戦しているだけあって、コスパが最高でした。施工後のアフターフォローもしっかりしています。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 2. すまサポ */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <h3 className="text-2xl font-bold text-black">すまサポ（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="すまサポ" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">すまサポの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>戸建て住宅に特化した駆除サービス</li>
+                <li>築10年以上の住宅が対象、初回5,000円からの明確な料金設定</li>
+                <li>24時間365日受付で緊急時にも対応可能</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆すまサポの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国（一部対象外）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">初回5,000円</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆すまサポの口コミ</h4>
+                <a href="https://www.google.com/search?q=すまサポ+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    戸建て住宅専用ということで、我が家の構造に合わせた対策をしてくれました。初回5,000円で明確な料金設定も安心でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    24時間365日受付で、夜中に発見したゴキブリにも翌朝すぐに対応していただけました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    築15年の我が家でしたが、専門スタッフが丁寧に調査・駆除してくれました。再発防止のアドバイスも助かりました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 3. 害虫獣SOS */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <h3 className="text-2xl font-bold text-black">害虫獣SOS（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害虫獣SOS" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害虫獣SOSの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>関東エリアに特化した駆除専門業者</li>
+                <li>最短15分での到着を実現、緊急時の対応に強み</li>
+                <li>関東最安値保証で価格面でも安心</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫獣SOSの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東（東京・神奈川・千葉・埼玉）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">5,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害虫獣SOSの口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫獣SOS+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    最短15分で来ていただけて本当に助かりました。緊急時の対応が素早く、即日駆除していただけました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    関東最安値保証ということで、他社と比較しても価格が安かったです。施工の質も高く満足しています。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    関東エリアに特化しているだけあって、地域の特性を理解した対策をしてくれました。アフターケアも丁寧でした。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 4. 害虫駆除屋 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">4</span>
+                <h3 className="text-2xl font-bold text-black">害虫駆除屋（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害虫駆除屋" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除屋の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>年間3万件以上の施工実績を誇る大手駆除業者</li>
+                <li>全国対応で見積もりは無料</li>
+                <li>豊富な経験に基づく確実な施工が魅力</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除屋の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">8,800円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除屋の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除屋+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    年間3万件の施工実績があるだけあって、経験豊富なスタッフが来てくれました。的確な診断と施工で安心できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    全国対応で見積もりも無料でした。料金も明確で、追加費用もなく信頼できる業者でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    豊富な実績に基づいた確実な施工で、ゴキブリが完全にいなくなりました。アフターフォローも丁寧でした。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 5. リベルタコントロール */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">5</span>
+                <h3 className="text-2xl font-bold text-black">リベルタコントロール（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="リベルタコントロール" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">リベルタコントロールの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>関東エリアに特化した駆除専門業者</li>
+                <li>2カ月間の再発防止保証付き</li>
+                <li>侵入口の徹底封鎖を含む根本的な解決を提供</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆リベルタコントロールの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東（東京・神奈川・千葉・埼玉）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">12,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">2カ月間の再発防止保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆リベルタコントロールの口コミ</h4>
+                <a href="https://www.google.com/search?q=リベルタコントロール+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    2カ月間の再発防止保証があり、安心してお願いできました。侵入口の徹底封鎖で、その後ゴキブリを見ていません。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    関東エリア専門ということで、地域の気候や建物の特性に合わせた対策をしてくれました。根本的な解決ができました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    侵入口の封鎖技術が高く、薬剤だけに頼らない総合的な駆除をしてくれました。保証期間中のフォローも手厚かったです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 6. 害虫駆除110番 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">6</span>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（ゴキブリ駆除）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>全国対応の大手駆除業者</li>
+                <li>1年間の長期保証付き</li>
+                <li>追加料金は一切なしの明朗会計、24時間365日対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫</th>
+                      <td className="border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">14,300円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">1年間の長期保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除110番+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    1年間の長期保証があり、長期的に安心できました。追加料金もなく、明朗会計で信頼できる業者でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    24時間365日対応で、深夜に発見したゴキブリにも翌日すぐに対応していただけました。全国対応なので安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    大手業者ならではの安心感がありました。施工後のフォローも丁寧で、1年保証期間中は何度でも相談できました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* おすすめゴキブリ駆除業者 */}
+      {/* ゴキブリの種類と生態 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">おすすめゴキブリ駆除業者 詳細</h2>
-          <div className="space-y-8">
-            {/* 1. 害虫の生活救急車 */}
-            <div className="card bg-white shadow-xl border-2 border-warning company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-warning badge-lg">👑 1位</span>
-                  <h3 className="card-title text-2xl">害虫の生活救急車</h3>
+          <h2 className="heading-primary text-center">ゴキブリの種類と生態</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {types.map((type) => (
+              <div key={type.name} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-2xl">{type.name}</h3>
+                  <div className={`badge ${type.color} badge-lg`}>{type.habitat}</div>
+                  <p className="text-gray-700 mt-4">{type.description}</p>
+                  <div className="divider"></div>
+                  <ul className="space-y-2">
+                    {type.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-primary">•</span>
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 4,200円〜</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 全国</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 6時〜25時</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>東証1部上場企業運営で安心</li>
-                      <li>年中無休・即日対応可能</li>
-                      <li>業界最安値に挑戦</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  東証1部上場企業が運営する大手駆除サービス。全国対応で即日施工が可能。業界最安値に挑戦しており、コストパフォーマンスに優れている。
-                </p>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* 2. すまサポ */}
-            <div className="card bg-white shadow-xl border-2 border-base-300 company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2位</span>
-                  <h3 className="card-title text-2xl">すまサポ</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 初回5,000円</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 全国（一部対象外）</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 24時間365日</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>戸建て住宅専用サービス</li>
-                      <li>築10年以上が対象</li>
-                      <li>24時間いつでも受付</li>
+      {/* 自力駆除 vs 業者駆除 */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">自力駆除 vs 業者駆除</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {comparison.map((item, idx) => (
+              <div key={idx} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-2xl text-primary">{item.method}</h3>
+                  <div className="badge badge-lg badge-outline">{item.cost}</div>
+                  <p className="text-gray-700 mt-4 font-semibold">{item.effectiveness}</p>
+                  
+                  <div className="mt-4">
+                    <h4 className="font-bold text-lg mb-2 text-success">メリット</h4>
+                    <ul className="list-disc list-inside space-y-1">
+                      {item.pros.map((pro, i) => (
+                        <li key={i} className="text-sm">{pro}</li>
+                      ))}
                     </ul>
                   </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  戸建て住宅に特化した駆除サービス。築10年以上の住宅が対象で、初回5,000円からの明確な料金設定。24時間365日受付で緊急時にも対応可能。
-                </p>
-              </div>
-            </div>
 
-            {/* 3. 害虫獣SOS */}
-            <div className="card bg-white shadow-xl border-2 border-base-300 company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3位</span>
-                  <h3 className="card-title text-2xl">害虫獣SOS</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 5,000円〜</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 関東</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 24時間365日</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>最短15分で到着</li>
-                      <li>関東エリア最安値保証</li>
-                      <li>即日対応可能</li>
+                  <div className="mt-4">
+                    <h4 className="font-bold text-lg mb-2 text-error">デメリット</h4>
+                    <ul className="list-disc list-inside space-y-1">
+                      {item.cons.map((con, i) => (
+                        <li key={i} className="text-sm">{con}</li>
+                      ))}
                     </ul>
                   </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  関東エリアに特化した駆除専門業者。最短15分での到着を実現し、緊急時の対応に強み。関東最安値保証で価格面でも安心。
-                </p>
-              </div>
-            </div>
 
-            {/* 4. 害虫駆除屋 */}
-            <div className="card bg-white shadow-xl border-2 border-base-300 company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-lg">4位</span>
-                  <h3 className="card-title text-2xl">害虫駆除屋</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 8,800円〜</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 全国</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 24時間365日</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>年間3万件の施工実績</li>
-                      <li>見積もり無料</li>
-                      <li>全国対応</li>
-                    </ul>
+                  <div className="divider"></div>
+                  <div className="alert alert-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                      <h4 className="font-bold text-sm">おすすめ：</h4>
+                      <p className="text-xs">{item.recommended}</p>
+                    </div>
                   </div>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
-                  年間3万件以上の施工実績を誇る大手駆除業者。全国対応で見積もりは無料。豊富な経験に基づく確実な施工が魅力。
-                </p>
               </div>
-            </div>
-
-            {/* 5. リベルタコントロール */}
-            <div className="card bg-white shadow-xl border-2 border-base-300 company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-lg">5位</span>
-                  <h3 className="card-title text-2xl">リベルタコントロール</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 12,000円〜</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 関東（東京・神奈川・千葉・埼玉）</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 24時間365日</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>2カ月間の再発防止保証</li>
-                      <li>侵入口の徹底封鎖</li>
-                      <li>関東エリア専門</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  関東エリアに特化した駆除専門業者。2カ月間の再発防止保証付きで、侵入口の徹底封鎖を含む根本的な解決を提供。
-                </p>
-              </div>
-            </div>
-
-            {/* 6. 害虫駆除110番 */}
-            <div className="card bg-white shadow-xl border-2 border-base-300 company-detail">
-              <div className="card-body">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="badge badge-lg">6位</span>
-                  <h3 className="card-title text-2xl">害虫駆除110番</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>料金:</strong> 14,300円〜</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>対応エリア:</strong> 全国</p>
-                    <p className="text-sm text-gray-700 mb-2"><strong>電話受付:</strong> 24時間365日</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-700 mb-2"><strong>特徴:</strong></p>
-                    <ul className="list-disc list-inside text-sm text-gray-700">
-                      <li>1年間の長期保証</li>
-                      <li>追加料金一切なし</li>
-                      <li>24時間対応</li>
-                    </ul>
-                  </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">
-                  全国対応の大手駆除業者。1年間の長期保証付きで、追加料金は一切なしの明朗会計。24時間365日対応で緊急時にも安心。
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
