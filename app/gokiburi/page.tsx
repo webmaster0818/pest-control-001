@@ -892,26 +892,26 @@ export default function GokiburiPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">ゴキブリ駆除の料金相場</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
+            <table className="table bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
-                  <th>物件タイプ</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
+                  <th className="bg-base-200 text-white border border-gray-300">物件タイプ</th>
+                  <th className="bg-base-200 text-white border border-gray-300">料金相場</th>
+                  <th className="bg-base-200 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
               <tbody>
                 {priceTable.map((row, idx) => (
                   <tr key={idx}>
-                    <td className="font-bold">{row.type}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
+                    <td className="font-bold border border-gray-300">{row.type}</td>
+                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
+                    <td className="text-sm border border-gray-300">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-sm text-gray-700 mt-4 text-center">
+          <p className="text-sm text-gray-300 mt-4 text-center">
             ※ 被害の程度や建物の構造によって料金は変動します。複数の業者から見積もりを取ることをおすすめします。
           </p>
         </div>
