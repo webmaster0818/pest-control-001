@@ -60,100 +60,81 @@ export default function Home() {
       {/* おすすめ業者比較 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">おすすめ害虫駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">おすすめ害虫駆除業者比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white border border-gray-300">業者名</th>
-                  <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
-                  <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
-                  <th className="bg-base-200 text-white border border-gray-300">対応害虫・害獣</th>
-                  <th className="bg-base-200 text-white border border-gray-300">無料診断</th>
-                  <th className="bg-base-200 text-white border border-gray-300">キャンセル</th>
-                  <th className="bg-base-200 text-white border border-gray-300">公式サイト</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">項目</th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害獣プロテック</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">駆除ザウルス</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">街角害虫駆除相談所</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">4</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">ラッター</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">5</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="キャッツ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">キャッツ</strong>
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300">
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-warning">👑金</span>
-                      <strong>害獣プロテック</strong>
-                    </div>
-                  </td>
-                  <td className="border border-gray-300">◎ 東京全域</td>
-                  <td className="border border-gray-300">24時間365日</td>
-                  <td className="border border-gray-300">害獣・害虫全般</td>
-                  <td className="border border-gray-300">◎ 完全無料</td>
-                  <td className="border border-gray-300">△ 記載なし</td>
-                  <td className="border border-gray-300">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
+                  <td className="text-center bg-white text-black border border-gray-300">関東・東北・関西・東海・北陸・中国・九州</td>
+                  <td className="text-center bg-white text-black border border-gray-300">全国（北海道・沖縄除く）</td>
+                  <td className="text-center bg-white text-black border border-gray-300">東京全域</td>
+                  <td className="text-center bg-white text-black border border-gray-300">関東・東海・関西・中国・九州</td>
+                  <td className="text-center bg-white text-black border border-gray-300">東京全域</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300">
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-accent">👑銀</span>
-                      <strong>駆除ザウルス</strong>
-                    </div>
-                  </td>
-                  <td className="border border-gray-300">◎ 東京全域</td>
-                  <td className="border border-gray-300">24時間365日</td>
-                  <td className="border border-gray-300">害獣・害虫全般</td>
-                  <td className="border border-gray-300">◎ 完全無料</td>
-                  <td className="border border-gray-300">○ 可能</td>
-                  <td className="border border-gray-300">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
+                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
+                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
+                  <td className="text-center bg-white text-black border border-gray-300">6:00〜20:00</td>
+                  <td className="text-center bg-white text-black border border-gray-300">要確認</td>
+                  <td className="text-center bg-white text-black border border-gray-300">9:00〜18:00（365日）</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300">
-                    <div className="flex items-center gap-2">
-                      <span className="badge badge-neutral">👑銅</span>
-                      <strong>街角害虫駆除相談所</strong>
-                    </div>
-                  </td>
-                  <td className="border border-gray-300">◎ 東京全域</td>
-                  <td className="border border-gray-300">6:00〜20:00</td>
-                  <td className="border border-gray-300">害虫全般</td>
-                  <td className="border border-gray-300">◎ 完全無料</td>
-                  <td className="border border-gray-300">○ 可能</td>
-                  <td className="border border-gray-300">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金目安</th>
+                  <td className="text-center text-primary font-bold bg-white border border-gray-300">状況により変動</td>
+                  <td className="text-center text-primary font-bold bg-white border border-gray-300">25,000円〜</td>
+                  <td className="text-center text-primary font-bold bg-white border border-gray-300">要見積もり</td>
+                  <td className="text-center text-primary font-bold bg-white border border-gray-300">10,000円〜</td>
+                  <td className="text-center text-primary font-bold bg-white border border-gray-300">要見積もり</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300">
-                    <div className="flex items-center gap-2">
-                      <span className="badge">4</span>
-                      <strong>ラッター</strong>
-                    </div>
-                  </td>
-                  <td className="border border-gray-300">○ 23区＋14市</td>
-                  <td className="border border-gray-300">9:00〜21:00</td>
-                  <td className="border border-gray-300">ネズミ</td>
-                  <td className="border border-gray-300">◎ 完全無料</td>
-                  <td className="border border-gray-300">△ 記載なし</td>
-                  <td className="border border-gray-300">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300">
-                    <div className="flex items-center gap-2">
-                      <span className="badge">5</span>
-                      <strong>キャッツ</strong>
-                    </div>
-                  </td>
-                  <td className="border border-gray-300">◎ 東京全域</td>
-                  <td className="border border-gray-300">9:00〜18:00（365日）</td>
-                  <td className="border border-gray-300">シロアリ</td>
-                  <td className="border border-gray-300">◎ 完全無料</td>
-                  <td className="border border-gray-300">△ 記載なし</td>
-                  <td className="border border-gray-300">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
+                  <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
+                  <td className="text-sm bg-white text-black border border-gray-300">最長10年保証</td>
+                  <td className="text-sm bg-white text-black border border-gray-300">最長10年保証</td>
+                  <td className="text-sm bg-white text-black border border-gray-300">要確認</td>
+                  <td className="text-sm bg-white text-black border border-gray-300">最長5年保証</td>
+                  <td className="text-sm bg-white text-black border border-gray-300">要確認</td>
                 </tr>
               </tbody>
             </table>
