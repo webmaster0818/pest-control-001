@@ -101,7 +101,7 @@ export default function ShiroariPage() {
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white">項目</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">項目</th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
@@ -141,7 +141,7 @@ export default function ShiroariPage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200 text-white">対応エリア</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">◎ 全国対応</td>
@@ -149,7 +149,7 @@ export default function ShiroariPage() {
                   <td className="text-center">◎ 全国対応</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">電話受付時間</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">6:00〜20:00</td>
@@ -157,7 +157,7 @@ export default function ShiroariPage() {
                   <td className="text-center">9:00〜18:00（365日）</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">対応害虫・害獣</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応害虫・害獣</th>
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害獣・害虫全般</td>
                   <td className="text-center">害虫全般</td>
@@ -165,7 +165,7 @@ export default function ShiroariPage() {
                   <td className="text-center">シロアリ専門</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">無料診断</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断</th>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
@@ -173,7 +173,7 @@ export default function ShiroariPage() {
                   <td className="text-center">◎ 完全無料</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">キャンセル</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
                   <td className="text-center">○ 可能</td>
@@ -181,7 +181,7 @@ export default function ShiroariPage() {
                   <td className="text-center">△ 記載なし</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white">公式サイト</th>
+                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">公式サイト</th>
                   <td className="text-center">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
@@ -241,27 +241,27 @@ export default function ShiroariPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white">対応エリア</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">電話受付時間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥・ムササビ・アナグマ・シロアリ・ハチ・その他害獣害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">保証期間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
                       <td>最長10年間</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">無料診断の有無</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">支払い方法</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
                       <td>現金払い・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -335,31 +335,31 @@ export default function ShiroariPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white">対応エリア</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">電話受付時間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
                       <td>イタチ・テン・ネズミ・ハクビシン・アライグマ・コウモリ・アナグマ・トコジラミ・シロアリ・その他害獣害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">駆除最低料金</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
                       <td>ネズミ 9,680円〜／コウモリ 9,680円〜／ハクビシン 9,680円〜など</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">保証期間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
                       <td>最長10年間（施工内容により異なる）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">無料診断の有無</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">支払い方法</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
                       <td>銀行振込・クレジットカード・電子マネー・QRコード決済</td>
                     </tr>
                   </tbody>
@@ -433,31 +433,31 @@ export default function ShiroariPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white">対応エリア</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">電話受付時間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                       <td>6時〜20時・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
                       <td>シロアリ・ゴキブリ・ハチ・ムカデ・クモ など害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">駆除最低料金</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
                       <td>駆除基本料金1,100円/㎡～</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">保証期間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
                       <td>最長5年間（施工1年度に無料点検実施）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">無料診断の有無</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">支払い方法</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -531,31 +531,31 @@ export default function ShiroariPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white">対応エリア</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                       <td>東京都、埼玉県、千葉県、神奈川県、茨城県、栃木県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">電話受付時間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                       <td>8:00〜20:00・年中無休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
                       <td>シロアリ専門</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">駆除最低料金</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
                       <td>2,566円〜／㎡</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">保証期間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
                       <td>最長5年間（定期点検1・3・5年目）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">無料診断の有無</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">支払い方法</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -629,31 +629,31 @@ export default function ShiroariPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white">対応エリア</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
                       <td>全国対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">電話受付時間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
                       <td>365日対応・9時〜18時・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">対応可能な害獣・害虫</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
                       <td>シロアリ専門</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">駆除最低料金</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
                       <td>880円/㎡～</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">保証期間</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
                       <td>最長5年間（年に一度無料点検実施）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">無料診断の有無</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white">支払い方法</th>
+                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
                       <td>HPに記載なし</td>
                     </tr>
                   </tbody>
