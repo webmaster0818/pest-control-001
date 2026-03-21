@@ -187,11 +187,11 @@ export default function TokyoPage() {
                     <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
                     <div className="text-5xl">{pest.icon}</div>
                     <div className="flex-1">
-                      <h3 className="card-title text-2xl mb-2">{pest.name}</h3>
-                      <p className="text-base-content/70 mb-2">{pest.description}</p>
+                      <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
+                      <p className="text-gray-700 mb-2">{pest.description}</p>
                       <div className="flex items-center gap-2 text-sm">
                         <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-base-content/60">{pest.areas}</span>
+                        <span className="text-gray-700">{pest.areas}</span>
                       </div>
                       <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
                         {pest.name}駆除について詳しく →
@@ -205,27 +205,1149 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 東京の害虫駆除料金相場 */}
+      {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center mb-8">東京のおすすめ害虫駆除業者比較</h2>
+          <div className="overflow-x-auto">
+            <table className="table w-full bg-white text-black border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="bg-base-200 text-white border border-gray-300">項目</th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">駆除ザウルス</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害獣駆除のROY</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害獣BUZZ</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">4</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">サンキョークリーンサービス</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">5</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">ハウスプロテクト</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">6</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害虫駆除110番</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">7</span>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害獣プロテック</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">8</span>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">ラッター</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">9</span>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="EMEAO!" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">EMEAO!</strong>
+                    </div>
+                  </th>
+                  <th className="text-center border border-gray-300">
+                    <div className="flex flex-col items-center gap-2">
+                      <span className="badge badge-lg">10</span>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">ダスキン</strong>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                  <td className="text-center border border-gray-300">全国（北海道・沖縄除く）</td>
+                  <td className="text-center border border-gray-300">全国（一部不可）</td>
+                  <td className="text-center border border-gray-300">関東・関西・東海・中国・九州</td>
+                  <td className="text-center border border-gray-300">全国</td>
+                  <td className="text-center border border-gray-300">関東・関西・東海・中国・四国</td>
+                  <td className="text-center border border-gray-300">全国</td>
+                  <td className="text-center border border-gray-300">関東・東北・関西・東海・北陸・中国・九州</td>
+                  <td className="text-center border border-gray-300">関東・東海・関西・中国・九州</td>
+                  <td className="text-center border border-gray-300">全国</td>
+                  <td className="text-center border border-gray-300">全国</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">記載なし</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">記載なし</td>
+                  <td className="text-center border border-gray-300">24時間365日</td>
+                  <td className="text-center border border-gray-300">記載なし</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200 text-white border border-gray-300">料金目安</th>
+                  <td className="text-center text-primary font-bold border border-gray-300">25,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">4,730円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">要見積もり</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">22,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">要見積もり</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">22,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">状況により変動</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">10,000円〜</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">施工業者による</td>
+                  <td className="text-center text-primary font-bold border border-gray-300">16,500円〜</td>
+                </tr>
+                <tr>
+                  <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                  <td className="text-sm border border-gray-300">最長10年保証</td>
+                  <td className="text-sm border border-gray-300">最長5年保証</td>
+                  <td className="text-sm border border-gray-300">最長10年保証</td>
+                  <td className="text-sm border border-gray-300">最長2年保証</td>
+                  <td className="text-sm border border-gray-300">最長10年保証</td>
+                  <td className="text-sm border border-gray-300">施工業者による</td>
+                  <td className="text-sm border border-gray-300">最長10年保証</td>
+                  <td className="text-sm border border-gray-300">最長5年保証</td>
+                  <td className="text-sm border border-gray-300">施工業者による</td>
+                  <td className="text-sm border border-gray-300">最長5年保証</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 className="heading-primary text-center mt-16 mb-8">東京のおすすめ害虫駆除業者 詳細紹介</h2>
+
+          {/* 1. 駆除ザウルス */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-warning badge-lg">👑 1</span>
+                <h3 className="text-2xl font-bold text-black">駆除ザウルス（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>創業20年、累計相談3万件以上の豊富な実績</li>
+                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>東京都内の害虫駆除に精通したプロフェッショナル</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国（北海道・沖縄県・一部地域を除く）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">25,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長10年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
+                <a href="https://www.google.com/search?q=駆除ザウルス+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    創業20年の実績があり、東京都内の害虫駆除に精通したスタッフが来てくれました。10年保証も心強いです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    日本ペストコントロール協会加盟で、専門性が高く安心してお任せできました。累計相談3万件以上の経験に基づいた的確な施工でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    24時間365日対応で、緊急時にもすぐに来ていただけました。見積もりも明確で、追加料金もなく信頼できました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 2. 害獣駆除のROY */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <h3 className="text-2xl font-bold text-black">害獣駆除のROY（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害獣駆除のROYの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>一級建築士事務所で建物構造を熟知</li>
+                <li>4,730円からの業界最安値水準</li>
+                <li>最短即日対応で緊急時にも安心</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害獣駆除のROYの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国（一部対応不可エリアあり）</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">4,730円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長5年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害獣駆除のROYの口コミ</h4>
+                <a href="https://www.google.com/search?q=害獣駆除のROY+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    一級建築士事務所ということで、東京の複雑な建物構造を熟知した的確な施工をしていただけました。業界最安値水準でコスパも最高です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    最短即日対応で、緊急時にもすぐに来ていただけました。5年保証もあり、万が一の再発時も安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    東京都内全域に対応しているので、地方でも迅速に対応していただけました。見積もりも明確で、追加料金もなく信頼できました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 3. 害獣BUZZ */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <h3 className="text-2xl font-bold text-black">害獣BUZZ（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>口コミ多数公開で透明性が高い</li>
+                <li>日本有害鳥獣駆除防除管理協会加盟</li>
+                <li>最短30分対応で緊急時にも迅速</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害獣BUZZの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東・関西・東海・中国・九州</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長10年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害獣BUZZの口コミ</h4>
+                <a href="https://www.google.com/search?q=害獣BUZZ+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    口コミが多数公開されており、透明性が高く安心してお願いできました。日本有害鳥獣駆除防除管理協会に加盟しているので信頼性も高いです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    最短30分で来ていただけて、緊急時の対応が素早かったです。東京都内の害虫駆除に精通した的確な施工でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 4. サンキョークリーンサービス */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">4</span>
+                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>創業28年のベテラン業者で豊富な経験</li>
+                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>東京都内の害虫駆除に精通したプロフェッショナル</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆サンキョークリーンサービスの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">22,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長2年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆サンキョークリーンサービスの口コミ</h4>
+                <a href="https://www.google.com/search?q=サンキョークリーンサービス+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    創業28年のベテラン業者だけあって、経験豊富なスタッフが来てくれました。東京都内の害虫駆除に精通した的確な施工でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    日本ペストコントロール協会に加盟しているということで、安心してお任せできました。見積もりも明確で、追加料金もなく信頼できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    全国対応で、東京都内でも迅速に対応していただけました。施工後のフォローも丁寧でした。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 5. ハウスプロテクト */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">5</span>
+                <h3 className="text-2xl font-bold text-black">ハウスプロテクト（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>Google口コミ業界トップクラスの高評価</li>
+                <li>2300件以上の実績掲載で透明性が高い</li>
+                <li>最短即日対応で緊急時にも迅速</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆ハウスプロテクトの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東・関西・東海・中国・四国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">要見積もり</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長10年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆ハウスプロテクトの口コミ</h4>
+                <a href="https://www.google.com/search?q=ハウスプロテクト+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    Google口コミ業界トップクラスということで、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    2300件以上の実績が掲載されており、透明性が高く信頼できました。最短即日対応で助かりました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 6. 害虫駆除110番 */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">6</span>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>東証上場企業運営で信頼性が高い</li>
+                <li>累計相談500万件以上の圧倒的な実績</li>
+                <li>全国対応で東京都内も迅速対応</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">22,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">施工業者による</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除110番+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    全国対応で、東京都内でも迅速に対応していただけました。24時間365日受付で、緊急時にもすぐに連絡できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    大手業者ならではの安心感がありました。施工業者による保証もあり、アフターフォローもしっかりしています。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 7. 害獣プロテック */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">7</span>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>50年以上の経験を持つベテラン業者</li>
+                <li>工務店歴50年で建物構造を熟知</li>
+                <li>最短30分対応で緊急時にも迅速</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東・東北・関西・東海・北陸・中国・九州</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">状況に応じて変動</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長10年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
+                <a href="https://www.google.com/search?q=害獣プロテック+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    50年以上の経験があるベテラン業者だけあって、東京都内の害虫駆除に精通した的確な施工でした。10年保証も心強いです。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    工務店歴50年で建物構造を熟知しているため、複雑な東京の建物でも適切な対応をしていただけました。最短30分で来ていただけて助かりました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    広範囲のエリアに対応しているので、東京都内でも安心です。施工後のアフターフォローも丁寧でした。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 8. ラッター */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">8</span>
+                <h3 className="text-2xl font-bold text-black">ラッター（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">ラッターの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>累計3万件以上の豊富な実績</li>
+                <li>最短10分対応で緊急時にも迅速</li>
+                <li>経験豊富なプロフェッショナル</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆ラッターの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">関東・東海・関西・中国・九州</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">10,000円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長5年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆ラッターの口コミ</h4>
+                <a href="https://www.google.com/search?q=ラッター+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    累計3万件以上の実績があり、経験豊富なスタッフが来てくれました。東京都内の害虫駆除に精通した的確な施工でした。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    最短10分で来ていただけて、緊急時の対応が素早かったです。5年保証もあり、万が一の再発時も安心です。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    10,000円からという良心的な料金設定で、コスパも良かったです。見積もりも明確で、追加料金もなく信頼できました。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 9. EMEAO! */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">9</span>
+                <h3 className="text-2xl font-bold text-black">EMEAO!（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">EMEAO!の特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>累計相談10万件以上の業者紹介サービス</li>
+                <li>厳選された優良業者のみを紹介</li>
+                <li>最短即日対応で緊急時にも安心</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆EMEAO!の基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">24時間365日</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">施工業者による</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">施工業者による</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">施工業者による</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆EMEAO!の口コミ</h4>
+                <a href="https://www.google.com/search?q=EMEAO!+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    累計相談10万件以上の実績がある業者紹介サービスで、厳選された優良業者を紹介していただけました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    最短即日対応で、緊急時にもすぐに業者を紹介していただけました。複数の業者から見積もりを取れて比較できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    全国対応で、東京都内でも優良業者を紹介していただけました。業者選びに迷った時に便利なサービスです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼24時間365日・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+
+          {/* 10. ダスキン */}
+          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-3 flex-wrap">
+                <span className="badge badge-lg">10</span>
+                <h3 className="text-2xl font-bold text-black">ダスキン（東京）</h3>
+              </div>
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
+              <ul className="list-disc list-inside space-y-2 text-gray-900">
+                <li>東証上場企業のFC加盟店で信頼性が高い</li>
+                <li>社内ライセンス取得のプロが施工</li>
+                <li>大手ブランドの安心感</li>
+              </ul>
+            </div>
+
+            <div className="text-center mb-6">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-bold text-lg text-black mb-3">◆ダスキンの基本情報</h4>
+              <div className="overflow-x-auto">
+                <table className="table w-full bg-white text-black border border-gray-300">
+                  <tbody>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応エリア</th>
+                      <td className="border border-gray-300">全国</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">電話受付時間</th>
+                      <td className="border border-gray-300">要確認</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">対応可能な害虫・害獣</th>
+                      <td className="border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">駆除最低料金</th>
+                      <td className="border border-gray-300">16,500円〜</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">保証期間</th>
+                      <td className="border border-gray-300">最長5年保証</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">無料診断の有無</th>
+                      <td className="border border-gray-300">相談・調査・見積もり完全無料</td>
+                    </tr>
+                    <tr>
+                      <th className="bg-base-200 text-white border border-gray-300">支払い方法</th>
+                      <td className="border border-gray-300">現金・銀行振込・クレジットカード</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="font-bold text-lg text-black">◆ダスキンの口コミ</h4>
+                <a href="https://www.google.com/search?q=ダスキン+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                  Google口コミを見る →
+                </a>
+              </div>
+              <div className="space-y-4">
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    東証上場企業のFC加盟店ということで、大手ブランドの安心感がありました。社内ライセンス取得のプロが施工してくれました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    16,500円からという良心的な料金設定で、全国対応なので東京都内でも安心です。見積もりも明確で、追加料金もなく信頼できました。
+                  </p>
+                </div>
+                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <p className="text-sm text-gray-900">
+                    5年保証があり、長期的に安心できました。大手ブランドならではの丁寧なアフターフォローも良かったです。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a href="#" className="btn btn-primary btn-lg">
+                ＼年中無休・通話無料／<br />
+                無料相談はこちら
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 東京の害虫駆除料金相場 */}
+      <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">東京の害虫駆除料金相場</h2>
           <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
+            <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
-                  <th>害虫</th>
-                  <th>東京の相場</th>
-                  <th>全国平均</th>
-                  <th>備考</th>
+                  <th className="bg-base-200 text-white border border-gray-300">害虫</th>
+                  <th className="bg-base-200 text-white border border-gray-300">東京の相場</th>
+                  <th className="bg-base-200 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-base-200 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
               <tbody>
                 {priceComparison.map((row, idx) => (
                   <tr key={idx}>
-                    <td className="font-bold">{row.pest}</td>
-                    <td className="text-primary font-semibold">{row.tokyo}</td>
-                    <td className="text-base-content/70">{row.national}</td>
-                    <td className="text-sm text-base-content/60">{row.note}</td>
+                    <td className="font-bold border border-gray-300">{row.pest}</td>
+                    <td className="text-primary font-semibold border border-gray-300">{row.tokyo}</td>
+                    <td className="text-gray-700 border border-gray-300">{row.national}</td>
+                    <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -247,19 +1369,19 @@ export default function TokyoPage() {
       </section>
 
       {/* 東京の害虫カレンダー */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">東京の害虫カレンダー</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-xl">{season.season}</h3>
+                  <h3 className="card-title text-xl text-black">{season.season}</h3>
                   <ul className="space-y-2 mt-4">
                     {season.pests.map((pest, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-error text-xl">•</span>
-                        <span className="text-sm">{pest}</span>
+                        <span className="text-sm text-gray-900">{pest}</span>
                       </li>
                     ))}
                   </ul>
@@ -277,22 +1399,22 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 東京都内の害虫駆除業者 */}
-      <section className="py-16 px-4 bg-base-100">
+      {/* 東京都内の害虫駆除業者エリア */}
+      <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">東京都内の害虫駆除業者エリア</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-xl">{area.name}</h3>
-                  <p className="text-base-content/70 text-sm">{area.description}</p>
+                  <h3 className="card-title text-xl text-black">{area.name}</h3>
+                  <p className="text-gray-700 text-sm">{area.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
                     {area.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-success text-xl">✓</span>
-                        <span className="text-sm">{feature}</span>
+                        <span className="text-sm text-gray-900">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -304,7 +1426,7 @@ export default function TokyoPage() {
       </section>
 
       {/* 東京都の相談窓口 */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">東京都の害虫相談窓口</h2>
           <div className="space-y-4">
@@ -314,16 +1436,16 @@ export default function TokyoPage() {
                   <div className="flex items-start gap-4">
                     <div className="text-4xl">📞</div>
                     <div className="flex-1">
-                      <h3 className="card-title text-lg">{org.name}</h3>
-                      <p className="text-base-content/70 text-sm mb-2">{org.description}</p>
+                      <h3 className="card-title text-lg text-black">{org.name}</h3>
+                      <p className="text-gray-700 text-sm mb-2">{org.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         <div>
-                          <span className="text-xs text-base-content/60">電話番号:</span>
-                          <p className="font-semibold">{org.contact}</p>
+                          <span className="text-xs text-gray-700">電話番号:</span>
+                          <p className="font-semibold text-black">{org.contact}</p>
                         </div>
                         <div>
-                          <span className="text-xs text-base-content/60">受付時間:</span>
-                          <p className="font-semibold text-sm">{org.hours}</p>
+                          <span className="text-xs text-gray-700">受付時間:</span>
+                          <p className="font-semibold text-sm text-black">{org.hours}</p>
                         </div>
                       </div>
                     </div>
