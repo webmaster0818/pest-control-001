@@ -149,7 +149,7 @@ export default function TokyoPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* サイト名ヘッダー */}
-      <header className="bg-blue-600 py-4 px-4">
+      <header className="style={{backgroundColor: '#2B3A50'}} py-4 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
         </div>
@@ -212,7 +212,7 @@ export default function TokyoPage() {
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">項目</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
@@ -287,7 +287,7 @@ export default function TokyoPage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                   <td className="text-center border border-gray-300">全国（北海道・沖縄除く）</td>
                   <td className="text-center border border-gray-300">全国（一部不可）</td>
                   <td className="text-center border border-gray-300">関東・関西・東海・中国・九州</td>
@@ -300,7 +300,7 @@ export default function TokyoPage() {
                   <td className="text-center border border-gray-300">全国</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center border border-gray-300">24時間365日</td>
                   <td className="text-center border border-gray-300">24時間365日</td>
                   <td className="text-center border border-gray-300">24時間365日</td>
@@ -313,7 +313,7 @@ export default function TokyoPage() {
                   <td className="text-center border border-gray-300">記載なし</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">料金目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金目安</th>
                   <td className="text-center text-primary font-bold border border-gray-300">25,000円〜</td>
                   <td className="text-center text-primary font-bold border border-gray-300">4,730円〜</td>
                   <td className="text-center text-primary font-bold border border-gray-300">要見積もり</td>
@@ -326,7 +326,7 @@ export default function TokyoPage() {
                   <td className="text-center text-primary font-bold border border-gray-300">16,500円〜</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                   <td className="text-sm border border-gray-300">最長10年保証</td>
                   <td className="text-sm border border-gray-300">最長5年保証</td>
                   <td className="text-sm border border-gray-300">最長10年保証</td>
@@ -376,31 +376,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国（北海道・沖縄県・一部地域を除く）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">25,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長10年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -474,31 +474,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国（一部対応不可エリアあり）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">4,730円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長5年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -572,31 +572,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東・関西・東海・中国・九州</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長10年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -670,31 +670,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">22,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長2年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -768,31 +768,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東・関西・東海・中国・四国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長10年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -866,31 +866,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">22,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">施工業者による</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -964,31 +964,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東・東北・関西・東海・北陸・中国・九州</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">状況に応じて変動</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長10年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -1062,31 +1062,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東・東海・関西・中国・九州</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">10,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長5年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -1160,31 +1160,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">施工業者による</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">施工業者による</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">施工業者による</td>
                     </tr>
                   </tbody>
@@ -1258,31 +1258,31 @@ export default function TokyoPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫・害獣</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫・害獣</th>
                       <td className="bg-white text-black border border-gray-300">シロアリ・ハチ・ゴキブリ・ネズミ・コウモリなど全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">16,500円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">最長5年保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -1334,10 +1334,10 @@ export default function TokyoPage() {
             <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">害虫</th>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">東京の相場</th>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">全国平均</th>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">備考</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">東京の相場</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
               <tbody>
@@ -1457,7 +1457,7 @@ export default function TokyoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      <section className="py-16 px-4 style={{backgroundColor: '#2B3A50'}} text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading-primary">
             東京の害虫駆除は地域に詳しい業者へ
