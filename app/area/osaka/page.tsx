@@ -148,13 +148,20 @@ export default function TokyoPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* サイト名ヘッダー */}
+      <header className="bg-blue-600 py-4 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
+        </div>
+      </header>
+
       {/* ヒーローセクション */}
-      <section className="hero min-h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 text-white relative overflow-hidden">
+      <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-xeo1csXebMQ?w=1920&h=1080&fit=crop"
+          src="/images/hero-pest-control.jpg"
           alt="大阪の害虫駆除サービス"
           fill
-          className="object-cover"
+          className="object-contain"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
@@ -217,70 +224,70 @@ export default function TokyoPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">ハウスプロテクト</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">7</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">8</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="ラッター" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">9</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="EMEAO!" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="EMEAO!" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">EMEAO!</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">10</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-control.jpg" alt="ダスキン" className="w-20 h-20 rounded-full object-contain" />
                       <strong className="text-black">ダスキン</strong>
                     </div>
                   </th>
@@ -352,7 +359,7 @@ export default function TokyoPage() {
                 <span className="badge badge-warning badge-lg">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="駆除ザウルス" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -450,7 +457,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="害獣駆除のROY" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -548,7 +555,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="害獣BUZZ" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -646,7 +653,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="サンキョークリーンサービス" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -744,7 +751,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="ハウスプロテクト" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -842,7 +849,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="害虫駆除110番" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -940,7 +947,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="害獣プロテック" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1038,7 +1045,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="ラッター" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1136,7 +1143,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">9</span>
                 <h3 className="text-2xl font-bold text-black">EMEAO!（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="EMEAO!" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1234,7 +1241,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">10</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（大阪）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-control.jpg" alt="ダスキン" className="w-full h-48 object-contain rounded-lg" />
             </div>
 
             <div className="mb-6">
