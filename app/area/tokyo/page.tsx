@@ -149,7 +149,7 @@ export default function TokyoPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* サイト名ヘッダー */}
-      <header className="style={{backgroundColor: '#2B3A50'}} py-4 px-4">
+      <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
         </div>
@@ -178,10 +178,10 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 東京のおすすめ害虫駆除業者比較 */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">東京のおすすめ害虫駆除業者比較</h2>
+      {/* 東京で多い害虫トップ5 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">東京で多い害虫トップ5</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
@@ -208,6 +208,10 @@ export default function TokyoPage() {
         </div>
       </section>
 
+      {/* おすすめ業者比較表 */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center mb-8">東京のおすすめ害虫駆除業者比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -1457,7 +1461,7 @@ export default function TokyoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 style={{backgroundColor: '#2B3A50'}} text-white">
+      <section className="py-16 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading-primary">
             東京の害虫駆除は地域に詳しい業者へ

@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "名古屋の害虫駆除業者 | 地域別料金相場と選び方 - 害虫駆除110番",
-  description: "名古屋都内の害虫駆除業者と料金相場を徹底比較。名古屋市内・尾張・三河別の特徴、季節ごとの害虫カレンダー、信頼できる業者の選び方をご紹介します。",
+  description: "名古屋都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴、季節ごとの害虫カレンダー、信頼できる業者の選び方をご紹介します。",
 };
 
-export default function NagoyaPage() {
+export default function TokyoPage() {
   const topPests = [
     {
       rank: 1,
@@ -54,31 +54,31 @@ export default function NagoyaPage() {
   const priceComparison = [
     {
       pest: "シロアリ駆除",
-      nagoya: "12,000〜18,000円/坪",
+      tokyo: "12,000〜18,000円/坪",
       national: "10,000〜15,000円/坪",
       note: "都心部はやや高め",
     },
     {
       pest: "ハチ駆除",
-      nagoya: "15,000〜35,000円",
+      tokyo: "15,000〜35,000円",
       national: "15,000〜30,000円",
       note: "高所作業が多く料金高め",
     },
     {
       pest: "ゴキブリ駆除",
-      nagoya: "20,000〜35,000円",
+      tokyo: "20,000〜35,000円",
       national: "15,000〜30,000円",
       note: "飲食店需要で料金やや高",
     },
     {
       pest: "ネズミ駆除",
-      nagoya: "100,000〜180,000円",
+      tokyo: "100,000〜180,000円",
       national: "80,000〜150,000円",
       note: "複雑な建物構造で高額",
     },
     {
       pest: "コウモリ駆除",
-      nagoya: "120,000〜350,000円",
+      tokyo: "120,000〜350,000円",
       national: "100,000〜300,000円",
       note: "都心部の難易度高",
     },
@@ -109,13 +109,13 @@ export default function NagoyaPage() {
 
   const areas = [
     {
-      name: "名古屋市内エリア",
+      name: "23区エリア",
       description: "都心部から住宅街まで幅広く対応。飲食店・オフィスビルの駆除実績豊富。",
       features: ["即日対応可能", "夜間作業対応", "多言語対応"],
     },
     {
-      name: "尾張・三河",
-      description: "八王子、立川、町田など尾張・三河全域をカバー。戸建て住宅の駆除に強い。",
+      name: "多摩地域",
+      description: "八王子、立川、町田など多摩地域全域をカバー。戸建て住宅の駆除に強い。",
       features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
     },
     {
@@ -149,7 +149,7 @@ export default function NagoyaPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* サイト名ヘッダー */}
-      <header className="style={{backgroundColor: '#2B3A50'}} py-4 px-4">
+      <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
         </div>
@@ -164,21 +164,17 @@ export default function NagoyaPage() {
           className="object-contain"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
-        <div className="hero-content text-center relative z-10">
-          <div className="max-w-3xl">
-            <div className="text-6xl mb-6">🏯</div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              名古屋の害虫駆除 完全ガイド
-            </h1>
-            <p className="text-xl mb-8">
-              名古屋都内の害虫駆除業者と料金相場を徹底比較。
-              名古屋市内・尾張・三河別の特徴と信頼できる業者の選び方をご紹介します。
-            </p>
-            <Link href="/price" className="btn btn-lg btn-neutral">
-              名古屋の料金相場を見る
-            </Link>
-          </div>
+      </section>
+
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            名古屋の害虫駆除 完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            名古屋都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
+          </p>
         </div>
       </section>
 
@@ -224,70 +220,70 @@ export default function NagoyaPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/hero-pest-control.jpg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/hero-pest-control.jpg" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/hero-pest-control.jpg" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
-                      <img src="/images/hero-pest-control.jpg" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
-                      <img src="/images/hero-pest-control.jpg" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ハウスプロテクト</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="/images/hero-pest-control.jpg" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">7</span>
-                      <img src="/images/hero-pest-control.jpg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">8</span>
-                      <img src="/images/hero-pest-control.jpg" alt="ラッター" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">9</span>
-                      <img src="/images/hero-pest-control.jpg" alt="EMEAO!" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="EMEAO!" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">EMEAO!</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">10</span>
-                      <img src="/images/hero-pest-control.jpg" alt="ダスキン" className="w-20 h-20 rounded-full object-contain" />
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ダスキン</strong>
                     </div>
                   </th>
@@ -359,7 +355,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-warning badge-lg">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="駆除ザウルス" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -457,7 +453,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="害獣駆除のROY" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -555,7 +551,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="害獣BUZZ" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -653,7 +649,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="サンキョークリーンサービス" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -751,7 +747,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="ハウスプロテクト" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -849,7 +845,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="害虫駆除110番" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -947,7 +943,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="害獣プロテック" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1045,7 +1041,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="ラッター" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1143,7 +1139,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">9</span>
                 <h3 className="text-2xl font-bold text-black">EMEAO!（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="EMEAO!" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1241,7 +1237,7 @@ export default function NagoyaPage() {
                 <span className="badge badge-lg">10</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（名古屋）</h3>
               </div>
-              <img src="/images/hero-pest-control.jpg" alt="ダスキン" className="w-full h-48 object-contain rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1352,7 +1348,7 @@ export default function NagoyaPage() {
                 {priceComparison.map((row, idx) => (
                   <tr key={idx}>
                     <td className="font-bold border border-gray-300">{row.pest}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.nagoya}</td>
+                    <td className="text-primary font-semibold border border-gray-300">{row.tokyo}</td>
                     <td className="text-gray-700 border border-gray-300">{row.national}</td>
                     <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
                   </tr>
@@ -1465,7 +1461,7 @@ export default function NagoyaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 style={{backgroundColor: '#2B3A50'}} text-white">
+      <section className="py-16 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="heading-primary">
             名古屋の害虫駆除は地域に詳しい業者へ
