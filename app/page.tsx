@@ -24,36 +24,33 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* サイト名ヘッダー */}
+      <header className="bg-blue-600 py-4 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
+        </div>
+      </header>
+
       {/* ヒーローセクション */}
-      <section className="hero min-h-[70vh] bg-gradient-to-r from-primary to-secondary text-primary-content relative overflow-hidden">
+      <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&h=1080&fit=crop"
+          src="/images/hero-pest-control.jpg"
           alt="害虫駆除サービス"
           fill
-          className="object-cover"
+          className="object-contain"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
-        <div className="hero-content text-center relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">
-              害虫でお困りですか？
-              <br />
-              今すぐ解決方法を見つけましょう
-            </h1>
-            <p className="text-xl mb-8">
-              シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を比較して、
-              あなたに最適な業者を見つけましょう
-            </p>
-            <div className="flex gap-4 justify-center">
-              <Link href="/price" className="btn btn-lg btn-neutral">
-                料金相場を見る
-              </Link>
-              <Link href="/guide" className="btn btn-lg btn-outline btn-neutral">
-                業者の選び方
-              </Link>
-            </div>
-          </div>
+      </section>
+
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            害虫でお困りですか？今すぐ解決方法を見つけましょう
+          </h2>
+          <p className="text-lg text-gray-700">
+            シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を比較して、あなたに最適な業者を見つけましょう
+          </p>
         </div>
       </section>
 
@@ -142,45 +139,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 害虫の種類から探す */}
-      <section className="py-16 px-4">
+      {/* 地域から探す */}
+      <section className="py-12 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">害虫の種類から探す</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {pests.map((pest) => (
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">お住まいの地域から探す</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {areas.map((area) => (
               <Link
-                key={pest.name}
-                href={pest.href}
-                className={`card ${pest.color} shadow-lg hover:shadow-xl transition-shadow`}
+                key={area.name}
+                href={area.href}
+                className="bg-white hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
               >
-                <div className="card-body items-center text-center">
-                  <div className="text-6xl mb-4">{pest.icon}</div>
-                  <h3 className="card-title text-2xl">{pest.name}駆除</h3>
-                </div>
+                <p className="text-lg font-semibold text-gray-900">{area.name}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 地域から探す */}
-      <section className="py-16 px-4 bg-base-100">
+      {/* 害虫の種類から探す */}
+      <section className="py-12 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">お住まいの地域から探す</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {areas.map((area) => (
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">害虫の種類から探す</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {pests.map((pest) => (
               <Link
-                key={area.name}
-                href={area.href}
-                className="card bg-white shadow-lg hover:shadow-xl transition-shadow border-2 border-base-300 hover:border-primary"
+                key={pest.name}
+                href={pest.href}
+                className="bg-white hover:bg-amber-50 border-2 border-gray-200 hover:border-amber-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
               >
-                <div className="card-body items-center text-center">
-                  <h3 className="card-title text-2xl">{area.name}</h3>
-                  <p className="text-gray-700">地域別の料金相場と業者情報</p>
-                  <div className="card-actions mt-4">
-                    <button className="btn btn-primary btn-sm">詳しく見る →</button>
-                  </div>
-                </div>
+                <div className="text-4xl mb-2">{pest.icon}</div>
+                <p className="text-lg font-semibold text-gray-900">{pest.name}</p>
               </Link>
             ))}
           </div>
