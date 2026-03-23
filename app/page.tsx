@@ -17,6 +17,16 @@ export default function Home() {
     { name: "東京", href: "/area/tokyo" },
     { name: "大阪", href: "/area/osaka" },
     { name: "名古屋", href: "/area/nagoya" },
+    { name: "埼玉", href: "/area/saitama" },
+    { name: "千葉", href: "/area/chiba" },
+    { name: "神奈川", href: "/area/kanagawa" },
+    { name: "横浜", href: "/area/yokohama" },
+    { name: "福岡", href: "/area/fukuoka" },
+    { name: "茨城", href: "/area/ibaraki" },
+    { name: "栃木", href: "/area/tochigi" },
+    { name: "鹿児島", href: "/area/kagoshima" },
+    { name: "宮崎", href: "/area/miyazaki" },
+    { name: "沖縄", href: "/area/okinawa" },
   ];
 
   const features = [
