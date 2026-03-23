@@ -8,6 +8,9 @@ export default function Home() {
     { name: "ゴキブリ", href: "/gokiburi", icon: "🪳", color: "bg-red-100 hover:bg-red-200" },
     { name: "ネズミ", href: "/nezumi", icon: "🐭", color: "bg-gray-100 hover:bg-gray-200" },
     { name: "コウモリ", href: "/koumori", icon: "🦇", color: "bg-purple-100 hover:bg-purple-200" },
+    { name: "ダニ", href: "/dani", icon: "🦠", color: "bg-green-100 hover:bg-green-200" },
+    { name: "トコジラミ", href: "/tokojirami", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
+    { name: "鳥害", href: "/chougai", icon: "🐦", color: "bg-blue-100 hover:bg-blue-200" },
   ];
 
   const areas = [
@@ -17,7 +20,7 @@ export default function Home() {
   ];
 
   const features = [
-    { title: "5種類の害虫を網羅", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除情報を一括比較" },
+    { title: "8種類の害虫・害獣を網羅", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害の駆除情報を一括比較" },
     { title: "地域別の詳細情報", description: "お住まいの地域に特化した駆除業者と料金相場を掲載" },
     { title: "わかりやすい料金相場", description: "透明性のある料金情報で、安心して業者選びができる" },
   ];
