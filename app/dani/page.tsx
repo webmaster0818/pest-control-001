@@ -142,64 +142,64 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="株式会社三共消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社三共消毒</strong>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="衛生害虫110番" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>衛生害虫110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社アサンテ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社アサンテ</strong>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>ダスキン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="有限会社北日本消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>有限会社北日本消毒</strong>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="株式会社あい営繕" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社あい営繕</strong>
+                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社ミヤコ消毒</strong>
+                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="ムシプロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>ムシプロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="株式会社こだま" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社こだま</strong>
+                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="大洋防疫研究所" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>大洋防疫研究所</strong>
+                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>街角害虫駆除相談所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社第一環研" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社第一環研</strong>
+                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害虫駆除対策センター" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>害虫駆除対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ダニお助け本舗" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>ダニお助け本舗</strong>
+                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="Qujolia" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>Qujolia</strong>
                     </div>
                   </th>
                 </tr>
@@ -300,18 +300,18 @@ export default function DaniPage() {
           </div>
           <h2 className="heading-primary text-center mt-16 mb-8">おすすめダニ駆除業者 詳細紹介</h2>
 
-          {/* 株式会社三共消毒 */}
+          {/* 衛生害虫110番 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
-                <h3 className="text-2xl font-bold text-black">株式会社三共消毒（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">衛生害虫110番（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社三共消毒の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">衛生害虫110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
                 <li>24時間年中無休で受付、地元密着のスピード対応</li>
@@ -327,7 +327,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社三共消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆衛生害虫110番の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -366,8 +366,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社三共消毒の口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社三共消毒+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆衛生害虫110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=衛生害虫110番+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -398,18 +398,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 株式会社アサンテ */}
+          {/* ダスキン */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold text-black">株式会社アサンテ（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">ダスキン（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の確かな施工実績</li>
                 <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
@@ -425,7 +425,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社アサンテの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆ダスキンの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -464,8 +464,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社アサンテの口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社アサンテ+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆ダスキンの口コミ</h4>
+                <a href="https://www.google.com/search?q=ダスキン+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -496,18 +496,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 有限会社北日本消毒 */}
+          {/* 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">駆除ザウルス（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
                 <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
@@ -523,7 +523,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆有限会社北日本消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -562,8 +562,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆有限会社北日本消毒の口コミ</h4>
-                <a href="https://www.google.com/search?q=有限会社北日本消毒+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
+                <a href="https://www.google.com/search?q=駆除ザウルス+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -594,18 +594,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 株式会社あい営繕 */}
+          {/* 害獣プロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">4</span>
-                <h3 className="text-2xl font-bold text-black">株式会社あい営繕（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社あい営繕の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
                 <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
@@ -621,7 +621,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社あい営繕の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -660,8 +660,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社あい営繕の口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社あい営繕+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
+                <a href="https://www.google.com/search?q=害獣プロテック+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -692,18 +692,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 株式会社ミヤコ消毒 */}
+          {/* ムシプロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">5</span>
-                <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">ムシプロテック（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="ムシプロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社ミヤコ消毒の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">ムシプロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
                 <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
@@ -719,7 +719,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社ミヤコ消毒の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆ムシプロテックの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -758,8 +758,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社ミヤコ消毒の口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社ミヤコ消毒+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆ムシプロテックの口コミ</h4>
+                <a href="https://www.google.com/search?q=ムシプロテック+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -790,18 +790,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 株式会社こだま */}
+          {/* サンキョークリーンサービス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">6</span>
-                <h3 className="text-2xl font-bold text-black">株式会社こだま（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社こだまの特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>高い技術力を持ったスタッフが対応</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
@@ -817,7 +817,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社こだまの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆サンキョークリーンサービスの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -856,8 +856,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社こだまの口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社こだま+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆サンキョークリーンサービスの口コミ</h4>
+                <a href="https://www.google.com/search?q=サンキョークリーンサービス+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -888,18 +888,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 大洋防疫研究所 */}
+          {/* 街角害虫駆除相談所 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">7</span>
-                <h3 className="text-2xl font-bold text-black">大洋防疫研究所（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">大洋防疫研究所の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">街角害虫駆除相談所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>メディア出演多数、即日対応</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
@@ -915,7 +915,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆大洋防疫研究所の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆街角害虫駆除相談所の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -954,8 +954,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆大洋防疫研究所の口コミ</h4>
-                <a href="https://www.google.com/search?q=大洋防疫研究所+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆街角害虫駆除相談所の口コミ</h4>
+                <a href="https://www.google.com/search?q=街角害虫駆除相談所+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -986,18 +986,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 株式会社第一環研 */}
+          {/* 害虫駆除対策センター */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">8</span>
-                <h3 className="text-2xl font-bold text-black">株式会社第一環研（ダニ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除対策センター（ダニ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">株式会社第一環研の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除対策センターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
                 <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
@@ -1013,7 +1013,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆株式会社第一環研の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除対策センターの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -1052,8 +1052,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆株式会社第一環研の口コミ</h4>
-                <a href="https://www.google.com/search?q=株式会社第一環研+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除対策センターの口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除対策センター+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1084,18 +1084,18 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* ダニお助け本舗 */}
+          {/* Qujolia */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">9</span>
-                <h3 className="text-2xl font-bold text-black">ダニお助け本舗（ダニ駆除専門）</h3>
+                <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除専門）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ダニお助け本舗" className="w-full h-48 object-cover rounded-lg" />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">ダニお助け本舗の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">Qujoliaの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
                 <li>24時間365日受付で、最短受付から10分で現地到着</li>
@@ -1111,7 +1111,7 @@ export default function DaniPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆ダニお助け本舗の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆Qujoliaの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -1150,8 +1150,8 @@ export default function DaniPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆ダニお助け本舗の口コミ</h4>
-                <a href="https://www.google.com/search?q=ダニお助け本舗+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆Qujoliaの口コミ</h4>
+                <a href="https://www.google.com/search?q=Qujolia+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
