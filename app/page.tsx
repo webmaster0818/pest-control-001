@@ -57,13 +57,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
-      {/* サイト名ヘッダー */}
-      <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
-        </div>
-      </header>
-
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
