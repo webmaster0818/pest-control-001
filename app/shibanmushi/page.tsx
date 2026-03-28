@@ -141,6 +141,18 @@ export default function ShibanmushiPage() {
         </div>
       </section>
 
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            シバンムシ駆除の完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            シバンムシの特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+          </p>
+        </div>
+      </section>
+
       {/* 業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -385,16 +397,28 @@ export default function ShibanmushiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     創業100年近い老舗だけあって、対応が迅速で丁寧でした。スズメバチの巣を安全に駆除していただき、再発防止の対策もしっかりしていただきました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     24時間対応というのが本当に助かりました。夜間にシバンムシに遭遇してパニックになりましたが、すぐに駆けつけてくれて安心しました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     プロのスタッフが来てくれて、作業の説明も分かりやすく、料金も明確でした。万が一の再発保証もあり、信頼してお任せできました。
                   </p>

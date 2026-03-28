@@ -426,16 +426,28 @@ export default function TokyoPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     創業20年の実績があり、福岡都内の害虫駆除に精通したスタッフが来てくれました。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     日本ペストコントロール協会加盟で、専門性が高く安心してお任せできました。累計相談3万件以上の経験に基づいた的確な施工でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     24時間365日対応で、緊急時にもすぐに来ていただけました。見積もりも明確で、追加料金もなく信頼できました。
                   </p>

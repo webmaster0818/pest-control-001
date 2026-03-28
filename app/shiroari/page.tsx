@@ -105,6 +105,18 @@ export default function ShiroariPage() {
         </div>
       </section>
 
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫駆除の完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+          </p>
+        </div>
+      </section>
+
       {/* おすすめ業者比較 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -290,16 +302,28 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     1週間前に、シロアリの駆除を害獣プロテックさんにお願いしました。多くの駆除業者の中から口コミの評価やその内容を確認して、電話で相談したら、とても丁寧な対応だったので、その場で打合せ日を決めました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     依頼した当日に対応してくださり本当に助かりました。予算が厳しいと伝えると予算内でできる範囲の対策をしっかりと教えてくださり、ほぼ通常の駆除対策と変わらないレベルの対応をしてくれました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     インターネットで調べた電話番号に相談したら翌日すぐに見積もりと現場確認に来てくれました。心強かったです。
                   </p>

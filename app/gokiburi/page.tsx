@@ -139,6 +139,18 @@ export default function GokiburiPage() {
         </div>
       </section>
 
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫駆除の完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+          </p>
+        </div>
+      </section>
+
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -308,16 +320,28 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     東証1部上場企業だけあって、対応が迅速で丁寧でした。ゴキブリの侵入口を特定して徹底的に封鎖していただき、再発もありません。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     年中無休で即日対応していただけました。見積もりも明確で、追加料金もなく安心してお任せできました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     業界最安値に挑戦しているだけあって、コスパが最高でした。施工後のアフターフォローもしっかりしています。
                   </p>

@@ -150,6 +150,18 @@ export default function KoumoriPage() {
         </div>
       </section>
 
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫駆除の完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+          </p>
+        </div>
+      </section>
+
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -341,16 +353,28 @@ export default function KoumoriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     創業20年の実績があり、鳥獣保護管理法に精通したスタッフが適法な方法で追い出し作業をしてくれました。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     日本ペストコントロール協会加盟で、専門性が高く安心してお任せできました。繁殖期の作業制限も理解されており、適切な時期に施工していただけました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     累計相談3万件以上の経験に基づいた的確な侵入口特定で、コウモリが完全にいなくなりました。清掃・消毒も徹底的でした。
                   </p>

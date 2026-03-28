@@ -162,6 +162,18 @@ export default function AnagumaPage() {
         </div>
       </section>
 
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            アナグマ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫駆除の完全ガイド
+          </h2>
+          <p className="text-lg text-gray-700">
+            アナグマ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+          </p>
+        </div>
+      </section>
+
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -353,16 +365,28 @@ export default function AnagumaPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     創業20年の実績があるだけあって、対応が迅速で丁寧でした。アナグマの侵入口を徹底的に調査し、封鎖していただきました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★☆</span>
+                    <span className="text-sm text-gray-600">4.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     日本ペストコントロール協会加盟ということで、安心してお任せできました。10年保証もあり、長期的に安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="text-sm text-gray-600">5.0</span>
+                  </div>
                   <p className="text-sm text-gray-900">
                     累計相談3万件以上の経験に基づいた的確な施工で、アナグマが完全にいなくなりました。アフターフォローも丁寧です。
                   </p>
