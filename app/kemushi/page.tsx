@@ -154,56 +154,56 @@ export default function KemushiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="株式会社三共消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/sankyo-shoudoku.jpg" alt="株式会社三共消毒" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社三共消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社アサンテ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/asante.jpg" alt="株式会社アサンテ" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="有限会社北日本消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kita-nihon.jpg" alt="有限会社北日本消毒" className="w-20 h-20 rounded-full object-cover" />
                       <strong>有限会社北日本消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=100&h=100&fit=crop" alt="株式会社あい営繕" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/ai-eizen.jpg" alt="株式会社あい営繕" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社あい営繕</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/miyako.jpg" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社ミヤコ消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="株式会社こだま" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kodama.jpg" alt="株式会社こだま" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社こだま</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="大洋防疫研究所" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/taiyo.jpg" alt="大洋防疫研究所" className="w-20 h-20 rounded-full object-cover" />
                       <strong>大洋防疫研究所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="株式会社第一環研" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/daiichi.jpg" alt="株式会社第一環研" className="w-20 h-20 rounded-full object-cover" />
                       <strong>株式会社第一環研</strong>
                     </div>
                   </th>
@@ -319,7 +319,7 @@ export default function KemushiPage() {
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">株式会社三共消毒（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/sankyo-shoudoku.jpg" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -417,7 +417,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">株式会社アサンテ（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/asante.jpg" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -515,7 +515,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kita-nihon.jpg" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -613,7 +613,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base">4</span>
                 <h3 className="text-2xl font-bold text-black">株式会社あい営繕（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=200&fit=crop" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/ai-eizen.jpg" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -711,7 +711,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base">5</span>
                 <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/miyako.jpg" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -809,7 +809,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base">6</span>
                 <h3 className="text-2xl font-bold text-black">株式会社こだま（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kodama.jpg" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -907,7 +907,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base">7</span>
                 <h3 className="text-2xl font-bold text-black">大洋防疫研究所（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/taiyo.jpg" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1005,7 +1005,7 @@ export default function KemushiPage() {
                 <span className="badge badge-lg text-base">8</span>
                 <h3 className="text-2xl font-bold text-black">株式会社第一環研（毛虫駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/daiichi.jpg" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

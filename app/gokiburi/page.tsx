@@ -186,7 +186,7 @@ export default function GokiburiPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/gaichu110.jpg" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
@@ -732,7 +732,7 @@ export default function GokiburiPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（ゴキブリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/gaichu110.jpg" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

@@ -117,14 +117,14 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/protec.jpg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kujyo-zaurus.jpg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
@@ -138,7 +138,7 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/sankyo.jpg" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
                       <strong>サンキョークリーンサービス</strong>
                     </div>
                   </th>
@@ -228,7 +228,7 @@ export default function ShiroariPage() {
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（シロアリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/protec.jpg" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -322,7 +322,7 @@ export default function ShiroariPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（シロアリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kujyo-zaurus.jpg" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -518,7 +518,7 @@ export default function ShiroariPage() {
                 <span className="badge badge-lg text-base">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（シロアリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/sankyo.jpg" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
