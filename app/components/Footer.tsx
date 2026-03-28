@@ -16,6 +16,17 @@ export default function Footer() {
     { name: "ダニ", href: "/dani" },
     { name: "トコジラミ", href: "/tokojirami" },
     { name: "鳥害", href: "/chougai" },
+    { name: "アリ", href: "/ari" },
+    { name: "カメムシ", href: "/kamemushi" },
+    { name: "ムカデ/ゲジゲジ", href: "/mukade" },
+    { name: "シバンムシ", href: "/shibanmushi" },
+    { name: "毛虫", href: "/kemushi" },
+    { name: "ハクビシン", href: "/hakubishin" },
+    { name: "イタチ", href: "/itachi" },
+    { name: "アライグマ", href: "/araiguma" },
+    { name: "テン", href: "/ten" },
+    { name: "アナグマ", href: "/anaguma" },
+    { name: "タヌキ", href: "/tanuki" },
   ];
 
   const areas = [

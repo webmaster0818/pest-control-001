@@ -11,6 +11,17 @@ export default function Home() {
     { name: "ダニ", href: "/dani", icon: "🦠", color: "bg-green-100 hover:bg-green-200" },
     { name: "トコジラミ", href: "/tokojirami", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
     { name: "鳥害", href: "/chougai", icon: "🐦", color: "bg-blue-100 hover:bg-blue-200" },
+    { name: "アリ", href: "/ari", icon: "🐜", color: "bg-amber-100 hover:bg-amber-200" },
+    { name: "カメムシ", href: "/kamemushi", icon: "🐛", color: "bg-green-100 hover:bg-green-200" },
+    { name: "ムカデ/ゲジゲジ", href: "/mukade", icon: "🐛", color: "bg-red-100 hover:bg-red-200" },
+    { name: "シバンムシ", href: "/shibanmushi", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
+    { name: "毛虫", href: "/kemushi", icon: "🐛", color: "bg-yellow-100 hover:bg-yellow-200" },
+    { name: "ハクビシン", href: "/hakubishin", icon: "🦝", color: "bg-purple-100 hover:bg-purple-200" },
+    { name: "イタチ", href: "/itachi", icon: "🦦", color: "bg-blue-100 hover:bg-blue-200" },
+    { name: "アライグマ", href: "/araiguma", icon: "🦝", color: "bg-gray-100 hover:bg-gray-200" },
+    { name: "テン", href: "/ten", icon: "🦊", color: "bg-orange-100 hover:bg-orange-200" },
+    { name: "アナグマ", href: "/anaguma", icon: "🦡", color: "bg-amber-100 hover:bg-amber-200" },
+    { name: "タヌキ", href: "/tanuki", icon: "🦝", color: "bg-yellow-100 hover:bg-yellow-200" },
   ];
 
   const areas = [
