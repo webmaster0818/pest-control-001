@@ -35,8 +35,28 @@ export default function Home() {
     { title: "わかりやすい料金相場", description: "透明性のある料金情報で、安心して業者選びができる" },
   ];
 
+  // 構造化データ（WebSiteスキーマ）
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "害虫駆除110番",
+    "url": "https://pest-control-001.pages.dev",
+    "description": "害虫駆除業者を料金・サービス・口コミで徹底比較。全国13地域、8種類の害虫・害獣に対応。",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pest-control-001.pages.dev/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-base-200">
+      {/* 構造化データ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+
       {/* サイト名ヘッダー */}
       <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4">
         <div className="max-w-7xl mx-auto">

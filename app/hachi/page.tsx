@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "ハチ駆除の完全ガイド | スズメバチ・アシナガバチ対策 - 害虫駆除110番",
-  description: "スズメバチ、アシナガバチ、ミツバチの駆除料金相場と業者の選び方。緊急時の対処法、季節別ハチ対策カレンダーを詳しく解説します。",
+  title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場と緊急対処法",
+  description: "ハチ駆除業者10社を料金・対応速度・実績で徹底比較。スズメバチ、アシナガバチ、ミツバチの駆除料金相場（8,000円〜50,000円）、緊急時の対処法、季節別ハチ対策カレンダーを詳しく解説。即日対応可能な業者も掲載。",
+  openGraph: {
+    title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
+    description: "ハチ駆除業者10社を料金・対応速度・実績で徹底比較。即日対応可能な業者も掲載。",
+    url: "https://pest-control-001.pages.dev/hachi",
+  },
 };
 
 export default function HachiPage() {
@@ -100,6 +106,12 @@ export default function HachiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "ハチ" }
+      ]} />
+
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image

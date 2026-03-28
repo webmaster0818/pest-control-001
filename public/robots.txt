@@ -1,2 +1,15 @@
+# 害虫駆除110番 - robots.txt
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap
+Sitemap: https://pest-control-001.pages.dev/sitemap.xml
