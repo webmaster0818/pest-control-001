@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function FAQPage() {
   const faqs = {
@@ -133,16 +134,25 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* ヒーローセクション */}
-      <section className="hero min-h-[40vh] bg-gradient-to-r from-primary to-secondary text-primary-content">
-        <div className="hero-content text-center">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold mb-6">
-              よくある質問
-            </h1>
-            <p className="text-xl mb-8">
-              害虫駆除に関するよくある質問とその回答をまとめました
-            </p>
-          </div>
+      <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
+        <Image
+          src="/images/hero-pest-control.jpg"
+          alt="よくある質問"
+          fill
+          className="object-contain"
+          priority
+        />
+      </section>
+
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            よくある質問
+          </h2>
+          <p className="text-lg text-gray-700">
+            害虫駆除に関するよくある質問とその回答をまとめました
+          </p>
         </div>
       </section>
 
