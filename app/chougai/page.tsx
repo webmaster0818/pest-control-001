@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "鳥害対策の完全ガイド | ハト・カラス駆除 - 害虫駆除110番",
   description: "ハト、カラス、ムクドリの駆除料金相場と業者の選び方。緊急時の対処法、鳥害予防対策を詳しく解説します。",
+  openGraph: {
+    title: "鳥害駆除業者比較 | 料金相場・口コミ・おすすめ業者",
+    description: "鳥害駆除業者を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/chougai",
+  },
 };
 
 export default function ChougaiPage() {
@@ -100,6 +106,12 @@ export default function ChougaiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "鳥害" }
+      ]} />
+
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image

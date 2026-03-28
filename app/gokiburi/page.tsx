@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫駆除110番",
   description: "ゴキブリ駆除の料金相場、業者の選び方、自力駆除との比較を徹底解説。再発防止策と予防方法で、ゴキブリのいない快適な生活を実現します。",
+  openGraph: {
+    title: "ゴキブリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
+    description: "ゴキブリ駆除業者を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/gokiburi",
+  },
 };
 
 export default function GokiburiPage() {
@@ -101,6 +107,12 @@ export default function GokiburiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "ゴキブリ" }
+      ]} />
+
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-red-700 to-red-900 text-white relative overflow-hidden">
         <Image

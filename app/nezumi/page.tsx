@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "ネズミ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫駆除110番",
   description: "ネズミ駆除の料金相場、業者の選び方、駆除方法を徹底解説。ドブネズミ、クマネズミ、ハツカネズミの種類別対策と再発防止策をご紹介します。",
+  openGraph: {
+    title: "ネズミ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
+    description: "ネズミ駆除業者を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/nezumi",
+  },
 };
 
 export default function NezumiPage() {
@@ -124,6 +130,12 @@ export default function NezumiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "ネズミ" }
+      ]} />
+
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-gray-700 to-gray-900 text-white relative overflow-hidden">
         <Image

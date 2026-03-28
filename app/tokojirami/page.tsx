@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "トコジラミ駆除の完全ガイド | 南京虫対策 - 害虫駆除110番",
   description: "トコジラミ（南京虫）の駆除料金相場と業者の選び方。緊急時の対処法、トコジラミ予防対策を詳しく解説します。",
+  openGraph: {
+    title: "トコジラミ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
+    description: "トコジラミ駆除業者を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/tokojirami",
+  },
 };
 
 export default function TokojiPage() {
@@ -100,6 +106,12 @@ export default function TokojiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "トコジラミ" }
+      ]} />
+
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image

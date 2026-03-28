@@ -1,10 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "千葉の害虫駆除業者 | 地域別料金相場と選び方 - 害虫駆除110番",
-  description: "千葉都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴、季節ごとの害虫カレンダー、信頼できる業者の選び方をご紹介します。",
+  title: "千葉の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
+  description: "千葉の害虫駆除業者10社を料金・サービス・口コミで徹底比較。地域別の料金相場、害虫カレンダー、信頼できる業者の選び方を詳しく解説。即日対応可能な業者も掲載。",
+  openGraph: {
+    title: "千葉の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
+    description: "千葉の害虫駆除業者10社を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/area/chiba",
+  },
 };
 
 export default function TokyoPage() {
@@ -154,6 +160,12 @@ export default function TokyoPage() {
           <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
         </div>
       </header>
+
+      {/* パンくずリスト */}
+      <Breadcrumb items={[
+        { label: "害虫駆除110番", href: "/" },
+        { label: "千葉" }
+      ]} />
 
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
