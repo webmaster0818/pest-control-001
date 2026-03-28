@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -131,8 +132,31 @@ export default function PricePage() {
   return (
     <div className="min-h-screen bg-base-200">
       {/* ヒーローセクション */}
-      <section className="hero min-h-[50vh] bg-gradient-to-r from-indigo-600 to-indigo-800 text-white">
-        <div className="hero-content text-center">
+      <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
+        <Image
+          src="/images/hero-pest-control.jpg"
+          alt="害虫駆除の料金相場"
+          fill
+          className="object-contain"
+          priority
+        />
+      </section>
+
+      {/* キャッチコピー */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            害虫駆除の料金相場【2026年最新版】
+          </h2>
+          <p className="text-lg text-gray-700">
+            適正価格で安心できる害虫駆除業者を選ぶための料金ガイド
+          </p>
+        </div>
+      </section>
+
+      {/* コンテンツセクション */}
+      <section className="py-16 px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
             <div className="text-6xl mb-6">💰</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
