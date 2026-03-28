@@ -154,14 +154,7 @@ export default function TokyoPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
-      {/* サイト名ヘッダー */}
-      <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-bold text-white text-center">害虫駆除110番</h1>
-        </div>
-      </header>
-
-      {/* パンくずリスト */}
+{/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫駆除110番", href: "/" },
         { label: "宮崎" }
