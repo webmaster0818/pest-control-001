@@ -1309,20 +1309,21 @@ export default function NezumiPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-gray-800 text-white">
+      <section className="py-16 px-4 bg-[#66FFFF] text-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="heading-primary">
-            ネズミ駆除は早期対策が重要
-          </h2>
-          <p className="text-lg mb-8">
-            繁殖スピードが速いネズミは、放置すると被害が急速に拡大します。
-            早めの駆除で、被害を最小限に抑えましょう。
+          <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
+            <h2 className="heading-primary text-white">
+              ネズミ駆除のご相談は今すぐ
+            </h2>
+          </div>
+          <p className="text-lg mb-8 text-gray-900">
+            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を見る
             </Link>
-            <Link href="/guide" className="btn btn-lg btn-outline btn-neutral">
+            <Link href="/guide" className="btn btn-lg btn-outline" style={{backgroundColor: "#2F4F4F", borderColor: "orange", color: "white"}}>
               業者選びガイド
             </Link>
           </div>

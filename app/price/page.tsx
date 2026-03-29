@@ -358,21 +358,22 @@ export default function PricePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 bg-indigo-600 text-white">
+      <section className="py-16 px-4 bg-[#66FFFF] text-gray-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            適正価格で安心の害虫駆除を
-          </h2>
-          <p className="text-lg mb-8">
-            料金相場を知って、信頼できる業者を選びましょう。
-            まずは無料見積もりから。
+          <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
+            <h2 className="heading-primary text-white">
+              害虫駆除のご相談は今すぐ
+            </h2>
+          </div>
+          <p className="text-lg mb-8 text-gray-900">
+            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/guide" className="btn btn-lg btn-neutral">
-              業者選びガイド
+            <Link href="/price" className="btn btn-lg btn-neutral">
+              料金相場を見る
             </Link>
-            <Link href="/faq" className="btn btn-lg btn-outline btn-neutral">
-              よくある質問
+            <Link href="/guide" className="btn btn-lg btn-outline" style={{backgroundColor: "#2F4F4F", borderColor: "orange", color: "white"}}>
+              業者選びガイド
             </Link>
           </div>
         </div>
