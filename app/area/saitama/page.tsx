@@ -225,21 +225,21 @@ export default function TokyoPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/roy.svg" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/buzz.svg" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
@@ -253,42 +253,42 @@ export default function TokyoPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
-                      <img src="/images/companies/house-protect.svg" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ハウスプロテクト</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.svg" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">7</span>
-                      <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">8</span>
-                      <img src="/images/companies/ratter.svg" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/ratter.png" alt="ラッター" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">9</span>
-                      <img src="/images/companies/emeao.svg" alt="EMEAO!" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">EMEAO!</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">10</span>
-                      <img src="/images/companies/duskin.svg" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">ダスキン</strong>
                     </div>
                   </th>
@@ -360,7 +360,7 @@ export default function TokyoPage() {
                 <span className="badge badge-warning badge-lg">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（埼玉）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -470,7 +470,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（埼玉）</h3>
               </div>
-              <img src="/images/companies/roy.svg" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -568,7 +568,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（埼玉）</h3>
               </div>
-              <img src="/images/companies/buzz.svg" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -764,7 +764,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（埼玉）</h3>
               </div>
-              <img src="/images/companies/house-protect.svg" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -862,7 +862,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（埼玉）</h3>
               </div>
-              <img src="/images/companies/gaichu110.svg" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -960,7 +960,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（埼玉）</h3>
               </div>
-              <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1058,7 +1058,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（埼玉）</h3>
               </div>
-              <img src="/images/companies/ratter.svg" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1156,7 +1156,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">9</span>
                 <h3 className="text-2xl font-bold text-black">EMEAO!（埼玉）</h3>
               </div>
-              <img src="/images/companies/emeao.svg" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1254,7 +1254,7 @@ export default function TokyoPage() {
                 <span className="badge badge-lg">10</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（埼玉）</h3>
               </div>
-              <img src="/images/companies/duskin.svg" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

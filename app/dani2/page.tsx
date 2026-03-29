@@ -173,21 +173,21 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/duskin.svg" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
                       <strong>ダスキン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong>駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong>害獣プロテック</strong>
                     </div>
                   </th>
@@ -441,7 +441,7 @@ export default function DaniPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/duskin.svg" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -539,7 +539,7 @@ export default function DaniPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -637,7 +637,7 @@ export default function DaniPage() {
                 <span className="badge badge-lg text-base">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

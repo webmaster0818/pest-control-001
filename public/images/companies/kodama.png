@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="no-js responsive" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="author" content="FOODCONNECTION">
+<title>東京でキッチンカー、沖縄料理居酒屋、デリバリー事業を展開｜株式会社こだま</title>
+<!-- Social Share - Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://www.kodama-inc.jp/">
+<meta property="og:image" content="https://www.kodama-inc.jp/shared/img/shared/ogp.png">
+<meta property="og:title" content="東京でキッチンカー、沖縄料理居酒屋、デリバリー事業を展開｜株式会社こだま">
+<meta property="og:site_name" content="東京でキッチンカー、沖縄料理居酒屋、デリバリー事業を展開｜株式会社こだま">
+<meta property="og:description" content="株式会社こだまの公式サイト｜東京を中心にキッチンカー・デリバリー・高齢者向け弁当の宅配・沖縄料理居酒屋の事業を展開。石垣島出身のママが作る本格沖縄料理をコンセプトにしています。詳しくはホームページをご覧ください。">
+<!-- SEO -->
+<meta name="keywords" content="東京,キッチンカー,沖縄料理,居酒屋,デリバリー,株式会社こだま">
+<meta name="description" content="株式会社こだまの公式サイト｜東京を中心にキッチンカー・デリバリー・高齢者向け弁当の宅配・沖縄料理居酒屋の事業を展開。石垣島出身のママが作る本格沖縄料理をコンセプトにしています。詳しくはホームページをご覧ください。">
+<!-- Mobile -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<!-- Viewport for Responsive and SP -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+<script src="shared/js/viewport.js"></script> 
+<!-- Viewport for PC 
+			<meta name="viewport" content="width=1100, shrink-to-fit=no">--> 
+<!-- Profiles -->
+<link rel="canonical" href="https://www.kodama-inc.jp/">
+<link rel="profile" href="https://microformats.org/profile/hcard">
+<link rel="apple-touch-icon" href="shared/img/shared/apple-touch-icon.png">
+<link rel="shortcut icon" href="shared/img/shared/favicon.ico">
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/font/fontello.css" type="text/css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="shared/css/swiper.min.css">
+<link rel="stylesheet" href="shared/css/animate.min.css">
+<link rel="stylesheet" href="shared/css/common.css">
+<link rel="stylesheet" href="shared/css/popup.css">
+<link rel="stylesheet" href="shared/css/slick.min.css">
+<link rel="stylesheet" href="shared/css/responsive.css">
+<link rel="stylesheet" href="shared/css/shared.css">
+<link rel="stylesheet" href="shared/css/index.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215910064-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-215910064-5');
+</script>
+</head>
+<body class="ie-smoothscroll">
+<main>
+  <header>
+    <div id="key"></div>
+    <h1>東京でキッチンカー、沖縄料理居酒屋、デリバリー事業を展開｜株式会社こだま</h1>
+    <div class="header">
+      <div class="wrap">
+        <div class="row clearfix">
+          <p class="logo non-over fl"><a href="./"><img src="shared/img/shared/logo.png" alt="ロゴ" width="150" height="192"/></a></p>
+          <ul class="nav-pc pc fl">
+            <li class="link-hover active"><a href="./">ホーム</a></li>
+            <li class="link-hover"><a href="#sec3">事業内容</a></li>
+            <li class="link-hover parent"> <a href="car.html"><span>キッチンカー事業</span></a>
+              <ul>
+                <li><a href="car.html#sec4">イベント出店</a></li>
+                <li><a href="car.html#sec5">キッチンカー</a></li>
+              </ul>
+            </li>
+            <li class="link-hover"><a href="company.html">会社概要</a></li>
+            <li class="link-hover"><a href="company.html#sec6">求人情報</a></li>
+          </ul>
+          <p class="btn-cus btn-cus3 fr pc"><a href="e-mailform/inquiry.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_inquiry'});">お問い合わせ</a></p>
+        </div>
+        <h2><img src="shared/img/index/key_text.png" alt="食を通じて関わる全ての人を笑顔に" width="780" height="380"/></h2>
+      </div>
+    </div>
+    <div class="nav-fixed nav-active pc" scroll-active="true">
+      <div class="wrap clearfix">
+        <ul class="nav-pc fl">
+          <li class="link-hover active"><a href="#key">ホーム</a></li>
+          <li class="link-hover"><a href="#sec3">事業内容</a></li>
+          <li class="link-hover parent"> <a href="car.html"><span>キッチンカー事業</span></a>
+            <ul>
+              <li><a href="car.html#sec4">イベント出店</a></li>
+              <li><a href="car.html#sec5">キッチンカー</a></li>
+            </ul>
+          </li>
+          <li class="link-hover"><a href="company.html">会社概要</a></li>
+          <li class="link-hover"><a href="company.html#sec6">求人情報</a></li>
+        </ul>
+        <p class="btn-cus btn-cus3 fl"><a href="e-mailform/inquiry.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_inquiry'});">お問い合わせ</a></p>
+      </div>
+    </div>
+    <div class="toggle-button sp fnt-noto-serif"><span class="button"></span></div>
+    <div class="mobile-nav sp">
+      <div class="wrap">
+        <ul class="nav">
+          <li class="active"><a href="./">ホーム</a></li>
+          <li><a href="#sec3">事業内容</a></li>
+          <li class="parent"> <a href="car.html"><span>キッチンカー事業</span></a>
+            <ul>
+              <li><a href="car.html#sec4">・イベント出店</a></li>
+              <li><a href="car.html#sec5">・キッチンカー</a></li>
+            </ul>
+          </li>
+          <li><a href="company.html#sec3">会社概要</a></li>
+          <li><a href="company.html#sec6">求人情報</a></li>
+          <li><a href="https://www.kodama-inc.jp/fcblog/" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_blog'});">新着情報</a></li>
+        </ul>
+        <p class="btn-cus"><a href="e-mailform/inquiry.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_inquiry'});">お問い合わせはこちら</a></p>
+      </div>
+    </div>
+  </header>
+  <section class="nav-target">
+    <div id="sec1">
+      <div class="wrap">
+        <h2>NEWS</h2>
+        <div id="feed"></div>
+        <p class="btn-cus btn-cus3"><a href="https://www.kodama-inc.jp/fcblog/" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_blog'});">お知らせ一覧</a></p>
+      </div>
+    </div>
+    <div id="sec2">
+      <p class="bnr"> 
+      <a href="https://www.instagram.com/ryukyukit.kodama/" target="_blank" rel="nofollow" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_insta'});">
+      <picture>
+        <source srcset="shared/img/index/s2_bnr.jpg" media="(min-width: 768px)">
+        <img src="shared/img/index/s2_bnr_sp.jpg" alt="Instagram随時更新中！@ryukyukit.kodama" width="1000" height="300" loading="lazy"/> </picture>
+      </a>
+      </p>
+      <h2>
+        <picture>
+          <source srcset="shared/img/index/s2_h2.png" media="(min-width: 768px)">
+          <img src="shared/img/index/s2_h2_sp.png" alt="新たなことに挑戦し続ける株式会社こだま" width="830" height="250" loading="lazy"/> </picture>
+      </h2>
+      <div class="txt">
+        <p>株式会社こだまは、「石垣島出身のママが作る本格沖縄料理」をメインに<br class="pc">
+          東京・小岩に飲食店の経営、キッチンカー、デリバリー、<br class="pc">
+          高齢者向けの宅配弁当の事業展開を行っております。<br class="pc">
+          全事業に共通することは、「こだまが提供する美味しい料理で、多くの方を笑顔にしたい」ということ。<br class="pc">
+          様々なシーンでこだまをご利用いただけるよう、今後も積極的に新規事業展開に取り組んでまいります。</p>
+        <p>また、弊社では一緒にワクワクを共有して楽しみながら、<br class="pc">
+          新たなことへ挑戦したいと向上心を持って働いてくれるスタッフを募集しております。<br class="pc">
+          未経験でも、独立を目指している方でも大丈夫。社員、アルバイト共に大歓迎です。</p>
+      </div>
+      <div class="group">
+        <p class="photo">
+          <picture>
+        <source srcset="shared/img/index/s2_img.png" media="(min-width: 768px)">
+        <img src="shared/img/index/s2_img_sp.png" alt="スタッフ" width="1020" height="1300" loading="lazy"/>
+        </picture>
+        </p>
+        <h3><img src="shared/img/index/s2_h3.png" alt="琉球の味をお届け" width="110" height="450" loading="lazy"/></h3>
+      </div>
+    </div>
+    <div id="sec3">
+      <h3>Business<span>事業内容</span></h3>
+      <div class="group">
+        <div class="slider">
+          <div class="item">
+            <p class="photo">
+              <picture>
+            <source srcset="shared/img/index/s3_js_img1.png" media="(min-width: 768px)">
+            <img src="shared/img/index/s3_js_img1_sp.png" alt="こだま店内" width="750" height="882"/>
+            </picture>
+            </p>
+            <h4><img src="shared/img/index/s3_js_h3.jpg" alt="沖縄料理 居酒や こだま" width="70" height="410"/></h4>
+          </div>
+          <div class="item">
+            <p class="photo">
+              <picture>
+            <source srcset="shared/img/index/s3_js_img2.png" media="(min-width: 768px)">
+            <img src="shared/img/index/s3_js_img2_sp.png" alt="小鉄店内" width="750" height="882"/>
+            </picture>
+            </p>
+            <h4><img src="shared/img/index/s3_js_h3_2.jpg" alt="小鉄 小岩北口店" width="70" height="320"/></h4>
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="text">
+          <h2><img src="shared/img/index/s3_h2.png" alt="01.飲食店事業" width="380" height="280" loading="lazy"/></h2>
+          <p class="txt">東京都江戸川区南小岩で沖縄本場の沖縄料理が楽しめる居酒屋<br class="pc">
+            「沖縄料理 居酒や こだま」を運営。<br class="pc">
+            2023年4月には沖縄料理＆ハワイアンを気軽に味わえる<br class="pc">
+            「南国キッチン はりゆんカフェ」を小岩にオープンしました。<br class="pc">
+            はりゆんカフェではタコライスやハワイアンポキ、<br class="pc">
+            餅粉チキンなどをランチ・デリバリーで、夜はお酒も提供しています。
+            その他、美味しい焼き鳥と手作り餃子がおすすめの居酒屋「小鉄 小岩北口店」もFC店舗にてございます。
+            どの店舗も気軽にご利用ください。</p>
+        </div>
+        <ul class="group-bnr">
+          <li class="bnr"><a href="https://www.izakayakodama.com/" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'btn_izakayakodama'});"><img src="shared/img/index/s3_bnr_01.jpg" alt="沖縄そば" width="480" height="220" loading="lazy"/></a></li>
+          <li class="bnr"><a href="http://www.tori-tetsu.com/shop/2652p/" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'btn_toritetsu'});"><img src="shared/img/index/s3_bnr_02.jpg" alt="焼き鳥" width="480" height="220" loading="lazy"/></a></li>
+        </ul>
+        <br>
+        <ul class="group-bnr2">
+          <li class="bnr"><a href="https://www.instagram.com/kitchenhariyun/" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'btn_hariyuncafe'});"><img src="shared/img/index/hariyun.jpg" alt="はりゆんcafe" width="340" height="220" loading="lazy"/></a></li><br>
+          <!--<li class="bnr margin1"><a href="https://www.hotpepper.jp/strJ000186546/" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'btn_toritetsuinage'});"><img src="shared/img/index/toritetsu.png" alt="とり鉄 稲毛店" width="450" height="100" loading="lazy"/></a></li>-->
+        </ul>
+        <!-- <br>
+        <p align="center"><a href="https://www.hotpepper.jp/strJ000186546/" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'btn_toritetsuinage'});"><img src="shared/img/index/toritetsu.png" alt="とり鉄 稲毛店" width="450" height="100" loading="lazy"/></a></p> -->
+        
+      </div>
+    </div>
+    <div id="sec4">
+      <p class="photo">
+        <picture>
+      <source srcset="shared/img/index/s4_img.png" media="(min-width: 768px)">
+      <img src="shared/img/index/s4_img_sp.png" alt="ランチボックス" width="670" height="440" loading="lazy"/>
+      </picture>
+      </p>
+      <div class="wrap">
+        <h2><img src="shared/img/index/s4_h2.png" alt="02.キッチンカー事業" width="440" height="280" loading="lazy"/></h2>
+        <p class="txt">東京・神奈川を中心に関東圏内でのイベント出店、都内の銀座や半蔵門などの会社オフィス近くやマンション付近を中心に<br class="pc">
+          キッチンカーで店舗でも人気の沖縄料理の販売を行っている当社。メディアにも多数取り上げていただき、ランチや夕食の一品にご好評いただいております。</p>
+        <p class="btn-cus btn-cus2"><a href="car.html">詳細はこちら</a></p>
+      </div>
+    </div>
+    <div id="sec5">
+      <p class="photo sp"><img src="shared/img/index/s5_bg_sp.jpg" alt="弁当" width="750" height="835" loading="lazy"/></p>
+      <div class="text">
+        <h2><img src="shared/img/index/s5_h2.png" alt="03.デリバリー事業" width="420" height="280" loading="lazy"/></h2>
+        <p class="txt">まとめて注文可能なデリバリーは、お仲間とのお集まりの際や手軽に済ませたいときに大変便利。ご指定の場所までお届けしますので、本場沖縄の家庭料理を様々な場所でお楽しみください。沖縄料理以外に沖縄タコライス専門店もございます。</p>
+        <div class="group">
+          <div class="item">
+            <h3>沖縄料理 居酒や<br class="pc">
+              こだま</h3>
+            <ul>
+              <li class="btn"> <a href="https://www.ubereats.com/jp/store/%E6%B2%96%E7%B8%84%E6%96%99%E7%90%86%E5%B1%85%E9%85%92%E3%82%84-%E3%81%93%E3%81%9F%E3%81%BE-%E5%B0%8F%E5%B2%A9-okinawaryori-kodama-koiwa/2HAiPpzfQTuFnGK6LLmmlQ?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiU5NyVBNSVFNiU5QyVBQyVFNiVBOSU4QiVFNSVBRSVBNCVFNyU5NCVCQSVFRiVCQyU5MSVFNCVCOCU4MSVFNyU5QiVBRSVFRiVCQyU5MSVFRiVCQyU5MiVFMiU4OCU5MiVFRiVCQyU5NiUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpCZC15eTFXSkdHQVJwbXFES3VzS29tNCUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0EzNS42ODYwNTYzJTJDJTIybG9uZ2l0dWRlJTIyJTNBMTM5Ljc3NTIyMjclN0Q%3D" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'izakayakodama_uber'});">
+                <!--<picture>
+                  <source srcset="shared/img/index/s5_btn_01.jpg" media="(min-width: 768px)">
+                  <img src="shared/img/index/s5_btn_01_sp.jpg" alt="" width="224" height="77" loading="lazy"/> </picture>-->
+				  <img src="shared/img/index/s5_btn_01.jpg" alt="Uber" width="244" height="77" loading="lazy"/>
+                </a> </li>
+              <li class="btn"> <a href="https://me.nu/s8009/f1j2wvo" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'izakayakodama_menuapp'});">
+                <!--<picture>
+                  <source srcset="shared/img/index/s5_btn_02.jpg" media="(min-width: 768px)">
+                  <img src="shared/img/index/s5_btn_02_sp.jpg" alt="" width="224" height="77" loading="lazy"/> </picture>-->
+				  <img src="shared/img/index/s5_btn_02.jpg" alt="MENU" width="244" height="77" loading="lazy"/>
+                </a> </li>
+              <li class="btn"> <a href="https://demae-can.com/shop/menu/3053606" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'izakayakodama_demaekan'});">
+                <!--<picture>
+                  <source srcset="shared/img/index/s5_btn_03.jpg" media="(min-width: 768px)">
+                  <img src="shared/img/index/s5_btn_03_sp.jpg" alt="" width="224" height="77" loading="lazy"/> </picture>-->
+				  <img src="shared/img/index/s5_btn_03.jpg" alt="出前館" width="244" height="77" loading="lazy"/>
+                </a> </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>沖縄タコライス<br class="pc">
+              TACOTACO</h3>
+            <ul>
+              <li class="btn"> <a href="https://www.ubereats.com/jp/store/%E6%B2%96%E7%B8%84%E3%82%BF%E3%82%B3%E3%83%A9%E3%82%A4%E3%82%B9-tacotaco-okinawa-taco-rice-taco-taco/KcKdjK7MQIiCu_BN6PGY6w?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMiVFNiU5NyVBNSVFNiU5QyVBQyVFNiVBOSU4QiVFNSVBRSVBNCVFNyU5NCVCQSVFRiVCQyU5MSVFNCVCOCU4MSVFNyU5QiVBRSVFRiVCQyU5MSVFRiVCQyU5MiVFMiU4OCU5MiVFRiVCQyU5NiUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpCZC15eTFXSkdHQVJwbXFES3VzS29tNCUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0EzNS42ODYwNTYzJTJDJTIybG9uZ2l0dWRlJTIyJTNBMTM5Ljc3NTIyMjclN0Q%3D" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'tacotaco_uber'});">
+                <!--<picture>
+                  <source srcset="shared/img/index/s5_btn_01.jpg" media="(min-width: 768px)">
+                  <img src="shared/img/index/s5_btn_01_sp.jpg" alt="" width="224" height="77" loading="lazy"/> </picture>-->
+				  <img src="shared/img/index/s5_btn_01.jpg" alt="Uber" width="244" height="77" loading="lazy"/>
+                </a> </li>
+              <li class="btn"> <a href="https://me.nu/s81502/f1j2wvo" target="_blank" onclick="gtag('event','click',{'event_category':'Links','event_label':'tacotaco_menuapp'});">
+                <!--<picture>
+                  <source srcset="shared/img/index/s5_btn_02.jpg" media="(min-width: 768px)">
+                  <img src="shared/img/index/s5_btn_02_sp.jpg" alt="" width="224" height="77" loading="lazy"/> </picture>-->
+				  <img src="shared/img/index/s5_btn_02.jpg" alt="MENU" width="244" height="77" loading="lazy"/>
+                </a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sec6">
+      <div class="wrap clearfix">
+        <p class="photo fr"><img src="shared/img/index/s6_img.jpg" alt="宅配イメージ" width="650" height="520" loading="lazy"/></p>
+        <div class="text fl">
+          <h2><img src="shared/img/index/s6_h2.png" alt="04.宅配弁当事業" width="430" height="280" loading="lazy"/></h2>
+          <p class="txt">
+			  宅配クック123の江戸川区エリアフランチャイズ権を取得し営業中です。主にお食事にお困りの高齢者のお宅や施設にお届けしています。「123」には向こう三軒（3）両隣（1、2）の良き隣人のような存在でありたいという想いが込められており、「ご家族になれなくてもお隣さんになれる」という心根をもって日々運営をしております。
+			</p>
+        </div>
+      </div>
+    </div>
+    <div id="sec7">
+      <div class="set1">
+        <div class="wrap">
+          <h2><img src="shared/img/index/s7_h2.png" alt="新しいことにチャレンジしたい方求人募集中" width="850" height="250" loading="lazy"/></h2>
+          <p class="txt">弊社では「未経験だけど挑戦してみたい」「更に経験を積んで後々は独立したい」という夢や<br class="pc">
+            目標にマッチした、経験者・未経験者問わずに活躍できるステージをご用意。<br class="pc">
+            スタッフが楽しんで働ける環境づくり、「やりたい」と声を挙げる方には<br class="pc">
+            積極的に挑戦していただけるようなサポートに特に力を入れております。<br class="pc">
+            飲食だけではなく、様々な事業展開を広げる弊社であなたもぜひ楽しみながら働きませんか？</p>
+          <p class="btn-cus"><a href="company.html">求人情報はこちら</a></p>
+        </div>
+        <p class="photo sp"><img src="shared/img/index/s7_bg_sp.png" alt="スタッフ" width="750" height="710" loading="lazy"/></p>
+      </div>
+      <div class="bnr"> <a href="e-mailform/inquiry.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_inquiry'});">
+        <picture>
+          <source srcset="shared/img/index/s7_bnr.jpg" media="(min-width: 768px)">
+          <img src="shared/img/index/s7_bnr_sp.jpg" alt="イベント出店・開業相談　お問い合わせはこちら" width="1000" height="300" loading="lazy"/> </picture>
+        </a> </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="wrap">
+      <nav class="pc"> <a href="index.html"><span>ホーム</span></a> <a href="#sec3"><span>事業内容</span></a> <a href="company.html"><span>会社概要</span></a> <a href="company.html#sec6"><span>求人情報</span></a> <a href="e-mailform/inquiry.html" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_inquiry'});"><span>お問い合わせ</span></a> <a href="https://www.kodama-inc.jp/fcblog/" target="_blank" onClick="gtag('event','click',{'event_category':'Links','event_label':'btn_blog'});"><span>新着情報</span></a> </nav>
+      <div class="row clearfix">
+        <div class="fl">
+          <p class="logo"><img src="shared/img/shared/f_logo.png" alt="ロゴ" width="150" height="192" loading="lazy"/></p>
+          <p class="tel"><a href="tel:0358767707" class="telhref" onClick="gtag('event','click',{'event_category':'tel','event_label':'footer_phone'});"><img src="shared/img/shared/f_tel.png" alt="03-5876-7707" width="316" height="89" loading="lazy"/></a></p>
+        </div>
+        <div class="fr">
+          <div class="info">
+            <dl>
+              <dt>会社名</dt>
+              <dd>株式会社こだま</dd>
+            </dl>
+            <dl>
+              <dt>所在地</dt>
+              <dd>〒133-0051<br>
+                東京都江戸川区北小岩5-31-10</dd>
+            </dl>
+            <dl>
+              <dt>インボイス登録番号</dt>
+              <dd>T3011701022683</dd>
+            </dl>
+          </div>
+          <div id="socialbuttons"></div>
+        </div>
+      </div>
+      <address>
+      © 株式会社こだま. All Rights Reserved.
+      </address>
+      <p class="cookies-link"><a href="https://www.foodconnection.jp/cookie/cookie_share.html" target="_blank" rel="nofollow">Cookie情報等の取り扱いについて</a></p>
+    </div>
+  </footer>
+  <div id="fixed-sp" class="sp">
+    <ul>
+      <li class="btn-cus"><a href="company.html#sec6">求人情報はこちら</a></li>
+    </ul>
+  </div>
+</main>
+<p id="pagetop"><img src="shared/img/shared/pagetop.png" alt="最上部へ" width="74" height="74" loading="lazy"></p>
+<!-- Facebook - Social -->
+<div id="fb-root"></div>
+<!-- Libraries script --> 
+<script src="shared/js/base.js"></script> 
+<script src="shared/js/autoload.js"></script> 
+<script src="shared/js/jquery.min.js"></script> 
+<script src="shared/js/ScrollMagic.min.js"></script> 
+<script src="shared/js/remodal.js"></script> 
+<script src="shared/js/common.js"></script> 
+<script src="shared/js/slick.js"></script> 
+<script src="shared/js/shared.js"></script> 
+<script src="shared/js/shared2.js"></script> 
+<script src="shared/js/jquery.rss.js"></script> 
+<script>	
+	$(document).ready(function(){
+			$('.slider').slick({
+				autoplay: true,
+				fade: true,
+				dots: true,
+				arrows: false,
+				speed: 1000,
+				autoplaySpeed: 3000,
+				pauseOnFocus: false,
+				pauseOnHover: false,
+			});
+			$('.slider').on('touchstart', function() {
+				$('.slider').slick('slickPlay');
+			});
+	});
+	
+	var rssTpl = "";
+  rssTpl += '<dl>';
+    rssTpl += '<dt class="date">{YEARS}-{MONTH}-{DAY}</dt>';
+    rssTpl += '<dd class="ttl"><a href="{URL}" target="_blank">{TITLE}</a></dd>';
+  rssTpl += '</dl>';
+			FCBase.rss.data = [
+					/* 複数設置の場合、ここからコピー */
+				{
+					selector: "#feed",
+					url: 1,
+					page: 1,
+					total:3,
+					maxTitle: 36,
+					maxDesc: 36,
+					endText: "...",
+					//noImage: "shared/img/shared/no-img.jpg",
+					//ImageSize: {width: "160", height: "110"}, // Default: 300 x 200
+					template: rssTpl,
+					callback: function() {
+					}
+				}
+		 /* 複数設置の場合、ここまでコピーし、カンマでつなげる（selector:とurl:の値も変更）rss.config.phpにURLを追加 */
+			];
+	// BEGIN - Function Scroll Magic
+let controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    triggerElement: ".slider",
+    triggerHook: 0.5,
+    duration: $(".slider").height(), // chieu cao slide
+  })
+
+  .addTo(controller)
+  .on("enter", function (e) {
+   $('.slider').slick('slickPlay');
+  })
+  .on("leave", function (e) {
+  $('.slider').slick('slickPause');
+  });  
+		</script>
+</body>
+</html>
