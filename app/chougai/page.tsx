@@ -187,14 +187,14 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.jpg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
                       <strong>害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/kujyo-zaurus.jpg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
                       <strong>駆除ザウルス</strong>
                     </div>
                   </th>
@@ -637,7 +637,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（鳥害駆除）</h3>
               </div>
-              <img src="/images/companies/protec.jpg" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/protec.svg" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -735,7 +735,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">5</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（鳥害駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.jpg" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/kujyo-zaurus.svg" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
