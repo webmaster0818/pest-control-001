@@ -227,6 +227,25 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* 地域から探す */}
+      <section className="py-12 px-4 bg-base-100">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center">地域から探す</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {areas.map((area) => (
+              <Link
+                key={area.name}
+                href={area.href}
+                className="bg-white hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
+              >
+                <p className="text-lg font-semibold text-gray-900">{area.name}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* なぜ選ばれるのか */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">

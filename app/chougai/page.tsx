@@ -166,64 +166,64 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害鳥根絶の匠</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">害鳥根絶の匠</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>日本鳩対策センター</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">日本鳩対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>みんなのハト対策屋さん</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">みんなのハト対策屋さん</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害獣プロテック</strong>
+                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>駆除ザウルス</strong>
+                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>トータルクリーン</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">トータルクリーン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>スピナ</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">スピナ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>鳩110番</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">鳩110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>プロテクト</strong>
+                      <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">プロテクト</strong>
                     </div>
                   </th>
                 </tr>

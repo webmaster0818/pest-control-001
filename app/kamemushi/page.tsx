@@ -166,64 +166,64 @@ export default function KamemushiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社三共消毒</strong>
+                      <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社三共消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社アサンテ</strong>
+                      <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>有限会社北日本消毒</strong>
+                      <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">有限会社北日本消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社あい営繕</strong>
+                      <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社あい営繕</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社ミヤコ消毒</strong>
+                      <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社ミヤコ消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社こだま</strong>
+                      <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社こだま</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>大洋防疫研究所</strong>
+                      <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">大洋防疫研究所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>株式会社第一環研</strong>
+                      <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">株式会社第一環研</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="/images/hero-pest-new.jpg" alt="カメムシお助け本舗" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>カメムシお助け本舗</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="カメムシお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">カメムシお助け本舗</strong>
                     </div>
                   </th>
                 </tr>

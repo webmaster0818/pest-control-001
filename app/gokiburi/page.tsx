@@ -163,42 +163,42 @@ export default function GokiburiPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/hero-pest-new.jpg" alt="害虫の生活救急車" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="害虫の生活救急車" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫の生活救急車</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/hero-pest-new.jpg" alt="すまサポ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="すまサポ" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">すまサポ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/hero-pest-new.jpg" alt="害虫獣SOS" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="害虫獣SOS" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫獣SOS</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">4</span>
-                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除屋" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除屋" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫駆除屋</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
-                      <img src="/images/hero-pest-new.jpg" alt="リベルタコントロール" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="リベルタコントロール" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">リベルタコントロール</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
                     </div>
                   </th>

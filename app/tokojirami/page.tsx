@@ -166,64 +166,64 @@ export default function TokojiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>駆除ザウルス</strong>
+                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>ダスキン</strong>
+                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">ダスキン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>衛生害虫110番</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">衛生害虫110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害獣プロテック</strong>
+                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>エンバイロ・プランニング</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">エンバイロ・プランニング</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>アサンテ</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>街角害虫駆除相談所</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">街角害虫駆除相談所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害虫駆除対策センター</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">害虫駆除対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>Qujolia</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
                   </th>
                 </tr>
