@@ -108,7 +108,7 @@ export default function MukadePage() {
     <div className="min-h-screen bg-base-200">
       {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "ムカデ・ゲジゲジ" }
       ]} />
 

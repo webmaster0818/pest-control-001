@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "ハクビシン駆除の完全ガイド | 確実な駆除と再発防止 - 害虫駆除110番",
+  title: "ハクビシン駆除の完全ガイド | 確実な駆除と再発防止 - 害虫・害獣駆除プロ比較ナビ",
   description: "ハクビシン駆除の料金相場、業者の選び方、駆除方法を徹底解説。ドブハクビシン、クマハクビシン、ハツカハクビシンの種類別対策と再発防止策をご紹介します。",
   openGraph: {
     title: "ハクビシン駆除業者比較 | 料金相場・口コミ・おすすめ業者",
@@ -132,7 +132,7 @@ export default function HakubishinPage() {
     <div className="min-h-screen bg-base-200">
       {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "ハクビシン" }
       ]} />
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "害虫駆除の料金相場【2026年最新版】 - 害虫駆除110番",
+  title: "害虫駆除の料金相場【2026年最新版】 - 害虫・害獣駆除プロ比較ナビ",
   description: "害虫駆除の料金相場を徹底解説。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
 };
 

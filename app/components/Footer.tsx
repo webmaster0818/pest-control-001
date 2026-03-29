@@ -192,7 +192,7 @@ export default function Footer() {
 
         {/* コピーライト */}
         <div className="mt-8 pt-8 border-t border-gray-600 text-center text-gray-400 text-sm">
-          <p>&copy; 2026 害虫駆除110番. All rights reserved.</p>
+          <p>&copy; 2026 害虫・害獣駆除プロ比較ナビ. All rights reserved.</p>
         </div>
       </div>
     </footer>

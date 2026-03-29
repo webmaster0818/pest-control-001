@@ -21,7 +21,7 @@ export default function TermsPage() {
           <div className="card bg-white shadow-xl">
             <div className="card-body prose max-w-none">
               <p className="text-base-content/70">
-                この利用規約（以下「本規約」）は、害虫駆除110番（以下「当サイト」）が提供するサービスの利用条件を定めるものです。ユーザーの皆様には、本規約に従って当サイトをご利用いただきます。
+                この利用規約（以下「本規約」）は、害虫・害獣駆除プロ比較ナビ（以下「当サイト」）が提供するサービスの利用条件を定めるものです。ユーザーの皆様には、本規約に従って当サイトをご利用いただきます。
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">第1条（適用）</h2>

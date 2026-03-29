@@ -21,7 +21,7 @@ export default function PrivacyPage() {
           <div className="card bg-white shadow-xl">
             <div className="card-body prose max-w-none">
               <p className="text-base-content/70">
-                害虫駆除110番（以下「当サイト」）は、ユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
+                害虫・害獣駆除プロ比較ナビ（以下「当サイト」）は、ユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4">1. 個人情報の定義</h2>

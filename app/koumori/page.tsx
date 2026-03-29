@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫駆除110番",
+  title: "コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫・害獣駆除プロ比較ナビ",
   description: "コウモリ駆除の料金相場、法律知識、安全な追い出し方法を徹底解説。鳥獣保護管理法に基づく正しい対処法と業者の選び方をご紹介します。",
   openGraph: {
     title: "コウモリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
@@ -117,7 +117,7 @@ export default function KoumoriPage() {
     <div className="min-h-screen bg-base-200">
       {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "コウモリ" }
       ]} />
 

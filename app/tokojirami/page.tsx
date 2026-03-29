@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "トコジラミ駆除の完全ガイド | 南京虫対策 - 害虫駆除110番",
+  title: "トコジラミ駆除の完全ガイド | 南京虫対策 - 害虫・害獣駆除プロ比較ナビ",
   description: "トコジラミ（南京虫）の駆除料金相場と業者の選び方。緊急時の対処法、トコジラミ予防対策を詳しく解説します。",
   openGraph: {
     title: "トコジラミ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
@@ -108,7 +108,7 @@ export default function TokojiPage() {
     <div className="min-h-screen bg-base-200">
       {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "トコジラミ" }
       ]} />
 

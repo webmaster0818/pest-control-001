@@ -50,7 +50,7 @@ export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "害虫駆除110番",
+    "name": "害虫・害獣駆除プロ比較ナビ",
     "url": "https://pest-control-001.pages.dev",
     "description": "害虫駆除業者を料金・サービス・口コミで徹底比較。全国13地域、8種類の害虫・害獣に対応。",
     "potentialAction": {
@@ -118,8 +118,8 @@ export default function Home() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害虫駆除110番</strong>
+                      <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong>害虫・害獣駆除プロ比較ナビ</strong>
                     </div>
                   </th>
                   <th className="text-center">
@@ -231,7 +231,7 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">
-            なぜ害虫駆除110番が選ばれるのか
+            なぜ害虫・害獣駆除プロ比較ナビが選ばれるのか
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (

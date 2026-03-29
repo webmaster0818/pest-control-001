@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫駆除110番",
+  title: "ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫・害獣駆除プロ比較ナビ",
   description: "ダニ、マダニ、ツツガムシの駆除料金相場と業者の選び方。緊急時の対処法、ダニ予防対策を詳しく解説します。",
   openGraph: {
     title: "ダニ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
@@ -108,7 +108,7 @@ export default function DaniPage() {
     <div className="min-h-screen bg-base-200">
       {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "ダニ" }
       ]} />
 

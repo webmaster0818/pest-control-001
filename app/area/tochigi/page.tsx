@@ -156,7 +156,7 @@ export default function TokyoPage() {
     <div className="min-h-screen bg-base-200">
 {/* パンくずリスト */}
       <Breadcrumb items={[
-        { label: "害虫駆除110番", href: "/" },
+        { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
         { label: "栃木" }
       ]} />
 
@@ -260,8 +260,8 @@ export default function TokyoPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-black">害虫駆除110番</strong>
+                      <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
@@ -855,18 +855,18 @@ export default function TokyoPage() {
             </div>
           </div>
 
-          {/* 6. 害虫駆除110番 */}
+          {/* 6. 害虫・害獣駆除プロ比較ナビ */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">害虫駆除110番（栃木）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫・害獣駆除プロ比較ナビ（栃木）</h3>
               </div>
-              <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害虫・害獣駆除プロ比較ナビの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>東証上場企業運営で信頼性が高い</li>
                 <li>累計相談500万件以上の圧倒的な実績</li>
@@ -882,7 +882,7 @@ export default function TokyoPage() {
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫・害獣駆除プロ比較ナビの基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
@@ -921,8 +921,8 @@ export default function TokyoPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫駆除110番+栃木+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害虫・害獣駆除プロ比較ナビの口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+栃木+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
