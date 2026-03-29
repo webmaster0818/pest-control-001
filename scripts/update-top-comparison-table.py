@@ -1,97 +1,23 @@
-import Link from "next/link";
-import Image from "next/image";
+#!/usr/bin/env python3
+import re
 
-export default function Home() {
-  const pests = [
-    { name: "シロアリ", href: "/shiroari", icon: "🐜", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "ハチ", href: "/hachi", icon: "🐝", color: "bg-yellow-100 hover:bg-yellow-200" },
-    { name: "ゴキブリ", href: "/gokiburi", icon: "🪳", color: "bg-red-100 hover:bg-red-200" },
-    { name: "ネズミ", href: "/nezumi", icon: "🐭", color: "bg-gray-100 hover:bg-gray-200" },
-    { name: "コウモリ", href: "/koumori", icon: "🦇", color: "bg-purple-100 hover:bg-purple-200" },
-    { name: "ダニ", href: "/dani", icon: "🦠", color: "bg-green-100 hover:bg-green-200" },
-    { name: "トコジラミ", href: "/tokojirami", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "鳥害", href: "/chougai", icon: "🐦", color: "bg-blue-100 hover:bg-blue-200" },
-    { name: "アリ", href: "/ari", icon: "🐜", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "カメムシ", href: "/kamemushi", icon: "🐛", color: "bg-green-100 hover:bg-green-200" },
-    { name: "ムカデ/ゲジゲジ", href: "/mukade", icon: "🐛", color: "bg-red-100 hover:bg-red-200" },
-    { name: "シバンムシ", href: "/shibanmushi", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "毛虫", href: "/kemushi", icon: "🐛", color: "bg-yellow-100 hover:bg-yellow-200" },
-    { name: "ハクビシン", href: "/hakubishin", icon: "🦝", color: "bg-purple-100 hover:bg-purple-200" },
-    { name: "イタチ", href: "/itachi", icon: "🦦", color: "bg-blue-100 hover:bg-blue-200" },
-    { name: "アライグマ", href: "/araiguma", icon: "🦝", color: "bg-gray-100 hover:bg-gray-200" },
-    { name: "テン", href: "/ten", icon: "🦊", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "アナグマ", href: "/anaguma", icon: "🦡", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "タヌキ", href: "/tanuki", icon: "🦝", color: "bg-yellow-100 hover:bg-yellow-200" },
-  ];
+# TOPページのファイルパス
+file_path = 'app/page.tsx'
 
-  const areas = [
-    { name: "東京", href: "/area/tokyo" },
-    { name: "大阪", href: "/area/osaka" },
-    { name: "名古屋", href: "/area/nagoya" },
-    { name: "埼玉", href: "/area/saitama" },
-    { name: "千葉", href: "/area/chiba" },
-    { name: "神奈川", href: "/area/kanagawa" },
-    { name: "横浜", href: "/area/yokohama" },
-    { name: "福岡", href: "/area/fukuoka" },
-    { name: "茨城", href: "/area/ibaraki" },
-    { name: "栃木", href: "/area/tochigi" },
-    { name: "鹿児島", href: "/area/kagoshima" },
-    { name: "宮崎", href: "/area/miyazaki" },
-    { name: "沖縄", href: "/area/okinawa" },
-  ];
+# 既存の比較表セクションを削除して新しい比較表を挿入
+with open(file_path, 'r', encoding='utf-8') as f:
+    content = f.read()
 
-  const features = [
-    { title: "8種類の害虫・害獣を網羅", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害の駆除情報を一括比較" },
-    { title: "地域別の詳細情報", description: "お住まいの地域に特化した駆除業者と料金相場を掲載" },
-    { title: "わかりやすい料金相場", description: "透明性のある料金情報で、安心して業者選びができる" },
-  ];
+# 比較表セクションの開始位置を探す
+comparison_start = content.find('      {/* おすすめ業者比較 */')
+comparison_end = content.find('      {/* 害虫の種類から探す */')
 
-  // 構造化データ（WebSiteスキーマ）
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "害虫駆除110番",
-    "url": "https://pest-control-001.pages.dev",
-    "description": "害虫駆除業者を料金・サービス・口コミで徹底比較。全国13地域、8種類の害虫・害獣に対応。",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://pest-control-001.pages.dev/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  };
+if comparison_start == -1 or comparison_end == -1:
+    print('比較表セクションが見つかりませんでした')
+    exit(1)
 
-  return (
-    <div className="min-h-screen bg-base-200">
-      {/* 構造化データ */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-
-      {/* ヒーローセクション */}
-      <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
-        <Image
-          src="/images/hero-pest-control.jpg"
-          alt="害虫駆除サービス"
-          fill
-          className="object-contain"
-          priority
-        />
-      </section>
-
-      {/* キャッチコピー */}
-      <section className="py-8 px-4 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            害虫でお困りですか？今すぐ解決方法を見つけましょう
-          </h2>
-          <p className="text-lg text-gray-700">
-            シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を比較して、あなたに最適な業者を見つけましょう
-          </p>
-        </div>
-      </section>
-
-      {/* おすすめ業者比較 */}
+# 新しい比較表HTML
+new_comparison_table = '''      {/* おすすめ業者比較 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center mb-8">おすすめ害虫駆除業者比較</h2>
@@ -209,66 +135,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 害虫の種類から探す */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">害虫の種類から探す</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {pests.map((pest) => (
-              <Link
-                key={pest.name}
-                href={pest.href}
-                className="bg-white hover:bg-amber-50 border-2 border-gray-200 hover:border-amber-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                <p className="text-lg font-semibold text-gray-900">{pest.name}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+'''
 
-      {/* なぜ選ばれるのか */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">
-            なぜ害虫駆除110番が選ばれるのか
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-                  <h3 className="card-title text-xl mb-2">{feature.title}</h3>
-                  <p className="text-gray-700">{feature.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+# 置き換え
+new_content = content[:comparison_start] + new_comparison_table + content[comparison_end:]
 
-      {/* CTAセクション */}
-      <section className="py-16 px-4 bg-primary text-primary-content">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="heading-primary">
-            害虫駆除のご相談は今すぐ無料で
-          </h2>
-          <p className="text-lg mb-8">
-            専門の業者があなたの害虫問題を解決します。
-            まずは料金相場を確認して、最適な業者を見つけましょう。
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/price" className="btn btn-lg btn-neutral">
-              料金相場を見る
-            </Link>
-            <Link href="/faq" className="btn btn-lg btn-outline btn-neutral">
-              よくある質問
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+# ファイルに書き込み
+with open(file_path, 'w', encoding='utf-8') as f:
+    f.write(new_content)
+
+print('✓ TOPページの比較表を更新しました')
