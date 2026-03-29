@@ -159,7 +159,7 @@ export default function GokiburiPage() {
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">項目</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
@@ -198,7 +198,7 @@ export default function GokiburiPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
                     </div>
                   </th>
@@ -206,7 +206,7 @@ export default function GokiburiPage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                   <td className="text-center border border-gray-300">全国</td>
                   <td className="text-center border border-gray-300">全国（一部除く）</td>
                   <td className="text-center border border-gray-300">関東</td>
@@ -215,7 +215,7 @@ export default function GokiburiPage() {
                   <td className="text-center border border-gray-300">全国</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center border border-gray-300">6時〜25時</td>
                   <td className="text-center border border-gray-300">24時間365日</td>
                   <td className="text-center border border-gray-300">24時間365日</td>
@@ -224,7 +224,7 @@ export default function GokiburiPage() {
                   <td className="text-center border border-gray-300">24時間365日</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">料金目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金目安</th>
                   <td className="text-center text-primary font-bold border border-gray-300">4,200円〜</td>
                   <td className="text-center text-primary font-bold border border-gray-300">初回5,000円</td>
                   <td className="text-center text-primary font-bold border border-gray-300">5,000円〜</td>
@@ -233,7 +233,7 @@ export default function GokiburiPage() {
                   <td className="text-center text-primary font-bold border border-gray-300">14,300円〜</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">特徴</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">特徴</th>
                   <td className="text-sm border border-gray-300">東証1部上場企業<br/>年中無休<br/>即日対応可能</td>
                   <td className="text-sm border border-gray-300">戸建て住宅専用<br/>築10年以上対象<br/>24時間受付</td>
                   <td className="text-sm border border-gray-300">最短15分到着<br/>関東最安値保証<br/>即日対応</td>
@@ -279,31 +279,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">6時〜25時・年中無休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">4,200円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">保証あり（詳細は要確認）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -389,31 +389,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国（一部対象外）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">初回5,000円</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -487,31 +487,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東（東京・神奈川・千葉・埼玉）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">5,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -585,31 +585,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">8,800円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">要確認</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -683,31 +683,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">関東（東京・神奈川・千葉・埼玉）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">12,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">2カ月間の再発防止保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -756,7 +756,7 @@ export default function GokiburiPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫・害獣駆除プロ比較ナビ（ゴキブリ駆除）</h3>
               </div>
-              <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -781,31 +781,31 @@ export default function GokiburiPage() {
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td className="bg-white text-black border border-gray-300">全国</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td className="bg-white text-black border border-gray-300">24時間365日</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害虫</th>
                       <td className="bg-white text-black border border-gray-300">ゴキブリ・シロアリ・ハチなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td className="bg-white text-black border border-gray-300">14,300円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td className="bg-white text-black border border-gray-300">1年間の長期保証</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td className="bg-white text-black border border-gray-300">現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -931,9 +931,9 @@ export default function GokiburiPage() {
             <table className="table bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">物件タイプ</th>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">料金相場</th>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">備考</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">物件タイプ</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
               <tbody>

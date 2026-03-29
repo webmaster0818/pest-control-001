@@ -162,7 +162,7 @@ export default function MukadePage() {
             <table className="table w-full bg-white text-black">
               <thead>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300"></th>
+                  <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
@@ -230,7 +230,7 @@ export default function MukadePage() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                   <td className="text-center">◎ 関東・関西・東海</td>
                   <td className="text-center">◎ 関東・東海</td>
                   <td className="text-center">○ 北陸4県</td>
@@ -242,7 +242,7 @@ export default function MukadePage() {
                   <td className="text-center">◎ 全国対応</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">8:30〜19:30</td>
                   <td className="text-center">8:30〜17:30</td>
@@ -254,7 +254,7 @@ export default function MukadePage() {
                   <td className="text-center">24時間365日</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応害虫・害獣</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
@@ -266,7 +266,7 @@ export default function MukadePage() {
                   <td className="text-center">ムカデ・ゲジゲジ専門</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
                   <td className="text-center">◎ 完全無料</td>
@@ -278,7 +278,7 @@ export default function MukadePage() {
                   <td className="text-center">◎ 完全無料</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">キャンセル</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
                   <td className="text-center">○ 可能</td>
@@ -290,7 +290,7 @@ export default function MukadePage() {
                   <td className="text-center">○ 可能</td>
                 </tr>
                 <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">公式サイト</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">公式サイト</th>
                   <td className="text-center">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
@@ -356,31 +356,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>東京都、神奈川県、千葉県、埼玉県、栃木県、群馬県、大阪府、愛知県、静岡県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ・シロアリ・ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>スズメバチ駆除 33,000円〜／アシナガバチ駆除 16,500円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>保証あり（詳細は要確認）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -466,31 +466,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>東京都、神奈川県、千葉県、愛知県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>8:30〜19:30・年中無休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ・シロアリ・ゴキブリなど害虫・害獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>同年の再発に限り無償で再駆除</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -564,31 +564,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>富山県、石川県、新潟県、岐阜県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>8:30〜17:30・土日祝日・時間外も対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ・ネズミなど不快害虫・害獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>1〜3ヵ月間の保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -662,31 +662,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>福岡市、北九州市、下関市</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>8:00〜20:00・年中無休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ・ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>蜂の巣駆除 16,500円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>12月までのシーズン保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -760,31 +760,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>東京都、神奈川県、千葉県、埼玉県、群馬県、栃木県、茨城県、山梨県、長野県、新潟県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>9:00〜18:00・土曜・日曜定休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ・シロアリなど害虫・害鳥獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>蜂の駆除 10,780円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -858,31 +858,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>三重県、愛知県、静岡県、岐阜県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>8:00〜17:00・日祝休み</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -956,31 +956,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>関西、関東、中部</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>平日 9:00〜17:00・土曜 9:00〜12:00</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジなど害虫・害獣全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -1054,31 +1054,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>福井県</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>9:00〜17:00・土日祝定休</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジなど害虫全般</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>要見積もり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>保証あり</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・銀行振込・クレジットカード</td>
                     </tr>
                   </tbody>
@@ -1152,31 +1152,31 @@ export default function MukadePage() {
                 <table className="table w-full bg-white text-black">
                   <tbody>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                       <td>全国対応（一部地域を除く）</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">電話受付時間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                       <td>24時間365日・通話無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応可能な害獣・害虫</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
                       <td>ムカデ・ゲジゲジ専門</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">駆除最低料金</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
                       <td>スズメバチ 13,000円〜／アシナガバチ 8,800円〜／ミツバチ 10,000円〜</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
                       <td>作業後1週間以内の再発は無料対応</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">無料診断の有無</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
                       <td>相談・調査・見積もり完全無料</td>
                     </tr>
                     <tr>
-                      <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">支払い方法</th>
+                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
                       <td>現金・クレジットカード・電子マネー</td>
                     </tr>
                   </tbody>
