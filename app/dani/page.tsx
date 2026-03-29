@@ -201,7 +201,7 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/companies/sankyo.svg" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
                       <strong>サンキョークリーンサービス</strong>
                     </div>
                   </th>
@@ -833,7 +833,7 @@ export default function DaniPage() {
                 <span className="badge badge-lg text-base">6</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo.svg" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
