@@ -82,7 +82,7 @@ export default function ShiroariPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-amber-600 to-amber-800 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-m9WIzi5i6Mc?w=1920&h=1080&fit=crop"
+          src="/images/hero-pest-new.jpg"
           alt="シロアリ駆除の専門業者"
           fill
           className="object-cover"
@@ -143,7 +143,7 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
                       <strong>街角害虫駆除相談所</strong>
                     </div>
                   </th>
@@ -157,7 +157,7 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">5</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="キャッツ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="キャッツ" className="w-20 h-20 rounded-full object-cover" />
                       <strong>キャッツ</strong>
                     </div>
                   </th>
@@ -444,7 +444,7 @@ export default function ShiroariPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（シロアリ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -640,7 +640,7 @@ export default function ShiroariPage() {
                 <span className="badge badge-lg text-base">5</span>
                 <h3 className="text-2xl font-bold text-black">キャッツ（シロアリ駆除専門）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

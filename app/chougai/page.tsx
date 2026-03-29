@@ -115,7 +115,7 @@ export default function ChougaiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-H1c3VbKMAuo?w=1920&h=1080&fit=crop"
+          src="/images/hero-animal-new.jpg"
           alt="鳥害駆除の専門業者"
           fill
           className="object-cover"
@@ -166,21 +166,21 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害鳥根絶の匠" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-20 h-20 rounded-full object-cover" />
                       <strong>害鳥根絶の匠</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="日本鳩対策センター" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-20 h-20 rounded-full object-cover" />
                       <strong>日本鳩対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-full object-cover" />
                       <strong>みんなのハト対策屋さん</strong>
                     </div>
                   </th>
@@ -201,28 +201,28 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="トータルクリーン" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-20 h-20 rounded-full object-cover" />
                       <strong>トータルクリーン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="スピナ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-20 h-20 rounded-full object-cover" />
                       <strong>スピナ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="鳩110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong>鳩110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="プロテクト" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-20 h-20 rounded-full object-cover" />
                       <strong>プロテクト</strong>
                     </div>
                   </th>
@@ -331,7 +331,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-warning badge-lg text-base">👑 1</span>
                 <h3 className="text-2xl font-bold text-black">害鳥根絶の匠（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害鳥根絶の匠" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -441,7 +441,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                 <h3 className="text-2xl font-bold text-black">日本鳩対策センター（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="日本鳩対策センター" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -539,7 +539,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">みんなのハト対策屋さん（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="みんなのハト対策屋さん" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -833,7 +833,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">6</span>
                 <h3 className="text-2xl font-bold text-black">トータルクリーン（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="トータルクリーン" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -931,7 +931,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">7</span>
                 <h3 className="text-2xl font-bold text-black">スピナ（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="スピナ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1029,7 +1029,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">8</span>
                 <h3 className="text-2xl font-bold text-black">鳩110番（鳥害駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="鳩110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1127,7 +1127,7 @@ export default function ChougaiPage() {
                 <span className="badge badge-lg text-base">9</span>
                 <h3 className="text-2xl font-bold text-black">プロテクト（鳥害駆除専門）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="プロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

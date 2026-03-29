@@ -115,7 +115,7 @@ export default function MukadePage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-H1c3VbKMAuo?w=1920&h=1080&fit=crop"
+          src="/images/hero-pest-new.jpg"
           alt="ムカデ・ゲジゲジ駆除の専門業者"
           fill
           className="object-cover"
@@ -222,7 +222,7 @@ export default function MukadePage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="ムカデ・ゲジゲジお助け本舗" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="ムカデ・ゲジゲジお助け本舗" className="w-20 h-20 rounded-full object-cover" />
                       <strong>ムカデ・ゲジゲジお助け本舗</strong>
                     </div>
                   </th>
@@ -1127,7 +1127,7 @@ export default function MukadePage() {
                 <span className="badge badge-lg text-base">9</span>
                 <h3 className="text-2xl font-bold text-black">ムカデ・ゲジゲジお助け本舗（ムカデ・ゲジゲジ駆除専門）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="ムカデ・ゲジゲジお助け本舗" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="ムカデ・ゲジゲジお助け本舗" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

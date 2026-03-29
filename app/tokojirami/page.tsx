@@ -115,7 +115,7 @@ export default function TokojiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-yellow-500 to-orange-600 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-H1c3VbKMAuo?w=1920&h=1080&fit=crop"
+          src="/images/hero-pest-new.jpg"
           alt="トコジラミ駆除の専門業者"
           fill
           className="object-cover"
@@ -180,7 +180,7 @@ export default function TokojiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="衛生害虫110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong>衛生害虫110番</strong>
                     </div>
                   </th>
@@ -194,35 +194,35 @@ export default function TokojiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
-                      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=100&h=100&fit=crop" alt="エンバイロ・プランニング" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-20 h-20 rounded-full object-cover" />
                       <strong>エンバイロ・プランニング</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">6</span>
-                      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=100&h=100&fit=crop" alt="アサンテ" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-20 h-20 rounded-full object-cover" />
                       <strong>アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">7</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-full object-cover" />
                       <strong>街角害虫駆除相談所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">8</span>
-                      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=100&h=100&fit=crop" alt="害虫駆除対策センター" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-full object-cover" />
                       <strong>害虫駆除対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=100&h=100&fit=crop" alt="Qujolia" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-full object-cover" />
                       <strong>Qujolia</strong>
                     </div>
                   </th>
@@ -539,7 +539,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                 <h3 className="text-2xl font-bold text-black">衛生害虫110番（トコジラミ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -735,7 +735,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base">5</span>
                 <h3 className="text-2xl font-bold text-black">エンバイロ・プランニング（トコジラミ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="エンバイロ・プランニング" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -833,7 +833,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base">6</span>
                 <h3 className="text-2xl font-bold text-black">アサンテ（トコジラミ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop" alt="アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -931,7 +931,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base">7</span>
                 <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（トコジラミ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1029,7 +1029,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base">8</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除対策センター（トコジラミ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=200&fit=crop" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
@@ -1127,7 +1127,7 @@ export default function TokojiPage() {
                 <span className="badge badge-lg text-base">9</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（トコジラミ駆除専門）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=200&fit=crop" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">

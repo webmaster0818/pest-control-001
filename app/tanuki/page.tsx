@@ -139,7 +139,7 @@ export default function TanukiPage() {
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-gradient-to-r from-gray-700 to-gray-900 text-white relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-35J2ODtMdPU?w=1920&h=1080&fit=crop"
+          src="/images/hero-animal-new.jpg"
           alt="タヌキ駆除の専門業者"
           fill
           className="object-cover"
@@ -221,7 +221,7 @@ export default function TanukiPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
-                      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=100&h=100&fit=crop" alt="害獣駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-20 h-20 rounded-full object-cover" />
                       <strong className="text-black">害獣駆除110番</strong>
                     </div>
                   </th>
@@ -801,7 +801,7 @@ export default function TanukiPage() {
                 <span className="badge badge-lg">6</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除110番（タヌキ駆除）</h3>
               </div>
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=200&fit=crop" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
