@@ -128,7 +128,7 @@ export default function AriPage() {
               アリ駆除の完全ガイド
             </h1>
             <p className="text-xl mb-8">
-              スズメバチ・アシナガバチの危険性から駆除方法まで、安全な対処法をご紹介します
+              確実な駆除方法と再発防止策で、アリのいない快適な生活を実現します
             </p>
             </div>
         </div>
