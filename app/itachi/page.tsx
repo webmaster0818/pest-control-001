@@ -148,7 +148,6 @@ export default function ItachiPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
-            <div className="text-6xl mb-6">🦦</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               イタチ駆除の完全ガイド
             </h1>

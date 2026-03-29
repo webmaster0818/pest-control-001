@@ -124,20 +124,13 @@ export default function DaniPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30 z-0"></div>
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
-            <div className="text-6xl mb-6">🦠</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               ダニ駆除の完全ガイド
             </h1>
             <p className="text-xl mb-8">
               スズメバチ・アシナガバチの危険性から駆除方法まで、安全な対処法をご紹介します
             </p>
-            <div className="alert alert-error shadow-lg max-w-2xl mx-auto">
-              <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="font-bold">緊急：ダニの巣を見つけたら絶対に自分で駆除しないでください</span>
             </div>
-          </div>
         </div>
       </section>
 
