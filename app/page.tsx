@@ -105,21 +105,21 @@ export default function Home() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-warning badge-lg">👑 1</span>
                       <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>駆除ザウルス</strong>
+                      <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
                       <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>ハウスプロテクト</strong>
+                      <strong className="text-lg font-bold text-gray-900">ハウスプロテクト</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                       <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害虫・害獣駆除プロ比較ナビ</strong>
+                      <strong className="text-lg font-bold text-gray-900">害虫・害獣駆除プロ比較ナビ</strong>
                     </div>
                   </th>
                   <th className="text-center">
@@ -133,7 +133,7 @@ export default function Home() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">5</span>
                       <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>サンキョークリーンサービス</strong>
+                      <strong className="text-lg font-bold text-gray-900">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                 </tr>
