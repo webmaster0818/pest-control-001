@@ -126,7 +126,7 @@ export default function Home() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">4</span>
                       <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
-                      <strong>害獣プロテック</strong>
+                      <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                     </div>
                   </th>
                   <th className="text-center">

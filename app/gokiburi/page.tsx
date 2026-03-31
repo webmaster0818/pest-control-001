@@ -429,16 +429,19 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     戸建て住宅専用ということで、我が家の構造に合わせた対策をしてくれました。初回5,000円で明確な料金設定も安心でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     24時間365日受付で、夜中に発見したゴキブリにも翌朝すぐに対応していただけました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     築15年の我が家でしたが、専門スタッフが丁寧に調査・駆除してくれました。再発防止のアドバイスも助かりました。
                   </p>
@@ -527,16 +530,19 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     最短15分で来ていただけて本当に助かりました。緊急時の対応が素早く、即日駆除していただけました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     関東最安値保証ということで、他社と比較しても価格が安かったです。施工の質も高く満足しています。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     関東エリアに特化しているだけあって、地域の特性を理解した対策をしてくれました。アフターケアも丁寧でした。
                   </p>
@@ -625,16 +631,19 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     年間3万件の施工実績があるだけあって、経験豊富なスタッフが来てくれました。的確な診断と施工で安心できました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     全国対応で見積もりも無料でした。料金も明確で、追加費用もなく信頼できる業者でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     豊富な実績に基づいた確実な施工で、ゴキブリが完全にいなくなりました。アフターフォローも丁寧でした。
                   </p>
@@ -723,16 +732,19 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     2カ月間の再発防止保証があり、安心してお願いできました。侵入口の徹底封鎖で、その後ゴキブリを見ていません。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     関東エリア専門ということで、地域の気候や建物の特性に合わせた対策をしてくれました。根本的な解決ができました。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     侵入口の封鎖技術が高く、薬剤だけに頼らない総合的な駆除をしてくれました。保証期間中のフォローも手厚かったです。
                   </p>
@@ -821,16 +833,19 @@ export default function GokiburiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     1年間の長期保証があり、長期的に安心できました。追加料金もなく、明朗会計で信頼できる業者でした。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     24時間365日対応で、深夜に発見したゴキブリにも翌日すぐに対応していただけました。全国対応なので安心です。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
+                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
                     大手業者ならではの安心感がありました。施工後のフォローも丁寧で、1年保証期間中は何度でも相談できました。
                   </p>
