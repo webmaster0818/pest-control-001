@@ -209,25 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 害虫の種類から探す */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">害虫の種類から探す</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {pests.map((pest) => (
-              <Link
-                key={pest.name}
-                href={pest.href}
-                className="bg-white hover:bg-amber-50 border-2 border-gray-200 hover:border-amber-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                <p className="text-lg font-semibold text-gray-900">{pest.name}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
       {/* 地域から探す */}
       <section className="py-12 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -240,6 +221,25 @@ export default function Home() {
                 className="bg-white hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
               >
                 <p className="text-lg font-semibold text-gray-900">{area.name}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* 害虫の種類から探す */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="heading-primary text-center">害虫の種類から探す</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {pests.map((pest) => (
+              <Link
+                key={pest.name}
+                href={pest.href}
+                className="bg-white hover:bg-amber-50 border-2 border-gray-200 hover:border-amber-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
+              >
+                <p className="text-lg font-semibold text-gray-900">{pest.name}</p>
               </Link>
             ))}
           </div>
