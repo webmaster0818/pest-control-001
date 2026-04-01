@@ -183,36 +183,6 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 茨城で多い害虫トップ5 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">茨城で多い害虫トップ5</h2>
-          <div className="space-y-6">
-            {topPests.map((pest) => (
-              <div key={pest.rank} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
-                    <div className="text-5xl">{pest.icon}</div>
-                    <div className="flex-1">
-                      <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
-                      <p className="text-gray-700 mb-2">{pest.description}</p>
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-gray-700">{pest.areas}</span>
-                      </div>
-                      <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
-                        {pest.name}駆除について詳しく →
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
@@ -1495,6 +1465,36 @@ export default function TokyoPage() {
                           <p className="font-semibold text-sm text-black">{org.hours}</p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 茨城で多い害虫トップ5 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">茨城で多い害虫トップ5</h2>
+          <div className="space-y-6">
+            {topPests.map((pest) => (
+              <div key={pest.rank} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <div className="flex items-start gap-4">
+                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
+                    <div className="text-5xl">{pest.icon}</div>
+                    <div className="flex-1">
+                      <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
+                      <p className="text-gray-700 mb-2">{pest.description}</p>
+                      <div className="flex items-center gap-2 text-sm">
+                        <span className="badge badge-outline">多発エリア:</span>
+                        <span className="text-gray-700">{pest.areas}</span>
+                      </div>
+                      <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
+                        {pest.name}駆除について詳しく →
+                      </Link>
                     </div>
                   </div>
                 </div>
