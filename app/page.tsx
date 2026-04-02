@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import AreaAccordion from "./components/AreaAccordion";
 
 export default function Home() {
   const pests = [
@@ -24,21 +25,7 @@ export default function Home() {
     { name: "タヌキ", href: "/tanuki", icon: "🦝", color: "bg-yellow-100 hover:bg-yellow-200" },
   ];
 
-  const areas = [
-    { name: "東京", href: "/area/tokyo" },
-    { name: "大阪", href: "/area/osaka" },
-    { name: "名古屋", href: "/area/nagoya" },
-    { name: "埼玉", href: "/area/saitama" },
-    { name: "千葉", href: "/area/chiba" },
-    { name: "神奈川", href: "/area/kanagawa" },
-    { name: "横浜", href: "/area/yokohama" },
-    { name: "福岡", href: "/area/fukuoka" },
-    { name: "茨城", href: "/area/ibaraki" },
-    { name: "栃木", href: "/area/tochigi" },
-    { name: "鹿児島", href: "/area/kagoshima" },
-    { name: "宮崎", href: "/area/miyazaki" },
-    { name: "沖縄", href: "/area/okinawa" },
-  ];
+  // areas moved to AreaAccordion component
 
   const features = [
     { title: "8種類の害虫・害獣を網羅", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害の駆除情報を一括比較" },
@@ -212,18 +199,8 @@ export default function Home() {
       {/* 地域から探す */}
       <section className="py-12 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">地域から探す</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {areas.map((area) => (
-              <Link
-                key={area.name}
-                href={area.href}
-                className="bg-white hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                <p className="text-lg font-semibold text-gray-900">{area.name}</p>
-              </Link>
-            ))}
-          </div>
+          <h2 className="heading-primary text-center mb-8">地域から探す</h2>
+          <AreaAccordion />
         </div>
       </section>
 

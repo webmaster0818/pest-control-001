@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import FooterAreaAccordion from "./FooterAreaAccordion";
 
 export default function Footer() {
   const [isPestsOpen, setIsPestsOpen] = useState(false);
@@ -27,22 +28,6 @@ export default function Footer() {
     { name: "テン", href: "/ten" },
     { name: "アナグマ", href: "/anaguma" },
     { name: "タヌキ", href: "/tanuki" },
-  ];
-
-  const areas = [
-    { name: "東京", href: "/area/tokyo" },
-    { name: "大阪", href: "/area/osaka" },
-    { name: "名古屋", href: "/area/nagoya" },
-    { name: "埼玉", href: "/area/saitama" },
-    { name: "千葉", href: "/area/chiba" },
-    { name: "神奈川", href: "/area/kanagawa" },
-    { name: "横浜", href: "/area/yokohama" },
-    { name: "福岡", href: "/area/fukuoka" },
-    { name: "茨城", href: "/area/ibaraki" },
-    { name: "栃木", href: "/area/tochigi" },
-    { name: "鹿児島", href: "/area/kagoshima" },
-    { name: "宮崎", href: "/area/miyazaki" },
-    { name: "沖縄", href: "/area/okinawa" },
   ];
 
   const staticPages = [
@@ -73,15 +58,7 @@ export default function Footer() {
           {/* エリアから探す */}
           <div>
             <h3 className="font-bold text-lg mb-4">エリアから探す</h3>
-            <ul className="space-y-2 pl-4">
-              {areas.map((area) => (
-                <li key={area.href}>
-                  <Link href={area.href} className="text-gray-300 hover:text-white hover:underline transition-colors">
-                    {area.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <FooterAreaAccordion />
           </div>
 
           {/* その他 */}
@@ -158,15 +135,9 @@ export default function Footer() {
               </svg>
             </button>
             {isAreasOpen && (
-              <ul className="pb-4 space-y-2 pl-4">
-                {areas.map((area) => (
-                  <li key={area.href}>
-                    <Link href={area.href} className="text-gray-300 hover:text-white hover:underline transition-colors block py-1">
-                      {area.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className="pb-4 pl-4">
+                <FooterAreaAccordion />
+              </div>
             )}
           </div>
 
