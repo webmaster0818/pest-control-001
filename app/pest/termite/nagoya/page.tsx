@@ -1338,7 +1338,7 @@ export default function TermiteNagoyaPage() {
               <thead>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">エリア</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">名古屋の相場</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>

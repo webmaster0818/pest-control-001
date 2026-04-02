@@ -4,16 +4,16 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "大阪のゴキブリ駆除業者おすすめ8社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
-  description: "大阪でゴキブリ駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
+  title: "神戸の害虫駆除業者比較 | 料金相場・口コミ・おすすめ8社 - 害虫・害獣駆除プロ比較ナビ",
+  description: "神戸で害虫駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
-    title: "大阪のゴキブリ駆除業者おすすめ8社｜料金相場・口コミ比較",
-    description: "大阪のゴキブリ駆除業者を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/pest/cockroach/osaka",
+    title: "大阪の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
+    description: "大阪の害虫駆除業者10社を料金・サービス・口コミで徹底比較。",
+    url: "https://pest-control-001.pages.dev/area/osaka",
   },
 };
 
-export default function CockroachOsakaPage() {
+export default function KobePage() {
   const topPests = [
     {
       rank: 1,
@@ -59,42 +59,57 @@ export default function CockroachOsakaPage() {
 
   const priceComparison = [
     {
-      area: "大阪市内",
-      price: "15,000〜30,000円/件",
-      note: "標準的",
+      pest: "シロアリ駆除",
+      tokyo: "12,000〜18,000円/坪",
+      national: "10,000〜15,000円/坪",
+      note: "都心部はやや高め",
     },
     {
-      area: "堺市・北摂",
-      price: "12,000〜25,000円/件",
-      note: "やや安め",
+      pest: "ハチ駆除",
+      tokyo: "15,000〜35,000円",
+      national: "15,000〜30,000円",
+      note: "高所作業が多く料金高め",
     },
     {
-      area: "全国平均",
-      price: "15,000〜30,000円/件",
-      note: "参考値",
+      pest: "ゴキブリ駆除",
+      tokyo: "20,000〜35,000円",
+      national: "15,000〜30,000円",
+      note: "飲食店需要で料金やや高",
+    },
+    {
+      pest: "ネズミ駆除",
+      tokyo: "100,000〜180,000円",
+      national: "80,000〜150,000円",
+      note: "複雑な建物構造で高額",
+    },
+    {
+      pest: "コウモリ駆除",
+      tokyo: "120,000〜350,000円",
+      national: "100,000〜300,000円",
+      note: "都心部の難易度高",
     },
   ];
 
   const seasonCalendar = [
     {
       season: "春（3月〜5月）",
-      pests: ["活動開始"],
-      advice: "気温上昇で活動開始。早期対策が重要。",
+      pests: ["シロアリの羽アリ発生", "ゴキブリの活動開始", "ハチの巣作り開始"],
+      advice: "シロアリの羽アリを見かけたらすぐに点検を。ゴキブリ対策も早めに開始。",
     },
     {
       season: "夏（6月〜8月）",
-      pests: ["繁殖ピーク"],
-      advice: "最も活発な時期。徹底的な駆除が必要。",
+      pests: ["ゴキブリのピーク", "ハチの攻撃性増加", "湿気でカビ・ダニ発生"],
+      advice: "ゴキブリ・ハチ被害が最多の時期。梅雨明けの点検が重要。",
     },
     {
       season: "秋（9月〜11月）",
-      pests: ["越冬準備"],
-      advice: "暖かい場所に集まる。侵入経路の封鎖が効果的。",
+      pests: ["ネズミの侵入増加", "ハチの活動最盛期", "越冬準備の害虫増加"],
+      advice: "ネズミが暖かい場所を求めて侵入。侵入口の封鎖が必須。",
     },
     {
       season: "冬（12月〜2月）",
-      pests: ["暖房エリアで活動"],
-      advice: "暖房のある場所では年中活動。油断禁物。",
+      pests: ["ネズミ被害継続", "ゴキブリ（暖房で活動）", "コウモリの越冬"],
+      advice: "暖房のある場所ではゴキブリが活動継続。ネズミ駆除のベストシーズン。",
     },
   ];
 
@@ -149,7 +164,7 @@ export default function CockroachOsakaPage() {
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
           src="/images/hero-pest-control.jpg"
-          alt="大阪のゴキブリ駆除サービス"
+          alt="大阪の害虫駆除サービス"
           fill
           className="object-contain"
           priority
@@ -160,7 +175,7 @@ export default function CockroachOsakaPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            大阪のゴキブリ駆除 完全ガイド
+            大阪の害虫駆除 完全ガイド
           </h2>
           <p className="text-lg text-gray-700">
             大阪都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
@@ -1329,24 +1344,26 @@ export default function CockroachOsakaPage() {
         </div>
       </section>
 
-      {/* 大阪のゴキブリ駆除料金相場 */}
+      {/* 大阪の害虫駆除料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪のゴキブリ駆除料金相場</h2>
+          <h2 className="heading-primary text-center">大阪の害虫駆除料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">エリア</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">大阪の相場</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
               <tbody>
                 {priceComparison.map((row, idx) => (
                   <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.area}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
+                    <td className="font-bold border border-gray-300">{row.pest}</td>
+                    <td className="text-primary font-semibold border border-gray-300">{row.tokyo}</td>
+                    <td className="text-gray-700 border border-gray-300">{row.national}</td>
                     <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
                   </tr>
                 ))}
@@ -1457,58 +1474,42 @@ export default function CockroachOsakaPage() {
         </div>
       </section>
 
-      
-      {/* 大阪都内のエリア別ゴキブリ駆除業者 */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">大阪都内のエリア別ゴキブリ駆除業者</h2>
-          <p className="text-center text-gray-700 mb-8">
-            お住まいのエリアでゴキブリ駆除業者を探す（準備中）
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">北区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">中央区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">西区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">天王寺区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">浪速区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">阿倍野区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">東住吉区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
-            <div className="bg-base-100 hover:bg-amber-50 border-2 border-gray-200 rounded-lg py-4 px-2 text-center transition-all">
-              <p className="text-gray-900 font-semibold">平野区</p>
-              <p className="text-xs text-gray-600">準備中</p>
-            </div>
+      {/* 大阪で多い害虫トップ5 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">大阪で多い害虫トップ5</h2>
+          <div className="space-y-6">
+            {topPests.map((pest) => (
+              <div key={pest.rank} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <div className="flex items-start gap-4">
+                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
+                    <div className="text-5xl">{pest.icon}</div>
+                    <div className="flex-1">
+                      <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
+                      <p className="text-gray-700 mb-2">{pest.description}</p>
+                      <div className="flex items-center gap-2 text-sm">
+                        <span className="badge badge-outline">多発エリア:</span>
+                        <span className="text-gray-700">{pest.areas}</span>
+                      </div>
+                      <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
+                        {pest.name}駆除について詳しく →
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
 
       {/* CTA */}
       <section className="py-16 px-4 bg-[#66FFFF] text-gray-900">
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              大阪のゴキブリ駆除のご相談は今すぐ
+              大阪害虫駆除のご相談は今すぐ
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
