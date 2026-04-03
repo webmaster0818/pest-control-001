@@ -34,6 +34,9 @@ export default function Footer() {
     { name: "料金相場", href: "/price" },
     { name: "害虫駆除業者の選び方", href: "/guide" },
     { name: "よくある質問", href: "/faq" },
+    { name: "利用規約", href: "/terms-of-service" },
+    { name: "プライバシーポリシー", href: "/privacy-policy" },
+    { name: "記事の制作ポリシー", href: "/content-policy" },
   ];
 
   return (
