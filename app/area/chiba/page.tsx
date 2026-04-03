@@ -21,7 +21,7 @@ export default function TokyoPage() {
       icon: "🪳",
       description: "繁華街や飲食店が多い千葉では、ゴキブリ被害が最も多い。特にチャバネゴキブリが問題。",
       areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/gokiburi",
+      link: "/pest/cockroach/chiba",
     },
     {
       rank: 2,
@@ -37,7 +37,7 @@ export default function TokyoPage() {
       icon: "🐜",
       description: "木造住宅密集地域でシロアリ被害が多発。梅雨時期の羽アリに注意。",
       areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/shiroari",
+      link: "/pest/termite/chiba",
     },
     {
       rank: 4,
@@ -45,7 +45,7 @@ export default function TokyoPage() {
       icon: "🐝",
       description: "公園や緑地が多いエリアでスズメバチ・アシナガバチの巣が発見される。",
       areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
+      link: "/pest/wasp/chiba",
     },
     {
       rank: 5,

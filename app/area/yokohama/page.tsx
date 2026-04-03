@@ -21,7 +21,7 @@ export default function TokyoPage() {
       icon: "🪳",
       description: "繁華街や飲食店が多い横浜では、ゴキブリ被害が最も多い。特にチャバネゴキブリが問題。",
       areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/gokiburi",
+      link: "/pest/cockroach/yokohama",
     },
     {
       rank: 2,
@@ -29,7 +29,7 @@ export default function TokyoPage() {
       icon: "🐭",
       description: "都心部の古い建物や飲食店街でネズミ被害が増加。クマネズミが主流。",
       areas: "千代田区、中央区、台東区などの都心部",
-      link: "/nezumi",
+      link: "/pest/nezumi/yokohama",
     },
     {
       rank: 3,
@@ -37,7 +37,7 @@ export default function TokyoPage() {
       icon: "🐜",
       description: "木造住宅密集地域でシロアリ被害が多発。梅雨時期の羽アリに注意。",
       areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/shiroari",
+      link: "/pest/termite/yokohama",
     },
     {
       rank: 4,
@@ -45,7 +45,7 @@ export default function TokyoPage() {
       icon: "🐝",
       description: "公園や緑地が多いエリアでスズメバチ・アシナガバチの巣が発見される。",
       areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
+      link: "/pest/wasp/yokohama",
     },
     {
       rank: 5,
