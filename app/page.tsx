@@ -56,12 +56,12 @@ export default function Home() {
       />
 
       {/* ヒーローセクション */}
-      <section className="hero h-[300px] md:h-[450px] bg-white relative overflow-hidden mt-16">
+      <section className="hero h-[400px] md:h-[550px] bg-white relative overflow-hidden">
         <Image
           src="/images/hero-main.png"
           alt="害虫駆除サービス"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center"
           priority
         />
       </section>
