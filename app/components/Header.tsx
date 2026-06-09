@@ -18,7 +18,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* ロゴエリア */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <h1 className="text-xl md:text-2xl font-bold text-white">害虫・害獣駆除プロ比較ナビ</h1>
+          <span className="text-xl md:text-2xl font-bold text-white">害虫・害獣駆除プロ比較ナビ</span>
           <Image
             src="/images/header-icon.png"
             alt="害虫・害獣駆除プロ比較ナビ"
