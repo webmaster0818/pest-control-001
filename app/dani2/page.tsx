@@ -362,7 +362,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>スズメバチ駆除 33,000円〜／アシナガバチ駆除 16,500円〜</td>
+                      <td>要見積もり（現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -390,31 +390,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業100年近い老舗だけあって、対応が迅速で丁寧でした。スズメバチの巣を安全に駆除していただき、再発防止の対策もしっかりしていただきました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    24時間対応というのが本当に助かりました。夜間にダニに遭遇してパニックになりましたが、すぐに駆けつけてくれて安心しました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    プロのスタッフが来てくれて、作業の説明も分かりやすく、料金も明確でした。万が一の再発保証もあり、信頼してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -500,22 +476,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    即日対応していただき、とても助かりました。自社スタッフの方が来てくださり、作業も丁寧で安心してお任せできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計60万件以上の実績があるだけあって、対応が素早く、説明も分かりやすかったです。再発保証もあり、安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -601,22 +562,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    巣の場所がわからなかったのですが、無料で調査してもらえました。プロのスタッフが防護服で安全に駆除してくれて安心しました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    環境に優しい薬剤を使用してくれるので、小さな子どもやペットがいる我が家でも安心してお願いできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業約50年の実績があり、官公庁や病院などでも対応しているとのことで信頼してお任せしました。高所作業にも対応していただけました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -674,7 +620,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>蜂の巣駆除 16,500円〜</td>
+                      <td>要見積もり（現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -702,22 +648,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    緊急で連絡したところ、最短30分で来ていただけました。低価格で自社施工なので、安心してお任せできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    軒下、天井裏、床下など、あらゆる場所の蜂の巣に対応してくださいました。現地調査・見積りも無料で、明確な料金設定でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手ホームセンターとの取引実績があるとのことで、信頼してお願いしました。シーズン保証もあり、安心です。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -775,7 +706,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>蜂の駆除 10,780円〜</td>
+                      <td>要見積もり（現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -803,22 +734,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    リピート率75.6%というのに惹かれて依頼しました。期待以上の丁寧な対応で、蜂の種類がわからなくても丁寧に対応していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    高所にできた巣でしたが、専門スタッフが安全に駆除してくれました。厚生労働省認可の安全な薬剤を使用しているので安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会からの優良事業所認証を受けているとのことで、信頼してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -904,22 +820,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    高い技術力のスタッフが来てくださり、安全かつ迅速に駆除していただきました。日本ペストコントロール協会加盟で安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    三重県内で探していたので、地元密着の業者さんで助かりました。料金も明確で、保証もしっかりしています。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1005,22 +906,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    メディアに出演されているのを見て依頼しました。即日対応していただき、プロの技術で安全に駆除してくれました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で安心してお任せできました。関西エリアで探していたのでちょうど良かったです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1106,22 +992,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で、プロの技術で安全に駆除してくれました。福井県内で探していたので助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1179,7 +1050,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>スズメバチ 13,000円〜／アシナガバチ 8,800円〜／ミツバチ 10,000円〜</td>
+                      <td>要見積もり（現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -1207,22 +1078,7 @@ export default function DaniPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    24時間365日対応で、深夜にダニに遭遇してパニックになったときもすぐに駆けつけてくれました。最短10分で来てくれるのは本当に助かります。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応なので、地方に住んでいる私でもすぐに来てもらえました。料金も作業前に見積もりしてくれて、明朗会計で安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    ダニ専門の業者さんなので、技術力が高く、安全かつ迅速に駆除してくれました。再発保証もあり、安心してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1378,8 +1234,8 @@ export default function DaniPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span>
-              <strong>自治体の補助金制度：</strong>スズメバチ駆除には自治体から補助金が出る場合があります。
-              お住まいの市区町村にお問い合わせください。
+              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
+              正確な金額は複数業者の無料見積もりで比較するのが確実です。
             </span>
           </div>
         </div>
