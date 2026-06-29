@@ -7,95 +7,95 @@ export const metadata: Metadata = {
   title: "アリ駆除業者比較 | イエヒメアリ・ルリアリの料金相場と対策方法",
   description: "アリ駆除業者10社を料金・実績・対応速度で徹底比較。イエヒメアリ、ルリアリの駆除料金相場（10,000円〜30,000円）、侵入経路対策、季節別アリ対策カレンダーを詳しく解説。",
   openGraph: {
-    title: "アリ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "アリ駆除業者10社を料金・対応速度・実績で徹底比較。即日対応可能な業者も掲載。",
-    url: "https://pest-control-001.pages.dev/hachi",
+    title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの料金相場と対策方法",
+    description: "アリ駆除業者を料金・実績・対応速度で徹底比較。アリ駆除の費用相場、侵入経路対策、季節別カレンダーを掲載。",
+    url: "https://gaichu-pro.com/ari",
   },
 };
 
 export default function AriPage() {
   const beeTypes = [
     {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい。巣に近づくだけで攻撃されることも。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
-    },
-    {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いが、巣を刺激すると集団で攻撃。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
+      name: "イエヒメアリ",
+      danger: "屋内被害",
+      description: "体長2mm前後の小型アリ。屋内に巣を作り、食品や水回りに群がる。巣が分散しやすく、市販薬剤だけでは根絶が難しい。",
+      features: ["体長: 約2mm", "発生場所: 屋内（壁内・水回り）", "特徴: 巣が分散し再発しやすい"],
       color: "badge-warning",
     },
     {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格だが、巣を守るために攻撃することも。アレルギー反応に注意。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
+      name: "クロアリ（クロオオアリ等）",
+      danger: "屋外・侵入",
+      description: "もっとも身近なアリ。屋外に巣を作り、餌を求めて屋内に列をなして侵入する。床下や基礎の隙間から侵入することが多い。",
+      features: ["体長: 5〜12mm", "発生場所: 屋外の土中・床下", "特徴: 行列で屋内へ侵入"],
       color: "badge-info",
+    },
+    {
+      name: "ヒアリ（特定外来生物）",
+      danger: "要注意・有毒",
+      description: "強い毒を持つ外来アリ。刺されると痛みや腫れ、人によってはアナフィラキシーを起こすことがある。発見時は触らず自治体・専門業者へ連絡を。",
+      features: ["体長: 2.5〜6mm", "発生場所: 港湾・コンテナ周辺等", "特徴: 刺咬被害・特定外来生物"],
+      color: "badge-error",
     },
   ];
 
   const emergencySteps = [
     {
       step: "1",
-      title: "すぐに現場から離れる",
-      description: "アリが追ってこない距離（20m以上）まで素早く移動。手で払おうとしない。",
+      title: "刺された部位を冷やす",
+      description: "ヒアリ等に刺された場合は、患部を流水で洗い清潔にし、冷やして安静にする。患部をかきむしらない。",
     },
     {
       step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やす。毒を絞り出すように。",
+      title: "20〜30分は安静にして様子を見る",
+      description: "急激な体調変化（じんましん・息苦しさ等）が起きないか観察する。軽い痛み・かゆみのみなら経過観察。",
     },
     {
       step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出たらすぐに救急車を呼ぶ。",
+      title: "全身症状が出たらすぐ受診",
+      description: "息苦しさ・めまい・全身のじんましんなどアナフィラキシーが疑われる症状が出たら、ためらわず救急車（119番）を。",
     },
   ];
 
   const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
+    { size: "屋内の部分的なアリ駆除（1箇所）", price: "8,000〜15,000円", note: "ベイト剤設置・薬剤施工" },
+    { size: "屋内＋侵入経路対策（一般的な戸建て）", price: "15,000〜30,000円", note: "発生状況により変動" },
+    { size: "広範囲・巣が特定しづらいケース", price: "30,000円〜", note: "複数回施工・要見積もり" },
+    { size: "ヒアリ等の外来アリ対応", price: "要見積もり", note: "自治体・専門業者へ相談" },
   ];
 
   const seasonCalendar = [
     {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階。この時期の駆除が最も安全で低コスト。",
-      risk: "低",
-    },
-    {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる。駆除は専門業者に依頼を。",
+      season: "春（3〜5月）",
+      activity: "活動開始・巣作り",
+      advice: "越冬したアリが活動を再開。侵入経路の封鎖やベイト剤の設置を始めるのに適した時期。",
       risk: "中",
     },
     {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチの誕生期。巣が最大になり、アリの数も最多。絶対に自分で駆除しない。",
+      season: "夏（6〜8月）",
+      activity: "活動ピーク",
+      advice: "餌を求めて屋内侵入が最も増える時期。被害が大きい場合は専門業者へ相談を。",
       risk: "高",
     },
     {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのアリが死滅。空の巣の撤去に最適な時期。",
+      season: "秋（9〜11月）",
+      activity: "越冬準備",
+      advice: "巣ごと弱らせるベイト剤が効きやすい時期。来季の発生抑制に有効。",
+      risk: "中",
+    },
+    {
+      season: "冬（12〜2月）",
+      activity: "活動低下",
+      advice: "屋外のアリは活動が鈍る。屋内に巣があるイエヒメアリ等は冬でも活動することがある。",
       risk: "低",
     },
   ];
 
   const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
+    "アリの種類を特定し、種類に合った駆除を行うか",
+    "巣ごと駆除する方法（ベイト剤等）を提案してくれるか",
+    "侵入経路の封鎖・再発防止策まで対応するか",
+    "再発時の保証はあるか（内容・期間を確認）",
+    "見積もりが明確で、追加料金の有無が説明されるか",
   ];
 
   const areas = [
@@ -362,7 +362,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>スズメバチ駆除 33,000円〜／アシナガバチ駆除 16,500円〜</td>
+                      <td>要見積もり（アリ駆除は現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -390,31 +390,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業100年近い老舗だけあって、対応が迅速で丁寧でした。スズメバチの巣を安全に駆除していただき、再発防止の対策もしっかりしていただきました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    24時間対応というのが本当に助かりました。夜間にアリに遭遇してパニックになりましたが、すぐに駆けつけてくれて安心しました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    プロのスタッフが来てくれて、作業の説明も分かりやすく、料金も明確でした。万が一の再発保証もあり、信頼してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -441,7 +417,7 @@ export default function AriPage() {
               <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の確かな施工実績</li>
-                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
+                <li>最短即日対応も可能、状況に応じて迅速に現地対応を実施</li>
                 <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
               </ul>
             </div>
@@ -500,22 +476,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    即日対応していただき、とても助かりました。自社スタッフの方が来てくださり、作業も丁寧で安心してお任せできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計60万件以上の実績があるだけあって、対応が素早く、説明も分かりやすかったです。再発保証もあり、安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -601,22 +562,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    巣の場所がわからなかったのですが、無料で調査してもらえました。プロのスタッフが防護服で安全に駆除してくれて安心しました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    環境に優しい薬剤を使用してくれるので、小さな子どもやペットがいる我が家でも安心してお願いできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業約50年の実績があり、官公庁や病院などでも対応しているとのことで信頼してお任せしました。高所作業にも対応していただけました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -644,7 +590,7 @@ export default function AriPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
                 <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除からご相談OK</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり、小さな被害からご相談OK</li>
               </ul>
             </div>
 
@@ -674,7 +620,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>蜂の巣駆除 16,500円〜</td>
+                      <td>要見積もり（アリ駆除は現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -702,22 +648,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    緊急で連絡したところ、最短30分で来ていただけました。低価格で自社施工なので、安心してお任せできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    軒下、天井裏、床下など、あらゆる場所の蜂の巣に対応してくださいました。現地調査・見積りも無料で、明確な料金設定でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手ホームセンターとの取引実績があるとのことで、信頼してお願いしました。シーズン保証もあり、安心です。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -775,7 +706,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>蜂の駆除 10,780円〜</td>
+                      <td>要見積もり（アリ駆除は現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -803,22 +734,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    リピート率75.6%というのに惹かれて依頼しました。期待以上の丁寧な対応で、蜂の種類がわからなくても丁寧に対応していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    高所にできた巣でしたが、専門スタッフが安全に駆除してくれました。厚生労働省認可の安全な薬剤を使用しているので安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会からの優良事業所認証を受けているとのことで、信頼してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -904,22 +820,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    高い技術力のスタッフが来てくださり、安全かつ迅速に駆除していただきました。日本ペストコントロール協会加盟で安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    三重県内で探していたので、地元密着の業者さんで助かりました。料金も明確で、保証もしっかりしています。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1005,22 +906,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    メディアに出演されているのを見て依頼しました。即日対応していただき、プロの技術で安全に駆除してくれました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で安心してお任せできました。関西エリアで探していたのでちょうど良かったです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1106,22 +992,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で、プロの技術で安全に駆除してくれました。福井県内で探していたので助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1147,7 +1018,7 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">アリお助け本舗の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
+                <li>全国に拠点を持つ、害虫駆除の専門サービス</li>
                 <li>24時間365日受付で、最短受付から10分で現地到着</li>
                 <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
               </ul>
@@ -1179,7 +1050,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>スズメバチ 13,000円〜／アシナガバチ 8,800円〜／ミツバチ 10,000円〜</td>
+                      <td>要見積もり（アリ駆除は現地調査後にお見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
@@ -1207,22 +1078,7 @@ export default function AriPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    24時間365日対応で、深夜にアリに遭遇してパニックになったときもすぐに駆けつけてくれました。最短10分で来てくれるのは本当に助かります。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応なので、地方に住んでいる私でもすぐに来てもらえました。料金も作業前に見積もりしてくれて、明朗会計で安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    アリ専門の業者さんなので、技術力が高く、安全かつ迅速に駆除してくれました。再発保証もあり、安心してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1269,7 +1125,7 @@ export default function AriPage() {
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
-            緊急！アリに刺された時の対処法
+            ヒアリなど毒を持つアリに刺された場合の応急処置
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {emergencySteps.map((step) => (
@@ -1294,53 +1150,45 @@ export default function AriPage() {
         </div>
       </section>
 
-      {/* アリの巣を見つけたら */}
+      {/* アリが発生したら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">アリの巣を見つけたら</h2>
+          <h2 className="heading-primary text-center">アリが発生したときの対処</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">❌ やってはいけないこと</h3>
+                <h3 className="card-title text-2xl">やってはいけないこと</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
+                    <span>見えているアリだけを潰す（巣が残り再発する）</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
+                    <span>殺虫スプレーを撒きすぎて巣を分散させる</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
+                    <span>砂糖・食品を出したままにする（誘引の原因）</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
+                    <span>ヒアリの疑いがある個体を素手で触る</span>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="card bg-success text-success-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">✅ すべきこと</h3>
+                <h3 className="card-title text-2xl">すべきこと</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
+                    <span>まずアリの種類と侵入経路を確認する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
+                    <span>巣ごと駆除できるベイト剤（毒餌）を活用する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
+                    <span>侵入口の隙間を封鎖し、餌・水場を断つ</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
+                    <span>被害が続く・特定が難しい場合は専門業者へ相談</span>
                   </li>
                 </ul>
               </div>
@@ -1378,8 +1226,8 @@ export default function AriPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span>
-              <strong>自治体の補助金制度：</strong>スズメバチ駆除には自治体から補助金が出る場合があります。
-              お住まいの市区町村にお問い合わせください。
+              <strong>料金は現地状況で変わります：</strong>アリ駆除の費用は発生範囲・巣の場所・施工回数によって変動します。
+              正確な金額は複数業者の無料見積もりで比較するのが確実です。
             </span>
           </div>
         </div>
