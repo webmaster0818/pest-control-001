@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pest-control-001.pages.dev'),
+  metadataBase: new URL('https://gaichu-pro.com'),
   title: {
     default: "害虫・害獣駆除プロ比較ナビ | 全国の害虫駆除業者を料金・口コミで比較",
     template: "%s | 害虫・害獣駆除プロ比較ナビ"
