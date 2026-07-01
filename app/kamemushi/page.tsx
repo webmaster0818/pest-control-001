@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/kamemushi" },
   title: "カメムシ駆除業者比較 | 大量発生時の料金相場と対策方法",
   description: "カメムシ駆除業者10社を料金・実績・対応速度で徹底比較。カメムシ駆除料金相場（15,000円〜50,000円）、大量発生時の対処法、侵入防止対策を詳しく解説。",
   openGraph: {

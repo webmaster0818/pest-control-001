@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gokiburi" },
   title: "ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫・害獣駆除プロ比較ナビ",
   description: "ゴキブリ駆除の料金相場、業者の選び方、自力駆除との比較を徹底解説。再発防止策と予防方法で、ゴキブリのいない快適な生活を実現します。",
   openGraph: {

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shibanmushi" },
   title: "シバンムシ駆除業者比較 | 畳・木材食害の料金相場と対策",
   description: "シバンムシ駆除業者10社を料金・実績・対応速度で徹底比較。シバンムシ駆除料金相場（15,000円〜40,000円）、畳・木材の食害対策、発生源特定方法を詳しく解説。",
   openGraph: {

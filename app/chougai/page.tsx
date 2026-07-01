@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/chougai" },
   title: "鳥害対策の完全ガイド | ハト・カラス駆除 - 害虫・害獣駆除プロ比較ナビ",
   description: "ハト、カラス、ムクドリの駆除料金相場と業者の選び方。緊急時の対処法、鳥害予防対策を詳しく解説します。",
   openGraph: {

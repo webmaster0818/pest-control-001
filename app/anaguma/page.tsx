@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/anaguma" },
   title: "アナグマ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫・害獣駆除プロ比較ナビ",
   description: "アナグマ駆除の料金相場、業者の選び方、駆除方法を徹底解説。ドブアナグマ、クマアナグマ、ハツカアナグマの種類別対策と再発防止策をご紹介します。",
   openGraph: {

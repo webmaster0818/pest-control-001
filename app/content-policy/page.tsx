@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/content-policy" },
   title: "記事の制作ポリシー | 害虫・害獣駆除プロ比較ナビ",
   description: "害虫・害獣駆除プロ比較ナビの記事制作ポリシーです。正確性・中立性・ユーザーファーストを徹底しています。",
   openGraph: {

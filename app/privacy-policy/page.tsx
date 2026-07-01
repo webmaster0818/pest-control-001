@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy-policy" },
   title: "プライバシーポリシー | 害虫・害獣駆除プロ比較ナビ",
   description: "害虫・害獣駆除プロ比較ナビのプライバシーポリシーです。個人情報の取り扱いについて詳しく説明しています。",
   openGraph: {

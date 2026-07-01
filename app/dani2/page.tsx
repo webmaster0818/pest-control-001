@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/dani2" },
   title: "ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫・害獣駆除プロ比較ナビ",
   description: "ダニ、マダニ、ツツガムシの駆除料金相場と業者の選び方。緊急時の対処法、ダニ予防対策を詳しく解説します。",
   openGraph: {

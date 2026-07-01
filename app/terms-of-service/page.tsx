@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms-of-service" },
   title: "利用規約 | 害虫・害獣駆除プロ比較ナビ",
   description: "害虫・害獣駆除プロ比較ナビの利用規約です。本サイトをご利用の際は、必ず本規約をお読みいただき、同意の上でご利用ください。",
   openGraph: {

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/tokojirami" },
   title: "トコジラミ駆除の完全ガイド | 南京虫対策 - 害虫・害獣駆除プロ比較ナビ",
   description: "トコジラミ（南京虫）の駆除料金相場と業者の選び方。緊急時の対処法、トコジラミ予防対策を詳しく解説します。",
   openGraph: {

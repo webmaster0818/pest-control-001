@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/mukade" },
   title: "ムカデ・ゲジゲジ駆除業者比較 | 料金相場と侵入防止対策",
   description: "ムカデ・ゲジゲジ駆除業者10社を料金・実績・対応速度で徹底比較。駆除料金相場（20,000円〜50,000円）、侵入経路封鎖、毒対策を詳しく解説。",
   openGraph: {

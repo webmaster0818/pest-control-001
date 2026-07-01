@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/koumori" },
   title: "コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫・害獣駆除プロ比較ナビ",
   description: "コウモリ駆除の料金相場、法律知識、安全な追い出し方法を徹底解説。鳥獣保護管理法に基づく正しい対処法と業者の選び方をご紹介します。",
   openGraph: {

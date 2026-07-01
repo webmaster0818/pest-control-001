@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shiroari" },
   title: "シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫・害獣駆除プロ比較ナビ",
   description: "シロアリ駆除の料金相場、業者の選び方、駆除方法を徹底解説。バリア工法とベイト工法の違い、見積もり時のチェックポイントをわかりやすく紹介します。",
   openGraph: {

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/kemushi" },
   title: "毛虫駆除業者比較 | チャドクガ・イラガの料金相場と対策",
   description: "毛虫駆除業者10社を料金・実績・対応速度で徹底比較。チャドクガ、イラガの駆除料金相場（10,000円〜30,000円）、皮膚炎対策、庭木の予防方法を詳しく解説。",
   openGraph: {

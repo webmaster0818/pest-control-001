@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/hachi" },
   title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場と緊急対処法",
   description: "ハチ駆除業者10社を料金・対応速度・実績で徹底比較。スズメバチ、アシナガバチ、ミツバチの駆除料金相場（8,000円〜50,000円）、緊急時の対処法、季節別ハチ対策カレンダーを詳しく解説。即日対応可能な業者も掲載。",
   openGraph: {

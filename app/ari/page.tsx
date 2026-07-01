@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ari" },
   title: "アリ駆除業者比較 | イエヒメアリ・ルリアリの料金相場と対策方法",
   description: "アリ駆除業者10社を料金・実績・対応速度で徹底比較。イエヒメアリ、ルリアリの駆除料金相場（10,000円〜30,000円）、侵入経路対策、季節別アリ対策カレンダーを詳しく解説。",
   openGraph: {
