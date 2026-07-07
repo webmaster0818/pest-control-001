@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "害虫・害獣駆除 料金インデックス｜主要業者の公式料金を実確認【2026年7月】業者×料金一覧 - 害虫・害獣駆除プロ比較ナビ",
   description:
     "駆除ザウルス・ハウスプロテクト・害獣プロテック・アサンテ・ダスキン・サンキョークリーンサービスの公式サイトに掲載された料金・保証・見積もり条件を、当サイトが2026年7月7日に実確認して一覧化。基本料金の有無、保証年数、無料見積もりの可否を出典URLつきで比較できます。毎月再確認して更新します。",
-  alternates: { canonical: "https://gaichu-pro.com/price-index" },
+  alternates: { canonical: "/price-index" },
 };
 
 type Row = {
