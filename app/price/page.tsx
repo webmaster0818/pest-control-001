@@ -153,10 +153,10 @@ export default function PricePage() {
             適正価格で安心できる害虫駆除業者を選ぶための料金ガイド
           </p>
           <div className="mt-6 flex flex-wrap gap-2 justify-center">
-            <Link href="/price-index/" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">
+            <Link href="/price-index" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">
               主要業者の公式料金を実確認した「料金インデックス」→
             </Link>
-            <Link href="/gaichu-calendar/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">
+            <Link href="/gaichu-calendar" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">
               害虫カレンダー（発生・駆除の時期）
             </Link>
           </div>

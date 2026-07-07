@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "害虫・害獣 発生・駆除ベストタイミングカレンダー【2026年7月】今月やるべき対策 - 害虫・害獣駆除プロ比較ナビ",
   description:
     "シロアリ・ハチ・ゴキブリ・ネズミ・ムカデ・トコジラミ・ダニ・シバンムシなど、害虫害獣ごとの発生が活発になる時期と駆除・依頼に適した時期を、日本しろあり対策協会や自治体・衛生研究所などの公的情報をもとにまとめました。今月（2026年7月）やるべき対策と依頼判断も毎月更新します。",
-  alternates: { canonical: "https://gaichu-pro.com/gaichu-calendar/" },
+  alternates: { canonical: "https://gaichu-pro.com/gaichu-calendar" },
 };
 
 type Pest = {
@@ -218,9 +218,9 @@ export default function GaichuCalendarPage() {
               駆除費用は害虫の種類・被害規模・建物構造で変わります。各社が公式に掲載する料金・保証・対応害虫は、料金インデックスで比較できます。
             </p>
             <div className="flex flex-wrap gap-2">
-              <Link href="/price-index/" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">害虫別・業者料金インデックスを見る →</Link>
-              <Link href="/price/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">料金相場</Link>
-              <Link href="/agents/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">駆除業者を比較</Link>
+              <Link href="/price-index" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">害虫別・業者料金インデックスを見る →</Link>
+              <Link href="/price" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">料金相場</Link>
+              <Link href="/agents" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">駆除業者を比較</Link>
             </div>
           </div>
 
