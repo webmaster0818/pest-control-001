@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/price" },
-  title: "害虫駆除の料金相場【2026年最新版】 - 害虫・害獣駆除プロ比較ナビ",
+  title: "害虫駆除の料金相場【2026年7月】 - 害虫・害獣駆除プロ比較ナビ",
   description: "害虫駆除の料金相場を徹底解説。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
 };
 
@@ -147,11 +147,19 @@ export default function PricePage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            害虫駆除の料金相場【2026年最新版】
+            害虫駆除の料金相場【2026年7月】
           </h2>
           <p className="text-lg text-gray-700">
             適正価格で安心できる害虫駆除業者を選ぶための料金ガイド
           </p>
+          <div className="mt-6 flex flex-wrap gap-2 justify-center">
+            <Link href="/price-index/" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">
+              主要業者の公式料金を実確認した「料金インデックス」→
+            </Link>
+            <Link href="/gaichu-calendar/" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">
+              害虫カレンダー（発生・駆除の時期）
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -161,7 +169,7 @@ export default function PricePage() {
           <div className="max-w-3xl">
             <div className="text-6xl mb-6">💰</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              害虫駆除の料金相場【2026年最新版】
+              害虫駆除の料金相場【2026年7月】
             </h1>
             <p className="text-xl mb-8">
               適正価格を知って、安心して業者選びを。

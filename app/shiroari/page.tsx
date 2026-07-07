@@ -828,7 +828,7 @@ export default function ShiroariPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">料金相場（2026年最新版）</h2>
+          <h2 className="heading-primary text-center">料金相場（2026年7月）</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black shadow-xl">
               <thead>
