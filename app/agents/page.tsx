@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
-import { agents } from "./agentsData";
+import { agentsByPriority as agents } from "./agentsData";
 
 const SITE = "https://gaichu-pro.com";
 

@@ -8,6 +8,9 @@ export interface Review {
 }
 export interface AgentReview {
   slug: string;
+  partnerTier: "affiliated" | "candidate" | "other"; // 提携済 | 提携候補(ASP掲載) | 他業者
+  asp?: string; // 掲載ASP（提携候補以上）
+  affiliateUrl?: string; // アフィリンク（提携後にokinaから取得して設定）
   name: string;
   image: string; // /images/companies/xxx.(jpg|png)
   metaTitle: string;
@@ -36,6 +39,7 @@ export interface AgentReview {
 export const agents: AgentReview[] = [
   {
     slug: "kujo-zaurus",
+    partnerTier: "other",
     name: "駆除ザウルス",
     image: "/images/companies/kujyo-zaurus.jpg",
     metaTitle:
@@ -112,6 +116,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "house-protect",
+    partnerTier: "candidate",
+    asp: "A8",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "ハウスプロテクト",
     image: "/images/companies/house-protect.png",
     metaTitle: "ハウスプロテクトの口コミ・評判は？料金・保証・メリットを徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -181,6 +188,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "protec",
+    partnerTier: "candidate",
+    asp: "A8・felmat",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "害獣プロテック",
     image: "/images/companies/protec.png",
     metaTitle: "害獣プロテックの口コミ・評判は？料金は高い？メリットを徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -251,6 +261,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "sankyo",
+    partnerTier: "candidate",
+    asp: "A8",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "サンキョークリーンサービス",
     image: "/images/companies/sankyo.png",
     metaTitle: "サンキョークリーンサービスの口コミ・評判は？料金・保証を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -319,6 +332,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "sankyo-shoudoku",
+    partnerTier: "other",
     name: "株式会社三共消毒",
     image: "/images/companies/sankyo-shoudoku.png",
     metaTitle: "三共消毒の口コミ・評判は？料金・保証・老舗の実績を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -388,6 +402,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "asante",
+    partnerTier: "candidate",
+    asp: "felmat・rentracks",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "株式会社アサンテ",
     image: "/images/companies/asante.png",
     metaTitle: "アサンテの口コミ・評判は？シロアリ駆除の料金・保証を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -456,6 +473,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "duskin",
+    partnerTier: "candidate",
+    asp: "A8",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "ダスキン（ターミニックス）",
     image: "/images/companies/duskin.png",
     metaTitle: "ダスキン害虫駆除（ターミニックス）の口コミ・評判は？料金を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -524,6 +544,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "buzz",
+    partnerTier: "candidate",
+    asp: "A8",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "害獣BUZZ",
     image: "/images/companies/buzz.png",
     metaTitle: "害獣BUZZの口コミ・評判は？料金・10年保証・メリットを徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -594,6 +617,9 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "roy",
+    partnerTier: "candidate",
+    asp: "A8",
+    affiliateUrl: "", // TODO: okina提供のアフィリンクを設定
     name: "害獣駆除のROY",
     image: "/images/companies/roy.png",
     metaTitle: "害獣駆除のROYの口コミ・評判は？料金・対応スピードを徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -663,6 +689,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "hachi-otasuke",
+    partnerTier: "other",
     name: "ハチお助け本舗",
     image: "/images/companies/hachi-otasuke.png",
     metaTitle: "ハチお助け本舗の口コミ・評判は？ハチ駆除の料金・対応を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -731,6 +758,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "miyako",
+    partnerTier: "other",
     name: "株式会社ミヤコ消毒",
     image: "/images/companies/miyako.png",
     metaTitle: "ミヤコ消毒の口コミ・評判は？害獣・害虫駆除の料金を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -801,6 +829,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "ratter",
+    partnerTier: "other",
     name: "ネズミ完全退治専門 ラッター",
     image: "/images/companies/ratter.png",
     metaTitle: "ラッターの口コミ・評判は？ネズミ駆除の料金・保証を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -870,6 +899,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "taiyo",
+    partnerTier: "other",
     name: "大洋防疫研究所",
     image: "/images/companies/taiyo.png",
     metaTitle: "大洋防疫研究所の口コミ・評判は？ネズミ・害虫駆除の料金を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -940,6 +970,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "ai-eizen",
+    partnerTier: "other",
     name: "株式会社あい営繕",
     image: "/images/companies/ai-eizen.png",
     metaTitle: "あい営繕の口コミ・評判は？シロアリ・害獣駆除の料金を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -1008,6 +1039,7 @@ export const agents: AgentReview[] = [
   },
   {
     slug: "kita-nihon",
+    partnerTier: "other",
     name: "有限会社北日本消毒",
     image: "/images/companies/kita-nihon.png",
     metaTitle: "北日本消毒の口コミ・評判は？ねずみ・害虫駆除の料金を徹底調査【2026年7月】｜害虫・害獣駆除プロ比較ナビ",
@@ -1080,3 +1112,13 @@ export const agents: AgentReview[] = [
 export function getAgent(slug: string): AgentReview | undefined {
   return agents.find((a) => a.slug === slug);
 }
+
+// 掲載・紹介順: 提携済 > 提携候補 > 他業者
+const tierRank: Record<AgentReview["partnerTier"], number> = {
+  affiliated: 0,
+  candidate: 1,
+  other: 2,
+};
+export const agentsByPriority: AgentReview[] = [...agents].sort(
+  (a, b) => tierRank[a.partnerTier] - tierRank[b.partnerTier]
+);

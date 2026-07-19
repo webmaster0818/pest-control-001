@@ -91,6 +91,19 @@ export default async function AgentPage({ params }: Props) {
                 <span key={b} className="badge badge-lg bg-white/15 border-0 text-white">{b}</span>
               ))}
             </div>
+            {a.affiliateUrl ? (
+              <div className="mt-8">
+                <a
+                  href={a.affiliateUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  className="inline-flex items-center justify-center rounded-xl bg-amber-500 hover:bg-amber-600 px-8 py-4 text-base md:text-lg font-bold text-white shadow-lg transition"
+                >
+                  {a.name}の公式サイトで無料見積もり
+                </a>
+                <p className="mt-2 text-xs text-slate-300">※本ページはプロモーションを含みます</p>
+              </div>
+            ) : null}
             <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
               <Image src={a.image} alt={`${a.name}の害獣・害虫駆除サービス`} width={1200} height={800} className="w-full h-56 md:h-72 object-cover" priority />
             </div>
@@ -275,7 +288,22 @@ export default async function AgentPage({ params }: Props) {
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-2">
               <p className="font-bold text-lg mb-2">害獣・害虫の被害でお困りの方へ</p>
               <p className="text-slate-300 text-sm mb-4">地域・被害状況に合った駆除業者を比較して、無料見積もりを取りましょう。</p>
-              <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">駆除業者を比較して探す</Link>
+              {a.affiliateUrl ? (
+                <div className="flex flex-col items-center gap-3">
+                  <a
+                    href={a.affiliateUrl}
+                    target="_blank"
+                    rel="sponsored nofollow noopener"
+                    className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white"
+                  >
+                    {a.name}の公式サイトで無料見積もり
+                  </a>
+                  <Link href="/" className="text-slate-300 text-sm underline">他の駆除業者とも比較する</Link>
+                  <p className="text-xs text-slate-400">※本ページはプロモーションを含みます</p>
+                </div>
+              ) : (
+                <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">駆除業者を比較して探す</Link>
+              )}
             </div>
           </section>
         </div>
