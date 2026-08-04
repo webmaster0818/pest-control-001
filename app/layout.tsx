@@ -78,7 +78,7 @@ export default function RootLayout({
     <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      ><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#666',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E3TWZZT421"
