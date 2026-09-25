@@ -18,7 +18,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.label,
-      ...(item.href && { "item": `https://pest-control-001.pages.dev${item.href}` })
+      ...(item.href && { "item": `https://gaichu-pro.com${item.href}` })
     }))
   };
 
