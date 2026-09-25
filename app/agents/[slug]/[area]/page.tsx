@@ -261,7 +261,7 @@ export default async function BrandAreaPage({ params }: Props) {
           {/* 料金と保証 */}
           <section id="price" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
-              料金と保証（公式表記のまま）
+              料金と保証
             </h2>
 
             <div className="rounded-2xl border border-slate-200 p-5 mb-5">

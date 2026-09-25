@@ -219,7 +219,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 被害の種類 */}
           <section id="damage" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
-              被害の種類（公的機関の記載より）
+              被害の種類
             </h2>
             <ul className="space-y-3">
               {p.damage.map((d, i) => (
