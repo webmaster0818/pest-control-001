@@ -46,8 +46,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = getPestArea(pest, area);
   if (!p) return {};
   const url = `${SITE}/pest/${pest}/${area}/`;
-  const title = `${p.areaName}の${p.pestName}駆除｜捕獲の許可・相談窓口・対応業者の比較`;
-  const description = `${p.areaName}で${p.pestName}の被害に困っている方向けに、捕獲に関する法令（環境省・東京都の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しました。`;
+  // municipalSupport があるページ（ハチなど鳥獣保護管理法の対象外の種別）は
+  // 「捕獲の許可」が主題ではないため、タイトル・説明文を自治体対応の側に寄せる。
+  const municipal = p.municipalSupport ?? [];
+  const title = municipal.length
+    ? `${p.areaName}の${p.pestName}駆除｜自治体の対応・費用の助成・防護服の貸出`
+    : `${p.areaName}の${p.pestName}駆除｜捕獲の許可・相談窓口・対応業者の比較`;
+  const description = municipal.length
+    ? `${p.areaName}で${p.pestName}の巣に困っている方向けに、${municipal.length}自治体の公式ページに書かれている駆除の可否・費用の助成・防護服の貸出の記載と、${p.pestName}対応の記載がある駆除業者を編集部が整理しました。`
+    : `${p.areaName}で${p.pestName}の被害に困っている方向けに、捕獲に関する法令（環境省・東京都の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しました。`;
   return {
     title: { absolute: `${title}｜害虫・害獣駆除プロ比較ナビ` },
     description,
@@ -88,6 +95,9 @@ export default async function PestAreaPage({ params }: Props) {
   }
   const confirmed = formatDate(p.confirmedDate);
   const pestPagePath = p.pestPagePath ?? `/${p.pestSlug}`;
+  // 自治体ごとの対応（ハチなど）。空なら従来どおり法令中心の見せ方のまま。
+  const municipal = p.municipalSupport ?? [];
+  const hasMunicipal = municipal.length > 0;
 
   // 順位づけはしない。partnerTier 順（affiliated → candidate → other）で並べるだけ。
   const companies = p.companySlugs
@@ -110,21 +120,29 @@ export default async function PestAreaPage({ params }: Props) {
         <header className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
           <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
             <p className="text-sm tracking-widest text-amber-300 mb-3">
-              エリア × 害獣情報
+              エリア × {hasMunicipal ? "害虫" : "害獣"}情報
             </p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
               {p.areaName}の{p.pestName}駆除
               <br className="hidden md:block" />
-              捕獲の許可・相談窓口・対応業者
+              {hasMunicipal
+                ? "自治体の対応・費用の助成・対応業者"
+                : "捕獲の許可・相談窓口・対応業者"}
             </h1>
             <p className="text-slate-200 leading-relaxed">
-              法令と自治体窓口の情報を先に整理し、そのうえで{p.pestName}
-              対応の記載がある業者を比較できるようにしています。
+              {hasMunicipal
+                ? `自治体が駆除するかどうか、費用の助成や防護服の貸出があるかどうかは自治体ごとに分かれます。各自治体の公式ページの記載を先に整理し、そのうえで${p.pestName}対応の記載がある業者を比較できるようにしています。`
+                : `法令と自治体窓口の情報を先に整理し、そのうえで${p.pestName}対応の記載がある業者を比較できるようにしています。`}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="badge badge-lg bg-white/15 border-0 text-white">
                 掲載業者 {companies.length}社
               </span>
+              {hasMunicipal && (
+                <span className="badge badge-lg bg-white/15 border-0 text-white">
+                  掲載自治体 {municipal.length}件
+                </span>
+              )}
               <span className="badge badge-lg bg-white/15 border-0 text-white">
                 確認日 {confirmed}
               </span>
@@ -134,10 +152,21 @@ export default async function PestAreaPage({ params }: Props) {
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
           <div className="mb-8 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 leading-relaxed">
-            本ページは、公的機関（環境省・{p.areaName}
-            ・区市）および各社の公式サイトの公開情報をもとに編集部が整理したものです（確認日：
-            {confirmed}
-            ）。法令に関する記述は各機関のページの記載の範囲にとどめ、編集部による法解釈は行っていません。実際の手続きの可否は、必ず下記の窓口にご確認ください。
+            {hasMunicipal ? (
+              <>
+                本ページは、{p.areaName}
+                内の各自治体および各社の公式サイトの公開情報をもとに編集部が整理したものです（確認日：
+                {confirmed}
+                ）。自治体の対応・助成・貸出に関する記述は各自治体のページの記載の範囲にとどめ、記載が無い項目は「記載なし」としています。制度は年度ごとに変わることがあるため、実際の可否・金額は必ず各自治体にご確認ください。
+              </>
+            ) : (
+              <>
+                本ページは、公的機関（環境省・{p.areaName}
+                ・区市）および各社の公式サイトの公開情報をもとに編集部が整理したものです（確認日：
+                {confirmed}
+                ）。法令に関する記述は各機関のページの記載の範囲にとどめ、編集部による法解釈は行っていません。実際の手続きの可否は、必ず下記の窓口にご確認ください。
+              </>
+            )}
           </div>
 
           {/* 冒頭の要約 */}
@@ -152,7 +181,84 @@ export default async function PestAreaPage({ params }: Props) {
             ))}
           </section>
 
+          {/* 自治体の対応（municipalSupport があるときだけ出す） */}
+          {hasMunicipal && (
+            <section id="municipal" className="scroll-mt-20 mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+                自治体の対応（助成・防護服の貸出）
+              </h2>
+              {p.supportSummary && (
+                <p className="text-slate-700 leading-loose mb-6">
+                  {p.supportSummary}
+                </p>
+              )}
+              <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                各自治体の公式ページに書かれている内容をそのまま整理しています。公式ページに記載が無い項目は「記載なし」としており、編集部による推測は入れていません。「記載なし」は制度が無いことの確認ではなく、当該ページに記載を確認できなかったという意味です。
+              </p>
+              <div className="overflow-x-auto">
+                <table className="table w-full border border-slate-200 text-sm">
+                  <thead>
+                    <tr className="bg-slate-800 text-white">
+                      <th className="border border-slate-300">自治体</th>
+                      <th className="border border-slate-300">
+                        自治体による駆除
+                      </th>
+                      <th className="border border-slate-300">費用の助成</th>
+                      <th className="border border-slate-300">
+                        防護服・器具の貸出
+                      </th>
+                      <th className="border border-slate-300">条件</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {municipal.map((m) => (
+                      <tr key={m.url} className="align-top">
+                        <th className="bg-slate-50 border border-slate-200 whitespace-nowrap">
+                          {m.name}
+                        </th>
+                        <td className="border border-slate-200 leading-relaxed">
+                          {m.policy || "記載なし"}
+                        </td>
+                        <td className="border border-slate-200 leading-relaxed">
+                          {m.subsidy ?? "記載なし"}
+                        </td>
+                        <td className="border border-slate-200 leading-relaxed">
+                          {m.lending ?? "記載なし"}
+                        </td>
+                        <td className="border border-slate-200 leading-relaxed">
+                          {m.note ?? "記載なし"}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <p className="text-sm font-bold text-slate-800 mb-3">
+                  出典（各自治体の公式ページ）
+                </p>
+                <ul className="space-y-2">
+                  {municipal.map((m) => (
+                    <li key={m.url} className="text-xs text-slate-600 break-all">
+                      {m.name}：
+                      <a
+                        href={m.url}
+                        target="_blank"
+                        rel="nofollow noopener"
+                        className="text-blue-600 hover:underline"
+                      >
+                        {m.url}
+                      </a>
+                      （確認日 {formatDate(m.confirmedDate)}）
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          )}
+
           {/* 法令 */}
+          {p.legalNotes.length > 0 && (
           <section id="legal" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-red-500 pl-4 mb-5">
               {p.pestName}の捕獲には許可が必要です
@@ -184,8 +290,10 @@ export default async function PestAreaPage({ params }: Props) {
               ))}
             </div>
           </section>
+          )}
 
           {/* 相談窓口 */}
+          {p.govContacts.length > 0 && (
           <section id="gov" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
               {p.areaName}・区市の相談窓口
@@ -215,6 +323,7 @@ export default async function PestAreaPage({ params }: Props) {
               ))}
             </div>
           </section>
+          )}
 
           {/* 被害の種類 */}
           <section id="damage" className="scroll-mt-20 mb-12">
@@ -240,7 +349,8 @@ export default async function PestAreaPage({ params }: Props) {
               {p.pestName}対応の記載がある業者
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed mb-5">
-              当サイト掲載業者のうち、対応害獣として{p.pestName}
+              当サイト掲載業者のうち、対応する{hasMunicipal ? "害虫" : "害獣"}
+              として{p.pestName}
               を明記している会社を掲載しています。掲載順は編集部の提携状況による並びで、優劣・順位を示すものではありません。料金・保証・受付時間は各社の公表内容をそのまま記載しています。
             </p>
             <div className="overflow-x-auto">
@@ -251,7 +361,9 @@ export default async function PestAreaPage({ params }: Props) {
                     <th className="border border-slate-300">料金（公表値）</th>
                     <th className="border border-slate-300">保証</th>
                     <th className="border border-slate-300">受付時間</th>
-                    <th className="border border-slate-300">対応害獣の記載</th>
+                    <th className="border border-slate-300">
+                      対応{hasMunicipal ? "害虫" : "害獣"}の記載
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -277,7 +389,11 @@ export default async function PestAreaPage({ params }: Props) {
                         {pick(a, ["受付"])}
                       </td>
                       <td className="border border-slate-200 leading-relaxed">
-                        {a.servicesAnimals ?? "本サイト掲載データに記載なし"}
+                        {a.servicesAnimals ??
+                          a.servicesPests ??
+                          (a.serviceTags?.length
+                            ? a.serviceTags.join("／")
+                            : "本サイト掲載データに記載なし")}
                       </td>
                     </tr>
                   ))}
