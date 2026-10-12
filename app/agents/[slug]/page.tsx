@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const a = getAgent(slug);
   if (!a) return {};
-  const url = `${SITE}/agents/${slug}/`;
+  const url = `${SITE}/agents/${slug}`; // 末尾スラッシュ付きは本番で308になるため無しで自己参照
   return {
     title: { absolute: a.metaTitle },
     description: a.metaDesc,

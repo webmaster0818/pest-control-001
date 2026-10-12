@@ -29,6 +29,16 @@ const EXISTING_STATIC_PATHS: Record<string, string[]> = {
   wasp: ["chiba", "fukuoka", "nagoya", "osaka", "saitama", "tokyo", "yokohama"],
 };
 
+// app/area/ 配下に実在するエリアページ。無い県（福島県など）へ /area/{slug}/ を張ると404になるため、
+// 関連ページのリンクはここに含まれる場合だけ出す（エリアページを新設したらここにも追加すること）。
+const AREA_PAGES = new Set([
+  "aichi", "chiba", "fukuoka", "hamamatsu", "hiroshima", "hokkaido", "hyogo",
+  "ibaraki", "kagoshima", "kanagawa", "kawasaki", "kitakyushu", "kobe",
+  "kumamoto", "kyoto", "miyagi", "miyazaki", "nagoya", "niigata", "okinawa",
+  "osaka", "saitama", "saitama-city", "sapporo", "sendai", "shizuoka",
+  "tochigi", "tokyo", "yokohama",
+]);
+
 function isExistingStaticPath(pest: string, area: string) {
   return (EXISTING_STATIC_PATHS[pest] ?? []).includes(area);
 }
@@ -45,7 +55,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pest, area } = await params;
   const p = getPestArea(pest, area);
   if (!p) return {};
-  const url = `${SITE}/pest/${pest}/${area}/`;
+  // 本番は末尾スラッシュ付きURLを無しへ308リダイレクトするため、canonical はスラッシュ無しで自己参照させる。
+  const url = `${SITE}/pest/${pest}/${area}`;
   // municipalSupport があるページ（ハチなど鳥獣保護管理法の対象外の種別）は
   // 「捕獲の許可」が主題ではないため、タイトル・説明文を自治体対応の側に寄せる。
   const municipal = p.municipalSupport ?? [];
@@ -460,17 +471,19 @@ export default async function PestAreaPage({ params }: Props) {
                 </p>
                 <p className="text-xs text-slate-500 mt-1">{pestPagePath}</p>
               </Link>
-              <Link
-                href={`/area/${p.areaSlug}/`}
-                className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
-              >
-                <p className="font-bold text-slate-800">
-                  {p.areaName}の害虫・害獣駆除業者比較
-                </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  /area/{p.areaSlug}
-                </p>
-              </Link>
+              {AREA_PAGES.has(p.areaSlug) && (
+                <Link
+                  href={`/area/${p.areaSlug}/`}
+                  className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
+                >
+                  <p className="font-bold text-slate-800">
+                    {p.areaName}の害虫・害獣駆除業者比較
+                  </p>
+                  <p className="text-xs text-slate-500 mt-1">
+                    /area/{p.areaSlug}
+                  </p>
+                </Link>
+              )}
               <Link
                 href="/agents/"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"

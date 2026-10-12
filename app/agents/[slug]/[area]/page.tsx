@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, area } = await params;
   const b = getBrandArea(slug, area);
   if (!b) return {};
-  const url = `${SITE}/agents/${slug}/${area}/`;
+  const url = `${SITE}/agents/${slug}/${area}`; // 末尾スラッシュ付きは本番で308になるため無しで自己参照
   const title = `${b.brandName} ${b.areaName}の対応エリア・拠点｜料金・保証・受付時間`;
   const description = `${b.brandName}（${b.operator.name}）の${b.areaName}における拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をもとに編集部が整理しました。${b.confirmedDate}時点の公式表記です。`;
   return {
