@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
@@ -1067,6 +1068,9 @@ export default function GokiburiPage() {
             </Link>
           </div>
         </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }, { href: "/agents/kujo-oh", label: "害獣害虫駆除王の口コミ・評判" }, { href: "/agents/machikado-gaiju-kujo", label: "街角害獣駆除相談所の口コミ・評判" }]} />
       </section>
     </div>
   );

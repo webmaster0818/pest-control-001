@@ -1,3 +1,5 @@
+import { partnerAgents } from "./agentsDataPartners";
+
 // 業者レビュー記事のデータ。各社の実情報・口コミをWeb調査して格納する。
 // 架空の数値・口コミは作らない。口コミは各サイト・Googleの声を編集部が要約。
 
@@ -5,6 +7,7 @@ export interface Review {
   title: string;
   body: string;
   meta: string;
+  url?: string; // 出典（第三者サイトの口コミページ）
 }
 export interface AgentReview {
   slug: string;
@@ -34,9 +37,11 @@ export interface AgentReview {
   comparePoints: string[];
   faqs: { q: string; a: string }[];
   summary: string[];
+  updated?: string; // 例 "2026-10-14"（未指定は2026-06-10）
+  sources?: { label: string; url: string }[]; // 事実の確認先（公式・第三者）
 }
 
-export const agents: AgentReview[] = [
+const baseAgents: AgentReview[] = [
   {
     slug: "kujo-zaurus",
     partnerTier: "other",
@@ -1108,6 +1113,8 @@ export const agents: AgentReview[] = [
     ],
   },
 ];
+
+export const agents: AgentReview[] = [...baseAgents, ...partnerAgents];
 
 export function getAgent(slug: string): AgentReview | undefined {
   return agents.find((a) => a.slug === slug);

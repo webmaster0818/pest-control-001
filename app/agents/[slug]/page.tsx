@@ -7,7 +7,8 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { brandAreas } from "@/app/data/brandAreas";
 
 const SITE = "https://gaichu-pro.com";
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026-06-10";
+const jpDate = (d: string) => { const [y, m, dd] = d.split("-").map(Number); return `${y}年${m}月${dd}日`; };
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -53,8 +54,8 @@ export default async function AgentPage({ params }: Props) {
     headline: `${a.name}の口コミ・評判・料金を徹底調査`,
     description: a.metaDesc,
     image: `${SITE}${a.image}`,
-    datePublished: "2026-06-10T00:00:00+09:00",
-    dateModified: "2026-06-10T00:00:00+09:00",
+    datePublished: `${a.updated ?? UPDATED}T00:00:00+09:00`,
+    dateModified: `${a.updated ?? UPDATED}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ", url: SITE },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}/agents/${slug}/` },
@@ -113,7 +114,7 @@ export default async function AgentPage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-          <p className="text-sm text-slate-500 mb-8">最終更新日：{UPDATED}　／　害虫・害獣駆除プロ比較ナビ編集部</p>
+          <p className="text-sm text-slate-500 mb-8">最終更新日：{jpDate(a.updated ?? UPDATED)}　／　害虫・害獣駆除プロ比較ナビ編集部</p>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
             <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
@@ -209,7 +210,9 @@ export default async function AgentPage({ params }: Props) {
                 <div key={i} className="rounded-xl border border-slate-200 p-5">
                   <p className="font-bold text-slate-800 mb-1">{r.title}</p>
                   <p className="text-slate-700 text-sm leading-relaxed mb-2">{r.body}</p>
-                  <p className="text-xs text-slate-400">{r.meta}</p>
+                  <p className="text-xs text-slate-400">
+                    {r.url ? <a href={r.url} target="_blank" rel="nofollow noopener" className="underline">{r.meta}</a> : r.meta}
+                  </p>
                 </div>
               ))}
             </div>
@@ -219,7 +222,9 @@ export default async function AgentPage({ params }: Props) {
                 <div key={i} className="rounded-xl border border-slate-200 bg-slate-50 p-5">
                   <p className="font-bold text-slate-800 mb-1">{r.title}</p>
                   <p className="text-slate-700 text-sm leading-relaxed mb-2">{r.body}</p>
-                  <p className="text-xs text-slate-400">{r.meta}</p>
+                  <p className="text-xs text-slate-400">
+                    {r.url ? <a href={r.url} target="_blank" rel="nofollow noopener" className="underline">{r.meta}</a> : r.meta}
+                  </p>
                 </div>
               ))}
             </div>
@@ -307,6 +312,18 @@ export default async function AgentPage({ params }: Props) {
                 <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">駆除業者を比較して探す</Link>
               )}
             </div>
+            {a.sources && a.sources.length > 0 && (
+              <div className="mt-8 rounded-xl border border-slate-200 bg-slate-50 p-5">
+                <p className="font-bold text-slate-800 mb-2 text-sm">この記事の確認先（{jpDate(a.updated ?? UPDATED)}確認）</p>
+                <ul className="space-y-1 text-xs text-slate-600">
+                  {a.sources.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="nofollow noopener" className="underline break-all">{s.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <RelatedLinkList
               title={`${a.name}のエリア別ページ（拠点・対応市区町村・受付時間）`}
               links={brandAreas

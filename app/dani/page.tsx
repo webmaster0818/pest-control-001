@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
@@ -671,6 +672,7 @@ export default function DaniPage() {
                 <span className="badge badge-lg text-base">5</span>
                 <h3 className="text-2xl font-bold text-black">ムシプロテック（ダニ駆除）</h3>
               </div>
+              <p className="text-sm mb-3"><Link href="/agents/mushi-protec" className="text-amber-700 underline">ムシプロテックの口コミ・評判と公式の料金表記はこちら</Link></p>
               <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
@@ -1335,6 +1337,9 @@ export default function DaniPage() {
             </Link>
           </div>
         </div>
+      </section>
+      <section className="max-w-4xl mx-auto px-4 pb-12">
+        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }]} />
       </section>
     </div>
   );
