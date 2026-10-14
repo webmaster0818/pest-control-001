@@ -1,8 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import RelatedLinkList from "@/app/components/RelatedLinkList";
+import { pestAreas } from "@/app/data/pestAreas";
 import { brandAreas, getBrandArea } from "@/app/data/brandAreas";
 import { getAgent } from "../../agentsData";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 // データ駆動テンプレート。
 // app/data/brandAreas.ts に BrandArea を1件足すと、このテンプレートから
@@ -22,13 +25,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!b) return {};
   const url = `${SITE}/agents/${slug}/${area}`; // 末尾スラッシュ付きは本番で308になるため無しで自己参照
   const title = `${b.brandName} ${b.areaName}の対応エリア・拠点｜料金・保証・受付時間`;
-  const description = `${b.brandName}（${b.operator.name}）の${b.areaName}における拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をもとに編集部が整理しました。${b.confirmedDate}時点の公式表記です。`;
+  // 説明文は160字以内に収める。長い場合は言い回しを詰め、それでも長ければ運営会社の括弧書きを外す（本文には記載あり）。
+  const tail = `の${b.areaName}における拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をもとに編集部が整理しました。${b.confirmedDate}時点の公式表記です。`;
+  const tailShort = `の${b.areaName}の拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載から編集部が整理。${b.confirmedDate}時点の公式表記です。`;
+  const description =
+    [
+      `${b.brandName}（${b.operator.name}）${tail}`,
+      `${b.brandName}（${b.operator.name}）${tailShort}`,
+      `${b.brandName}${tail}`,
+      `${b.brandName}${tailShort}`,
+    ].find((d) => d.length <= 158) ?? `${b.brandName}${tailShort}`;
   return {
     title: { absolute: `${title}｜害虫・害獣駆除プロ比較ナビ` },
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "article" },
+    openGraph: { title, description, url, type: "article", images: [DEFAULT_OG_IMAGE] },
   };
+}
+
+/** 業者の表示名（agentsData の名前。無ければブランド表記の括弧書きを外したもの） */
+function shortName(brandSlug: string, brandName: string) {
+  return getAgent(brandSlug)?.name ?? brandName.split("（")[0];
 }
 
 function formatDate(iso: string) {
@@ -469,6 +486,24 @@ export default async function BrandAreaPage({ params }: Props) {
                 <p className="text-xs text-slate-500 mt-1">種類別のハブページ</p>
               </Link>
             </div>
+            <RelatedLinkList
+              title={`${shortName(b.brandSlug, b.brandName)}のほかのエリア`}
+              links={brandAreas
+                .filter((x) => x.brandSlug === b.brandSlug && x.areaSlug !== b.areaSlug)
+                .map((x) => ({ href: `/agents/${x.brandSlug}/${x.areaSlug}`, label: x.areaName }))}
+            />
+            <RelatedLinkList
+              title={`${b.areaName}のほかの業者`}
+              links={brandAreas
+                .filter((x) => x.areaSlug === b.areaSlug && x.brandSlug !== b.brandSlug)
+                .map((x) => ({ href: `/agents/${x.brandSlug}/${x.areaSlug}`, label: shortName(x.brandSlug, x.brandName) }))}
+            />
+            <RelatedLinkList
+              title={`${b.areaName}の害虫・害獣別ページ`}
+              links={pestAreas
+                .filter((x) => x.areaSlug === b.areaSlug)
+                .map((x) => ({ href: `/pest/${x.pestSlug}/${x.areaSlug}`, label: `${x.areaName}の${x.pestName}駆除` }))}
+            />
           </section>
         </div>
       </article>

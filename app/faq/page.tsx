@@ -1,5 +1,20 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Breadcrumb from "@/app/components/Breadcrumb";
+import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/faq" },
+  title: "害虫駆除のよくある質問｜見積もり・追加料金・作業時間",
+  description: "害虫駆除に関するよくある質問と回答をまとめました。見積もりは無料か、追加料金やキャンセル料、作業時間や立ち会いの要否など、業者に依頼する前に確認したい点を解説します。",
+  openGraph: {
+    title: "害虫駆除のよくある質問｜見積もり・追加料金・作業時間",
+    description: "害虫駆除に関するよくある質問と回答をまとめました。見積もりは無料か、追加料金やキャンセル料、作業時間や立ち会いの要否など、業者に依頼する前に確認したい点を解説します。",
+    url: "https://gaichu-pro.com/faq",
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
 
 export default function FAQPage() {
   const faqs = {
@@ -133,6 +148,7 @@ export default function FAQPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      <Breadcrumb items={[{ label: "害虫・害獣駆除プロ比較ナビ", href: "/" }, { label: "よくある質問" }]} />
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
@@ -147,9 +163,9 @@ export default function FAQPage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             よくある質問
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             害虫駆除に関するよくある質問とその回答をまとめました
           </p>

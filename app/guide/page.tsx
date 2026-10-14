@@ -1,9 +1,25 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Breadcrumb from "@/app/components/Breadcrumb";
+import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/guide" },
+  title: "害虫駆除業者の選び方｜失敗しない5つのポイントと悪徳業者の見分け方",
+  description: "失敗しない害虫駆除業者選びの5つのポイントと、悪徳業者の見分け方を解説します。",
+  openGraph: {
+    title: "害虫駆除業者の選び方｜失敗しない5つのポイントと悪徳業者の見分け方",
+    description: "失敗しない害虫駆除業者選びの5つのポイントと、悪徳業者の見分け方を解説します。",
+    url: "https://gaichu-pro.com/guide",
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
 
 export default function GuidePage() {
   return (
     <div className="min-h-screen bg-base-200">
+      <Breadcrumb items={[{ label: "害虫・害獣駆除プロ比較ナビ", href: "/" }, { label: "害虫駆除業者の選び方" }]} />
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
@@ -18,9 +34,9 @@ export default function GuidePage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             害虫駆除業者の選び方
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             失敗しない業者選びの5つのポイントと悪徳業者の見分け方を徹底解説
           </p>

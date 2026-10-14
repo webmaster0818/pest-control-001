@@ -2,14 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/pest/wasp/yokohama" },
   title: "横浜のハチ駆除業者おすすめ8社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
   description: "横浜でハチ駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
     title: "横浜のハチ駆除業者比較 | 料金相場・口コミ・おすすめ10社",
     description: "横浜のハチ駆除業者10社を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/area/yokohama",
+    url: "https://gaichu-pro.com/pest/wasp/yokohama",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
@@ -169,9 +172,9 @@ export default function WaspYokohamaPage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             横浜のハチ駆除 完全ガイド
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             横浜都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
           </p>

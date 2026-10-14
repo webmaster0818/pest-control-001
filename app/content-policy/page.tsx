@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/content-policy" },
@@ -8,13 +10,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "記事の制作ポリシー | 害虫・害獣駆除プロ比較ナビ",
     description: "害虫・害獣駆除プロ比較ナビの記事制作ポリシーです。",
-    url: "https://pest-control-001.pages.dev/content-policy",
+    url: "https://gaichu-pro.com/content-policy",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function ContentPolicyPage() {
   return (
     <div className="min-h-screen bg-base-200">
+      <Breadcrumb items={[{ label: "害虫・害獣駆除プロ比較ナビ", href: "/" }, { label: "記事の制作ポリシー" }]} />
       {/* ヘッダー */}
       <section className="bg-primary text-white py-12 px-4">
         <div className="max-w-4xl mx-auto">

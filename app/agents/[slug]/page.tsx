@@ -3,6 +3,8 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { agents, getAgent } from "../agentsData";
+import RelatedLinkList from "@/app/components/RelatedLinkList";
+import { brandAreas } from "@/app/data/brandAreas";
 
 const SITE = "https://gaichu-pro.com";
 const UPDATED = "2026年6月10日";
@@ -305,6 +307,12 @@ export default async function AgentPage({ params }: Props) {
                 <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">駆除業者を比較して探す</Link>
               )}
             </div>
+            <RelatedLinkList
+              title={`${a.name}のエリア別ページ（拠点・対応市区町村・受付時間）`}
+              links={brandAreas
+                .filter((b) => b.brandSlug === a.slug)
+                .map((b) => ({ href: `/agents/${b.brandSlug}/${b.areaSlug}`, label: b.areaName }))}
+            />
           </section>
         </div>
       </article>

@@ -2,14 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/area/saitama" },
   title: "埼玉の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
   description: "埼玉の害虫駆除業者10社を料金・サービス・口コミで徹底比較。地域別の料金相場、害虫カレンダー、信頼できる業者の選び方を詳しく解説。即日対応可能な業者も掲載。",
   openGraph: {
     title: "埼玉の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
     description: "埼玉の害虫駆除業者10社を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/area/saitama",
+    url: "https://gaichu-pro.com/area/saitama",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
@@ -174,9 +177,9 @@ export default function TokyoPage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             埼玉の害虫駆除 完全ガイド
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             埼玉都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
           </p>

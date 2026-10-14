@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: { absolute: "害獣・害虫駆除業者の口コミ・評判まとめ｜料金・対応を徹底比較｜害虫・害獣駆除プロ比較ナビ" },
   description:
     "害獣・害虫駆除業者の口コミ・評判・料金を業者別に徹底調査。駆除ザウルスをはじめ各社のメリット・デメリット、対応害獣、保証内容を比較して、あなたに合う駆除業者を見つけられます。",
-  alternates: { canonical: `${SITE}/agents/` },
+  alternates: { canonical: `${SITE}/agents` },
 };
 
 export default function AgentsIndexPage() {

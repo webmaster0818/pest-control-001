@@ -2,14 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/pest/termite/nagoya" },
   title: "名古屋のシロアリ駆除業者おすすめ8社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
   description: "名古屋でシロアリ駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
     title: "名古屋のシロアリ駆除業者おすすめ8社｜料金相場・口コミ比較",
     description: "名古屋のシロアリ駆除業者を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/pest/termite/nagoya",
+    url: "https://gaichu-pro.com/pest/termite/nagoya",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
@@ -159,9 +162,9 @@ export default function TermiteNagoyaPage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             名古屋のシロアリ駆除 完全ガイド
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             名古屋都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
           </p>

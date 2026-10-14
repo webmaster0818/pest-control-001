@@ -1,8 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { pestAreas, getPestArea } from "@/app/data/pestAreas";
 import { agents, type AgentReview } from "@/app/agents/agentsData";
+import { brandAreas } from "@/app/data/brandAreas";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 // データ駆動テンプレート。
 // app/data/pestAreas.ts に PestArea を1件足すと、このテンプレートから
@@ -43,6 +46,35 @@ function isExistingStaticPath(pest: string, area: string) {
   return (EXISTING_STATIC_PATHS[pest] ?? []).includes(area);
 }
 
+// ベタ書きの静的ページの害虫名（関連リンクの表示用）
+const STATIC_PEST_NAMES: Record<string, string> = {
+  cockroach: "ゴキブリ",
+  dani: "ダニ",
+  nezumi: "ネズミ",
+  termite: "シロアリ",
+  wasp: "ハチ",
+};
+
+/** 実在する害虫×エリアページ（データ駆動＋ベタ書き）を path をキーに列挙する */
+function allPestAreaLinks() {
+  const areaNames = new Map(pestAreas.map((x) => [x.areaSlug, x.areaName]));
+  const m = new Map<string, { pest: string; area: string; pestName: string; areaName: string }>();
+  for (const x of pestAreas) {
+    m.set(`/pest/${x.pestSlug}/${x.areaSlug}`, {
+      pest: x.pestSlug, area: x.areaSlug, pestName: x.pestName, areaName: x.areaName,
+    });
+  }
+  for (const [pest, areas] of Object.entries(EXISTING_STATIC_PATHS)) {
+    for (const area of areas) {
+      const key = `/pest/${pest}/${area}`;
+      if (!m.has(key) && areaNames.has(area)) {
+        m.set(key, { pest, area, pestName: STATIC_PEST_NAMES[pest], areaName: areaNames.get(area)! });
+      }
+    }
+  }
+  return [...m.entries()].map(([href, v]) => ({ href, ...v }));
+}
+
 type Props = { params: Promise<{ pest: string; area: string }> };
 
 export function generateStaticParams() {
@@ -70,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: `${title}｜害虫・害獣駆除プロ比較ナビ` },
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "article" },
+    openGraph: { title, description, url, type: "article", images: [DEFAULT_OG_IMAGE] },
   };
 }
 
@@ -109,6 +141,7 @@ export default async function PestAreaPage({ params }: Props) {
   // 自治体ごとの対応（ハチなど）。空なら従来どおり法令中心の見せ方のまま。
   const municipal = p.municipalSupport ?? [];
   const hasMunicipal = municipal.length > 0;
+  const related = allPestAreaLinks();
 
   // 順位づけはしない。partnerTier 順（affiliated → candidate → other）で並べるだけ。
   const companies = p.companySlugs
@@ -499,6 +532,24 @@ export default async function PestAreaPage({ params }: Props) {
                 <p className="text-xs text-slate-500 mt-1">/pest</p>
               </Link>
             </div>
+            <RelatedLinkList
+              title={`${p.areaName}のほかの害虫・害獣`}
+              links={related
+                .filter((x) => x.area === p.areaSlug && x.pest !== p.pestSlug)
+                .map((x) => ({ href: x.href, label: `${x.areaName}の${x.pestName}駆除` }))}
+            />
+            <RelatedLinkList
+              title={`ほかのエリアの${p.pestName}駆除`}
+              links={related
+                .filter((x) => x.pest === p.pestSlug && x.area !== p.areaSlug)
+                .map((x) => ({ href: x.href, label: x.areaName }))}
+            />
+            <RelatedLinkList
+              title={`${p.areaName}の拠点・対応エリアを整理した業者ページ`}
+              links={brandAreas
+                .filter((b) => b.areaSlug === p.areaSlug && p.companySlugs.includes(b.brandSlug))
+                .map((b) => ({ href: `/agents/${b.brandSlug}/${b.areaSlug}`, label: `${agents.find((a) => a.slug === b.brandSlug)?.name ?? b.brandName.split("（")[0]} ${b.areaName}` }))}
+            />
           </section>
         </div>
       </article>

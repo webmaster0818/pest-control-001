@@ -3,7 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import AreaAccordion from "./components/AreaAccordion";
 
-export const metadata: Metadata = { alternates: { canonical: "/" } };
+// canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
+export const metadata: Metadata = {};
 
 export default function Home() {
   const pests = [
@@ -52,6 +53,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      <link rel="canonical" href="https://gaichu-pro.com/" />
       {/* 構造化データ */}
       <script
         type="application/ld+json"
@@ -72,9 +74,9 @@ export default function Home() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             害虫でお困りですか？今すぐ解決方法を見つけましょう
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を比較して、あなたに最適な業者を見つけましょう
           </p>

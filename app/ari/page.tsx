@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/ari" },
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの料金相場と対策方法",
     description: "アリ駆除業者を料金・実績・対応速度で徹底比較。アリ駆除の費用相場、侵入経路対策、季節別カレンダーを掲載。",
     url: "https://gaichu-pro.com/ari",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

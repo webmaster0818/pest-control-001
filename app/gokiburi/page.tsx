@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/gokiburi" },
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ゴキブリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
     description: "ゴキブリ駆除業者を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/gokiburi",
+    url: "https://gaichu-pro.com/gokiburi",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

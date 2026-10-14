@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "ゴキブリ・シロアリ・ネズミ・イタチ・ハクビシン・コウモリなど、害虫・害獣の種類別の駆除ガイドと、エリア別の比較ページをまとめた一覧です。被害の種類から該当のページを探せます。",
-  alternates: { canonical: `${SITE}/pest/` },
+  alternates: { canonical: `${SITE}/pest` },
 };
 
 // app 直下に実在する単体ページのみを列挙している（ディレクトリを ls して作成）。
@@ -156,6 +156,13 @@ export default function PestIndexPage() {
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">東京都のハチ駆除</p>
+                <p className="text-xs text-slate-500 mt-1">料金相場・業者比較</p>
+              </Link>
+              <Link
+                href="/pest/dani/tokyo"
+                className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
+              >
+                <p className="font-bold text-slate-800">東京都のダニ駆除</p>
                 <p className="text-xs text-slate-500 mt-1">料金相場・業者比較</p>
               </Link>
             </div>

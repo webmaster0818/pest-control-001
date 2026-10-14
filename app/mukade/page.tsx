@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/mukade" },
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: "ムカデ・ゲジゲジ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
     description: "ムカデ・ゲジゲジ駆除業者10社を料金・対応速度・実績で徹底比較。即日対応可能な業者も掲載。",
     url: "https://gaichu-pro.com/mukade",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

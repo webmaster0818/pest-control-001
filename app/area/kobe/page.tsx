@@ -2,14 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://gaichu-pro.com/area/kobe" },
   title: "神戸の害虫駆除業者比較 | 料金相場・口コミ・おすすめ8社 - 害虫・害獣駆除プロ比較ナビ",
   description: "神戸で害虫駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
     title: "大阪の害虫駆除業者比較 | 料金相場・口コミ・おすすめ10社",
     description: "大阪の害虫駆除業者10社を料金・サービス・口コミで徹底比較。",
-    url: "https://pest-control-001.pages.dev/area/osaka",
+    url: "https://gaichu-pro.com/area/kobe",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
@@ -174,9 +177,9 @@ export default function KobePage() {
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             大阪の害虫駆除 完全ガイド
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700">
             大阪都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
           </p>

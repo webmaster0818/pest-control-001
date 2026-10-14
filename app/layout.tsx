@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { DEFAULT_OG_IMAGE } from "./lib/og";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,24 +35,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://pest-control-001.pages.dev',
     siteName: '害虫・害獣駆除プロ比較ナビ',
     title: '害虫・害獣駆除プロ比較ナビ | 全国の害虫駆除業者を料金・口コミで比較',
     description: '害虫駆除業者を料金・サービス・口コミで徹底比較。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなど8種類の害虫・害獣に対応。地域別の料金相場と信頼できる業者選びのポイントを詳しく解説。',
-    images: [
-      {
-        url: '/images/hero-pest-control.jpg',
-        width: 1200,
-        height: 630,
-        alt: '害虫・害獣駆除プロ比較ナビ - 全国の害虫駆除業者比較サイト',
-      }
-    ],
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
     title: '害虫・害獣駆除プロ比較ナビ | 全国の害虫駆除業者を料金・口コミで比較',
     description: '害虫駆除業者を料金・サービス・口コミで徹底比較。地域別の料金相場と信頼できる業者選びのポイント。',
-    images: ['/images/hero-pest-control.jpg'],
+    images: [DEFAULT_OG_IMAGE.url],
   },
   robots: {
     index: true,
