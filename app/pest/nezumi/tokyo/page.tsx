@@ -6,8 +6,8 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/pest/nezumi/tokyo" },
-  title: "東京のネズミ駆除業者おすすめ8社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
-  description: "東京でネズミ駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
+  title: "東京のネズミ駆除業者おすすめ10社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
+  description: "東京でネズミ駆除業者をお探しなら当サイト。おすすめ業者10社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
     title: "東京のネズミ駆除業者比較 | 料金相場・口コミ・おすすめ10社",
     description: "東京都内の害虫駆除業者10社を料金・サービス・口コミで徹底比較。",
@@ -392,35 +392,6 @@ export default function NezumiTokyoPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業20年の実績があり、東京都内の害虫駆除に精通したスタッフが来てくれました。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で、専門性が高く安心してお任せできました。累計相談3万件以上の経験に基づいた的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    24時間365日対応で、緊急時にもすぐに来ていただけました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -501,26 +472,6 @@ export default function NezumiTokyoPage() {
                 <a href="https://www.google.com/search?q=害獣駆除のROY+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    一級建築士事務所ということで、東京の複雑な建物構造を熟知した的確な施工をしていただけました。業界最安値水準でコスパも最高です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短即日対応で、緊急時にもすぐに来ていただけました。5年保証もあり、万が一の再発時も安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東京都内全域に対応しているので、地方でも迅速に対応していただけました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -603,26 +554,6 @@ export default function NezumiTokyoPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    口コミが多数公開されており、透明性が高く安心してお願いできました。日本有害鳥獣駆除防除管理協会に加盟しているので信頼性も高いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短30分で来ていただけて、緊急時の対応が素早かったです。東京都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -703,26 +634,6 @@ export default function NezumiTokyoPage() {
                 <a href="https://www.google.com/search?q=サンキョークリーンサービス+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業28年のベテラン業者だけあって、経験豊富なスタッフが来てくれました。東京都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会に加盟しているということで、安心してお任せできました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、東京都内でも迅速に対応していただけました。施工後のフォローも丁寧でした。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -805,26 +716,6 @@ export default function NezumiTokyoPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    Google口コミ業界トップクラスということで、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    2300件以上の実績が掲載されており、透明性が高く信頼できました。最短即日対応で助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -905,26 +796,6 @@ export default function NezumiTokyoPage() {
                 <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、東京都内でも迅速に対応していただけました。24時間365日受付で、緊急時にもすぐに連絡できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手業者ならではの安心感がありました。施工業者による保証もあり、アフターフォローもしっかりしています。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -1007,26 +878,6 @@ export default function NezumiTokyoPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、東京都内の害虫駆除に精通した的確な施工でした。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    工務店歴50年で建物構造を熟知しているため、複雑な東京の建物でも適切な対応をしていただけました。最短30分で来ていただけて助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    広範囲のエリアに対応しているので、東京都内でも安心です。施工後のアフターフォローも丁寧でした。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -1107,26 +958,6 @@ export default function NezumiTokyoPage() {
                 <a href="https://www.google.com/search?q=ラッター+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計3万件以上の実績があり、経験豊富なスタッフが来てくれました。東京都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短10分で来ていただけて、緊急時の対応が素早かったです。5年保証もあり、万が一の再発時も安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10,000円からという良心的な料金設定で、コスパも良かったです。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -1209,26 +1040,6 @@ export default function NezumiTokyoPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計相談10万件以上の実績がある業者紹介サービスで、厳選された優良業者を紹介していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短即日対応で、緊急時にもすぐに業者を紹介していただけました。複数の業者から見積もりを取れて比較できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、東京都内でも優良業者を紹介していただけました。業者選びに迷った時に便利なサービスです。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -1309,26 +1120,6 @@ export default function NezumiTokyoPage() {
                 <a href="https://www.google.com/search?q=ダスキン+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業のFC加盟店ということで、大手ブランドの安心感がありました。社内ライセンス取得のプロが施工してくれました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    16,500円からという良心的な料金設定で、全国対応なので東京都内でも安心です。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    5年保証があり、長期的に安心できました。大手ブランドならではの丁寧なアフターフォローも良かったです。
-                  </p>
-                </div>
               </div>
             </div>
 

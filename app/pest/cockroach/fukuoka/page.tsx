@@ -6,8 +6,8 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/pest/cockroach/fukuoka" },
-  title: "福岡のゴキブリ駆除業者おすすめ8社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
-  description: "福岡でゴキブリ駆除業者をお探しなら当サイト。おすすめ業者8社を料金・サービス・口コミで徹底比較。見積もり無料。",
+  title: "福岡のゴキブリ駆除業者おすすめ10社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
+  description: "福岡でゴキブリ駆除業者をお探しなら当サイト。おすすめ業者10社を料金・サービス・口コミで徹底比較。見積もり無料。",
   openGraph: {
     title: "福岡のゴキブリ駆除業者比較 | 料金相場・口コミ・おすすめ10社",
     description: "福岡のゴキブリ駆除業者10社を料金・サービス・口コミで徹底比較。",
@@ -17,76 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function CockroachFukuokaPage() {
-  const topPests = [
-    {
-      rank: 1,
-      name: "ゴキブリ",
-      icon: "🪳",
-      description: "繁華街や飲食店が多い福岡では、ゴキブリ被害が最も多い。特にチャバネゴキブリが問題。",
-      areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/gokiburi",
-    },
-    {
-      rank: 2,
-      name: "ネズミ",
-      icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミ被害が増加。クマネズミが主流。",
-      areas: "千代田区、中央区、台東区などの都心部",
-      link: "/nezumi",
-    },
-    {
-      rank: 3,
-      name: "シロアリ",
-      icon: "🐜",
-      description: "木造住宅密集地域でシロアリ被害が多発。梅雨時期の羽アリに注意。",
-      areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/shiroari",
-    },
-    {
-      rank: 4,
-      name: "ハチ",
-      icon: "🐝",
-      description: "公園や緑地が多いエリアでスズメバチ・アシナガバチの巣が発見される。",
-      areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
-    },
-    {
-      rank: 5,
-      name: "コウモリ",
-      icon: "🦇",
-      description: "住宅街の屋根裏や古いビルでアブラコウモリの被害が報告されている。",
-      areas: "世田谷区、杉並区、中野区などの住宅街",
-      link: "/koumori",
-    },
-  ];
 
-  const priceComparison = [
-    {
-      area: "シロアリ駆除",
-      price: "12,000〜18,000円/坪",
-      note: "都心部はやや高め",
-    },
-    {
-      area: "ハチ駆除",
-      price: "15,000〜35,000円",
-      note: "高所作業が多く料金高め",
-    },
-    {
-      area: "ゴキブリ駆除",
-      price: "20,000〜35,000円",
-      note: "飲食店需要で料金やや高",
-    },
-    {
-      area: "ネズミ駆除",
-      price: "100,000〜180,000円",
-      note: "複雑な建物構造で高額",
-    },
-    {
-      area: "コウモリ駆除",
-      price: "120,000〜350,000円",
-      note: "都心部の難易度高",
-    },
-  ];
 
   const seasonCalendar = [
     {
@@ -111,44 +42,7 @@ export default function CockroachFukuokaPage() {
     },
   ];
 
-  const areas = [
-    {
-      name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応。飲食店・オフィスビルの駆除実績豊富。",
-      features: ["即日対応可能", "夜間作業対応", "多言語対応"],
-    },
-    {
-      name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域をカバー。戸建て住宅の駆除に強い。",
-      features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
-    },
-    {
-      name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島にも対応可能な業者あり。事前予約推奨。",
-      features: ["出張対応", "離島料金設定", "長期保証"],
-    },
-  ];
 
-  const consultations = [
-    {
-      name: "福岡都福祉保健局",
-      description: "害虫相談窓口",
-      contact: "03-5320-4391",
-      hours: "平日 9:00〜17:00",
-    },
-    {
-      name: "各区保健所",
-      description: "地域ごとの相談・指導",
-      contact: "各区役所HP参照",
-      hours: "平日 8:30〜17:00（区により異なる）",
-    },
-    {
-      name: "福岡都ペストコントロール協会",
-      description: "業者紹介・相談",
-      contact: "03-3254-0014",
-      hours: "平日 9:00〜17:00",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-base-200">
@@ -175,9 +69,6 @@ export default function CockroachFukuokaPage() {
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             福岡のゴキブリ駆除 完全ガイド
           </h1>
-          <p className="text-lg text-gray-700">
-            福岡都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
-          </p>
         </div>
       </section>
 
@@ -336,7 +227,6 @@ export default function CockroachFukuokaPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業20年、累計相談3万件以上の豊富な実績</li>
                 <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>福岡都内の害虫駆除に精通したプロフェッショナル</li>
               </ul>
             </div>
 
@@ -391,35 +281,6 @@ export default function CockroachFukuokaPage() {
                 <a href="https://www.google.com/search?q=駆除ザウルス+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業20年の実績があり、福岡都内の害虫駆除に精通したスタッフが来てくれました。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟で、専門性が高く安心してお任せできました。累計相談3万件以上の経験に基づいた的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    24時間365日対応で、緊急時にもすぐに来ていただけました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -502,26 +363,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    一級建築士事務所ということで、福岡の複雑な建物構造を熟知した的確な施工をしていただけました。業界最安値水準でコスパも最高です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短即日対応で、緊急時にもすぐに来ていただけました。5年保証もあり、万が一の再発時も安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    福岡都内全域に対応しているので、地方でも迅速に対応していただけました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -603,26 +444,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    口コミが多数公開されており、透明性が高く安心してお願いできました。日本有害鳥獣駆除防除管理協会に加盟しているので信頼性も高いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短30分で来ていただけて、緊急時の対応が素早かったです。福岡都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -648,7 +469,6 @@ export default function CockroachFukuokaPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業28年のベテラン業者で豊富な経験</li>
                 <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>福岡都内の害虫駆除に精通したプロフェッショナル</li>
               </ul>
             </div>
 
@@ -703,26 +523,6 @@ export default function CockroachFukuokaPage() {
                 <a href="https://www.google.com/search?q=サンキョークリーンサービス+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業28年のベテラン業者だけあって、経験豊富なスタッフが来てくれました。福岡都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会に加盟しているということで、安心してお任せできました。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、福岡都内でも迅速に対応していただけました。施工後のフォローも丁寧でした。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -805,26 +605,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    Google口コミ業界トップクラスということで、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    2300件以上の実績が掲載されており、透明性が高く信頼できました。最短即日対応で助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -850,7 +630,6 @@ export default function CockroachFukuokaPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>東証上場企業運営で信頼性が高い</li>
                 <li>累計相談500万件以上の圧倒的な実績</li>
-                <li>全国対応で福岡都内も迅速対応</li>
               </ul>
             </div>
 
@@ -905,26 +684,6 @@ export default function CockroachFukuokaPage() {
                 <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、福岡都内でも迅速に対応していただけました。24時間365日受付で、緊急時にもすぐに連絡できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手業者ならではの安心感がありました。施工業者による保証もあり、アフターフォローもしっかりしています。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -1007,26 +766,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、福岡都内の害虫駆除に精通した的確な施工でした。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    工務店歴50年で建物構造を熟知しているため、複雑な福岡の建物でも適切な対応をしていただけました。最短30分で来ていただけて助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    広範囲のエリアに対応しているので、福岡都内でも安心です。施工後のアフターフォローも丁寧でした。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -1107,26 +846,6 @@ export default function CockroachFukuokaPage() {
                 <a href="https://www.google.com/search?q=ラッター+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計3万件以上の実績があり、経験豊富なスタッフが来てくれました。福岡都内の害虫駆除に精通した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短10分で来ていただけて、緊急時の対応が素早かったです。5年保証もあり、万が一の再発時も安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10,000円からという良心的な料金設定で、コスパも良かったです。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -1209,26 +928,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計相談10万件以上の実績がある業者紹介サービスで、厳選された優良業者を紹介していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短即日対応で、緊急時にもすぐに業者を紹介していただけました。複数の業者から見積もりを取れて比較できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、福岡都内でも優良業者を紹介していただけました。業者選びに迷った時に便利なサービスです。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -1310,26 +1009,6 @@ export default function CockroachFukuokaPage() {
                   Google口コミを見る →
                 </a>
               </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業のFC加盟店ということで、大手ブランドの安心感がありました。社内ライセンス取得のプロが施工してくれました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    16,500円からという良心的な料金設定で、全国対応なので福岡都内でも安心です。見積もりも明確で、追加料金もなく信頼できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    5年保証があり、長期的に安心できました。大手ブランドならではの丁寧なアフターフォローも良かったです。
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center">
@@ -1342,44 +1021,6 @@ export default function CockroachFukuokaPage() {
         </div>
       </section>
 
-      {/* 福岡のゴキブリ駆除料金相場 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡のゴキブリ駆除料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">エリア</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceComparison.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.area}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
-                    <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <div>
-              <h3 className="font-bold">福岡の料金が高い理由</h3>
-              <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 福岡の害虫カレンダー */}
       <section className="py-16 px-4 bg-base-100">
@@ -1412,63 +1053,7 @@ export default function CockroachFukuokaPage() {
         </div>
       </section>
 
-      {/* 福岡都内の害虫駆除業者エリア */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡都内の害虫駆除業者エリア</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {areas.map((area, idx) => (
-              <div key={idx} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-xl text-black">{area.name}</h3>
-                  <p className="text-gray-700 text-sm">{area.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {area.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-success text-xl">✓</span>
-                        <span className="text-sm text-gray-900">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* 福岡都の相談窓口 */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡都の害虫相談窓口</h2>
-          <div className="space-y-4">
-            {consultations.map((org, idx) => (
-              <div key={idx} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex items-start gap-4">
-                    <div className="text-4xl">📞</div>
-                    <div className="flex-1">
-                      <h3 className="card-title text-lg text-black">{org.name}</h3>
-                      <p className="text-gray-700 text-sm mb-2">{org.description}</p>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-xs text-gray-700">電話番号:</span>
-                          <p className="font-semibold text-black">{org.contact}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-700">受付時間:</span>
-                          <p className="font-semibold text-sm text-black">{org.hours}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-16 px-4 bg-[#66FFFF] text-gray-900">
