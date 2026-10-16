@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/dani</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2711,6 +2711,12 @@
   <url>
     <loc>https://gaichu-pro.com/agents/mushi-protec</loc>
     <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/agents/e-buster</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

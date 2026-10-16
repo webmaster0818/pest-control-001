@@ -204,6 +204,7 @@ export default async function AgentPage({ params }: Props) {
               )}
               <p className="text-slate-700 text-sm leading-relaxed flex-1">{a.reviewsSummary}</p>
             </div>
+            {a.goodReviews.length > 0 && (<>
             <h3 className="font-bold text-lg text-slate-800 mb-3">良い口コミ</h3>
             <div className="space-y-4 mb-8">
               {a.goodReviews.map((r, i) => (
@@ -216,6 +217,8 @@ export default async function AgentPage({ params }: Props) {
                 </div>
               ))}
             </div>
+            </>)}
+            {a.badReviews.length > 0 && (<>
             <h3 className="font-bold text-lg text-slate-800 mb-3">気になる口コミ・注意点</h3>
             <div className="space-y-4">
               {a.badReviews.map((r, i) => (
@@ -228,7 +231,8 @@ export default async function AgentPage({ params }: Props) {
                 </div>
               ))}
             </div>
-            <p className="text-xs text-slate-500 mt-4">※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。</p>
+            </>)}
+            {a.goodReviews.length + a.badReviews.length > 0 && <p className="text-xs text-slate-500 mt-4">※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。</p>}
           </section>
 
           <section id="merit" className="scroll-mt-20 mb-14">

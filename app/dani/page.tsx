@@ -232,7 +232,7 @@ export default function DaniPage() {
                   <td className="text-center">◎ 関東・東海</td>
                   <td className="text-center">○ 北陸4県</td>
                   <td className="text-center">○ 北九州・福岡・下関</td>
-                  <td className="text-center">◎ 関東・長野・新潟</td>
+                  <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
                   <td className="text-center">◎ 関西・関東・中部</td>
                   <td className="text-center">○ 福井県</td>
@@ -244,7 +244,7 @@ export default function DaniPage() {
                   <td className="text-center">8:30〜19:30</td>
                   <td className="text-center">8:30〜17:30</td>
                   <td className="text-center">8:00〜20:00</td>
-                  <td className="text-center">9:00〜18:00</td>
+                  <td className="text-center">24時間365日</td>
                   <td className="text-center">8:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
@@ -256,7 +256,7 @@ export default function DaniPage() {
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害鳥獣全般</td>
+                  <td className="text-center">害虫・ネズミ</td>
                   <td className="text-center">害虫全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
@@ -679,9 +679,9 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ムシプロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
-                <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
-                <li>知識と資格をもった専門スタッフが在籍、日本ペストコントロール協会からの優良事業所認証</li>
+                <li>全国の登録加盟店を紹介する受付サービス（運営：株式会社アシスト）。訪問・作業は加盟店のスタッフが行います</li>
+                <li>出張費・見積もり無料、作業依頼前のキャンセル料は無料（公式のよくある質問）</li>
+                <li>施工後に改善しなかった場合は無料で再施工（期間は害虫の種類で異なる）</li>
               </ul>
             </div>
 
@@ -699,31 +699,31 @@ export default function DaniPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、群馬県、栃木県、茨城県、山梨県、長野県、新潟県</td>
+                      <td>全国（公式表記「日本全国に対応」）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜18:00・土曜・日曜定休</td>
+                      <td>電話受付24時間365日（作業は朝8時〜夜10時）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ・シロアリなど害虫・害鳥獣全般</td>
+                      <td>ダニ・ノミ・トコジラミ・シロアリ・ハチ・ゴキブリなどの害虫、ネズミ</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>ダニ・ノミ駆除 15,000円（税抜）〜（公式のよくある質問・実際の料金は加盟店の見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>改善しなかった場合は無料で再施工（期間は害虫の種類で異なる）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>見積もり・出張費無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>現金・クレジットカード（一部の加盟店はカード不可）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1339,7 +1339,7 @@ export default function DaniPage() {
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-4 pb-12">
-        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }]} />
+        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }, { href: "/agents/e-buster", label: "イーバスターの口コミ・評判" }]} />
       </section>
     </div>
   );

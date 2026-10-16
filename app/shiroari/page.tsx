@@ -942,7 +942,7 @@ export default function ShiroariPage() {
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-4 pb-12">
-        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/kujo-oh", label: "害獣害虫駆除王の口コミ・評判" }, { href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }, { href: "/agents/machikado-gaiju-kujo", label: "街角害獣駆除相談所の口コミ・評判" }]} />
+        <RelatedLinkList title="業者ごとの口コミ・評判（料金・保証を公式表記で確認）" links={[{ href: "/agents/kujo-oh", label: "害獣害虫駆除王の口コミ・評判" }, { href: "/agents/mushi-protec", label: "ムシプロテックの口コミ・評判" }, { href: "/agents/machikado-gaiju-kujo", label: "街角害獣駆除相談所の口コミ・評判" }, { href: "/agents/e-buster", label: "イーバスターの口コミ・評判" }]} />
       </section>
     </div>
   );
