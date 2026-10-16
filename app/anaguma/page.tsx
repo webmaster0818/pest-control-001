@@ -586,7 +586,7 @@ export default function AnagumaPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    日本有害鳥獣駆除防除管理協会に加盟しているということで、専門性が高く信頼できました。10年保証があることも心強く感じました。
+                    日本有害鳥獣駆除防除管理協会に加盟しているということで、専門性が高く信頼できました。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -883,7 +883,7 @@ export default function AnagumaPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上という実績にも安心感がありました。
+                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -984,7 +984,7 @@ export default function AnagumaPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、アナグマの習性を熟知した的確な施工でした。10年保証があることも心強く感じました。
+                    50年以上の経験があるベテラン業者だけあって、アナグマの習性を熟知した的確な施工でした。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">

@@ -360,7 +360,7 @@ export default function KoumoriPage() {
                     <span className="text-sm text-gray-600">5.0</span>
                   </div>
                   <p className="text-sm text-gray-900">
-                    創業20年の実績があり、鳥獣保護管理法に精通したスタッフが適法な方法で追い出し作業をしてくれました。10年保証があることも心強く感じました。
+                    創業20年の実績があり、鳥獣保護管理法に精通したスタッフが適法な方法で追い出し作業をしてくれました。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -669,7 +669,7 @@ export default function KoumoriPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    口コミ460件星4.7という高評価で安心してお願いできました。実績650件以上が公開されており、透明性の高さを感じました。
+                    口コミ460件星4.7という高評価で安心してお願いできました。実績650件以上が公開されており、透明性が高いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -770,7 +770,7 @@ export default function KoumoriPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上という実績にも安心感がありました。
+                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -972,7 +972,7 @@ export default function KoumoriPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、コウモリの習性を熟知した的確な追い出し作業でした。10年保証があることも心強く感じました。
+                    50年以上の経験があるベテラン業者だけあって、コウモリの習性を熟知した的確な追い出し作業でした。10年保証も心強いです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
