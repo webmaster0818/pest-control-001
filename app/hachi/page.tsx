@@ -244,7 +244,7 @@ export default function HachiPage() {
                   <td className="text-center">8:30〜19:30</td>
                   <td className="text-center">8:30〜17:30</td>
                   <td className="text-center">8:00〜20:00</td>
-                  <td className="text-center">9:00〜18:00</td>
+                  <td className="text-center">平日9:00〜18:00</td>
                   <td className="text-center">8:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
@@ -747,9 +747,9 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社ミヤコ消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
-                <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
-                <li>知識と資格をもった専門スタッフが在籍、日本ペストコントロール協会からの優良事業所認証</li>
+                <li>1973年創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています</li>
+                <li>薬剤は「厚生労働省に認可された医薬品、医薬部外品を中心に」使用（公式のよくある質問）</li>
+                <li>2022年3月に日本ペストコントロール協会の優良事業所認証を取得、東京都の建築物ねずみ昆虫等防除業に登録（公式の会社概要）</li>
               </ul>
             </div>
 
@@ -767,11 +767,11 @@ export default function HachiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、群馬県、栃木県、茨城県、山梨県、長野県、新潟県</td>
+                      <td>東京23区、多摩、埼玉、神奈川、千葉、茨城、栃木、群馬、長野、新潟 ほか（公式の会社概要「営業範囲」）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜18:00・土曜・日曜定休</td>
+                      <td>平日9:00〜18:00（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
@@ -796,6 +796,7 @@ export default function HachiPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：ミヤコ消毒 公式サイト（https://www.kkmiyako.com/ ・ https://www.kkmiyako.com/company/overview ・ https://www.kkmiyako.com/faq）2026年10月16日確認</p>
             </div>
 
             <div className="mb-6">
@@ -807,22 +808,7 @@ export default function HachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    リピート率75.6%というのに惹かれて依頼しました。期待以上の丁寧な対応で、蜂の種類がわからなくても丁寧に対応していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    高所にできた巣でしたが、専門スタッフが安全に駆除してくれました。厚生労働省認可の安全な薬剤を使用しているので安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会からの優良事業所認証を受けているとのことで、信頼してお任せできました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>

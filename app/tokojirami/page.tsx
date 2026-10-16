@@ -231,7 +231,7 @@ export default function TokojiPage() {
                   <td className="text-center">◎ 関東・東海</td>
                   <td className="text-center">○ 北陸4県</td>
                   <td className="text-center">○ 北九州・福岡・下関</td>
-                  <td className="text-center">◎ 関東・長野・新潟</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
                   <td className="text-center">◎ 関西・関東・中部</td>
                   <td className="text-center">○ 福井県</td>
@@ -243,7 +243,7 @@ export default function TokojiPage() {
                   <td className="text-center">8:30〜19:30</td>
                   <td className="text-center">8:30〜17:30</td>
                   <td className="text-center">8:00〜20:00</td>
-                  <td className="text-center">9:00〜18:00</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">8:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
                   <td className="text-center">9:00〜17:00</td>
@@ -677,9 +677,7 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">エンバイロ・プランニングの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>リピート率75.6%！豊富な実績と確かなノウハウ</li>
-                <li>厚生労働省認可の安全な薬剤を使用、高い木やビルなどの高所にできた巣の撤去も対応可能</li>
-                <li>知識と資格をもった専門スタッフが在籍、日本ペストコントロール協会からの優良事業所認証</li>
+                <li>当サイトでは公式サイトの表記を確認できていないため、特徴の記載を控えています。依頼前に業者へ直接ご確認ください</li>
               </ul>
             </div>
 
@@ -697,11 +695,11 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、群馬県、栃木県、茨城県、山梨県、長野県、新潟県</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜18:00・土曜・日曜定休</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
