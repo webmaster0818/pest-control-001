@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/dani" },
-  title: "ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫・害獣駆除プロ比較ナビ",
-  description: "ダニ、マダニ、ツツガムシの駆除料金相場と業者の選び方。緊急時の対処法、ダニ予防対策を詳しく解説します。",
+  title: "ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策",
+  description: "ダニ、マダニ、ツツガムシの駆除料金相場と業者の選び方、緊急時の対処法、ダニの予防対策をご説明します。",
   openGraph: {
-    title: "ダニ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
-    description: "ダニ駆除業者を料金・サービス・口コミで徹底比較。",
+    title: "ダニ駆除業者比較 | 料金相場・口コミ・主要業者",
+    description: "ダニ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/dani",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -22,21 +22,21 @@ export default function DaniPage() {
     {
       name: "スズメバチ",
       danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい。巣に近づくだけで攻撃されることも。",
+      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
       features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
       color: "badge-error",
     },
     {
       name: "アシナガバチ",
       danger: "危険",
-      description: "スズメバチより攻撃性は低いが、巣を刺激すると集団で攻撃。",
+      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
       features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
       color: "badge-warning",
     },
     {
       name: "ミツバチ",
       danger: "注意",
-      description: "おとなしい性格だが、巣を守るために攻撃することも。アレルギー反応に注意。",
+      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
       features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
       color: "badge-info",
     },
@@ -46,17 +46,17 @@ export default function DaniPage() {
     {
       step: "1",
       title: "すぐに現場から離れる",
-      description: "ダニが追ってこない距離（20m以上）まで素早く移動。手で払おうとしない。",
+      description: "ダニが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
     },
     {
       step: "2",
       title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やす。毒を絞り出すように。",
+      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
     },
     {
       step: "3",
       title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出たらすぐに救急車を呼ぶ。",
+      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
     },
   ];
 
@@ -71,25 +71,25 @@ export default function DaniPage() {
     {
       season: "春（4〜5月）",
       activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階。この時期の駆除が最も安全で低コスト。",
+      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
       risk: "低",
     },
     {
       season: "夏（6〜8月）",
       activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる。駆除は専門業者に依頼を。",
+      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
       risk: "中",
     },
     {
       season: "秋（9〜10月）",
       activity: "攻撃性が最も高い",
-      advice: "新女王バチの誕生期。巣が最大になり、ダニの数も最多。絶対に自分で駆除しない。",
+      advice: "新女王バチが誕生する時期です。巣が最大になり、ダニの数も最も多くなります。ご自身での駆除は避けてください。",
       risk: "高",
     },
     {
       season: "冬（11〜3月）",
       activity: "活動停止",
-      advice: "ほとんどのダニが死滅。空の巣の撤去に最適な時期。",
+      advice: "ほとんどのダニが死滅する時期です。空の巣の撤去に適しています。",
       risk: "低",
     },
   ];
@@ -129,10 +129,10 @@ export default function DaniPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              ダニ駆除の完全ガイド
+              ダニ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              確実な駆除方法と再発防止策で、ダニのいない快適な生活を実現します
+              ダニの駆除方法と再発防止策をご説明します
             </p>
             </div>
         </div>
@@ -142,10 +142,10 @@ export default function DaniPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫駆除の完全ガイド
+            ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策 - 害虫駆除の基礎知識
           </h2>
           <p className="text-lg text-gray-700">
-            ダニ駆除の完全ガイド | ダニ・マダニ・ツツガムシ対策 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -264,15 +264,15 @@ export default function DaniPage() {
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
@@ -319,7 +319,7 @@ export default function DaniPage() {
               </tbody>
             </table>
           </div>
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめダニ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">ダニ駆除業者の詳細</h2>
 
           {/* 衛生害虫110番 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -334,15 +334,15 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">衛生害虫110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
-                <li>24時間年中無休で受付、地元密着のスピード対応</li>
-                <li>プロのスタッフが徹底調査、万が一の再発には無料で再施工</li>
+                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
+                <li>24時間年中無休で受付、地域に密着した対応</li>
+                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -374,7 +374,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -401,7 +401,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -420,15 +420,15 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の確かな施工実績</li>
+                <li>累計60万件以上の施工実績</li>
                 <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
-                <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
+                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -460,7 +460,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -487,7 +487,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -507,14 +507,14 @@ export default function DaniPage() {
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
-                <li>創業約50年、実績と技術を兼ね備えた防護服のプロスタッフが巣ごと撤去</li>
+                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
+                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -546,7 +546,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -573,7 +573,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -592,15 +592,15 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
-                <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除からご相談OK</li>
+                <li>最短30分で現場に到着</li>
+                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -632,7 +632,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -659,7 +659,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -679,7 +679,7 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ムシプロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>全国の登録加盟店を紹介する受付サービス（運営：株式会社アシスト）。訪問・作業は加盟店のスタッフが行います</li>
+                <li>全国の登録加盟店を紹介する受付サービスです（運営：株式会社アシスト）。訪問・作業は加盟店のスタッフが行います。</li>
                 <li>出張費・見積もり無料、作業依頼前のキャンセル料は無料（公式のよくある質問）</li>
                 <li>施工後に改善しなかった場合は無料で再施工（期間は害虫の種類で異なる）</li>
               </ul>
@@ -687,7 +687,7 @@ export default function DaniPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -746,7 +746,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -766,14 +766,14 @@ export default function DaniPage() {
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -805,7 +805,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -832,7 +832,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -852,14 +852,14 @@ export default function DaniPage() {
               <h4 className="font-bold text-lg text-black mb-3">街角害虫駆除相談所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>関西、関東、中部エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -891,7 +891,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -918,7 +918,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -937,15 +937,15 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害虫駆除対策センターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>福井県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -977,7 +977,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1004,7 +1004,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1024,14 +1024,14 @@ export default function DaniPage() {
               <h4 className="font-bold text-lg text-black mb-3">Qujoliaの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
-                <li>24時間365日受付で、最短受付から10分で現地到着</li>
-                <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
+                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
+                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1063,7 +1063,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1090,7 +1090,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1130,7 +1130,7 @@ export default function DaniPage() {
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
-            緊急！ダニに刺された時の対処法
+            ダニに刺された場合の対処法
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {emergencySteps.map((step) => (
@@ -1162,7 +1162,7 @@ export default function DaniPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">❌ やってはいけないこと</h3>
+                <h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
@@ -1322,11 +1322,11 @@ export default function DaniPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              ダニ駆除のご相談は今すぐ
+              ダニ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

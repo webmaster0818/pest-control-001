@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/gokiburi" },
-  title: "ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫・害獣駆除プロ比較ナビ",
-  description: "ゴキブリ駆除の料金相場、業者の選び方、自力駆除との比較を徹底解説。再発防止策と予防方法で、ゴキブリのいない快適な生活を実現します。",
+  title: "ゴキブリ駆除の基礎知識 | 駆除方法と予防策",
+  description: "ゴキブリ駆除の料金相場、業者の選び方、自力駆除との比較をご説明します。再発防止策と予防方法で、ゴキブリのいない快適な生活を実現します。",
   openGraph: {
-    title: "ゴキブリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
-    description: "ゴキブリ駆除業者を料金・サービス・口コミで徹底比較。",
+    title: "ゴキブリ駆除業者比較 | 料金相場・口コミ・主要業者",
+    description: "ゴキブリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/gokiburi",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -21,21 +21,21 @@ export default function GokiburiPage() {
   const types = [
     {
       name: "クロゴキブリ",
-      description: "日本で最も一般的な大型ゴキブリ。体長3〜4cm。屋外から侵入することが多い。",
+      description: "日本で最も一般的な大型のゴキブリで、体長は3〜4cmです。屋外から侵入することが多い種類です。",
       habitat: "一般住宅、マンション",
       features: ["体長: 3〜4cm", "色: 黒褐色", "活動: 屋外・屋内"],
       color: "badge-neutral",
     },
     {
       name: "チャバネゴキブリ",
-      description: "小型で繁殖力が高い。飲食店やビルに多く、駆除が困難。",
+      description: "小型で繁殖力が高い種類です。飲食店やビルに多く、駆除が難しいとされています。",
       habitat: "飲食店、ビル、集合住宅",
       features: ["体長: 1〜1.5cm", "色: 茶褐色", "活動: 屋内中心"],
       color: "badge-warning",
     },
     {
       name: "ワモンゴキブリ",
-      description: "日本最大級のゴキブリ。主に温暖な地域に分布。",
+      description: "日本最大級のゴキブリで、主に温暖な地域に分布しています。",
       habitat: "沖縄、九州南部",
       features: ["体長: 4〜5cm", "色: 赤褐色", "活動: 温暖地域"],
       color: "badge-error",
@@ -52,10 +52,10 @@ export default function GokiburiPage() {
       recommended: "1〜2匹見かけた程度の初期段階",
     },
     {
-      method: "業者駆除（プロの施工）",
+      method: "業者による駆除（専門業者の施工）",
       cost: "1.5万円〜5万円",
       effectiveness: "根本的な解決が可能",
-      pros: ["侵入口を徹底封鎖", "薬剤の効果が高い", "保証期間あり"],
+      pros: ["侵入口の封鎖", "薬剤の効果が高い", "保証期間あり"],
       cons: ["費用がかかる", "施工日程の調整が必要"],
       recommended: "頻繁に見かける、飲食店、確実に駆除したい場合",
     },
@@ -130,10 +130,10 @@ export default function GokiburiPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              ゴキブリ駆除の完全ガイド
+              ゴキブリ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              確実な駆除方法と再発防止策で、ゴキブリのいない快適な生活を実現します
+              ゴキブリの駆除方法と再発防止策をご説明します
             </p>
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を詳しく見る
@@ -146,10 +146,10 @@ export default function GokiburiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫駆除の完全ガイド
+            ゴキブリ駆除の基礎知識 | 駆除方法と予防策 - 害虫駆除の基礎知識
           </h2>
           <p className="text-lg text-gray-700">
-            ゴキブリ駆除の完全ガイド | 確実な駆除方法と予防策 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            ゴキブリ駆除の基礎知識 | 駆除方法と予防策 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function GokiburiPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">おすすめゴキブリ駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">ゴキブリ駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -202,7 +202,7 @@ export default function GokiburiPage() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
                       <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
+                      <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                 </tr>
@@ -248,7 +248,7 @@ export default function GokiburiPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめゴキブリ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">ゴキブリ駆除業者の詳細</h2>
 
           {/* 1. 害虫の生活救急車 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -265,13 +265,13 @@ export default function GokiburiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>東証1部上場企業が運営する大手駆除サービス</li>
                 <li>全国対応で即日施工が可能、年中無休</li>
-                <li>業界最安値に挑戦、コストパフォーマンスに優れている</li>
+                <li>低価格での提供を掲げている</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -303,7 +303,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -354,7 +354,7 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -381,7 +381,7 @@ export default function GokiburiPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -413,7 +413,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -455,7 +455,7 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -476,13 +476,13 @@ export default function GokiburiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>関東エリアに特化した駆除専門業者</li>
                 <li>最短15分での到着を実現、緊急時の対応に強み</li>
-                <li>関東最安値保証で価格面でも安心</li>
+                <li>関東最安値保証あり</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -514,7 +514,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -556,7 +556,7 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -577,13 +577,13 @@ export default function GokiburiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>年間3万件以上の施工実績を誇る大手駆除業者</li>
                 <li>全国対応で見積もりは無料</li>
-                <li>豊富な経験に基づく確実な施工が魅力</li>
+                <li>経験にもとづく施工</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -615,7 +615,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -657,7 +657,7 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -678,13 +678,13 @@ export default function GokiburiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>関東エリアに特化した駆除専門業者</li>
                 <li>2カ月間の再発防止保証付き</li>
-                <li>侵入口の徹底封鎖を含む根本的な解決を提供</li>
+                <li>侵入口の封鎖を含めた再発防止策を提供</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -716,7 +716,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -758,24 +758,24 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
           </div>
 
-          {/* 6. 害虫・害獣駆除プロ比較ナビ */}
+          {/* 6. 害虫駆除110番 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">害虫・害獣駆除プロ比較ナビ（ゴキブリ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害虫・害獣駆除プロ比較ナビの特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国対応の大手駆除業者</li>
                 <li>1年間の長期保証付き</li>
@@ -785,13 +785,13 @@ export default function GokiburiPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害虫・害獣駆除プロ比較ナビの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
@@ -817,7 +817,7 @@ export default function GokiburiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -830,8 +830,8 @@ export default function GokiburiPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害虫・害獣駆除プロ比較ナビの口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除110番+ゴキブリ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -859,7 +859,7 @@ export default function GokiburiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1017,7 +1017,7 @@ export default function GokiburiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
             <div>
-              <h3 className="font-bold">重要：1匹見たら数十匹いる</h3>
+              <h3 className="font-bold">重要：1匹見かけた場合、数十匹いる可能性があります</h3>
               <p className="text-sm">ゴキブリは夜行性で隠れて生活しています。1匹見かけたら、すでに数十匹〜数百匹が潜んでいる可能性があります。早めの対策が重要です。</p>
             </div>
           </div>
@@ -1053,11 +1053,11 @@ export default function GokiburiPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              ゴキブリ駆除のご相談は今すぐ
+              ゴキブリ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

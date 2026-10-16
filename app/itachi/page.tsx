@@ -6,11 +6,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/itachi" },
-  title: "イタチ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫・害獣駆除プロ比較ナビ",
-  description: "イタチ駆除の料金相場、業者の選び方、駆除方法を徹底解説。ドブイタチ、クマイタチ、ハツカイタチの種類別対策と再発防止策をご紹介します。",
+  title: "イタチ駆除の基礎知識 | 駆除方法と再発防止",
+  description: "イタチ駆除の料金相場、業者の選び方、駆除方法をご説明します。ドブイタチ、クマイタチ、ハツカイタチの種類別の対策と再発防止策もご紹介します。",
   openGraph: {
-    title: "イタチ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
-    description: "イタチ駆除業者を料金・サービス・口コミで徹底比較。",
+    title: "イタチ駆除業者比較 | 料金相場・口コミ・主要業者",
+    description: "イタチ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/itachi",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -20,21 +20,21 @@ export default function ItachiPage() {
   const types = [
     {
       name: "ドブイタチ",
-      description: "日本最大のイタチ。体長20〜25cm。下水道や側溝に生息し、湿った場所を好む。",
+      description: "日本最大のイタチで、体長は20〜25cmです。下水道や側溝に生息し、湿った場所を好みます。",
       habitat: "下水道、側溝、地下室",
       features: ["体長: 20〜25cm", "色: 灰褐色", "性格: 獰猛"],
       color: "badge-error",
     },
     {
       name: "クマイタチ",
-      description: "都市部に多い。体長15〜20cm。運動能力が高く、高所への侵入も得意。駆除が困難。",
+      description: "都市部に多く、体長は15〜20cmです。運動能力が高く高所からも侵入するため、駆除が難しい種類です。",
       habitat: "天井裏、壁の中、ビル",
       features: ["体長: 15〜20cm", "色: 黒褐色", "性格: 警戒心強い"],
       color: "badge-warning",
     },
     {
       name: "ハツカイタチ",
-      description: "最も小型のイタチ。体長6〜9cm。倉庫や物置に多く、わずかな隙間からも侵入。",
+      description: "最も小型のイタチで、体長は6〜9cmです。倉庫や物置に多く、わずかな隙間からも侵入します。",
       habitat: "倉庫、物置、農地",
       features: ["体長: 6〜9cm", "色: 灰白色", "性格: 好奇心旺盛"],
       color: "badge-info",
@@ -74,36 +74,36 @@ export default function ItachiPage() {
   const difficulties = [
     {
       title: "学習能力の高さ",
-      description: "一度罠にかかりそうになると、同じ罠を避けるようになる。特にクマイタチは警戒心が強い。",
+      description: "一度罠にかかりそうになると、同じ罠を避けるようになります。特にクマイタチは警戒心が強い種類です。",
     },
     {
       title: "繁殖スピードの速さ",
-      description: "1匹のメスが年間6〜8回出産し、1回の出産で6〜10匹産む。数ヶ月で数十匹に増殖。",
+      description: "1匹のメスが年間6〜8回出産し、1回の出産で6〜10匹を産みます。数か月で数十匹に増えることがあります。",
     },
     {
       title: "侵入口の多様性",
-      description: "わずか2〜3cmの隙間があれば侵入可能。配管、換気口、壁の亀裂など侵入経路は多岐にわたる。",
+      description: "2〜3cmの隙間があれば侵入できます。配管、換気口、壁の亀裂など、侵入経路は多岐にわたります。",
     },
   ];
 
   const methods = [
     {
       name: "捕獲（罠）",
-      description: "粘着シートや捕獲器を使用。即効性はあるが、学習されやすい。",
+      description: "粘着シートや捕獲器を使用する方法です。即効性はありますが、学習されやすい点に注意が必要です。",
       effectiveness: "中",
       pros: ["即効性がある", "確実に捕獲できる"],
       cons: ["警戒されやすい", "継続的な設置が必要"],
     },
     {
       name: "忌避剤",
-      description: "イタチが嫌がる成分で追い出す。一時的な効果。",
+      description: "イタチが嫌がる成分で追い出す方法です。効果は一時的です。",
       effectiveness: "低",
       pros: ["簡単に使用できる", "人体への影響が少ない"],
       cons: ["効果が一時的", "根本的な解決にならない"],
     },
     {
       name: "侵入口封鎖",
-      description: "イタチの侵入経路を完全に塞ぐ。最も重要な対策。",
+      description: "イタチの侵入経路をすべて塞ぐ方法です。最も重要な対策です。",
       effectiveness: "高",
       pros: ["再発防止に効果的", "長期的な解決"],
       cons: ["専門知識が必要", "全ての侵入口の特定が困難"],
@@ -118,7 +118,7 @@ export default function ItachiPage() {
   ];
 
   const checklist = [
-    "侵入口調査を徹底的に行うか（建物全体の点検）",
+    "侵入口の調査を建物全体で行うか",
     "保証期間は1年以上あるか",
     "アフターフォロー体制（定期点検）はあるか",
     "清掃・消毒作業も含まれているか",
@@ -152,10 +152,10 @@ export default function ItachiPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              イタチ駆除の完全ガイド
+              イタチ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              確実な駆除と再発防止で、イタチの被害から家族と財産を守ります
+              イタチの駆除方法と再発防止策をご説明します
             </p>
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を詳しく見る
@@ -168,10 +168,10 @@ export default function ItachiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            イタチ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫駆除の完全ガイド
+            イタチ駆除の基礎知識 | 駆除方法と再発防止 - 害虫駆除の基礎知識
           </h2>
           <p className="text-lg text-gray-700">
-            イタチ駆除の完全ガイド | 確実な駆除と再発防止 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            イタチ駆除の基礎知識 | 駆除方法と再発防止 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -179,7 +179,7 @@ export default function ItachiPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">おすすめイタチ駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">イタチ駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -292,7 +292,7 @@ export default function ItachiPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめイタチ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">イタチ駆除業者の詳細</h2>
 
           {/* 1. 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -308,14 +308,14 @@ export default function ItachiPage() {
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業20年、累計相談3万件以上の実績</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>最長10年保証で長期的に安心</li>
+                <li>日本ペストコントロール協会加盟</li>
+                <li>最長10年保証</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -347,7 +347,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -398,7 +398,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -417,15 +417,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除のROYの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>業界最安値水準の4,730円から対応可能</li>
-                <li>24時間365日受付で緊急時にも即座に対応</li>
-                <li>最長5年保証で再発時も安心</li>
+                <li>4,730円から対応可能</li>
+                <li>24時間365日受付</li>
+                <li>最長5年保証</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -457,7 +457,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -499,7 +499,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -518,15 +518,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>口コミ多数公開で信頼性が高い</li>
+                <li>口コミ多数公開</li>
                 <li>日本有害鳥獣駆除防除管理協会加盟</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -558,7 +558,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -600,7 +600,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -619,15 +619,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業28年のベテラン業者で豊富な経験</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>創業28年の業者</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>全国対応で地域を問わず利用可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -659,7 +659,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -701,7 +701,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -720,15 +720,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミ業界トップクラスの評価</li>
-                <li>2300件以上の実績掲載で信頼性が高い</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>Google口コミの評価が高い</li>
+                <li>2300件以上の実績掲載</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -760,7 +760,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -802,7 +802,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -821,15 +821,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業運営で信頼性が高い</li>
-                <li>累計相談500万件以上の圧倒的な実績</li>
+                <li>東証上場企業運営</li>
+                <li>累計相談500万件以上の実績</li>
                 <li>全国対応で地域を問わず利用可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -861,7 +861,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -903,7 +903,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -922,15 +922,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つベテラン業者</li>
-                <li>工務店歴50年で建物構造を熟知</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>50年以上の経験を持つ業者</li>
+                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -962,7 +962,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1004,7 +1004,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1023,15 +1023,15 @@ export default function ItachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ラッターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計3万件以上の豊富な実績</li>
-                <li>最短10分対応で業界最速クラス</li>
-                <li>経験豊富なスタッフによる確実な施工</li>
+                <li>累計3万件以上の実績</li>
+                <li>最短10分で対応</li>
+                <li>経験のあるスタッフによる施工</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1063,7 +1063,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1105,7 +1105,7 @@ export default function ItachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1167,7 +1167,7 @@ export default function ItachiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <h3 className="font-bold">緊急：イタチを見かけたら即座に対策を</h3>
+              <h3 className="font-bold">イタチを見かけた場合の対策</h3>
               <p className="text-sm">イタチは繁殖スピードが非常に速く、放置すると数ヶ月で数十匹に増えます。早期の駆除が被害を最小限に抑える鍵です。</p>
             </div>
           </div>
@@ -1241,7 +1241,7 @@ export default function ItachiPage() {
               <h3 className="font-bold">最も効果的な方法</h3>
               <p className="text-sm">
                 <strong>「捕獲 + 忌避剤 + 侵入口封鎖」の3つを組み合わせる</strong>のが最も効果的です。
-                特に侵入口封鎖は再発防止に必須。プロの業者による徹底調査をおすすめします。
+                特に侵入口の封鎖は再発防止に欠かせません。専門業者による調査をおすすめします。
               </p>
             </div>
           </div>
@@ -1299,7 +1299,7 @@ export default function ItachiPage() {
                 </svg>
                 <div>
                   <h4 className="font-bold text-sm">重要：保証期間の確認</h4>
-                  <p className="text-xs">イタチ駆除は1回の施工で完全に根絶することが困難です。最低でも1年以上の保証期間がある業者を選びましょう。</p>
+                  <p className="text-xs">イタチ駆除は、1回の施工で根絶することが難しい作業です。1年以上の保証期間がある業者を選ぶことをおすすめします。</p>
                 </div>
               </div>
             </div>
@@ -1336,11 +1336,11 @@ export default function ItachiPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              イタチ駆除のご相談は今すぐ
+              イタチ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

@@ -8,10 +8,10 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/hachi" },
   title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場と緊急対処法",
-  description: "ハチ駆除業者10社を料金・対応速度・実績で徹底比較。スズメバチ、アシナガバチ、ミツバチの駆除料金相場（8,000円〜50,000円）、緊急時の対処法、季節別ハチ対策カレンダーを詳しく解説。即日対応可能な業者も掲載。",
+  description: "ハチ駆除業者10社を、料金・対応速度・実績の観点から比較しています。スズメバチ、アシナガバチ、ミツバチの駆除料金相場（8,000円〜50,000円）、緊急時の対処法、季節別ハチ対策カレンダーをご説明します。即日対応が可能な業者も掲載しています。",
   openGraph: {
     title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "ハチ駆除業者10社を料金・対応速度・実績で徹底比較。即日対応可能な業者も掲載。",
+    description: "ハチ駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
     url: "https://gaichu-pro.com/hachi",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -22,21 +22,21 @@ export default function HachiPage() {
     {
       name: "スズメバチ",
       danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい。巣に近づくだけで攻撃されることも。",
+      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
       features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
       color: "badge-error",
     },
     {
       name: "アシナガバチ",
       danger: "危険",
-      description: "スズメバチより攻撃性は低いが、巣を刺激すると集団で攻撃。",
+      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
       features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
       color: "badge-warning",
     },
     {
       name: "ミツバチ",
       danger: "注意",
-      description: "おとなしい性格だが、巣を守るために攻撃することも。アレルギー反応に注意。",
+      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
       features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
       color: "badge-info",
     },
@@ -46,17 +46,17 @@ export default function HachiPage() {
     {
       step: "1",
       title: "すぐに現場から離れる",
-      description: "ハチが追ってこない距離（20m以上）まで素早く移動。手で払おうとしない。",
+      description: "ハチが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
     },
     {
       step: "2",
       title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やす。毒を絞り出すように。",
+      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
     },
     {
       step: "3",
       title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出たらすぐに救急車を呼ぶ。",
+      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
     },
   ];
 
@@ -71,25 +71,25 @@ export default function HachiPage() {
     {
       season: "春（4〜5月）",
       activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階。この時期の駆除が最も安全で低コスト。",
+      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
       risk: "低",
     },
     {
       season: "夏（6〜8月）",
       activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる。駆除は専門業者に依頼を。",
+      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
       risk: "中",
     },
     {
       season: "秋（9〜10月）",
       activity: "攻撃性が最も高い",
-      advice: "新女王バチの誕生期。巣が最大になり、ハチの数も最多。絶対に自分で駆除しない。",
+      advice: "新女王バチが誕生する時期です。巣が最大になり、ハチの数も最も多くなります。ご自身での駆除は避けてください。",
       risk: "高",
     },
     {
       season: "冬（11〜3月）",
       activity: "活動停止",
-      advice: "ほとんどのハチが死滅。空の巣の撤去に最適な時期。",
+      advice: "ほとんどのハチが死滅する時期です。空の巣の撤去に適しています。",
       risk: "低",
     },
   ];
@@ -129,7 +129,7 @@ export default function HachiPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              ハチ駆除の完全ガイド
+              ハチ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
               スズメバチ・アシナガバチの危険性から駆除方法まで、安全な対処法をご紹介します
@@ -142,10 +142,10 @@ export default function HachiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            ハチ駆除の完全ガイド
+            ハチ駆除の基礎知識と業者比較
           </h2>
           <p className="text-lg text-gray-700">
-            ハチの特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            ハチの特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -264,15 +264,15 @@ export default function HachiPage() {
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
@@ -319,7 +319,7 @@ export default function HachiPage() {
               </tbody>
             </table>
           </div>
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめハチ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">ハチ駆除業者の詳細</h2>
 
           {/* 株式会社三共消毒 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -334,15 +334,15 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社三共消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
-                <li>24時間年中無休で受付、地元密着のスピード対応</li>
-                <li>プロのスタッフが徹底調査、万が一の再発には無料で再施工</li>
+                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
+                <li>24時間年中無休で受付、地域に密着した対応</li>
+                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -374,7 +374,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -425,7 +425,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -444,15 +444,15 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の確かな施工実績</li>
+                <li>累計60万件以上の施工実績</li>
                 <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
-                <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
+                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -484,7 +484,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -518,7 +518,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
+                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者だと思います。
                   </p>
                 </div>
               </div>
@@ -526,7 +526,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -546,14 +546,14 @@ export default function HachiPage() {
               <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
-                <li>創業約50年、実績と技術を兼ね備えた防護服のプロスタッフが巣ごと撤去</li>
+                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
+                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -585,7 +585,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -627,7 +627,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -646,15 +646,15 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社あい営繕の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
-                <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除からご相談OK</li>
+                <li>最短30分で現場に到着</li>
+                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -686,7 +686,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -728,7 +728,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -747,7 +747,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社ミヤコ消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>1973年創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています</li>
+                <li>1973年に創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています。</li>
                 <li>薬剤は「厚生労働省に認可された医薬品、医薬部外品を中心に」使用（公式のよくある質問）</li>
                 <li>2022年3月に日本ペストコントロール協会の優良事業所認証を取得、東京都の建築物ねずみ昆虫等防除業に登録（公式の会社概要）</li>
               </ul>
@@ -755,7 +755,7 @@ export default function HachiPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -787,7 +787,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -815,7 +815,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -835,14 +835,14 @@ export default function HachiPage() {
               <h4 className="font-bold text-lg text-black mb-3">株式会社こだまの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -874,7 +874,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -908,7 +908,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
+                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者だと思います。
                   </p>
                 </div>
               </div>
@@ -916,7 +916,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -936,14 +936,14 @@ export default function HachiPage() {
               <h4 className="font-bold text-lg text-black mb-3">大洋防疫研究所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>関西、関東、中部エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -975,7 +975,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1009,7 +1009,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者だと思います。
                   </p>
                 </div>
               </div>
@@ -1017,7 +1017,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1036,15 +1036,15 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社第一環研の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>福井県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1076,7 +1076,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1098,7 +1098,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
+                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者だと思います。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -1110,7 +1110,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者だと思います。
                   </p>
                 </div>
               </div>
@@ -1118,7 +1118,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1138,14 +1138,14 @@ export default function HachiPage() {
               <h4 className="font-bold text-lg text-black mb-3">ハチお助け本舗の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
-                <li>24時間365日受付で、最短受付から10分で現地到着</li>
-                <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
+                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
+                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1177,7 +1177,7 @@ export default function HachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1219,7 +1219,7 @@ export default function HachiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1259,7 +1259,7 @@ export default function HachiPage() {
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
-            緊急！ハチに刺された時の対処法
+            ハチに刺された場合の対処法
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {emergencySteps.map((step) => (
@@ -1291,7 +1291,7 @@ export default function HachiPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">❌ やってはいけないこと</h3>
+                <h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
@@ -1451,11 +1451,11 @@ export default function HachiPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              ハチ駆除のご相談は今すぐ
+              ハチ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

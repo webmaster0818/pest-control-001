@@ -7,9 +7,9 @@ import { agentsByPriority as agents } from "./agentsData";
 const SITE = "https://gaichu-pro.com";
 
 export const metadata: Metadata = {
-  title: { absolute: "害獣・害虫駆除業者の口コミ・評判まとめ｜料金・対応を徹底比較｜害虫・害獣駆除プロ比較ナビ" },
+  title: { absolute: "害獣・害虫駆除業者の口コミ・評判一覧｜料金・対応の比較｜害虫・害獣駆除プロ比較ナビ" },
   description:
-    "害獣・害虫駆除業者の口コミ・評判・料金を業者別に徹底調査。駆除ザウルスをはじめ各社のメリット・デメリット、対応害獣、保証内容を比較して、あなたに合う駆除業者を見つけられます。",
+    "害獣・害虫駆除業者の口コミ・評判・料金を業者別にまとめています。駆除ザウルスをはじめ各社のメリット・デメリット、対応害獣、保証内容を比較いただけます。",
   alternates: { canonical: `${SITE}/agents` },
 };
 
@@ -18,9 +18,9 @@ export default function AgentsIndexPage() {
     <article className="bg-white">
       <Breadcrumb items={[{ label: "害虫・害獣駆除プロ比較ナビ", href: "/" }, { label: "駆除業者の口コミ・評判" }]} />
       <div className="mx-auto max-w-4xl px-4 py-10">
-        <h1 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">害獣・害虫駆除業者の口コミ・評判まとめ</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">害獣・害虫駆除業者の口コミ・評判一覧</h1>
         <p className="text-slate-600 mb-8 leading-relaxed">
-          主要な害獣・害虫駆除業者の料金・対応害獣・保証内容・利用者の口コミを、編集部が中立的に調査してまとめました。気になる業者を選んで、依頼前の比較にお役立てください。
+          主要な害獣・害虫駆除業者の料金・対応害獣・保証内容・利用者の口コミを、編集部が中立的な立場で調査し、まとめています。依頼前の比較にお役立てください。
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {agents.map((a) => (

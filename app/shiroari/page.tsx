@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/shiroari" },
-  title: "シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫・害獣駆除プロ比較ナビ",
-  description: "シロアリ駆除の料金相場、業者の選び方、駆除方法を徹底解説。バリア工法とベイト工法の違い、見積もり時のチェックポイントをわかりやすく紹介します。",
+  title: "シロアリ駆除の基礎知識 | 料金相場・業者の選び方",
+  description: "シロアリ駆除の料金相場、業者の選び方、駆除方法をご説明します。バリア工法とベイト工法の違い、見積もり時のチェックポイントをわかりやすく紹介します。",
   openGraph: {
-    title: "シロアリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
-    description: "シロアリ駆除業者を料金・サービス・口コミで徹底比較。",
+    title: "シロアリ駆除業者比較 | 料金相場・口コミ・主要業者",
+    description: "シロアリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/shiroari",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -28,7 +28,7 @@ export default function ShiroariPage() {
     },
     {
       name: "ベイト工法",
-      description: "毒餌を設置してシロアリの巣ごと駆除する最新工法",
+      description: "毒餌を設置してシロアリの巣ごと駆除する工法",
       pros: ["巣ごと根絶できる", "薬剤散布不要で安全", "環境にやさしい"],
       cons: ["効果が出るまで時間がかかる", "費用がやや高い"],
       price: "15,000〜25,000円/坪",
@@ -64,7 +64,7 @@ export default function ShiroariPage() {
       a: "市販の薬剤を使った応急処置は可能ですが、完全な駆除には専門知識と技術が必要です。特に建物の構造部分への被害がある場合は、必ず専門業者に依頼してください。",
     },
     {
-      q: "シロアリ駆除に最適な時期はありますか？",
+      q: "シロアリ駆除に適した時期はありますか？",
       a: "シロアリは一年中活動しますが、活動が活発になる4月〜6月が発見しやすい時期です。ただし、被害を発見したらすぐに対処することをおすすめします。",
     },
   ];
@@ -96,10 +96,10 @@ export default function ShiroariPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              シロアリ駆除の完全ガイド
+              シロアリ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              料金相場から業者の選び方まで、シロアリ駆除に必要な情報をすべて解説します
+              料金相場から業者の選び方まで、シロアリ駆除に関する情報をご説明します
             </p>
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を詳しく見る
@@ -112,10 +112,10 @@ export default function ShiroariPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫駆除の完全ガイド
+            シロアリ駆除の基礎知識 | 料金相場・業者の選び方 - 害虫駆除の基礎知識
           </h2>
           <p className="text-lg text-gray-700">
-            シロアリ駆除の完全ガイド | 料金相場・業者の選び方 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            シロアリ駆除の基礎知識 | 料金相場・業者の選び方 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -123,7 +123,7 @@ export default function ShiroariPage() {
       {/* おすすめ業者比較 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center">おすすめシロアリ駆除業者比較</h2>
+          <h2 className="heading-primary text-center">シロアリ駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -193,11 +193,11 @@ export default function ShiroariPage() {
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
@@ -234,7 +234,7 @@ export default function ShiroariPage() {
       {/* おすすめ業者詳細 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center mb-12">おすすめシロアリ駆除業者詳細</h2>
+          <h2 className="heading-primary text-center mb-12">シロアリ駆除業者の詳細</h2>
 
           {/* 害獣プロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -250,14 +250,14 @@ export default function ShiroariPage() {
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>「コールセンターでの相談→調査見積り→駆除作業」まで自社スタッフがワンストップで担当</li>
-                <li>20年以上続くリフォーム会社が母体となっているため、住宅構造を理解した施工技術も◎</li>
+                <li>20年以上続くリフォーム会社が母体のため、住宅の構造を踏まえた施工を行う</li>
                 <li>弊社施工箇所が破損した場合、保証期間内であれば無償対応ですぐに駆けつけ</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -285,7 +285,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -336,7 +336,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -355,15 +355,15 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業19年の長年にわたり蓄積された専門知識と実績</li>
-                <li>自治体、施設、企業向けに専門講習を提供する経験豊かなプロフェッショナル集団</li>
+                <li>創業19年の実績</li>
+                <li>自治体・施設・企業向けに専門講習を提供</li>
                 <li>国家資格を含む様々な資格を持つ専門家が多数在籍</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼相談・調査・見積もり完全無料／<br />
+                相談・調査・見積もりは無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -395,7 +395,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -437,7 +437,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼相談・調査・見積もり完全無料／<br />
+                相談・調査・見積もりは無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -458,13 +458,13 @@ export default function ShiroariPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>天井や床下の詳細な撮影を伴う、無料の現地調査と見積もりを提供</li>
                 <li>ムカデ、クモなど、あらゆる種類の害獣駆除に対応可能</li>
-                <li>関東エリア内での現地への到着を最短30分で実現し、素早く対応</li>
+                <li>関東エリア内では最短30分で現地に到着</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -496,7 +496,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -538,7 +538,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -557,15 +557,15 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業から28年の経験と実績、高い信頼性と透明性が魅力の完全自社施工業者</li>
+                <li>創業28年、自社施工を行う業者</li>
                 <li>駆除を担当するスタッフのプロフィールや保有資格、施工事例や口コミを多数掲載</li>
-                <li>日本ペストコントロール協会と日本しろあり対策協会の両方に加盟しており、施工品質の高さはお墨付き</li>
+                <li>日本ペストコントロール協会と日本しろあり対策協会の両方に加盟</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -597,7 +597,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -639,7 +639,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -658,15 +658,15 @@ export default function ShiroariPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">キャッツの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>シロアリの生態を徹底的に理解しているため、どんな状況下でも効果的な駆除が可能</li>
-                <li>シロアリの発生場所や被害状況を詳細に分析し、最適な工法と薬剤を選択</li>
+                <li>シロアリの生態をふまえ、状況に応じた駆除を行う</li>
+                <li>シロアリの発生場所や被害状況を分析し、状況に合った工法と薬剤を選択</li>
                 <li>事前に建物の構造を詳細に調査し、その特性に合わせた適切な処理を行う</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼365日対応・通話無料／<br />
+                365日対応・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -698,7 +698,7 @@ export default function ShiroariPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -740,7 +740,7 @@ export default function ShiroariPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼365日対応・通話無料／<br />
+                365日対応・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -752,14 +752,14 @@ export default function ShiroariPage() {
       {/* シロアリとは */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary">シロアリとは？見分け方と被害の実態</h2>
+          <h2 className="heading-primary">シロアリの見分け方と被害</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-white shadow-xl">
               <div className="card-body">
                 <h3 className="card-title text-xl">ヤマトシロアリ</h3>
                 <p className="text-gray-700">
-                  日本全国に分布する最も一般的なシロアリ。湿った木材を好み、
-                  床下や浴室周辺で被害が多い。
+                  日本全国に分布する最も一般的なシロアリです。湿った木材を好み、
+                  床下や浴室周辺で被害が多く見られます。
                 </p>
                 <div className="badge badge-warning">全国に分布</div>
               </div>
@@ -768,8 +768,8 @@ export default function ShiroariPage() {
               <div className="card-body">
                 <h3 className="card-title text-xl">イエシロアリ</h3>
                 <p className="text-gray-700">
-                  主に温暖な地域に分布。巨大な巣を作り、被害が深刻化しやすい。
-                  水を運ぶ能力があり、建物全体に被害が広がる。
+                  主に温暖な地域に分布しています。巨大な巣を作り、被害が深刻化しやすい種類です。
+                  水を運ぶ能力があり、建物全体に被害が広がることがあります。
                 </p>
                 <div className="badge badge-error">被害が深刻</div>
               </div>
@@ -925,11 +925,11 @@ export default function ShiroariPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              シロアリ駆除のご相談は今すぐ
+              シロアリ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

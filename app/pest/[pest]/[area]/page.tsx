@@ -96,8 +96,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${p.areaName}の${p.pestName}駆除｜自治体の対応・費用の助成・防護服の貸出`
     : `${p.areaName}の${p.pestName}駆除｜捕獲の許可・相談窓口・対応業者の比較`;
   const description = municipal.length
-    ? `${p.areaName}で${p.pestName}の巣に困っている方向けに、${municipal.length}自治体の公式ページに書かれている駆除の可否・費用の助成・防護服の貸出の記載と、${p.pestName}対応の記載がある駆除業者を編集部が整理しました。`
-    : `${p.areaName}で${p.pestName}の被害に困っている方向けに、捕獲に関する法令（環境省・東京都の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しました。`;
+    ? `${p.areaName}で${p.pestName}の巣でお困りの方に向けて、${municipal.length}自治体の公式ページに記載されている駆除の可否・費用の助成・防護服の貸出と、${p.pestName}対応の記載がある駆除業者を編集部が整理しています。`
+    : `${p.areaName}で${p.pestName}の被害でお困りの方に向けて、捕獲に関する法令（環境省・自治体の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しています。`;
   return {
     title: { absolute: `${title}｜害虫・害獣駆除プロ比較ナビ` },
     description,
@@ -123,7 +123,7 @@ function pick(a: AgentReview, keywords: string[]): string {
   if (info) return info.v;
   const row = a.priceRows.find((r) => keywords.some((k) => r.item.includes(k)));
   if (row) return row.price;
-  return "本サイト掲載データに記載なし";
+  return "当サイト掲載データに記載なし";
 }
 
 export default async function PestAreaPage({ params }: Props) {
@@ -132,7 +132,7 @@ export default async function PestAreaPage({ params }: Props) {
   if (!p) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-20 text-center">
-        ページが見つかりません。
+        該当するページの情報はありません。
       </div>
     );
   }
@@ -175,8 +175,8 @@ export default async function PestAreaPage({ params }: Props) {
             </h1>
             <p className="text-slate-200 leading-relaxed">
               {hasMunicipal
-                ? `自治体が駆除するかどうか、費用の助成や防護服の貸出があるかどうかは自治体ごとに分かれます。各自治体の公式ページの記載を先に整理し、そのうえで${p.pestName}対応の記載がある業者を比較できるようにしています。`
-                : `法令と自治体窓口の情報を先に整理し、そのうえで${p.pestName}対応の記載がある業者を比較できるようにしています。`}
+                ? `自治体が駆除するかどうか、費用の助成や防護服の貸出があるかどうかは自治体ごとに分かれます。各自治体の公式ページの記載をまとめたうえで、${p.pestName}対応の記載がある業者を比較できるようにしています。`
+                : `法令と自治体窓口の情報をまとめたうえで、${p.pestName}対応の記載がある業者を比較できるようにしています。`}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="badge badge-lg bg-white/15 border-0 text-white">
@@ -201,7 +201,7 @@ export default async function PestAreaPage({ params }: Props) {
                 本ページは、{p.areaName}
                 内の各自治体および各社の公式サイトの公開情報をもとに編集部が整理したものです（確認日：
                 {confirmed}
-                ）。自治体の対応・助成・貸出に関する記述は各自治体のページの記載の範囲にとどめ、記載が無い項目は「記載なし」としています。制度は年度ごとに変わることがあるため、実際の可否・金額は必ず各自治体にご確認ください。
+                ）。自治体の対応・助成・貸出に関する記述は各自治体のページの記載の範囲にとどめ、記載がない項目は「記載なし」としています。制度は年度ごとに変わることがあるため、実際の可否・金額は必ず各自治体にご確認ください。
               </>
             ) : (
               <>
@@ -237,7 +237,7 @@ export default async function PestAreaPage({ params }: Props) {
                 </p>
               )}
               <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                各自治体の公式ページに書かれている内容をそのまま整理しています。公式ページに記載が無い項目は「記載なし」としており、編集部による推測は入れていません。「記載なし」は制度が無いことの確認ではなく、当該ページに記載を確認できなかったという意味です。
+                各自治体の公式ページに書かれている内容をそのまま整理しています。公式ページに記載がない項目は「記載なし」としており、編集部による推測は行っていません。「記載なし」は制度がないことを示すものではなく、当該ページで記載を確認できなかったことを示しています。
               </p>
               <div className="overflow-x-auto">
                 <table className="table w-full border border-slate-200 text-sm">
@@ -395,7 +395,7 @@ export default async function PestAreaPage({ params }: Props) {
             <p className="text-slate-600 text-sm leading-relaxed mb-5">
               当サイト掲載業者のうち、対応する{hasMunicipal ? "害虫" : "害獣"}
               として{p.pestName}
-              を明記している会社を掲載しています。掲載順は編集部の提携状況による並びで、優劣・順位を示すものではありません。料金・保証・受付時間は各社の公表内容をそのまま記載しています。
+              を明記している業者を掲載しています。掲載順は編集部の提携状況にもとづくもので、優劣・順位を示すものではありません。料金・保証・受付時間は各社の公表内容をそのまま記載しています。
             </p>
             <div className="overflow-x-auto">
               <table className="table w-full border border-slate-200 text-sm">
@@ -424,7 +424,7 @@ export default async function PestAreaPage({ params }: Props) {
                       <td className="border border-slate-200">
                         {a.priceRows[0]
                           ? `${a.priceRows[0].item}：${a.priceRows[0].price}`
-                          : "本サイト掲載データに記載なし"}
+                          : "当サイト掲載データに記載なし"}
                       </td>
                       <td className="border border-slate-200">
                         {pick(a, ["保証"])}
@@ -437,7 +437,7 @@ export default async function PestAreaPage({ params }: Props) {
                           a.servicesPests ??
                           (a.serviceTags?.length
                             ? a.serviceTags.join("／")
-                            : "本サイト掲載データに記載なし")}
+                            : "当サイト掲載データに記載なし")}
                       </td>
                     </tr>
                   ))}
@@ -453,7 +453,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 確認項目 */}
           <section id="check" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
-              業者を選ぶときの確認項目
+              業者を選ぶ際の確認項目
             </h2>
             <ul className="space-y-3">
               {p.checkPoints.map((c, i) => (
@@ -474,7 +474,7 @@ export default async function PestAreaPage({ params }: Props) {
           {p.cautions.length > 0 && (
             <section id="cautions" className="scroll-mt-20 mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-slate-400 pl-4 mb-5">
-                今回の調査で裏付けが取れなかったこと
+                ご利用にあたっての注意事項
               </h2>
               <ul className="space-y-3">
                 {p.cautions.map((c, i) => (

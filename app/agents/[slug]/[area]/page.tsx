@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `${b.brandName} ${b.areaName}の対応エリア・拠点｜料金・保証・受付時間`;
   // 説明文は160字以内に収める。長い場合は言い回しを詰め、それでも長ければ運営会社の括弧書きを外す（本文には記載あり）。
   const tail = `の${b.areaName}における拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をもとに編集部が整理しました。${b.confirmedDate}時点の公式表記です。`;
-  const tailShort = `の${b.areaName}の拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載から編集部が整理。${b.confirmedDate}時点の公式表記です。`;
+  const tailShort = `の${b.areaName}の拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をもとに編集部が整理しています。${b.confirmedDate}時点の公式表記です。`;
   const description =
     [
       `${b.brandName}（${b.operator.name}）${tail}`,
@@ -59,7 +59,7 @@ export default async function BrandAreaPage({ params }: Props) {
   if (!b) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-20 text-center">
-        ページが見つかりません。
+        該当するページの情報はありません。
       </div>
     );
   }
@@ -90,7 +90,7 @@ export default async function BrandAreaPage({ params }: Props) {
             </h1>
             <p className="text-slate-200 leading-relaxed">
               {b.brandName}（運営：{b.operator.name}）が{b.areaName}
-              向けに公開している拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載をそのまま整理しました。
+              向けに公開している拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載にもとづいて整理しています。
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="badge badge-lg bg-white/15 border-0 text-white">
@@ -214,7 +214,7 @@ export default async function BrandAreaPage({ params }: Props) {
           {/* 対応市区町村 */}
           <section id="municipalities" className="scroll-mt-20 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
-              公式が掲げる対応市区町村
+              公式サイトに掲載されている対応市区町村
             </h2>
             <div className="flex flex-wrap gap-2">
               {b.municipalities.map((m) => (
@@ -292,7 +292,7 @@ export default async function BrandAreaPage({ params }: Props) {
                 </p>
               ) : (
                 <p className="rounded-xl bg-slate-100 p-4 text-slate-700 leading-relaxed mb-3">
-                  公式サイトに金額の掲示なし（無料見積もり）。編集部が確認した範囲では、{b.brandName}
+                  公式サイトに金額の掲示はありません（無料見積もり）。編集部が確認した範囲では、{b.brandName}
                   の公式サイトに駆除料金の具体的な金額は掲示されていません。
                 </p>
               )}
@@ -459,7 +459,7 @@ export default async function BrandAreaPage({ params }: Props) {
                   {agent ? agent.name : b.brandName}の口コミ・評判・料金
                 </p>
                 <p className="text-xs text-slate-500 mt-1">
-                  ブランド本体のレビューページ
+                  ブランド本体の口コミ・評判ページ
                 </p>
               </Link>
               <Link

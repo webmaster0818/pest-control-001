@@ -6,11 +6,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/koumori" },
-  title: "コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫・害獣駆除プロ比較ナビ",
-  description: "コウモリ駆除の料金相場、法律知識、安全な追い出し方法を徹底解説。鳥獣保護管理法に基づく正しい対処法と業者の選び方をご紹介します。",
+  title: "コウモリ駆除の基礎知識 | 法律と安全な追い出し方法",
+  description: "コウモリ駆除の料金相場、法律知識、安全な追い出し方法をご説明します。鳥獣保護管理法に基づく正しい対処法と業者の選び方をご紹介します。",
   openGraph: {
-    title: "コウモリ駆除業者比較 | 料金相場・口コミ・おすすめ業者",
-    description: "コウモリ駆除業者を料金・サービス・口コミで徹底比較。",
+    title: "コウモリ駆除業者比較 | 料金相場・口コミ・主要業者",
+    description: "コウモリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/koumori",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -21,7 +21,7 @@ export default function KoumoriPage() {
     {
       type: "糞害",
       icon: "💩",
-      description: "天井裏や壁の中に大量の糞が蓄積。悪臭と衛生問題を引き起こす。",
+      description: "天井裏や壁の中に大量の糞が蓄積し、悪臭や衛生上の問題を引き起こします。",
       severity: "高",
       examples: [
         "天井にシミができる",
@@ -32,7 +32,7 @@ export default function KoumoriPage() {
     {
       type: "騒音",
       icon: "🔊",
-      description: "夜間の鳴き声や羽音で睡眠が妨げられる。",
+      description: "夜間の鳴き声や羽音で、睡眠が妨げられることがあります。",
       severity: "中",
       examples: [
         "夜間の鳴き声（キーキー音）",
@@ -43,11 +43,11 @@ export default function KoumoriPage() {
     {
       type: "ダニ・病原菌",
       icon: "🦠",
-      description: "コウモリに寄生するダニが人に被害を与えることも。",
+      description: "コウモリに寄生するダニが、人に被害を与えることがあります。",
       severity: "高",
       examples: [
         "マダニによる咬傷",
-        "狂犬病ウイルスのリスク（稀）",
+        "狂犬病ウイルスのリスク（まれ）",
         "ヒストプラズマ症（糞から感染）",
       ],
     },
@@ -75,7 +75,7 @@ export default function KoumoriPage() {
     {
       step: "1",
       title: "侵入口の特定",
-      description: "コウモリの出入り口を特定します。わずか1〜2cmの隙間からも侵入するため、専門的な調査が必要。",
+      description: "コウモリの出入り口を特定します。1〜2cmの隙間からも侵入するため、専門的な調査が必要です。",
     },
     {
       step: "2",
@@ -90,7 +90,7 @@ export default function KoumoriPage() {
     {
       step: "4",
       title: "清掃・消毒",
-      description: "糞や尿の除去、天井裏の清掃と消毒を徹底的に行います。ダニの駆除も実施。",
+      description: "糞や尿の除去、天井裏の清掃と消毒を行います。ダニの駆除もあわせて実施します。",
     },
   ];
 
@@ -137,10 +137,10 @@ export default function KoumoriPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              コウモリ駆除の完全ガイド
+              コウモリ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              法律に基づく正しい追い出し方法で、安全にコウモリ被害を解決します
+              法律に基づくコウモリの追い出し方法と業者の選び方をご説明します
             </p>
             <div className="alert alert-warning shadow-lg max-w-2xl mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
@@ -156,10 +156,10 @@ export default function KoumoriPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫駆除の完全ガイド
+            コウモリ駆除の基礎知識 | 法律と安全な追い出し方法 - 害虫駆除の基礎知識
           </h2>
           <p className="text-lg text-gray-700">
-            コウモリ駆除の完全ガイド | 法律と安全な追い出し方法 - 害虫の特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            コウモリ駆除の基礎知識 | 法律と安全な追い出し方法 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -167,7 +167,7 @@ export default function KoumoriPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">おすすめコウモリ駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">コウモリ駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -280,7 +280,7 @@ export default function KoumoriPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめコウモリ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">コウモリ駆除業者の詳細</h2>
 
           {/* 1. 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -295,15 +295,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業20年、累計相談3万件以上の豊富な実績</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>鳥獣保護管理法に精通した適法な追い出し作業</li>
+                <li>創業20年、累計相談3万件以上の実績</li>
+                <li>日本ペストコントロール協会加盟</li>
+                <li>鳥獣保護管理法に沿った追い出し作業</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -335,7 +335,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -386,7 +386,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -405,15 +405,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除のROYの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>一級建築士事務所で建物構造を熟知</li>
-                <li>7,880円からの業界最安値水準</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>一級建築士事務所として建物構造を踏まえた施工</li>
+                <li>7,880円からの料金設定</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -445,7 +445,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -487,7 +487,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -506,15 +506,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミ3000件星4.7の高評価</li>
-                <li>施工実績2300件以上で経験豊富</li>
-                <li>最短即日対応で緊急時にも迅速</li>
+                <li>Google口コミ3000件・星4.7</li>
+                <li>施工実績2300件以上</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -546,7 +546,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -588,7 +588,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -607,15 +607,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>口コミ460件星4.7の高評価</li>
-                <li>実績650件以上公開で透明性が高い</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>口コミ460件・星4.7</li>
+                <li>実績650件以上を公開</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -647,7 +647,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -689,7 +689,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -708,15 +708,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業運営で信頼性が高い</li>
-                <li>累計相談500万件以上の圧倒的な実績</li>
+                <li>東証上場企業運営</li>
+                <li>累計相談500万件以上の実績</li>
                 <li>全国対応で地域を問わず利用可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -748,7 +748,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -790,7 +790,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -810,14 +810,14 @@ export default function KoumoriPage() {
               <h4 className="font-bold text-lg text-black mb-3">EMEAO!の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計相談10万件以上の業者紹介サービス</li>
-                <li>厳選された優良業者のみを紹介</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>厳選した業者を紹介するサービス</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -849,7 +849,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -891,7 +891,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -910,15 +910,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つベテラン業者</li>
-                <li>工務店歴50年で建物構造を熟知</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>50年以上の経験を持つ業者</li>
+                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -950,7 +950,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -992,7 +992,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1011,15 +1011,15 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業28年のベテラン業者で豊富な経験</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>創業28年の業者</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>全国対応で地域を問わず利用可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1051,7 +1051,7 @@ export default function KoumoriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1093,7 +1093,7 @@ export default function KoumoriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1109,8 +1109,8 @@ export default function KoumoriPage() {
             <div className="card-body">
               <h3 className="card-title text-2xl">アブラコウモリ（イエコウモリ）</h3>
               <p className="text-gray-700">
-                日本の住宅に侵入する唯一のコウモリ。体長4〜6cm、体重5〜11g。
-                わずか1〜2cmの隙間があれば侵入可能。夜行性で、昼間は天井裏や壁の中で休息。
+                日本の住宅に侵入する唯一のコウモリで、体長は4〜6cm、体重は5〜11gです。
+                1〜2cmの隙間があれば侵入できます。夜行性で、昼間は天井裏や壁の中で休んでいます。
               </p>
               <div className="flex gap-2 mt-4 flex-wrap">
                 <div className="badge badge-lg">体長: 4〜6cm</div>
@@ -1200,7 +1200,7 @@ export default function KoumoriPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">プロへの依頼を推奨</h3>
+              <h3 className="font-bold">専門業者への依頼を推奨</h3>
               <p className="text-sm">
                 コウモリの追い出しは、法律知識・専門技術・安全装備が必要です。
                 自力での作業は法律違反や健康リスクがあるため、専門業者への依頼を強くおすすめします。
@@ -1301,11 +1301,11 @@ export default function KoumoriPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              コウモリ駆除のご相談は今すぐ
+              コウモリ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

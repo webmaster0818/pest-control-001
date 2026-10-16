@@ -6,11 +6,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/guide" },
-  title: "害虫駆除業者の選び方｜失敗しない5つのポイントと悪徳業者の見分け方",
-  description: "失敗しない害虫駆除業者選びの5つのポイントと、悪徳業者の見分け方を解説します。",
+  title: "害虫駆除業者の選び方｜確認すべき5つのポイントと悪質な業者の見分け方",
+  description: "害虫駆除業者を選ぶ際に確認すべき5つのポイントと、悪質な業者の見分け方をご説明します。",
   openGraph: {
-    title: "害虫駆除業者の選び方｜失敗しない5つのポイントと悪徳業者の見分け方",
-    description: "失敗しない害虫駆除業者選びの5つのポイントと、悪徳業者の見分け方を解説します。",
+    title: "害虫駆除業者の選び方｜確認すべき5つのポイントと悪質な業者の見分け方",
+    description: "害虫駆除業者を選ぶ際に確認すべき5つのポイントと、悪質な業者の見分け方をご説明します。",
     url: "https://gaichu-pro.com/guide",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -38,7 +38,7 @@ export default function GuidePage() {
             害虫駆除業者の選び方
           </h1>
           <p className="text-lg text-gray-700">
-            失敗しない業者選びの5つのポイントと悪徳業者の見分け方を徹底解説
+            業者選びで確認すべき5つのポイントと、悪質な業者の見分け方をご説明します
           </p>
         </div>
       </section>
@@ -54,12 +54,12 @@ export default function GuidePage() {
               {
                 number: '01',
                 title: '実績と信頼性',
-                description: '施工実績数、創業年数、口コミ評価などを確認。実績豊富な業者は技術力も高い傾向があります。'
+                description: '施工実績数、創業年数、口コミ評価などを確認してください。実績が豊富な業者は、技術力も高い傾向があります。'
               },
               {
                 number: '02',
                 title: '料金の透明性',
-                description: '見積もりが明確で、追加料金の条件が事前に説明されているか確認しましょう。'
+                description: '見積もりが明確で、追加料金の条件が事前に説明されているかをご確認ください。'
               },
               {
                 number: '03',
@@ -69,12 +69,12 @@ export default function GuidePage() {
               {
                 number: '04',
                 title: '対応スピード',
-                description: '緊急時の対応力や、見積もり～施工までのスピード感も重要な判断材料です。'
+                description: '緊急時の対応や、見積もりから施工までの期間も重要な判断材料です。'
               },
               {
                 number: '05',
                 title: '使用薬剤の安全性',
-                description: 'ペットや小さいお子様がいる家庭では、使用薬剤の安全性を必ず確認しましょう。'
+                description: 'ペットや小さなお子様がいるご家庭では、使用する薬剤の安全性を必ずご確認ください。'
               }
             ].map((point, index) => (
               <div key={index} className="card bg-white shadow-xl">
@@ -102,7 +102,7 @@ export default function GuidePage() {
               <div className="card-body">
                 <h3 className="card-title text-xl">日本ペストコントロール協会</h3>
                 <p className="text-base-content/70">
-                  害虫駆除業界の代表的な団体。加盟業者は一定の技術水準を満たしています。
+                  害虫駆除業界の代表的な団体です。加盟業者は一定の技術水準を満たしています。
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function GuidePage() {
               <div className="card-body">
                 <h3 className="card-title text-xl">日本しろあり対策協会</h3>
                 <p className="text-base-content/70">
-                  シロアリ駆除専門の認定団体。シロアリ駆除では特に重要な資格です。
+                  シロアリ駆除を専門とする認定団体です。シロアリ駆除では特に重要な資格です。
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function GuidePage() {
               <div className="card-body">
                 <h3 className="card-title text-xl">建築物ねずみ昆虫等防除業</h3>
                 <p className="text-base-content/70">
-                  都道府県知事の登録を受けた事業者。公的な認可を受けている証明です。
+                  都道府県知事の登録を受けた業者です。公的な認可を受けていることの証明になります。
                 </p>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function GuidePage() {
                 {[
                   {
                     title: '現地調査の有無',
-                    description: '電話だけでなく、実際に現地を確認してから見積もりを出してくれるか'
+                    description: '電話だけでなく、現地を確認したうえで見積もりを出すか'
                   },
                   {
                     title: '料金の内訳',
@@ -179,50 +179,50 @@ export default function GuidePage() {
         </div>
       </section>
 
-      {/* こんな業者には注意！ */}
+      {/* 注意が必要な業者の特徴 */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
-            こんな業者には注意！
+            注意が必要な業者の特徴
           </h2>
           <div className="alert alert-warning shadow-lg mb-8">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
               </svg>
-              <span>以下のような業者には特に注意が必要です</span>
+              <span>以下のような業者には特にご注意ください。</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
                 title: '飛び込み営業',
-                description: 'アポなしで訪問し、「今すぐ駆除が必要」と不安を煽る業者。正規の業者は基本的に飛び込み営業はしません。',
+                description: '事前の連絡なく訪問し、「今すぐ駆除が必要」と不安を煽る業者です。正規の業者は、基本的に飛び込み営業を行いません。',
                 icon: '🚪'
               },
               {
                 title: '即決を迫る',
-                description: '「今日契約すれば特別割引」など、考える時間を与えない業者。複数業者の比較検討が基本です。',
+                description: '「今日契約すれば特別割引」などと、検討する時間を与えない業者です。複数の業者を比較検討することが基本です。',
                 icon: '⏰'
               },
               {
                 title: '見積もりを出さない',
-                description: '「作業してみないとわからない」と明確な見積もりを出さない業者。後から高額請求されるリスクがあります。',
+                description: '「作業してみないとわからない」として、明確な見積もりを出さない業者です。後から高額な請求を受けるおそれがあります。',
                 icon: '📄'
               },
               {
                 title: '極端に安い料金',
-                description: '相場よりも大幅に安い料金を提示する業者。追加料金で結局高額になるケースが多いです。',
+                description: '相場よりも大幅に安い料金を提示する業者です。追加料金により、最終的に高額になるケースが多くあります。',
                 icon: '💰'
               },
               {
                 title: '連絡先が不明確',
-                description: '固定電話がない、住所が不明など、連絡先が不明確な業者。トラブル時に連絡が取れないリスクがあります。',
+                description: '固定電話がない、住所が不明など、連絡先が明確でない業者です。トラブルの際に連絡が取れないおそれがあります。',
                 icon: '📞'
               },
               {
                 title: '契約を急かす',
-                description: '「害虫が増える前に」「被害が広がる前に」と契約を急かす業者。冷静な判断ができなくなります。',
+                description: '「害虫が増える前に」「被害が広がる前に」と契約を急がせる業者です。冷静な判断が難しくなるため注意が必要です。',
                 icon: '🏃'
               }
             ].map((warning, index) => (
@@ -256,7 +256,7 @@ export default function GuidePage() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">3社以上から見積もりを取る</h3>
                     <p className="text-base-content/70">
-                      最低でも3社から見積もりを取り、料金と サービス内容を比較しましょう。相場感を掴むことができます。
+                      3社以上から見積もりを取り、料金とサービス内容を比較してください。料金の相場を把握できます。
                     </p>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function GuidePage() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">同じ条件で比較する</h3>
                     <p className="text-base-content/70">
-                      被害状況、施工範囲、保証内容など、できるだけ同じ条件で見積もりを取り、公平に比較しましょう。
+                      被害状況、施工範囲、保証内容など、できるだけ同じ条件で見積もりを取り、比較してください。
                     </p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function GuidePage() {
                   <div>
                     <h3 className="font-bold text-xl mb-2">総合的に判断する</h3>
                     <p className="text-base-content/70">
-                      料金だけでなく、実績、保証、対応の丁寧さなど、総合的に判断することが重要です。安さだけで選ぶと後悔することも。
+                      料金だけでなく、実績、保証、対応の丁寧さなどを総合的に判断することが重要です。料金の安さだけで選ぶと、後から不満が生じることがあります。
                     </p>
                   </div>
                 </div>
@@ -296,9 +296,9 @@ export default function GuidePage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2">質問をためらわない</h3>
+                    <h3 className="font-bold text-xl mb-2">疑問点は事前に質問する</h3>
                     <p className="text-base-content/70">
-                      疑問点や不安な点は遠慮せずに質問しましょう。丁寧に説明してくれる業者は信頼できます。
+                      疑問点や不安な点は、事前に業者へ質問してください。丁寧に説明する業者であるかどうかも、判断の材料になります。
                     </p>
                   </div>
                 </div>
@@ -313,11 +313,11 @@ export default function GuidePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              害虫駆除のご相談は今すぐ
+              害虫駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

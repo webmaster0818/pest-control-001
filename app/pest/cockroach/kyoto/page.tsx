@@ -6,11 +6,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/pest/cockroach/kyoto" },
-  title: "京都のゴキブリ駆除業者おすすめ10社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
-  description: "京都でゴキブリ駆除業者をお探しなら当サイト。おすすめ業者10社を料金・サービス・口コミで徹底比較。見積もり無料。",
+  title: "京都のゴキブリ駆除業者おすすめ10社｜料金相場・口コミ比較",
+  description: "京都のゴキブリ駆除業者10社を、料金・サービス・口コミの観点から比較しています。見積もりは無料です。",
   openGraph: {
-    title: "京都のゴキブリ駆除業者比較 | 料金相場・口コミ・おすすめ10社",
-    description: "京都のゴキブリ駆除業者10社を料金・サービス・口コミで徹底比較。",
+    title: "京都のゴキブリ駆除業者比較 | 料金相場・口コミ・主要10社",
+    description: "京都のゴキブリ駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/pest/cockroach/kyoto",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -23,22 +23,22 @@ export default function CockroachKyotoPage() {
     {
       season: "春（3月〜5月）",
       pests: ["シロアリの羽アリ発生", "ゴキブリの活動開始", "ハチの巣作り開始"],
-      advice: "シロアリの羽アリを見かけたらすぐに点検を。ゴキブリ対策も早めに開始。",
+      advice: "シロアリの羽アリを見かけた場合は、早めの点検をおすすめします。ゴキブリ対策も早めに始めることが大切です。",
     },
     {
       season: "夏（6月〜8月）",
       pests: ["ゴキブリのピーク", "ハチの攻撃性増加", "湿気でカビ・ダニ発生"],
-      advice: "ゴキブリ・ハチ被害が最多の時期。梅雨明けの点検が重要。",
+      advice: "ゴキブリ・ハチの被害が最も多い時期です。梅雨明けの点検が重要です。",
     },
     {
       season: "秋（9月〜11月）",
       pests: ["ネズミの侵入増加", "ハチの活動最盛期", "越冬準備の害虫増加"],
-      advice: "ネズミが暖かい場所を求めて侵入。侵入口の封鎖が必須。",
+      advice: "ネズミが暖かい場所を求めて屋内に侵入する時期です。侵入口の封鎖が欠かせません。",
     },
     {
       season: "冬（12月〜2月）",
       pests: ["ネズミ被害継続", "ゴキブリ（暖房で活動）", "コウモリの越冬"],
-      advice: "暖房のある場所ではゴキブリが活動継続。ネズミ駆除のベストシーズン。",
+      advice: "暖房のある場所ではゴキブリが活動を続けます。ネズミ駆除に適した時期です。",
     },
   ];
 
@@ -67,7 +67,7 @@ export default function CockroachKyotoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            京都のゴキブリ駆除 完全ガイド
+            京都のゴキブリ駆除の基礎知識と業者比較
           </h1>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function CockroachKyotoPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">京都のおすすめ害虫駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">京都の害虫駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -120,7 +120,7 @@ export default function CockroachKyotoPage() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
                       <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
+                      <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
@@ -210,7 +210,7 @@ export default function CockroachKyotoPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">京都のおすすめ害虫駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">京都の害虫駆除業者の詳細</h2>
 
           {/* 1. 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -225,14 +225,14 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業20年、累計相談3万件以上の豊富な実績</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>創業20年、累計相談3万件以上の実績</li>
+                <li>日本ペストコントロール協会加盟</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -264,7 +264,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -286,7 +286,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -305,15 +305,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除のROYの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>一級建築士事務所で建物構造を熟知</li>
-                <li>4,730円からの業界最安値水準</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>一級建築士事務所として建物構造を踏まえた施工</li>
+                <li>4,730円からの料金設定</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -345,7 +345,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -367,7 +367,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -386,15 +386,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>口コミ多数公開で透明性が高い</li>
+                <li>口コミを多数公開</li>
                 <li>日本有害鳥獣駆除防除管理協会加盟</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -426,7 +426,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -448,7 +448,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -467,14 +467,14 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業28年のベテラン業者で豊富な経験</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
+                <li>創業28年の業者</li>
+                <li>日本ペストコントロール協会加盟</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -506,7 +506,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -528,7 +528,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -547,15 +547,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミ業界トップクラスの高評価</li>
-                <li>2300件以上の実績掲載で透明性が高い</li>
-                <li>最短即日対応で緊急時にも迅速</li>
+                <li>Google口コミの評価が高い</li>
+                <li>2300件以上の実績を掲載</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -587,7 +587,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -609,39 +609,39 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
           </div>
 
-          {/* 6. 害虫・害獣駆除プロ比較ナビ */}
+          {/* 6. 害虫駆除110番 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">害虫・害獣駆除プロ比較ナビ（京都）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（京都）</h3>
               </div>
               <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害虫・害獣駆除プロ比較ナビの特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業運営で信頼性が高い</li>
-                <li>累計相談500万件以上の圧倒的な実績</li>
+                <li>東証上場企業運営</li>
+                <li>累計相談500万件以上の実績</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害虫・害獣駆除プロ比較ナビの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
@@ -667,7 +667,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -680,8 +680,8 @@ export default function CockroachKyotoPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害虫・害獣駆除プロ比較ナビの口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除110番+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -689,7 +689,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -708,15 +708,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つベテラン業者</li>
-                <li>工務店歴50年で建物構造を熟知</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>50年以上の経験を持つ業者</li>
+                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -748,7 +748,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -770,7 +770,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -789,15 +789,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ラッターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計3万件以上の豊富な実績</li>
-                <li>最短10分対応で緊急時にも迅速</li>
-                <li>経験豊富なプロフェッショナル</li>
+                <li>累計3万件以上の実績</li>
+                <li>最短10分で対応</li>
+                <li>経験のある専門スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -829,7 +829,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -851,7 +851,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -871,14 +871,14 @@ export default function CockroachKyotoPage() {
               <h4 className="font-bold text-lg text-black mb-3">EMEAO!の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計相談10万件以上の業者紹介サービス</li>
-                <li>厳選された優良業者のみを紹介</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>厳選した業者を紹介するサービス</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -910,7 +910,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -932,7 +932,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -951,15 +951,15 @@ export default function CockroachKyotoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業のFC加盟店で信頼性が高い</li>
-                <li>社内ライセンス取得のプロが施工</li>
-                <li>大手ブランドの安心感</li>
+                <li>東証上場企業のFC加盟店</li>
+                <li>社内ライセンスを取得したスタッフが施工</li>
+                <li>大手ブランドによるサービス</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -991,7 +991,7 @@ export default function CockroachKyotoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1013,7 +1013,7 @@ export default function CockroachKyotoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1061,11 +1061,11 @@ export default function CockroachKyotoPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              京都のゴキブリ駆除のご相談は今すぐ
+              京都のゴキブリ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

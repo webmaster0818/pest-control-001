@@ -32,9 +32,9 @@ export default function Home() {
   // areas moved to AreaAccordion component
 
   const features = [
-    { title: "8種類の害虫・害獣を網羅", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害の駆除情報を一括比較" },
-    { title: "地域別の詳細情報", description: "お住まいの地域に特化した駆除業者と料金相場を掲載" },
-    { title: "わかりやすい料金相場", description: "透明性のある料金情報で、安心して業者選びができる" },
+    { title: "害虫・害獣の種類別に情報を掲載", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害などの駆除情報を、種類別に比較できます。" },
+    { title: "地域別の情報", description: "お住まいの地域に対応する駆除業者と料金相場を掲載しています。" },
+    { title: "料金相場の掲載", description: "各社が公表している料金をもとに、料金の目安を掲載しています。" },
   ];
 
   // 構造化データ（WebSiteスキーマ）
@@ -43,7 +43,7 @@ export default function Home() {
     "@type": "WebSite",
     "name": "害虫・害獣駆除プロ比較ナビ",
     "url": "https://pest-control-001.pages.dev",
-    "description": "害虫駆除業者を料金・サービス・口コミで徹底比較。全国13地域、8種類の害虫・害獣に対応。",
+    "description": "全国の害虫・害獣駆除業者を、料金・サービス内容・口コミの観点から比較できる情報サイトです。",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://pest-control-001.pages.dev/search?q={search_term_string}",
@@ -75,10 +75,10 @@ export default function Home() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            害虫でお困りですか？今すぐ解決方法を見つけましょう
+            全国の害虫・害獣駆除業者を料金・口コミで比較
           </h1>
           <p className="text-lg text-gray-700">
-            シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの駆除業者を比較して、あなたに最適な業者を見つけましょう
+            シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Home() {
       {/* おすすめ業者比較 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">おすすめ害虫駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">主な害虫駆除業者の比較</h2>
           
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black">
@@ -110,8 +110,8 @@ export default function Home() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫・害獣駆除プロ比較ナビ" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">害虫・害獣駆除プロ比較ナビ</strong>
+                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
@@ -195,7 +195,7 @@ export default function Home() {
 
           <div className="text-center mt-8">
             <p className="text-sm text-gray-600">
-              ※料金は目安です。被害状況・建物の構造により変動します。必ず現地調査・見積もりをご依頼ください。
+              ※料金は目安です。被害状況・建物の構造により変動します。ご依頼の前に、現地調査・見積もりをお受けください。
             </p>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center">
-            なぜ害虫・害獣駆除プロ比較ナビが選ばれるのか
+            害虫・害獣駆除プロ比較ナビの特長
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
@@ -255,11 +255,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              害虫駆除のご相談は今すぐ
+              害虫駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

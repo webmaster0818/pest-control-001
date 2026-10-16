@@ -85,9 +85,9 @@ for ss, sname in SPECIES.items():
                for c in (ad.get('municipal_contacts') or []) if c.get('url')]
 
         intro = [
-            f"{aname}で{sname}の被害に困っている方向けに、公的機関が公開している情報と、当サイトに掲載している駆除業者のうち{sname}対応の記載がある会社を整理しました。",
-            f"{sname}の扱いは種によって根拠となる法令が異なります。このページでは、まず法令と{aname}・市区町村の相談窓口を案内し、そのうえで業者の比較情報を掲載しています。",
-            "本ページの法令に関する記述は、環境省・自治体の公式ページに書かれている内容の範囲にとどめています。編集部による法解釈は行っていません。",
+            f"{aname}で{sname}の被害でお困りの方に向けて、公的機関が公開している情報と、当サイトに掲載している駆除業者のうち{sname}対応の記載がある業者を整理しています。",
+            f"{sname}の扱いは種によって根拠となる法令が異なります。本ページでは、法令と{aname}・市区町村の相談窓口をご案内したうえで、業者の比較情報を掲載しています。",
+            "本ページの法令に関する記述は、環境省・自治体の公式ページに記載されている内容の範囲にとどめています。編集部による法解釈は行っていません。",
         ]
         extra = []
         if ss == 'araiguma' and ad.get('araiguma_note'):
@@ -116,7 +116,7 @@ for ss, sname in SPECIES.items():
             'govContacts': gov,
             'damage': s_damage,
             'companySlugs': COMPANIES[ss],
-            'checkPoints': (s_prevent[:6] or ['公式サイトに侵入防止に関する記載があるかを確認する']),
+            'checkPoints': (s_prevent[:6] or ['公式サイトに侵入防止に関する記載があるかをご確認ください。']),
             'cautions': cautions,
             'confirmedDate': '2026-09-25',
         })

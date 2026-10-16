@@ -7,10 +7,10 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/ari" },
   title: "アリ駆除業者比較 | イエヒメアリ・ルリアリの料金相場と対策方法",
-  description: "アリ駆除業者10社を料金・実績・対応速度で徹底比較。イエヒメアリ、ルリアリの駆除料金相場（10,000円〜30,000円）、侵入経路対策、季節別アリ対策カレンダーを詳しく解説。",
+  description: "アリ駆除業者10社を、料金・実績・対応速度の観点から比較しています。イエヒメアリ、ルリアリの駆除料金相場（10,000円〜30,000円）、侵入経路対策、季節別アリ対策カレンダーをご説明します。",
   openGraph: {
     title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの料金相場と対策方法",
-    description: "アリ駆除業者を料金・実績・対応速度で徹底比較。アリ駆除の費用相場、侵入経路対策、季節別カレンダーを掲載。",
+    description: "アリ駆除業者を、料金・実績・対応速度の観点から比較しています。アリ駆除の費用相場、侵入経路の対策、季節別のカレンダーを掲載しています。",
     url: "https://gaichu-pro.com/ari",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -21,21 +21,21 @@ export default function AriPage() {
     {
       name: "イエヒメアリ",
       danger: "屋内被害",
-      description: "体長2mm前後の小型アリ。屋内に巣を作り、食品や水回りに群がる。巣が分散しやすく、市販薬剤だけでは根絶が難しい。",
+      description: "体長2mm前後の小型のアリです。屋内に巣を作り、食品や水回りに群がります。巣が分散しやすく、市販の薬剤だけでは根絶が難しい種類です。",
       features: ["体長: 約2mm", "発生場所: 屋内（壁内・水回り）", "特徴: 巣が分散し再発しやすい"],
       color: "badge-warning",
     },
     {
       name: "クロアリ（クロオオアリ等）",
       danger: "屋外・侵入",
-      description: "もっとも身近なアリ。屋外に巣を作り、餌を求めて屋内に列をなして侵入する。床下や基礎の隙間から侵入することが多い。",
+      description: "最も身近なアリです。屋外に巣を作り、餌を求めて屋内に列をなして侵入します。床下や基礎の隙間から侵入することが多くあります。",
       features: ["体長: 5〜12mm", "発生場所: 屋外の土中・床下", "特徴: 行列で屋内へ侵入"],
       color: "badge-info",
     },
     {
       name: "ヒアリ（特定外来生物）",
       danger: "要注意・有毒",
-      description: "強い毒を持つ外来アリ。刺されると痛みや腫れ、人によってはアナフィラキシーを起こすことがある。発見時は触らず自治体・専門業者へ連絡を。",
+      description: "強い毒を持つ外来のアリです。刺されると痛みや腫れが生じ、人によってはアナフィラキシーを起こすことがあります。発見した場合は触らずに、自治体・専門業者へご連絡ください。",
       features: ["体長: 2.5〜6mm", "発生場所: 港湾・コンテナ周辺等", "特徴: 刺咬被害・特定外来生物"],
       color: "badge-error",
     },
@@ -45,17 +45,17 @@ export default function AriPage() {
     {
       step: "1",
       title: "刺された部位を冷やす",
-      description: "ヒアリ等に刺された場合は、患部を流水で洗い清潔にし、冷やして安静にする。患部をかきむしらない。",
+      description: "ヒアリ等に刺された場合は、患部を流水で洗って清潔にし、冷やして安静にしてください。患部はかきむしらないでください。",
     },
     {
       step: "2",
       title: "20〜30分は安静にして様子を見る",
-      description: "急激な体調変化（じんましん・息苦しさ等）が起きないか観察する。軽い痛み・かゆみのみなら経過観察。",
+      description: "急激な体調の変化（じんましん・息苦しさ等）が起きないか観察してください。軽い痛み・かゆみのみであれば、経過を観察してください。",
     },
     {
       step: "3",
       title: "全身症状が出たらすぐ受診",
-      description: "息苦しさ・めまい・全身のじんましんなどアナフィラキシーが疑われる症状が出たら、ためらわず救急車（119番）を。",
+      description: "息苦しさ・めまい・全身のじんましんなど、アナフィラキシーが疑われる症状が出た場合は、ためらわず救急車（119番）を呼んでください。",
     },
   ];
 
@@ -70,25 +70,25 @@ export default function AriPage() {
     {
       season: "春（3〜5月）",
       activity: "活動開始・巣作り",
-      advice: "越冬したアリが活動を再開。侵入経路の封鎖やベイト剤の設置を始めるのに適した時期。",
+      advice: "越冬したアリが活動を再開する時期です。侵入経路の封鎖やベイト剤の設置を始めるのに適しています。",
       risk: "中",
     },
     {
       season: "夏（6〜8月）",
       activity: "活動ピーク",
-      advice: "餌を求めて屋内侵入が最も増える時期。被害が大きい場合は専門業者へ相談を。",
+      advice: "餌を求めて屋内への侵入が最も増える時期です。被害が大きい場合は、専門業者へご相談ください。",
       risk: "高",
     },
     {
       season: "秋（9〜11月）",
       activity: "越冬準備",
-      advice: "巣ごと弱らせるベイト剤が効きやすい時期。来季の発生抑制に有効。",
+      advice: "巣ごと弱らせるベイト剤が効きやすい時期です。翌年の発生の抑制にも有効です。",
       risk: "中",
     },
     {
       season: "冬（12〜2月）",
       activity: "活動低下",
-      advice: "屋外のアリは活動が鈍る。屋内に巣があるイエヒメアリ等は冬でも活動することがある。",
+      advice: "屋外のアリは活動が鈍くなります。屋内に巣があるイエヒメアリ等は、冬でも活動することがあります。",
       risk: "低",
     },
   ];
@@ -128,10 +128,10 @@ export default function AriPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              アリ駆除の完全ガイド
+              アリ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              確実な駆除方法と再発防止策で、アリのいない快適な生活を実現します
+              アリの駆除方法と再発防止策をご説明します
             </p>
             </div>
         </div>
@@ -141,10 +141,10 @@ export default function AriPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            アリ駆除の完全ガイド
+            アリ駆除の基礎知識と業者比較
           </h2>
           <p className="text-lg text-gray-700">
-            アリの特徴・被害状況から駆除方法まで、適切な対処法をご紹介します
+            アリの特徴・被害状況から駆除方法まで、対処法をご説明します
           </p>
         </div>
       </section>
@@ -218,8 +218,8 @@ export default function AriPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg text-base">9</span>
-                      <img src="/images/hero-pest-new.jpg" alt="アリお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">アリお助け本舗</strong>
+                      <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
+                      <strong className="text-lg font-bold text-gray-900">ハチお助け本舗</strong>
                     </div>
                   </th>
                 </tr>
@@ -263,15 +263,15 @@ export default function AriPage() {
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
-                  <td className="text-center">◎ 完全無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
@@ -318,7 +318,7 @@ export default function AriPage() {
               </tbody>
             </table>
           </div>
-          <h2 className="heading-primary text-center mt-16 mb-8">おすすめアリ駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">アリ駆除業者の詳細</h2>
 
           {/* 株式会社三共消毒 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -333,15 +333,15 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社三共消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年を迎える、衛生害虫・衛生害獣の駆除予防の老舗業者</li>
-                <li>24時間年中無休で受付、地元密着のスピード対応</li>
-                <li>プロのスタッフが徹底調査、万が一の再発には無料で再施工</li>
+                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
+                <li>24時間年中無休で受付、地域に密着した対応</li>
+                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -373,7 +373,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -400,7 +400,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -419,15 +419,15 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の確かな施工実績</li>
-                <li>最短即日対応も可能、状況に応じて迅速に現地対応を実施</li>
-                <li>調査から見積り、施工、アフターフォローまで自社スタッフが責任をもってサポート</li>
+                <li>累計60万件以上の施工実績</li>
+                <li>最短即日の対応が可能</li>
+                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -459,7 +459,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -486,7 +486,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -506,14 +506,14 @@ export default function AriPage() {
               <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日対応の相談OK、当日に現地調査にお伺いすることも可能</li>
-                <li>創業約50年、実績と技術を兼ね備えた防護服のプロスタッフが巣ごと撤去</li>
+                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
+                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -545,7 +545,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -572,7 +572,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼土日祝日・時間外も対応／<br />
+                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -591,15 +591,15 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社あい営繕の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場まで到着、緊急の際も迅速に対応</li>
-                <li>低価格での完全自社施工、シーズン内の再発には無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、小さな被害からご相談OK</li>
+                <li>最短30分で現場に到着</li>
+                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり、小さな被害から相談可能</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -631,7 +631,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -658,7 +658,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -677,7 +677,7 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社ミヤコ消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>1973年創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています</li>
+                <li>1973年に創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています。</li>
                 <li>薬剤は「厚生労働省に認可された医薬品、医薬部外品を中心に」使用（公式のよくある質問）</li>
                 <li>2022年3月に日本ペストコントロール協会の優良事業所認証を取得、東京都の建築物ねずみ昆虫等防除業に登録（公式の会社概要）</li>
               </ul>
@@ -685,7 +685,7 @@ export default function AriPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -717,7 +717,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -745,7 +745,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -765,14 +765,14 @@ export default function AriPage() {
               <h4 className="font-bold text-lg text-black mb-3">株式会社こだまの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -804,7 +804,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -831,7 +831,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -851,14 +851,14 @@ export default function AriPage() {
               <h4 className="font-bold text-lg text-black mb-3">大洋防疫研究所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>関西、関東、中部エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -890,7 +890,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -917,7 +917,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -936,15 +936,15 @@ export default function AriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社第一環研の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>TVCM放送中、50年以上の実績をもつ害虫駆除のプロ</li>
-                <li>日本ペストコントロール協会加盟、確かな技術と実績</li>
+                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
+                <li>日本ペストコントロール協会加盟</li>
                 <li>福井県エリアに対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -976,7 +976,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1003,40 +1003,40 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼通話無料／<br />
+                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
           </div>
 
-          {/* アリお助け本舗 */}
+          {/* ハチお助け本舗 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">9</span>
-                <h3 className="text-2xl font-bold text-black">アリお助け本舗（アリ駆除専門）</h3>
+                <h3 className="text-2xl font-bold text-black">ハチお助け本舗（ハチ駆除専門）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="アリお助け本舗" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">アリお助け本舗の特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">ハチお助け本舗の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>全国に拠点を持つ、害虫駆除の専門サービス</li>
-                <li>24時間365日受付で、最短受付から10分で現地到着</li>
-                <li>作業前にお見積もり提示で安心の明朗会計、技術力が高く実績ある専門家が対応</li>
+                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
+                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆アリお助け本舗の基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆ハチお助け本舗の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black">
                   <tbody>
@@ -1062,7 +1062,7 @@ export default function AriPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もり完全無料</td>
+                      <td>相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1075,8 +1075,8 @@ export default function AriPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆アリお助け本舗の口コミ</h4>
-                <a href="https://www.google.com/search?q=アリお助け本舗+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆ハチお助け本舗の口コミ</h4>
+                <a href="https://www.google.com/search?q=ハチお助け本舗+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1089,7 +1089,7 @@ export default function AriPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1313,11 +1313,11 @@ export default function AriPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              アリ駆除のご相談は今すぐ
+              アリ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

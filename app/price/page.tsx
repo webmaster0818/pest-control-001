@@ -5,8 +5,8 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/price" },
-  title: "害虫駆除の料金相場【2026年7月】 - 害虫・害獣駆除プロ比較ナビ",
-  description: "害虫駆除の料金相場を徹底解説。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
+  title: "害虫駆除の料金相場【2026年7月】",
+  description: "害虫駆除の料金相場をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
 };
 
 export default function PricePage() {
@@ -16,7 +16,7 @@ export default function PricePage() {
       icon: "🐜",
       priceRange: "8,000〜15,000円/坪",
       average: "約12,000円/坪",
-      details: "30坪の住宅で30万円〜45万円程度。工法により料金が変動。",
+      details: "30坪の住宅で30万円〜45万円程度です。工法により料金が変わります。",
       link: "/shiroari",
     },
     {
@@ -24,7 +24,7 @@ export default function PricePage() {
       icon: "🐝",
       priceRange: "15,000〜50,000円",
       average: "約25,000円",
-      details: "巣のサイズ・場所により変動。高所作業は追加料金あり。",
+      details: "巣のサイズ・場所により変わります。高所作業には追加料金がかかります。",
       link: "/hachi",
     },
     {
@@ -32,7 +32,7 @@ export default function PricePage() {
       icon: "🪳",
       priceRange: "15,000〜50,000円",
       average: "約25,000円",
-      details: "物件の広さと被害状況により変動。飲食店は高額になりやすい。",
+      details: "物件の広さと被害状況により変わります。飲食店は高額になる傾向があります。",
       link: "/gokiburi",
     },
     {
@@ -40,7 +40,7 @@ export default function PricePage() {
       icon: "🐭",
       priceRange: "80,000〜200,000円",
       average: "約120,000円",
-      details: "侵入口封鎖と清掃含む。複数回施工が一般的。",
+      details: "侵入口の封鎖と清掃を含みます。複数回の施工が一般的です。",
       link: "/nezumi",
     },
     {
@@ -48,7 +48,7 @@ export default function PricePage() {
       icon: "🦇",
       priceRange: "100,000〜350,000円",
       average: "約200,000円",
-      details: "追い出し・侵入口封鎖・清掃の総合費用。法律遵守が必須。",
+      details: "追い出し・侵入口の封鎖・清掃を含む費用です。法令に沿った対応が必要です。",
       link: "/koumori",
     },
   ];
@@ -95,22 +95,22 @@ export default function PricePage() {
   const savingTips = [
     {
       tip: "複数業者の相見積もり",
-      description: "最低3社から見積もりを取り、料金とサービス内容を比較する。",
+      description: "3社以上から見積もりを取り、料金とサービス内容を比較してください。",
       effect: "10〜30%の節約",
     },
     {
       tip: "閑散期に依頼",
-      description: "冬季（12月〜2月）は害虫活動が少なく、業者も空いているため料金交渉しやすい。",
+      description: "冬季（12月〜2月）は害虫の活動が少なく、業者の予約も取りやすいため、料金の相談がしやすい時期です。",
       effect: "5〜15%の節約",
     },
     {
       tip: "定期契約の検討",
-      description: "飲食店や複数物件の場合、年間契約で割引が適用される。",
+      description: "飲食店や複数物件の場合、年間契約で割引が適用されることがあります。",
       effect: "15〜25%の節約",
     },
     {
       tip: "早期発見・早期対応",
-      description: "被害が軽微なうちに駆除すれば、作業範囲が小さく済む。",
+      description: "被害が軽いうちに駆除すれば、作業範囲が小さく済みます。",
       effect: "大幅な節約",
     },
   ];
@@ -119,7 +119,7 @@ export default function PricePage() {
     "見積もりを出さずに作業を開始しようとする",
     "電話だけで確定料金を提示する（現地調査なし）",
     "不安を煽って即日契約を迫る",
-    "作業後に追加料金を大量請求する",
+    "作業後に多額の追加料金を請求する",
     "保証内容が曖昧・書面がない",
     "会社情報が不明確（住所・電話番号が不明）",
   ];
@@ -127,7 +127,7 @@ export default function PricePage() {
   const regionalPrices = [
     { region: "東京", level: "やや高め", note: "都心部の人件費・家賃が影響", multiplier: "110-120%" },
     { region: "大阪", level: "標準", note: "全国平均に近い料金設定", multiplier: "100-110%" },
-    { region: "名古屋", level: "やや安め", note: "競争が激しくリーズナブル", multiplier: "90-100%" },
+    { region: "名古屋", level: "やや安め", note: "競争が激しく、料金は比較的安め", multiplier: "90-100%" },
     { region: "地方都市", level: "安め", note: "人件費が比較的低い", multiplier: "80-95%" },
   ];
 
@@ -152,11 +152,11 @@ export default function PricePage() {
             害虫駆除の料金相場【2026年7月】
           </h2>
           <p className="text-lg text-gray-700">
-            適正価格で安心できる害虫駆除業者を選ぶための料金ガイド
+            適正な価格で害虫駆除業者を選ぶための料金ガイド
           </p>
           <div className="mt-6 flex flex-wrap gap-2 justify-center">
             <Link href="/price-index" className="px-4 py-2 bg-primary text-white rounded-lg text-sm font-bold">
-              主要業者の公式料金を実確認した「料金インデックス」→
+              主要業者の公式料金を確認した「料金インデックス」→
             </Link>
             <Link href="/gaichu-calendar" className="px-4 py-2 bg-white border border-primary/30 text-primary rounded-lg text-sm font-medium">
               害虫カレンダー（発生・駆除の時期）
@@ -174,8 +174,8 @@ export default function PricePage() {
               害虫駆除の料金相場【2026年7月】
             </h1>
             <p className="text-xl mb-8">
-              適正価格を知って、安心して業者選びを。
-              害虫別・地域別の料金相場を徹底解説します。
+              適正な価格の目安を、業者選びにお役立てください。
+              害虫別・地域別の料金相場をご説明します。
             </p>
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function PricePage() {
               <h3 className="font-bold">見積もり時の確認ポイント</h3>
               <p className="text-sm">
                 見積書に「どこまでが基本料金に含まれるか」「どんな場合に追加料金が発生するか」を
-                明記してもらいましょう。曖昧な見積書は要注意です。
+                明記してもらうことをおすすめします。内容が曖昧な見積書にはご注意ください。
               </p>
             </div>
           </div>
@@ -315,10 +315,10 @@ export default function PricePage() {
         </div>
       </section>
 
-      {/* 料金を安く抑えるコツ */}
+      {/* 料金を抑える方法 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">料金を安く抑えるコツ</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">料金を抑える方法</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {savingTips.map((item, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -337,11 +337,11 @@ export default function PricePage() {
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-error">
-            高額請求に注意！悪徳業者の見分け方
+            高額請求への注意と悪質な業者の見分け方
           </h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">こんな業者は要注意⚠️</h3>
+              <h3 className="card-title text-xl mb-4">注意が必要な業者の例</h3>
               <ul className="space-y-3">
                 {warningSignspests.map((sign, idx) => (
                   <li key={idx} className="flex items-start gap-3">
@@ -358,8 +358,8 @@ export default function PricePage() {
                 <div>
                   <h4 className="font-bold">トラブル回避のために</h4>
                   <p className="text-sm">
-                    必ず書面で見積もりを取り、作業内容・料金・保証内容を確認してから契約しましょう。
-                    口頭での約束は証拠になりません。
+                    必ず書面で見積もりを取り、作業内容・料金・保証内容を確認してから契約してください。
+                    口頭での約束は、トラブルの際に内容を確認することが難しいためです。
                   </p>
                 </div>
               </div>
@@ -373,11 +373,11 @@ export default function PricePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              害虫駆除のご相談は今すぐ
+              害虫駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

@@ -6,11 +6,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/pest/wasp/tokyo" },
-  title: "東京のハチ駆除業者おすすめ10社｜料金相場・口コミ比較 - 害虫・害獣駆除プロ比較ナビ",
-  description: "東京でハチ駆除業者をお探しなら当サイト。おすすめ業者10社を料金・サービス・口コミで徹底比較。見積もり無料。",
+  title: "東京のハチ駆除業者おすすめ10社｜料金相場・口コミ比較",
+  description: "東京のハチ駆除業者10社を、料金・サービス・口コミの観点から比較しています。見積もりは無料です。",
   openGraph: {
     title: "東京のハチ駆除業者おすすめ10社｜料金相場・口コミ比較",
-    description: "東京のハチ駆除業者を料金・サービス・口コミで徹底比較。",
+    description: "東京のハチ駆除業者を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/pest/wasp/tokyo",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -22,7 +22,7 @@ export default function WaspTokyoPage() {
       rank: 1,
       name: "ゴキブリ",
       icon: "🪳",
-      description: "繁華街や飲食店が多い東京では、ゴキブリ被害が最も多い。特にチャバネゴキブリが問題。",
+      description: "繁華街や飲食店が多い東京では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
       areas: "渋谷区、新宿区、港区などの繁華街",
       link: "/gokiburi",
     },
@@ -30,7 +30,7 @@ export default function WaspTokyoPage() {
       rank: 2,
       name: "ネズミ",
       icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミ被害が増加。クマネズミが主流。",
+      description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
       areas: "千代田区、中央区、台東区などの都心部",
       link: "/nezumi",
     },
@@ -38,7 +38,7 @@ export default function WaspTokyoPage() {
       rank: 3,
       name: "シロアリ",
       icon: "🐜",
-      description: "木造住宅密集地域でシロアリ被害が多発。梅雨時期の羽アリに注意。",
+      description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
       areas: "世田谷区、杉並区、大田区などの住宅街",
       link: "/shiroari",
     },
@@ -46,7 +46,7 @@ export default function WaspTokyoPage() {
       rank: 4,
       name: "ハチ",
       icon: "🐝",
-      description: "公園や緑地が多いエリアでスズメバチ・アシナガバチの巣が発見される。",
+      description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
       areas: "目黒区、品川区、練馬区などの緑地周辺",
       link: "/hachi",
     },
@@ -54,7 +54,7 @@ export default function WaspTokyoPage() {
       rank: 5,
       name: "コウモリ",
       icon: "🦇",
-      description: "住宅街の屋根裏や古いビルでアブラコウモリの被害が報告されている。",
+      description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
       areas: "世田谷区、杉並区、中野区などの住宅街",
       link: "/koumori",
     },
@@ -82,39 +82,39 @@ export default function WaspTokyoPage() {
     {
       season: "春（3月〜5月）",
       pests: ["巣作り開始"],
-      advice: "女王バチが巣作りを開始。小さいうちに駆除を。",
+      advice: "女王バチが巣作りを始める時期です。巣が小さいうちの駆除をおすすめします。",
     },
     {
       season: "夏（6月〜8月）",
       pests: ["巣の拡大期"],
-      advice: "働きバチが増加し、巣が急速に拡大。専門業者に依頼を。",
+      advice: "働きバチが増え、巣が急速に大きくなる時期です。専門業者へのご依頼をおすすめします。",
     },
     {
       season: "秋（9月〜11月）",
       pests: ["攻撃性ピーク"],
-      advice: "最も危険な時期。巣に近づかず、プロに任せるべき。",
+      advice: "最も危険な時期です。巣には近づかず、専門業者にご依頼ください。",
     },
     {
       season: "冬（12月〜2月）",
       pests: ["活動休止"],
-      advice: "働きバチが死滅。空き巣の撤去と来春の予防対策を。",
+      advice: "働きバチが死滅する時期です。空になった巣の撤去と、翌春に向けた予防対策をおすすめします。",
     },
   ];
 
   const areas = [
     {
       name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応。飲食店・オフィスビルの駆除実績豊富。",
+      description: "都心部から住宅街まで幅広く対応しています。飲食店・オフィスビルでの駆除実績が豊富です。",
       features: ["即日対応可能", "夜間作業対応", "多言語対応"],
     },
     {
       name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域をカバー。戸建て住宅の駆除に強い。",
+      description: "八王子、立川、町田など多摩地域全域に対応しています。戸建て住宅の駆除を得意としています。",
       features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
     },
     {
       name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島にも対応可能な業者あり。事前予約推奨。",
+      description: "伊豆諸島・小笠原諸島に対応する業者もあります。事前の予約をおすすめします。",
       features: ["出張対応", "離島料金設定", "長期保証"],
     },
   ];
@@ -129,7 +129,7 @@ export default function WaspTokyoPage() {
     {
       name: "各区保健所",
       description: "地域ごとの相談・指導",
-      contact: "各区役所HP参照",
+      contact: "各区役所のホームページを参照",
       hours: "平日 8:30〜17:00（区により異なる）",
     },
     {
@@ -163,10 +163,10 @@ export default function WaspTokyoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            東京のハチ駆除 完全ガイド
+            東京のハチ駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            東京都内の害虫駆除業者と料金相場を徹底比較。23区・多摩地域別の特徴と信頼できる業者の選び方をご紹介します。
+            東京都内の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function WaspTokyoPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">東京のおすすめ害虫駆除業者比較</h2>
+          <h2 className="heading-primary text-center mb-8">東京の害虫駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -219,7 +219,7 @@ export default function WaspTokyoPage() {
                     <div className="flex flex-col items-center gap-2">
                       <span className="badge badge-lg">6</span>
                       <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-black">害虫・害獣駆除プロ比較ナビ</strong>
+                      <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
@@ -309,7 +309,7 @@ export default function WaspTokyoPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">東京のおすすめ害虫駆除業者 詳細紹介</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">東京の害虫駆除業者の詳細</h2>
 
           {/* 1. 駆除ザウルス */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
@@ -324,15 +324,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業20年、累計相談3万件以上の豊富な実績</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>東京都内の害虫駆除に精通したプロフェッショナル</li>
+                <li>創業20年、累計相談3万件以上の実績</li>
+                <li>日本ペストコントロール協会加盟</li>
+                <li>東京都内の害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -364,7 +364,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -386,7 +386,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -405,15 +405,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣駆除のROYの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>一級建築士事務所で建物構造を熟知</li>
-                <li>4,730円からの業界最安値水準</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>一級建築士事務所として建物構造を踏まえた施工</li>
+                <li>4,730円からの料金設定</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -445,7 +445,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -467,7 +467,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -486,15 +486,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>口コミ多数公開で透明性が高い</li>
+                <li>口コミを多数公開</li>
                 <li>日本有害鳥獣駆除防除管理協会加盟</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -526,7 +526,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -548,7 +548,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -567,15 +567,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">サンキョークリーンサービスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業28年のベテラン業者で豊富な経験</li>
-                <li>日本ペストコントロール協会加盟で信頼性が高い</li>
-                <li>東京都内の害虫駆除に精通したプロフェッショナル</li>
+                <li>創業28年の業者</li>
+                <li>日本ペストコントロール協会加盟</li>
+                <li>東京都内の害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -607,7 +607,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -629,7 +629,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -648,15 +648,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミ業界トップクラスの高評価</li>
-                <li>2300件以上の実績掲載で透明性が高い</li>
-                <li>最短即日対応で緊急時にも迅速</li>
+                <li>Google口コミの評価が高い</li>
+                <li>2300件以上の実績を掲載</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -688,7 +688,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -710,40 +710,40 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
           </div>
 
-          {/* 6. 害虫・害獣駆除プロ比較ナビ */}
+          {/* 6. 害虫駆除110番 */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">害虫・害獣駆除プロ比較ナビ（東京）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（東京）</h3>
               </div>
               <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害虫・害獣駆除プロ比較ナビの特徴</h4>
+              <h4 className="font-bold text-lg text-black mb-3">害虫駆除110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業運営で信頼性が高い</li>
-                <li>累計相談500万件以上の圧倒的な実績</li>
-                <li>全国対応で東京都内も迅速対応</li>
+                <li>東証上場企業運営</li>
+                <li>累計相談500万件以上の実績</li>
+                <li>全国対応（東京都内を含む）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
 
             <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害虫・害獣駆除プロ比較ナビの基本情報</h4>
+              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除110番の基本情報</h4>
               <div className="overflow-x-auto">
                 <table className="table w-full bg-white text-black border border-gray-300">
                   <tbody>
@@ -769,7 +769,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -782,8 +782,8 @@ export default function WaspTokyoPage() {
 
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害虫・害獣駆除プロ比較ナビの口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫・害獣駆除プロ比較ナビ+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
+                <a href="https://www.google.com/search?q=害虫駆除110番+東京+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -791,7 +791,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -810,15 +810,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つベテラン業者</li>
-                <li>工務店歴50年で建物構造を熟知</li>
-                <li>最短30分対応で緊急時にも迅速</li>
+                <li>50年以上の経験を持つ業者</li>
+                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>最短30分で対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -850,7 +850,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -872,7 +872,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -891,15 +891,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ラッターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計3万件以上の豊富な実績</li>
-                <li>最短10分対応で緊急時にも迅速</li>
-                <li>経験豊富なプロフェッショナル</li>
+                <li>累計3万件以上の実績</li>
+                <li>最短10分で対応</li>
+                <li>経験のある専門スタッフが対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -931,7 +931,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -953,7 +953,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -973,14 +973,14 @@ export default function WaspTokyoPage() {
               <h4 className="font-bold text-lg text-black mb-3">EMEAO!の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計相談10万件以上の業者紹介サービス</li>
-                <li>厳選された優良業者のみを紹介</li>
-                <li>最短即日対応で緊急時にも安心</li>
+                <li>厳選した業者を紹介するサービス</li>
+                <li>最短即日対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1012,7 +1012,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1034,7 +1034,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼24時間365日・通話無料／<br />
+                24時間365日・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1053,15 +1053,15 @@ export default function WaspTokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>東証上場企業のFC加盟店で信頼性が高い</li>
-                <li>社内ライセンス取得のプロが施工</li>
-                <li>大手ブランドの安心感</li>
+                <li>東証上場企業のFC加盟店</li>
+                <li>社内ライセンスを取得したスタッフが施工</li>
+                <li>大手ブランドによるサービス</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1093,7 +1093,7 @@ export default function WaspTokyoPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もり完全無料</td>
+                      <td className="bg-white text-black border border-gray-300">相談・調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -1115,7 +1115,7 @@ export default function WaspTokyoPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                ＼年中無休・通話無料／<br />
+                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1302,11 +1302,11 @@ export default function WaspTokyoPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              東京のハチ駆除のご相談は今すぐ
+              東京のハチ駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場を確認して、最適な業者を見つけましょう
+            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

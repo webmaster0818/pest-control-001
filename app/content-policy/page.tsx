@@ -6,7 +6,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: "/content-policy" },
   title: "記事の制作ポリシー | 害虫・害獣駆除プロ比較ナビ",
-  description: "害虫・害獣駆除プロ比較ナビの記事制作ポリシーです。正確性・中立性・ユーザーファーストを徹底しています。",
+  description: "害虫・害獣駆除プロ比較ナビの記事制作ポリシーです。正確性・中立性・利用者の視点を重視して記事を制作しています。",
   openGraph: {
     title: "記事の制作ポリシー | 害虫・害獣駆除プロ比較ナビ",
     description: "害虫・害獣駆除プロ比較ナビの記事制作ポリシーです。",
@@ -37,21 +37,21 @@ export default function ContentPolicyPage() {
             
             <div className="space-y-8">
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-3 text-blue-900">ユーザーファーストであり続けます</h3>
+                <h3 className="text-xl font-bold mb-3 text-blue-900">利用者の視点を第一に情報を提供します</h3>
                 <p className="text-gray-700">
-                  害虫・害獣駆除プロ比較ナビは、多様多種なお客様のニーズに、最適なマッチングを提供出来ますよう努めます。
-                  近年、害虫駆除・害獣駆除業者の種類、あり方は多様化が進んでいます。
-                  立地、価格帯だけでなく、駆除手法、対応害虫・害獣の種類、緊急対応の可否なども多岐にわたります。
-                  また、お客様お一人お一人も当然受けたいサービスの形は多種多様です。
-                  様々なニーズに限りなく適応された選択を頂けますよう、それぞれの駆除業者の特性・強みをできる限り分かりやすく発信し、最適なマッチングとなりますよう、最大限尽力してまいります。
+                  害虫・害獣駆除プロ比較ナビは、利用者の多様なニーズに沿った業者選びを支援します。
+                  近年、害虫駆除・害獣駆除業者の業態は多様化しています。
+                  所在地や価格帯だけでなく、駆除の手法、対応する害虫・害獣の種類、緊急対応の可否なども業者によって異なります。
+                  また、利用者が求めるサービスの内容もさまざまです。
+                  利用者がそれぞれの目的に合った業者を選べるよう、各駆除業者の特性・強みを分かりやすくお伝えすることに努めます。
                 </p>
               </div>
 
               <div className="bg-green-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-3 text-green-900">正確且つ最新な情報発信に努めます</h3>
+                <h3 className="text-xl font-bold mb-3 text-green-900">正確かつ最新の情報の提供に努めます</h3>
                 <p className="text-gray-700">
-                  害虫・害獣駆除プロ比較ナビでは、正確な情報をお届けするため、出来る限り最新の情報更新に努めてまいります。
-                  弊社スタッフの定期更新に加え、全国にある害虫駆除業者・害獣駆除業者の運営者様より修正依頼を受け、曜日問わず更新をすることで信頼頂けるメディアであり続けれますよう努めます。
+                  害虫・害獣駆除プロ比較ナビでは、正確な情報をお届けするため、掲載情報をできる限り最新の状態に保つよう努めます。
+                  当社スタッフによる定期的な更新に加え、全国の害虫駆除業者・害獣駆除業者の運営者様からの修正依頼を受けて随時更新を行い、信頼される媒体であるよう努めます。
                 </p>
                 <div className="mt-4 bg-white p-4 rounded-lg">
                   <p className="font-semibold text-gray-900 mb-2">情報の取得元</p>
@@ -76,7 +76,7 @@ export default function ContentPolicyPage() {
               <div className="bg-purple-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-3 text-purple-900">口コミ情報の透明性を確保します</h3>
                 <p className="text-gray-700">
-                  害虫・害獣駆除プロ比較ナビでは、収集した口コミの参照元を常に明確にすると共に、操作することなく発信することで、中立性を保ちます。
+                  害虫・害獣駆除プロ比較ナビでは、収集した口コミの参照元を明示し、内容を改変せずに掲載することで、中立性の確保に努めます。
                   掲載している口コミは、Google口コミ等の第三者プラットフォームから引用しており、参照元を明示しています。
                 </p>
                 <div className="mt-4 bg-white p-4 rounded-lg">
@@ -91,11 +91,11 @@ export default function ContentPolicyPage() {
               </div>
 
               <div className="bg-pink-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-3 text-pink-900">分かりやすさを追求し続けます</h3>
+                <h3 className="text-xl font-bold mb-3 text-pink-900">分かりやすい情報の提供に努めます</h3>
                 <p className="text-gray-700">
-                  決して安価ではない害虫駆除・害獣駆除サービス選びですので、可能な限り良い選択となりますよう参考情報をお届けしたいと考えております。
-                  一方、情報過多になりすぎてしまうと、分かりにくくなってしまうものでもございます。
-                  よりよいご意思決定に必要な情報を、常に"分かりやすい"とお感じ頂けますよう、努めてまいります。
+                  害虫駆除・害獣駆除サービスは決して安価ではないため、利用者がより良い選択をできるよう、参考となる情報をお届けします。
+                  一方で、情報が多すぎると、かえって分かりにくくなることもあります。
+                  意思決定に必要な情報を、分かりやすくお伝えするよう努めます。
                 </p>
               </div>
             </div>
@@ -109,8 +109,8 @@ export default function ContentPolicyPage() {
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">1. 記事の企画設計</h3>
                 <p className="text-gray-700">
-                  害虫・害獣駆除プロ比較ナビのコンテンツは、まず企画設計からはじまります。
-                  ユーザー様が何を知りたいか、どんな情報が必要かを徹底的に調べたうえで、記事の企画設計をいたします。
+                  害虫・害獣駆除プロ比較ナビの記事は、企画設計から制作を始めます。
+                  利用者が必要とする情報を調査したうえで、記事を企画しています。
                 </p>
                 <ul className="mt-3 list-disc pl-6 space-y-1 text-sm text-gray-700">
                   <li>検索キーワードの調査・分析</li>
@@ -135,9 +135,9 @@ export default function ContentPolicyPage() {
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">3. 記事のライティング</h3>
                 <p className="text-gray-700">
-                  企画した構成に沿ってライティングをいたします。
-                  可能な限り、専門用語を使わないよう分かりやすい文言を選びつつ、ユーザー様にとって読み心地の良い文章でライティングをいたします。
-                  害虫駆除・害獣駆除業者選びのご協力ができるよう心を込めて記事作成をいたします。
+                  企画した構成に沿って執筆します。
+                  専門用語はできる限り避け、分かりやすく読みやすい文章で執筆します。
+                  害虫駆除・害獣駆除業者選びのお役に立てるよう、記事を作成します。
                 </p>
                 <ul className="mt-3 list-disc pl-6 space-y-1 text-sm text-gray-700">
                   <li>専門用語は分かりやすく解説</li>
@@ -157,16 +157,16 @@ export default function ContentPolicyPage() {
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">5. 記事の公開</h3>
                 <p className="text-gray-700">
-                  WEB上で閲覧頂けるよう、完成した記事をアップロードいたします。
-                  アップロード後は、ユーザー様が実際にお読み頂いた反応などを、参考に記事改善を進めております。
+                  完成した記事をウェブサイトに公開します。
+                  公開後は、読者の反応などを参考に、記事の改善を行っています。
                 </p>
               </div>
 
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">6. 記事の更新</h3>
                 <p className="text-gray-700">
-                  記事公開後、常に正確且つ最新情報が掲載されておりますよう、情報更新を定期的に行っております。
-                  また、業者運営者様やユーザー様からご意見や修正依頼を頂きましたら、都度修正を行い、正確性と最新性を保っております。
+                  記事の公開後も、正確かつ最新の情報を掲載するため、定期的に情報を更新しています。
+                  また、業者の運営者様や利用者の皆様からご意見や修正依頼をいただいた場合は、その都度修正を行い、正確性と最新性の維持に努めています。
                 </p>
               </div>
             </div>
@@ -176,8 +176,8 @@ export default function ContentPolicyPage() {
           <div className="mb-12 bg-gray-50 p-6 rounded-lg">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">情報の修正・訂正依頼について</h2>
             <p className="text-gray-700 mb-4">
-              もし誤った情報や更新されていない情報がございましたら、お問い合わせフォームよりご連絡頂けますと幸いです。
-              出来得る限り最速で修正を進めてまいります。
+              誤った情報や更新されていない情報がございましたら、お問い合わせフォームよりご連絡ください。
+              確認のうえ、速やかに修正いたします。
             </p>
             <p className="text-sm text-gray-600">
               ※掲載事業者様からの情報修正依頼は優先的に対応いたします。
@@ -190,7 +190,7 @@ export default function ContentPolicyPage() {
             <p className="text-gray-700">
               当サイトは、掲載事業者からの広告収入やアフィリエイト収入により運営されています。
               ただし、広告収入の有無が記事内容や掲載順位に影響を与えることはありません。
-              ユーザーの利便性を最優先に、公平・中立な情報提供を心がけています。
+              利用者の利便性を最優先に、公平・中立な情報提供に努めています。
             </p>
           </div>
 

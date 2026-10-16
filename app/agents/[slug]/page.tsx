@@ -33,17 +33,17 @@ export default async function AgentPage({ params }: Props) {
   const { slug } = await params;
   const a = getAgent(slug);
   if (!a) {
-    return <div className="max-w-4xl mx-auto px-4 py-20 text-center">業者が見つかりません。</div>;
+    return <div className="max-w-4xl mx-auto px-4 py-20 text-center">該当する業者の情報はありません。</div>;
   }
 
   const toc: [string, string][] = [
-    ["about", `${a.name}とはどんな会社か`],
+    ["about", `${a.name}の概要`],
     ["taiou", "対応している害獣・害虫の種類"],
     ["price", `${a.name}の料金体系と相場`],
-    ["reviews", "利用者のリアルな口コミ・評判"],
+    ["reviews", "利用者の口コミ・評判"],
     ["merit", "メリットとデメリット"],
-    ["recommend", `${a.name}がおすすめな人`],
-    ["compare", "他社と比較するときのチェックポイント"],
+    ["recommend", `${a.name}の利用が適している方`],
+    ["compare", "他社と比較する際の確認項目"],
     ["faq", "よくある質問"],
     ["summary", "まとめ"],
   ];
@@ -51,7 +51,7 @@ export default async function AgentPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${a.name}の口コミ・評判・料金を徹底調査`,
+    headline: `${a.name}の口コミ・評判・料金`,
     description: a.metaDesc,
     image: `${SITE}${a.image}`,
     datePublished: `${a.updated ?? UPDATED}T00:00:00+09:00`,
@@ -82,11 +82,11 @@ export default async function AgentPage({ params }: Props) {
       <article className="bg-white">
         <header className="relative isolate overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white">
           <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">害獣・害虫駆除業者レビュー</p>
+            <p className="text-sm tracking-widest text-amber-300 mb-3">害獣・害虫駆除業者の口コミ・評判</p>
             <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
-              {a.name}の口コミ・評判は？
+              {a.name}の口コミ・評判
               <br className="hidden md:block" />
-              料金・サービス・メリットデメリットを徹底調査
+              料金・サービス内容・メリットとデメリット
             </h1>
             <p className="text-slate-200 leading-relaxed max-w-2xl">{a.heroLead}</p>
             <div className="mt-6 flex flex-wrap gap-2">
@@ -117,7 +117,7 @@ export default async function AgentPage({ params }: Props) {
           <p className="text-sm text-slate-500 mb-8">最終更新日：{jpDate(a.updated ?? UPDATED)}　／　害虫・害獣駆除プロ比較ナビ編集部</p>
 
           <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p className="font-bold text-slate-800 mb-4">この記事の目次</p>
+            <p className="font-bold text-slate-800 mb-4">目次</p>
             <ol className="space-y-2 text-sm md:text-base">
               {toc.map(([id, label], i) => (
                 <li key={id}>
@@ -130,7 +130,7 @@ export default async function AgentPage({ params }: Props) {
           </nav>
 
           <section id="about" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}とはどんな会社か</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}の概要</h2>
             {a.about.map((p, i) => (
               <p key={i} className="text-slate-700 leading-loose mb-4">{p}</p>
             ))}
@@ -194,7 +194,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">利用者のリアルな口コミ・評判</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">利用者の口コミ・評判</h2>
             <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6 flex flex-col sm:flex-row items-center gap-4">
               {a.satisfaction && (
                 <div className="text-center">
@@ -250,7 +250,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="recommend" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}がおすすめな人</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}の利用が適している方</h2>
             <div className="rounded-2xl border border-slate-200 overflow-hidden">
               <Image src="/images/hero-animal-new.jpg" alt="天井裏に侵入する害獣のイメージ" width={1200} height={480} className="w-full h-48 md:h-56 object-cover" />
               <div className="p-6">
@@ -264,7 +264,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="compare" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">他社と比較するときのチェックポイント</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">他社と比較する際の確認項目</h2>
             <p className="text-slate-700 leading-loose mb-4">駆除業者を選ぶ際は、料金の安さだけでなく、保証や施工体制を含めて総合的に比較することが大切です。{a.name}を他社と比べる際は、次の点を確認すると判断しやすくなります。</p>
             <ol className="space-y-3 text-slate-700">
               {a.comparePoints.map((c, i) => (
@@ -274,7 +274,7 @@ export default async function AgentPage({ params }: Props) {
             <p className="text-slate-700 leading-loose mt-4">
               料金や対応は地域・被害状況で変わるため、{a.name}を含めて
               <Link href="/" className="text-amber-700 underline">複数の駆除業者を比較</Link>
-              し、無料見積もりを取ったうえで選ぶのがおすすめです。
+              し、無料見積もりを取ったうえで選ぶことをおすすめします。
             </p>
           </section>
 
@@ -298,7 +298,7 @@ export default async function AgentPage({ params }: Props) {
             ))}
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-2">
               <p className="font-bold text-lg mb-2">害獣・害虫の被害でお困りの方へ</p>
-              <p className="text-slate-300 text-sm mb-4">地域・被害状況に合った駆除業者を比較して、無料見積もりを取りましょう。</p>
+              <p className="text-slate-300 text-sm mb-4">地域・被害状況に合った駆除業者を比較し、無料見積もりの依頼にお役立てください。</p>
               {a.affiliateUrl ? (
                 <div className="flex flex-col items-center gap-3">
                   <a
@@ -318,7 +318,7 @@ export default async function AgentPage({ params }: Props) {
             </div>
             {a.sources && a.sources.length > 0 && (
               <div className="mt-8 rounded-xl border border-slate-200 bg-slate-50 p-5">
-                <p className="font-bold text-slate-800 mb-2 text-sm">この記事の確認先（{jpDate(a.updated ?? UPDATED)}確認）</p>
+                <p className="font-bold text-slate-800 mb-2 text-sm">本ページの確認先（{jpDate(a.updated ?? UPDATED)}確認）</p>
                 <ul className="space-y-1 text-xs text-slate-600">
                   {a.sources.map((s) => (
                     <li key={s.url}>
