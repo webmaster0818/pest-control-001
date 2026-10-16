@@ -518,7 +518,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者だと思います。
+                    研修を受けた優秀なスタッフの方が来てくれました。アフターフォローもしっかりしていて、信頼できる業者さんです。
                   </p>
                 </div>
               </div>
@@ -908,7 +908,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者だと思います。
+                    無料で調査・見積もりしていただき、納得してから依頼できました。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
               </div>
@@ -1009,7 +1009,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者だと思います。
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
               </div>
@@ -1098,7 +1098,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者だと思います。
+                    50年以上の実績があるとのことで安心してお願いしました。TVCMでも見たことがあり、信頼できる業者さんです。
                   </p>
                 </div>
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
@@ -1110,7 +1110,7 @@ export default function HachiPage() {
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
                   <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
                   <p className="text-sm text-gray-900">
-                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者だと思います。
+                    無料で調査・見積もりしていただき、料金も明確でした。対応も丁寧で、信頼できる業者さんです。
                   </p>
                 </div>
               </div>
