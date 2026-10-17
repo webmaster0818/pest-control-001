@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { SiteStats } from "@/app/lib/siteStats";
 
-// TOP のファーストビュー（3案）。数字はすべて app/lib/siteStats.ts でビルド時に数えた値。
-export type HeroVariant = "1" | "2" | "3";
+// TOP のファーストビュー（okina 10/18 採用：FV-3＋線だけのアイコン）。数字はすべて app/lib/siteStats.ts でビルド時に数えた値。
 
 export interface PestIcon {
   slug: string;
@@ -19,7 +18,7 @@ const HERO_POINTS = [
   "明朗会計・無料見積りも可能",
 ];
 
-function Copy({ compact = false }: { compact?: boolean }) {
+function Copy() {
   return (
     <>
       <p className="fv-eyebrow">実際の口コミと評判で選ぶ！</p>
@@ -29,13 +28,11 @@ function Copy({ compact = false }: { compact?: boolean }) {
       <p className="fv-lead">
         シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。
       </p>
-      {!compact && (
-        <ul className="fv-points">
-          {HERO_POINTS.map((p) => (
-            <li key={p}>{p}</li>
-          ))}
-        </ul>
-      )}
+      <ul className="fv-points">
+        {HERO_POINTS.map((p) => (
+          <li key={p}>{p}</li>
+        ))}
+      </ul>
     </>
   );
 }
@@ -71,18 +68,16 @@ function Stats({ s }: { s: SiteStats }) {
   );
 }
 
-// アイコンのセット：a=塗りつぶしのシルエット / b=線だけ（同じ形の輪郭）。単色（文字色）の SVG。
-export type IconSet = "a" | "b";
-
-function Icons({ icons, layout, set }: { icons: PestIcon[]; layout: "grid" | "row" | "chips"; set: IconSet }) {
+// アイコンは線だけのシルエット（単色・文字色の SVG）。
+function Icons({ icons }: { icons: PestIcon[] }) {
   return (
-    <ul className={`fv-icons fv-icons-${layout} fv-icons-set-${set}`}>
+    <ul className="fv-icons fv-icons-chips">
       {icons.map((i) => (
         <li key={i.slug}>
           <Link href={i.href} className="fv-icon">
             <span className="fv-icon-img">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`/images/pests/${set}/${i.slug}.svg`} alt="" width={100} height={100} />
+              <img src={`/images/pests/${i.slug}.svg`} alt="" width={100} height={100} />
             </span>
             <span className="fv-icon-name">{i.name}</span>
           </Link>
@@ -107,51 +102,8 @@ function Photo({ className }: { className: string }) {
   );
 }
 
-export default function TopHero({ variant, stats, icons, iconSet = "a" }: { variant: HeroVariant; stats: SiteStats; icons: PestIcon[]; iconSet?: IconSet }) {
-  if (variant === "1") {
-    // FV-1：コピー｜写真｜害虫アイコンのグリッド、下に数字の帯
-    return (
-      <section className="fv fv1" data-no-reveal>
-        <div className="fv1-main">
-          <div className="fv1-copy">
-            <Copy />
-            <Actions />
-          </div>
-          <Photo className="fv1-photo" />
-          <div className="fv1-side">
-            <p className="fv-side-title">害虫・害獣から探す</p>
-            <Icons icons={icons} layout="grid" set={iconSet} />
-          </div>
-        </div>
-        <div className="fv1-band">
-          <Stats s={stats} />
-        </div>
-      </section>
-    );
-  }
-  if (variant === "2") {
-    // FV-2：横長の写真＋コピー、その下に数字の帯と害虫アイコンの横並び
-    return (
-      <section className="fv fv2" data-no-reveal>
-        <div className="fv2-top">
-          <Photo className="fv2-photo" />
-          <div className="fv2-inner">
-            <div className="fv2-copy">
-              <Copy />
-              <Actions />
-            </div>
-          </div>
-        </div>
-        <div className="fv2-band">
-          <div className="fv2-band-inner">
-            <Stats s={stats} />
-            <Icons icons={icons} layout="row" set={iconSet} />
-          </div>
-        </div>
-      </section>
-    );
-  }
-  // FV-3：色面を強めに使う案（左に淡い黄の面＋数字、右に写真、下に緑の帯とアイコン）
+export default function TopHero({ stats, icons }: { stats: SiteStats; icons: PestIcon[] }) {
+  // 左に淡い黄の面＋数字、右に写真、下に緑の帯とアイコン
   return (
     <section className="fv fv3" data-no-reveal>
       <div className="fv3-main">
@@ -167,7 +119,7 @@ export default function TopHero({ variant, stats, icons, iconSet = "a" }: { vari
       <div className="fv3-band">
         <div className="fv3-band-inner">
           <p className="fv3-band-title">害虫・害獣から探す</p>
-          <Icons icons={icons} layout="chips" set={iconSet} />
+          <Icons icons={icons} />
         </div>
       </div>
     </section>
