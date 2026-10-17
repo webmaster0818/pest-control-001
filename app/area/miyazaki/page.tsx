@@ -18,46 +18,11 @@ export const metadata: Metadata = {
 
 export default function TokyoPage() {
   const topPests = [
-    {
-      rank: 1,
-      name: "ゴキブリ",
-      icon: "🪳",
-      description: "繁華街や飲食店が多い宮崎では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
-      areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/gokiburi",
-    },
-    {
-      rank: 2,
-      name: "ネズミ",
-      icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
-      areas: "千代田区、中央区、台東区などの都心部",
-      link: "/nezumi",
-    },
-    {
-      rank: 3,
-      name: "シロアリ",
-      icon: "🐜",
-      description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
-      areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/shiroari",
-    },
-    {
-      rank: 4,
-      name: "ハチ",
-      icon: "🐝",
-      description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
-      areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
-    },
-    {
-      rank: 5,
-      name: "コウモリ",
-      icon: "🦇",
-      description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
-      areas: "世田谷区、杉並区、中野区などの住宅街",
-      link: "/koumori",
-    },
+    { rank: 1, name: "ゴキブリ", icon: "🪳", description: "ゴキブリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/gokiburi" },
+    { rank: 2, name: "ネズミ", icon: "🐭", description: "ネズミの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/nezumi" },
+    { rank: 3, name: "シロアリ", icon: "🐜", description: "シロアリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/shiroari" },
+    { rank: 4, name: "ハチ", icon: "🐝", description: "ハチの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/hachi" },
+    { rank: 5, name: "コウモリ", icon: "🦇", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
   const priceComparison = [
@@ -65,31 +30,31 @@ export default function TokyoPage() {
       pest: "シロアリ駆除",
       miyazaki: "12,000〜18,000円/坪",
       national: "10,000〜15,000円/坪",
-      note: "都心部はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ハチ駆除",
       miyazaki: "15,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "高所作業が多く料金高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ゴキブリ駆除",
       miyazaki: "20,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "飲食店の需要が多く料金はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ネズミ駆除",
       miyazaki: "100,000〜180,000円",
       national: "80,000〜150,000円",
-      note: "複雑な建物構造で高額",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "コウモリ駆除",
       miyazaki: "120,000〜350,000円",
       national: "100,000〜300,000円",
-      note: "都心部は作業の難易度が高い",
+      note: "建物の構造・被害の範囲により変動",
     },
   ];
 
@@ -117,42 +82,16 @@ export default function TokyoPage() {
   ];
 
   const areas = [
-    {
-      name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応しています。飲食店・オフィスビルでの駆除実績が豊富です。",
-      features: ["即日対応可能", "夜間作業対応", "多言語対応"],
-    },
-    {
-      name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域に対応しています。戸建て住宅の駆除を得意としています。",
-      features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
-    },
-    {
-      name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島に対応する業者もあります。事前の予約をおすすめします。",
-      features: ["出張対応", "離島料金設定", "長期保証"],
-    },
+    { name: "県北", description: "延岡市・日向市・高千穂町 など", url: "https://iju.pref.miyazaki.lg.jp/municipality/" },
+    { name: "県央", description: "宮崎市・西都市・高鍋町 など", url: "https://iju.pref.miyazaki.lg.jp/municipality/" },
+    { name: "県西", description: "都城市・小林市・えびの市 など", url: "https://iju.pref.miyazaki.lg.jp/municipality/" },
+    { name: "県南", description: "日南市・串間市", url: "https://iju.pref.miyazaki.lg.jp/municipality/" },
   ];
 
   const consultations = [
-    {
-      name: "宮崎都福祉保健局",
-      description: "害虫相談窓口",
-      contact: "03-5320-4391",
-      hours: "平日 9:00〜17:00",
-    },
-    {
-      name: "各区保健所",
-      description: "地域ごとの相談・指導",
-      contact: "各区役所のホームページを参照",
-      hours: "平日 8:30〜17:00（区により異なる）",
-    },
-    {
-      name: "宮崎都ペストコントロール協会",
-      description: "業者紹介・相談",
-      contact: "03-3254-0014",
-      hours: "平日 9:00〜17:00",
-    },
+    { name: "宮崎県 保健所（中央・日南・都城・小林・高鍋・日向・延岡・高千穂）／宮崎市保健所", description: "宮崎市保健所は宮崎市が、その他の保健所は県が設置（県の出先機関一覧に管内市町村を掲載）", contact: "各保健所の連絡先は公式サイトをご確認ください（例：中央保健所 0985-28-2111、延岡保健所 0982-33-5373）", hours: "", url: "https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/koho/desaki1.html" },
+    { name: "宮崎県 衛生管理課", description: "主な業務に「ねずみ、昆虫等の駆除の指導に関すること」を掲げる県の担当課", contact: "担当業務別の直通電話は公式ページをご確認ください（環境水道担当 0985-44-2628 ほか）", hours: "", url: "https://www.pref.miyazaki.lg.jp/eiseikanri/index.html" },
+    { name: "一般社団法人 宮崎県ペストコントロール協会", description: "害虫相談（日本ペストコントロール協会：害虫相談はご所在地の県協会へ）。所在地：宮崎市丸山1-99-2", contact: "0985-27-6207", hours: "", url: "https://www.pestcontrol.or.jp/pages/114/" },
   ];
 
   return (
@@ -181,7 +120,7 @@ export default function TokyoPage() {
             宮崎の害虫駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            宮崎の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
+            宮崎の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -1147,8 +1086,8 @@ export default function TokyoPage() {
               <thead>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">宮崎の相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金の目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国の目安</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
@@ -1169,10 +1108,9 @@ export default function TokyoPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">宮崎の料金が高い理由</h3>
+              <h3 className="font-bold">料金が変わる主な要因</h3>
               <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
+                料金は、建物の構造や作業の高さ、被害の範囲、施工の回数、清掃・消毒の有無によって変わります。表の金額は目安のため、複数の業者から見積もりを取り、内訳を比較してご確認ください。
               </p>
             </div>
           </div>
@@ -1210,36 +1148,30 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 宮崎エリアの害虫駆除業者エリア */}
+      {/* 宮崎の地域区分 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">宮崎エリアの害虫駆除業者エリア</h2>
+          <h2 className="heading-primary text-center">宮崎の地域区分</h2>
+          <p className="text-gray-700 mb-6">宮崎県の地域区分は次のとおりです。業者の対応エリアは業者ごとに異なるため、依頼前に住所が対応範囲に含まれるか各社にご確認ください。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-black">{area.name}</h3>
                   <p className="text-gray-700 text-sm">{area.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {area.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-success text-xl">✓</span>
-                        <span className="text-sm text-gray-900">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">宮崎県公式サイト</a>))}（2026年10月17日確認）</p>
         </div>
       </section>
 
-      {/* 宮崎都の相談窓口 */}
+      {/* 宮崎の相談窓口 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">宮崎都の害虫相談窓口</h2>
+          <h2 className="heading-primary text-center">宮崎の害虫相談窓口</h2>
+          <p className="text-gray-700 mb-6">ネズミ・衛生害虫などの相談は、次の公的な窓口でも受け付けています。連絡先・受付時間は変更されることがあるため、ご利用前に公式サイトにて最新情報をご確認ください。</p>
           <div className="space-y-4">
             {consultations.map((org, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1250,15 +1182,22 @@ export default function TokyoPage() {
                       <h3 className="card-title text-lg text-black">{org.name}</h3>
                       <p className="text-gray-700 text-sm mb-2">{org.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-xs text-gray-700">電話番号:</span>
-                          <p className="font-semibold text-black">{org.contact}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-700">受付時間:</span>
-                          <p className="font-semibold text-sm text-black">{org.hours}</p>
-                        </div>
+                        {org.contact && (
+                          <div>
+                            <span className="text-xs text-gray-700">連絡先:</span>
+                            <p className="font-semibold text-black">{org.contact}</p>
+                          </div>
+                        )}
+                        {org.hours && (
+                          <div>
+                            <span className="text-xs text-gray-700">受付時間:</span>
+                            <p className="font-semibold text-sm text-black">{org.hours}</p>
+                          </div>
+                        )}
                       </div>
+                      {org.url && (
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1268,24 +1207,19 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 宮崎で多い害虫（上位5種） */}
+      {/* 主な害虫別の駆除情報 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">宮崎で多い害虫（上位5種）</h2>
+          <h2 className="heading-primary text-center">主な害虫別の駆除情報</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
                     <div className="text-5xl">{pest.icon}</div>
                     <div className="flex-1">
                       <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
                       <p className="text-gray-700 mb-2">{pest.description}</p>
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-gray-700">{pest.areas}</span>
-                      </div>
                       <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
                         {pest.name}駆除について詳しく →
                       </Link>

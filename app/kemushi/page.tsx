@@ -7,98 +7,102 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/kemushi" },
   title: "毛虫駆除業者比較 | チャドクガ・イラガの料金相場と対策",
-  description: "毛虫駆除業者10社を、料金・実績・対応速度の観点から比較しています。チャドクガ、イラガの駆除料金相場（10,000円〜30,000円）、皮膚炎対策、庭木の予防方法をご説明します。",
+  description: "毛虫駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。チャドクガ・イラガなどの発生時期、毒毛に触れた場合の対処法、庭木の予防方法を自治体の公表情報にもとづいてご説明します。",
   openGraph: {
-    title: "毛虫駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "毛虫駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
+    title: "毛虫駆除業者比較 | チャドクガ・イラガの料金相場と対策",
+    description: "毛虫駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。チャドクガ・イラガの発生時期と対処法もご説明します。",
     url: "https://gaichu-pro.com/kemushi",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function KemushiPage() {
-  const beeTypes = [
+  const SUGINAMI_URL = "https://www.city.suginami.tokyo.jp/s102/846.html";
+  const MEGURO_URL = "https://www.city.meguro.tokyo.jp/seikatsueisei/kenkoufukushi/eisei/cyadokuga.html";
+  const KYOTO_URL = "https://www.city.kyoto.lg.jp/hokenfukushi/page/0000042469.html";
+
+  const kemushiTypes = [
     {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
+      name: "チャドクガ",
+      danger: "皮膚炎に注意",
+      description: "ツバキ、サザンカなどのツバキ科の植物に発生する毒のある毛虫です。幼虫（毛虫）・成虫（ガ）のいずれも、毒毛に触れると皮膚炎を起こします。卵、抜け殻、死んだ毛虫でもかぶれることがあります（目黒区）。",
+      features: ["主な発生樹木: ツバキ、サザンカ、チャなど", "発生回数: 年2回（目黒区・京都市）", "初期は葉の裏側に集団で発生します（杉並区）"],
       color: "badge-error",
     },
     {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
+      name: "イラガ",
+      danger: "痛みに注意",
+      description: "サクラ、ウメ、カキなどに発生します。幼虫はトゲを持ち、触れると激しい痛みがあります（杉並区）。",
+      features: ["主な発生樹木: サクラ、ウメ、カキなど", "発生回数: 年2回（夏から秋）", "冬にはまゆが見られます"],
       color: "badge-warning",
     },
     {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
-      color: "badge-info",
+      name: "タケノホソクロバ",
+      danger: "痛み・湿疹に注意",
+      description: "竹やササなどに発生します。幼虫に触れると激しい痛みがあり、湿疹ができます（杉並区）。",
+      features: ["主な発生植物: 竹、ササなど", "発生回数: 年2回（初夏と秋）", "初期は葉の裏側に集団で発生します"],
+      color: "badge-warning",
     },
   ];
 
   const emergencySteps = [
     {
       step: "1",
-      title: "すぐに現場から離れる",
-      description: "毛虫が追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
+      title: "こすらない・かかない",
+      description: "かくと被害が広がるため、毒毛が付いたと思われる部位をこすったり、かいたりしないでください。",
     },
     {
       step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
+      title: "粘着テープで毒毛を取り除く",
+      description: "セロハンテープなどで、毒毛が付いたと思われる周辺をそっと押さえて取り除きます。",
     },
     {
       step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
+      title: "流水で洗い流す",
+      description: "水道やシャワーの流水で洗い流します。目に入った場合は特に注意が必要です。",
     },
   ];
 
   const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
+    { size: "小規模の作業", price: "8,000〜15,000円", note: "発生範囲・樹木の本数により変動" },
+    { size: "中規模の作業", price: "15,000〜30,000円", note: "発生範囲・樹木の本数により変動" },
+    { size: "大規模の作業", price: "30,000〜50,000円+", note: "発生範囲・樹木の本数により変動" },
+    { size: "高所作業（2階以上など）", price: "+10,000〜20,000円", note: "追加料金" },
   ];
 
   const seasonCalendar = [
     {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
+      season: "春〜初夏（4〜6月頃）",
+      target: "チャドクガ",
+      activity: "チャドクガ幼虫の1回目の発生時期",
+      advice: "目黒区は5月から6月頃、京都市は4月〜5月を発生時期として案内しています。ツバキ・サザンカなどの葉の裏側を点検し、毛虫が小さく集団でいるうちに葉や枝ごと切り取ることが効果的です。",
     },
     {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
+      season: "夏〜秋（8〜9月頃）",
+      target: "チャドクガ・イラガ",
+      activity: "チャドクガ幼虫の2回目の発生時期",
+      advice: "チャドクガは8月から9月頃に再び発生します（目黒区・京都市）。イラガはサクラ・ウメ・カキなどに、夏から秋にかけて年2回発生します（杉並区）。",
     },
     {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、毛虫の数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
+      season: "秋",
+      target: "サクラケムシ",
+      activity: "サクラケムシの発生時期",
+      advice: "杉並区では、サクラケムシは秋ごろサクラなどに大量発生し、葉を食べてふんを大量に落とすと案内しています。人を刺すことはありません。",
     },
     {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどの毛虫が死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
+      season: "冬",
+      target: "イラガ",
+      activity: "イラガのまゆが見られる時期",
+      advice: "杉並区では、イラガは冬にまゆが見られると案内しています。翌シーズンに備え、樹木を高くしない・枝葉を茂らせすぎないなど、日常の樹木の管理を行うことが大切です（目黒区）。",
     },
   ];
 
   const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
+    "対象の樹木・本数・高さと作業内容が見積書に明記されているか",
+    "切り取った枝葉や毛虫の処分まで作業に含まれているか",
+    "薬剤を使用する場合、薬剤の種類と近隣への配慮について説明があるか",
+    "高所作業など追加料金が発生する条件が事前に示されているか",
+    "作業後に再発した場合の対応（保証の有無・期間）が書面で示されているか",
   ];
 
   const areas = [
@@ -131,7 +135,7 @@ export default function KemushiPage() {
               毛虫駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              毛虫の駆除方法と再発防止策をご説明します
+              チャドクガ・イラガなどの発生時期と、毒毛に触れた場合の対処法をご説明します
             </p>
             </div>
         </div>
@@ -144,7 +148,7 @@ export default function KemushiPage() {
             毛虫駆除の基礎知識と業者比較
           </h2>
           <p className="text-lg text-gray-700">
-            毛虫の特徴・被害状況から駆除方法まで、対処法をご説明します
+            自治体の公表情報にもとづき、毛虫の種類・被害・駆除時の注意点をご説明します
           </p>
         </div>
       </section>
@@ -259,7 +263,7 @@ export default function KemushiPage() {
                   <td className="text-center">害虫全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">毛虫専門</td>
+                  <td className="text-center">ハチ駆除が中心（毛虫は要確認）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
@@ -1050,7 +1054,7 @@ export default function KemushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>毛虫専門</td>
+                      <td>ハチ駆除が中心（毛虫への対応は公式サイトにてご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1098,20 +1102,20 @@ export default function KemushiPage() {
         </div>
       </section>
 
-      {/* 毛虫の種類と危険性 */}
+      {/* 毛虫の種類と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">毛虫の種類と危険性</h2>
+          <h2 className="heading-primary text-center">主な毛虫の種類と被害</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
+            {kemushiTypes.map((item) => (
+              <div key={item.name} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
+                  <h3 className="card-title text-2xl">{item.name}</h3>
+                  <div className={`badge ${item.color} badge-lg`}>{item.danger}</div>
+                  <p className="text-gray-700 mt-4">{item.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
+                    {item.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-primary">•</span>
                         <span className="text-sm">{feature}</span>
@@ -1122,14 +1126,19 @@ export default function KemushiPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={SUGINAMI_URL} target="_blank" rel="nofollow noopener" className="underline">杉並区「樹木に発生する毛虫」</a>（2026年10月17日確認）、
+            <a href={MEGURO_URL} target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>（2026年10月17日確認）、
+            <a href={KYOTO_URL} target="_blank" rel="nofollow noopener" className="underline">京都市「チャドクガについて」</a>（2026年10月17日確認）。発生時期は地域や年により異なります。
+          </p>
         </div>
       </section>
 
-      {/* 緊急対処法 */}
+      {/* 毒毛に触れた場合の対処法 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
-            毛虫に刺された場合の対処法
+            毛虫の毒毛に触れた場合の対処法
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {emergencySteps.map((step) => (
@@ -1147,17 +1156,23 @@ export default function KemushiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
             <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
+              <h3 className="font-bold">薬の使用と受診について</h3>
+              <p className="text-sm">
+                目黒区は「『虫刺され軟こう（抗ヒスタミン入り）』が効きます。薬局に相談してください。」「かぶれが広範囲の場合は、皮膚科を受診してください。」と案内しています。京都市は、毒針毛に刺された場合は専門医に相談するよう案内しています。
+              </p>
+              <p className="text-xs mt-2">
+                出典：<a href={MEGURO_URL} target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>（2026年10月17日確認）、
+                <a href={KYOTO_URL} target="_blank" rel="nofollow noopener" className="underline">京都市「チャドクガについて」</a>（2026年10月17日確認）
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 毛虫の巣を見つけたら */}
+      {/* 毛虫の発生を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">毛虫の巣を見つけたら</h2>
+          <h2 className="heading-primary text-center">毛虫の発生を見つけたときの対応</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
@@ -1165,19 +1180,19 @@ export default function KemushiPage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
+                    <span>肌を露出した服装で近づく、素手で触れる</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
+                    <span>殺虫剤の散布だけで駆除を終える（毛虫が死んでも毒針毛は残るためです）</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
+                    <span>枝を揺らす（毛虫が糸を吐いて垂れ下がってくるためです）</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
+                    <span>地面に落ちた毛虫を乾いたまま掃く（毒毛が飛ぶおそれがあるためです）</span>
                   </li>
                 </ul>
               </div>
@@ -1188,24 +1203,29 @@ export default function KemushiPage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
+                    <span>帽子・眼鏡・長袖・長ズボン・手袋・マスクを着用し、首にタオルを巻いて肌を覆う</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
+                    <span>風上から近づく</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
+                    <span>毛虫が付いた葉や枝ごと切り取り、ビニール袋などに入れる</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
+                    <span>ご自身での駆除が難しい場合は、業者に依頼する</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={MEGURO_URL} target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>（2026年10月17日確認）、
+            <a href={KYOTO_URL} target="_blank" rel="nofollow noopener" className="underline">京都市「チャドクガについて」</a>（2026年10月17日確認）、
+            <a href={SUGINAMI_URL} target="_blank" rel="nofollow noopener" className="underline">杉並区「樹木に発生する毛虫」</a>（2026年10月17日確認）
+          </p>
         </div>
       </section>
 
@@ -1217,7 +1237,7 @@ export default function KemushiPage() {
             <table className="table w-full bg-white text-black shadow-xl">
               <thead>
                 <tr>
-                  <th>巣のサイズ・場所</th>
+                  <th>作業の規模・場所</th>
                   <th>料金相場</th>
                   <th>備考</th>
                 </tr>
@@ -1238,8 +1258,8 @@ export default function KemushiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
+              <strong>費用について：</strong>費用は発生範囲・樹木の本数・作業の高さなどにより変わります。
+              正確な金額は、複数の業者の見積もりで比較されることをおすすめします。
             </span>
           </div>
         </div>
@@ -1255,19 +1275,55 @@ export default function KemushiPage() {
                 <div className="card-body">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
+                    <div className="badge badge-warning badge-lg">{season.target}</div>
                   </div>
                   <p className="font-bold text-primary mb-2">{season.activity}</p>
                   <p className="text-gray-700">{season.advice}</p>
                 </div>
               </div>
             ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={MEGURO_URL} target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>（2026年10月17日確認）、
+            <a href={KYOTO_URL} target="_blank" rel="nofollow noopener" className="underline">京都市「チャドクガについて」</a>（2026年10月17日確認）、
+            <a href={SUGINAMI_URL} target="_blank" rel="nofollow noopener" className="underline">杉並区「樹木に発生する毛虫」</a>（2026年10月17日確認）。発生時期は地域や年により異なります。
+          </p>
+        </div>
+      </section>
+
+      {/* 業者に依頼する前に確認すること */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body space-y-4 text-gray-800">
+              <div>
+                <h3 className="font-bold text-lg mb-1">自治体の対応範囲</h3>
+                <p>
+                  個人の敷地内の樹木に発生した毛虫は、原則として所有者が対処します。杉並区は「区では個人の敷地にある樹木について、消毒作業は一切行っていません。」、目黒区は「保健所では、個人の敷地内の害虫の駆除は行っていません。ご自分で駆除できない方には、駆除業者を紹介しています。」と案内しています。対応は自治体により異なるため、お住まいの市区町村にご確認ください。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">発生している樹木と範囲</h3>
+                <p>
+                  樹木の種類（ツバキ・サザンカ・サクラなど）、毛虫が付いている範囲、樹木の高さを確認しておくと、見積もりの比較がしやすくなります。生垣などに発生した場合は、通行する方が知らずに被害にあうことがあると目黒区は案内しています。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">見積もりの内容</h3>
+                <p>
+                  作業範囲、薬剤使用の有無、切り取った枝葉の処分、追加料金の条件を事前にご確認ください。ご利用前に、各業者の公式サイトにて最新情報をご確認ください。
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <h3 className="font-bold text-base mb-2">出典</h3>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li><a href={SUGINAMI_URL} target="_blank" rel="nofollow noopener" className="underline">杉並区「樹木に発生する毛虫」</a>（2026年10月17日確認）</li>
+                  <li><a href={MEGURO_URL} target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>（2026年10月17日確認）</li>
+                  <li><a href={KYOTO_URL} target="_blank" rel="nofollow noopener" className="underline">京都市「チャドクガについて」</a>（2026年10月17日確認）</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1305,7 +1361,7 @@ export default function KemushiPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}で毛虫駆除</h3>
-                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

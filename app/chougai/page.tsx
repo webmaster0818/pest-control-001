@@ -7,98 +7,105 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/chougai" },
   title: "鳥害対策の基礎知識 | ハト・カラス駆除",
-  description: "ハト、カラス、ムクドリの駆除料金相場と業者の選び方、緊急時の対処法、鳥害の予防対策をご説明します。",
+  description: "ハト・カラス・ムクドリなどの鳥害について、鳥獣保護管理法上の注意点、巣の撤去の考え方、糞の清掃時の注意、業者の選び方を公的機関の情報にもとづいてご説明します。",
   openGraph: {
-    title: "鳥害駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "鳥害駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "鳥害対策の基礎知識 | ハト・カラス駆除業者比較",
+    description: "鳥害駆除業者9社を、対応エリア・受付時間の観点から比較しています。鳥獣保護管理法上の注意点もご説明します。",
     url: "https://gaichu-pro.com/chougai",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function ChougaiPage() {
-  const beeTypes = [
+  const LAW_URL = "https://laws.e-gov.go.jp/law/414AC0000000088";
+  const ENV_CAPTURE_URL = "https://www.env.go.jp/nature/choju/capture/capture1.html";
+  const TOKYO_CAPTURE_URL = "https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/birds/capture";
+  const TOKYO_FAQ_URL = "https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/birds/faq";
+  const TOKYO_CROW_URL = "https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/crow/crow_measure";
+  const TOKYO_FEEDING_URL = "https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/birds/please";
+
+  const birdTypes = [
     {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
-    },
-    {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
+      name: "ドバト",
+      danger: "鳥獣保護管理法の対象",
+      description: "ベランダなどに巣を作ることがあります。東京都環境局は、巣を作り始めた時点で取り除くか、巣を作らせないことが大切であり、卵を産んでしまっている場合は許可なく撤去できないと案内しています。",
+      features: ["巣立ちまでの期間: 1か月ほど（東京都環境局）", "ベランダに入る際、いったん手すりなどに止まる習性があります", "数が増えすぎると、鳴き声や糞などで生活環境に被害が生じます"],
       color: "badge-warning",
     },
     {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
+      name: "カラス",
+      danger: "鳥獣保護管理法の対象",
+      description: "ハシブトガラス・ハシボソガラスは、繁殖期に巣やヒナの近くを通る人を威嚇したり、攻撃したりすることがあります（東京都環境局）。",
+      features: ["繁殖期: およそ3月下旬から7月上旬ごろ（東京都環境局）", "針金ハンガーを使って巣を作ることがあります", "ごみ集積所のごみを荒らします"],
+      color: "badge-error",
+    },
+    {
+      name: "ムクドリ",
+      danger: "鳥獣保護管理法の対象",
+      description: "東京都環境局は、ハシボソガラス、ハシブトガラス、ドバト、ムクドリなどを、生活環境などへ恒常的に被害を与える野生鳥獣として、有害鳥獣捕獲の対象としています。",
+      features: ["許可なく捕獲・殺傷することはできません", "捕獲には都道府県知事等の許可が必要です", "対策の進め方はお住まいの自治体にご確認ください"],
       color: "badge-info",
     },
   ];
 
-  const emergencySteps = [
+  const cleaningPoints = [
     {
       step: "1",
-      title: "すぐに現場から離れる",
-      description: "鳥害が追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
+      title: "使い捨ての手袋とマスクを着用する",
+      description: "野鳥は様々な細菌や寄生虫を持っているおそれがあるため、清掃の際は使い捨てのビニール手袋やマスクを着用します。",
     },
     {
       step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
+      title: "糞に直接触れない",
+      description: "巣の跡や糞を片付ける際は、糞に直接触れないよう注意してください。",
     },
     {
       step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
+      title: "死んだ野鳥は管理者・清掃部署へ",
+      description: "道路や公園では各施設の管理者へ、ご自宅の庭などではお住まいの清掃部署へご相談ください。死骸や糞には直接触れないでください。",
     },
   ];
 
   const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
+    { size: "小規模の作業", price: "8,000〜15,000円", note: "作業範囲・防除資材により変動" },
+    { size: "中規模の作業", price: "15,000〜30,000円", note: "作業範囲・防除資材により変動" },
+    { size: "大規模の作業", price: "30,000〜50,000円+", note: "作業範囲・防除資材により変動" },
+    { size: "高所作業（2階以上など）", price: "+10,000〜20,000円", note: "追加料金" },
   ];
 
   const seasonCalendar = [
     {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
+      season: "3月下旬〜7月上旬ごろ",
+      target: "カラス",
+      activity: "カラスの繁殖期",
+      advice: "カラスは巣を作り、卵を産んでヒナを育てます。この時期は巣やヒナに近づかないことが基本です。卵やヒナを捕獲・処分する場合は事前に許可が必要です（東京都環境局）。",
     },
     {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
+      season: "4〜6月",
+      target: "野鳥のヒナ",
+      activity: "巣立ったばかりのヒナが地面に落ちやすい時期",
+      advice: "東京都環境局は、巣立ったばかりのヒナ（特に4月から6月）は大半が元気なヒナであり、拾って保護する必要はないと案内しています。カラスのヒナの近くでは親鳥が威嚇することがあるため、なるべく近づかないでください。",
     },
     {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、鳥害の数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
+      season: "巣作りを確認したとき",
+      target: "ドバト",
+      activity: "卵を産む前の対応",
+      advice: "巣を作り始めた時点で取り除くか、巣を作らせないことが大切です。卵を産んでしまった場合は許可なく撤去できないため、ヒナが巣立つのを待ってから撤去します（東京都環境局）。",
     },
     {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどの鳥害が死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
+      season: "日常の対策",
+      target: "カラス・ハト",
+      activity: "エサになるものを置かない",
+      advice: "ごみは防鳥ネットでしっかり覆い、地域のごみ出しルールを守ります。カラスやハトにエサを与えないでください（東京都環境局）。",
     },
   ];
 
   const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
+    "卵やヒナの有無を確認し、許可が必要な場合の手続きについて説明があるか",
+    "施工する防除資材（ネット・ワイヤーなど）と施工範囲が見積書に明記されているか",
+    "巣の撤去後の糞の清掃が作業に含まれているか",
+    "高所作業など追加料金が発生する条件が事前に示されているか",
+    "施工後に再び飛来した場合の対応（保証の有無・期間）が書面で示されているか",
   ];
 
   const areas = [
@@ -131,7 +138,7 @@ export default function ChougaiPage() {
               鳥害駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              スズメバチ・アシナガバチの危険性から駆除方法まで、安全な対処法をご紹介します
+              ハト・カラス・ムクドリなどの鳥害について、法律上の注意点と対策をご説明します
             </p>
             </div>
         </div>
@@ -141,10 +148,10 @@ export default function ChougaiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            鳥害対策の基礎知識 | ハト・カラス駆除 - 害虫駆除の基礎知識
+            ハト・カラスの鳥害対策と業者比較
           </h2>
           <p className="text-lg text-gray-700">
-            鳥害対策の基礎知識 | ハト・カラス駆除 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
+            野鳥は鳥獣保護管理法の対象です。巣の撤去や捕獲の前に確認すべき点を、公的機関の情報にもとづいてご説明します
           </p>
         </div>
       </section>
@@ -420,7 +427,6 @@ export default function ChougaiPage() {
               <h4 className="font-bold text-lg text-black mb-3">日本鳩対策センターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の施工実績</li>
-                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
                 <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
@@ -507,7 +513,6 @@ export default function ChougaiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
                 <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
-                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
               </ul>
             </div>
 
@@ -593,7 +598,6 @@ export default function ChougaiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場に到着</li>
                 <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
               </ul>
             </div>
 
@@ -1022,9 +1026,7 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">プロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
-                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
-                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
+                <li>当サイトでは、本業者の特徴について公式情報を確認中です。ご利用前に、公式サイトにて最新情報をご確認ください。</li>
               </ul>
             </div>
 
@@ -1098,20 +1100,20 @@ export default function ChougaiPage() {
         </div>
       </section>
 
-      {/* 鳥害の種類と危険性 */}
+      {/* 主な鳥の種類と法的な扱い */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">鳥害の種類と危険性</h2>
+          <h2 className="heading-primary text-center">鳥害の原因となる主な鳥と法的な扱い</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
+            {birdTypes.map((bird) => (
+              <div key={bird.name} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
+                  <h3 className="card-title text-2xl">{bird.name}</h3>
+                  <div className={`badge ${bird.color} badge-lg`}>{bird.danger}</div>
+                  <p className="text-gray-700 mt-4">{bird.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
+                    {bird.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-primary">•</span>
                         <span className="text-sm">{feature}</span>
@@ -1122,42 +1124,52 @@ export default function ChougaiPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* 緊急対処法 */}
-      <section className="py-16 px-4 bg-error/10">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center text-error">
-            鳥害に刺された場合の対処法
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencySteps.map((step) => (
-              <div key={step.step} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
-                  <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-gray-700">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="alert alert-error mt-8 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
+          <div className="alert alert-warning mt-8 shadow-lg">
             <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
+              <h3 className="font-bold">鳥獣保護管理法による規制</h3>
+              <p className="text-sm">
+                鳥獣保護管理法では、「鳥獣」を「鳥類又は哺乳類に属する野生動物」と定義し、「鳥獣及び鳥類の卵は、捕獲等又は採取等（採取又は損傷をいう。以下同じ。）をしてはならない。」と定めています（第2条・第8条）。ハト・カラス・ムクドリなどの野鳥も対象であり、捕獲や卵の採取には環境大臣または都道府県知事等の許可が必要です。違反した場合は、1年以下の拘禁刑または100万円以下の罰金が科せられます（第83条）。
+              </p>
+              <p className="text-xs mt-2">
+                出典：<a href={LAW_URL} target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）、
+                <a href={ENV_CAPTURE_URL} target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）、
+                <a href={TOKYO_CAPTURE_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣の捕獲について」</a>（2026年10月17日確認）
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 鳥害の巣を見つけたら */}
+      {/* 糞の清掃時の注意 */}
+      <section className="py-16 px-4 bg-error/10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center text-error">
+            糞の清掃時の注意
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {cleaningPoints.map((point) => (
+              <div key={point.step} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <div className="badge badge-error badge-lg mb-4">ポイント {point.step}</div>
+                  <h3 className="card-title text-xl">{point.title}</h3>
+                  <p className="text-gray-700">{point.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-gray-700 mt-8">
+            東京都環境局は「野鳥は様々な細菌や寄生虫を持っているおそれがありますので、清掃の際は使い捨てのビニール手袋やマスクを着用するなど、糞に直接触れないよう注意してください。」と案内しています。
+          </p>
+          <p className="text-xs text-gray-600 mt-2">
+            出典：<a href={TOKYO_FAQ_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣との接し方について」</a>（2026年10月17日確認）
+          </p>
+        </div>
+      </section>
+
+      {/* 巣や侵入を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">鳥害の巣を見つけたら</h2>
+          <h2 className="heading-primary text-center">巣や侵入を見つけたときの対応</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
@@ -1165,19 +1177,19 @@ export default function ChougaiPage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
+                    <span>卵やヒナがいる巣を許可なく撤去する</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
+                    <span>野鳥を許可なく捕獲する、傷つける</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
+                    <span>カラスやハトにエサを与える</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
+                    <span>糞や死骸に素手で触れる</span>
                   </li>
                 </ul>
               </div>
@@ -1188,24 +1200,32 @@ export default function ChougaiPage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
+                    <span>ドバトの巣は、作り始めた時点で取り除く</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
+                    <span>卵がある場合は、ヒナの巣立ちを待つか、自治体の担当窓口に相談する</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
+                    <span>カラスの巣は、巣のある場所（樹木・電柱など）の管理者に撤去を依頼する</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
+                    <span>ベランダの物を片付け、室外機などの隙間をふさぐ</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <p className="text-sm text-gray-700 mt-6">
+            東京都環境局は「巣のみを撤去することについては特別な許可は必要ありませんが、卵またはヒナを含めた野生鳥獣は許可なく捕獲・殺傷することができません。」と案内しています。取り扱いは都道府県により異なる場合があるため、お住まいの自治体にご確認ください。
+          </p>
+          <p className="text-xs text-gray-600 mt-2">
+            出典：<a href={TOKYO_FAQ_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣との接し方について」</a>（2026年10月17日確認）、
+            <a href={TOKYO_CROW_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「カラスに関するQ&amp;A」</a>（2026年10月17日確認）、
+            <a href={TOKYO_FEEDING_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生動物への餌付け防止のお願い」</a>（2026年10月17日確認）
+          </p>
         </div>
       </section>
 
@@ -1217,7 +1237,7 @@ export default function ChougaiPage() {
             <table className="table w-full bg-white text-black shadow-xl">
               <thead>
                 <tr>
-                  <th>巣のサイズ・場所</th>
+                  <th>作業の規模・場所</th>
                   <th>料金相場</th>
                   <th>備考</th>
                 </tr>
@@ -1238,36 +1258,75 @@ export default function ChougaiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
+              <strong>カラスの巣の撤去費用と自治体の補助：</strong>東京都環境局は、カラスの巣の撤去費用について「費用は、巣の場所や高さなど条件によって変わりますが、およそ1件あたり、20,000円から30,000円程度です。」と案内しています。また「お住まいの区や市で、巣の撤去や、巣の撤去にかかわる費用の補助を実施しているところがあります。」としています。お住まいの市区町村にご確認ください。
+              （出典：<a href={TOKYO_CROW_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「カラスに関するQ&amp;A」</a>（2026年10月17日確認））
             </span>
           </div>
         </div>
       </section>
 
-      {/* 季節別対策カレンダー */}
+      {/* 季節ごとの注意点 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">鳥害予防対策</h2>
+          <h2 className="heading-primary text-center">時期ごとの注意点と予防対策</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season) => (
               <div key={season.season} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
+                    <div className="badge badge-warning badge-lg">{season.target}</div>
                   </div>
                   <p className="font-bold text-primary mb-2">{season.activity}</p>
                   <p className="text-gray-700">{season.advice}</p>
                 </div>
               </div>
             ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={TOKYO_CROW_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「カラスに関するQ&amp;A」</a>（2026年10月17日確認）、
+            <a href={TOKYO_FAQ_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣との接し方について」</a>（2026年10月17日確認）、
+            <a href={TOKYO_FEEDING_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生動物への餌付け防止のお願い」</a>（2026年10月17日確認）
+          </p>
+        </div>
+      </section>
+
+      {/* 業者に依頼する前に確認すること */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body space-y-4 text-gray-800">
+              <div>
+                <h3 className="font-bold text-lg mb-1">卵・ヒナの有無</h3>
+                <p>
+                  卵やヒナがいる巣の撤去、野鳥の捕獲には、鳥獣保護管理法にもとづく許可が必要です。許可の権限は環境大臣または都道府県知事にあり、多くの都道府県では権限の一部を市町村長に移譲していると環境省は案内しています。許可の要否と申請先は、お住まいの都道府県・市区町村の担当窓口にご確認ください。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">巣のある場所の管理者</h3>
+                <p>
+                  東京都環境局は、カラスの巣の撤去について、巣のある場所（樹木、電柱など）の管理者を確認し、管理者に撤去を依頼するよう案内しています。個人宅の敷地内の場合は、土地所有者が民間事業者等へ直接依頼します。集合住宅の場合は、住宅管理者や管理組合にご相談ください。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">自治体の補助・相談窓口</h3>
+                <p>
+                  巣の撤去や撤去費用の補助を実施している区市があります（東京都環境局）。業者に依頼する前に、お住まいの市区町村の環境担当部署にご確認ください。ご利用前に、各業者の公式サイトにて最新情報をご確認ください。
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <h3 className="font-bold text-base mb-2">出典</h3>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li><a href={LAW_URL} target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）</li>
+                  <li><a href={ENV_CAPTURE_URL} target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）</li>
+                  <li><a href={TOKYO_CAPTURE_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣の捕獲について」</a>（2026年10月17日確認）</li>
+                  <li><a href={TOKYO_FAQ_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生鳥獣との接し方について」</a>（2026年10月17日確認）</li>
+                  <li><a href={TOKYO_CROW_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「カラスに関するQ&amp;A」</a>（2026年10月17日確認）</li>
+                  <li><a href={TOKYO_FEEDING_URL} target="_blank" rel="nofollow noopener" className="underline">東京都環境局「野生動物への餌付け防止のお願い」</a>（2026年10月17日確認）</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1305,7 +1364,7 @@ export default function ChougaiPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}で鳥害駆除</h3>
-                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

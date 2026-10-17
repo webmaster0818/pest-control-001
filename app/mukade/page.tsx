@@ -7,36 +7,34 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/mukade" },
   title: "ムカデ・ゲジゲジ駆除業者比較 | 料金相場と侵入防止対策",
-  description: "ムカデ・ゲジゲジ駆除業者10社を、料金・実績・対応速度の観点から比較しています。駆除料金相場（20,000円〜50,000円）、侵入経路の封鎖、毒への対策をご説明します。",
+  description: "ムカデ・ゲジゲジ駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。ムカデの生態、咬まれた場合の対処法、屋内への侵入を防ぐ方法を自治体の公表情報にもとづいてご説明します。",
   openGraph: {
-    title: "ムカデ・ゲジゲジ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "ムカデ・ゲジゲジ駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
+    title: "ムカデ・ゲジゲジ駆除業者比較 | 料金相場と侵入防止対策",
+    description: "ムカデ・ゲジゲジ駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。ムカデに咬まれた場合の対処法もご説明します。",
     url: "https://gaichu-pro.com/mukade",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function MukadePage() {
-  const beeTypes = [
+  const KAWASAKI_MUKADE_URL = "https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/mukade.pdf";
+  const KAWASAKI_YASUDE_URL = "https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/yasude.pdf";
+  const KAWASAKI_INDEX_URL = "https://www.city.kawasaki.jp/kurashi/category/22-13-1-0-0-0-0-0-0-0.html";
+  const TOKYO_RUIBETSU_URL = "https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/nezukon/ruibetsu";
+
+  const mukadeTypes = [
     {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
+      name: "ムカデ",
+      danger: "咬まれると激痛",
+      description: "屋外の落ち葉の下や石垣の下などに生息し、ゴキブリなどのエサを求めて屋内へ侵入します。自分から人を襲うことはありませんが、気付かずに触れたり刺激したりすると、防御のために咬みつきます。咬まれるとしびれを伴う激痛があり、患部は赤く腫れあがります（川崎市）。",
+      features: ["体長: 2〜3cmのものから15cm位までの種類があります", "夜行性で、昼間は暗く湿った場所に潜んでいます", "5〜8月頃が産卵期で、活動が活発になります"],
       color: "badge-error",
     },
     {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
-      color: "badge-warning",
-    },
-    {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
+      name: "ヤスデ（ムカデに似た虫）",
+      danger: "咬まない",
+      description: "体型が細長く多数の脚があるためムカデに似ていますが、咬まれるなどの危害はありません。防御のために刺激臭のある体液を分泌するため、不快感を与えます（川崎市）。",
+      features: ["体長: 普通種のヤケヤスデで約2cm", "体の各節から2対の脚が出ています（ムカデは1対）", "4〜7月頃に発生し、梅雨時期に大発生することがあります"],
       color: "badge-info",
     },
   ];
@@ -44,61 +42,61 @@ export default function MukadePage() {
   const emergencySteps = [
     {
       step: "1",
-      title: "すぐに現場から離れる",
-      description: "ムカデ・ゲジゲジが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
+      title: "流水で冷やしながら毒を絞り出す",
+      description: "流水などで患部を冷やしながら、毒を絞り出します。",
     },
     {
       step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
+      title: "軟膏を塗り、腫れがひどければ湿布する",
+      description: "抗ヒスタミン剤含有のステロイド軟膏を塗ります。腫れがひどい場合は、水で湿布します。",
     },
     {
       step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
+      title: "必要に応じて医療機関を受診する",
+      description: "必要に応じて医療機関を受診してください。",
     },
   ];
 
   const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
+    { size: "小規模の作業", price: "8,000〜15,000円", note: "作業範囲・建物の構造により変動" },
+    { size: "中規模の作業", price: "15,000〜30,000円", note: "作業範囲・建物の構造により変動" },
+    { size: "大規模の作業", price: "30,000〜50,000円+", note: "作業範囲・建物の構造により変動" },
+    { size: "高所作業（2階以上など）", price: "+10,000〜20,000円", note: "追加料金" },
   ];
 
   const seasonCalendar = [
     {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
+      season: "春",
+      target: "ムカデ・ヤスデ",
+      activity: "発生が始まる時期",
+      advice: "川崎市は、ムカデの発生時期を春〜秋、ヤスデの発生時期を4〜7月頃と案内しています。家の周りの雑草を刈り取り、落ち葉や廃材など不要な物を片付けて、日当たりをよくしておくことが予防になります。",
     },
     {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
+      season: "5〜8月頃",
+      target: "ムカデ",
+      activity: "ムカデの産卵期",
+      advice: "ムカデの活動が活発になる時期です。床下や家の周りに粉剤の殺虫剤を帯状に散布するなど、屋内への侵入を防ぐ対策を行います（川崎市）。",
     },
     {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、ムカデ・ゲジゲジの数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
+      season: "梅雨時期",
+      target: "ヤスデ",
+      activity: "ヤスデが大発生しやすい時期",
+      advice: "梅雨時期に大発生したヤスデが、雨上がりにブロック塀や壁面に這い上がり、屋内に侵入することがあります（川崎市）。",
     },
     {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのムカデ・ゲジゲジが死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
+      season: "秋",
+      target: "ムカデ",
+      activity: "ムカデの発生が続く時期",
+      advice: "川崎市は、ムカデの発生時期を春〜秋としています。屋内で見つけた場合は素手で触れず、スプレー式殺虫剤などで対処してください。",
     },
   ];
 
   const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
+    "調査で侵入経路や発生場所を確認し、対策の内容を説明しているか",
+    "使用する薬剤の種類と散布場所（床下・建物の周りなど）が見積書に明記されているか",
+    "ペットや小さなお子様がいる場合の薬剤の扱いについて説明があるか",
+    "追加料金が発生する条件が事前に示されているか",
+    "施工後に再び発生した場合の対応（保証の有無・期間）が書面で示されているか",
   ];
 
   const areas = [
@@ -131,7 +129,7 @@ export default function MukadePage() {
               ムカデ・ゲジゲジ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              ムカデ・ゲジゲジの駆除方法と再発防止策をご説明します
+              ムカデの生態と、咬まれた場合の対処法、屋内への侵入を防ぐ方法をご説明します
             </p>
             </div>
         </div>
@@ -144,7 +142,7 @@ export default function MukadePage() {
             ムカデ・ゲジゲジ駆除の基礎知識と業者比較
           </h2>
           <p className="text-lg text-gray-700">
-            ムカデ・ゲジゲジの特徴・被害状況から駆除方法まで、対処法をご説明します
+            自治体の公表情報にもとづき、ムカデの特徴・被害・予防方法をご説明します
           </p>
         </div>
       </section>
@@ -259,7 +257,7 @@ export default function MukadePage() {
                   <td className="text-center">害虫全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">ムカデ・ゲジゲジ専門</td>
+                  <td className="text-center">ハチ駆除が中心（ムカデは要確認）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
@@ -1050,7 +1048,7 @@ export default function MukadePage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ムカデ・ゲジゲジ専門</td>
+                      <td>ハチ駆除が中心（ムカデ・ゲジゲジへの対応は公式サイトにてご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1098,20 +1096,20 @@ export default function MukadePage() {
         </div>
       </section>
 
-      {/* ムカデ・ゲジゲジの種類と危険性 */}
+      {/* ムカデの種類と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ムカデ・ゲジゲジの種類と危険性</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
+          <h2 className="heading-primary text-center">ムカデの特徴と被害</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {mukadeTypes.map((item) => (
+              <div key={item.name} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
+                  <h3 className="card-title text-2xl">{item.name}</h3>
+                  <div className={`badge ${item.color} badge-lg`}>{item.danger}</div>
+                  <p className="text-gray-700 mt-4">{item.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
+                    {item.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-primary">•</span>
                         <span className="text-sm">{feature}</span>
@@ -1122,14 +1120,22 @@ export default function MukadePage() {
               </div>
             ))}
           </div>
+          <p className="text-sm text-gray-700 mt-6">
+            ゲジ（ゲジゲジ）は、東京都保健医療局の「ねずみ・衛生害虫」の類別一覧で、ムカデとは別の「不快動物」として分類されています。ゲジの生態の詳細は、現在掲載しておりません。
+          </p>
+          <p className="text-xs text-gray-600 mt-2">
+            出典：<a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）、
+            <a href={KAWASAKI_YASUDE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ヤスデ」（PDF）</a>（2026年10月17日確認）、
+            <a href={TOKYO_RUIBETSU_URL} target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「類別一覧」</a>（2026年10月17日確認）
+          </p>
         </div>
       </section>
 
-      {/* 緊急対処法 */}
+      {/* ムカデに咬まれた場合の対処法 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
-            ムカデ・ゲジゲジに刺された場合の対処法
+            ムカデに咬まれた場合の対処法
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {emergencySteps.map((step) => (
@@ -1147,17 +1153,22 @@ export default function MukadePage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
             <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
+              <h3 className="font-bold">川崎市の案内</h3>
+              <p className="text-sm">
+                川崎市は、咬まれた場合の対処として「流水などで患部を冷やしながら毒を絞り出します。そして、抗ヒスタミン剤含有のステロイド軟膏を塗り、腫れがひどければ水で湿布します。」「必要に応じて医療機関を受診しましょう。」と案内しています。
+              </p>
+              <p className="text-xs mt-2">
+                出典：<a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ムカデ・ゲジゲジの巣を見つけたら */}
+      {/* ムカデの侵入を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ムカデ・ゲジゲジの巣を見つけたら</h2>
+          <h2 className="heading-primary text-center">ムカデの侵入を見つけたときの対応</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
@@ -1165,19 +1176,15 @@ export default function MukadePage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
+                    <span>素手で捕まえる、触れる（刺激すると防御のために瞬時に咬みつくためです）</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
+                    <span>殺虫処理の直後に近づく（暴れて咬まれる可能性があるためです）</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
+                    <span>家の周りに落ち葉や廃材を置いたままにする（暗く湿った場所に潜むためです）</span>
                   </li>
                 </ul>
               </div>
@@ -1188,24 +1195,27 @@ export default function MukadePage() {
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
+                    <span>直接駆除する場合は、スプレー式殺虫剤を噴霧する</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
+                    <span>床下や家の周りに粉剤の殺虫剤を帯状に散布し、屋内への侵入を防ぐ</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
+                    <span>家の周りの雑草を刈り取り、不要な物を片付けて日当たりをよくする</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
+                    <span>ご自身での対処が難しい場合は、業者に相談する</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）。殺虫剤は、製品の使用上の注意を守ってお使いください。
+          </p>
         </div>
       </section>
 
@@ -1217,7 +1227,7 @@ export default function MukadePage() {
             <table className="table w-full bg-white text-black shadow-xl">
               <thead>
                 <tr>
-                  <th>巣のサイズ・場所</th>
+                  <th>作業の規模・場所</th>
                   <th>料金相場</th>
                   <th>備考</th>
                 </tr>
@@ -1238,8 +1248,8 @@ export default function MukadePage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
+              <strong>費用について：</strong>費用は発生範囲・建物の構造・施工回数などにより変わります。
+              正確な金額は、複数の業者の見積もりで比較されることをおすすめします。
             </span>
           </div>
         </div>
@@ -1255,19 +1265,55 @@ export default function MukadePage() {
                 <div className="card-body">
                   <div className="flex justify-between items-center mb-4">
                     <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
+                    <div className="badge badge-warning badge-lg">{season.target}</div>
                   </div>
                   <p className="font-bold text-primary mb-2">{season.activity}</p>
                   <p className="text-gray-700">{season.advice}</p>
                 </div>
               </div>
             ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-6">
+            出典：<a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）、
+            <a href={KAWASAKI_YASUDE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ヤスデ」（PDF）</a>（2026年10月17日確認）。発生時期は地域や年により異なります。
+          </p>
+        </div>
+      </section>
+
+      {/* 業者に依頼する前に確認すること */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body space-y-4 text-gray-800">
+              <div>
+                <h3 className="font-bold text-lg mb-1">見つけた虫の種類</h3>
+                <p>
+                  ムカデとヤスデは見た目が似ていますが、ムカデは体の各節から1対、ヤスデは2対の脚が出ています。ヤスデは咬むなどの危害はありませんが、川崎市は、発生源が周辺の山林や畑など範囲が不特定の場合は「完全な駆除は困難です」と案内しています。依頼前に、見つけた虫の種類と場所を確認しておくと、相談がスムーズです。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">発生場所と建物の周りの状況</h3>
+                <p>
+                  ムカデは草むらや落ち葉の下、石垣の間など暗く湿った場所に潜み、エサを求めて屋内に侵入します。建物の周りの落ち葉・雑草・廃材の状況を確認し、清掃で改善できる点がないかを事前にご確認ください。
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">見積もりの内容</h3>
+                <p>
+                  使用する薬剤、散布場所、施工回数、追加料金の条件を事前にご確認ください。自治体によっては衛生害虫に関する相談窓口を設けているため、お住まいの市区町村にもご確認ください。ご利用前に、各業者の公式サイトにて最新情報をご確認ください。
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <h3 className="font-bold text-base mb-2">出典</h3>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  <li><a href={KAWASAKI_INDEX_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」</a>（2026年10月17日確認）</li>
+                  <li><a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）</li>
+                  <li><a href={KAWASAKI_YASUDE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ヤスデ」（PDF）</a>（2026年10月17日確認）</li>
+                  <li><a href={TOKYO_RUIBETSU_URL} target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「類別一覧」</a>（2026年10月17日確認）</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1305,7 +1351,7 @@ export default function MukadePage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でムカデ・ゲジゲジ駆除</h3>
-                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の業者情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

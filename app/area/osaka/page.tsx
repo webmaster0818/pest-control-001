@@ -7,7 +7,7 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/osaka" },
   title: "大阪の害虫駆除業者 | 地域別料金相場と選び方",
-  description: "大阪の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴、季節ごとの害虫カレンダー、業者の選び方をご説明します。",
+  description: "大阪の害虫駆除業者と料金相場を比較しています。地域の区分と公的な相談窓口、季節ごとの害虫カレンダー、業者の選び方をご説明します。",
   openGraph: {
     title: "大阪の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
     description: "大阪の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
@@ -18,46 +18,11 @@ export const metadata: Metadata = {
 
 export default function TokyoPage() {
   const topPests = [
-    {
-      rank: 1,
-      name: "ゴキブリ",
-      icon: "🪳",
-      description: "繁華街や飲食店が多い大阪では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
-      areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/pest/cockroach/osaka",
-    },
-    {
-      rank: 2,
-      name: "ネズミ",
-      icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
-      areas: "千代田区、中央区、台東区などの都心部",
-      link: "/pest/nezumi/osaka",
-    },
-    {
-      rank: 3,
-      name: "シロアリ",
-      icon: "🐜",
-      description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
-      areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/pest/termite/osaka",
-    },
-    {
-      rank: 4,
-      name: "ハチ",
-      icon: "🐝",
-      description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
-      areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/pest/wasp/osaka",
-    },
-    {
-      rank: 5,
-      name: "コウモリ",
-      icon: "🦇",
-      description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
-      areas: "世田谷区、杉並区、中野区などの住宅街",
-      link: "/koumori",
-    },
+    { rank: 1, name: "ゴキブリ", icon: "🪳", description: "ゴキブリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/cockroach/osaka" },
+    { rank: 2, name: "ネズミ", icon: "🐭", description: "ネズミの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/nezumi/osaka" },
+    { rank: 3, name: "シロアリ", icon: "🐜", description: "シロアリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/termite/osaka" },
+    { rank: 4, name: "ハチ", icon: "🐝", description: "ハチの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/wasp/osaka" },
+    { rank: 5, name: "コウモリ", icon: "🦇", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
   const priceComparison = [
@@ -65,31 +30,31 @@ export default function TokyoPage() {
       pest: "シロアリ駆除",
       tokyo: "12,000〜18,000円/坪",
       national: "10,000〜15,000円/坪",
-      note: "都心部はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ハチ駆除",
       tokyo: "15,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "高所作業が多く料金高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ゴキブリ駆除",
       tokyo: "20,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "飲食店の需要が多く料金はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ネズミ駆除",
       tokyo: "100,000〜180,000円",
       national: "80,000〜150,000円",
-      note: "複雑な建物構造で高額",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "コウモリ駆除",
       tokyo: "120,000〜350,000円",
       national: "100,000〜300,000円",
-      note: "都心部は作業の難易度が高い",
+      note: "建物の構造・被害の範囲により変動",
     },
   ];
 
@@ -117,42 +82,17 @@ export default function TokyoPage() {
   ];
 
   const areas = [
-    {
-      name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応しています。飲食店・オフィスビルでの駆除実績が豊富です。",
-      features: ["即日対応可能", "夜間作業対応", "多言語対応"],
-    },
-    {
-      name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域に対応しています。戸建て住宅の駆除を得意としています。",
-      features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
-    },
-    {
-      name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島に対応する業者もあります。事前の予約をおすすめします。",
-      features: ["出張対応", "離島料金設定", "長期保証"],
-    },
+    { name: "豊能", description: "豊中市・池田市・吹田市・箕面市 など", url: "https://www.pref.osaka.lg.jp/o100020/iryo/keikaku/hokeniryoukyougikai.html" },
+    { name: "三島", description: "高槻市・茨木市・摂津市 など", url: "https://www.pref.osaka.lg.jp/o100020/iryo/keikaku/hokeniryoukyougikai.html" },
+    { name: "北河内", description: "守口市・枚方市・寝屋川市・門真市 など", url: "https://www.pref.osaka.lg.jp/o100020/iryo/keikaku/hokeniryoukyougikai.html" },
+    { name: "中河内・南河内", description: "八尾市・東大阪市（中河内）、富田林市・河内長野市（南河内） など", url: "https://www.pref.osaka.lg.jp/o100020/iryo/keikaku/hokeniryoukyougikai.html" },
+    { name: "泉州", description: "岸和田市・泉大津市・貝塚市・泉佐野市 など", url: "https://www.pref.osaka.lg.jp/o100020/iryo/keikaku/hokeniryoukyougikai.html" },
   ];
 
   const consultations = [
-    {
-      name: "大阪都福祉保健局",
-      description: "害虫相談窓口",
-      contact: "03-5320-4391",
-      hours: "平日 9:00〜17:00",
-    },
-    {
-      name: "各区保健所",
-      description: "地域ごとの相談・指導",
-      contact: "各区役所のホームページを参照",
-      hours: "平日 8:30〜17:00（区により異なる）",
-    },
-    {
-      name: "大阪都ペストコントロール協会",
-      description: "業者紹介・相談",
-      contact: "03-3254-0014",
-      hours: "平日 9:00〜17:00",
-    },
+    { name: "大阪府 健康医療部 生活衛生室 環境衛生課 生活衛生グループ", description: "衛生害虫に関すること（府の「ねずみ・衛生害虫」ページ担当）", contact: "06-6944-9910", hours: "", url: "https://www.pref.osaka.lg.jp/soshikikarasagasu/kankyoeisei/index.html" },
+    { name: "大阪府保健所（各地域）", description: "池田・茨木・守口・四條畷・藤井寺・富田林・和泉・岸和田・泉佐野保健所（所管区域外の市は市の保健所。例：吹田市域は吹田市保健所）", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.pref.osaka.lg.jp/o100010/chikikansen/hokensyo/syozaichi.html" },
+    { name: "一般社団法人大阪府ペストコントロール協会 害虫相談窓口", description: "衛生害虫、不快害虫、建築物の害虫、その他住環境の有害生物、殺菌消毒などの相談（お電話のみ）", contact: "06-6942-1891", hours: "土日祝日除く平日9：00～17：00（お盆期間8月7日～8月14日・年末年始12月29日～1月4日は受付休止）", url: "http://www.osakapco.com/pcosight/soudan/page01.html" },
   ];
 
   return (
@@ -181,7 +121,7 @@ export default function TokyoPage() {
             大阪の害虫駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            大阪の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
+            大阪の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -1147,8 +1087,8 @@ export default function TokyoPage() {
               <thead>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">大阪の相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金の目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国の目安</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
@@ -1169,10 +1109,9 @@ export default function TokyoPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">大阪の料金が高い理由</h3>
+              <h3 className="font-bold">料金が変わる主な要因</h3>
               <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
+                料金は、建物の構造や作業の高さ、被害の範囲、施工の回数、清掃・消毒の有無によって変わります。表の金額は目安のため、複数の業者から見積もりを取り、内訳を比較してご確認ください。
               </p>
             </div>
           </div>
@@ -1210,36 +1149,30 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 大阪エリアの害虫駆除業者エリア */}
+      {/* 大阪の地域区分 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪エリアの害虫駆除業者エリア</h2>
+          <h2 className="heading-primary text-center">大阪の地域区分</h2>
+          <p className="text-gray-700 mb-6">大阪府の地域区分は次のとおりです。業者の対応エリアは業者ごとに異なるため、依頼前に住所が対応範囲に含まれるか各社にご確認ください。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-black">{area.name}</h3>
                   <p className="text-gray-700 text-sm">{area.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {area.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-success text-xl">✓</span>
-                        <span className="text-sm text-gray-900">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">大阪府公式サイト</a>))}（2026年10月17日確認）</p>
         </div>
       </section>
 
-      {/* 大阪都の相談窓口 */}
+      {/* 大阪の相談窓口 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪都の害虫相談窓口</h2>
+          <h2 className="heading-primary text-center">大阪の害虫相談窓口</h2>
+          <p className="text-gray-700 mb-6">ネズミ・衛生害虫などの相談は、次の公的な窓口でも受け付けています。連絡先・受付時間は変更されることがあるため、ご利用前に公式サイトにて最新情報をご確認ください。</p>
           <div className="space-y-4">
             {consultations.map((org, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1250,15 +1183,22 @@ export default function TokyoPage() {
                       <h3 className="card-title text-lg text-black">{org.name}</h3>
                       <p className="text-gray-700 text-sm mb-2">{org.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-xs text-gray-700">電話番号:</span>
-                          <p className="font-semibold text-black">{org.contact}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-700">受付時間:</span>
-                          <p className="font-semibold text-sm text-black">{org.hours}</p>
-                        </div>
+                        {org.contact && (
+                          <div>
+                            <span className="text-xs text-gray-700">連絡先:</span>
+                            <p className="font-semibold text-black">{org.contact}</p>
+                          </div>
+                        )}
+                        {org.hours && (
+                          <div>
+                            <span className="text-xs text-gray-700">受付時間:</span>
+                            <p className="font-semibold text-sm text-black">{org.hours}</p>
+                          </div>
+                        )}
                       </div>
+                      {org.url && (
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1268,24 +1208,19 @@ export default function TokyoPage() {
         </div>
       </section>
 
-      {/* 大阪で多い害虫（上位5種） */}
+      {/* 主な害虫別の駆除情報 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪で多い害虫（上位5種）</h2>
+          <h2 className="heading-primary text-center">主な害虫別の駆除情報</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
                     <div className="text-5xl">{pest.icon}</div>
                     <div className="flex-1">
                       <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
                       <p className="text-gray-700 mb-2">{pest.description}</p>
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-gray-700">{pest.areas}</span>
-                      </div>
                       <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
                         {pest.name}駆除について詳しく →
                       </Link>

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: "京都の害虫駆除業者比較 | 料金相場・口コミ・おすすめ8社",
   description: "京都の害虫駆除業者8社を、料金・サービス・口コミの観点から比較しています。見積もりは無料です。",
   openGraph: {
-    title: "大阪の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "大阪の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "京都の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
+    description: "京都の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/area/kyoto",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -18,46 +18,11 @@ export const metadata: Metadata = {
 
 export default function KyotoPage() {
   const topPests = [
-    {
-      rank: 1,
-      name: "ゴキブリ",
-      icon: "🪳",
-      description: "繁華街や飲食店が多い大阪では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
-      areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/pest/cockroach/kyoto",
-    },
-    {
-      rank: 2,
-      name: "ネズミ",
-      icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
-      areas: "千代田区、中央区、台東区などの都心部",
-      link: "/nezumi",
-    },
-    {
-      rank: 3,
-      name: "シロアリ",
-      icon: "🐜",
-      description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
-      areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/pest/termite/kyoto",
-    },
-    {
-      rank: 4,
-      name: "ハチ",
-      icon: "🐝",
-      description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
-      areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
-    },
-    {
-      rank: 5,
-      name: "コウモリ",
-      icon: "🦇",
-      description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
-      areas: "世田谷区、杉並区、中野区などの住宅街",
-      link: "/koumori",
-    },
+    { rank: 1, name: "ゴキブリ", icon: "🪳", description: "ゴキブリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/cockroach/kyoto" },
+    { rank: 2, name: "ネズミ", icon: "🐭", description: "ネズミの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/nezumi" },
+    { rank: 3, name: "シロアリ", icon: "🐜", description: "シロアリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/termite/kyoto" },
+    { rank: 4, name: "ハチ", icon: "🐝", description: "ハチの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/hachi" },
+    { rank: 5, name: "コウモリ", icon: "🦇", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
   const priceComparison = [
@@ -65,31 +30,31 @@ export default function KyotoPage() {
       pest: "シロアリ駆除",
       tokyo: "12,000〜18,000円/坪",
       national: "10,000〜15,000円/坪",
-      note: "都心部はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ハチ駆除",
       tokyo: "15,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "高所作業が多く料金高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ゴキブリ駆除",
       tokyo: "20,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "飲食店の需要が多く料金はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ネズミ駆除",
       tokyo: "100,000〜180,000円",
       national: "80,000〜150,000円",
-      note: "複雑な建物構造で高額",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "コウモリ駆除",
       tokyo: "120,000〜350,000円",
       national: "100,000〜300,000円",
-      note: "都心部は作業の難易度が高い",
+      note: "建物の構造・被害の範囲により変動",
     },
   ];
 
@@ -117,42 +82,16 @@ export default function KyotoPage() {
   ];
 
   const areas = [
-    {
-      name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応しています。飲食店・オフィスビルでの駆除実績が豊富です。",
-      features: ["即日対応可能", "夜間作業対応", "多言語対応"],
-    },
-    {
-      name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域に対応しています。戸建て住宅の駆除を得意としています。",
-      features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
-    },
-    {
-      name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島に対応する業者もあります。事前の予約をおすすめします。",
-      features: ["出張対応", "離島料金設定", "長期保証"],
-    },
+    { name: "丹後地域（丹後広域振興局）", description: "宮津市・京丹後市・伊根町・与謝野町", url: "https://www.pref.kyoto.jp/tango/index.html" },
+    { name: "中丹地域（中丹広域振興局）", description: "福知山市・舞鶴市・綾部市", url: "https://www.pref.kyoto.jp/hokensyo/index.html" },
+    { name: "南丹地域（南丹広域振興局）", description: "亀岡市・南丹市・京丹波町", url: "https://www.pref.kyoto.jp/hokensyo/index.html" },
+    { name: "山城地域（山城広域振興局）", description: "宇治市・城陽市・京田辺市・木津川市 など", url: "https://www.pref.kyoto.jp/hokensyo/index.html" },
+    { name: "京都市", description: "京都市（京都市保健所は京都市が設置）", url: "https://www.pref.kyoto.jp/hokensyo/index.html" },
   ];
 
   const consultations = [
-    {
-      name: "大阪都福祉保健局",
-      description: "害虫相談窓口",
-      contact: "03-5320-4391",
-      hours: "平日 9:00〜17:00",
-    },
-    {
-      name: "各区保健所",
-      description: "地域ごとの相談・指導",
-      contact: "各区役所のホームページを参照",
-      hours: "平日 8:30〜17:00（区により異なる）",
-    },
-    {
-      name: "大阪都ペストコントロール協会",
-      description: "業者紹介・相談",
-      contact: "03-3254-0014",
-      hours: "平日 9:00〜17:00",
-    },
+    { name: "京都府の保健所（各地域）", description: "乙訓・山城北（綴喜分室）・山城南・南丹・中丹西・中丹東・丹後保健所。京都市内は京都市保健所", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.pref.kyoto.jp/hokensyo/index.html" },
+    { name: "京都府ペストコントロール協会", description: "害虫・害獣のお困りごとの相談（各協会の害虫相談所で電話などによる相談受付を無料で実施と記載）", contact: "0774-46-9873（フリーダイヤル 0120-064-074）", hours: "", url: "https://www.kyoto-pco.com/" },
   ];
 
   return (
@@ -160,14 +99,14 @@ export default function KyotoPage() {
 {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
-        { label: "大阪" }
+        { label: "京都" }
       ]} />
 
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
           src="/images/hero-pest-control.jpg"
-          alt="大阪の害虫駆除サービス"
+          alt="京都の害虫駆除サービス"
           fill
           className="object-contain"
           priority
@@ -178,10 +117,10 @@ export default function KyotoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            大阪の害虫駆除の基礎知識と業者比較
+            京都の害虫駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            大阪の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
+            京都の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -189,7 +128,7 @@ export default function KyotoPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">大阪の害虫駆除業者の比較</h2>
+          <h2 className="heading-primary text-center mb-8">京都の害虫駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -324,14 +263,14 @@ export default function KyotoPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">大阪の害虫駆除業者の詳細</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">京都の害虫駆除業者の詳細</h2>
 
           {/* 1. 害獣駆除のROY */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg">👑 1</span>
-                <h3 className="text-2xl font-bold text-black">害獣駆除のROY（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣駆除のROY（京都）</h3>
               </div>
               <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -393,7 +332,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣駆除のROYの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣駆除のROY+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣駆除のROY+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -412,7 +351,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold text-black">害獣BUZZ（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣BUZZ（京都）</h3>
               </div>
               <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -474,7 +413,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣BUZZの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣BUZZ+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣BUZZ+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -493,7 +432,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（京都）</h3>
               </div>
               <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -503,7 +442,7 @@ export default function KyotoPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業28年の業者</li>
                 <li>日本ペストコントロール協会加盟</li>
-                <li>大阪エリアの害虫駆除に対応する専門業者</li>
+                <li>京都エリアの害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
@@ -555,7 +494,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆サンキョークリーンサービスの口コミ</h4>
-                <a href="https://www.google.com/search?q=サンキョークリーンサービス+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=サンキョークリーンサービス+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -574,7 +513,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">4</span>
-                <h3 className="text-2xl font-bold text-black">ハウスプロテクト（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">ハウスプロテクト（京都）</h3>
               </div>
               <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -636,7 +575,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ハウスプロテクトの口コミ</h4>
-                <a href="https://www.google.com/search?q=ハウスプロテクト+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ハウスプロテクト+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -655,7 +594,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">5</span>
-                <h3 className="text-2xl font-bold text-black">害獣プロテック（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（京都）</h3>
               </div>
               <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -717,7 +656,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣プロテック+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣プロテック+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -736,7 +675,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">ダスキン（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">ダスキン（京都）</h3>
               </div>
               <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -798,7 +737,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ダスキンの口コミ</h4>
-                <a href="https://www.google.com/search?q=ダスキン+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ダスキン+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -817,7 +756,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">7</span>
-                <h3 className="text-2xl font-bold text-black">害虫駆除110番（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（京都）</h3>
               </div>
               <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -879,7 +818,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫駆除110番+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害虫駆除110番+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -898,7 +837,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">8</span>
-                <h3 className="text-2xl font-bold text-black">EMEAO!（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">EMEAO!（京都）</h3>
               </div>
               <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -960,7 +899,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆EMEAO!の口コミ</h4>
-                <a href="https://www.google.com/search?q=EMEAO!+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=EMEAO!+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -979,7 +918,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">9</span>
-                <h3 className="text-2xl font-bold text-black">駆除ザウルス（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">駆除ザウルス（京都）</h3>
               </div>
               <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -989,7 +928,7 @@ export default function KyotoPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業20年、累計相談3万件以上の実績</li>
                 <li>日本ペストコントロール協会加盟</li>
-                <li>大阪エリアの害虫駆除に対応する専門業者</li>
+                <li>京都エリアの害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
@@ -1041,7 +980,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
-                <a href="https://www.google.com/search?q=駆除ザウルス+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=駆除ザウルス+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1060,7 +999,7 @@ export default function KyotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">10</span>
-                <h3 className="text-2xl font-bold text-black">ラッター（大阪）</h3>
+                <h3 className="text-2xl font-bold text-black">ラッター（京都）</h3>
               </div>
               <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -1122,7 +1061,7 @@ export default function KyotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ラッターの口コミ</h4>
-                <a href="https://www.google.com/search?q=ラッター+大阪+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ラッター+京都+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1138,17 +1077,17 @@ export default function KyotoPage() {
 
           </section>
 
-      {/* 大阪の害虫駆除料金相場 */}
+      {/* 京都の害虫駆除料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪の害虫駆除料金相場</h2>
+          <h2 className="heading-primary text-center">京都の害虫駆除料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">大阪の相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金の目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国の目安</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
@@ -1169,20 +1108,19 @@ export default function KyotoPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">大阪の料金が高い理由</h3>
+              <h3 className="font-bold">料金が変わる主な要因</h3>
               <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
+                料金は、建物の構造や作業の高さ、被害の範囲、施工の回数、清掃・消毒の有無によって変わります。表の金額は目安のため、複数の業者から見積もりを取り、内訳を比較してご確認ください。
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 大阪の害虫カレンダー */}
+      {/* 京都の害虫カレンダー */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪の害虫カレンダー</h2>
+          <h2 className="heading-primary text-center">京都の害虫カレンダー</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1210,36 +1148,30 @@ export default function KyotoPage() {
         </div>
       </section>
 
-      {/* 大阪エリアの害虫駆除業者エリア */}
+      {/* 京都の地域区分 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪エリアの害虫駆除業者エリア</h2>
+          <h2 className="heading-primary text-center">京都の地域区分</h2>
+          <p className="text-gray-700 mb-6">京都府の地域区分は次のとおりです。業者の対応エリアは業者ごとに異なるため、依頼前に住所が対応範囲に含まれるか各社にご確認ください。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-black">{area.name}</h3>
                   <p className="text-gray-700 text-sm">{area.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {area.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-success text-xl">✓</span>
-                        <span className="text-sm text-gray-900">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">京都府公式サイト</a>))}（2026年10月17日確認）</p>
         </div>
       </section>
 
-      {/* 大阪都の相談窓口 */}
+      {/* 京都の相談窓口 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪都の害虫相談窓口</h2>
+          <h2 className="heading-primary text-center">京都の害虫相談窓口</h2>
+          <p className="text-gray-700 mb-6">ネズミ・衛生害虫などの相談は、次の公的な窓口でも受け付けています。連絡先・受付時間は変更されることがあるため、ご利用前に公式サイトにて最新情報をご確認ください。</p>
           <div className="space-y-4">
             {consultations.map((org, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1250,15 +1182,22 @@ export default function KyotoPage() {
                       <h3 className="card-title text-lg text-black">{org.name}</h3>
                       <p className="text-gray-700 text-sm mb-2">{org.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-xs text-gray-700">電話番号:</span>
-                          <p className="font-semibold text-black">{org.contact}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-700">受付時間:</span>
-                          <p className="font-semibold text-sm text-black">{org.hours}</p>
-                        </div>
+                        {org.contact && (
+                          <div>
+                            <span className="text-xs text-gray-700">連絡先:</span>
+                            <p className="font-semibold text-black">{org.contact}</p>
+                          </div>
+                        )}
+                        {org.hours && (
+                          <div>
+                            <span className="text-xs text-gray-700">受付時間:</span>
+                            <p className="font-semibold text-sm text-black">{org.hours}</p>
+                          </div>
+                        )}
                       </div>
+                      {org.url && (
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1268,24 +1207,19 @@ export default function KyotoPage() {
         </div>
       </section>
 
-      {/* 大阪で多い害虫（上位5種） */}
+      {/* 主な害虫別の駆除情報 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">大阪で多い害虫（上位5種）</h2>
+          <h2 className="heading-primary text-center">主な害虫別の駆除情報</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
                     <div className="text-5xl">{pest.icon}</div>
                     <div className="flex-1">
                       <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
                       <p className="text-gray-700 mb-2">{pest.description}</p>
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-gray-700">{pest.areas}</span>
-                      </div>
                       <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
                         {pest.name}駆除について詳しく →
                       </Link>
@@ -1303,7 +1237,7 @@ export default function KyotoPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              大阪の害虫駆除のご相談について
+              京都の害虫駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">

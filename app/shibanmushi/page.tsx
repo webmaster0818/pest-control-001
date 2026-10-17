@@ -7,100 +7,16 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/shibanmushi" },
   title: "シバンムシ駆除業者比較 | 畳・木材食害の料金相場と対策",
-  description: "シバンムシ駆除業者10社を、料金・実績・対応速度の観点から比較しています。シバンムシ駆除料金相場（15,000円〜40,000円）、畳・木材の食害対策、発生源特定方法をご説明します。",
+  description: "シバンムシ駆除業者を比較しています。タバコシバンムシ・ジンサンシバンムシの特徴と食品の被害、シバンムシアリガタバチによる刺咬、発生源の特定と予防方法を、自治体の公開情報にもとづいてご説明します。",
   openGraph: {
-    title: "シバンムシ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "シバンムシ駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
+    title: "シバンムシ駆除業者比較 | 食品害虫の特徴と対策",
+    description: "シバンムシ駆除業者を比較しています。食品害虫としての特徴、シバンムシアリガタバチ、発生源の特定と予防方法をご説明します。",
     url: "https://gaichu-pro.com/shibanmushi",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function ShibanmushiPage() {
-  const beeTypes = [
-    {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
-    },
-    {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
-      color: "badge-warning",
-    },
-    {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
-      color: "badge-info",
-    },
-  ];
-
-  const emergencySteps = [
-    {
-      step: "1",
-      title: "すぐに現場から離れる",
-      description: "シバンムシが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
-    },
-    {
-      step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
-    },
-    {
-      step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
-    },
-  ];
-
-  const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
-  ];
-
-  const seasonCalendar = [
-    {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
-    },
-    {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
-    },
-    {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、シバンムシの数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
-    },
-    {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのシバンムシが死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
-    },
-  ];
-
-  const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
-  ];
-
   const areas = [
     { name: "東京", href: "/area/tokyo" },
     { name: "大阪", href: "/area/osaka" },
@@ -141,10 +57,10 @@ export default function ShibanmushiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            シバンムシ駆除の基礎知識と業者比較
+            食品害虫シバンムシの特徴と対策
           </h2>
           <p className="text-lg text-gray-700">
-            シバンムシの特徴・被害状況から駆除方法まで、対処法をご説明します
+            タバコシバンムシ・ジンサンシバンムシの特徴、シバンムシアリガタバチ、発生源の特定と予防方法をご説明します
           </p>
         </div>
       </section>
@@ -259,7 +175,7 @@ export default function ShibanmushiPage() {
                   <td className="text-center">害虫全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">シバンムシ専門</td>
+                  <td className="text-center">ハチの巣駆除</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
@@ -361,7 +277,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ・シロアリ・ネズミなど害虫・害獣全般</td>
+                      <td>シロアリ・ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -420,7 +336,7 @@ export default function ShibanmushiPage() {
               <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の施工実績</li>
-                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
+                <li>最短即日対応も可能</li>
                 <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
@@ -447,7 +363,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ・シロアリ・ゴキブリなど害虫・害獣全般</td>
+                      <td>シロアリ・ゴキブリなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -507,7 +423,7 @@ export default function ShibanmushiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>人体・環境に優しい薬剤を使用</li>
                 <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
-                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
+                <li>創業約50年</li>
               </ul>
             </div>
 
@@ -533,7 +449,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ・ネズミなど不快害虫・害獣全般</td>
+                      <td>ネズミなど不快害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -593,7 +509,7 @@ export default function ShibanmushiPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場に到着</li>
                 <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり</li>
               </ul>
             </div>
 
@@ -619,7 +535,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ・ネズミなど害虫・害獣全般</td>
+                      <td>ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -705,7 +621,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ・シロアリなど害虫・害鳥獣全般</td>
+                      <td>シロアリなど害虫・害鳥獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -792,7 +708,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシなど害虫全般</td>
+                      <td>害虫全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -878,7 +794,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシなど害虫・害獣全般</td>
+                      <td>害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -964,7 +880,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシなど害虫全般</td>
+                      <td>害虫全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1050,7 +966,7 @@ export default function ShibanmushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シバンムシ専門</td>
+                      <td>ハチの巣駆除（公式表記。シバンムシへの対応可否は業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1098,197 +1014,158 @@ export default function ShibanmushiPage() {
         </div>
       </section>
 
-      {/* シバンムシの種類と危険性 */}
+      {/* シバンムシの特徴と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">シバンムシの種類と危険性</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="heading-primary text-center">シバンムシの特徴と被害</h2>
+<p className="text-gray-700 mb-6">シバンムシ類は小さな甲虫の仲間で、代表的な食品害虫です。日本で60種以上が記録されており、家庭内で見かけるのはタバコシバンムシとジンサンシバンムシが代表的です。食品を加害するのは幼虫の時期だけで、幼虫は食べ物の中で生育します（横浜市衛生研究所）。</p><div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">タバコシバンムシ</h3>
+<p className="text-gray-700 mt-2">成虫の体長は1.7〜3.1mmで、赤褐色の長楕円形です。触角はのこぎり状です。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">加害する食品：穀類の加工食品、穀粉、乾燥果実、菓子類、香辛料など</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">タバコの重要害虫としても知られています</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">主として幼虫で越冬します</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">日本では本州以南に広く分布します（横浜市衛生研究所）</span></li>
+</ul>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">ジンサンシバンムシ</h3>
+<p className="text-gray-700 mt-2">成虫の体長は1.7〜3.5mmで、赤褐色または茶褐色です。触角の先端3節が特に太く長いのが特徴です。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">加害する食品：穀類、穀粉、乾燥果実、菓子類など</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">乾燥朝鮮人参の害虫として知られています（横浜市衛生研究所）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">かじる力が強く、食品の包装材に孔を開けて侵入できます（さいたま市）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">シバンムシ類は乾燥した植物質を好み、乾燥食品のほか畳を食害することもあります（板橋区）</span></li>
+</ul>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">シバンムシアリガタバチ</h3>
+<p className="text-gray-700 mt-2">アメ色でアリに似ていますが、ハチの仲間です。シバンムシの幼虫に寄生して増え、メスは人を刺すことがあります。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">体長：1.5〜3mm（板橋区）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">発生時期：4月から9月（板橋区）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">風通しの良い乾いた部屋の畳などによく発生するとされています（大阪府）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">シバンムシ自体は人を刺しません（板橋区）</span></li>
+</ul>
+</div></div>
+</div><div className="alert alert-info mt-8"><span>発生のサインとして、食べ物の周辺に見られる細かなくず、成虫が羽化した食品に開いた無数の孔、台所の棚の上や窓際を歩く褐色の小さな虫などが挙げられています（横浜市衛生研究所）。</span></div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）、<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）、<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004042.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシアリガタバチ」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* 緊急対処法 */}
+      {/* シバンムシアリガタバチに刺された場合 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center text-error">
-            シバンムシに刺された場合の対処法
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencySteps.map((step) => (
-              <div key={step.step} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
-                  <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-gray-700">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="alert alert-error mt-8 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
-            </div>
-          </div>
+          <h2 className="heading-primary text-center text-error">シバンムシアリガタバチに刺された場合</h2>
+<div className="card bg-white shadow-xl"><div className="card-body"><p className="text-gray-700">シバンムシ自体は人を刺しませんが、シバンムシの幼虫に寄生するシバンムシアリガタバチのメスは人を刺すことがあります（板橋区）。当サイトでは、刺された場合の手当てについて公的機関の具体的な案内を確認できていないため、手順の掲載を控えています。かゆみや腫れが続く場合は、皮膚科等の医療機関にご相談ください。シバンムシアリガタバチを減らすには、宿主であるシバンムシ類の駆除が大切とされています（大阪府）。</p></div></div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004042.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシアリガタバチ」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* シバンムシの巣を見つけたら */}
+      {/* シバンムシの発生を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">シバンムシの巣を見つけたら</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card bg-error text-error-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-success text-success-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">✅ すべきこと</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <h2 className="heading-primary text-center">シバンムシの発生を見つけたら</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div className="card bg-error text-error-content shadow-xl"><div className="card-body">
+<h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+<ul className="space-y-3 mt-4">
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>虫が発生した食品をそのまま保管する（食べられた乾燥食品は処分します）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>購入時の袋や箱のまま保管する（未開封の食品でもわずかな隙間があれば産卵され、ビニール袋や紙の包装材は容易に食い破られます）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>成虫やシバンムシアリガタバチだけを駆除して終える（宿主であるシバンムシ類の駆除が大切です）</span></li>
+</ul>
+</div></div>
+<div className="card bg-success text-success-content shadow-xl"><div className="card-body">
+<h3 className="card-title text-2xl">✅ すべきこと</h3>
+<ul className="space-y-3 mt-4">
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>発生源の食品を探す（幼虫は食品の中で育ち、表面に細かなくずを出すため、それが目印になります）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>乾燥食品は、しっかり密閉できる容器に入れて保管する</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>掃除機をかけて換気し、保管場所にたまった食品かすを定期的に清掃する</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>畳を天日干しや高温処理する</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>種類が分からない場合は、虫を持参して保健所等に相談する（横浜市は近くの福祉保健センターへの相談を案内しています）</span></li>
+</ul>
+</div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）、<a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">シバンムシ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>巣のサイズ・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
-            </span>
-          </div>
+<div className="overflow-x-auto">
+<table className="table w-full bg-white text-black shadow-xl">
+<thead><tr><th>発生状況・作業内容</th><th>料金相場</th><th>備考</th></tr></thead>
+<tbody>
+<tr><td className="font-bold">発生範囲が狭い場合</td><td className="text-primary font-semibold">8,000〜15,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">発生範囲が中程度の場合</td><td className="text-primary font-semibold">15,000〜30,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">発生範囲が広い場合</td><td className="text-primary font-semibold">30,000〜50,000円+</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">追加作業がある場合</td><td className="text-primary font-semibold">+10,000〜20,000円</td><td className="text-sm text-gray-700">追加料金（内容は業者により異なります）</td></tr>
+</tbody>
+</table>
+</div>
+<div className="alert alert-info mt-8">
+<span>表の金額は当サイトが掲載している目安で、公的な基準ではありません。シバンムシ駆除の費用は発生範囲・被害状況・施工回数で変わるため、複数業者の無料見積もりで比較することをおすすめします。</span>
+</div>
         </div>
       </section>
-
-      {/* 季節別対策カレンダー */}
+      {/* 発生時期 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">季節別シバンムシ対策カレンダー</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season) => (
-              <div key={season.season} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
-                  </div>
-                  <p className="font-bold text-primary mb-2">{season.activity}</p>
-                  <p className="text-gray-700">{season.advice}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="heading-primary text-center">シバンムシの発生時期</h2>
+<p className="text-gray-700 mb-6">自治体の資料にもとづく目安です。室内の温度などの環境により異なります。</p><div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">成虫の発生（4月〜10月頃）</h3>
+<p className="text-gray-700 mt-2">ジンサンシバンムシの成虫は4月から10月頃に発生し、食品の隙間に卵を産みつけます（さいたま市）。</p>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">冬（暖房のある室内）</h3>
+<p className="text-gray-700 mt-2">通常は幼虫の状態で越冬しますが、冬でも暖房のあるところでは年間を通して発育します（さいたま市）。</p>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">シバンムシアリガタバチ（4月〜9月）</h3>
+<p className="text-gray-700 mt-2">板橋区は、シバンムシアリガタバチの発生時期を4月から9月としています。</p>
+</div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）、<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004042.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシアリガタバチ」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* 業者選びのポイント */}
+      {/* 業者に依頼する前に確認すること */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">発生源の特定</h3><p className="text-gray-700">発生源が食品の場合、自治体は食品の処分と密閉容器での保管を基本の対策として案内しています（板橋区・横浜市衛生研究所）。畳などにいる場合について、大阪府は殺虫剤の残留処理や高周波処理を挙げています。業者には、発生源が食品か、畳・建材かの調査を依頼してください。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">保健所の相談窓口</h3><p className="text-gray-700">さいたま市保健所は、住居内でお困りの虫を窓口に持参すれば可能な範囲で同定し、対策を助言するとしています（事前に電話で相談し、虫体を破損しないよう密閉容器や袋に入れて持参）。一方で、保健所では防除作業や駆除は行っていないと明記しています。窓口の有無や連絡先は、お住まいの自治体の公式サイトでご確認ください。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">施工方法の説明</h3><p className="text-gray-700">台所や食品の保管場所で薬剤を使う場合は、処理する範囲と食品・食器への配慮について事前に説明を受けてください。畳の高周波処理など薬剤以外の方法を含め、施工内容を確認することをおすすめします。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">見積もりの内訳</h3><p className="text-gray-700">調査費、施工費、施工回数、追加費用の条件が分けて記載されているかを確認します。シバンムシアリガタバチの発生がある場合は、宿主のシバンムシ類の対策が見積もりに含まれているかもご確認ください。</p></div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）、<a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）</p>
+        </div>
+      </section>
+      {/* 業者選びのポイント */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">業者選びのポイント</h2>
-          <div className="card bg-white shadow-xl">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
-              <div className="space-y-3">
-                {checklist.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <input type="checkbox" className="checkbox checkbox-primary mt-1" />
-                    <span className="text-lg">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
+<div className="space-y-3">
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">発生源（食品・畳・建材）を調査したうえで見積もりを出すか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">食品や食器のある場所での施工方法と注意点の説明があるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">畳の処理方法（高周波処理等）の内容と費用が示されるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">見積もりの内訳（調査費・施工費・追加費用）が書面で示されるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">再発時の保証の範囲と期間が明記されているか</span></div>
+</div>
+</div></div>
+        </div>
+      </section>
+      {/* 出典 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">出典</h2>
+<ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+<li><a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004042.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシアリガタバチ」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）</li>
+</ul>
+<p className="text-sm text-gray-600 mt-4">当サイトでは、生態・被害・相談窓口について、官公庁・自治体の公開情報で確認できた内容のみを掲載しています。ご利用前に、各機関の公式サイトにて最新情報をご確認ください。</p>
         </div>
       </section>
 
@@ -1305,7 +1182,7 @@ export default function ShibanmushiPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でシバンムシ駆除</h3>
-                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の害虫駆除業者の情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

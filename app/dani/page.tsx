@@ -8,7 +8,7 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/dani" },
   title: "ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策",
-  description: "ダニ、マダニ、ツツガムシの駆除料金相場と業者の選び方、緊急時の対処法、ダニの予防対策をご説明します。",
+  description: "家の中のダニ（チリダニ・ヒョウヒダニ類、ツメダニ、イエダニ）と野外のマダニ・ツツガムシについて、アレルギーや刺咬の被害、刺された場合の対応、予防対策、業者に依頼する前に確認することを、自治体の公開情報にもとづいてご説明します。",
   openGraph: {
     title: "ダニ駆除業者比較 | 料金相場・口コミ・主要業者",
     description: "ダニ駆除業者を、料金・サービス・口コミの観点から比較しています。",
@@ -18,90 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function DaniPage() {
-  const beeTypes = [
-    {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
-    },
-    {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
-      color: "badge-warning",
-    },
-    {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
-      color: "badge-info",
-    },
-  ];
-
-  const emergencySteps = [
-    {
-      step: "1",
-      title: "すぐに現場から離れる",
-      description: "ダニが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
-    },
-    {
-      step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
-    },
-    {
-      step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
-    },
-  ];
-
-  const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
-  ];
-
-  const seasonCalendar = [
-    {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
-    },
-    {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
-    },
-    {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、ダニの数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
-    },
-    {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのダニが死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
-    },
-  ];
-
-  const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
-  ];
-
   const areas = [
     { name: "東京", href: "/area/tokyo" },
     { name: "大阪", href: "/area/osaka" },
@@ -142,10 +58,10 @@ export default function DaniPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策 - 害虫駆除の基礎知識
+            家の中のダニと野外のダニの特徴と対策
           </h2>
           <p className="text-lg text-gray-700">
-            ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
+            ダニの種類ごとの被害と予防対策、業者に依頼する前に確認することをご説明します
           </p>
         </div>
       </section>
@@ -260,7 +176,7 @@ export default function DaniPage() {
                   <td className="text-center">害虫全般</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">ダニ専門</td>
+                  <td className="text-center">害虫・害獣・害鳥</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
@@ -362,7 +278,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ・シロアリ・ネズミなど害虫・害獣全般</td>
+                      <td>シロアリ・ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -421,7 +337,7 @@ export default function DaniPage() {
               <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>累計60万件以上の施工実績</li>
-                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
+                <li>最短即日対応も可能</li>
                 <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
               </ul>
             </div>
@@ -448,7 +364,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ・シロアリ・ゴキブリなど害虫・害獣全般</td>
+                      <td>シロアリ・ゴキブリなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -595,7 +511,7 @@ export default function DaniPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>最短30分で現場に到着</li>
                 <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
+                <li>大手ホームセンターや家電量販店との取引経歴あり</li>
               </ul>
             </div>
 
@@ -621,7 +537,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ・ネズミなど害虫・害獣全般</td>
+                      <td>ネズミなど害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -794,7 +710,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニなど害虫全般</td>
+                      <td>害虫全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -880,7 +796,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニなど害虫・害獣全般</td>
+                      <td>害虫・害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -966,7 +882,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニなど害虫全般</td>
+                      <td>害虫全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1016,7 +932,7 @@ export default function DaniPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg text-base">9</span>
-                <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除専門）</h3>
+                <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -1024,7 +940,7 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">Qujoliaの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
+                <li>公式サイトで「千葉・茨城の害虫駆除・防除・対策専門」と案内しています</li>
                 <li>24時間365日受付、最短で受付から10分で現地に到着</li>
                 <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
               </ul>
@@ -1052,7 +968,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ専門</td>
+                      <td>害虫・害獣・害鳥（公式サイトのサービス一覧にノミ・ダニ、トコジラミを掲載）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1100,197 +1016,174 @@ export default function DaniPage() {
         </div>
       </section>
 
-      {/* ダニの種類と危険性 */}
+      {/* ダニの種類と被害 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ダニの種類と危険性</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="heading-primary text-center">ダニの種類と被害</h2>
+<p className="text-gray-700 mb-6">屋内にいるダニは0.3mm程度と大変小さく、通常は肉眼では見えません。屋内性のダニは家のどこにでも存在しており、大半のダニは人に影響を与えることはないとされています。屋内にいるダニで人を刺すのは、イエダニとツメダニの2種類です（さいたま市）。</p><div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">チリダニ（ヒョウヒダニ類）</h3>
+<p className="text-gray-700 mt-2">家の中に普通にいるダニで、ヤケヒョウヒダニとコナヒョウヒダニが代表的な種類です。人を刺すことはありませんが、糞や虫体が吸入性・接触性のアレルギー疾患の原因物質となります。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">大きさ：約0.25〜0.5mm（さいたま市）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">畳やじゅうたん、布団などにいて、フケやカビ、食べかすなどを食べます</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">1年中生息し、温度と湿度の高い夏から秋にかけて多くなります</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">気管支ぜん息の原因の一つとされています（大阪府）</span></li>
+</ul>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">ツメダニ</h3>
+<p className="text-gray-700 mt-2">チリダニやコナダニ、小型昆虫を捕食するダニです。数が増えると偶発的に人を刺し、数日後にかゆみが出ることがあります。吸血はしません。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">大きさ：0.3〜1mm程度で、通常は肉眼で見えません</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">じゅうたんや畳にいます</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">布団や畳などに接した部分を刺されることが多いとされています</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">梅雨時期や秋口に増えます（さいたま市）</span></li>
+</ul>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">イエダニ</h3>
+<p className="text-gray-700 mt-2">ネズミや鳥に寄生する吸血性のダニです。宿主の動物が死んだり、大量発生したりすると、人からも吸血します。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">体長：1mm程度</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">腹や脇、太ももの内側などを刺されることが多いとされています</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">6〜9月に一番多くなります</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">通常はネズミの体表や巣に寄生しているため、ネズミがいなければイエダニもいないと考えてよいとされています（さいたま市）</span></li>
+</ul>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">マダニ・ツツガムシ（野外のダニ）</h3>
+<p className="text-gray-700 mt-2">マダニは山林や草むら、ヤブなどに生息し、近づいた動物や人に寄生して吸血します。ツツガムシは野外にいるダニで、つつが虫病を媒介します。</p>
+<ul className="space-y-2 mt-2">
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">マダニの体長：成ダニで吸血前3〜8mm、吸血後10〜20mm程度（東京都）</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">マダニが媒介する感染症には、日本紅斑熱やライム病、重症熱性血小板減少症候群（SFTS）などがあります</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">ツツガムシの幼虫は野ねずみなどに寄生し、野山、河川敷などにいます</span></li>
+<li className="flex items-start gap-2"><span className="text-primary">•</span><span className="text-sm">予防の基本は、野外で肌の露出を少なくすることです（東京都）</span></li>
+</ul>
+</div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）、<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/madani" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「マダニ」</a>（2026年10月17日確認）、<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/tsutsugamushi" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「ツツガムシ」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* 緊急対処法 */}
+      {/* 刺された・咬まれた場合の対処法 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center text-error">
-            ダニに刺された場合の対処法
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencySteps.map((step) => (
-              <div key={step.step} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
-                  <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-gray-700">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="alert alert-error mt-8 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
-            </div>
-          </div>
+          <h2 className="heading-primary text-center text-error">ダニに刺された・咬まれた場合の対処法</h2>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body"><div className="badge badge-error badge-lg mb-4">ステップ 1</div><h3 className="card-title text-xl">屋内で刺された場合は医療機関に相談する</h3><p className="text-gray-700">皮膚のかゆみや腫れは、ダニ以外の様々な疾患が原因のこともあります。専門医に相談してから薬剤等の使用を検討するとよいとされています（さいたま市）。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><div className="badge badge-error badge-lg mb-4">ステップ 2</div><h3 className="card-title text-xl">吸血中のマダニは無理に引き抜かない</h3><p className="text-gray-700">無理に引き抜こうとするとマダニの一部が皮膚内に残り、炎症を起こすことがあります。できるだけ医療機関（皮膚科）で処置を受けてください（東京都）。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><div className="badge badge-error badge-lg mb-4">ステップ 3</div><h3 className="card-title text-xl">野外活動後の発熱等は医師の診察を受ける</h3><p className="text-gray-700">マダニに吸血されて1週間ぐらい後に刺し口周辺の紅斑や発熱などがあった場合や、野山などに行った後でつつが虫病に思い当たる症状がある場合は、医師の診察を受けてください（東京都）。</p></div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/madani" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「マダニ」</a>（2026年10月17日確認）、<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/tsutsugamushi" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「ツツガムシ」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* ダニの巣を見つけたら */}
+      {/* ダニの発生を見つけたら */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ダニの巣を見つけたら</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card bg-error text-error-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>自分で駆除しようとする</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>巣に近づく、刺激する</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
-                    <span>水をかける、棒でつつく</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-success text-success-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">✅ すべきこと</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>巣から最低10m以上離れる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>すぐに専門業者に連絡</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>家族や近隣に注意喚起</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <h2 className="heading-primary text-center">ダニの発生を見つけたら</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div className="card bg-error text-error-content shadow-xl"><div className="card-body">
+<h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+<ul className="space-y-3 mt-4">
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>布団を干してたたくだけで済ませる（干してたたくだけでは、ダニは取れないとされています）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>屋内のダニを完全になくそうとする（屋内のダニをゼロにすることは現実的ではなく、神経質になりすぎないことも必要とされています）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>原因を確かめずに薬剤を使う（ダニ以外の疾患の可能性もあるため、専門医への相談が勧められています）</span></li>
+</ul>
+</div></div>
+<div className="card bg-success text-success-content shadow-xl"><div className="card-body">
+<h3 className="card-title text-2xl">✅ すべきこと</h3>
+<ul className="space-y-3 mt-4">
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>シーツを外して寝具に掃除機をかける（週に1回を目標に、布団1枚に約1分30秒かけることが勧められています）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>風通しをよくして湿度を下げる（ヒョウヒダニ類の対策として湿度60％以下が挙げられています）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>開封した粉製品は冷蔵庫で保管する（コナダニの対策）</span></li>
+<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>イエダニが疑われる場合はネズミ対策を行う</span></li>
+</ul>
+</div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">ダニ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>巣のサイズ・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
-            </span>
-          </div>
+<div className="overflow-x-auto">
+<table className="table w-full bg-white text-black shadow-xl">
+<thead><tr><th>発生状況・作業内容</th><th>料金相場</th><th>備考</th></tr></thead>
+<tbody>
+<tr><td className="font-bold">発生範囲が狭い場合</td><td className="text-primary font-semibold">8,000〜15,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">発生範囲が中程度の場合</td><td className="text-primary font-semibold">15,000〜30,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">発生範囲が広い場合</td><td className="text-primary font-semibold">30,000〜50,000円+</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
+<tr><td className="font-bold">追加作業がある場合</td><td className="text-primary font-semibold">+10,000〜20,000円</td><td className="text-sm text-gray-700">追加料金（内容は業者により異なります）</td></tr>
+</tbody>
+</table>
+</div>
+<div className="alert alert-info mt-8">
+<span>表の金額は当サイトが掲載している目安で、公的な基準ではありません。ダニ駆除の費用は発生範囲・被害状況・施工回数で変わるため、複数業者の無料見積もりで比較することをおすすめします。</span>
+</div>
         </div>
       </section>
-
-      {/* 季節別対策カレンダー */}
+      {/* 発生時期 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ダニ予防対策</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season) => (
-              <div key={season.season} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
-                  </div>
-                  <p className="font-bold text-primary mb-2">{season.activity}</p>
-                  <p className="text-gray-700">{season.advice}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="heading-primary text-center">ダニの発生時期</h2>
+<p className="text-gray-700 mb-6">自治体の資料にもとづく目安です。室内の温度・湿度などの環境により異なります。</p><div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">チリダニ（ヒョウヒダニ類）</h3>
+<p className="text-gray-700 mt-2">ほぼ1年中見られ、温度と湿度の高い夏から秋にかけて多くなります（さいたま市）。</p>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">コナダニ・ツメダニ</h3>
+<p className="text-gray-700 mt-2">梅雨時期や秋口に増えます（さいたま市）。</p>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">イエダニ</h3>
+<p className="text-gray-700 mt-2">6〜9月に一番多くなります（さいたま市）。</p>
+</div></div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl">マダニ</h3>
+<p className="text-gray-700 mt-2">活動が盛んな春から秋にかけて、野外での吸血に注意が必要です（東京都）。</p>
+</div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）、<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/madani" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「マダニ」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-
-      {/* 業者選びのポイント */}
+      {/* 業者に依頼する前に確認すること */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">発生源の特定</h3><p className="text-gray-700">屋内で人を刺すダニはイエダニとツメダニの2種類とされています。イエダニの場合はネズミ対策が、ツメダニの場合はエサとなるチリダニやコナダニの対策が必要になります（さいたま市）。皮膚の症状はダニ以外の疾患が原因のこともあるため、医療機関での確認もあわせてご検討ください。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">保健所の相談窓口</h3><p className="text-gray-700">さいたま市保健所は、住居内でお困りの虫を窓口に持参すれば可能な範囲で同定し、対策を助言するとしています。一方で、保健所では防除作業や駆除は行っていないと明記しています。窓口の有無や連絡先は、お住まいの自治体の公式サイトでご確認ください。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">施工方法の説明</h3><p className="text-gray-700">ツメダニの被害が激しい場合について、大阪府は畳の高周波処理を挙げています。薬剤を使う場合は、成分と処理する範囲、寝具や畳への処理方法について事前に説明を受けてください。</p></div></div>
+<div className="card bg-white shadow-xl"><div className="card-body"><h3 className="card-title text-xl">見積もりの内訳</h3><p className="text-gray-700">調査費、施工費、施工回数、追加費用の条件が分けて記載されているかを確認します。イエダニの場合は、ネズミの駆除や侵入口の対策が別料金になるかどうかもご確認ください。</p></div></div>
+</div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
+        </div>
+      </section>
+      {/* 業者選びのポイント */}
+      <section className="py-16 px-4 bg-base-100">
+        <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">業者選びのポイント</h2>
-          <div className="card bg-white shadow-xl">
-            <div className="card-body">
-              <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
-              <div className="space-y-3">
-                {checklist.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <input type="checkbox" className="checkbox checkbox-primary mt-1" />
-                    <span className="text-lg">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+<div className="card bg-white shadow-xl"><div className="card-body">
+<h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
+<div className="space-y-3">
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">刺されの原因となるダニの種類（ツメダニ・イエダニ等）を調査したうえで見積もりを出すか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">イエダニの場合、ネズミ対策を含めた提案と費用が示されるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">薬剤や畳の処理方法（高周波処理等）の内容について説明があるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">見積もりの内訳（調査費・施工費・追加費用）が書面で示されるか</span></div>
+<div className="flex items-start gap-3"><input type="checkbox" className="checkbox checkbox-primary mt-1" /><span className="text-lg">再発時の保証の範囲と期間が明記されているか</span></div>
+</div>
+</div></div>
+        </div>
+      </section>
+      {/* 出典 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">出典</h2>
+<ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+<li><a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/madani" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「マダニ」</a>（2026年10月17日確認）</li>
+<li><a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/tsutsugamushi" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「ツツガムシ」</a>（2026年10月17日確認）</li>
+</ul>
+<p className="text-sm text-gray-600 mt-4">当サイトでは、生態・被害・相談窓口について、官公庁・自治体の公開情報で確認できた内容のみを掲載しています。ご利用前に、各機関の公式サイトにて最新情報をご確認ください。</p>
         </div>
       </section>
 
@@ -1307,7 +1200,7 @@ export default function DaniPage() {
               >
                 <div className="card-body items-center text-center">
                   <h3 className="card-title text-xl">{area.name}でダニ駆除</h3>
-                  <p className="text-gray-700 text-sm">即日対応可能な業者情報</p>
+                  <p className="text-gray-700 text-sm">地域の害虫駆除業者の情報</p>
                   <div className="card-actions mt-4">
                     <button className="btn btn-primary btn-sm">詳しく見る →</button>
                   </div>

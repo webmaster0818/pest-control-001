@@ -7,10 +7,10 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/tanuki" },
   title: "タヌキ駆除の基礎知識 | 駆除方法と再発防止",
-  description: "タヌキ駆除の料金相場、業者の選び方、駆除方法をご説明します。ドブタヌキ、クマタヌキ、ハツカタヌキの種類別の対策と再発防止策もご紹介します。",
+  description: "タヌキ駆除の料金相場と業者の比較に加え、タヌキの特徴、ため糞などの被害、鳥獣保護管理法上の扱い、業者に依頼する前に確認することを公的機関の資料をもとにご説明します。",
   openGraph: {
-    title: "タヌキ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "タヌキ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "タヌキ駆除業者比較 | 料金相場・特徴・法律上の扱い",
+    description: "タヌキ駆除業者を料金・保証・対応エリアの観点から比較し、タヌキの特徴や鳥獣保護管理法上の扱いもご説明します。",
     url: "https://gaichu-pro.com/tanuki",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -19,94 +19,117 @@ export const metadata: Metadata = {
 export default function TanukiPage() {
   const types = [
     {
-      name: "ドブタヌキ",
-      description: "日本最大のタヌキで、体長は20〜25cmです。下水道や側溝に生息し、湿った場所を好みます。",
-      habitat: "下水道、側溝、地下室",
-      features: ["体長: 20〜25cm", "色: 灰褐色", "性格: 獰猛"],
+      name: "外見・大きさ",
+      description: "成獣の大きさは尾まで含めて50〜70cm、体重は平均で4kg程度です。目の周辺を覆う黒い部分（アイマスク）と、背中から前肢にかけての黒いバンドが外見上の特徴で、ヒゲは黒く目立ちません。",
+      habitat: "在来種（イヌ科）",
+      features: ["全長：50〜70cm（尾を含む）", "体重：平均4kg程度", "識別点：目の周りの黒い部分と、肩から前肢にかけての黒いバンド"],
       color: "badge-error",
     },
     {
-      name: "クマタヌキ",
-      description: "都市部に多く、体長は15〜20cmです。運動能力が高く高所からも侵入するため、駆除が難しい種類です。",
-      habitat: "天井裏、壁の中、ビル",
-      features: ["体長: 15〜20cm", "色: 黒褐色", "性格: 警戒心強い"],
+      name: "生息環境・行動",
+      description: "活動は主に夜間ですが、昼間も活動します。夫婦単位で生活し、明確な生活エリアをもちます。休息場所には、神社仏閣や空き家など建築物の床下や、キツネ・アナグマが掘った巣穴（古巣）を利用します。",
+      habitat: "山間部から市街地まで",
+      features: ["活動：主に夜間（昼間も活動する）", "生活：夫婦単位で、明確な生活エリアをもつ", "休息場所：建築物の床下、ほかの動物の古巣など"],
       color: "badge-warning",
     },
     {
-      name: "ハツカタヌキ",
-      description: "最も小型のタヌキで、体長は6〜9cmです。倉庫や物置に多く、わずかな隙間からも侵入します。",
-      habitat: "倉庫、物置、農地",
-      features: ["体長: 6〜9cm", "色: 灰白色", "性格: 好奇心旺盛"],
+      name: "繁殖・子育て",
+      description: "繁殖は2月頃から始まり、5月から6月が出産のピークです。生まれた子は真っ黒なため、クマの子と間違えられることがあります。",
+      habitat: "出産のピーク：5〜6月",
+      features: ["繁殖期：2月頃から", "出産：5〜6月がピーク", "産仔数：1〜7頭（平均5頭）"],
       color: "badge-info",
     },
   ];
 
   const damages = [
     {
-      category: "健康被害",
-      icon: "🦠",
+      category: "農作物の被害",
+      icon: "🌽",
       examples: [
-        "サルモネラ菌などの病原菌を媒介",
-        "ダニやノミの発生源",
-        "糞尿による悪臭と衛生問題",
+        "被害現場が散らかり、作物をどこかに運んで食べるのが特徴です",
+        "噛み癖があり、地際の枝が折れたり、ツルが引っ張られたりします",
+        "アライグマやハクビシン、カラスの被害に隠れて表に出ないことが多いとされています",
       ],
     },
     {
-      category: "経済的被害",
-      icon: "💰",
+      category: "ため糞",
+      icon: "💩",
       examples: [
-        "食品・食材の汚染",
-        "電気配線をかじることによる火災リスク",
-        "建材・家具の破損",
+        "生活エリアの境界を示す「ため糞」を作ります",
+        "農地に作られることも多く、タヌキの被害として報告される場合があります",
+        "生活エリアの境界を主張するものなので、掃除してもすぐに作られます",
       ],
     },
     {
-      category: "精神的被害",
-      icon: "😰",
+      category: "建物の床下と衛生面",
+      icon: "🏠",
       examples: [
-        "夜間の物音による不眠",
-        "不衛生な環境によるストレス",
-        "再発への不安",
+        "神社仏閣や空き家など、建築物の床下を休息場所として利用します",
+        "タヌキなどからSFTS（重症熱性血小板減少症候群）ウイルスの抗体が見つかっています",
+        "糞尿の処理に使った衣類や機材は、寄生虫卵などが付着している可能性があるため洗浄・消毒します",
       ],
     },
   ];
 
   const difficulties = [
     {
-      title: "学習能力の高さ",
-      description: "一度罠にかかりそうになると、同じ罠を避けるようになります。特にクマタヌキは警戒心が強い種類です。",
+      title: "法律上の制約",
+      description: "タヌキは鳥獣保護管理法の対象となる野生動物で、同法施行規則の別表第二に狩猟鳥獣として掲げられています。鳥獣の捕獲等は原則として禁止されており、被害防止のために捕獲する場合は都道府県知事等の許可を、狩猟として捕獲する場合は狩猟免許の取得と狩猟者登録を受け、定められた区域・期間（北海道以外は原則11月15日〜翌年2月15日）・猟法を守る必要があります。",
     },
     {
-      title: "繁殖スピードの速さ",
-      description: "1匹のメスが年間6〜8回出産し、1回の出産で6〜10匹を産みます。数か月で数十匹に増えることがあります。",
+      title: "加害獣として気づかれにくい",
+      description: "タヌキは加害獣としての認識が低く、ほかの鳥獣による被害と誤認されることが多いとされています。加害している動物を特定せずに対策を行っても効果は得られないため、食べ方や足跡などの痕跡から判断する必要があります。",
     },
     {
-      title: "侵入口の多様性",
-      description: "2〜3cmの隙間があれば侵入できます。配管、換気口、壁の亀裂など、侵入経路は多岐にわたります。",
+      title: "ため糞の繰り返し",
+      description: "ため糞は生活エリアの境界を主張するもので、掃除してもすぐに作られるとされています。農地に作られることも多く、清掃を繰り返しても同じ場所に作られる場合があります。",
+    },
+    {
+      title: "掘る・破く行動",
+      description: "タヌキは登ることが得意ではない一方で、掘ることと破くことを優先するため、柵の裾やネットなど地上付近の対策が重要とされています。",
     },
   ];
 
   const methods = [
     {
-      name: "捕獲（罠）",
-      description: "粘着シートや捕獲器を使用する方法です。即効性はありますが、学習されやすい点に注意が必要です。",
-      effectiveness: "中",
-      pros: ["即効性がある", "確実に捕獲できる"],
-      cons: ["警戒されやすい", "継続的な設置が必要"],
+      name: "捕獲（許可捕獲・狩猟）",
+      description: "鳥獣保護管理法では、狩猟による場合を除き、鳥獣の捕獲等は原則として禁止されています。タヌキによる被害を防ぐために捕獲する場合は、都道府県知事等の許可を受けて行います。多くの都道府県では、捕獲許可の権限の一部を市町村長に移譲しています。",
+      tag: "許可・免許が必要",
+      pros: ["許可を受けたうえで、被害を起こしている個体に対処できる", "中型獣類の捕獲には小型の箱わなが使われる"],
+      cons: ["許可の申請と、許可された期間・区域・方法の遵守が必要", "狩猟として行う場合は免許・登録・猟期の制約がある"],
     },
     {
-      name: "忌避剤",
-      description: "タヌキが嫌がる成分で追い出す方法です。効果は一時的です。",
-      effectiveness: "低",
-      pros: ["簡単に使用できる", "人体への影響が少ない"],
-      cons: ["効果が一時的", "根本的な解決にならない"],
+      name: "侵入防止柵（物理柵・電気柵）",
+      description: "タヌキのように掘ることや破ることを優先する動物には、物理柵が対象とされています。柵の裾を掘られないように固定し、目合い5cm以下の資材で高さ1m以上を確保します。電気柵の場合、中型動物には電気さく線の間隔を10cm以下（種によっては5cm）にする必要があります。",
+      tag: "農地・家庭菜園向け",
+      pros: ["捕獲を伴わない対策である", "地上付近からの侵入を防ぐ対策として有効とされる"],
+      cons: ["裾の固定や補修など維持管理が必要", "電気柵は草の接触による漏電に注意が必要"],
     },
     {
-      name: "侵入口封鎖",
-      description: "タヌキの侵入経路をすべて塞ぐ方法です。最も重要な対策です。",
-      effectiveness: "高",
-      pros: ["再発防止に効果的", "長期的な解決"],
-      cons: ["専門知識が必要", "全ての侵入口の特定が困難"],
+      name: "餌場・潜み場所をなくす",
+      description: "収穫しない果樹や廃棄した野菜・果実は餌場になります。建物では床下の通風口や軒の破損部分が侵入口になりやすく、中に動物がいないことを確認したうえで、金属や板など丈夫な資材で塞ぎます。",
+      tag: "再発防止",
+      pros: ["持続的な被害軽減につながるとされる", "建物への侵入を防ぐことができる"],
+      cons: ["空き家など所有者以外が対処できない場所がある", "侵入口の特定に建物全体の点検が必要"],
+    },
+  ];
+
+  const beforeRequest = [
+    {
+      title: "動物の種類の確認",
+      description: "タヌキはイヌ科の動物で、地面につく足跡の指は4本です。一定の場所にまとまった「ため糞」があることや、作物が運ばれて散らばっていることも手掛かりになります。顔つきが似ているアライグマやハクビシンと見間違えられることもあるため、足跡が判別しにくい場合は、足跡トラップやセンサーカメラで確認する方法があります。",
+    },
+    {
+      title: "自治体の窓口への相談",
+      description: "捕獲許可の権限は都道府県知事にあり、多くの都道府県では権限の一部を市町村長に移譲しています。相談窓口や捕獲器の貸出の有無は自治体によって異なるため、業者に依頼する前に、お住まいの市区町村の鳥獣担当窓口にご確認ください。",
+    },
+    {
+      title: "捕獲許可の要否と申請者",
+      description: "捕獲を伴う駆除では、鳥獣保護管理法に基づく許可が必要になる場合があります。依頼者と業者のどちらが許可を申請するのか、許可の対象となる期間・区域・方法、捕獲したタヌキをどのように扱うのかを、契約前にご確認ください。",
+    },
+    {
+      title: "見積もりの内訳",
+      description: "調査、追い出し、侵入口の封鎖、清掃・消毒、捕獲、再訪問などの作業ごとに費用が示されているかをご確認ください。侵入口を塞ぐ前に、中に動物が残っていないことを確認する手順があるかも確認事項です。",
     },
   ];
 
@@ -118,11 +141,12 @@ export default function TanukiPage() {
   ];
 
   const checklist = [
-    "侵入口の調査を建物全体で行うか",
-    "保証期間は1年以上あるか",
-    "アフターフォロー体制（定期点検）はあるか",
-    "清掃・消毒作業も含まれているか",
-    "見積もりに侵入口封鎖の費用が含まれているか",
+    "足跡・糞・食痕などの痕跡から、タヌキであることを確認したうえで提案しているか",
+    "捕獲を伴う場合、捕獲許可の申請を依頼者と業者のどちらが行うか",
+    "お住まいの自治体の相談窓口や、捕獲器の貸出制度の有無を確認したか",
+    "侵入口の調査を建物全体（床下の通風口・軒・屋根の隙間など）で行うか",
+    "見積もりに侵入口封鎖・清掃・消毒の費用が含まれているか",
+    "保証の対象範囲と期間が書面で示されているか",
   ];
 
   const areas = [
@@ -155,7 +179,7 @@ export default function TanukiPage() {
               タヌキ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              タヌキの駆除方法と再発防止策をご説明します
+              タヌキの特徴・被害・法律上の扱いと、業者選びのポイントをご説明します
             </p>
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を詳しく見る
@@ -168,10 +192,10 @@ export default function TanukiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            タヌキ駆除の基礎知識 | 駆除方法と再発防止 - 害虫駆除の基礎知識
+            タヌキの被害と対策の基本
           </h2>
           <p className="text-lg text-gray-700">
-            タヌキ駆除の基礎知識 | 駆除方法と再発防止 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
+            タヌキは鳥獣保護管理法の対象となる野生動物です。当サイトでは、タヌキの特徴や被害の傾向、捕獲に関する法律上の扱い、業者に依頼する前に確認することを、官公庁の資料をもとにご説明します。
           </p>
         </div>
       </section>
@@ -335,7 +359,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -367,31 +391,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業20年の実績があるだけあって、対応が迅速で丁寧でした。タヌキの侵入口を徹底的に調査し、封鎖していただきました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟ということで、安心してお任せできました。10年保証もあり、長期的に安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    累計相談3万件以上の経験に基づいた的確な施工で、タヌキが完全にいなくなりました。アフターフォローも丁寧です。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -445,7 +445,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -477,22 +477,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    業界最安値水準の料金設定で、コスパが非常に良かったです。24時間365日受付で、緊急時にもすぐに対応していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    5年保証があり、万が一再発した場合も安心です。施工の質も高く、タヌキが完全にいなくなりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、地方でも迅速に来ていただけました。見積もりも明確で、追加料金もなく安心でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -546,7 +531,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -578,22 +563,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    口コミが多数公開されていたので、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本有害鳥獣駆除防除管理協会に加盟しているということで、専門性が高く信頼できました。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短30分で来ていただけて、緊急時の対応が素早かったです。タヌキの侵入口も完璧に封鎖していただきました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -647,7 +617,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -679,22 +649,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業28年のベテラン業者だけあって、経験豊富なスタッフが来てくれました。タヌキの習性を熟知した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会に加盟しているということで、安心してお任せできました。全国対応なので地方でも安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    料金も明確で、見積もり通りの金額でした。2年保証もあり、アフターフォローもしっかりしています。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -748,7 +703,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -780,22 +735,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    Google口コミの評価が非常に高く、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    2300件以上の実績が公開されていて、信頼性が高かったです。最短即日対応で、緊急時にもすぐに来ていただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -849,7 +789,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -881,22 +821,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、地方でも迅速に対応していただけました。24時間365日受付で、緊急時にもすぐに連絡できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手業者ならではの安心感がありました。施工業者による保証もあり、アフターフォローもしっかりしています。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -950,7 +875,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -982,22 +907,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、タヌキの習性を熟知した的確な施工でした。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    工務店歴50年で建物構造を熟知しているため、侵入口の特定が非常に正確でした。最短30分で来ていただけて助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    広範囲のエリアに対応しているので、地方でも安心です。施工後のアフターフォローも丁寧でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1051,7 +961,7 @@ export default function TanukiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">タヌキ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1083,22 +993,7 @@ export default function TanukiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計3万件以上の実績があるだけあって、経験豊富なスタッフが来てくれました。最短10分で到着し、緊急時に本当に助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    料金も1万円からと手頃で、見積もりも明確でした。5年保証もあり、再発の心配もありません。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    経験豊富なスタッフによる確実な施工で、タヌキが完全にいなくなりました。アフターフォローも丁寧でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1113,16 +1008,17 @@ export default function TanukiPage() {
         </div>
       </section>
 
-      {/* タヌキの種類と被害 */}
+      {/* タヌキの特徴 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">タヌキの種類</h2>
+          <h2 className="heading-primary text-center">タヌキの特徴</h2>
+          <p className="text-gray-700 mb-6">タヌキは古くから人の身近で暮らしてきた在来の動物で、現在も山間部から農村地帯、市街地まで広く生息しています。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {types.map((type) => (
               <div key={type.name} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-2xl">{type.name}</h3>
-                  <div className={`badge ${type.color} badge-lg`}>{type.habitat}</div>
+                  <div className={`badge ${type.color} badge-lg h-auto py-1`}>{type.habitat}</div>
                   <p className="text-gray-700 mt-4">{type.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
@@ -1137,6 +1033,7 @@ export default function TanukiPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認） 2-3 タヌキ（10〜11ページ）</p>
         </div>
       </section>
 
@@ -1162,13 +1059,15 @@ export default function TanukiPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認） 2-3 タヌキ（10〜11ページ）、コラム「人獣共通感染症への注意」（38ページ）</p>
           <div className="alert alert-error mt-8 shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <h3 className="font-bold">タヌキを見かけた場合の対策</h3>
-              <p className="text-sm">タヌキは繁殖スピードが非常に速く、放置すると数ヶ月で数十匹に増えます。早期の駆除が被害を最小限に抑える鍵です。</p>
+              <h3 className="font-bold">タヌキを見かけた場合の対応</h3>
+              <p className="text-sm">タヌキは鳥獣保護管理法の狩猟鳥獣です。狩猟可能区域以外や狩猟期間外に、許可を受けずに捕獲した場合は、1年以下の拘禁刑または100万円以下の罰金の対象となります（同法第83条）。垣や柵で囲まれた住宅の敷地内で銃器を使わずに行う捕獲など、許可を要しない場合も法律に定められていますが（同法第11条）、狩猟期間内に限られるなどの条件があります。自己判断で捕獲せず、まずはお住まいの市区町村または都道府県の担当窓口にご相談ください。</p>
+              <p className="text-xs mt-1">出典：<a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）、<a href="https://www.env.go.jp/nature/choju/capture/capture1.html" target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）</p>
             </div>
           </div>
         </div>
@@ -1191,6 +1090,7 @@ export default function TanukiPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）、<a href="https://laws.e-gov.go.jp/law/414M60001000028" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律施行規則」（別表第二 狩猟鳥獣）</a>（2026年10月17日確認）、<a href="https://www.env.go.jp/nature/choju/capture/capture1.html" target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）、<a href="https://www.env.go.jp/nature/choju/hunt/hunt2.html" target="_blank" rel="nofollow noopener" className="underline">環境省「狩猟制度の概要」</a>（2026年10月17日確認）、<a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認）</p>
         </div>
       </section>
 
@@ -1203,15 +1103,9 @@ export default function TanukiPage() {
               <div key={method.name} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-primary">{method.name}</h3>
-                  <div className={`badge badge-lg ${
-                    method.effectiveness === "高" ? "badge-success" :
-                    method.effectiveness === "中" ? "badge-warning" :
-                    "badge-neutral"
-                  }`}>
-                    効果: {method.effectiveness}
-                  </div>
+                  <div className="badge badge-lg badge-neutral h-auto py-1">{method.tag}</div>
                   <p className="text-gray-700 mt-4">{method.description}</p>
-                  
+
                   <div className="mt-4">
                     <h4 className="font-bold text-sm mb-2 text-success">メリット</h4>
                     <ul className="list-disc list-inside space-y-1">
@@ -1238,11 +1132,44 @@ export default function TanukiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <h3 className="font-bold">最も効果的な方法</h3>
-              <p className="text-sm">
-                <strong>「捕獲 + 忌避剤 + 侵入口封鎖」の3つを組み合わせる</strong>のが最も効果的です。
-                特に侵入口の封鎖は再発防止に欠かせません。専門業者による調査をおすすめします。
-              </p>
+              <h3 className="font-bold">対策の組み合わせ</h3>
+              <p className="text-sm">農林水産省のマニュアルでは、被害に関与している動物を痕跡から特定し、餌場や潜み場所をなくす環境整備、侵入防止柵、捕獲を状況に合わせて組み合わせることが基本とされています。捕獲を伴う場合は、許可の手続きを含めて専門業者や自治体にご相談ください。</p>
+              <p className="text-xs mt-1">出典：<a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認） 第3章 被害対策の基本（25〜40ページ）、<a href="https://www.env.go.jp/nature/choju/capture/capture1.html" target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 業者に依頼する前に確認すること */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+          <div className="space-y-6">
+            {beforeRequest.map((item, idx) => (
+              <div key={idx} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <div className="flex items-center gap-4">
+                    <div className="badge badge-primary badge-lg">{idx + 1}</div>
+                    <h3 className="card-title text-xl">{item.title}</h3>
+                  </div>
+                  <p className="text-gray-700 mt-2">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認） 2-3 タヌキ・2-7 獣種の見分け方・3-3 被害軽減のための捕獲、<a href="https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/raccoon/habit" target="_blank" rel="nofollow noopener" className="underline">東京都環境局「アライグマ・ハクビシンについて」</a>（2026年10月17日確認）、<a href="https://www.env.go.jp/nature/choju/capture/capture1.html" target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）</p>
+          <div className="card bg-white shadow-xl mt-8">
+            <div className="card-body">
+              <h3 className="card-title text-lg">タヌキの特徴・被害・法律に関する出典</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm text-gray-900">
+                <li><a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）</li>
+                <li><a href="https://laws.e-gov.go.jp/law/414M60001000028" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律施行規則」（別表第二 狩猟鳥獣）</a>（2026年10月17日確認）</li>
+                <li><a href="https://www.env.go.jp/nature/choju/capture/capture1.html" target="_blank" rel="nofollow noopener" className="underline">環境省「捕獲許可制度の概要」</a>（2026年10月17日確認）</li>
+                <li><a href="https://www.env.go.jp/nature/choju/hunt/hunt2.html" target="_blank" rel="nofollow noopener" className="underline">環境省「狩猟制度の概要」</a>（2026年10月17日確認）</li>
+                <li><a href="https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_0.pdf" target="_blank" rel="nofollow noopener" className="underline">農林水産省「野生鳥獣被害防止マニュアル［中型獣類編］」（令和6年3月）</a>（2026年10月17日確認）</li>
+                <li><a href="https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/raccoon/habit" target="_blank" rel="nofollow noopener" className="underline">東京都環境局「アライグマ・ハクビシンについて」</a>（2026年10月17日確認）</li>
+              </ul>
+              <p className="text-xs text-gray-600 mt-2">制度や窓口は自治体によって異なります。ご利用前に、お住まいの都道府県・市区町村の公式サイトにて最新情報をご確認ください。</p>
             </div>
           </div>
         </div>
@@ -1273,7 +1200,7 @@ export default function TanukiPage() {
             </table>
           </div>
           <p className="text-sm text-gray-300 mt-4 text-center">
-            ※ 被害の程度や建物の構造、侵入口の数によって料金は変動します。
+            ※ 被害の程度や建物の構造、侵入口の数によって料金は変動します。捕獲を伴う場合の許可申請や、捕獲後の対応にかかる費用の扱いは業者によって異なるため、見積もりの際にご確認ください。
           </p>
         </div>
       </section>
@@ -1298,8 +1225,8 @@ export default function TanukiPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
                 <div>
-                  <h4 className="font-bold text-sm">重要：保証期間の確認</h4>
-                  <p className="text-xs">タヌキ駆除は、1回の施工で根絶することが難しい作業です。1年以上の保証期間がある業者を選ぶことをおすすめします。</p>
+                  <h4 className="font-bold text-sm">保証内容の確認</h4>
+                  <p className="text-xs">タヌキの再侵入時の対応範囲や保証期間は、業者ごとに異なります。保証の対象（封鎖した箇所のみか、建物全体か）と期間を、書面でご確認ください。</p>
                 </div>
               </div>
             </div>

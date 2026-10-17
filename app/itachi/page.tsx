@@ -7,107 +7,258 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 export const metadata: Metadata = {
   alternates: { canonical: "/itachi" },
   title: "イタチ駆除の基礎知識 | 駆除方法と再発防止",
-  description: "イタチ駆除の料金相場、業者の選び方、駆除方法をご説明します。ドブイタチ、クマイタチ、ハツカイタチの種類別の対策と再発防止策もご紹介します。",
+  description: "イタチ駆除の料金相場と業者の選び方をご説明します。ニホンイタチとチョウセンイタチ（シベリアイタチ）の違い、鳥獣保護管理法による捕獲の許可、屋根裏への侵入と侵入口封鎖などの対策を、環境省・農林水産省の資料にもとづきご紹介します。",
   openGraph: {
-    title: "イタチ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "イタチ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "イタチ駆除の基礎知識と業者比較 | 種類・法的扱い・駆除方法・料金相場",
+    description: "ニホンイタチとチョウセンイタチ（シベリアイタチ）の特徴と法的扱い、被害、駆除方法、料金相場、駆除業者の比較を掲載しています。",
     url: "https://gaichu-pro.com/itachi",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
+const SOURCES = {
+  "egov_choju": {
+    "label": "e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」",
+    "url": "https://laws.e-gov.go.jp/law/414AC0000000088"
+  },
+  "env_hunt": {
+    "label": "環境省「狩猟制度の概要」",
+    "url": "https://www.env.go.jp/nature/choju/hunt/hunt2.html"
+  },
+  "env_capture": {
+    "label": "環境省「捕獲許可制度の概要」",
+    "url": "https://www.env.go.jp/nature/choju/capture/capture1.html"
+  },
+  "env_list": {
+    "label": "環境省「特定外来生物等一覧」",
+    "url": "https://www.env.go.jp/nature/intro/2outline/list.html"
+  },
+  "maff_column": {
+    "label": "農林水産省「野生鳥獣被害防止マニュアル【中型獣類編】コラム（シベリアイタチ）」",
+    "url": "https://www.maff.go.jp/j/seisan/tyozyu/higai/manyuaru/R5_tyuugata/r5_tyuugata_2_8.pdf"
+  },
+  "nies_itachi": {
+    "label": "国立環境研究所 侵入生物データベース「ニホンイタチ」",
+    "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/10320.html"
+  },
+  "nies_chosen": {
+    "label": "国立環境研究所 侵入生物データベース「チョウセンイタチ」",
+    "url": "https://www.nies.go.jp/biodiversity/invasive/DB/detail/10180.html"
+  }
+} as const;
+
+type SourceKey = keyof typeof SOURCES;
+
+function Cite({ ids }: { ids: SourceKey[] }) {
+  return (
+    <p className="text-xs text-gray-500 mt-3">
+      出典：
+      {ids.map((id, i) => (
+        <span key={id}>
+          {i > 0 && "、"}
+          <a href={SOURCES[id].url} target="_blank" rel="nofollow noopener" className="underline">
+            {SOURCES[id].label}
+          </a>
+        </span>
+      ))}
+      （2026年10月17日確認）
+    </p>
+  );
+}
+
 export default function ItachiPage() {
-  const types = [
+  const types: { name: string; label: string; description: string; features: string[]; color: string; src: SourceKey[] }[] = [
     {
-      name: "ドブイタチ",
-      description: "日本最大のイタチで、体長は20〜25cmです。下水道や側溝に生息し、湿った場所を好みます。",
-      habitat: "下水道、側溝、地下室",
-      features: ["体長: 20〜25cm", "色: 灰褐色", "性格: 獰猛"],
-      color: "badge-error",
+      "name": "ニホンイタチ（在来種）",
+      "label": "本州・四国・九州などに自然分布",
+      "description": "全身が山吹色で、額の中央から鼻にかけて濃褐色の斑紋があります。オスとメスで体の大きさが大きく異なり、頭胴長はオスが27〜37cm、メスが16〜25cmです。成獣の尾の長さは、雌雄とも頭胴長の50％を超えません。",
+      "features": [
+        "主な生息地は平野部ですが、西日本では主に山間部に生息しています",
+        "メスは土穴などを巣とし、カエル、ネズミ類、鳥類、昆虫類、甲殻類、魚類などを食べます",
+        "交尾期は4〜5月で、産仔数は1〜8頭（平均3〜5頭）です",
+        "北海道や伊豆諸島、南西諸島の島々などには、人為的に導入された個体群が生息しています"
+      ],
+      "color": "badge-info",
+      "src": [
+        "nies_itachi"
+      ]
     },
     {
-      name: "クマイタチ",
-      description: "都市部に多く、体長は15〜20cmです。運動能力が高く高所からも侵入するため、駆除が難しい種類です。",
-      habitat: "天井裏、壁の中、ビル",
-      features: ["体長: 15〜20cm", "色: 黒褐色", "性格: 警戒心強い"],
-      color: "badge-warning",
-    },
-    {
-      name: "ハツカイタチ",
-      description: "最も小型のイタチで、体長は6〜9cmです。倉庫や物置に多く、わずかな隙間からも侵入します。",
-      habitat: "倉庫、物置、農地",
-      features: ["体長: 6〜9cm", "色: 灰白色", "性格: 好奇心旺盛"],
-      color: "badge-info",
-    },
+      "name": "チョウセンイタチ（シベリアイタチ・外来）",
+      "label": "西日本を中心に定着",
+      "description": "朝鮮半島から持ち込まれた個体群が、福井県・岐阜県・愛知県以西の西日本（沖縄を除く）に定着しています。対馬には自然分布しています。ニホンイタチよりやや大きく尾が長いのが識別点で、尾が頭胴長の2分の1より長ければシベリアイタチとされています。",
+      "features": [
+        "住宅街など人の生活圏を好む傾向があり、休息場として建物を利用します",
+        "水辺などの自然環境を好むニホンイタチとは、生息環境の傾向が異なります",
+        "交尾期は4〜5月で、6〜8月に子育てをします。産仔数は5〜6頭です",
+        "以前はチョウセンイタチと呼ばれ、農林水産省の資料では「シベリアイタチ」と表記されています"
+      ],
+      "color": "badge-warning",
+      "src": [
+        "nies_chosen",
+        "maff_column"
+      ]
+    }
   ];
 
-  const damages = [
+  const damages: { category: string; icon: string; examples: string[]; src: SourceKey[] }[] = [
     {
-      category: "健康被害",
-      icon: "🦠",
-      examples: [
-        "サルモネラ菌などの病原菌を媒介",
-        "ダニやノミの発生源",
-        "糞尿による悪臭と衛生問題",
+      "category": "建物・生活環境への被害",
+      "icon": "😰",
+      "examples": [
+        "住宅などの屋根裏に侵入し、糞尿による悪臭や足音による安眠妨害が生じます",
+        "天井裏に糞がたまる被害や、配管の貫通穴からの侵入が報告されています",
+        "被害が私有地の建物内で起きるため、数値化が難しいとされています"
       ],
+      "src": [
+        "maff_column"
+      ]
     },
     {
-      category: "経済的被害",
-      icon: "💰",
-      examples: [
-        "食品・食材の汚染",
-        "電気配線をかじることによる火災リスク",
-        "建材・家具の破損",
+      "category": "衛生面のリスク",
+      "icon": "🦠",
+      "examples": [
+        "ノミ・ダニによる咬傷の被害があるとされています",
+        "チョウセンイタチは、日本顎口虫や肺吸虫などの寄生虫を媒介するとされています"
       ],
+      "src": [
+        "maff_column",
+        "nies_chosen"
+      ]
     },
     {
-      category: "精神的被害",
-      icon: "😰",
-      examples: [
-        "夜間の物音による不眠",
-        "不衛生な環境によるストレス",
-        "再発への不安",
+      "category": "農作物・家禽への被害",
+      "icon": "💰",
+      "examples": [
+        "シベリアイタチによる農作物被害は果樹や果菜類に発生し、痕跡が作物の下部に見られるため発見が遅れる場合があります",
+        "ニホンイタチが導入された地域では、ニワトリ等の農業被害が報告されています"
       ],
-    },
+      "src": [
+        "maff_column",
+        "nies_itachi"
+      ]
+    }
   ];
 
-  const difficulties = [
+  const difficulties: { title: string; description: string; src: SourceKey[] }[] = [
     {
-      title: "学習能力の高さ",
-      description: "一度罠にかかりそうになると、同じ罠を避けるようになります。特にクマイタチは警戒心が強い種類です。",
+      "title": "種類と性別で異なる法的扱い",
+      "description": "ニホンイタチはオスのみが狩猟鳥獣で、シベリアイタチは長崎県対馬市の個体群を除いて狩猟鳥獣とされています。2種は外見が似ているため、捕獲を伴う対策では、種類の確認と許可の手続きが必要です。",
+      "src": [
+        "env_hunt",
+        "env_capture",
+        "nies_chosen"
+      ]
     },
     {
-      title: "繁殖スピードの速さ",
-      description: "1匹のメスが年間6〜8回出産し、1回の出産で6〜10匹を産みます。数か月で数十匹に増えることがあります。",
+      "title": "小さな穴や隙間からの侵入",
+      "description": "体の小さいシベリアイタチは、3cm程の穴や隙間からでも侵入するとされています。そのため、建物内の該当箇所をすべて封鎖する必要があります。",
+      "src": [
+        "maff_column"
+      ]
     },
     {
-      title: "侵入口の多様性",
-      description: "2〜3cmの隙間があれば侵入できます。配管、換気口、壁の亀裂など、侵入経路は多岐にわたります。",
-    },
+      "title": "侵入口の点検に必要な建築知識",
+      "description": "主な侵入ポイントとして、屋根の重なり、入母屋屋根の両隅、床下換気口、給湯器などの配管引き込み部が挙げられています。一般の方が点検・封鎖するにはある程度の建築知識が必要で、見落としや事故のリスクがあるとされています。",
+      "src": [
+        "maff_column"
+      ]
+    }
   ];
 
-  const methods = [
+  const methods: { name: string; label: string; description: string; pros: string[]; cons: string[]; src: SourceKey[] }[] = [
     {
-      name: "捕獲（罠）",
-      description: "粘着シートや捕獲器を使用する方法です。即効性はありますが、学習されやすい点に注意が必要です。",
-      effectiveness: "中",
-      pros: ["即効性がある", "確実に捕獲できる"],
-      cons: ["警戒されやすい", "継続的な設置が必要"],
+      "name": "捕獲（許可捕獲）",
+      "label": "許可が必要",
+      "description": "鳥獣保護管理法にもとづき、都道府県知事等の許可を受けて捕獲します。捕獲は、許可された期間・区域・方法に沿って行う必要があります。",
+      "pros": [
+        "許可の範囲内で、侵入している個体を取り除けます"
+      ],
+      "cons": [
+        "許可の申請が必要です",
+        "許可の基準は都道府県により異なります",
+        "建物への侵入被害は、捕獲だけでは防げないとされています"
+      ],
+      "src": [
+        "env_capture",
+        "maff_column"
+      ]
     },
     {
-      name: "忌避剤",
-      description: "イタチが嫌がる成分で追い出す方法です。効果は一時的です。",
-      effectiveness: "低",
-      pros: ["簡単に使用できる", "人体への影響が少ない"],
-      cons: ["効果が一時的", "根本的な解決にならない"],
+      "name": "追い出し",
+      "label": "方法は業者により異なります",
+      "description": "侵入口を塞ぐ前に、建物内に残っている個体を外へ出す作業です。使用する薬剤や方法は業者・製品により異なるため、見積もりの段階で内容をご確認ください。",
+      "pros": [
+        "捕獲を伴わない方法として検討できます"
+      ],
+      "cons": [
+        "建物に侵入する動物への対策は、薬剤の使用だけでは不十分とされています"
+      ],
+      "src": [
+        "maff_column"
+      ]
     },
     {
-      name: "侵入口封鎖",
-      description: "イタチの侵入経路をすべて塞ぐ方法です。最も重要な対策です。",
-      effectiveness: "高",
-      pros: ["再発防止に効果的", "長期的な解決"],
-      cons: ["専門知識が必要", "全ての侵入口の特定が困難"],
+      "name": "侵入口封鎖",
+      "label": "再侵入の防止",
+      "description": "建物に侵入する動物への対策は、捕獲や薬剤の使用だけでは不十分で、動物が建物内に侵入できるすべての穴や隙間を封鎖する方法しかないとされています。屋根の重なり、床下換気口、配管引き込み部などを点検して塞ぎます。",
+      "pros": [
+        "再侵入の防止につながります"
+      ],
+      "cons": [
+        "3cm程の隙間も対象となるため、点検箇所が多くなります"
+      ],
+      "src": [
+        "maff_column"
+      ]
     },
+    {
+      "name": "清掃・消毒",
+      "label": "衛生面の対策",
+      "description": "天井裏にたまった糞などを取り除き、清掃・消毒します。ノミ・ダニによる被害もあるとされているため、消毒の範囲を業者と確認します。",
+      "pros": [
+        "糞尿による汚れや臭いの原因を取り除けます"
+      ],
+      "cons": [
+        "被害の範囲により、作業量と費用が変わります"
+      ],
+      "src": [
+        "maff_column"
+      ]
+    }
+  ];
+
+  const beforeRequest: { title: string; description: string }[] = [
+    {
+      "title": "イタチの種類の確認",
+      "description": "ニホンイタチとシベリアイタチ（チョウセンイタチ）は外見が似ていますが、尾の長さ（頭胴長の2分の1より長いかどうか）などで見分けられるとされています。種類と性別によって狩猟鳥獣としての扱いが異なるため、業者の調査結果をご確認ください。"
+    },
+    {
+      "title": "自治体の窓口",
+      "description": "捕獲許可の申請先は都道府県知事等で、多くの都道府県では許可権限の一部を市町村長に移譲しています。お住まいの市区町村で、申請の窓口と捕獲器の貸出の有無をご確認ください。"
+    },
+    {
+      "title": "捕獲許可の要否と申請者",
+      "description": "業者が捕獲を行う場合、許可を誰が申請し、誰が捕獲に従事するのかをご確認ください。封鎖のみで対応する場合と、捕獲を伴う場合とで、手続きと費用が異なります。"
+    },
+    {
+      "title": "見積もりの内訳",
+      "description": "調査、捕獲、追い出し、侵入口封鎖、清掃・消毒、保証のそれぞれについて、作業範囲と費用が分けて記載されているかをご確認ください。"
+    },
+    {
+      "title": "設備工事の際の隙間",
+      "description": "増改築や給湯器などの設置時に侵入口が新たにできる場合が多いとされています。工事の予定がある場合は、施工業者に隙間ができないよう依頼することをおすすめします。"
+    }
+  ];
+
+  const sourceList: SourceKey[] = [
+    "egov_choju",
+    "env_hunt",
+    "env_capture",
+    "env_list",
+    "maff_column",
+    "nies_itachi",
+    "nies_chosen"
   ];
 
   const priceTable = [
@@ -118,11 +269,13 @@ export default function ItachiPage() {
   ];
 
   const checklist = [
-    "侵入口の調査を建物全体で行うか",
-    "保証期間は1年以上あるか",
-    "アフターフォロー体制（定期点検）はあるか",
+    "侵入口の調査を屋根・床下・配管まわりを含めた建物全体で行うか",
+    "捕獲を行う場合、捕獲許可の申請を誰が行うか",
+    "自治体の捕獲許可の窓口や捕獲器貸出の有無を確認したか",
+    "イタチの種類を確認したうえで対策を提案しているか",
     "清掃・消毒作業も含まれているか",
     "見積もりに侵入口封鎖の費用が含まれているか",
+    "保証の対象と期間（再侵入時の対応を含む）が書面で示されているか"
   ];
 
   const areas = [
@@ -155,7 +308,7 @@ export default function ItachiPage() {
               イタチ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              イタチの駆除方法と再発防止策をご説明します
+              イタチの種類と法的扱い、被害の特徴、駆除方法と業者の選び方をご説明します
             </p>
             <Link href="/price" className="btn btn-lg btn-neutral">
               料金相場を詳しく見る
@@ -168,10 +321,10 @@ export default function ItachiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            イタチ駆除の基礎知識 | 駆除方法と再発防止 - 害虫駆除の基礎知識
+            イタチの種類と法的扱い
           </h2>
           <p className="text-lg text-gray-700">
-            イタチ駆除の基礎知識 | 駆除方法と再発防止 - 害虫の特徴・被害状況から駆除方法まで、対処法をご説明します
+            当サイトでは、在来種のニホンイタチと外来のチョウセンイタチ（シベリアイタチ）について、環境省・農林水産省・国立環境研究所の公式資料にもとづき、特徴・被害・駆除方法をご説明します。いずれも鳥獣保護管理法の対象となる野生鳥獣です。
           </p>
         </div>
       </section>
@@ -335,7 +488,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -367,31 +520,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    創業20年の実績があるだけあって、対応が迅速で丁寧でした。イタチの侵入口を徹底的に調査し、封鎖していただきました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会加盟ということで、安心してお任せできました。10年保証もあり、長期的に安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    累計相談3万件以上の経験に基づいた的確な施工で、イタチが完全にいなくなりました。アフターフォローも丁寧です。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -445,7 +574,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -477,22 +606,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    業界最安値水準の料金設定で、コスパが非常に良かったです。24時間365日受付で、緊急時にもすぐに対応していただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    5年保証があり、万が一再発した場合も安心です。施工の質も高く、イタチが完全にいなくなりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、地方でも迅速に来ていただけました。見積もりも明確で、追加料金もなく安心でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -546,7 +660,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -578,22 +692,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    口コミが多数公開されていたので、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本有害鳥獣駆除防除管理協会に加盟しているということで、専門性が高く信頼できました。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    最短30分で来ていただけて、緊急時の対応が素早かったです。イタチの侵入口も完璧に封鎖していただきました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -647,7 +746,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -679,22 +778,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業28年のベテラン業者だけあって、経験豊富なスタッフが来てくれました。イタチの習性を熟知した的確な施工でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    日本ペストコントロール協会に加盟しているということで、安心してお任せできました。全国対応なので地方でも安心です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    料金も明確で、見積もり通りの金額でした。2年保証もあり、アフターフォローもしっかりしています。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -748,7 +832,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -780,22 +864,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    Google口コミの評価が非常に高く、安心してお願いできました。実際の施工も丁寧で、期待以上の仕上がりでした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    2300件以上の実績が公開されていて、信頼性が高かったです。最短即日対応で、緊急時にもすぐに来ていただけました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    10年保証があり、長期的に安心できました。施工後のフォローも丁寧で、再発の心配もありません。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -849,7 +918,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -881,22 +950,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    東証上場企業が運営しているということで、安心してお願いできました。累計相談500万件以上の実績も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    全国対応で、地方でも迅速に対応していただけました。24時間365日受付で、緊急時にもすぐに連絡できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    大手業者ならではの安心感がありました。施工業者による保証もあり、アフターフォローもしっかりしています。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -950,7 +1004,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -982,22 +1036,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    50年以上の経験があるベテラン業者だけあって、イタチの習性を熟知した的確な施工でした。10年保証も心強いです。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    工務店歴50年で建物構造を熟知しているため、侵入口の特定が非常に正確でした。最短30分で来ていただけて助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    広範囲のエリアに対応しているので、地方でも安心です。施工後のアフターフォローも丁寧でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1051,7 +1090,7 @@ export default function ItachiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣</th>
-                      <td className="bg-white text-black border border-gray-300">イタチ・コウモリ・イタチなど害獣全般</td>
+                      <td className="bg-white text-black border border-gray-300">ネズミ・コウモリ・イタチなど害獣全般</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -1083,22 +1122,7 @@ export default function ItachiPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    累計3万件以上の実績があるだけあって、経験豊富なスタッフが来てくれました。最短10分で到着し、緊急時に本当に助かりました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    料金も1万円からと手頃で、見積もりも明確でした。5年保証もあり、再発の心配もありません。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    経験豊富なスタッフによる確実な施工で、イタチが完全にいなくなりました。アフターフォローも丁寧でした。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -1113,16 +1137,16 @@ export default function ItachiPage() {
         </div>
       </section>
 
-      {/* イタチの種類と被害 */}
+      {/* イタチの特徴 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">イタチの種類</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {types.map((type) => (
               <div key={type.name} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-2xl">{type.name}</h3>
-                  <div className={`badge ${type.color} badge-lg`}>{type.habitat}</div>
+                  <div className={`badge ${type.color} badge-lg h-auto py-1`}>{type.label}</div>
                   <p className="text-gray-700 mt-4">{type.description}</p>
                   <div className="divider"></div>
                   <ul className="space-y-2">
@@ -1133,9 +1157,19 @@ export default function ItachiPage() {
                       </li>
                     ))}
                   </ul>
+                  <Cite ids={type.src} />
                 </div>
               </div>
             ))}
+          </div>
+          <div className="card bg-white shadow mt-6">
+            <div className="card-body">
+              <h3 className="font-bold text-lg">外来生物法上の扱い</h3>
+              <p className="text-sm text-gray-700">
+                環境省の特定外来生物等一覧では、イタチ属で特定外来生物に指定されているのはアメリカミンクであり、チョウセンイタチ（シベリアイタチ）は特定外来生物に指定されていません。チョウセンイタチは外来種ですが、ニホンイタチと同じく鳥獣保護管理法の対象として扱われます。
+              </p>
+              <Cite ids={["env_list", "env_hunt"]} />
+            </div>
           </div>
         </div>
       </section>
@@ -1158,6 +1192,7 @@ export default function ItachiPage() {
                       </li>
                     ))}
                   </ul>
+                  <Cite ids={damage.src} />
                 </div>
               </div>
             ))}
@@ -1167,8 +1202,11 @@ export default function ItachiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <h3 className="font-bold">イタチを見かけた場合の対策</h3>
-              <p className="text-sm">イタチは繁殖スピードが非常に速く、放置すると数ヶ月で数十匹に増えます。早期の駆除が被害を最小限に抑える鍵です。</p>
+              <h3 className="font-bold">イタチを見かけた場合の対応</h3>
+              <p className="text-sm">
+                イタチは鳥獣保護管理法の対象となる野生鳥獣です。鳥獣の捕獲は、狩猟による場合や環境大臣・都道府県知事の許可を受けた場合などを除いて禁止されています。環境省の狩猟鳥獣の一覧では「イタチ（雄）」「シベリアイタチ（長崎県対馬市の個体群を除く。）」と定められており、ニホンイタチのメスは狩猟鳥獣に含まれません。狩猟は、狩猟免許を取得して登録した者が、狩猟期間内に法定猟法で行うものです。狩猟によらずに捕獲する場合は、許可の申請が必要です。許可の申請先は都道府県知事等で、多くの都道府県では許可権限の一部を市町村長に移譲しています。被害がある場合は、お住まいの市区町村の担当窓口にご確認ください。
+              </p>
+              <Cite ids={["egov_choju", "env_hunt", "env_capture"]} />
             </div>
           </div>
         </div>
@@ -1187,6 +1225,7 @@ export default function ItachiPage() {
                     <h3 className="card-title text-xl">{item.title}</h3>
                   </div>
                   <p className="text-gray-700 mt-2">{item.description}</p>
+                  <Cite ids={item.src} />
                 </div>
               </div>
             ))}
@@ -1198,20 +1237,14 @@ export default function ItachiPage() {
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">イタチ駆除の方法</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {methods.map((method) => (
               <div key={method.name} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-primary">{method.name}</h3>
-                  <div className={`badge badge-lg ${
-                    method.effectiveness === "高" ? "badge-success" :
-                    method.effectiveness === "中" ? "badge-warning" :
-                    "badge-neutral"
-                  }`}>
-                    効果: {method.effectiveness}
-                  </div>
+                  <div className="badge badge-lg badge-neutral h-auto py-1">{method.label}</div>
                   <p className="text-gray-700 mt-4">{method.description}</p>
-                  
+
                   <div className="mt-4">
                     <h4 className="font-bold text-sm mb-2 text-success">メリット</h4>
                     <ul className="list-disc list-inside space-y-1">
@@ -1222,13 +1255,14 @@ export default function ItachiPage() {
                   </div>
 
                   <div className="mt-4">
-                    <h4 className="font-bold text-sm mb-2 text-error">デメリット</h4>
+                    <h4 className="font-bold text-sm mb-2 text-error">デメリット・留意点</h4>
                     <ul className="list-disc list-inside space-y-1">
                       {method.cons.map((con, i) => (
                         <li key={i} className="text-xs">{con}</li>
                       ))}
                     </ul>
                   </div>
+                  {method.src.length > 0 && <Cite ids={method.src} />}
                 </div>
               </div>
             ))}
@@ -1238,12 +1272,51 @@ export default function ItachiPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-              <h3 className="font-bold">最も効果的な方法</h3>
+              <h3 className="font-bold">対策の組み合わせ</h3>
               <p className="text-sm">
-                <strong>「捕獲 + 忌避剤 + 侵入口封鎖」の3つを組み合わせる</strong>のが最も効果的です。
-                特に侵入口の封鎖は再発防止に欠かせません。専門業者による調査をおすすめします。
+                建物内の被害では、侵入できるすべての穴や隙間の封鎖が基本とされています。捕獲を伴う場合は、種類の確認と許可の手続きが必要です。また、住宅の増改築時や給湯器などの設備設置時に新たな侵入口ができる場合が多いため、施工業者に隙間ができないよう要望することも予防につながるとされています。
+              </p>
+              <Cite ids={["maff_column", "env_capture"]} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 業者に依頼する前に確認すること */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">業者に依頼する前に確認すること</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <ol className="space-y-5">
+                {beforeRequest.map((item, idx) => (
+                  <li key={idx}>
+                    <h3 className="font-bold text-lg">{idx + 1}. {item.title}</h3>
+                    <p className="text-gray-700 mt-1">{item.description}</p>
+                  </li>
+                ))}
+              </ol>
+              <p className="text-sm text-gray-700 mt-6">
+                法令の運用や自治体の支援内容は地域により異なります。ご利用前に、お住まいの都道府県・市区町村の公式サイトにて最新情報をご確認ください。
               </p>
             </div>
+          </div>
+
+          <div className="mt-10">
+            <h3 className="font-bold text-lg mb-3">出典</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              {sourceList.map((id) => (
+                <li key={id}>
+                  <a href={SOURCES[id].url} target="_blank" rel="nofollow noopener" className="underline">
+                    {SOURCES[id].label}
+                  </a>
+                  （2026年10月17日確認）
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs text-gray-500 mt-2">
+              当サイトでは、本ページの特徴・被害・法令に関する記述を上記の公式資料にもとづいて掲載しています。料金相場は目安であり、上記の公式資料にもとづくものではありません。
+            </p>
           </div>
         </div>
       </section>
@@ -1298,8 +1371,8 @@ export default function ItachiPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
                 <div>
-                  <h4 className="font-bold text-sm">重要：保証期間の確認</h4>
-                  <p className="text-xs">イタチ駆除は、1回の施工で根絶することが難しい作業です。1年以上の保証期間がある業者を選ぶことをおすすめします。</p>
+                  <h4 className="font-bold text-sm">保証内容の確認</h4>
+                  <p className="text-xs">侵入口の封鎖に漏れがあると、別の隙間から侵入が続くことがあります。保証の対象（再侵入時の再施工の有無など）と期間を、見積もりの段階で書面にてご確認ください。</p>
                 </div>
               </div>
             </div>

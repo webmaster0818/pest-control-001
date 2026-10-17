@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title: "熊本の害虫駆除業者比較 | 料金相場・口コミ・おすすめ8社",
   description: "熊本の害虫駆除業者8社を、料金・サービス・口コミの観点から比較しています。見積もりは無料です。",
   openGraph: {
-    title: "福岡の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "福岡の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "熊本の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
+    description: "熊本の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
     url: "https://gaichu-pro.com/area/kumamoto",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -18,46 +18,11 @@ export const metadata: Metadata = {
 
 export default function KumamotoPage() {
   const topPests = [
-    {
-      rank: 1,
-      name: "ゴキブリ",
-      icon: "🪳",
-      description: "繁華街や飲食店が多い福岡では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
-      areas: "渋谷区、新宿区、港区などの繁華街",
-      link: "/pest/cockroach/kumamoto",
-    },
-    {
-      rank: 2,
-      name: "ネズミ",
-      icon: "🐭",
-      description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
-      areas: "千代田区、中央区、台東区などの都心部",
-      link: "/nezumi",
-    },
-    {
-      rank: 3,
-      name: "シロアリ",
-      icon: "🐜",
-      description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
-      areas: "世田谷区、杉並区、大田区などの住宅街",
-      link: "/pest/termite/kumamoto",
-    },
-    {
-      rank: 4,
-      name: "ハチ",
-      icon: "🐝",
-      description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
-      areas: "目黒区、品川区、練馬区などの緑地周辺",
-      link: "/hachi",
-    },
-    {
-      rank: 5,
-      name: "コウモリ",
-      icon: "🦇",
-      description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
-      areas: "世田谷区、杉並区、中野区などの住宅街",
-      link: "/koumori",
-    },
+    { rank: 1, name: "ゴキブリ", icon: "🪳", description: "ゴキブリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/cockroach/kumamoto" },
+    { rank: 2, name: "ネズミ", icon: "🐭", description: "ネズミの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/nezumi" },
+    { rank: 3, name: "シロアリ", icon: "🐜", description: "シロアリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/pest/termite/kumamoto" },
+    { rank: 4, name: "ハチ", icon: "🐝", description: "ハチの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/hachi" },
+    { rank: 5, name: "コウモリ", icon: "🦇", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
   const priceComparison = [
@@ -65,31 +30,31 @@ export default function KumamotoPage() {
       pest: "シロアリ駆除",
       fukuoka: "12,000〜18,000円/坪",
       national: "10,000〜15,000円/坪",
-      note: "都心部はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ハチ駆除",
       fukuoka: "15,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "高所作業が多く料金高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ゴキブリ駆除",
       fukuoka: "20,000〜35,000円",
       national: "15,000〜30,000円",
-      note: "飲食店の需要が多く料金はやや高め",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "ネズミ駆除",
       fukuoka: "100,000〜180,000円",
       national: "80,000〜150,000円",
-      note: "複雑な建物構造で高額",
+      note: "建物の構造・被害の範囲により変動",
     },
     {
       pest: "コウモリ駆除",
       fukuoka: "120,000〜350,000円",
       national: "100,000〜300,000円",
-      note: "都心部は作業の難易度が高い",
+      note: "建物の構造・被害の範囲により変動",
     },
   ];
 
@@ -117,42 +82,15 @@ export default function KumamotoPage() {
   ];
 
   const areas = [
-    {
-      name: "23区エリア",
-      description: "都心部から住宅街まで幅広く対応しています。飲食店・オフィスビルでの駆除実績が豊富です。",
-      features: ["即日対応可能", "夜間作業対応", "多言語対応"],
-    },
-    {
-      name: "多摩地域",
-      description: "八王子、立川、町田など多摩地域全域に対応しています。戸建て住宅の駆除を得意としています。",
-      features: ["地域密着", "アフターフォロー充実", "農地・山林対応"],
-    },
-    {
-      name: "島しょ部",
-      description: "伊豆諸島・小笠原諸島に対応する業者もあります。事前の予約をおすすめします。",
-      features: ["出張対応", "離島料金設定", "長期保証"],
-    },
+    { name: "県北地域（県北広域本部）", description: "荒尾市・玉名市・山鹿市・菊池市 など", url: "https://www.pref.kumamoto.jp/site/kenhoku/" },
+    { name: "県央地域（県央広域本部）", description: "熊本市・宇土市・宇城市 など", url: "https://www.pref.kumamoto.jp/site/kenou/" },
+    { name: "県南地域（県南広域本部）", description: "八代市・人吉市・水俣市 など", url: "https://www.pref.kumamoto.jp/site/kennan/" },
+    { name: "天草地域（天草広域本部）", description: "天草市・上天草市・天草郡", url: "https://www.pref.kumamoto.jp/site/amakusa/" },
   ];
 
   const consultations = [
-    {
-      name: "福岡都福祉保健局",
-      description: "害虫相談窓口",
-      contact: "03-5320-4391",
-      hours: "平日 9:00〜17:00",
-    },
-    {
-      name: "各区保健所",
-      description: "地域ごとの相談・指導",
-      contact: "各区役所のホームページを参照",
-      hours: "平日 8:30〜17:00（区により異なる）",
-    },
-    {
-      name: "福岡都ペストコントロール協会",
-      description: "業者紹介・相談",
-      contact: "03-3254-0014",
-      hours: "平日 9:00〜17:00",
-    },
+    { name: "熊本県 保健所（有明・山鹿・菊池・阿蘇・御船・宇城・八代・水俣・人吉・天草）／熊本市保健所", description: "県設置の10保健所と熊本市保健所（熊本市域）。管轄市町村は県の保健所一覧ページで確認可", contact: "各保健所の連絡先は公式サイトをご確認ください（例：有明保健所 0968-72-2184、熊本市保健所 096-364-3311）", hours: "", url: "https://www.pref.kumamoto.jp/soshiki/30/4951.html" },
+    { name: "一般社団法人 熊本県ペストコントロール協会", description: "害虫相談（日本ペストコントロール協会：害虫相談はご所在地の県協会へ）。所在地：熊本市北区武蔵ヶ丘9-2-58 有限会社ビルメイト内", contact: "096-337-6757", hours: "", url: "https://www.pestcontrol.or.jp/pages/114/" },
   ];
 
   return (
@@ -160,14 +98,14 @@ export default function KumamotoPage() {
 {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
-        { label: "福岡" }
+        { label: "熊本" }
       ]} />
 
       {/* ヒーローセクション */}
       <section className="hero min-h-[50vh] bg-white relative overflow-hidden">
         <Image
           src="/images/hero-pest-control.jpg"
-          alt="福岡の害虫駆除サービス"
+          alt="熊本の害虫駆除サービス"
           fill
           className="object-contain"
           priority
@@ -178,10 +116,10 @@ export default function KumamotoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            福岡の害虫駆除の基礎知識と業者比較
+            熊本の害虫駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            福岡の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
+            熊本の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -189,7 +127,7 @@ export default function KumamotoPage() {
       {/* おすすめ業者比較表 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">福岡の害虫駆除業者の比較</h2>
+          <h2 className="heading-primary text-center mb-8">熊本の害虫駆除業者の比較</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black border border-gray-300">
               <thead>
@@ -324,14 +262,14 @@ export default function KumamotoPage() {
             </table>
           </div>
 
-          <h2 className="heading-primary text-center mt-16 mb-8">福岡の害虫駆除業者の詳細</h2>
+          <h2 className="heading-primary text-center mt-16 mb-8">熊本の害虫駆除業者の詳細</h2>
 
           {/* 1. 害獣駆除のROY */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-warning badge-lg">👑 1</span>
-                <h3 className="text-2xl font-bold text-black">害獣駆除のROY（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣駆除のROY（熊本）</h3>
               </div>
               <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -393,7 +331,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣駆除のROYの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣駆除のROY+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣駆除のROY+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -412,7 +350,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                <h3 className="text-2xl font-bold text-black">害獣BUZZ（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣BUZZ（熊本）</h3>
               </div>
               <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -474,7 +412,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣BUZZの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣BUZZ+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣BUZZ+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -493,7 +431,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（熊本）</h3>
               </div>
               <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -503,7 +441,7 @@ export default function KumamotoPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業28年の業者</li>
                 <li>日本ペストコントロール協会加盟</li>
-                <li>福岡エリアの害虫駆除に対応する専門業者</li>
+                <li>熊本エリアの害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
@@ -555,7 +493,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆サンキョークリーンサービスの口コミ</h4>
-                <a href="https://www.google.com/search?q=サンキョークリーンサービス+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=サンキョークリーンサービス+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -574,7 +512,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">4</span>
-                <h3 className="text-2xl font-bold text-black">ハウスプロテクト（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">ハウスプロテクト（熊本）</h3>
               </div>
               <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -636,7 +574,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ハウスプロテクトの口コミ</h4>
-                <a href="https://www.google.com/search?q=ハウスプロテクト+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ハウスプロテクト+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -655,7 +593,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">5</span>
-                <h3 className="text-2xl font-bold text-black">害獣プロテック（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（熊本）</h3>
               </div>
               <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -717,7 +655,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣プロテック+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害獣プロテック+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -736,7 +674,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">6</span>
-                <h3 className="text-2xl font-bold text-black">ダスキン（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">ダスキン（熊本）</h3>
               </div>
               <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -798,7 +736,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ダスキンの口コミ</h4>
-                <a href="https://www.google.com/search?q=ダスキン+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ダスキン+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -817,7 +755,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">7</span>
-                <h3 className="text-2xl font-bold text-black">害虫駆除110番（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">害虫駆除110番（熊本）</h3>
               </div>
               <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -879,7 +817,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆害虫駆除110番の口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫駆除110番+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=害虫駆除110番+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -898,7 +836,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">8</span>
-                <h3 className="text-2xl font-bold text-black">EMEAO!（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">EMEAO!（熊本）</h3>
               </div>
               <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -960,7 +898,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆EMEAO!の口コミ</h4>
-                <a href="https://www.google.com/search?q=EMEAO!+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=EMEAO!+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -979,7 +917,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">9</span>
-                <h3 className="text-2xl font-bold text-black">駆除ザウルス（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">駆除ザウルス（熊本）</h3>
               </div>
               <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -989,7 +927,7 @@ export default function KumamotoPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-900">
                 <li>創業20年、累計相談3万件以上の実績</li>
                 <li>日本ペストコントロール協会加盟</li>
-                <li>福岡エリアの害虫駆除に対応する専門業者</li>
+                <li>熊本エリアの害虫駆除に対応する専門業者</li>
               </ul>
             </div>
 
@@ -1041,7 +979,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
-                <a href="https://www.google.com/search?q=駆除ザウルス+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=駆除ザウルス+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1060,7 +998,7 @@ export default function KumamotoPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="badge badge-lg">10</span>
-                <h3 className="text-2xl font-bold text-black">ラッター（福岡）</h3>
+                <h3 className="text-2xl font-bold text-black">ラッター（熊本）</h3>
               </div>
               <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
             </div>
@@ -1122,7 +1060,7 @@ export default function KumamotoPage() {
             <div className="mb-6">
               <div className="flex items-center justify-between mb-3">
                 <h4 className="font-bold text-lg text-black">◆ラッターの口コミ</h4>
-                <a href="https://www.google.com/search?q=ラッター+福岡+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
+                <a href="https://www.google.com/search?q=ラッター+熊本+害虫駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
                   Google口コミを見る →
                 </a>
               </div>
@@ -1138,17 +1076,17 @@ export default function KumamotoPage() {
 
           </section>
 
-      {/* 福岡の害虫駆除料金相場 */}
+      {/* 熊本の害虫駆除料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡の害虫駆除料金相場</h2>
+          <h2 className="heading-primary text-center">熊本の害虫駆除料金相場</h2>
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
               <thead>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">福岡の相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">全国平均</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">料金の目安</th>
+                  <th className="bg-gray-800 text-white border border-gray-300">全国の目安</th>
                   <th className="bg-gray-800 text-white border border-gray-300">備考</th>
                 </tr>
               </thead>
@@ -1169,20 +1107,19 @@ export default function KumamotoPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">福岡の料金が高い理由</h3>
+              <h3 className="font-bold">料金が変わる主な要因</h3>
               <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
+                料金は、建物の構造や作業の高さ、被害の範囲、施工の回数、清掃・消毒の有無によって変わります。表の金額は目安のため、複数の業者から見積もりを取り、内訳を比較してご確認ください。
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 福岡の害虫カレンダー */}
+      {/* 熊本の害虫カレンダー */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡の害虫カレンダー</h2>
+          <h2 className="heading-primary text-center">熊本の害虫カレンダー</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {seasonCalendar.map((season, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1210,36 +1147,30 @@ export default function KumamotoPage() {
         </div>
       </section>
 
-      {/* 福岡エリアの害虫駆除業者エリア */}
+      {/* 熊本の地域区分 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡エリアの害虫駆除業者エリア</h2>
+          <h2 className="heading-primary text-center">熊本の地域区分</h2>
+          <p className="text-gray-700 mb-6">熊本県の地域区分は次のとおりです。業者の対応エリアは業者ごとに異なるため、依頼前に住所が対応範囲に含まれるか各社にご確認ください。</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {areas.map((area, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-xl text-black">{area.name}</h3>
                   <p className="text-gray-700 text-sm">{area.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {area.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-success text-xl">✓</span>
-                        <span className="text-sm text-gray-900">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">熊本県公式サイト</a>))}（2026年10月17日確認）</p>
         </div>
       </section>
 
-      {/* 福岡都の相談窓口 */}
+      {/* 熊本の相談窓口 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡都の害虫相談窓口</h2>
+          <h2 className="heading-primary text-center">熊本の害虫相談窓口</h2>
+          <p className="text-gray-700 mb-6">ネズミ・衛生害虫などの相談は、次の公的な窓口でも受け付けています。連絡先・受付時間は変更されることがあるため、ご利用前に公式サイトにて最新情報をご確認ください。</p>
           <div className="space-y-4">
             {consultations.map((org, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
@@ -1250,15 +1181,22 @@ export default function KumamotoPage() {
                       <h3 className="card-title text-lg text-black">{org.name}</h3>
                       <p className="text-gray-700 text-sm mb-2">{org.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                        <div>
-                          <span className="text-xs text-gray-700">電話番号:</span>
-                          <p className="font-semibold text-black">{org.contact}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-700">受付時間:</span>
-                          <p className="font-semibold text-sm text-black">{org.hours}</p>
-                        </div>
+                        {org.contact && (
+                          <div>
+                            <span className="text-xs text-gray-700">連絡先:</span>
+                            <p className="font-semibold text-black">{org.contact}</p>
+                          </div>
+                        )}
+                        {org.hours && (
+                          <div>
+                            <span className="text-xs text-gray-700">受付時間:</span>
+                            <p className="font-semibold text-sm text-black">{org.hours}</p>
+                          </div>
+                        )}
                       </div>
+                      {org.url && (
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1268,24 +1206,19 @@ export default function KumamotoPage() {
         </div>
       </section>
 
-      {/* 福岡で多い害虫（上位5種） */}
+      {/* 主な害虫別の駆除情報 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">福岡で多い害虫（上位5種）</h2>
+          <h2 className="heading-primary text-center">主な害虫別の駆除情報</h2>
           <div className="space-y-6">
             {topPests.map((pest) => (
               <div key={pest.rank} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="badge badge-primary badge-lg">第{pest.rank}位</div>
                     <div className="text-5xl">{pest.icon}</div>
                     <div className="flex-1">
                       <h3 className="card-title text-2xl mb-2 text-black">{pest.name}</h3>
                       <p className="text-gray-700 mb-2">{pest.description}</p>
-                      <div className="flex items-center gap-2 text-sm">
-                        <span className="badge badge-outline">多発エリア:</span>
-                        <span className="text-gray-700">{pest.areas}</span>
-                      </div>
                       <Link href={pest.link} className="btn btn-primary btn-sm mt-4">
                         {pest.name}駆除について詳しく →
                       </Link>
@@ -1303,7 +1236,7 @@ export default function KumamotoPage() {
         <div className="max-w-4xl mx-auto text-center">
           <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
             <h2 className="heading-primary text-white">
-              福岡の害虫駆除のご相談について
+              熊本の害虫駆除のご相談について
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
