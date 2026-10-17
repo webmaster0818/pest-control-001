@@ -44,7 +44,7 @@ function Actions() {
   return (
     <div className="fv-actions">
       <a href="#area" className="btn btn-neutral btn-arrow">地域から探す</a>
-      <a href="#pests" className="btn btn-outline btn-arrow">害虫の種類から探す</a>
+      <a href="#pests" className="btn btn-outline btn-arrow">種類から探す</a>
     </div>
   );
 }
@@ -71,14 +71,18 @@ function Stats({ s }: { s: SiteStats }) {
   );
 }
 
-function Icons({ icons, layout }: { icons: PestIcon[]; layout: "grid" | "row" | "chips" }) {
+// アイコンのセット：a=塗りつぶしのシルエット / b=線だけ（同じ形の輪郭）。単色（文字色）の SVG。
+export type IconSet = "a" | "b";
+
+function Icons({ icons, layout, set }: { icons: PestIcon[]; layout: "grid" | "row" | "chips"; set: IconSet }) {
   return (
-    <ul className={`fv-icons fv-icons-${layout}`}>
+    <ul className={`fv-icons fv-icons-${layout} fv-icons-set-${set}`}>
       {icons.map((i) => (
         <li key={i.slug}>
           <Link href={i.href} className="fv-icon">
             <span className="fv-icon-img">
-              <Image src={`/images/pests/${i.slug}.webp`} alt="" width={256} height={256} priority />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/images/pests/${set}/${i.slug}.svg`} alt="" width={100} height={100} />
             </span>
             <span className="fv-icon-name">{i.name}</span>
           </Link>
@@ -103,7 +107,7 @@ function Photo({ className }: { className: string }) {
   );
 }
 
-export default function TopHero({ variant, stats, icons }: { variant: HeroVariant; stats: SiteStats; icons: PestIcon[] }) {
+export default function TopHero({ variant, stats, icons, iconSet = "a" }: { variant: HeroVariant; stats: SiteStats; icons: PestIcon[]; iconSet?: IconSet }) {
   if (variant === "1") {
     // FV-1：コピー｜写真｜害虫アイコンのグリッド、下に数字の帯
     return (
@@ -116,7 +120,7 @@ export default function TopHero({ variant, stats, icons }: { variant: HeroVarian
           <Photo className="fv1-photo" />
           <div className="fv1-side">
             <p className="fv-side-title">害虫・害獣から探す</p>
-            <Icons icons={icons} layout="grid" />
+            <Icons icons={icons} layout="grid" set={iconSet} />
           </div>
         </div>
         <div className="fv1-band">
@@ -141,7 +145,7 @@ export default function TopHero({ variant, stats, icons }: { variant: HeroVarian
         <div className="fv2-band">
           <div className="fv2-band-inner">
             <Stats s={stats} />
-            <Icons icons={icons} layout="row" />
+            <Icons icons={icons} layout="row" set={iconSet} />
           </div>
         </div>
       </section>
@@ -163,7 +167,7 @@ export default function TopHero({ variant, stats, icons }: { variant: HeroVarian
       <div className="fv3-band">
         <div className="fv3-band-inner">
           <p className="fv3-band-title">害虫・害獣から探す</p>
-          <Icons icons={icons} layout="chips" />
+          <Icons icons={icons} layout="chips" set={iconSet} />
         </div>
       </div>
     </section>

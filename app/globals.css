@@ -589,3 +589,11 @@ article.bg-white, .agents-index { background: var(--surface); }
   .fv1-main > * { min-width: 0; }
   .fv1-photo .fv-photo-img { object-position: 70% 25%; }
 }
+/* 10/18 2回目：アイコンをシルエット（単色）に。背景は白い丸＋細い枠だけ（ポップにしない） */
+.fv-icon-img { background: #fff; border: 1px solid var(--line); }
+.fv-icon-img img { width: 70% !important; height: 70% !important; }
+.fv-icon:hover .fv-icon-img { border-color: var(--ink); box-shadow: none; transform: translateY(-1px); }
+.fv3-band .fv-icon-img { border-color: rgba(255,255,255,.6); }
+.fv3-band .fv-icon:hover .fv-icon-img { border-color: #fff; }
+.fv-icon-img img { width: 80% !important; height: 80% !important; }
+.fv2-band .fv-icon-img { width: 60px; height: 60px; }

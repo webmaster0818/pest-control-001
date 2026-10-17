@@ -4,7 +4,7 @@ import { AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 import { prefectureRegions } from "@/app/lib/areaLinks";
 import { siteStats } from "@/app/lib/siteStats";
-import TopHero, { type HeroVariant, type PestIcon } from "@/app/components/TopHero";
+import TopHero, { type HeroVariant, type IconSet, type PestIcon } from "@/app/components/TopHero";
 
 // canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
 export const metadata: Metadata = {};
@@ -46,6 +46,8 @@ export default function Home() {
   const stats = siteStats(pests);
   const v = process.env.FV_VARIANT;
   const heroVariant: HeroVariant = v === "1" || v === "3" ? v : "2";
+  // アイコンのセット（ICON_SET=a|b。a=塗りつぶし・b=線だけ）。採用が決まったら固定する
+  const iconSet: IconSet = process.env.ICON_SET === "b" ? "b" : "a";
 
   const regions = prefectureRegions();
 
@@ -79,7 +81,7 @@ export default function Home() {
       />
 
       {/* ファーストビュー（3案。FV_VARIANT=1|2|3 でビルド時に切り替え。採用案が決まったら固定する） */}
-      <TopHero variant={heroVariant} stats={stats} icons={pestIcons} />
+      <TopHero variant={heroVariant} stats={stats} icons={pestIcons} iconSet={iconSet} />
 
       {/* おすすめ業者比較（料金を含むためアニメーションなし） */}
       <section className="top-section" data-no-reveal>
