@@ -330,6 +330,13 @@ export default async function PestAreaPage({ params }: Props) {
                     </a>
                     （確認日 {formatDate(n.confirmedDate)}）
                   </p>
+                  {n.text.includes("懲役") && (
+                    <p className="mt-2 text-xs text-slate-600 leading-relaxed">
+                      ※2025年6月1日施行の改正刑法により、懲役は拘禁刑に一本化されています。現行の鳥獣保護管理法の罰則は「一年以下の拘禁刑又は百万円以下の罰金」です（
+                      <a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="text-blue-600 hover:underline">e-Gov法令検索</a>
+                      、2026年10月17日確認）。
+                    </p>
+                  )}
                 </blockquote>
               ))}
             </div>
@@ -363,6 +370,13 @@ export default async function PestAreaPage({ params }: Props) {
                     </a>
                     （確認日 {formatDate(g.confirmedDate)}）
                   </p>
+                  {g.text.includes("懲役") && (
+                    <p className="mt-2 text-xs text-slate-600 leading-relaxed">
+                      ※2025年6月1日施行の改正刑法により、懲役は拘禁刑に一本化されています。現行の鳥獣保護管理法の罰則は「一年以下の拘禁刑又は百万円以下の罰金」です（
+                      <a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="text-blue-600 hover:underline">e-Gov法令検索</a>
+                      、2026年10月17日確認）。
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

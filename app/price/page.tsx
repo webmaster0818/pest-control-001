@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/price" },
-  title: "害虫駆除の料金相場【2026年7月】",
+  title: "害虫駆除の料金相場",
   description: "害虫駆除の料金相場をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
 };
 
@@ -149,7 +149,7 @@ export default function PricePage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            害虫駆除の料金相場【2026年7月】
+            害虫駆除の料金相場
           </h2>
           <p className="text-lg text-gray-700">
             適正な価格で害虫駆除業者を選ぶための料金ガイド
@@ -171,7 +171,7 @@ export default function PricePage() {
           <div className="max-w-3xl">
             <div className="text-6xl mb-6">💰</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              害虫駆除の料金相場【2026年7月】
+              害虫駆除の料金相場
             </h1>
             <p className="text-xl mb-8">
               適正な価格の目安を、業者選びにお役立てください。

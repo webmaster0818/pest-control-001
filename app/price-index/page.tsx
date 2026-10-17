@@ -7,7 +7,7 @@ const UPDATED = "2026年7月7日";
 
 export const metadata: Metadata = {
   title:
-    "害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果【2026年7月】業者×料金一覧",
+    "害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果業者×料金一覧",
   description:
     "駆除ザウルス・ハウスプロテクト・害獣プロテック・アサンテ・ダスキン・サンキョークリーンサービスの公式サイトに掲載された料金・保証・見積もり条件を、当サイトが2026年7月7日に確認し、一覧にまとめています。基本料金の有無、保証年数、無料見積もりの可否を出典URLとあわせて比較いただけます。",
   alternates: { canonical: "/price-index" },
@@ -85,7 +85,7 @@ const rows: Row[] = [
 const faqs = [
   {
     q: "この料金一覧はどのように確認していますか？",
-    a: "各社の公式サイトに掲載されている料金・保証・見積もり条件を、当サイト編集部が2026年7月7日に確認し、一覧にまとめています。基本料金の具体的な金額が公式サイトに掲載されていない業者は「公式に掲載なし（要見積もり）」と記載し、推測による数値は掲載していません。料金・条件は改定されることがあるため、毎月確認し、更新しています。",
+    a: "各社の公式サイトに掲載されている料金・保証・見積もり条件を、当サイト編集部が2026年7月7日に確認し、一覧にまとめています。基本料金の具体的な金額が公式サイトに掲載されていない業者は「公式に掲載なし（要見積もり）」と記載し、推測による数値は掲載していません。料金・条件は改定されることがあるため、最新の内容は各社の公式サイトでご確認ください。",
   },
   {
     q: "害虫駆除の料金はなぜ『要見積もり』が多いのですか？",
@@ -105,7 +105,7 @@ export default function PriceIndexPage() {
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果【2026年7月】",
+    headline: "害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果",
     description: "主要な害虫・害獣駆除業者の公式サイトに掲載された料金・保証・見積もり条件を、業者別に確認して一覧にまとめています。出典URLと確認日を記載しています。",
     author: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ編集部" },
     publisher: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ" },
@@ -128,10 +128,10 @@ export default function PriceIndexPage() {
 
         <article className="bg-white rounded-2xl shadow-sm p-5 sm:p-8 mt-4">
           <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-3">
-            害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果【2026年7月】
+            害虫・害獣駆除 料金インデックス｜主要業者の公式料金の確認結果
           </h1>
           <p className="text-sm text-gray-500 mb-1">最終更新日：{UPDATED}</p>
-          <p className="text-xs text-gray-400 mb-6">料金の確認日：{CHECKED}（各社公式サイトを毎月確認し、更新しています）</p>
+          <p className="text-xs text-gray-400 mb-6">料金の確認日：{CHECKED}</p>
 
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 mb-8">
             <p className="font-bold text-primary mb-2">本ページについて</p>

@@ -3,13 +3,13 @@ import Link from "next/link";
 import Breadcrumb from "../components/Breadcrumb";
 
 const CHECKED = "2026年7月7日";
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年10月17日";
 
 export const metadata: Metadata = {
   title:
-    "害虫・害獣の発生時期と駆除時期のカレンダー【2026年7月】今月の対策",
+    "害虫・害獣の発生時期と駆除時期のカレンダー｜季節ごとの対策",
   description:
-    "シロアリ・ハチ・ゴキブリ・ネズミ・ムカデ・トコジラミ・ダニ・シバンムシなど、害虫・害獣ごとの発生が活発になる時期と、駆除・依頼に適した時期を、日本しろあり対策協会や自治体・衛生研究所などの公的情報をもとにまとめています。今月（2026年7月）の対策と依頼の目安も毎月更新しています。",
+    "シロアリ・ハチ・ゴキブリ・ネズミ・ムカデ・トコジラミ・ダニ・シバンムシなど、害虫・害獣ごとの発生が活発になる時期と、駆除・依頼に適した時期を、日本しろあり対策協会や自治体・衛生研究所などの公的情報をもとにまとめています。季節ごとの対策と依頼の目安も掲載しています。",
   alternates: { canonical: "/gaichu-calendar" },
 };
 
@@ -107,12 +107,12 @@ const pests: Pest[] = [
   },
 ];
 
-const thisMonth = [
-  "イエシロアリの羽アリ（6〜7月・夜間に灯火へ飛来）を見かけた場合は、発生源が近い可能性があります。早めに床下調査を依頼することをおすすめします。",
-  "スズメバチの巣が大きくなる時期に入ります。6月以降の巣には触らず、専門業者・保健所にご相談ください。",
-  "梅雨〜夏はダニの繁殖にご注意ください（湿度60%以上）。換気・除湿と寝具の手入れが有効です。",
-  "ゴキブリの活動期です。屋内に侵入される前に、粘着トラップの設置と侵入経路の点検をおすすめします。",
-  "トコジラミは一年を通して発生します。旅行・帰省シーズンは持ち帰りに注意し、発見した場合は早めに対処してください。",
+const seasonal = [
+  "春（4〜5月）：ヤマトシロアリの羽アリが昼間に群飛します。スズメバチは、巣が小さく女王1匹の営巣初期（4月中旬〜5月）が対処しやすい時期です。",
+  "初夏〜夏（6〜7月）：イエシロアリの羽アリが夜間に灯火へ飛来します。梅雨〜夏はダニ対策（換気・湿度管理）が重要です。6月以降のスズメバチの巣は大型化するため、専門業者・保健所にご相談ください。",
+  "夏〜秋（8〜11月）：スズメバチは8〜9月頃が最盛期です。アシナガバチは10月頃まで活動します。タバコシバンムシは10〜11月にも発生します。",
+  "冬：ネズミの家屋への侵入が増えます。殺鼠剤（毒餌）による駆除に適した時期です。",
+  "通年：トコジラミは季節を問わず発生します。発見した時点で早めに対処してください。",
 ];
 
 const faqs = [
@@ -134,12 +134,12 @@ export default function GaichuCalendarPage() {
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "害虫・害獣の発生時期と駆除時期のカレンダー【2026年7月】",
+    headline: "害虫・害獣の発生時期と駆除時期のカレンダー",
     description: "害虫・害獣ごとの発生が活発な時期と、駆除・依頼に適した時期を、公的情報をもとにまとめたカレンダーです。",
     author: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ編集部" },
     publisher: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ" },
     datePublished: "2026-07-07",
-    dateModified: "2026-07-07",
+    dateModified: "2026-10-17",
   };
   const faqLd = {
     "@context": "https://schema.org",
@@ -157,16 +157,16 @@ export default function GaichuCalendarPage() {
 
         <article className="bg-white rounded-2xl shadow-sm p-5 sm:p-8 mt-4">
           <h1 className="text-2xl sm:text-3xl font-bold leading-snug mb-3">
-            害虫・害獣の発生時期と駆除時期のカレンダー【2026年7月】
+            害虫・害獣の発生時期と駆除時期のカレンダー
           </h1>
           <p className="text-sm text-gray-500 mb-1">最終更新日：{UPDATED}</p>
-          <p className="text-xs text-gray-400 mb-6">情報の確認日：{CHECKED}（公的情報をもとに毎月見直し、更新しています）</p>
+          <p className="text-xs text-gray-400 mb-6">情報の確認日：{CHECKED}</p>
 
-          {/* 今月 */}
+          {/* 季節ごとの対策 */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
-            <p className="font-bold text-amber-900 mb-2">📅 今月（2026年7月）の対策と依頼の目安</p>
+            <p className="font-bold text-amber-900 mb-2">📅 季節ごとの対策と依頼の目安（下の表の内容をもとに整理）</p>
             <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-700 leading-relaxed">
-              {thisMonth.map((t, i) => (
+              {seasonal.map((t, i) => (
                 <li key={i}>{t}</li>
               ))}
             </ul>

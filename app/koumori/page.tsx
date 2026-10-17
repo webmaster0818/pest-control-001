@@ -1172,8 +1172,11 @@ export default function KoumoriPage() {
             <div>
               <h3 className="font-bold">違法行為の罰則</h3>
               <p className="text-sm">
-                鳥獣保護管理法違反の場合、<strong>1年以下の懲役または100万円以下の罰金</strong>が科せられます。
+                鳥獣保護管理法違反の場合、<strong>1年以下の拘禁刑または100万円以下の罰金</strong>が科せられます。
                 必ず法律を遵守した方法で対処してください。
+              </p>
+              <p className="text-xs mt-1">
+                出典：<a href="https://laws.e-gov.go.jp/law/414AC0000000088" target="_blank" rel="nofollow noopener" className="underline">e-Gov法令検索「鳥獣の保護及び管理並びに狩猟の適正化に関する法律」</a>（2026年10月17日確認）。2025年6月1日施行の改正刑法により、懲役は拘禁刑に一本化されています。
               </p>
             </div>
           </div>
