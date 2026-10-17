@@ -79,28 +79,28 @@ export default async function BrandAreaPage({ params }: Props) {
       />
 
       <article className="bg-white">
-        <header className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
-          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">
+        <header className="ph" data-no-reveal>
+          <div className="ph-inner">
+            <p className="eyebrow">
               ブランド × エリア情報
             </p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
+            <h1 className="ph-title">
               {b.brandName}
-              <span className="text-amber-300">{b.areaName}</span>
+              <span className="ph-accent">{b.areaName}</span>
               の対応エリア・拠点
             </h1>
-            <p className="text-slate-200 leading-relaxed">
+            <p className="ph-lead">
               {b.brandName}（運営：{b.operator.name}）が{b.areaName}
               向けに公開している拠点・対応市区町村・料金表記・保証・受付時間を、公式サイトの記載にもとづいて整理しています。
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">
+            <div className="ph-badges">
+              <span className="ph-badge">
                 拠点 {b.offices.length}件
               </span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">
+              <span className="ph-badge">
                 公式掲載 市区町村 {b.municipalities.length}件
               </span>
-              <span className="badge badge-lg bg-white/15 border-0 text-white">
+              <span className="ph-badge">
                 確認日 {confirmed}
               </span>
             </div>
@@ -108,7 +108,7 @@ export default async function BrandAreaPage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-          <div className="mb-8 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 leading-relaxed">
+          <div className="notice">
             本ページは、{b.brandName}
             の公式サイトの公開情報をもとに編集部が整理したものです（確認日：{confirmed}
             ）。料金・対応可否・住所は公式サイトの表記をそのまま掲載しており、編集部による推測は加えていません。最新の内容は公式サイトでご確認ください。
@@ -116,7 +116,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 冒頭の要約 */}
           <section id="summary" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               {b.areaName}対応の概要
             </h2>
             <ul className="space-y-3">
@@ -151,7 +151,7 @@ export default async function BrandAreaPage({ params }: Props) {
           </section>
 
           {hasAff(b.brandSlug) && (
-            <div className="mb-12 rounded-2xl bg-slate-800 p-5 text-center">
+            <div className="aff-band" data-no-reveal>
               <p className="text-sm text-slate-200 mb-3">{b.areaName}での対応可否・見積もりは公式サイトから相談できます</p>
               <AffText slug={b.brandSlug} variant="button" label={`${agent ? agent.name : b.brandName}の公式サイトで無料見積もり`} />
               <p className="mt-2 text-xs text-slate-400">※本ページはプロモーションを含みます</p>
@@ -160,7 +160,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 拠点情報 */}
           <section id="offices" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               拠点情報（住所・電話・管轄エリア）
             </h2>
             <div className="overflow-x-auto">
@@ -222,7 +222,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 対応市区町村 */}
           <section id="municipalities" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               公式サイトに掲載されている対応市区町村
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -244,7 +244,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 対応する害獣・作業内容 */}
           <section id="services" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               対応する害獣・作業内容
             </h2>
             <div className="overflow-x-auto">
@@ -286,7 +286,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 料金と保証 */}
           <section id="price" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               料金と保証
             </h2>
 
@@ -342,7 +342,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 受付時間・調査/見積もり */}
           <section id="hours" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               受付時間・調査／見積もり
             </h2>
             <div className="overflow-x-auto">
@@ -389,7 +389,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 資格・許可 */}
           <section id="qualifications" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               資格・許可
             </h2>
             <ul className="space-y-2">
@@ -413,7 +413,7 @@ export default async function BrandAreaPage({ params }: Props) {
           {/* 確認できなかった項目 */}
           {b.notFound && b.notFound.length > 0 && (
             <section id="notfound" className="scroll-mt-20 mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-slate-400 pl-4 mb-5">
+              <h2 className="h2-sec">
                 公式サイトで確認できなかった項目
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -435,7 +435,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 出典 */}
           <section id="sources" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-slate-400 pl-4 mb-5">
+            <h2 className="h2-sec">
               出典（確認日 {confirmed}）
             </h2>
             <ul className="space-y-2 text-sm">
@@ -456,7 +456,7 @@ export default async function BrandAreaPage({ params }: Props) {
 
           {/* 導線 */}
           <section id="related" className="scroll-mt-20">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               関連ページ
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

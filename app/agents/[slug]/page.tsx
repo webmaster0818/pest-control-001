@@ -6,6 +6,7 @@ import { agents, getAgent } from "../agentsData";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { brandAreas } from "@/app/data/brandAreas";
 import { AffBanner, AffText, hasAff } from "@/app/components/AffLink";
+import CompanyVisual from "@/app/components/CompanyVisual";
 
 const SITE = "https://gaichu-pro.com";
 const UPDATED = "2026-06-10";
@@ -81,43 +82,51 @@ export default async function AgentPage({ params }: Props) {
       />
 
       <article className="bg-white">
-        <header className="relative isolate overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 text-white">
-          <div className="mx-auto max-w-4xl px-4 py-12 md:py-16">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">害獣・害虫駆除業者の口コミ・評判</p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
-              {a.name}の口コミ・評判
-              <br className="hidden md:block" />
-              料金・サービス内容・メリットとデメリット
-            </h1>
-            <p className="text-slate-200 leading-relaxed max-w-2xl">{a.heroLead}</p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {a.badges.map((b) => (
-                <span key={b} className="badge badge-lg bg-white/15 border-0 text-white">{b}</span>
-              ))}
-            </div>
-            {hasAff(a.slug) ? (
-              <div className="mt-8 flex flex-col items-center sm:items-start gap-4">
-                <AffBanner slug={a.slug} />
-                <AffText slug={a.slug} variant="button" label={`${a.name}の公式サイトで無料見積もり`} />
-                <p className="text-xs text-slate-300">※本ページはプロモーションを含みます</p>
+        <header className="ph" data-no-reveal>
+          <div className="ph-inner ph-grid">
+            <div className="ph-copy">
+              <p className="eyebrow">害獣・害虫駆除業者の口コミ・評判</p>
+              <h1 className="ph-title">
+                {a.name}の口コミ・評判
+                <br className="hidden md:block" />
+                <span className="ph-title-sub">料金・サービス内容・メリットとデメリット</span>
+              </h1>
+              <p className="ph-lead">{a.heroLead}</p>
+              <div className="ph-badges">
+                {a.badges.map((b) => (
+                  <span key={b} className="ph-badge">{b}</span>
+                ))}
               </div>
-            ) : null}
-            <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
-              <Image src={a.image} alt={`${a.name}の害獣・害虫駆除サービス`} width={1200} height={800} className="w-full h-56 md:h-72 object-cover" priority />
             </div>
+            <aside className="ph-side">
+              {hasAff(a.slug) ? (
+                <div className="ph-cta">
+                  <AffBanner slug={a.slug} />
+                  <AffText slug={a.slug} variant="button" label={`${a.name}の公式サイトで無料見積もり`} />
+                  <p className="ph-pr">※本ページはプロモーションを含みます</p>
+                </div>
+              ) : (
+                <CompanyVisual id={a.image} name={a.name} size="wide" />
+              )}
+            </aside>
           </div>
+          {hasAff(a.slug) && (
+            <div className="ph-visual">
+              <Image src={a.image} alt={`${a.name}の害獣・害虫駆除サービス`} width={1200} height={800} className="ph-visual-img" priority />
+            </div>
+          )}
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-          <p className="text-sm text-slate-500 mb-8">最終更新日：{jpDate(a.updated ?? UPDATED)}　／　害虫・害獣駆除プロ比較ナビ編集部</p>
+          <p className="meta-line">最終更新日：{jpDate(a.updated ?? UPDATED)}　／　害虫・害獣駆除プロ比較ナビ編集部</p>
 
-          <nav aria-label="目次" className="mb-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p className="font-bold text-slate-800 mb-4">目次</p>
-            <ol className="space-y-2 text-sm md:text-base">
+          <nav aria-label="目次" className="toc">
+            <p className="toc-title">目次</p>
+            <ol className="toc-list">
               {toc.map(([id, label], i) => (
                 <li key={id}>
-                  <a href={`#${id}`} className="text-slate-700 hover:text-amber-700 hover:underline">
-                    <span className="text-amber-600 font-bold mr-2">{String(i + 1).padStart(2, "0")}</span>{label}
+                  <a href={`#${id}`}>
+                    <span className="toc-no">{String(i + 1).padStart(2, "0")}</span>{label}
                   </a>
                 </li>
               ))}
@@ -125,7 +134,7 @@ export default async function AgentPage({ params }: Props) {
           </nav>
 
           <section id="about" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}の概要</h2>
+            <h2 className="h2-sec">{a.name}の概要</h2>
             {a.about.map((p, i) => (
               <p key={i} className="text-slate-700 leading-loose mb-4">{p}</p>
             ))}
@@ -144,7 +153,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="taiou" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">対応している害獣・害虫の種類</h2>
+            <h2 className="h2-sec">対応している害獣・害虫の種類</h2>
             {a.serviceTags ? (
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {a.serviceTags.map((s) => (
@@ -169,8 +178,8 @@ export default async function AgentPage({ params }: Props) {
             )}
           </section>
 
-          <section id="price" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}の料金体系と相場</h2>
+          <section id="price" className="scroll-mt-20 mb-14" data-no-reveal>
+            <h2 className="h2-sec">{a.name}の料金体系と相場</h2>
             <div className="overflow-x-auto">
               <table className="table w-full border border-slate-200">
                 <thead><tr className="bg-slate-100 text-slate-700"><th>項目</th><th>料金の目安</th><th>備考</th></tr></thead>
@@ -194,8 +203,8 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">利用者の口コミ・評判</h2>
-            <div className="rounded-2xl bg-amber-50 border border-amber-200 p-6 mb-6 flex flex-col sm:flex-row items-center gap-4">
+            <h2 className="h2-sec">利用者の口コミ・評判</h2>
+            <div className="rv-summary">
               {a.satisfaction && (
                 <div className="text-center">
                   <p className="text-4xl font-bold text-amber-700">{a.satisfaction}<span className="text-xl text-slate-500">/5</span></p>
@@ -236,22 +245,22 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="merit" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">メリットとデメリット</h2>
+            <h2 className="h2-sec">メリットとデメリット</h2>
             <div className="grid md:grid-cols-2 gap-5">
-              <div className="rounded-2xl border-2 border-emerald-200 bg-emerald-50 p-6">
-                <h3 className="font-bold text-emerald-800 mb-3">メリット</h3>
+              <div className="pm-box pm-good">
+                <h3 className="pm-title">メリット</h3>
                 <ul className="space-y-2 text-sm text-slate-700">{a.merits.map((m, i) => <li key={i}>{m}</li>)}</ul>
               </div>
-              <div className="rounded-2xl border-2 border-rose-200 bg-rose-50 p-6">
-                <h3 className="font-bold text-rose-800 mb-3">デメリット・注意点</h3>
+              <div className="pm-box pm-bad">
+                <h3 className="pm-title">デメリット・注意点</h3>
                 <ul className="space-y-2 text-sm text-slate-700">{a.demerits.map((m, i) => <li key={i}>{m}</li>)}</ul>
               </div>
             </div>
           </section>
 
           <section id="recommend" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">{a.name}の利用が適している方</h2>
-            <div className="rounded-2xl border border-slate-200 overflow-hidden">
+            <h2 className="h2-sec">{a.name}の利用が適している方</h2>
+            <div className="rec-box">
               <Image src="/images/hero-animal-new.jpg" alt="天井裏に侵入する害獣のイメージ" width={1200} height={480} className="w-full h-48 md:h-56 object-cover" />
               <div className="p-6">
                 <ul className="space-y-3 text-slate-700">
@@ -264,7 +273,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="compare" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">他社と比較する際の確認項目</h2>
+            <h2 className="h2-sec">他社と比較する際の確認項目</h2>
             <p className="text-slate-700 leading-loose mb-4">駆除業者を選ぶ際は、料金の安さだけでなく、保証や施工体制を含めて総合的に比較することが大切です。{a.name}を他社と比べる際は、次の点を確認すると判断しやすくなります。</p>
             <ol className="space-y-3 text-slate-700">
               {a.comparePoints.map((c, i) => (
@@ -279,7 +288,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-14">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">よくある質問</h2>
+            <h2 className="h2-sec">よくある質問</h2>
             <div className="space-y-3">
               {a.faqs.map((f, i) => (
                 <div key={i} className="collapse collapse-arrow border border-slate-200 rounded-xl bg-white">
@@ -291,12 +300,12 @@ export default async function AgentPage({ params }: Props) {
             </div>
           </section>
 
-          <section id="summary" className="scroll-mt-20">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">まとめ</h2>
+          <section id="summary" className="scroll-mt-20" data-no-reveal>
+            <h2 className="h2-sec">まとめ</h2>
             {a.summary.map((p, i) => (
               <p key={i} className="text-slate-700 leading-loose mb-4">{p}</p>
             ))}
-            <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-2">
+            <div className="end-cta">
               <p className="font-bold text-lg mb-2">害獣・害虫の被害でお困りの方へ</p>
               <p className="text-slate-300 text-sm mb-4">地域・被害状況に合った駆除業者を比較し、無料見積もりの依頼にお役立てください。</p>
               {hasAff(a.slug) ? (
@@ -307,7 +316,7 @@ export default async function AgentPage({ params }: Props) {
                   <p className="text-xs text-slate-400">※本ページはプロモーションを含みます</p>
                 </div>
               ) : (
-                <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white">駆除業者を比較して探す</Link>
+                <Link href="/" className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white btn-arrow">駆除業者を比較して探す</Link>
               )}
             </div>
             {a.sources && a.sources.length > 0 && (

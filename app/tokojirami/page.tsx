@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/tokojirami" },
   title: "トコジラミ駆除の基礎知識 | 南京虫対策",
@@ -78,64 +79,64 @@ export default function TokojiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">ダスキン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <span className="rank rank-3">3</span>
                       <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">衛生害虫110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
+                      <span className="rank">5</span>
                       <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">エンバイロ・プランニング</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">6</span>
+                      <span className="rank">6</span>
                       <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">7</span>
+                      <span className="rank">7</span>
                       <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">街角害虫駆除相談所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">8</span>
+                      <span className="rank">8</span>
                       <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">害虫駆除対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">9</span>
+                      <span className="rank">9</span>
                       <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
@@ -242,10 +243,10 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（トコジラミ駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -328,10 +329,10 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（トコジラミ駆除）</h3>
               </div>
-              <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -414,7 +415,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">衛生害虫110番（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
@@ -500,10 +501,10 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（トコジラミ駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -580,7 +581,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">エンバイロ・プランニング（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="エンバイロ・プランニング" className="w-full h-48 object-cover rounded-lg" />
@@ -664,7 +665,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">アサンテ（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-full h-48 object-cover rounded-lg" />
@@ -750,7 +751,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
@@ -836,7 +837,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除対策センター（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
@@ -922,7 +923,7 @@ export default function TokojiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（トコジラミ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
@@ -1062,20 +1063,20 @@ export default function TokojiPage() {
           <h2 className="heading-primary text-center">トコジラミを見つけたら</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div className="card bg-error text-error-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+<h3 className="card-title text-2xl">避けるべき行動</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>ピレスロイド系の殺虫成分を用いたくん煙剤やスプレーを使う（効かないだけでなく、トコジラミが興奮してほかの部屋に移動し、被害が広がることがあります）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>くん煙殺虫剤で済ませようとする（かえって生息範囲が広がってしまうこともあります）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>家庭での対策だけで駆除を終えようとする（東京都は、家庭での対策だけで駆除することは困難としています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>ピレスロイド系の殺虫成分を用いたくん煙剤やスプレーを使う（効かないだけでなく、トコジラミが興奮してほかの部屋に移動し、被害が広がることがあります）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>くん煙殺虫剤で済ませようとする（かえって生息範囲が広がってしまうこともあります）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>家庭での対策だけで駆除を終えようとする（東京都は、家庭での対策だけで駆除することは困難としています）</span></li>
 </ul>
 </div></div>
 <div className="card bg-success text-success-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">✅ すべきこと</h3>
+<h3 className="card-title text-2xl">すべきこと</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>血糞やトコジラミの特徴を持った虫が見つかった場合は、早急に専門業者に見てもらい駆除を行う</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>ベッドの隙間、マットレス、布団、畳の縁、カーテンの折り目などの潜み場所を確認する</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>お住まいの地区を管轄する保健所に相談する</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>被害の拡大を防ぐため、対応を先延ばしにしない（家中に広がると駆除が困難になります）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>血糞やトコジラミの特徴を持った虫が見つかった場合は、早急に専門業者に見てもらい駆除を行う</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>ベッドの隙間、マットレス、布団、畳の縁、カーテンの折り目などの潜み場所を確認する</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>お住まいの地区を管轄する保健所に相談する</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>被害の拡大を防ぐため、対応を先延ばしにしない（家中に広がると駆除が困難になります）</span></li>
 </ul>
 </div></div>
 </div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/tokojirami_leaf" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「トコジラミ」（リーフレット「知っていますか？トコジラミ」）</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/bedbugs2.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「トコジラミについて」</a>（2026年10月17日確認）</p>

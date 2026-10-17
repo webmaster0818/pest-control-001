@@ -198,37 +198,36 @@ export default function GuidePage() {
               {
                 title: '飛び込み営業',
                 description: '事前の連絡なく訪問し、「今すぐ駆除が必要」と不安を煽る業者です。正規の業者は、基本的に飛び込み営業を行いません。',
-                icon: '🚪'
+                icon: ''
               },
               {
                 title: '即決を迫る',
                 description: '「今日契約すれば特別割引」などと、検討する時間を与えない業者です。複数の業者を比較検討することが基本です。',
-                icon: '⏰'
+                icon: ''
               },
               {
                 title: '見積もりを出さない',
                 description: '「作業してみないとわからない」として、明確な見積もりを出さない業者です。後から高額な請求を受けるおそれがあります。',
-                icon: '📄'
+                icon: ''
               },
               {
                 title: '極端に安い料金',
                 description: '相場よりも大幅に安い料金を提示する業者です。追加料金により、最終的に高額になるケースが多くあります。',
-                icon: '💰'
+                icon: ''
               },
               {
                 title: '連絡先が不明確',
                 description: '固定電話がない、住所が不明など、連絡先が明確でない業者です。トラブルの際に連絡が取れないおそれがあります。',
-                icon: '📞'
+                icon: ''
               },
               {
                 title: '契約を急かす',
                 description: '「害虫が増える前に」「被害が広がる前に」と契約を急がせる業者です。冷静な判断が難しくなるため注意が必要です。',
-                icon: '🏃'
+                icon: ''
               }
             ].map((warning, index) => (
               <div key={index} className="card bg-red-50 border-2 border-red-200 shadow-lg">
                 <div className="card-body">
-                  <div className="text-4xl mb-2">{warning.icon}</div>
                   <h3 className="card-title text-xl text-red-700">{warning.title}</h3>
                   <p className="text-base-content/70">{warning.description}</p>
                 </div>

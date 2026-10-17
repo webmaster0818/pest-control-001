@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { agentsByPriority as agents } from "./agentsData";
 import { AffText, hasAff } from "@/app/components/AffLink";
+import CompanyVisual from "@/app/components/CompanyVisual";
 
 const SITE = "https://gaichu-pro.com";
 
@@ -16,25 +16,26 @@ export const metadata: Metadata = {
 
 export default function AgentsIndexPage() {
   return (
-    <article className="bg-white">
+    <article className="agents-index">
       <Breadcrumb items={[{ label: "害虫・害獣駆除プロ比較ナビ", href: "/" }, { label: "駆除業者の口コミ・評判" }]} />
-      <div className="mx-auto max-w-4xl px-4 py-10">
-        <h1 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">害獣・害虫駆除業者の口コミ・評判一覧</h1>
-        <p className="text-slate-600 mb-8 leading-relaxed">
+      <div className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+        <p className="eyebrow">駆除業者の口コミ・評判</p>
+        <h1 className="agents-title">害獣・害虫駆除業者の口コミ・評判一覧</h1>
+        <p className="agents-lead">
           主要な害獣・害虫駆除業者の料金・対応害獣・保証内容・利用者の口コミを、編集部が中立的な立場で調査し、まとめています。依頼前の比較にお役立てください。
         </p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="agents-grid rv-auto">
           {agents.map((a) => (
-            <div key={a.slug} className="rounded-2xl border border-slate-200 p-4 hover:shadow-md hover:border-amber-300 transition">
-              <Link href={`/agents/${a.slug}/`} className="flex items-center gap-4">
-                <Image src={a.image} alt={a.name} width={72} height={72} className="w-16 h-16 rounded-xl object-cover shrink-0" />
-                <div>
-                  <p className="font-bold text-slate-800">{a.name}</p>
-                  <p className="text-xs text-slate-500 mt-1">口コミ・評判・料金を見る</p>
-                </div>
+            <div key={a.slug} className="agent-card">
+              <div className="agent-card-visual">
+                <CompanyVisual id={a.image} name={a.name} size="thumb" monogram />
+              </div>
+              <Link href={`/agents/${a.slug}/`} className="agent-card-link">
+                <p className="agent-card-name">{a.name}</p>
+                <p className="agent-card-more">口コミ・評判・料金を見る</p>
               </Link>
               {hasAff(a.slug) && (
-                <p className="mt-2 text-right">
+                <p className="agent-card-aff">
                   <AffText slug={a.slug} variant="small" label={`${a.name}の公式サイト`} />
                 </p>
               )}

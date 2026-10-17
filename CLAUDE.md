@@ -93,3 +93,14 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 探索: Yahoo!検索は30件ほどでブロック（以後10分単位で断続的に解除）。Wikidata（P856）で市町村の公式トップURLを一括取得→各サイトをキーワード優先の幅優先クロール（1サイト220ページ）→不足分は sitemap.xml 全件走査、が有効だった。並列で同じ県の市町サイトを叩くと 403 になる（佐賀で発生）。
 - 市のドメイン移転に注意: 久慈市 city.kuji.lg.jp・伊万里市 city.imari.lg.jp・砺波市 city.tonami.lg.jp・鹿角市 city.kazuno.lg.jp・さぬき市 city.sanuki.lg.jp・鳴門市 city.naruto.lg.jp。
 - sitemap 455→462URL。precheck の不合格は /agents 系9ページの img alt 欠落のみ（アフィリエイトの計測画像・別作業分で未変更）。
+
+---
+## 作業ログ 2026-10-17 (jiro) — デザイン刷新案（ブランチ redesign-20261017・未push／okina確認待ち）
+- 方針: 紙の地色＋白い面＋細い罫、見出し=しっぽり明朝 B1・本文=Noto Sans JP（next/font）。共通部品は globals.css の「デザイン刷新 2026-10-17」以降に集約（.heading-primary/.btn/.table/.card を上書き）。ボタンは色を変えず形・寸法・hoverのみ統一。
+- 絵文字を全ページから除去（王冠→.rank、✅🚫⚠→CSSの線の印 .mark、⭕→○、飾りの絵文字ブロック削除）。引用内の ☎ は原文のまま。
+- 業者画像は app/components/CompanyVisual.tsx に一本化（旧 <img src="/images/companies/…"> 1,817 か所を置換）。アフィリエイトあり=ASPバナー（affiliateCodes.ts は不変）、公式画像の利用確認済み=app/data/companyVisuals.ts に登録（現状 EMEAO! のみ）、それ以外=社名表記。確認記録 growth/okina/company-images-20261017.md。
+- TOP: ヒーローを人物写真（Nano Banana Pro・public/images/hero-person.jpg）＋HTMLテキストに。旧 hero-main.png の文言はテキストで残した。「地域から探す」は 47都道府県×地方の一覧（app/lib/areaLinks.ts がビルド時に実在ページだけ拾う）。旧 AreaAccordion の区ページ（/area/tokyo/shinjuku 等）は存在しない URL だった。
+- スクロール演出: app/components/RevealObserver.tsx（0.5秒・時間差・ファーストビュー/料金/CTA/表は除外・reduced-motion 無効・JS無効でも全表示）。
+- 確認: before/after 464ページで canonical・title・description・robots・JSON-LD 一致、本文テキストの削除は ⭕→○ と TOP 地域一覧の差し替えのみ。
+- 10/18 okina指摘「FVがすっきりしすぎ・明朝は使わない・害虫らしさと数字を」に対応：明朝を全廃（見出しもNoto Sans JP 700/800・字間を詰めた）、FV 3案（app/components/TopHero.tsx・`FV_VARIANT=1|2|3` でビルド時に切替・既定2）、害虫アイコン8種（Nano Banana Pro・グリーンバック→クロマキー・public/images/pests/*.webp・各ハブへリンク）、数字帯（app/lib/siteStats.ts がビルド時に数える：業者22・都道府県43・自治体400・種類19）。
+- 10/18 2回目（okina「アイコンがポップすぎ・シルエットと文字だけに・塗りと線の2種・『害虫の種類から探す』→『種類から探す』」）：アイコンを単色シルエットの SVG に作り直し（Nano Banana Pro で白地に黒のシルエットを生成→potracer でベクター化。A=塗り public/images/pests/a/*.svg、B=同じ輪郭の線だけ（線幅3/100・小さな穴は埋めて輪郭を単純化）public/images/pests/b/*.svg、色 #1d2733）。`ICON_SET=a|b` でビルド時に切替（既定 a）。FVのボタンを「種類から探す」に（同じ文言のボタン・リンクはほかに無し。TOPの見出し h2「害虫の種類から探す」はそのまま）。

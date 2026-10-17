@@ -13,7 +13,7 @@ export default function PricePage() {
   const pestPrices = [
     {
       pest: "シロアリ駆除",
-      icon: "🐜",
+      icon: "",
       priceRange: "8,000〜15,000円/坪",
       average: "約12,000円/坪",
       details: "30坪の住宅で30万円〜45万円程度です。工法により料金が変わります。",
@@ -21,7 +21,7 @@ export default function PricePage() {
     },
     {
       pest: "ハチ駆除",
-      icon: "🐝",
+      icon: "",
       priceRange: "15,000〜50,000円",
       average: "約25,000円",
       details: "巣のサイズ・場所により変わります。高所作業には追加料金がかかります。",
@@ -29,7 +29,7 @@ export default function PricePage() {
     },
     {
       pest: "ゴキブリ駆除",
-      icon: "🪳",
+      icon: "",
       priceRange: "15,000〜50,000円",
       average: "約25,000円",
       details: "物件の広さと被害状況により変わります。飲食店は高額になる傾向があります。",
@@ -37,7 +37,7 @@ export default function PricePage() {
     },
     {
       pest: "ネズミ駆除",
-      icon: "🐭",
+      icon: "",
       priceRange: "80,000〜200,000円",
       average: "約120,000円",
       details: "侵入口の封鎖と清掃を含みます。複数回の施工が一般的です。",
@@ -45,7 +45,7 @@ export default function PricePage() {
     },
     {
       pest: "コウモリ駆除",
-      icon: "🦇",
+      icon: "",
       priceRange: "100,000〜350,000円",
       average: "約200,000円",
       details: "追い出し・侵入口の封鎖・清掃を含む費用です。法令に沿った対応が必要です。",
@@ -169,7 +169,6 @@ export default function PricePage() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <div className="text-6xl mb-6">💰</div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               害虫駆除の料金相場
             </h1>
@@ -190,7 +189,6 @@ export default function PricePage() {
               <div key={item.pest} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="text-5xl">{item.icon}</div>
                     <div className="flex-1">
                       <h3 className="card-title text-2xl mb-2">{item.pest}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -345,7 +343,7 @@ export default function PricePage() {
               <ul className="space-y-3">
                 {warningSignspests.map((sign, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <span className="text-error text-2xl">🚨</span>
+                    <span className="mark mark-warn" aria-hidden="true"></span>
                     <span className="text-lg">{sign}</span>
                   </li>
                 ))}

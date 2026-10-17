@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/itachi" },
   title: "イタチ駆除の基礎知識 | 駆除方法と再発防止",
@@ -105,7 +106,7 @@ export default function ItachiPage() {
   const damages: { category: string; icon: string; examples: string[]; src: SourceKey[] }[] = [
     {
       "category": "建物・生活環境への被害",
-      "icon": "😰",
+      "icon": "",
       "examples": [
         "住宅などの屋根裏に侵入し、糞尿による悪臭や足音による安眠妨害が生じます",
         "天井裏に糞がたまる被害や、配管の貫通穴からの侵入が報告されています",
@@ -117,7 +118,7 @@ export default function ItachiPage() {
     },
     {
       "category": "衛生面のリスク",
-      "icon": "🦠",
+      "icon": "",
       "examples": [
         "ノミ・ダニによる咬傷の被害があるとされています",
         "チョウセンイタチは、日本顎口虫や肺吸虫などの寄生虫を媒介するとされています"
@@ -129,7 +130,7 @@ export default function ItachiPage() {
     },
     {
       "category": "農作物・家禽への被害",
-      "icon": "💰",
+      "icon": "",
       "examples": [
         "シベリアイタチによる農作物被害は果樹や果菜類に発生し、痕跡が作物の下部に見られるため発見が遅れる場合があります",
         "ニホンイタチが導入された地域では、ニワトリ等の農業被害が報告されています"
@@ -341,59 +342,59 @@ export default function ItachiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="thumb" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="thumb" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">4</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">5</span>
-                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="thumb" />
                       <strong className="text-black">ハウスプロテクト</strong>
                       <AffText slug="house-protect" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">6</span>
+                      <span className="rank">6</span>
                       <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害獣駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">7</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-black">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">8</span>
-                      <img src="/images/companies/ratter.png" alt="ラッター" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="thumb" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
@@ -454,10 +455,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -540,10 +541,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -626,10 +627,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -712,10 +713,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -798,10 +799,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -878,7 +879,7 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除110番（イタチ駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
@@ -964,10 +965,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1044,10 +1045,10 @@ export default function ItachiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（イタチ駆除）</h3>
               </div>
-              <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1173,12 +1174,11 @@ export default function ItachiPage() {
             {damages.map((damage, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <div className="text-5xl mb-4 text-center">{damage.icon}</div>
                   <h3 className="card-title text-xl text-center justify-center">{damage.category}</h3>
                   <ul className="space-y-3 mt-4">
                     {damage.examples.map((example, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-error text-xl">⚠️</span>
+                        <span className="mark mark-warn" aria-hidden="true"></span>
                         <span className="text-sm">{example}</span>
                       </li>
                     ))}

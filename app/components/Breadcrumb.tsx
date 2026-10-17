@@ -31,23 +31,23 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       />
       
       {/* パンくずリストUI */}
-      <nav aria-label="パンくずリスト" className="py-4 px-4 bg-base-100">
+      <nav aria-label="パンくずリスト" className="crumbs py-3 px-4">
         <div className="max-w-7xl mx-auto">
           <ol className="flex flex-wrap items-center gap-2 text-sm">
             {items.map((item, index) => (
               <li key={index} className="flex items-center gap-2">
                 {index > 0 && (
-                  <span className="text-gray-400" aria-hidden="true">›</span>
+                  <span className="crumb-sep" aria-hidden="true">/</span>
                 )}
                 {item.href ? (
                   <Link 
                     href={item.href}
-                    className="text-blue-600 hover:text-blue-800 hover:underline"
+                    className=""
                   >
                     {item.label}
                   </Link>
                 ) : (
-                  <span className="text-gray-700 font-semibold">
+                  <span className="crumb-current">
                     {item.label}
                   </span>
                 )}

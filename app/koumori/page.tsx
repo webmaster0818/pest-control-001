@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/koumori" },
   title: "コウモリ駆除の基礎知識 | 法律と安全な追い出し方法",
@@ -21,7 +22,7 @@ export default function KoumoriPage() {
   const damages = [
     {
       type: "糞害",
-      icon: "💩",
+      icon: "",
       description: "天井裏や壁の中に大量の糞が蓄積し、悪臭や衛生上の問題を引き起こします。",
       severity: "高",
       examples: [
@@ -32,7 +33,7 @@ export default function KoumoriPage() {
     },
     {
       type: "騒音",
-      icon: "🔊",
+      icon: "",
       description: "夜間の鳴き声や羽音で、睡眠が妨げられることがあります。",
       severity: "中",
       examples: [
@@ -43,7 +44,7 @@ export default function KoumoriPage() {
     },
     {
       type: "ダニ・病原菌",
-      icon: "🦠",
+      icon: "",
       description: "コウモリに寄生するダニが、人に被害を与えることがあります。",
       severity: "高",
       examples: [
@@ -58,17 +59,17 @@ export default function KoumoriPage() {
     {
       title: "鳥獣保護管理法で保護されている",
       description: "コウモリは野生鳥獣として法律で保護されています。無許可での捕獲・殺傷は違法行為となり、罰則があります。",
-      icon: "⚖️",
+      icon: "",
     },
     {
       title: "「駆除」ではなく「追い出し」",
       description: "コウモリを殺傷することは法律で禁止されています。正しい対処法は、忌避剤などで追い出し、侵入口を封鎖することです。",
-      icon: "🚪",
+      icon: "",
     },
     {
       title: "繁殖期（5月〜8月）は作業不可",
       description: "子育て期間中は追い出し作業ができません。この時期に封鎖すると、子コウモリが餓死し違法となります。",
-      icon: "📅",
+      icon: "",
     },
   ];
 
@@ -176,59 +177,59 @@ export default function KoumoriPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="thumb" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="thumb" />
                       <strong className="text-black">ハウスプロテクト</strong>
                       <AffText slug="house-protect" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">4</span>
-                      <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="thumb" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">5</span>
+                      <span className="rank">5</span>
                       <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害獣駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/emeao.png" name="EMEAO!" size="thumb" />
                       <strong className="text-black">EMEAO!</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">7</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-black">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">8</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
@@ -289,10 +290,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -375,10 +376,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -461,10 +462,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -541,10 +542,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -627,7 +628,7 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除110番（コウモリ駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
@@ -713,10 +714,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">EMEAO!（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/emeao.png" name="EMEAO!" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -799,10 +800,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -879,10 +880,10 @@ export default function KoumoriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（コウモリ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -986,7 +987,6 @@ export default function KoumoriPage() {
             {damages.map((damage, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <div className="text-5xl mb-4 text-center">{damage.icon}</div>
                   <h3 className="card-title text-xl text-center justify-center">{damage.type}</h3>
                   <div className={`badge ${
                     damage.severity === "高" ? "badge-error" : "badge-warning"
@@ -1019,7 +1019,6 @@ export default function KoumoriPage() {
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-center gap-4">
-                    <div className="text-5xl">{point.icon}</div>
                     <h3 className="card-title text-xl">{point.title}</h3>
                   </div>
                   <p className="text-gray-700 mt-4">{point.description}</p>

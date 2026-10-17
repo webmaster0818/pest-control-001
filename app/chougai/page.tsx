@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/chougai" },
   title: "鳥害対策の基礎知識 | ハト・カラス駆除",
@@ -169,64 +170,64 @@ export default function ChougaiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <span className="rank rank-1">1</span>
                       <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">害鳥根絶の匠</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                      <span className="rank rank-2">2</span>
                       <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">日本鳩対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <span className="rank rank-3">3</span>
                       <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">みんなのハト対策屋さん</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">6</span>
+                      <span className="rank">6</span>
                       <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">トータルクリーン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">7</span>
+                      <span className="rank">7</span>
                       <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">スピナ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">8</span>
+                      <span className="rank">8</span>
                       <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">鳩110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">9</span>
+                      <span className="rank">9</span>
                       <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">プロテクト</strong>
                     </div>
@@ -333,7 +334,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">害鳥根絶の匠（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-full h-48 object-cover rounded-lg" />
@@ -419,7 +420,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">日本鳩対策センター（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-full h-48 object-cover rounded-lg" />
@@ -504,7 +505,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">みんなのハト対策屋さん（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-full h-48 object-cover rounded-lg" />
@@ -589,10 +590,10 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（鳥害駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -668,10 +669,10 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（鳥害駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -755,7 +756,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">トータルクリーン（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-full h-48 object-cover rounded-lg" />
@@ -841,7 +842,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">スピナ（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-full h-48 object-cover rounded-lg" />
@@ -927,7 +928,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">鳩110番（鳥害駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-full h-48 object-cover rounded-lg" />
@@ -1013,7 +1014,7 @@ export default function ChougaiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">プロテクト（鳥害駆除専門）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-full h-48 object-cover rounded-lg" />
@@ -1169,22 +1170,22 @@ export default function ChougaiPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="card bg-error text-error-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+                <h3 className="card-title text-2xl">避けるべき行動</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
+                    <span className="mark mark-ng" aria-hidden="true"></span>
                     <span>卵やヒナがいる巣を許可なく撤去する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
+                    <span className="mark mark-ng" aria-hidden="true"></span>
                     <span>野鳥を許可なく捕獲する、傷つける</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
+                    <span className="mark mark-ng" aria-hidden="true"></span>
                     <span>カラスやハトにエサを与える</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">🚫</span>
+                    <span className="mark mark-ng" aria-hidden="true"></span>
                     <span>糞や死骸に素手で触れる</span>
                   </li>
                 </ul>
@@ -1192,22 +1193,22 @@ export default function ChougaiPage() {
             </div>
             <div className="card bg-success text-success-content shadow-xl">
               <div className="card-body">
-                <h3 className="card-title text-2xl">✅ すべきこと</h3>
+                <h3 className="card-title text-2xl">すべきこと</h3>
                 <ul className="space-y-3 mt-4">
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
+                    <span className="mark mark-ok" aria-hidden="true"></span>
                     <span>ドバトの巣は、作り始めた時点で取り除く</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
+                    <span className="mark mark-ok" aria-hidden="true"></span>
                     <span>卵がある場合は、ヒナの巣立ちを待つか、自治体の担当窓口に相談する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
+                    <span className="mark mark-ok" aria-hidden="true"></span>
                     <span>カラスの巣は、巣のある場所（樹木・電柱など）の管理者に撤去を依頼する</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-2xl">✅</span>
+                    <span className="mark mark-ok" aria-hidden="true"></span>
                     <span>ベランダの物を片付け、室外機などの隙間をふさぐ</span>
                   </li>
                 </ul>

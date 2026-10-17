@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{backgroundColor: '#2B3A50'}} className="text-white py-12 px-4">
+    <footer className="site-footer py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* PC版 */}
         <div className="hidden md:grid md:grid-cols-3 gap-8">

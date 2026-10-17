@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/shibanmushi" },
   title: "シバンムシ駆除業者比較 | 畳・木材食害の料金相場と対策",
@@ -77,63 +78,63 @@ export default function ShibanmushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/sankyo-shoudoku.png" name="株式会社三共消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社三共消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/asante.png" name="株式会社アサンテ" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/kita-nihon.png" name="有限会社北日本消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">有限会社北日本消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/ai-eizen.png" name="株式会社あい営繕" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社あい営繕</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/miyako.png" name="株式会社ミヤコ消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社ミヤコ消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/kodama.png" name="株式会社こだま" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社こだま</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">7</span>
-                      <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/taiyo.png" name="大洋防疫研究所" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">大洋防疫研究所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">8</span>
-                      <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/daiichi.png" name="株式会社第一環研" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社第一環研</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">9</span>
+                      <span className="rank">9</span>
                       <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">ハチお助け本舗</strong>
                     </div>
@@ -240,10 +241,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">株式会社三共消毒（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo-shoudoku.png" name="株式会社三共消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -326,10 +327,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">株式会社アサンテ（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/asante.png" name="株式会社アサンテ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -412,10 +413,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kita-nihon.png" name="有限会社北日本消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -498,10 +499,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">株式会社あい営繕（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/ai-eizen.png" name="株式会社あい営繕" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -584,10 +585,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/miyako.png" name="株式会社ミヤコ消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -671,10 +672,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">株式会社こだま（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kodama.png" name="株式会社こだま" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -757,10 +758,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">大洋防疫研究所（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/taiyo.png" name="大洋防疫研究所" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -843,10 +844,10 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">株式会社第一環研（シバンムシ駆除）</h3>
               </div>
-              <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/daiichi.png" name="株式会社第一環研" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -929,7 +930,7 @@ export default function ShibanmushiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">ハチお助け本舗（ハチ駆除専門）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />
@@ -1065,21 +1066,21 @@ export default function ShibanmushiPage() {
           <h2 className="heading-primary text-center">シバンムシの発生を見つけたら</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div className="card bg-error text-error-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+<h3 className="card-title text-2xl">避けるべき行動</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>虫が発生した食品をそのまま保管する（食べられた乾燥食品は処分します）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>購入時の袋や箱のまま保管する（未開封の食品でもわずかな隙間があれば産卵され、ビニール袋や紙の包装材は容易に食い破られます）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>成虫やシバンムシアリガタバチだけを駆除して終える（宿主であるシバンムシ類の駆除が大切です）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>虫が発生した食品をそのまま保管する（食べられた乾燥食品は処分します）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>購入時の袋や箱のまま保管する（未開封の食品でもわずかな隙間があれば産卵され、ビニール袋や紙の包装材は容易に食い破られます）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>成虫やシバンムシアリガタバチだけを駆除して終える（宿主であるシバンムシ類の駆除が大切です）</span></li>
 </ul>
 </div></div>
 <div className="card bg-success text-success-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">✅ すべきこと</h3>
+<h3 className="card-title text-2xl">すべきこと</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>発生源の食品を探す（幼虫は食品の中で育ち、表面に細かなくずを出すため、それが目印になります）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>乾燥食品は、しっかり密閉できる容器に入れて保管する</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>掃除機をかけて換気し、保管場所にたまった食品かすを定期的に清掃する</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>畳を天日干しや高温処理する</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>種類が分からない場合は、虫を持参して保健所等に相談する（横浜市は近くの福祉保健センターへの相談を案内しています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>発生源の食品を探す（幼虫は食品の中で育ち、表面に細かなくずを出すため、それが目印になります）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>乾燥食品は、しっかり密閉できる容器に入れて保管する</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>掃除機をかけて換気し、保管場所にたまった食品かすを定期的に清掃する</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>畳を天日干しや高温処理する</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>種類が分からない場合は、虫を持参して保健所等に相談する（横浜市は近くの福祉保健センターへの相談を案内しています）</span></li>
 </ul>
 </div></div>
 </div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）、<a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
