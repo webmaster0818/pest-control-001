@@ -515,3 +515,6 @@ article.bg-white, .agents-index { background: var(--surface); }
 .fv3-band .fv-icon-img { border-color: rgba(255,255,255,.6); }
 .fv3-band .fv-icon:hover .fv-icon-img { border-color: #fff; }
 .fv-icon-img img { width: 80% !important; height: 80% !important; }
+/* 表内のASPボタン（.aff-tablebtn）にも緑の .btn-arrow と同じ矢印・間隔を付ける。ASPのタグ・文言は変えず CSS だけで付ける */
+.aff-tablebtn a { gap: 10px; justify-content: center; border: 1px solid transparent; }
+.aff-tablebtn a::after { content: ""; flex: none; width: 7px; height: 7px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: rotate(45deg); margin-left: 2px; }
