@@ -230,7 +230,7 @@ export default function DaniPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                   <td className="text-center">◎ 関東・関西・東海</td>
                   <td className="text-center">◎ 関東・東海</td>
-                  <td className="text-center">○ 北陸4県</td>
+                  <td className="text-center">◎ 全国（北海道・沖縄除く）</td>
                   <td className="text-center">○ 北九州・福岡・下関</td>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
@@ -242,7 +242,7 @@ export default function DaniPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">8:30〜19:30</td>
-                  <td className="text-center">8:30〜17:30</td>
+                  <td className="text-center">24時間365日</td>
                   <td className="text-center">8:00〜20:00</td>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">8:00〜17:00</td>
@@ -506,15 +506,15 @@ export default function DaniPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
-                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
+                <li>公式サイトで「全国対応（北海道、沖縄県、一部地域を除く）」「完全自社施工」と案内しています</li>
+                <li>「お見積り」「現地調査」無料、電話は24時間365日受付（公式表記）</li>
+                <li>公式表記で「創業21年」「最長10年 安心の再発保証」</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -526,15 +526,15 @@ export default function DaniPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>富山県、石川県、新潟県、岐阜県</td>
+                      <td>全国（北海道・沖縄県・一部地域を除く。公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜17:30・土日祝日・時間外も対応</td>
+                      <td>24時間365日受付（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ダニ・ネズミなど不快害虫・害獣全般</td>
+                      <td>害獣・害虫全般（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -542,7 +542,7 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>1〜3ヵ月間の保証あり</td>
+                      <td>最長10年の再発保証（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
@@ -550,11 +550,12 @@ export default function DaniPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>クレジットカード・電子マネーに対応（公式FAQ）</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：駆除ザウルス 公式サイト（https://kujyo-zaurus.com/ ・ https://kujyo-zaurus.com/company/）2026年10月17日確認</p>
             </div>
 
             <div className="mb-6">
@@ -573,7 +574,7 @@ export default function DaniPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
