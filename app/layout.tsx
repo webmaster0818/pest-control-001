@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_JP } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
@@ -17,22 +17,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// 本文=Noto Sans JP、見出し=しっぽり明朝。和文グリフは unicode-range で分割配信されるため preload はしない。
+// 見出し・本文とも Noto Sans JP（明朝は使わない）。和文グリフは unicode-range で分割配信されるため preload はしない。
 const notoSansJp = Noto_Sans_JP({
   variable: "--font-sans-jp",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "700", "800"],
   display: "swap",
   preload: false,
 });
 
-const shipporiMincho = Shippori_Mincho_B1({
-  variable: "--font-serif-jp",
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-  preload: false,
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gaichu-pro.com'),
@@ -88,7 +81,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSansJp.variable} ${shipporiMincho.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSansJp.variable} antialiased`}
       ><div className="pr-bar">本サイトはプロモーション(PR)を含みます。</div>
         {/* Google Analytics */}
         <Script

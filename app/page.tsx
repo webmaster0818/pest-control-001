@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 import { prefectureRegions } from "@/app/lib/areaLinks";
+import { siteStats } from "@/app/lib/siteStats";
+import TopHero, { type HeroVariant, type PestIcon } from "@/app/components/TopHero";
 
 // canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
 export const metadata: Metadata = {};
@@ -31,13 +32,20 @@ export default function Home() {
     { name: "タヌキ", href: "/tanuki" },
   ];
 
-  // 旧ヒーロー画像（hero-main.png）に入っていた文言をそのままテキストで表示
-  const heroPoints = [
-    "全国から厳選！害虫駆除業者多数掲載",
-    "リアルな声がわかる！利用者の口コミ・評価",
-    "24時間365日対応の業者多数",
-    "明朗会計・無料見積りも可能",
+  // ファーストビューの害虫・害獣アイコン（各ハブページへ。実在するページのみ）
+  const pestIcons: PestIcon[] = [
+    { slug: "hachi", name: "ハチ", href: "/hachi" },
+    { slug: "shiroari", name: "シロアリ", href: "/shiroari" },
+    { slug: "gokiburi", name: "ゴキブリ", href: "/gokiburi" },
+    { slug: "nezumi", name: "ネズミ", href: "/nezumi" },
+    { slug: "koumori", name: "コウモリ", href: "/koumori" },
+    { slug: "hakubishin", name: "ハクビシン", href: "/hakubishin" },
+    { slug: "araiguma", name: "アライグマ", href: "/araiguma" },
+    { slug: "dani", name: "ダニ", href: "/dani" },
   ];
+  const stats = siteStats(pests);
+  const v = process.env.FV_VARIANT;
+  const heroVariant: HeroVariant = v === "1" || v === "3" ? v : "2";
 
   const regions = prefectureRegions();
 
@@ -70,39 +78,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
-      {/* ヒーロー（人物写真は右側で地色に溶け込ませる） */}
-      <section className="top-hero" data-no-reveal>
-        <div className="top-hero-photo">
-          <Image
-            src="/images/hero-person.jpg"
-            alt="害虫駆除サービス"
-            fill
-            sizes="(min-width: 900px) 62vw, 100vw"
-            className="top-hero-img"
-            priority
-          />
-        </div>
-        <div className="top-hero-inner">
-          <div className="top-hero-copy">
-            <p className="eyebrow">実際の口コミと評判で選ぶ！</p>
-            <h1 className="top-hero-title">
-              全国の害虫・害獣駆除業者を<br className="hidden sm:block" />料金・口コミで比較
-            </h1>
-            <p className="top-hero-lead">
-              シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。
-            </p>
-            <ul className="top-hero-points">
-              {heroPoints.map((p) => (
-                <li key={p}>{p}</li>
-              ))}
-            </ul>
-            <div className="top-hero-actions">
-              <a href="#area" className="btn btn-neutral btn-arrow">地域から探す</a>
-              <a href="#pests" className="btn btn-outline btn-arrow">害虫の種類から探す</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ファーストビュー（3案。FV_VARIANT=1|2|3 でビルド時に切り替え。採用案が決まったら固定する） */}
+      <TopHero variant={heroVariant} stats={stats} icons={pestIcons} />
 
       {/* おすすめ業者比較（料金を含むためアニメーションなし） */}
       <section className="top-section" data-no-reveal>
