@@ -84,3 +84,12 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 ## 作業ログ 2026-10-17 (jiro) — アフィリエイトリンク設置（okina提供）
 - コードは `app/data/affiliateCodes.ts` に1か所（提供HTMLをそのまま保持・改変禁止）。描画は `app/components/AffLink.tsx`（AffBanner/AffText、装飾は globals.css の .aff-*）。新しいコードはここに足すだけで /agents/{slug} などに出る。
 - 記録: growth/okina/aff/placement-20261017.md。rentracks の img は alt が無く site-precheck [13] が落ちるが、コード改変になるため例外扱い。
+
+---
+## 作業ログ 2026-10-17 (jiro) — ハチ×エリア 第4弾（okina「続けて」）
+- 新規7県: 青森24・岩手14・佐賀12・山梨10・福井10・高知9・秋田7（計86自治体）。保留（7未満）: 鳥取5・徳島5・宮崎5・香川4・島根2（JSONは作成済み・"hold": true）。
+- 既存5県に追加: 富山+高岡市・砺波市、岐阜+多治見市・大垣市、石川+津幡町、大分+由布市、岡山+笠岡市。山口・和歌山・長野・長崎の対象市（岩国・田辺・佐久・島原など）は sitemap 走査でも見つからず。
+- 調査JSON: scratchpad/h4/json（hachi-*.json=新規、add-*.json=追加）、証拠テキスト scratchpad/h4/raw。生成 `scripts/gen_hachi_areas4.py`（hold を除外。被害の記述の自治体原文は「」で囲む＝copy-audit の「しましょう」対策）、マージ `scripts/merge_hachi_additions4.py`（「確認できなかった事項」を置換・確認日に追加日を追記）。
+- 探索: Yahoo!検索は30件ほどでブロック（以後10分単位で断続的に解除）。Wikidata（P856）で市町村の公式トップURLを一括取得→各サイトをキーワード優先の幅優先クロール（1サイト220ページ）→不足分は sitemap.xml 全件走査、が有効だった。並列で同じ県の市町サイトを叩くと 403 になる（佐賀で発生）。
+- 市のドメイン移転に注意: 久慈市 city.kuji.lg.jp・伊万里市 city.imari.lg.jp・砺波市 city.tonami.lg.jp・鹿角市 city.kazuno.lg.jp・さぬき市 city.sanuki.lg.jp・鳴門市 city.naruto.lg.jp。
+- sitemap 455→462URL。precheck の不合格は /agents 系9ページの img alt 欠落のみ（アフィリエイトの計測画像・別作業分で未変更）。

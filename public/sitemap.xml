@@ -2488,7 +2488,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/wasp/gifu</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2524,7 +2524,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/wasp/okayama</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2541,20 +2541,62 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://gaichu-pro.com/pest/wasp/aomori</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/iwate</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/akita</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/yamanashi</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/fukui</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/kochi</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/wasp/saga</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gaichu-pro.com/pest/wasp/ishikawa</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/wasp/oita</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/wasp/toyama</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
