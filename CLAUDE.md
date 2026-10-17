@@ -79,3 +79,8 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 直したもの: canonical 欠落79件（旧ベタ書きの /area/* と /pest/{cockroach,termite,wasp,nezumi,dani}/*）、トップの canonical（metadata だと末尾 `/` が落ちるので page.tsx に `<link rel="canonical">` 直書き）、/agents・/pest の canonical が末尾スラッシュ付き（308先）だったのを修正、og:image 全ページ（`public/og-default.png?v=20261014`、`app/lib/og.ts` の DEFAULT_OG_IMAGE。ページ側で openGraph を書くと layout の openGraph は丸ごと上書きされるので各ページにも入れる）、og:url が pages.dev／別ページを指していたのを自URLに、favicon（app/icon.jpg → app/icon.png）、h1 欠落82件（キャッチコピーの h2 を h1 に）、/faq・/guide に metadata、構造化データ0の6ページにパンくず、/agents/{slug}/{area} の description 160字超（運営会社の括弧書きが長い社は外す）、sitemap 漏れ17件追加、/dani2（/dani の完全複製・被リンク0）を削除し `_redirects` で /dani へ301。
 - 被リンク: /pest/[pest]/[area]・/agents/[slug]/[area]・/agents/[slug] に関連リンク（同エリアの別害虫・同害虫の別エリア・同エリアの業者ページ等）を `app/components/RelatedLinkList.tsx` で追加。
 - 未対応（要判断）: 旧ベタ書きの /pest/*/{都市} ページの本文に事実誤り（例 /pest/nezumi/yokohama に「横浜都」「23区・多摩地域」、東京都の電話番号、title「8社」と og:title「10社」の食い違い）。本文は触っていない。
+
+---
+## 作業ログ 2026-10-17 (jiro) — アフィリエイトリンク設置（okina提供）
+- コードは `app/data/affiliateCodes.ts` に1か所（提供HTMLをそのまま保持・改変禁止）。描画は `app/components/AffLink.tsx`（AffBanner/AffText、装飾は globals.css の .aff-*）。新しいコードはここに足すだけで /agents/{slug} などに出る。
+- 記録: growth/okina/aff/placement-20261017.md。rentracks の img は alt が無く site-precheck [13] が落ちるが、コード改変になるため例外扱い。
