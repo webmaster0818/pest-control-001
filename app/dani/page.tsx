@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+import { AffBanner, AffText } from "@/app/components/AffLink";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/dani" },
@@ -102,6 +103,7 @@ export default function DaniPage() {
                       <span className="badge badge-lg text-base">4</span>
                       <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
+                      <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center">
@@ -109,6 +111,7 @@ export default function DaniPage() {
                       <span className="badge badge-lg text-base">5</span>
                       <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">ムシプロテック</strong>
+                      <AffText slug="mushi-protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center">
@@ -516,10 +519,7 @@ export default function DaniPage() {
             </div>
 
             <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffBanner slug="protec" />
             </div>
 
             <div className="mb-6">
@@ -575,10 +575,7 @@ export default function DaniPage() {
             </div>
 
             <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffText slug="protec" variant="button" label="害獣プロテックの公式サイトで無料相談" />
             </div>
           </div>
 
@@ -603,10 +600,7 @@ export default function DaniPage() {
             </div>
 
             <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffBanner slug="mushi-protec" />
             </div>
 
             <div className="mb-6">
@@ -662,10 +656,7 @@ export default function DaniPage() {
             </div>
 
             <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffText slug="mushi-protec" variant="button" label="ムシプロテックの公式サイトで無料相談" />
             </div>
           </div>
 

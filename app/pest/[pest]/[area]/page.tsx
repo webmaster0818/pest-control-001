@@ -4,6 +4,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { pestAreas, getPestArea } from "@/app/data/pestAreas";
 import { agents, type AgentReview } from "@/app/agents/agentsData";
+import { AffText, hasAff } from "@/app/components/AffLink";
 import { brandAreas } from "@/app/data/brandAreas";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
@@ -434,6 +435,11 @@ export default async function PestAreaPage({ params }: Props) {
                         >
                           {a.name}
                         </Link>
+                        {hasAff(a.slug) && (
+                          <span className="block mt-1">
+                            <AffText slug={a.slug} variant="small" label="公式サイト" />
+                          </span>
+                        )}
                       </th>
                       <td className="border border-slate-200">
                         {a.priceRows[0]

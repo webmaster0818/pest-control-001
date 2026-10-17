@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { agentsByPriority as agents } from "./agentsData";
+import { AffText, hasAff } from "@/app/components/AffLink";
 
 const SITE = "https://gaichu-pro.com";
 
@@ -24,13 +25,20 @@ export default function AgentsIndexPage() {
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
           {agents.map((a) => (
-            <Link key={a.slug} href={`/agents/${a.slug}/`} className="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 hover:shadow-md hover:border-amber-300 transition">
-              <Image src={a.image} alt={a.name} width={72} height={72} className="w-16 h-16 rounded-xl object-cover shrink-0" />
-              <div>
-                <p className="font-bold text-slate-800">{a.name}</p>
-                <p className="text-xs text-slate-500 mt-1">口コミ・評判・料金を見る</p>
-              </div>
-            </Link>
+            <div key={a.slug} className="rounded-2xl border border-slate-200 p-4 hover:shadow-md hover:border-amber-300 transition">
+              <Link href={`/agents/${a.slug}/`} className="flex items-center gap-4">
+                <Image src={a.image} alt={a.name} width={72} height={72} className="w-16 h-16 rounded-xl object-cover shrink-0" />
+                <div>
+                  <p className="font-bold text-slate-800">{a.name}</p>
+                  <p className="text-xs text-slate-500 mt-1">口コミ・評判・料金を見る</p>
+                </div>
+              </Link>
+              {hasAff(a.slug) && (
+                <p className="mt-2 text-right">
+                  <AffText slug={a.slug} variant="small" label={`${a.name}の公式サイト`} />
+                </p>
+              )}
+            </div>
           ))}
         </div>
       </div>

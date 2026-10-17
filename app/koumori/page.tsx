@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+import { AffBanner, AffText } from "@/app/components/AffLink";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/koumori" },
@@ -192,6 +193,7 @@ export default function KoumoriPage() {
                       <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
                       <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">ハウスプロテクト</strong>
+                      <AffText slug="house-protect" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
@@ -220,6 +222,7 @@ export default function KoumoriPage() {
                       <span className="badge badge-lg">7</span>
                       <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害獣プロテック</strong>
+                      <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
@@ -474,10 +477,7 @@ export default function KoumoriPage() {
             </div>
 
             <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffBanner slug="house-protect" />
             </div>
 
             <div className="mb-6">
@@ -533,10 +533,7 @@ export default function KoumoriPage() {
             </div>
 
             <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffText slug="house-protect" variant="button" label="ハウスプロテクトの公式サイトで無料相談" />
             </div>
           </div>
 
@@ -818,10 +815,7 @@ export default function KoumoriPage() {
             </div>
 
             <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffBanner slug="protec" />
             </div>
 
             <div className="mb-6">
@@ -877,10 +871,7 @@ export default function KoumoriPage() {
             </div>
 
             <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
-                無料相談はこちら
-              </a>
+              <AffText slug="protec" variant="button" label="害獣プロテックの公式サイトで無料相談" />
             </div>
           </div>
 

@@ -5,6 +5,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { pestAreas } from "@/app/data/pestAreas";
 import { brandAreas, getBrandArea } from "@/app/data/brandAreas";
 import { getAgent } from "../../agentsData";
+import { AffText, hasAff } from "@/app/components/AffLink";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 // データ駆動テンプレート。
@@ -148,6 +149,14 @@ export default async function BrandAreaPage({ params }: Props) {
               </p>
             )}
           </section>
+
+          {hasAff(b.brandSlug) && (
+            <div className="mb-12 rounded-2xl bg-slate-800 p-5 text-center">
+              <p className="text-sm text-slate-200 mb-3">{b.areaName}での対応可否・見積もりは公式サイトから相談できます</p>
+              <AffText slug={b.brandSlug} variant="button" label={`${agent ? agent.name : b.brandName}の公式サイトで無料見積もり`} />
+              <p className="mt-2 text-xs text-slate-400">※本ページはプロモーションを含みます</p>
+            </div>
+          )}
 
           {/* 拠点情報 */}
           <section id="offices" className="scroll-mt-20 mb-12">

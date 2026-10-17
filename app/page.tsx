@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import AreaAccordion from "./components/AreaAccordion";
+import { AffText } from "@/app/components/AffLink";
 
 // canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
 export const metadata: Metadata = {};
@@ -177,13 +178,13 @@ export default function Home() {
                     <a href="https://kujyo-zaurus.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
                   </td>
                   <td className="text-center bg-white text-black border border-gray-300">
-                    <a href="https://house-protect.net/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <AffText slug="house-protect" variant="tablebtn" label="詳細を見る" />
                   </td>
                   <td className="text-center bg-white text-black border border-gray-300">
                     <a href="https://www.sharing-tech.co.jp/gaichu/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
                   </td>
                   <td className="text-center bg-white text-black border border-gray-300">
-                    <a href="https://gaichu-protec.jp/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
+                    <AffText slug="protec" variant="tablebtn" label="詳細を見る" />
                   </td>
                   <td className="text-center bg-white text-black border border-gray-300">
                     <a href="https://sankyo-clean.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>

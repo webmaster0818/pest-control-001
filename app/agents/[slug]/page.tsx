@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { agents, getAgent } from "../agentsData";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { brandAreas } from "@/app/data/brandAreas";
+import { AffBanner, AffText, hasAff } from "@/app/components/AffLink";
 
 const SITE = "https://gaichu-pro.com";
 const UPDATED = "2026-06-10";
@@ -94,17 +95,11 @@ export default async function AgentPage({ params }: Props) {
                 <span key={b} className="badge badge-lg bg-white/15 border-0 text-white">{b}</span>
               ))}
             </div>
-            {a.affiliateUrl ? (
-              <div className="mt-8">
-                <a
-                  href={a.affiliateUrl}
-                  target="_blank"
-                  rel="sponsored nofollow noopener"
-                  className="inline-flex items-center justify-center rounded-xl bg-amber-500 hover:bg-amber-600 px-8 py-4 text-base md:text-lg font-bold text-white shadow-lg transition"
-                >
-                  {a.name}の公式サイトで無料見積もり
-                </a>
-                <p className="mt-2 text-xs text-slate-300">※本ページはプロモーションを含みます</p>
+            {hasAff(a.slug) ? (
+              <div className="mt-8 flex flex-col items-center sm:items-start gap-4">
+                <AffBanner slug={a.slug} />
+                <AffText slug={a.slug} variant="button" label={`${a.name}の公式サイトで無料見積もり`} />
+                <p className="text-xs text-slate-300">※本ページはプロモーションを含みます</p>
               </div>
             ) : null}
             <div className="mt-8 overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10">
@@ -191,6 +186,11 @@ export default async function AgentPage({ params }: Props) {
               </table>
             </div>
             <p className="text-sm text-slate-500 mt-3">{a.priceNote ?? "※ 料金は変動する場合があります。正確な金額は無料の現地調査・見積もりでご確認ください。"}</p>
+            {hasAff(a.slug) && (
+              <p className="text-sm text-slate-700 mt-3">
+                最新の料金・受付状況は公式サイトでご確認ください：<AffText slug={a.slug} label={`${a.name}の公式サイト`} />
+              </p>
+            )}
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
@@ -299,16 +299,10 @@ export default async function AgentPage({ params }: Props) {
             <div className="rounded-2xl bg-slate-800 text-white p-6 text-center mt-2">
               <p className="font-bold text-lg mb-2">害獣・害虫の被害でお困りの方へ</p>
               <p className="text-slate-300 text-sm mb-4">地域・被害状況に合った駆除業者を比較し、無料見積もりの依頼にお役立てください。</p>
-              {a.affiliateUrl ? (
+              {hasAff(a.slug) ? (
                 <div className="flex flex-col items-center gap-3">
-                  <a
-                    href={a.affiliateUrl}
-                    target="_blank"
-                    rel="sponsored nofollow noopener"
-                    className="btn bg-amber-500 hover:bg-amber-600 border-0 text-white"
-                  >
-                    {a.name}の公式サイトで無料見積もり
-                  </a>
+                  <AffBanner slug={a.slug} />
+                  <AffText slug={a.slug} variant="button" label={`${a.name}の公式サイトで無料見積もり`} />
                   <Link href="/" className="text-slate-300 text-sm underline">他の駆除業者とも比較する</Link>
                   <p className="text-xs text-slate-400">※本ページはプロモーションを含みます</p>
                 </div>

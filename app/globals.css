@@ -53,3 +53,17 @@ body {
 .company-detail p {
   color: #000000 !important;
 }
+
+/* アフィリエイトリンク（app/components/AffLink.tsx）。ASP提供HTMLに属性を足さず、外側から装飾する */
+.aff-banner { display: flex; flex-direction: column; align-items: center; gap: 2px; max-width: 100%; }
+.aff-banner .aff-pr { font-size: 10px; line-height: 1; color: #94a3b8; letter-spacing: .05em; }
+.aff-banner-body { display: flex; flex-direction: column; align-items: center; max-width: 100%; }
+.aff-banner-body a { display: block; max-width: 100%; }
+.aff-banner-body a img { display: block; max-width: 100%; height: auto; }
+.aff-banner img[width="1"], .aff-text img[width="1"] { display: inline; width: 1px !important; height: 1px !important; border: 0; }
+.aff-button a { display: inline-flex; align-items: center; justify-content: center; border-radius: .75rem; background: #f59e0b; color: #fff !important; font-weight: 700; padding: .9rem 1.6rem; line-height: 1.5; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,.15); max-width: 100%; text-align: center; }
+.aff-button a:hover { background: #d97706; }
+.aff-tablebtn a { display: inline-block; border-radius: .5rem; background: #f59e0b; color: #fff !important; font-weight: 700; font-size: .8rem; padding: .35rem .8rem; text-decoration: none; white-space: nowrap; }
+.aff-tablebtn a:hover { background: #d97706; }
+.aff-small a { font-size: .75rem; color: #b45309 !important; text-decoration: underline; font-weight: 600; }
+.aff-inline a { color: #b45309 !important; text-decoration: underline; font-weight: 600; }
