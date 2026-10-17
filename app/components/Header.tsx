@@ -14,11 +14,11 @@ export default function Header() {
   ];
 
   return (
-    <header style={{backgroundColor: '#2B3A50'}} className="py-4 px-4 relative">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="site-header">
+      <div className="site-header-inner">
         {/* ロゴエリア */}
-        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <span className="text-xl md:text-2xl font-bold text-white">害虫・害獣駆除プロ比較ナビ</span>
+        <Link href="/" className="site-logo">
+          <span className="site-logo-text">害虫・害獣駆除プロ比較ナビ</span>
           <Image
             src="/images/header-icon.png"
             alt="害虫・害獣駆除プロ比較ナビ"
@@ -28,25 +28,35 @@ export default function Header() {
           />
         </Link>
 
+        {/* PC：横並びメニュー */}
+        <nav className="site-nav" aria-label="サイト内メニュー">
+          {menuItems.map((item) => (
+            <Link key={item.href} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
         {/* ハンバーガーメニューボタン */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-white hover:text-gray-300 transition-colors z-50"
+          className="site-menu-btn"
           aria-label="メニュー"
+          aria-expanded={isMenuOpen}
         >
           <svg
             className="w-6 h-6"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth="2"
+            strokeWidth="1.5"
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
             {isMenuOpen ? (
               <path d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
+              <path d="M4 7h16M4 12h16M4 17h16" />
             )}
           </svg>
         </button>
@@ -57,20 +67,17 @@ export default function Header() {
         <>
           {/* 背景オーバーレイ */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 z-40"
+            style={{ background: "rgba(29,39,51,.35)" }}
             onClick={() => setIsMenuOpen(false)}
           />
-          
+
           {/* メニュー */}
-          <nav className="absolute top-full right-0 mt-2 mr-4 bg-white rounded-lg shadow-xl z-50 min-w-[250px]">
-            <ul className="py-2">
+          <nav className="site-drawer">
+            <ul>
               {menuItems.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <Link href={item.href} onClick={() => setIsMenuOpen(false)}>
                     {item.label}
                   </Link>
                 </li>

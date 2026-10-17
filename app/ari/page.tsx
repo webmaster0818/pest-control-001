@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/ari" },
   title: "アリ駆除業者比較 | イエヒメアリ・ルリアリの料金相場と対策方法",
@@ -161,63 +162,63 @@ export default function AriPage() {
                   <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/sankyo-shoudoku.png" name="株式会社三共消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社三共消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/asante.png" name="株式会社アサンテ" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/kita-nihon.png" name="有限会社北日本消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">有限会社北日本消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/ai-eizen.png" name="株式会社あい営繕" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社あい営繕</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/miyako.png" name="株式会社ミヤコ消毒" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社ミヤコ消毒</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/kodama.png" name="株式会社こだま" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社こだま</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">7</span>
-                      <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/taiyo.png" name="大洋防疫研究所" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">大洋防疫研究所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">8</span>
-                      <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/daiichi.png" name="株式会社第一環研" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">株式会社第一環研</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">9</span>
+                      <span className="rank">9</span>
                       <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">ハチお助け本舗</strong>
                     </div>
@@ -324,10 +325,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">株式会社三共消毒（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo-shoudoku.png" alt="株式会社三共消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo-shoudoku.png" name="株式会社三共消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -410,10 +411,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">株式会社アサンテ（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/asante.png" alt="株式会社アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/asante.png" name="株式会社アサンテ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -496,10 +497,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/kita-nihon.png" alt="有限会社北日本消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kita-nihon.png" name="有限会社北日本消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -582,10 +583,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">株式会社あい営繕（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/ai-eizen.png" alt="株式会社あい営繕" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/ai-eizen.png" name="株式会社あい営繕" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -668,10 +669,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/miyako.png" alt="株式会社ミヤコ消毒" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/miyako.png" name="株式会社ミヤコ消毒" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -755,10 +756,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">株式会社こだま（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/kodama.png" alt="株式会社こだま" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kodama.png" name="株式会社こだま" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -841,10 +842,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">大洋防疫研究所（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/taiyo.png" alt="大洋防疫研究所" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/taiyo.png" name="大洋防疫研究所" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -927,10 +928,10 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">株式会社第一環研（アリ駆除）</h3>
               </div>
-              <img src="/images/companies/daiichi.png" alt="株式会社第一環研" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/daiichi.png" name="株式会社第一環研" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1013,7 +1014,7 @@ export default function AriPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">ハチお助け本舗（ハチ駆除専門）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />

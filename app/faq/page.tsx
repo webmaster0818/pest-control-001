@@ -248,7 +248,6 @@ export default function FAQPage() {
           {/* シロアリ */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-4xl">🐜</span>
               シロアリ駆除について
             </h3>
             <div className="space-y-4">
@@ -274,7 +273,6 @@ export default function FAQPage() {
           {/* ハチ */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-4xl">🐝</span>
               ハチ駆除について
             </h3>
             <div className="space-y-4">
@@ -300,7 +298,6 @@ export default function FAQPage() {
           {/* ゴキブリ */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-4xl">🪳</span>
               ゴキブリ駆除について
             </h3>
             <div className="space-y-4">
@@ -326,7 +323,6 @@ export default function FAQPage() {
           {/* ネズミ */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-4xl">🐭</span>
               ネズミ駆除について
             </h3>
             <div className="space-y-4">
@@ -352,7 +348,6 @@ export default function FAQPage() {
           {/* コウモリ */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-4xl">🦇</span>
               コウモリ駆除について
             </h3>
             <div className="space-y-4">

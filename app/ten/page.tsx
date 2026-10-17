@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/ten" },
   title: "テン駆除の基礎知識 | 駆除方法と再発防止",
@@ -110,7 +111,7 @@ export default function TenPage() {
   const damages: { category: string; icon: string; examples: string[]; src: SourceKey[] }[] = [
     {
       "category": "建物への侵入",
-      "icon": "😰",
+      "icon": "",
       "examples": [
         "中山間地域では、家屋の屋根裏や物置を巣穴や休息場所として利用することがあります",
         "家屋や施設への侵入被害を防ぐには、侵入経路を特定して隙間を塞ぐ必要があるとされています"
@@ -121,7 +122,7 @@ export default function TenPage() {
     },
     {
       "category": "農作物への被害",
-      "icon": "💰",
+      "icon": "",
       "examples": [
         "ぶどう、かき、イチゴなどの食害が報告されています",
         "かき程度の大きさのものは、持ち去って別の場所で食べることが多いとされています",
@@ -133,7 +134,7 @@ export default function TenPage() {
     },
     {
       "category": "鶏舎・在来生物への被害",
-      "icon": "⚠️",
+      "icon": "",
       "examples": [
         "鶏舎への侵入によるニワトリや卵の被害が報告されています",
         "導入された佐渡島では、2010年3月にトキへの食害が生じたことがあります",
@@ -334,59 +335,59 @@ export default function TenPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="thumb" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="thumb" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">4</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">5</span>
-                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="thumb" />
                       <strong className="text-black">ハウスプロテクト</strong>
                       <AffText slug="house-protect" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">6</span>
+                      <span className="rank">6</span>
                       <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害獣駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">7</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-black">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">8</span>
-                      <img src="/images/companies/ratter.png" alt="ラッター" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="thumb" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
@@ -447,10 +448,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（テン駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -533,10 +534,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（テン駆除）</h3>
               </div>
-              <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -619,10 +620,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（テン駆除）</h3>
               </div>
-              <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -705,10 +706,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（テン駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -791,10 +792,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（テン駆除）</h3>
               </div>
-              <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -871,7 +872,7 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除110番（テン駆除）</h3>
               </div>
               <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
@@ -957,10 +958,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（テン駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1037,10 +1038,10 @@ export default function TenPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（テン駆除）</h3>
               </div>
-              <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1157,12 +1158,11 @@ export default function TenPage() {
             {damages.map((damage, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <div className="text-5xl mb-4 text-center">{damage.icon}</div>
                   <h3 className="card-title text-xl text-center justify-center">{damage.category}</h3>
                   <ul className="space-y-3 mt-4">
                     {damage.examples.map((example, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-error text-xl">⚠️</span>
+                        <span className="mark mark-warn" aria-hidden="true"></span>
                         <span className="text-sm">{example}</span>
                       </li>
                     ))}

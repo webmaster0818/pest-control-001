@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_JP, Shippori_Mincho_B1 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { DEFAULT_OG_IMAGE } from "./lib/og";
+import RevealObserver from "./components/RevealObserver";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,23 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// 本文=Noto Sans JP、見出し=しっぽり明朝。和文グリフは unicode-range で分割配信されるため preload はしない。
+const notoSansJp = Noto_Sans_JP({
+  variable: "--font-sans-jp",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+  preload: false,
+});
+
+const shipporiMincho = Shippori_Mincho_B1({
+  variable: "--font-serif-jp",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -70,8 +88,8 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><div style={{background:'#f4f4f4',borderBottom:'1px solid #e2e2e2',fontSize:'11px',lineHeight:1.6,color:'#666',textAlign:'center',padding:'3px 8px'}}>本サイトはプロモーション(PR)を含みます。</div>
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSansJp.variable} ${shipporiMincho.variable} antialiased`}
+      ><div className="pr-bar">本サイトはプロモーション(PR)を含みます。</div>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-E3TWZZT421"
@@ -88,6 +106,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <RevealObserver />
       </body>
     </html>
   );

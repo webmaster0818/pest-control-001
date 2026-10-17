@@ -1,36 +1,45 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import AreaAccordion from "./components/AreaAccordion";
 import { AffText } from "@/app/components/AffLink";
+import CompanyVisual from "@/app/components/CompanyVisual";
+import { prefectureRegions } from "@/app/lib/areaLinks";
 
 // canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
 export const metadata: Metadata = {};
 
 export default function Home() {
   const pests = [
-    { name: "シロアリ", href: "/shiroari", icon: "🐜", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "ハチ", href: "/hachi", icon: "🐝", color: "bg-yellow-100 hover:bg-yellow-200" },
-    { name: "ゴキブリ", href: "/gokiburi", icon: "🪳", color: "bg-red-100 hover:bg-red-200" },
-    { name: "ネズミ", href: "/nezumi", icon: "🐭", color: "bg-gray-100 hover:bg-gray-200" },
-    { name: "コウモリ", href: "/koumori", icon: "🦇", color: "bg-purple-100 hover:bg-purple-200" },
-    { name: "ダニ", href: "/dani", icon: "🦠", color: "bg-green-100 hover:bg-green-200" },
-    { name: "トコジラミ", href: "/tokojirami", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "鳥害", href: "/chougai", icon: "🐦", color: "bg-blue-100 hover:bg-blue-200" },
-    { name: "アリ", href: "/ari", icon: "🐜", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "カメムシ", href: "/kamemushi", icon: "🐛", color: "bg-green-100 hover:bg-green-200" },
-    { name: "ムカデ/ゲジゲジ", href: "/mukade", icon: "🐛", color: "bg-red-100 hover:bg-red-200" },
-    { name: "シバンムシ", href: "/shibanmushi", icon: "🐛", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "毛虫", href: "/kemushi", icon: "🐛", color: "bg-yellow-100 hover:bg-yellow-200" },
-    { name: "ハクビシン", href: "/hakubishin", icon: "🦝", color: "bg-purple-100 hover:bg-purple-200" },
-    { name: "イタチ", href: "/itachi", icon: "🦦", color: "bg-blue-100 hover:bg-blue-200" },
-    { name: "アライグマ", href: "/araiguma", icon: "🦝", color: "bg-gray-100 hover:bg-gray-200" },
-    { name: "テン", href: "/ten", icon: "🦊", color: "bg-orange-100 hover:bg-orange-200" },
-    { name: "アナグマ", href: "/anaguma", icon: "🦡", color: "bg-amber-100 hover:bg-amber-200" },
-    { name: "タヌキ", href: "/tanuki", icon: "🦝", color: "bg-yellow-100 hover:bg-yellow-200" },
+    { name: "シロアリ", href: "/shiroari" },
+    { name: "ハチ", href: "/hachi" },
+    { name: "ゴキブリ", href: "/gokiburi" },
+    { name: "ネズミ", href: "/nezumi" },
+    { name: "コウモリ", href: "/koumori" },
+    { name: "ダニ", href: "/dani" },
+    { name: "トコジラミ", href: "/tokojirami" },
+    { name: "鳥害", href: "/chougai" },
+    { name: "アリ", href: "/ari" },
+    { name: "カメムシ", href: "/kamemushi" },
+    { name: "ムカデ/ゲジゲジ", href: "/mukade" },
+    { name: "シバンムシ", href: "/shibanmushi" },
+    { name: "毛虫", href: "/kemushi" },
+    { name: "ハクビシン", href: "/hakubishin" },
+    { name: "イタチ", href: "/itachi" },
+    { name: "アライグマ", href: "/araiguma" },
+    { name: "テン", href: "/ten" },
+    { name: "アナグマ", href: "/anaguma" },
+    { name: "タヌキ", href: "/tanuki" },
   ];
 
-  // areas moved to AreaAccordion component
+  // 旧ヒーロー画像（hero-main.png）に入っていた文言をそのままテキストで表示
+  const heroPoints = [
+    "全国から厳選！害虫駆除業者多数掲載",
+    "リアルな声がわかる！利用者の口コミ・評価",
+    "24時間365日対応の業者多数",
+    "明朗会計・無料見積りも可能",
+  ];
+
+  const regions = prefectureRegions();
 
   const features = [
     { title: "害虫・害獣の種類別に情報を掲載", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害などの駆除情報を、種類別に比較できます。" },
@@ -53,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-base-200">
+    <div className="top">
       <link rel="canonical" href="https://gaichu-pro.com/" />
       {/* 構造化データ */}
       <script
@@ -61,168 +70,198 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
-      {/* ヒーローセクション */}
-      <section className="hero h-[400px] md:h-[550px] bg-white relative overflow-hidden">
-        <Image
-          src="/images/hero-main.png"
-          alt="害虫駆除サービス"
-          fill
-          className="object-contain object-center"
-          priority
-        />
+      {/* ヒーロー（人物写真は右側で地色に溶け込ませる） */}
+      <section className="top-hero" data-no-reveal>
+        <div className="top-hero-photo">
+          <Image
+            src="/images/hero-person.jpg"
+            alt="害虫駆除サービス"
+            fill
+            sizes="(min-width: 900px) 62vw, 100vw"
+            className="top-hero-img"
+            priority
+          />
+        </div>
+        <div className="top-hero-inner">
+          <div className="top-hero-copy">
+            <p className="eyebrow">実際の口コミと評判で選ぶ！</p>
+            <h1 className="top-hero-title">
+              全国の害虫・害獣駆除業者を<br className="hidden sm:block" />料金・口コミで比較
+            </h1>
+            <p className="top-hero-lead">
+              シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。
+            </p>
+            <ul className="top-hero-points">
+              {heroPoints.map((p) => (
+                <li key={p}>{p}</li>
+              ))}
+            </ul>
+            <div className="top-hero-actions">
+              <a href="#area" className="btn btn-neutral btn-arrow">地域から探す</a>
+              <a href="#pests" className="btn btn-outline btn-arrow">害虫の種類から探す</a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* キャッチコピー */}
-      <section className="py-8 px-4 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            全国の害虫・害獣駆除業者を料金・口コミで比較
-          </h1>
-          <p className="text-lg text-gray-700">
-            シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。
+      {/* おすすめ業者比較（料金を含むためアニメーションなし） */}
+      <section className="top-section" data-no-reveal>
+        <div className="top-container">
+          <h2 className="heading-primary text-center">主な害虫駆除業者の比較</h2>
+          <div className="overflow-x-auto cmp-wrap">
+              <table className="table cmp-table w-full">
+                <thead>
+                  <tr>
+                    <th className="cmp-label"></th>
+                    <th className="cmp-head">
+                      <div className="cmp-company">
+                        <span className="rank rank-1">1</span>
+                        <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
+                        <strong className="cmp-name">駆除ザウルス</strong>
+                      </div>
+                    </th>
+                    <th className="cmp-head">
+                      <div className="cmp-company">
+                        <span className="rank rank-2">2</span>
+                        <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="thumb" />
+                        <strong className="cmp-name">ハウスプロテクト</strong>
+                      </div>
+                    </th>
+                    <th className="cmp-head">
+                      <div className="cmp-company">
+                        <span className="rank rank-3">3</span>
+                        <CompanyVisual id="/images/companies/gaichu110.png" name="害虫駆除110番" size="thumb" />
+                        <strong className="cmp-name">害虫駆除110番</strong>
+                      </div>
+                    </th>
+                    <th className="cmp-head">
+                      <div className="cmp-company">
+                        <span className="rank">4</span>
+                        <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
+                        <strong className="cmp-name">害獣プロテック</strong>
+                      </div>
+                    </th>
+                    <th className="cmp-head">
+                      <div className="cmp-company">
+                        <span className="rank">5</span>
+                        <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
+                        <strong className="cmp-name">サンキョークリーンサービス</strong>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th className="cmp-label">料金目安</th>
+                    <td className="cmp-cell">15,000円〜</td>
+                    <td className="cmp-cell">要見積</td>
+                    <td className="cmp-cell">8,800円〜</td>
+                    <td className="cmp-cell">要見積</td>
+                    <td className="cmp-cell">要見積</td>
+                  </tr>
+                  <tr>
+                    <th className="cmp-label">対応エリア</th>
+                    <td className="cmp-cell">全国（北海道・沖縄除く）</td>
+                    <td className="cmp-cell">関東・関西・東海・中四国・九州</td>
+                    <td className="cmp-cell">全国</td>
+                    <td className="cmp-cell">関東・東北・関西・東海・北陸・中国・九州</td>
+                    <td className="cmp-cell">全国</td>
+                  </tr>
+                  <tr>
+                    <th className="cmp-label">受付時間</th>
+                    <td className="cmp-cell">24時間365日</td>
+                    <td className="cmp-cell">24時間365日</td>
+                    <td className="cmp-cell">24時間365日</td>
+                    <td className="cmp-cell">24時間365日</td>
+                    <td className="cmp-cell">24時間365日</td>
+                  </tr>
+                  <tr>
+                    <th className="cmp-label">保証期間</th>
+                    <td className="cmp-cell">最長10年</td>
+                    <td className="cmp-cell">最長10年</td>
+                    <td className="cmp-cell">最長5年</td>
+                    <td className="cmp-cell">最長10年</td>
+                    <td className="cmp-cell">要確認</td>
+                  </tr>
+                  <tr>
+                    <th className="cmp-label">即日対応</th>
+                    <td className="cmp-cell">○</td>
+                    <td className="cmp-cell">○</td>
+                    <td className="cmp-cell">○</td>
+                    <td className="cmp-cell">○</td>
+                    <td className="cmp-cell">○</td>
+                  </tr>
+                  <tr>
+                    <th className="cmp-label">公式サイト</th>
+                    <td className="cmp-cell">
+                      <a href="https://kujyo-zaurus.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm btn-arrow">詳細を見る</a>
+                    </td>
+                    <td className="cmp-cell">
+                      <AffText slug="house-protect" variant="tablebtn" label="詳細を見る" />
+                    </td>
+                    <td className="cmp-cell">
+                      <a href="https://www.sharing-tech.co.jp/gaichu/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm btn-arrow">詳細を見る</a>
+                    </td>
+                    <td className="cmp-cell">
+                      <AffText slug="protec" variant="tablebtn" label="詳細を見る" />
+                    </td>
+                    <td className="cmp-cell">
+                      <a href="https://sankyo-clean.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm btn-arrow">詳細を見る</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <p className="top-note">
+            ※料金は目安です。被害状況・建物の構造により変動します。ご依頼の前に、現地調査・見積もりをお受けください。
           </p>
         </div>
       </section>
 
-      {/* おすすめ業者比較 */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">主な害虫駆除業者の比較</h2>
-          
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black">
-              <thead>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300"></th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">ハウスプロテクト</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">害虫駆除110番</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-full object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">サンキョークリーンサービス</strong>
-                    </div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">料金目安</th>
-                  <td className="text-center bg-white text-black border border-gray-300">15,000円〜</td>
-                  <td className="text-center bg-white text-black border border-gray-300">要見積</td>
-                  <td className="text-center bg-white text-black border border-gray-300">8,800円〜</td>
-                  <td className="text-center bg-white text-black border border-gray-300">要見積</td>
-                  <td className="text-center bg-white text-black border border-gray-300">要見積</td>
-                </tr>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">対応エリア</th>
-                  <td className="text-center bg-white text-black border border-gray-300">全国（北海道・沖縄除く）</td>
-                  <td className="text-center bg-white text-black border border-gray-300">関東・関西・東海・中四国・九州</td>
-                  <td className="text-center bg-white text-black border border-gray-300">全国</td>
-                  <td className="text-center bg-white text-black border border-gray-300">関東・東北・関西・東海・北陸・中国・九州</td>
-                  <td className="text-center bg-white text-black border border-gray-300">全国</td>
-                </tr>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">受付時間</th>
-                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
-                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
-                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
-                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
-                  <td className="text-center bg-white text-black border border-gray-300">24時間365日</td>
-                </tr>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">保証期間</th>
-                  <td className="text-center bg-white text-black border border-gray-300">最長10年</td>
-                  <td className="text-center bg-white text-black border border-gray-300">最長10年</td>
-                  <td className="text-center bg-white text-black border border-gray-300">最長5年</td>
-                  <td className="text-center bg-white text-black border border-gray-300">最長10年</td>
-                  <td className="text-center bg-white text-black border border-gray-300">要確認</td>
-                </tr>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">即日対応</th>
-                  <td className="text-center bg-white text-black border border-gray-300">⭕</td>
-                  <td className="text-center bg-white text-black border border-gray-300">⭕</td>
-                  <td className="text-center bg-white text-black border border-gray-300">⭕</td>
-                  <td className="text-center bg-white text-black border border-gray-300">⭕</td>
-                  <td className="text-center bg-white text-black border border-gray-300">⭕</td>
-                </tr>
-                <tr>
-                  <th className="bg-base-200 text-white md:bg-gray-800 border border-gray-300">公式サイト</th>
-                  <td className="text-center bg-white text-black border border-gray-300">
-                    <a href="https://kujyo-zaurus.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
-                  </td>
-                  <td className="text-center bg-white text-black border border-gray-300">
-                    <AffText slug="house-protect" variant="tablebtn" label="詳細を見る" />
-                  </td>
-                  <td className="text-center bg-white text-black border border-gray-300">
-                    <a href="https://www.sharing-tech.co.jp/gaichu/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
-                  </td>
-                  <td className="text-center bg-white text-black border border-gray-300">
-                    <AffText slug="protec" variant="tablebtn" label="詳細を見る" />
-                  </td>
-                  <td className="text-center bg-white text-black border border-gray-300">
-                    <a href="https://sankyo-clean.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">詳細を見る</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-600">
-              ※料金は目安です。被害状況・建物の構造により変動します。ご依頼の前に、現地調査・見積もりをお受けください。
-            </p>
+      {/* 地域から探す（都道府県） */}
+      <section id="area" className="top-section top-section-surface">
+        <div className="top-container">
+          <h2 className="heading-primary text-center">地域から探す</h2>
+          <div className="pref-grid rv-auto">
+            {regions.map((r) => (
+              <div key={r.name} className="pref-region">
+                <h3 className="pref-region-name">{r.name}</h3>
+                <ul className="pref-list">
+                  {r.prefs.map((p) => {
+                    const main = p.areaHref ?? p.waspHref;
+                    return (
+                      <li key={p.slug} className={main ? "pref-item" : "pref-item is-empty"}>
+                        {main ? (
+                          <Link href={main} className="pref-name">{p.name}</Link>
+                        ) : (
+                          <span className="pref-name">{p.name}</span>
+                        )}
+                        <span className="pref-subs">
+                          {p.cities.map((c) => (
+                            <Link key={c.href} href={c.href}>{c.name}</Link>
+                          ))}
+                          {p.waspHref && (
+                            <Link href={p.waspHref}>ハチ</Link>
+                          )}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-
-      {/* 地域から探す */}
-      <section className="py-12 px-4 bg-base-100">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="heading-primary text-center mb-8">地域から探す</h2>
-          <AreaAccordion />
-        </div>
-      </section>
-
 
       {/* 害虫の種類から探す */}
-      <section className="py-12 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section id="pests" className="top-section">
+        <div className="top-container">
           <h2 className="heading-primary text-center">害虫の種類から探す</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="pest-grid rv-auto">
             {pests.map((pest) => (
-              <Link
-                key={pest.name}
-                href={pest.href}
-                className="bg-white hover:bg-amber-50 border-2 border-gray-200 hover:border-amber-500 rounded-lg py-6 px-4 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                <p className="text-lg font-semibold text-gray-900">{pest.name}</p>
+              <Link key={pest.name} href={pest.href} className="pest-tile">
+                <span>{pest.name}</span>
               </Link>
             ))}
           </div>
@@ -230,43 +269,37 @@ export default function Home() {
       </section>
 
       {/* なぜ選ばれるのか */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="top-section top-section-surface">
+        <div className="top-container">
           <h2 className="heading-primary text-center">
             害虫・害獣駆除プロ比較ナビの特長
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="feature-grid rv-auto">
             {features.map((feature, index) => (
-              <div key={index} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-                  <h3 className="card-title text-xl mb-2">{feature.title}</h3>
-                  <p className="text-gray-700">{feature.description}</p>
-                </div>
+              <div key={index} className="feature">
+                <div className="feature-no">{String(index + 1).padStart(2, "0")}</div>
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-text">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 px-4 bg-[#66FFFF] text-gray-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <div style={{backgroundColor: "#2B3A50", padding: "1.5rem", borderRadius: "0.5rem", marginBottom: "2rem"}}>
-            <h2 className="heading-primary text-white">
-              害虫駆除のご相談について
-            </h2>
-          </div>
-          <p className="text-lg mb-8 text-gray-900">
+      {/* CTA（アニメーションなし） */}
+      <section className="top-cta" data-no-reveal>
+        <div className="top-container top-cta-inner">
+          <h2 className="heading-primary text-center text-white">
+            害虫駆除のご相談について
+          </h2>
+          <p className="top-cta-text">
             お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Link href="/price" className="btn btn-lg btn-neutral">
+          <div className="top-cta-actions">
+            <Link href="/price" className="btn btn-lg btn-neutral btn-arrow">
               料金相場を見る
             </Link>
-            <Link href="/guide" className="btn btn-lg btn-outline" style={{backgroundColor: "#2F4F4F", borderColor: "orange", color: "white"}}>
+            <Link href="/guide" className="btn btn-lg btn-outline btn-arrow" style={{backgroundColor: "#2F4F4F", borderColor: "orange", color: "white"}}>
               業者選びガイド
             </Link>
           </div>

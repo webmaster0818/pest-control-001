@@ -164,7 +164,7 @@ export default function GaichuCalendarPage() {
 
           {/* 季節ごとの対策 */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
-            <p className="font-bold text-amber-900 mb-2">📅 季節ごとの対策と依頼の目安（下の表の内容をもとに整理）</p>
+            <p className="font-bold text-amber-900 mb-2">季節ごとの対策と依頼の目安（下の表の内容をもとに整理）</p>
             <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-700 leading-relaxed">
               {seasonal.map((t, i) => (
                 <li key={i}>{t}</li>

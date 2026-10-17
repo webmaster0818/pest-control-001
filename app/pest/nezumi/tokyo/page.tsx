@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/pest/nezumi/tokyo" },
   title: "東京のネズミ駆除業者おすすめ10社｜料金相場・口コミ比較",
@@ -22,7 +23,7 @@ export default function NezumiTokyoPage() {
     {
       rank: 1,
       name: "ゴキブリ",
-      icon: "🪳",
+      icon: "",
       description: "繁華街や飲食店が多い東京では、ゴキブリの被害が最も多く、特にチャバネゴキブリの被害が目立ちます。",
       areas: "渋谷区、新宿区、港区などの繁華街",
       link: "/gokiburi",
@@ -30,7 +31,7 @@ export default function NezumiTokyoPage() {
     {
       rank: 2,
       name: "ネズミ",
-      icon: "🐭",
+      icon: "",
       description: "都心部の古い建物や飲食店街でネズミの被害が増えています。主にクマネズミによる被害です。",
       areas: "千代田区、中央区、台東区などの都心部",
       link: "/nezumi",
@@ -38,7 +39,7 @@ export default function NezumiTokyoPage() {
     {
       rank: 3,
       name: "シロアリ",
-      icon: "🐜",
+      icon: "",
       description: "木造住宅の密集地域でシロアリの被害が多く発生しています。梅雨時期の羽アリにご注意ください。",
       areas: "世田谷区、杉並区、大田区などの住宅街",
       link: "/shiroari",
@@ -46,7 +47,7 @@ export default function NezumiTokyoPage() {
     {
       rank: 4,
       name: "ハチ",
-      icon: "🐝",
+      icon: "",
       description: "公園や緑地が多いエリアでは、スズメバチ・アシナガバチの巣が見つかることがあります。",
       areas: "目黒区、品川区、練馬区などの緑地周辺",
       link: "/hachi",
@@ -54,7 +55,7 @@ export default function NezumiTokyoPage() {
     {
       rank: 5,
       name: "コウモリ",
-      icon: "🦇",
+      icon: "",
       description: "住宅街の屋根裏や古いビルで、アブラコウモリの被害が報告されています。",
       areas: "世田谷区、杉並区、中野区などの住宅街",
       link: "/koumori",
@@ -193,73 +194,73 @@ export default function NezumiTokyoPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-1">1</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-black">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="thumb" />
                       <strong className="text-black">害獣駆除のROY</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="thumb" />
                       <strong className="text-black">害獣BUZZ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">4</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-black">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">5</span>
-                      <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">5</span>
+                      <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="thumb" />
                       <strong className="text-black">ハウスプロテクト</strong>
                       <AffText slug="house-protect" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/gaichu110.png" name="害虫駆除110番" size="thumb" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">7</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">7</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-black">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">8</span>
-                      <img src="/images/companies/ratter.png" alt="ラッター" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">8</span>
+                      <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="thumb" />
                       <strong className="text-black">ラッター</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">9</span>
-                      <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">9</span>
+                      <CompanyVisual id="/images/companies/emeao.png" name="EMEAO!" size="thumb" />
                       <strong className="text-black">EMEAO!</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">10</span>
-                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">10</span>
+                      <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="thumb" />
                       <strong className="text-black">ダスキン</strong>
                     </div>
                   </th>
@@ -328,10 +329,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（東京）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -409,10 +410,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除のROY（東京）</h3>
               </div>
-              <img src="/images/companies/roy.png" alt="害獣駆除のROY" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/roy.png" name="害獣駆除のROY" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -490,10 +491,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">害獣BUZZ（東京）</h3>
               </div>
-              <img src="/images/companies/buzz.png" alt="害獣BUZZ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/buzz.png" name="害獣BUZZ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -571,10 +572,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（東京）</h3>
               </div>
-              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -652,10 +653,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">ハウスプロテクト（東京）</h3>
               </div>
-              <img src="/images/companies/house-protect.png" alt="ハウスプロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/house-protect.png" name="ハウスプロテクト" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -727,10 +728,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（東京）</h3>
               </div>
-              <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/gaichu110.png" name="害虫駆除110番" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -808,10 +809,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（東京）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -883,10 +884,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">ラッター（東京）</h3>
               </div>
-              <img src="/images/companies/ratter.png" alt="ラッター" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/ratter.png" name="ラッター" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -964,10 +965,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">EMEAO!（東京）</h3>
               </div>
-              <img src="/images/companies/emeao.png" alt="EMEAO!" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/emeao.png" name="EMEAO!" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1045,10 +1046,10 @@ export default function NezumiTokyoPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">10</span>
+                <span className="rank">10</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（東京）</h3>
               </div>
-              <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1229,7 +1230,6 @@ export default function NezumiTokyoPage() {
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <div className="flex items-start gap-4">
-                    <div className="text-4xl">📞</div>
                     <div className="flex-1">
                       <h3 className="card-title text-lg text-black">{org.name}</h3>
                       <p className="text-gray-700 text-sm mb-2">{org.description}</p>

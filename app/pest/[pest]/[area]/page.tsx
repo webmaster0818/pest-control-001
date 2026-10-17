@@ -5,6 +5,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { pestAreas, getPestArea } from "@/app/data/pestAreas";
 import { agents, type AgentReview } from "@/app/agents/agentsData";
 import { AffText, hasAff } from "@/app/components/AffLink";
+import CompanyVisual from "@/app/components/CompanyVisual";
 import { brandAreas } from "@/app/data/brandAreas";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
@@ -162,33 +163,33 @@ export default async function PestAreaPage({ params }: Props) {
       />
 
       <article className="bg-white">
-        <header className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
-          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
-            <p className="text-sm tracking-widest text-amber-300 mb-3">
+        <header className="ph" data-no-reveal>
+          <div className="ph-inner">
+            <p className="eyebrow">
               エリア × {hasMunicipal ? "害虫" : "害獣"}情報
             </p>
-            <h1 className="font-bold text-2xl md:text-4xl leading-relaxed mb-4">
+            <h1 className="ph-title">
               {p.areaName}の{p.pestName}駆除
               <br className="hidden md:block" />
               {hasMunicipal
                 ? "自治体の対応・費用の助成・対応業者"
                 : "捕獲の許可・相談窓口・対応業者"}
             </h1>
-            <p className="text-slate-200 leading-relaxed">
+            <p className="ph-lead">
               {hasMunicipal
                 ? `自治体が駆除するかどうか、費用の助成や防護服の貸出があるかどうかは自治体ごとに分かれます。各自治体の公式ページの記載をまとめたうえで、${p.pestName}対応の記載がある業者を比較できるようにしています。`
                 : `法令と自治体窓口の情報をまとめたうえで、${p.pestName}対応の記載がある業者を比較できるようにしています。`}
             </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              <span className="badge badge-lg bg-white/15 border-0 text-white">
+            <div className="ph-badges">
+              <span className="ph-badge">
                 掲載業者 {companies.length}社
               </span>
               {hasMunicipal && (
-                <span className="badge badge-lg bg-white/15 border-0 text-white">
+                <span className="ph-badge">
                   掲載自治体 {municipal.length}件
                 </span>
               )}
-              <span className="badge badge-lg bg-white/15 border-0 text-white">
+              <span className="ph-badge">
                 確認日 {confirmed}
               </span>
             </div>
@@ -196,7 +197,7 @@ export default async function PestAreaPage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
-          <div className="mb-8 rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-slate-700 leading-relaxed">
+          <div className="notice">
             {hasMunicipal ? (
               <>
                 本ページは、{p.areaName}
@@ -216,7 +217,7 @@ export default async function PestAreaPage({ params }: Props) {
 
           {/* 冒頭の要約 */}
           <section id="intro" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               {p.areaName}の{p.pestName}被害について
             </h2>
             {p.intro.map((t, i) => (
@@ -229,7 +230,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 自治体の対応（municipalSupport があるときだけ出す） */}
           {hasMunicipal && (
             <section id="municipal" className="scroll-mt-20 mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+              <h2 className="h2-sec">
                 自治体の対応（助成・防護服の貸出）
               </h2>
               {p.supportSummary && (
@@ -305,7 +306,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 法令 */}
           {p.legalNotes.length > 0 && (
           <section id="legal" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-red-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               {p.pestName}の捕獲には許可が必要です
             </h2>
             <p className="text-slate-700 leading-loose mb-6">
@@ -347,7 +348,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 相談窓口 */}
           {p.govContacts.length > 0 && (
           <section id="gov" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               {p.areaName}・区市の相談窓口
             </h2>
             <div className="space-y-4">
@@ -386,7 +387,7 @@ export default async function PestAreaPage({ params }: Props) {
 
           {/* 被害の種類 */}
           <section id="damage" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               被害の種類
             </h2>
             <ul className="space-y-3">
@@ -403,8 +404,8 @@ export default async function PestAreaPage({ params }: Props) {
           </section>
 
           {/* 業者比較 */}
-          <section id="companies" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+          <section id="companies" className="scroll-mt-20 mb-12" data-no-reveal>
+            <h2 className="h2-sec">
               {p.pestName}対応の記載がある業者
             </h2>
             <p className="text-slate-600 text-sm leading-relaxed mb-5">
@@ -429,6 +430,7 @@ export default async function PestAreaPage({ params }: Props) {
                   {companies.map((a) => (
                     <tr key={a.slug} className="align-top">
                       <th className="bg-slate-50 border border-slate-200 whitespace-nowrap">
+                        <CompanyVisual id={a.image} name={a.name} size="mini" monogram />
                         <Link
                           href={`/agents/${a.slug}/`}
                           className="text-blue-600 hover:underline"
@@ -472,7 +474,7 @@ export default async function PestAreaPage({ params }: Props) {
 
           {/* 確認項目 */}
           <section id="check" className="scroll-mt-20 mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               業者を選ぶ際の確認項目
             </h2>
             <ul className="space-y-3">
@@ -493,7 +495,7 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 確認できなかったこと */}
           {p.cautions.length > 0 && (
             <section id="cautions" className="scroll-mt-20 mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-slate-400 pl-4 mb-5">
+              <h2 className="h2-sec">
                 ご利用にあたっての注意事項
               </h2>
               <ul className="space-y-3">
@@ -511,7 +513,7 @@ export default async function PestAreaPage({ params }: Props) {
 
           {/* 関連ページ */}
           <section id="related" className="scroll-mt-20">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-800 border-l-4 border-amber-500 pl-4 mb-5">
+            <h2 className="h2-sec">
               関連ページ
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">

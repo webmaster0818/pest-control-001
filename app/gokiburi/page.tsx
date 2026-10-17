@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/gokiburi" },
   title: "ゴキブリ駆除の基礎知識 | 駆除方法と予防策",
@@ -165,43 +166,43 @@ export default function GokiburiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">項目</th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <span className="rank rank-1">1</span>
                       <img src="/images/hero-pest-new.jpg" alt="害虫の生活救急車" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫の生活救急車</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                      <span className="rank rank-2">2</span>
                       <img src="/images/hero-pest-new.jpg" alt="すまサポ" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">すまサポ</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                      <span className="rank rank-3">3</span>
                       <img src="/images/hero-pest-new.jpg" alt="害虫獣SOS" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫獣SOS</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">4</span>
+                      <span className="rank">4</span>
                       <img src="/images/hero-pest-new.jpg" alt="害虫駆除屋" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">害虫駆除屋</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">5</span>
+                      <span className="rank">5</span>
                       <img src="/images/hero-pest-new.jpg" alt="リベルタコントロール" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-black">リベルタコントロール</strong>
                     </div>
                   </th>
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg">6</span>
-                      <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/gaichu110.png" name="害虫駆除110番" size="thumb" />
                       <strong className="text-black">害虫駆除110番</strong>
                     </div>
                   </th>
@@ -254,7 +255,7 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">害虫の生活救急車（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="害虫の生活救急車" className="w-full h-48 object-cover rounded-lg" />
@@ -364,7 +365,7 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">すまサポ（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="すまサポ" className="w-full h-48 object-cover rounded-lg" />
@@ -465,7 +466,7 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">害虫獣SOS（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="害虫獣SOS" className="w-full h-48 object-cover rounded-lg" />
@@ -566,7 +567,7 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除屋（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="害虫駆除屋" className="w-full h-48 object-cover rounded-lg" />
@@ -667,7 +668,7 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">リベルタコントロール（ゴキブリ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="リベルタコントロール" className="w-full h-48 object-cover rounded-lg" />
@@ -768,10 +769,10 @@ export default function GokiburiPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除110番（ゴキブリ駆除）</h3>
               </div>
-              <img src="/images/companies/gaichu110.png" alt="害虫駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/gaichu110.png" name="害虫駆除110番" size="wide" />
             </div>
 
             <div className="mb-6">

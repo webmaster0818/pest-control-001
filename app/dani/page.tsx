@@ -6,6 +6,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
+import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/dani" },
   title: "ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策",
@@ -79,36 +80,36 @@ export default function DaniPage() {
                   <th className="bg-gray-800 text-white border border-gray-300"></th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-warning badge-lg">👑 1</span>
+                      <span className="rank rank-1">1</span>
                       <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">衛生害虫110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
-                      <img src="/images/companies/duskin.png" alt="ダスキン" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-2">2</span>
+                      <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">ダスキン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
-                      <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank rank-3">3</span>
+                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">4</span>
-                      <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">4</span>
+                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
                       <AffText slug="protec" variant="small" label="公式サイト" />
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">5</span>
+                      <span className="rank">5</span>
                       <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">ムシプロテック</strong>
                       <AffText slug="mushi-protec" variant="small" label="公式サイト" />
@@ -116,28 +117,28 @@ export default function DaniPage() {
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">6</span>
-                      <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-20 h-20 rounded-lg object-cover" />
+                      <span className="rank">6</span>
+                      <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">7</span>
+                      <span className="rank">7</span>
                       <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">街角害虫駆除相談所</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">8</span>
+                      <span className="rank">8</span>
                       <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">害虫駆除対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="badge badge-lg text-base">9</span>
+                      <span className="rank">9</span>
                       <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
@@ -244,7 +245,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-warning badge-lg text-base">👑 1</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">衛生害虫110番（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
@@ -330,10 +331,10 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#C0C0C0', color: '#000'}}>👑 2</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">ダスキン（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/duskin.png" alt="ダスキン" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -416,10 +417,10 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base" style={{backgroundColor: '#CD7F32', color: '#fff'}}>👑 3</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">駆除ザウルス（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/kujyo-zaurus.png" alt="駆除ザウルス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -503,10 +504,10 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">4</span>
+                <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">害獣プロテック（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/protec.png" alt="害獣プロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -583,7 +584,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">5</span>
+                <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">ムシプロテック（ダニ駆除）</h3>
               </div>
               <p className="text-sm mb-3"><Link href="/agents/mushi-protec" className="text-amber-700 underline">ムシプロテックの口コミ・評判と公式の料金表記はこちら</Link></p>
@@ -664,10 +665,10 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">6</span>
+                <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（ダニ駆除）</h3>
               </div>
-              <img src="/images/companies/sankyo.png" alt="サンキョークリーンサービス" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -750,7 +751,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">7</span>
+                <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
@@ -836,7 +837,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">8</span>
+                <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">害虫駆除対策センター（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
@@ -922,7 +923,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="badge badge-lg text-base">9</span>
+                <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
@@ -1072,20 +1073,20 @@ export default function DaniPage() {
           <h2 className="heading-primary text-center">ダニの発生を見つけたら</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div className="card bg-error text-error-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">❌ 避けるべき行動</h3>
+<h3 className="card-title text-2xl">避けるべき行動</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>布団を干してたたくだけで済ませる（干してたたくだけでは、ダニは取れないとされています）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>屋内のダニを完全になくそうとする（屋内のダニをゼロにすることは現実的ではなく、神経質になりすぎないことも必要とされています）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">🚫</span><span>原因を確かめずに薬剤を使う（ダニ以外の疾患の可能性もあるため、専門医への相談が勧められています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>布団を干してたたくだけで済ませる（干してたたくだけでは、ダニは取れないとされています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>屋内のダニを完全になくそうとする（屋内のダニをゼロにすることは現実的ではなく、神経質になりすぎないことも必要とされています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ng" aria-hidden="true"></span><span>原因を確かめずに薬剤を使う（ダニ以外の疾患の可能性もあるため、専門医への相談が勧められています）</span></li>
 </ul>
 </div></div>
 <div className="card bg-success text-success-content shadow-xl"><div className="card-body">
-<h3 className="card-title text-2xl">✅ すべきこと</h3>
+<h3 className="card-title text-2xl">すべきこと</h3>
 <ul className="space-y-3 mt-4">
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>シーツを外して寝具に掃除機をかける（週に1回を目標に、布団1枚に約1分30秒かけることが勧められています）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>風通しをよくして湿度を下げる（ヒョウヒダニ類の対策として湿度60％以下が挙げられています）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>開封した粉製品は冷蔵庫で保管する（コナダニの対策）</span></li>
-<li className="flex items-start gap-2"><span className="text-2xl">✅</span><span>イエダニが疑われる場合はネズミ対策を行う</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>シーツを外して寝具に掃除機をかける（週に1回を目標に、布団1枚に約1分30秒かけることが勧められています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>風通しをよくして湿度を下げる（ヒョウヒダニ類の対策として湿度60％以下が挙げられています）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>開封した粉製品は冷蔵庫で保管する（コナダニの対策）</span></li>
+<li className="flex items-start gap-2"><span className="mark mark-ok" aria-hidden="true"></span><span>イエダニが疑われる場合はネズミ対策を行う</span></li>
 </ul>
 </div></div>
 </div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）</p>
