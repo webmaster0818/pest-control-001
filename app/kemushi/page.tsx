@@ -234,7 +234,7 @@ export default function KemushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
                   <td className="text-center">◎ 関東・関西・東海</td>
                   <td className="text-center">◎ 関東・東海</td>
-                  <td className="text-center">○ 北陸4県</td>
+                  <td className="text-center">○ 富山・石川・新潟・岐阜</td>
                   <td className="text-center">○ 北九州・福岡・下関</td>
                   <td className="text-center">◎ 関東・長野・新潟</td>
                   <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
@@ -246,7 +246,7 @@ export default function KemushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">8:30〜19:30</td>
-                  <td className="text-center">8:30〜17:30</td>
+                  <td className="text-center">8:30〜17:30（土日祝・時間外も対応）</td>
                   <td className="text-center">8:00〜20:00</td>
                   <td className="text-center">平日9:00〜18:00</td>
                   <td className="text-center">8:00〜17:00</td>
@@ -258,7 +258,7 @@ export default function KemushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣（毛虫の記載なし）</td>
                   <td className="text-center">害虫・害獣全般</td>
                   <td className="text-center">害虫・害鳥獣全般</td>
                   <td className="text-center">害虫全般</td>
@@ -270,7 +270,7 @@ export default function KemushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">○ 無料相談</td>
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
@@ -282,7 +282,7 @@ export default function KemushiPage() {
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
                   <td className="text-center">○ 可能</td>
                   <td className="text-center">△ 記載なし</td>
@@ -502,7 +502,7 @@ export default function KemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank rank-3">3</span>
-                <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（毛虫駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">有限会社北日本消毒（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/kita-nihon.png" name="有限会社北日本消毒" size="wide" />
             </div>
@@ -510,9 +510,9 @@ export default function KemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
-                <li>創業約50年、防護服を着用した専門スタッフが巣ごと撤去</li>
+                <li>有限会社北日本消毒は富山県富山市に所在し、公式サイトでは「富山県の専門業者として40年以上の実績」と案内しています（設立 昭和51年9月）</li>
+                <li>対応エリアは富山県・石川県・新潟県・岐阜県、営業時間は8:30〜17:30（土日祝・時間外も対応と公式表記）</li>
+                <li>公式サイトのサービス一覧に毛虫の駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
@@ -530,35 +530,36 @@ export default function KemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>富山県、石川県、新潟県、岐阜県</td>
+                      <td>富山県、石川県、新潟県、岐阜県（公式の会社情報）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜17:30・土日祝日・時間外も対応</td>
+                      <td>8:30〜17:30（土日祝・時間外も対応、休業日は年末年始。公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>毛虫・ネズミなど不快害虫・害獣全般</td>
+                      <td>シロアリ・ハチ・ゴキブリ・ネズミ・クモ・ハクビシン・カメムシ・鳩などの鳥獣・コウモリ、その他としてムカデ・ハエ・ダニ・ノミ・ヤスデ・ゲジゲジ（毛虫の記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>要見積もり（公式サイトに料金表なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>1〜3ヵ月間の保証あり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>無料相談あり（公式表記）。現地調査・見積もりの費用は問い合わせ時に確認</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：有限会社北日本消毒 公式サイト（https://kitanihonshoudoku.co.jp/company/ ・ /service/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
