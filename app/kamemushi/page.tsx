@@ -228,39 +228,39 @@ export default function KamemushiPage() {
               <tbody>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                  <td className="text-center">◎ 関東・関西・東海</td>
-                  <td className="text-center">◎ 関東・東海</td>
+                  <td className="text-center">○ 営業所：関東・静岡・愛知・大阪・京都</td>
+                  <td className="text-center">◎ 28府県（地域により対応不可あり）</td>
                   <td className="text-center">○ 富山・石川・新潟・岐阜</td>
-                  <td className="text-center">○ 北九州・福岡・下関</td>
+                  <td className="text-center">○ 北九州中心に福岡県全域・山口県西部ほか</td>
                   <td className="text-center">◎ 関東・長野・新潟</td>
-                  <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
+                  <td className="text-center">○ 三重・愛知・静岡（岐阜は一部）</td>
                   <td className="text-center">◎ 関西・関東・中部</td>
                   <td className="text-center">○ 福井県</td>
-                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">◎ 全国（沖縄・離島除く）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                  <td className="text-center">24時間365日</td>
+                  <td className="text-center">公式に記載なし</td>
                   <td className="text-center">8:30〜19:30</td>
                   <td className="text-center">8:30〜17:30（土日祝・時間外も対応）</td>
                   <td className="text-center">8:00〜20:00</td>
                   <td className="text-center">平日9:00〜18:00</td>
-                  <td className="text-center">8:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
+                  <td className="text-center">8:00〜17:00（日祝休み）</td>
+                  <td className="text-center">平日9:00〜17:00・土曜9:00〜12:00</td>
+                  <td className="text-center">9:00〜17:00（土日祝休み）</td>
                   <td className="text-center">24時間365日</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣（公式掲載の種類）</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害鳥獣全般</td>
-                  <td className="text-center">害虫全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">カメムシ専門</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に掲載</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
+                  <td className="text-center">カメムシ：公式に記載なし</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
@@ -271,20 +271,20 @@ export default function KamemushiPage() {
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">○ 無料（土日祝・夜間は有料）</td>
+                  <td className="text-center">○ 無料（条件あり）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">○ 調査後に断っても費用なし</td>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">公式に記載なし</td>
+                  <td className="text-center">公式に記載なし</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">公式サイト</th>
@@ -326,7 +326,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank rank-1">1</span>
-                <h3 className="text-2xl font-bold text-black">株式会社三共消毒（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社三共消毒（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/sankyo-shoudoku.png" name="株式会社三共消毒" size="wide" />
             </div>
@@ -334,15 +334,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社三共消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
-                <li>24時間年中無休で受付、地域に密着した対応</li>
-                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
+                <li>創業 大正14年4月の害虫・害獣駆除業者です（公式の会社概要）</li>
+                <li>営業所は東京都・神奈川県・千葉県・埼玉県・栃木県・群馬県・静岡県・愛知県・大阪府・京都府にあります（公式の営業所一覧）</li>
+                <li>出張調査・見積もりは無料と案内しています。駆除の種類により無料保証があり、保証期間中の再発は無料で再施工するとしています（期間の記載なし）</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                出張調査・見積もり無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -354,35 +355,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、栃木県、群馬県、大阪府、愛知県、静岡県</td>
+                      <td>営業所：東京都・神奈川県・千葉県・埼玉県・栃木県・群馬県・静岡県・愛知県・大阪府・京都府（対応エリアの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>公式に記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシ・シロアリ・ネズミなど害虫・害獣全般</td>
+                      <td>個人向け：シロアリ・ねずみ・ゴキブリ・トコジラミ・ハチ（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり（詳細は要確認）</td>
+                      <td>駆除の種類により無料保証あり（期間の記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>出張調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式に記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社三共消毒 公式サイト（https://sankyo-shodoku.com/company/overview/ ・ /company/area/ ・ /service/personal/ ・ /service/personal/price/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -401,7 +403,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                出張調査・見積もり無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -412,7 +414,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank rank-2">2</span>
-                <h3 className="text-2xl font-bold text-black">株式会社アサンテ（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社アサンテ（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/asante.png" name="株式会社アサンテ" size="wide" />
             </div>
@@ -420,15 +422,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の施工実績</li>
-                <li>最短即日対応も可能、蜂の場合は即日での対応を実施</li>
-                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
+                <li>害虫・害獣対策は1986年から行い、累計12万件と案内しています（公式表記）</li>
+                <li>受付時間は8:30〜19:30（夏期休暇・年末年始除く）で、受付時間内であれば当日対応も可能としています</li>
+                <li>現地調査・見積もりは無料で、調査の結果施工を断っても費用はかからないとしています</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                受付 8:30〜19:30<br />
                 無料相談はこちら
               </a>
             </div>
@@ -440,35 +443,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、愛知県</td>
+                      <td>山形・宮城・福島・群馬・栃木・茨城・埼玉・東京・神奈川・千葉・静岡・山梨・長野・新潟・愛知・三重・岐阜・滋賀・京都・奈良・和歌山・大阪・岡山・広島・愛媛・高知・佐賀・鹿児島（地域により対応できない場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜19:30・年中無休</td>
+                      <td>8:30〜19:30（夏期休暇・年末年始除く）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシ・シロアリ・ゴキブリなど害虫・害獣全般</td>
+                      <td>ネズミ・アライグマ・ハクビシン・ハト・ハチ・トコジラミ・ダニ・ゴキブリ・食品害虫・チョウバエ／チカイエカ・毛虫（樹木害虫）（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>同年の再発に限り無償で再駆除</td>
+                      <td>保証制度なし（一般住宅のネズミ防除・小動物追い出しは1〜6ヶ月の契約期間制度）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>現地調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>請求書払い・クレジットカード・分割払い</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社アサンテ 公式サイト（https://www.asante.co.jp/vermin/ ・ /area/ ・ /company/c06.html） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -487,7 +491,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                受付 8:30〜19:30<br />
                 無料相談はこちら
               </a>
             </div>
@@ -585,7 +589,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">4</span>
-                <h3 className="text-2xl font-bold text-black">株式会社あい営繕（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社あい営繕（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/ai-eizen.png" name="株式会社あい営繕" size="wide" />
             </div>
@@ -593,15 +597,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社あい営繕の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場に到着</li>
-                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり、蜂1匹の駆除から相談可能</li>
+                <li>北九州を中心に福岡県全域・山口県西部・大分県北部・佐賀県東部に対応しています（公式表記）</li>
+                <li>電話受付は8:00〜20:00で、土日祝も営業しています</li>
+                <li>見積もりは無料で相見積もりも可としています。ハチ駆除は12月までのシーズン保証（同じ場所・同じ種類の再営巣は無料で再施工）、ムカデ駆除は5年保証です</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                受付 8:00〜20:00・土日祝も営業<br />
                 無料相談はこちら
               </a>
             </div>
@@ -613,35 +618,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福岡市、北九州市、下関市</td>
+                      <td>北九州を中心に福岡県全域、山口県西部、大分県北部、佐賀県東部</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜20:00・年中無休</td>
+                      <td>8:00〜20:00（土日祝も営業）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシ・ネズミなど害虫・害獣全般</td>
+                      <td>シロアリ・ムカデ・屋根裏動物（イタチ、アライグマ）・コウモリ・ネズミ・ハト・ハチ（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>12月までのシーズン保証あり</td>
+                      <td>ハチ：その年の12月までのシーズン保証／ムカデ：5年保証</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>見積もり無料（自社対応エリア内は出張費なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>クレジットカード・分割払い（最長60回・審査あり）ほか</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社あい営繕 公式サイト（https://www.shiroarikujyo.com/ ・ /bee ・ https://www.gaijyuukujyo.com/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -660,7 +666,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                受付 8:00〜20:00・土日祝も営業<br />
                 無料相談はこちら
               </a>
             </div>
@@ -671,7 +677,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">5</span>
-                <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社ミヤコ消毒（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/miyako.png" name="株式会社ミヤコ消毒" size="wide" />
             </div>
@@ -682,12 +688,13 @@ export default function KamemushiPage() {
                 <li>1973年に創立。公式サイトで「アフターフォローが強み、リピート率80％以上」と案内しています。</li>
                 <li>薬剤は「厚生労働省に認可された医薬品、医薬部外品を中心に」使用（公式のよくある質問）</li>
                 <li>2022年3月に日本ペストコントロール協会の優良事業所認証を取得、東京都の建築物ねずみ昆虫等防除業に登録（公式の会社概要）</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                平日9:00〜18:00受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -707,23 +714,23 @@ export default function KamemushiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシ・シロアリなど害虫・害鳥獣全般</td>
+                      <td>ネズミ・ゴキブリ・シロアリ・有害鳥獣・アリ・ケムシ類・ダニ・ハチ・ハエ・蚊・トコジラミ・ゲジゲジ ほか（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式に記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>事前調査・見積もりは無料（高所など一部例外あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式に記載なし</td>
                     </tr>
                   </tbody>
                 </table>
@@ -747,7 +754,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                平日9:00〜18:00受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -758,7 +765,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">6</span>
-                <h3 className="text-2xl font-bold text-black">株式会社こだま（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社こだま（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/kodama.png" name="株式会社こだま" size="wide" />
             </div>
@@ -766,15 +773,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社こだまの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
+                <li>三重県津市の会社で、創業は昭和51年2月です（公式の会社案内）</li>
+                <li>施工エリアは三重県・愛知県（岐阜県の一部を含む）・静岡県を中心とし、営業時間は8:00〜17:00（日曜・祝日休み）です</li>
+                <li>見積もり・相談・現地調査は無料と案内しています</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                受付 8:00〜17:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -786,35 +794,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>三重県、愛知県、静岡県、岐阜県</td>
+                      <td>三重県・愛知県（岐阜県の一部を含む）・静岡県を中心（取り扱い商品により対応できない地域あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜17:00・日祝休み</td>
+                      <td>8:00〜17:00（定休日 日曜・祝日）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシなど害虫全般</td>
+                      <td>シロアリ・ネズミ・ハチ・イタチ・ハクビシン・アライグマ・コウモリ・ハト・ムカデ・ヤスデ・黒アリ ほか（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式に記載なし（ムカデ対策SCキーパーは機材保証5年）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>見積もり・相談・現地調査は無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式に記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社こだま 公式サイト（https://kankyo-kodama.co.jp/company/ ・ /vermin/ ・ /centipede_sc/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -833,7 +842,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                受付 8:00〜17:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -844,7 +853,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">7</span>
-                <h3 className="text-2xl font-bold text-black">大洋防疫研究所（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">大洋防疫研究所（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/taiyo.png" name="大洋防疫研究所" size="wide" />
             </div>
@@ -852,15 +861,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">大洋防疫研究所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>関西、関東、中部エリアに対応</li>
+                <li>創業は昭和50年11月です（公式の会社概要）</li>
+                <li>対応エリアは関西・関東・中部（その他地域は要相談）、電話受付は平日9:00〜17:00・土曜9:00〜12:00、施工は24時間年中無休（年末年始除く）です</li>
+                <li>相談・現地調査・見積もりは無料で、見積もり後に追加費用は発生しないと案内しています</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                現地調査・見積もり無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -872,35 +882,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>関西、関東、中部</td>
+                      <td>関西・関東・中部（その他地域は要相談）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>平日 9:00〜17:00・土曜 9:00〜12:00</td>
+                      <td>平日9:00〜17:00・土曜9:00〜12:00（4〜6月は平日・土曜とも9:00〜17:00）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシなど害虫・害獣全般</td>
+                      <td>ゴキブリ・ネズミ・トコジラミ・シロアリ・ハエ・イタチ・ノミ・ハチ・ハト・アリ・ムカデ・タカラダニ・シバンムシ ほか（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>シロアリ駆除のみ5年保証（その他の記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>相談・現地調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式に記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：大洋防疫研究所 公式サイト（https://taiyouboueki.co.jp/ ・ /info/ ・ /charge_list/ ・ /other/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -919,7 +930,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                現地調査・見積もり無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -930,7 +941,7 @@ export default function KamemushiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">8</span>
-                <h3 className="text-2xl font-bold text-black">株式会社第一環研（カメムシ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">株式会社第一環研（害虫・害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/daiichi.png" name="株式会社第一環研" size="wide" />
             </div>
@@ -938,15 +949,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">株式会社第一環研の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>福井県エリアに対応</li>
+                <li>福井県内に対応する害虫駆除業者で、設立は昭和48年です（公式の会社概要）</li>
+                <li>営業時間は9:00〜17:00（休業日 土曜・日曜・祝日）です</li>
+                <li>見積もり・相談は無料（土日祝日・夜間の現場調査は有料）と案内しています</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                受付 9:00〜17:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -958,27 +970,27 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福井県</td>
+                      <td>福井県内（福井市・坂井市・あわら市・勝山市・大野市・鯖江市・越前市・敦賀市・小浜市 ほか）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜17:00・土日祝定休</td>
+                      <td>9:00〜17:00（休業日 土曜・日曜・祝日）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシなど害虫全般</td>
+                      <td>シロアリ・ゴキブリ・トコジラミ・ハチ・ムカデ・ネズミ・ダニ・ノミ・害獣・ハト（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>大型害獣1年・シロアリ5年（ハチ等の記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>見積もり・相談は無料（土日祝日・夜間の現場調査は有料）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -987,6 +999,7 @@ export default function KamemushiPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社第一環研 公式サイト（https://d-kanken.com/ ・ /company ・ /pest） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -1005,7 +1018,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                受付 9:00〜17:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1024,15 +1037,16 @@ export default function KamemushiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハチお助け本舗の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>全国に拠点を持つ、蜂の巣駆除の専門サービス</li>
-                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
-                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
+                <li>ハチ（スズメバチ・アシナガバチ・ミツバチ）駆除の受付サービスで、作業は提携する加盟店が行います（運営 BEST株式会社）</li>
+                <li>24時間365日受付で、日本全国（沖縄・離島を除く）に対応しています</li>
+                <li>作業後1週間以内に同じ場所に再発した場合は0円で対応するとしています</li>
+                <li>公式サイトにカメムシの駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1044,35 +1058,36 @@ export default function KamemushiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>全国対応（一部地域を除く）</td>
+                      <td>日本全国（沖縄・離島を除く）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>24時間365日受付</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>カメムシ専門</td>
+                      <td>ハチ（スズメバチ・アシナガバチ・ミツバチ）のみ（カメムシの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式に記載なし（カメムシの駆除の掲載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>作業後1週間以内の再発は無料対応</td>
+                      <td>作業後1週間以内に同じ場所に再発した場合は0円</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>現地調査・事前見積もり無料（地域・加盟店・現場状況により費用がかかる場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・クレジットカード・電子マネー</td>
+                      <td>現金・クレジットカード・後払い</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：ハチお助け本舗 公式サイト（https://hachi.otasuke-honpo.com/ ・ https://best24.co.jp/company/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -1091,7 +1106,7 @@ export default function KamemushiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
