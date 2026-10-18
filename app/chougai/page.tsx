@@ -237,63 +237,63 @@ export default function ChougaiPage() {
               <tbody>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                  <td className="text-center">◎ 関東・関西・東海</td>
-                  <td className="text-center">◎ 関東・東海</td>
-                  <td className="text-center">○ 北陸4県</td>
-                  <td className="text-center">○ 北九州・福岡・下関</td>
+                  <td className="text-center">◎ 東海・近畿など10府県</td>
+                  <td className="text-center">◎ 全国（加盟店ネットワーク）</td>
+                  <td className="text-center">◎ 北海道〜九州の一部（一部対応不可）</td>
+                  <td className="text-center">◎ 関東・関西・東海・九州など</td>
                   <td className="text-center">◎ 全国（北海道・沖縄除く）</td>
-                  <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
-                  <td className="text-center">◎ 関西・関東・中部</td>
-                  <td className="text-center">○ 福井県</td>
-                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">○ 大阪・兵庫・京都・奈良・和歌山</td>
+                  <td className="text-center">○ 北九州一円（福岡・九州北部・山口西部）</td>
+                  <td className="text-center">◎ 日本全国</td>
+                  <td className="text-center">◎ 全国47都道府県</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
-                  <td className="text-center">8:30〜19:30</td>
-                  <td className="text-center">8:30〜17:30</td>
-                  <td className="text-center">8:00〜20:00</td>
+                  <td className="text-center">平日 9:00〜18:00</td>
+                  <td className="text-center">7:00〜22:00・年中無休</td>
                   <td className="text-center">24時間365日</td>
-                  <td className="text-center">8:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
                   <td className="text-center">24時間365日</td>
+                  <td className="text-center">8:00〜18:00（月〜土）</td>
+                  <td className="text-center">公式サイトに記載なし</td>
+                  <td className="text-center">24時間365日</td>
+                  <td className="text-center">平日 8:00〜19:00・土日祝 8:00〜18:00</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害鳥専門</td>
+                  <td className="text-center">鳥害専門</td>
+                  <td className="text-center">ハト・カラス・ムクドリ・コウモリなど</td>
+                  <td className="text-center">害獣・害鳥</td>
                   <td className="text-center">害虫・害鳥獣全般</td>
-                  <td className="text-center">害虫全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害虫・害獣・害鳥</td>
+                  <td className="text-center">鳥害・シロアリ・衛生害虫</td>
+                  <td className="text-center">鳩専門</td>
                   <td className="text-center">鳥害専門</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
+                  <td className="text-center">△ 公式サイトに記載なし</td>
+                  <td className="text-center">◎ 見積もり無料</td>
+                  <td className="text-center">◎ 現地調査・見積もり0円</td>
+                  <td className="text-center">◎ 調査・見積もり0円</td>
                   <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">○ 見積もり無料（調査費が必要な場合あり）</td>
+                  <td className="text-center">△ 公式サイトに記載なし</td>
+                  <td className="text-center">○ 無料（条件により有料の場合あり）</td>
+                  <td className="text-center">△ メール相談のみ無料と記載</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 契約から8日以内（クーリングオフ）</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 見積もり後の断りは可</td>
+                  <td className="text-center">△ 記載なし</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">公式サイト</th>
@@ -343,15 +343,15 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害鳥根絶の匠の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
-                <li>24時間年中無休で受付、地域に密着した対応</li>
-                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
+                <li>鷹を飛ばして追い払う方法と、トラップによる捕獲を組み合わせたハト対策を行う害鳥駆除業者（公式表記）</li>
+                <li>ハト対策は「完全成功報酬型」で、駆除を始めていなくなってから契約成立とする（公式表記）</li>
+                <li>対象はハト・カラス・ムクドリ・スズメなどの害鳥</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -363,35 +363,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、栃木県、群馬県、大阪府、愛知県、静岡県</td>
+                      <td>愛知県、岐阜県、三重県、長野県、静岡県、大阪府、京都府、兵庫県、滋賀県、奈良県（上記以外も相談可・公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>24時間365日受付</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害・シロアリ・ネズミなど害虫・害獣全般</td>
+                      <td>ハト・カラス・ムクドリ・スズメなどの害鳥</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>料金事例：マンションのハトの完全駆除 40万円（税抜き・交通費別途）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり（詳細は要確認）</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：害鳥駆除根絶の匠 公式サイト（https://gaichoukujyo-takumi.com/ ・ /charge/ ・ /company/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -410,7 +411,7 @@ export default function ChougaiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -429,14 +430,15 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">日本鳩対策センターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の施工実績</li>
-                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
+                <li>鳩対策用品の販売・施工と、鳩対策工事の加盟店ネットワークを運営（地域ごとに加盟店が対応・公式表記）</li>
+                <li>すべての工事に最長5年の鳩対策効果保証（5年の製品保証と1年の忌避保証・公式表記）</li>
+                <li>工場・倉庫、マンション、駅周辺、橋梁など建物別の鳥害対策に対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                平日9:00〜18:00受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -448,35 +450,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、愛知県</td>
+                      <td>全国（地域ごとの加盟店・営業店が対応・公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜19:30・年中無休</td>
+                      <td>平日 9:00〜18:00（施工相談窓口・法人専用 0120-810-179）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害・シロアリ・ゴキブリなど害虫・害獣全般</td>
+                      <td>ハト・カラス・ムクドリ・スズメなどの鳥害</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>同年の再発に限り無償で再駆除</td>
+                      <td>最長5年の鳩対策効果保証（5年の製品保証と1年の忌避保証）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>見積もりは無料（「全国どこでも無料でお見積」・公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：日本鳩対策センター 公式サイト（https://www.hatotaisaku.jp/ ・ /company/ ・ /warranty/ ・ /area/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -495,7 +498,7 @@ export default function ChougaiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
+                平日9:00〜18:00受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -514,14 +517,15 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">みんなのハト対策屋さんの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
+                <li>ハト対策を行う専門家が加盟するネットワーク（運営：株式会社RSX・公式表記）</li>
+                <li>清掃・消毒・侵入防止・忌避剤の設置などから、必要な作業だけを選んで依頼できる</li>
+                <li>ハトのほか、ムクドリ・カラス・コウモリなどの対策にも対応（公式表記）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
+                7時〜22時・年中無休で受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -533,35 +537,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>富山県、石川県、新潟県、岐阜県</td>
+                      <td>北海道、福島県、関東・中部・東海・関西の各都府県、岡山県、広島県、四国4県、福岡県、佐賀県、熊本県、鹿児島県（一部対応不可エリアあり・公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜17:30・土日祝日・時間外も対応</td>
+                      <td>7時〜22時・年中無休</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害・ネズミなど不快害虫・害獣全般</td>
+                      <td>ドバト、キジバト、ムクドリ、ハシボソガラス、ハシブトガラス、コウモリなど</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>ハト対策工賃 11,000円から（出張料金・部材代金は別途）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>1〜3ヵ月間の保証あり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>現地調査・見積もり0円（はしご車を伴う高所作業などは一部有料の場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>クレジットカード（VISA・MasterCard・JCB・アメックスなど）</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：みんなのハト対策屋さん 公式サイト（https://minhato.jp/ ・ https://minhato.jp/company/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -580,7 +585,7 @@ export default function ChougaiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
+                7時〜22時・年中無休で受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -599,8 +604,9 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場に到着</li>
-                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
+                <li>対応害獣にネズミ・イタチ・ハクビシン・アライグマ・コウモリと並んで「害鳥」を掲載（公式表記）</li>
+                <li>相談・現地調査・見積もり・出張費用が0円、最短即日30分で現地に駆けつけ（公式表記）</li>
+                <li>最長10年の破損保証（期間は施工内容による・条件あり）</li>
               </ul>
             </div>
 
@@ -615,27 +621,27 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福岡市、北九州市、下関市</td>
+                      <td>関東・関西・東海・九州・北陸・中部・東北の一部（公式サイトの都府県一覧による）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜20:00・年中無休</td>
+                      <td>24時間365日受付</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害・ネズミなど害虫・害獣全般</td>
+                      <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥など</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式サイトに記載なし（現地調査後に見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>12月までのシーズン保証あり</td>
+                      <td>最長10年の破損保証（期間は施工内容による・条件あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>相談・現地調査・見積もり・出張費用は0円</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
@@ -644,6 +650,7 @@ export default function ChougaiPage() {
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：害獣プロテック 公式サイト（https://gaiju-kujo.co.jp/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -706,7 +713,7 @@ export default function ChougaiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害・シロアリなど害虫・害鳥獣全般</td>
+                      <td>四つ足動物・ネズミ・害鳥（ムクドリなど）・害虫</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
@@ -714,7 +721,7 @@ export default function ChougaiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>最長10年の再発保証（期間は施工内容で異なる）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
@@ -722,12 +729,12 @@ export default function ChougaiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>銀行振込・クレジットカード・電子マネー・QRコード決済（現金集金は不可）</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p className="text-xs text-gray-600 mt-2">出典：駆除ザウルス 公式サイト（https://kujyo-zaurus.com/ ・ https://kujyo-zaurus.com/company/）2026年10月16日確認</p>
+              <p className="text-xs text-gray-600 mt-2">出典：駆除ザウルス 公式サイト（https://kujyo-zaurus.com/ ・ https://kujyo-zaurus.com/company/）2026年10月16日・10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -765,9 +772,9 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">トータルクリーンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
+                <li>ハトの追い出し、巣の撤去、糞の清掃・消毒、防鳩ネット・防鳩剣山の設置に対応</li>
+                <li>日本ペストコントロール協会正会員、累計駆除実績120,000件（公式表記）</li>
+                <li>大阪府・兵庫県・京都府・奈良県・和歌山県（和歌山市周辺）に対応</li>
               </ul>
             </div>
 
@@ -785,35 +792,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>三重県、愛知県、静岡県、岐阜県</td>
+                      <td>大阪府、兵庫県、京都府、奈良県、和歌山県（和歌山市周辺）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜17:00・日祝休み</td>
+                      <td>8:00〜18:00（月〜土）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害など害虫全般</td>
+                      <td>ハト・カラス・コウモリなどの害獣・害鳥、ゴキブリ・シロアリなどの害虫</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式サイトに記載なし（電話または現地調査後に見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>保証期間内のアフターサービスあり（期間は公式サイトに記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>見積もりまでは無料（現地調査費が必要な場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>現金・PayPay・銀行振込</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：トータルクリーン 公式サイト（https://total-clean.co.jp/pc/hato.html） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -851,9 +859,9 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">スピナの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>関西、関東、中部エリアに対応</li>
+                <li>ビルサービス部 環境衛生課にハト対策のグループがあり、工場やマンションのハト対策を行う（公式表記）</li>
+                <li>忌避剤を塗布する「ドバド防除施工システム」と防鳩ネット取付工事に対応、一年間の保証付（公式表記）</li>
+                <li>施工実績は北九州一円（福岡・九州北部・山口西部）</li>
               </ul>
             </div>
 
@@ -871,35 +879,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>関西、関東、中部</td>
+                      <td>北九州一円（福岡・九州北部・山口西部）での施工実績（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>平日 9:00〜17:00・土曜 9:00〜12:00</td>
+                      <td>公式サイトに記載なし（電話 0120-37-7171）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害など害虫・害獣全般</td>
+                      <td>ハトなどの鳥害、シロアリ、ゴキブリ・ネズミなどの衛生害虫</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>忌避剤塗布施工 5,000円/m〜、防鳩ネット取付工事 4,000円/㎡〜</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>一年間の保証付（ドバド防除施工システム）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：株式会社スピナ 防疫サイト（https://exterminator.spina.co.jp/charge/dove/ ・ /strength/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -937,9 +946,9 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">鳩110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>福井県エリアに対応</li>
+                <li>シェアリングテクノロジー株式会社が運営し、加盟店のスタッフが施工する鳩対策サービス（公式表記）</li>
+                <li>日本全国・24時間365日受付</li>
+                <li>最長10年の再発保証や5年または20年の修理保証がある（条件は対応エリア・加盟店による）</li>
               </ul>
             </div>
 
@@ -957,35 +966,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福井県</td>
+                      <td>日本全国（対応エリア・加盟店により対応できない場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜17:00・土日祝定休</td>
+                      <td>24時間365日受付</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害など害虫全般</td>
+                      <td>鳩の駆除・予防（巣の撤去・鳥よけネット・スパイク・ワイヤー・忌避剤）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>個人 22,000円〜（税込）、法人 24,200円〜（税込）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>最長10年の再発保証、5年または20年の修理保証（条件あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>相談から見積もりの提示まで無料（対応エリア・加盟店・現場状況により費用が発生する場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>各種クレジットカード（一部加盟店・エリアでは利用不可）</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：鳩110番 公式サイト（https://www.sharing-tech.co.jp/hato/ ・ /hato/price/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -1023,13 +1033,15 @@ export default function ChougaiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">プロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>当サイトでは、本業者の特徴について公式情報を確認中です。ご利用前に、公式サイトにて最新情報をご確認ください。</li>
+                <li>鳩よけ対策とハト駆除の専門業者（プロテクト株式会社・本社 三重県津市）</li>
+                <li>自社開発の忌避剤と防鳥ネットなどを組み合わせて施工、忌避剤設置箇所とその直下は3年間の保守保証（条件あり）</li>
+                <li>ハトのほか、カラス・ムクドリ・スズメ・ツバメ・コウモリなどの鳥よけにも対応</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                平日8:00〜19:00・土日祝8:00〜18:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -1041,35 +1053,36 @@ export default function ChougaiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>全国対応（一部地域を除く）</td>
+                      <td>全国47都道府県（公式サイトの対応エリア一覧による）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>平日 8:00〜19:00、土・日・祝 8:00〜18:00</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>鳥害専門</td>
+                      <td>ハト・カラス・ムクドリ・スズメ・ツバメ・コウモリなど</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式サイトに「1,500円/m」「1,650円/m」の両方の表記あり（100m以下の施工・太陽光パネルは別途相談）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>作業後1週間以内の再発は無料対応</td>
+                      <td>忌避剤設置箇所とその直下は3年間の保守保証（場所により1年・条件付きの場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>メール相談は無料（現地調査費の記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・クレジットカード・電子マネー</td>
+                      <td>クレジットカード決済可（法人・個人とも）</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <p className="text-xs text-gray-600 mt-2">出典：プロテクト株式会社 公式サイト（https://protect-japan.co.jp/ ・ https://protect-japan.co.jp/lp1/） 2026年10月18日確認</p>
             </div>
 
             <div className="mb-6">
@@ -1088,7 +1101,7 @@ export default function ChougaiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                平日8:00〜19:00・土日祝8:00〜18:00<br />
                 無料相談はこちら
               </a>
             </div>

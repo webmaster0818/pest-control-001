@@ -305,31 +305,7 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    1週間前に、シロアリの駆除を害獣プロテックさんにお願いしました。多くの駆除業者の中から口コミの評価やその内容を確認して、電話で相談したら、とても丁寧な対応だったので、その場で打合せ日を決めました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★☆</span>
-                    <span className="text-sm text-gray-600">4.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    依頼した当日に対応してくださり本当に助かりました。予算が厳しいと伝えると予算内でできる範囲の対策をしっかりと教えてくださり、ほぼ通常の駆除対策と変わらないレベルの対応をしてくれました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="text-sm text-gray-600">5.0</span>
-                  </div>
-                  <p className="text-sm text-gray-900">
-                    インターネットで調べた電話番号に相談したら翌日すぐに見積もりと現場確認に来てくれました。心強かったです。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -412,22 +388,7 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    4月から、１階の天井裏に凄い音がしました。電話の予約も、担当して頂いた方も迅速な対応でした。写真と映像で確認しながら施工して下さって安心でした。精神面でもサポートしてもらえました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    とても親切で、対応も迅速で助かりました。屋根裏の害獣のせいで寝不足が続いていましたが、初めてのことなので色んな業者に話を聞いてみようと思い見積もりをお願いしましたが、担当の方がとても感じが良く親切だったためその日に契約しました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    コウモリの駆除をお願いしました。見積もりの現地調査で、ネズミの被害も見つかり驚きましたが、とても丁寧に説明をしていただいたので駆除を依頼することにしました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -513,22 +474,7 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    迅速な対応で、見積もりも丁寧に説明していただきました。駆除作業も手際よく、アフターフォローもしっかりしていて安心できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    床下の写真を撮って見せてくれたので、被害状況がよく分かりました。説明も分かりやすく、信頼してお任せできました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    電話してから30分以内に来てくれました。急いでいたので本当に助かりました。料金も明確で安心しました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -614,22 +560,7 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    事前の説明が丁寧で、スタッフの方の専門知識も豊富でした。シロアリ駆除の施工も丁寧で、アフターフォローもしっかりしていて安心できました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    公式サイトで施工事例を見て依頼しました。実際に来てくださった方も写真で見たスタッフの方で、安心してお任せできました。作業も期待以上に丁寧でした。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    創業28年の実績に惹かれて依頼しました。現地調査も無料で、見積もりも明確。施工後の定期点検も含めて、長く付き合えそうな業者さんだと感じました。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>
@@ -715,22 +646,7 @@ export default function ShiroariPage() {
               </div>
               <div className="space-y-4">
                 <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    調査・工事とも親切丁寧にしていただきました。工事前日の確認電話連絡も適切に行なっていただきました。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    事前説明もいただき、時間も正確で信頼してお任せできました。作業も丁寧です。
-                  </p>
-                </div>
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <div className="flex items-center gap-2 mb-2"><span className="text-yellow-500">★★★★★</span><span className="text-sm text-gray-600">5.0</span></div>
-                  <p className="text-sm text-gray-900">
-                    工事の説明を明確にしてくれているので安心して任せられると感じます。
-                  </p>
+                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
                 </div>
               </div>
             </div>

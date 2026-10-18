@@ -146,63 +146,63 @@ export default function TokojiPage() {
               <tbody>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                  <td className="text-center">◎ 関東・関西・東海</td>
-                  <td className="text-center">◎ 関東・東海</td>
-                  <td className="text-center">○ 北陸4県</td>
-                  <td className="text-center">○ 北九州・福岡・下関</td>
+                  <td className="text-center">◎ 全国（北海道・沖縄除く）</td>
+                  <td className="text-center">◎ 全国の店舗（一部地域を除く）</td>
                   <td className="text-center">要確認</td>
-                  <td className="text-center">○ 三重・愛知・静岡・岐阜</td>
-                  <td className="text-center">◎ 関西・関東・中部</td>
-                  <td className="text-center">○ 福井県</td>
-                  <td className="text-center">◎ 全国対応</td>
+                  <td className="text-center">○ 関東・関西・東海・九州・北陸・中部・東北の一部</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">◎ 東北〜九州の営業所（一部地域を除く）</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">○ 千葉・茨城（守谷市・取手市）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
                   <td className="text-center">24時間365日</td>
-                  <td className="text-center">8:30〜19:30</td>
-                  <td className="text-center">8:30〜17:30</td>
-                  <td className="text-center">8:00〜20:00</td>
+                  <td className="text-center">記載なし</td>
                   <td className="text-center">要確認</td>
-                  <td className="text-center">8:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
-                  <td className="text-center">9:00〜17:00</td>
                   <td className="text-center">24時間365日</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">8:30〜19:30</td>
+                  <td className="text-center">6:00〜20:00</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">9:00〜18:00</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害鳥獣全般</td>
-                  <td className="text-center">害虫全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
-                  <td className="text-center">害虫・害獣全般</td>
+                  <td className="text-center">害獣・害虫全般</td>
+                  <td className="text-center">害虫・害獣・ハト</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">害獣・害鳥</td>
+                  <td className="text-center">要確認</td>
+                  <td className="text-center">害虫・害獣・鳥類</td>
+                  <td className="text-center">害虫・害獣（業者紹介）</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">害虫・害獣・害鳥</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
                   <td className="text-center">◎ 無料</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">◎ 無料</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">要確認</td>
                   <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
-                  <td className="text-center">○ 可能</td>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
                   <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">○ 可能</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">○ 調査後に断っても費用なし</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">△ 記載なし</td>
+                  <td className="text-center">△ 記載なし</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">公式サイト</th>
@@ -252,15 +252,16 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>創業約100年の、衛生害虫・衛生害獣の駆除・予防を手がける業者</li>
-                <li>24時間年中無休で受付、地域に密着した対応</li>
-                <li>専門スタッフが調査を行い、再発した場合は無料で再施工</li>
+                <li>公式サイトで「全国対応（北海道、沖縄県、一部地域を除く）」「完全自社施工」と案内しています</li>
+                <li>「お見積り」「現地調査」無料、電話は24時間365日受付（公式表記）</li>
+                <li>公式表記で「創業21年」「最長10年 安心の再発保証」</li>
+                <li>公式サイトの対応害虫にトコジラミ駆除を掲載しています</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -272,23 +273,23 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、埼玉県、栃木県、群馬県、大阪府、愛知県、静岡県</td>
+                      <td>全国（北海道・沖縄県・一部地域を除く。公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>24時間365日受付（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シロアリ・ネズミなど害虫・害獣全般</td>
+                      <td>害獣・害虫全般（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>要見積もり</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり（詳細は要確認）</td>
+                      <td>最長10年の再発保証（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
@@ -296,7 +297,7 @@ export default function TokojiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>クレジットカード・電子マネーに対応（公式FAQ）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -319,7 +320,7 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                24時間365日受付<br />
                 無料相談はこちら
               </a>
             </div>
@@ -338,15 +339,14 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>累計60万件以上の施工実績</li>
-                <li>最短即日対応も可能</li>
-                <li>調査から見積もり、施工、アフターフォローまで自社スタッフが対応</li>
+                <li>ダスキンの害虫獣駆除サービス「ターミニックス」です。公式サイトの「ターミニックス全国店舗一覧」から依頼先の店舗を探す仕組みです</li>
+                <li>トコジラミ駆除は、生息調査・バキューミング、冷却処理、薬剤処理のあと、初回点検と再点検で効果を確認します（公式表記）</li>
+                <li>トコジラミ駆除は作業日から30日間が保証期間で、期間内に再発生を確認した場合は無料で再施工（公式表記）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -358,31 +358,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>東京都、神奈川県、千葉県、愛知県</td>
+                      <td>全国の店舗が対応（一部対応できない地域あり。公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜19:30・年中無休</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シロアリ・ゴキブリなど害虫・害獣全般</td>
+                      <td>ゴキブリ・シロアリ・ネズミ・ハト・ハチ・トコジラミ など</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>料金例：洋室20m²の場合 93,500円（税込）。内訳はトコジラミ駆除基本料金66,000円・ベッド1台22,000円・クローゼット5,500円（いずれも税込）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>同年の再発に限り無償で再駆除</td>
+                      <td>作業日から30日間（期間内の再発生は無料で再施工）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
@@ -405,7 +405,6 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                年中無休・通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -424,15 +423,12 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">衛生害虫110番の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>人体・環境に優しい薬剤を使用</li>
-                <li>最短即日の対応について相談可能、当日の現地調査にも対応</li>
-                <li>創業約50年</li>
+                <li>当サイトでは公式サイトの表記を確認できていないため、特徴の記載を控えています。依頼前に業者へ直接ご確認ください</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -444,31 +440,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>富山県、石川県、新潟県、岐阜県</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:30〜17:30・土日祝日・時間外も対応</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ネズミなど不快害虫・害獣全般</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>1〜3ヵ月間の保証あり</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -491,7 +487,6 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                土日祝日・時間外も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -502,7 +497,7 @@ export default function TokojiPage() {
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <span className="rank">4</span>
-                <h3 className="text-2xl font-bold text-black">害獣プロテック（トコジラミ駆除）</h3>
+                <h3 className="text-2xl font-bold text-black">害獣プロテック（害獣駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
             </div>
@@ -510,9 +505,10 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>最短30分で現場に到着</li>
-                <li>自社施工、シーズン内に再発した場合は無料で再施工</li>
-                <li>大手ホームセンターや家電量販店との取引経歴あり</li>
+                <li>株式会社花光・株式会社廣光が運営する害獣駆除サービスです。相談・現地調査・見積もり・出張費用は0円（公式表記）</li>
+                <li>電話は24時間365日受付、土日祝も作業に対応（公式表記）</li>
+                <li>最長10年の破損保証（条件あり・期間は施工内容による。公式表記）</li>
+                <li>公式サイトの対応はネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥などで、トコジラミ駆除の記載はありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
@@ -527,31 +523,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福岡市、北九州市、下関市</td>
+                      <td>関東（千葉・埼玉・東京・栃木・神奈川・群馬・茨城）、関西（三重・京都・兵庫・和歌山・大阪・奈良・滋賀）、東海（岐阜・愛知・静岡）、九州（佐賀・大分・山口・熊本・福岡・長崎）、北陸・中部（富山・山梨・新潟・石川・福井・長野）、東北（福島）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜20:00・年中無休</td>
+                      <td>24時間365日受付（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ネズミなど害虫・害獣全般</td>
+                      <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥など（トコジラミの記載なし）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式に料金表なし（現地調査のうえで見積もり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>12月までのシーズン保証あり</td>
+                      <td>最長10年の破損保証（条件あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>相談・現地調査・見積もり・出張費用は0円</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>作業日確定後に前受け金、施工後に作業完了金（公式表記）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -596,7 +592,6 @@ export default function TokojiPage() {
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -616,23 +611,23 @@ export default function TokojiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シロアリなど害虫・害鳥獣全般</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -655,7 +650,6 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -674,15 +668,15 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">アサンテの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>高い技術力を持ったスタッフが対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>三重県、愛知県、静岡県、岐阜県エリアに対応</li>
+                <li>東証プライム上場。1986年から害虫・害獣対策を手がけ、累計12万件の施工実績があります（公式表記）</li>
+                <li>対応害虫にトコジラミ・ダニ・ハチ・ゴキブリなど、対応害獣にネズミ・アライグマ・ハクビシン・ハトを掲載しています（地域により一部対応できない場合あり）</li>
+                <li>現地調査・お見積りは完全無料で、調査の結果施工を断っても費用は発生しません（公式のよくある質問）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                土日祝も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -694,31 +688,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>三重県、愛知県、静岡県、岐阜県</td>
+                      <td>東北・関東・中部・近畿・中国・四国・九州の営業所から対応（公式の拠点一覧。地域により一部対応できない場合あり）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>8:00〜17:00・日祝休み</td>
+                      <td>8:30〜19:30（夏期休暇・年末年始を除く）。受付時間内は当日対応も可能（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>害虫全般</td>
+                      <td>トコジラミ・ダニ・ハチ・ゴキブリ・ネズミ・アライグマ・ハクビシン・ハトなど</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>現地調査・お見積りは完全無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>請求書払い・クレジットカード・分割払い（公式表記）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -741,7 +735,7 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
+                土日祝も対応<br />
                 無料相談はこちら
               </a>
             </div>
@@ -760,15 +754,14 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">街角害虫駆除相談所の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>メディア出演多数、即日対応</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>関西、関東、中部エリアに対応</li>
+                <li>トラベルブック株式会社が運営する「街角相談所」の害虫駆除窓口で、専門業者を紹介するサービスです（公式表記）</li>
+                <li>電話受付は6:00〜20:00です（公式表記）</li>
+                <li>公式の相談フォームの対象はシロアリ・ゴキブリ・ハチ・ネズミ・アライグマ・イタチ・ハクビシン・コウモリ・その他で、トコジラミは個別の選択肢にありません（2026年10月18日確認）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -780,31 +773,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>関西、関東、中部</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>平日 9:00〜17:00・土曜 9:00〜12:00</td>
+                      <td>6:00〜20:00（公式表記）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>害虫・害獣全般</td>
+                      <td>シロアリ・ゴキブリ・ハチ・ネズミ・アライグマ・イタチ・ハクビシン・コウモリ・その他</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
@@ -827,7 +820,6 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -846,15 +838,12 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害虫駆除対策センターの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>テレビCMを放送、50年以上の実績を持つ害虫駆除業者</li>
-                <li>日本ペストコントロール協会加盟</li>
-                <li>福井県エリアに対応</li>
+                <li>当サイトでは公式サイトの表記を確認できていないため、特徴の記載を控えています。依頼前に業者へ直接ご確認ください</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -866,31 +855,31 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>福井県</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>9:00〜17:00・土日祝定休</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>害虫全般</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>保証あり</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・銀行振込・クレジットカード</td>
+                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
                     </tr>
                   </tbody>
                 </table>
@@ -913,7 +902,6 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                通話無料<br />
                 無料相談はこちら
               </a>
             </div>
@@ -932,15 +920,15 @@ export default function TokojiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">Qujoliaの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>公式サイトで「千葉・茨城の害虫駆除・防除・対策専門」と案内しています</li>
-                <li>24時間365日受付、最短で受付から10分で現地に到着</li>
-                <li>作業前に見積もりを提示、実績のある専門スタッフが対応</li>
+                <li>公式サイトで「千葉・茨城の害虫駆除・防除・対策専門」と案内しています（株式会社Qujolia・千葉県柏市・2018年8月設立）</li>
+                <li>受付時間は9:00〜18:00、現地調査・見積もりは無料です（公式表記）</li>
+                <li>「自社見積」「自社施工」「追加料金なし」を掲げています（公式表記）</li>
               </ul>
             </div>
 
             <div className="text-center mb-6">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                9:00〜18:00<br />
                 無料相談はこちら
               </a>
             </div>
@@ -952,11 +940,11 @@ export default function TokojiPage() {
                   <tbody>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>全国対応（一部地域を除く）</td>
+                      <td>千葉県（一部地域を除く）、茨城県（守谷市・取手市）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日・通話無料</td>
+                      <td>9:00〜18:00（公式表記。会社概要の定休日は土日祝日）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
@@ -964,19 +952,19 @@ export default function TokojiPage() {
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり（現地調査後にお見積もり）</td>
+                      <td>要見積もり（現地調査・見積もりは無料）</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>作業後1週間以内の再発は無料対応</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
+                      <td>現地調査・見積もりは無料</td>
                     </tr>
                     <tr>
                       <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>現金・クレジットカード・電子マネー</td>
+                      <td>公式サイトに記載なし</td>
                     </tr>
                   </tbody>
                 </table>
@@ -999,7 +987,7 @@ export default function TokojiPage() {
 
             <div className="text-center">
               <a href="#" className="btn btn-primary btn-lg">
-                24時間365日・通話無料<br />
+                9:00〜18:00<br />
                 無料相談はこちら
               </a>
             </div>
