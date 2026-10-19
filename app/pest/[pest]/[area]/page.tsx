@@ -94,12 +94,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // municipalSupport があるページ（ハチなど鳥獣保護管理法の対象外の種別）は
   // 「捕獲の許可」が主題ではないため、タイトル・説明文を自治体対応の側に寄せる。
   const municipal = p.municipalSupport ?? [];
-  const title = municipal.length
+  const title = p.metaTitle ?? (municipal.length
     ? `${p.areaName}の${p.pestName}駆除｜自治体の対応・費用の助成・防護服の貸出`
-    : `${p.areaName}の${p.pestName}駆除｜捕獲の許可・相談窓口・対応業者の比較`;
-  const description = municipal.length
+    : `${p.areaName}の${p.pestName}駆除｜捕獲の許可・相談窓口・対応業者の比較`);
+  const description = p.metaDescription ?? (municipal.length
     ? `${p.areaName}で${p.pestName}の巣でお困りの方に向けて、${municipal.length}自治体の公式ページに記載されている駆除の可否・費用の助成・防護服の貸出と、${p.pestName}対応の記載がある駆除業者を編集部が整理しています。`
-    : `${p.areaName}で${p.pestName}の被害でお困りの方に向けて、捕獲に関する法令（環境省・自治体の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しています。`;
+    : `${p.areaName}で${p.pestName}の被害でお困りの方に向けて、捕獲に関する法令（環境省・自治体の記載）、自治体の相談窓口、${p.pestName}対応の記載がある駆除業者の比較を編集部が整理しています。`);
   return {
     title: { absolute: `${title}｜害虫・害獣駆除プロ比較ナビ` },
     description,
@@ -151,8 +151,20 @@ export default async function PestAreaPage({ params }: Props) {
     .filter((a): a is AgentReview => Boolean(a))
     .sort((a, b) => tierRank[a.partnerTier] - tierRank[b.partnerTier]);
 
+  const faqs = p.faqs ?? [];
+  const faqSchema = faqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+      }
+    : null;
+
   return (
     <>
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
       <Breadcrumb
         items={[
           { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
@@ -226,6 +238,30 @@ export default async function PestAreaPage({ params }: Props) {
               </p>
             ))}
           </section>
+
+          {faqs.length > 0 && (
+            <section id="faq" className="scroll-mt-20 mb-12">
+              <h2 className="h2-sec">よくある質問</h2>
+              <div className="space-y-3">
+                {faqs.map((f, i) => (
+                  <div key={i} className="collapse collapse-arrow border border-slate-200 rounded-xl bg-white">
+                    <input type="checkbox" defaultChecked={i === 0} />
+                    <div className="collapse-title font-bold text-slate-800">{f.q}</div>
+                    <div className="collapse-content">
+                      <p className="text-slate-700 text-sm leading-relaxed">{f.a}</p>
+                      <p className="text-slate-500 text-xs mt-2">
+                        出典：
+                        <a href={f.source} target="_blank" rel="noopener noreferrer" className="underline">
+                          {f.org}
+                        </a>
+                        （確認日：{formatDate(f.confirmedDate)}）
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* 自治体の対応（municipalSupport があるときだけ出す） */}
           {hasMunicipal && (
