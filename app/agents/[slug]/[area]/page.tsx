@@ -461,7 +461,7 @@ export default async function BrandAreaPage({ params }: Props) {
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
-                href={`/agents/${b.brandSlug}/`}
+                href={`/agents/${b.brandSlug}`}
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">
@@ -472,7 +472,7 @@ export default async function BrandAreaPage({ params }: Props) {
                 </p>
               </Link>
               <Link
-                href={`/area/${b.areaSlug}/`}
+                href={`/area/${b.areaSlug}`}
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">
@@ -481,14 +481,14 @@ export default async function BrandAreaPage({ params }: Props) {
                 <p className="text-xs text-slate-500 mt-1">エリアのまとめページ</p>
               </Link>
               <Link
-                href="/agents/"
+                href="/agents"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">駆除業者を比較</p>
                 <p className="text-xs text-slate-500 mt-1">掲載業者の一覧</p>
               </Link>
               <Link
-                href="/pest/"
+                href="/pest"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">害虫・害獣から探す</p>
