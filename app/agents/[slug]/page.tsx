@@ -60,7 +60,7 @@ export default async function AgentPage({ params }: Props) {
     dateModified: `${a.updated ?? UPDATED}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ編集部", url: SITE },
     publisher: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ", url: SITE },
-    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}/agents/${slug}/` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}/agents/${slug}` },
   };
   const faqSchema = {
     "@context": "https://schema.org",

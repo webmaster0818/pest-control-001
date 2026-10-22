@@ -468,7 +468,7 @@ export default async function PestAreaPage({ params }: Props) {
                       <th className="bg-slate-50 border border-slate-200 whitespace-nowrap">
                         <CompanyVisual id={a.image} name={a.name} size="mini" monogram />
                         <Link
-                          href={`/agents/${a.slug}/`}
+                          href={`/agents/${a.slug}`}
                           className="text-blue-600 hover:underline"
                         >
                           {a.name}
@@ -554,7 +554,7 @@ export default async function PestAreaPage({ params }: Props) {
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
-                href={`${pestPagePath}/`}
+                href={pestPagePath}
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">
@@ -564,7 +564,7 @@ export default async function PestAreaPage({ params }: Props) {
               </Link>
               {AREA_PAGES.has(p.areaSlug) && (
                 <Link
-                  href={`/area/${p.areaSlug}/`}
+                  href={`/area/${p.areaSlug}`}
                   className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
                 >
                   <p className="font-bold text-slate-800">
@@ -576,14 +576,14 @@ export default async function PestAreaPage({ params }: Props) {
                 </Link>
               )}
               <Link
-                href="/agents/"
+                href="/agents"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">駆除業者を比較</p>
                 <p className="text-xs text-slate-500 mt-1">/agents</p>
               </Link>
               <Link
-                href="/pest/"
+                href="/pest"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">害虫・害獣から探す</p>

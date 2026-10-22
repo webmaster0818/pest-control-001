@@ -76,7 +76,7 @@ export default function PestIndexPage() {
               {animals.map((a) => (
                 <Link
                   key={a.href}
-                  href={`${a.href}/`}
+                  href={a.href}
                   className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
                 >
                   <p className="font-bold text-slate-800">{a.name}駆除</p>
@@ -94,7 +94,7 @@ export default function PestIndexPage() {
               {insects.map((a) => (
                 <Link
                   key={a.href}
-                  href={`${a.href}/`}
+                  href={a.href}
                   className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
                 >
                   <p className="font-bold text-slate-800">{a.name}駆除</p>
@@ -115,7 +115,7 @@ export default function PestIndexPage() {
               {pestAreas.map((p) => (
                 <Link
                   key={`${p.pestSlug}-${p.areaSlug}`}
-                  href={`/pest/${p.pestSlug}/${p.areaSlug}/`}
+                  href={`/pest/${p.pestSlug}/${p.areaSlug}`}
                   className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
                 >
                   <p className="font-bold text-slate-800">
@@ -127,7 +127,7 @@ export default function PestIndexPage() {
                 </Link>
               ))}
               <Link
-                href="/pest/cockroach/tokyo/"
+                href="/pest/cockroach/tokyo"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">
@@ -136,14 +136,14 @@ export default function PestIndexPage() {
                 <p className="text-xs text-slate-500 mt-1">料金相場・業者比較</p>
               </Link>
               <Link
-                href="/pest/nezumi/tokyo/"
+                href="/pest/nezumi/tokyo"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">東京都のネズミ駆除</p>
                 <p className="text-xs text-slate-500 mt-1">料金相場・業者比較</p>
               </Link>
               <Link
-                href="/pest/termite/tokyo/"
+                href="/pest/termite/tokyo"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">
@@ -152,7 +152,7 @@ export default function PestIndexPage() {
                 <p className="text-xs text-slate-500 mt-1">料金相場・業者比較</p>
               </Link>
               <Link
-                href="/pest/wasp/tokyo/"
+                href="/pest/wasp/tokyo"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">東京都のハチ駆除</p>
@@ -174,7 +174,7 @@ export default function PestIndexPage() {
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
-                href="/agents/"
+                href="/agents"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">駆除業者を比較</p>
@@ -183,7 +183,7 @@ export default function PestIndexPage() {
                 </p>
               </Link>
               <Link
-                href="/price/"
+                href="/price"
                 className="rounded-2xl border border-slate-200 p-5 hover:shadow-md hover:border-amber-300 transition"
               >
                 <p className="font-bold text-slate-800">料金相場</p>

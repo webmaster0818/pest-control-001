@@ -30,7 +30,7 @@ export default function AgentsIndexPage() {
               <div className="agent-card-visual">
                 <CompanyVisual id={a.image} name={a.name} size="thumb" monogram />
               </div>
-              <Link href={`/agents/${a.slug}/`} className="agent-card-link">
+              <Link href={`/agents/${a.slug}`} className="agent-card-link">
                 <p className="agent-card-name">{a.name}</p>
                 <p className="agent-card-more">口コミ・評判・料金を見る</p>
               </Link>
