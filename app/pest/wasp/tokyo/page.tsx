@@ -1154,6 +1154,17 @@ export default function WaspTokyoPage() {
         </div>
       </section>
 
+      {/* ハチ駆除の比較・業者別ページへの導線 */}
+      <section className="py-10 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">ハチの巣駆除を業者に頼む前に</h2>
+          <ul className="list-disc pl-6 space-y-2 text-base">
+            <li><Link href="/hachi" className="text-primary underline">ハチ駆除業者の比較（料金相場・見積もりのチェックリスト・ネット広告の高額請求の注意点）</Link></li>
+            <li><Link href="/agents/hachi-buster" className="text-primary underline">蜂バスターの口コミ・評判（ハチの巣駆除の基本料金と追加費用の条件）</Link></li>
+          </ul>
+        </div>
+      </section>
+
       {/* 東京の害虫カレンダー */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">

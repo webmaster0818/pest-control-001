@@ -1286,6 +1286,24 @@ export default function HachiPage() {
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center">業者選びのポイント</h2>
+          <div className="card bg-white shadow-xl mb-6">
+            <div className="card-body">
+              <h3 className="card-title text-xl mb-2">ネットの「〇千円〜」だけで比べない</h3>
+              <p className="text-base leading-relaxed">
+                兵庫県の「東・北はりま消費者注意報 第135号（ハチの駆除で高額請求！）」は、ネット検索で「5千円から」と表示された業者に依頼したところ、作業後に10万円を請求された事例を紹介し、害虫・害獣駆除の相談の約7割がネット検索やネット広告をきっかけに高額請求のトラブルになっていると注意を呼びかけています。
+                同注意報のアドバイスは、①安いネットの表示料金をうのみにしない、②作業内容と料金を確認し、表示とかけ離れた料金ならすぐに契約しない、③複数社から見積もりを取って比べる、④勧誘方法や契約内容によってはクーリング・オフができる場合があるので消費生活センター（消費者ホットライン188）に相談する、の4つです。
+                自治体によってはハチの駆除方法の案内や補助制度があるため、業者に頼む前にお住まいの市区町村にも確認してください。
+              </p>
+              <p className="text-sm mt-2">
+                出典：<a href="https://web.pref.hyogo.lg.jp/ehk11/shohi/documents/chiyuuihou135.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">兵庫県 東・北はりま消費者注意報 第135号（PDF）</a>（2026年10月22日確認）
+              </p>
+              <p className="text-base leading-relaxed mt-3">
+                全国の提携業者から近くの業者が向かう受付窓口型のサービスは、基本料金に出張費・高所作業などの追加費用がどう加わるかが社ごとに違います。料金の表記と追加費用の条件は
+                <Link href="/agents/hachi-buster" className="text-primary underline">蜂バスターの口コミ・評判（ミツバチ2,900円〜の内訳と追加費用）</Link>
+                で、公式表記どおりに整理しています。
+              </p>
+            </div>
+          </div>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
