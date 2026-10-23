@@ -72,6 +72,7 @@ export default function DaniPage() {
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-primary text-center mb-8">ダニ駆除業者の比較</h2>
+          <p className="text-sm text-gray-600 text-center mb-6">各社の公式サイトでダニ駆除の対応が確認できた業者だけを掲載しています（2026年10月23日確認）。</p>
           
           <div className="overflow-x-auto">
             <table className="table w-full bg-white text-black">
@@ -81,35 +82,6 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-1">1</span>
-                      <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">衛生害虫110番</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank rank-2">2</span>
-                      <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="thumb" />
-                      <strong className="text-lg font-bold text-gray-900">ダスキン</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank rank-3">3</span>
-                      <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="thumb" />
-                      <strong className="text-lg font-bold text-gray-900">駆除ザウルス</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank">4</span>
-                      <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="thumb" />
-                      <strong className="text-lg font-bold text-gray-900">害獣プロテック</strong>
-                      <AffText slug="protec" variant="small" label="公式サイト" />
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank">5</span>
                       <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">ムシプロテック</strong>
                       <AffText slug="mushi-protec" variant="small" label="公式サイト" />
@@ -117,28 +89,14 @@ export default function DaniPage() {
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="rank">6</span>
+                      <span className="rank rank-2">2</span>
                       <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">サンキョークリーンサービス</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="rank">7</span>
-                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">街角害虫駆除相談所</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank">8</span>
-                      <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-20 h-20 rounded-lg object-cover" />
-                      <strong className="text-lg font-bold text-gray-900">害虫駆除対策センター</strong>
-                    </div>
-                  </th>
-                  <th className="text-center">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="rank">9</span>
+                      <span className="rank rank-3">3</span>
                       <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
                       <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
@@ -148,84 +106,36 @@ export default function DaniPage() {
               <tbody>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                  <td className="text-center">要確認</td>
-                  <td className="text-center">◎ 全国の店舗（一部地域を除く）</td>
-                  <td className="text-center">◎ 全国（北海道・沖縄除く）</td>
-                  <td className="text-center">○ 関東・関西・東海・九州・北陸・中部・東北の一部</td>
                   <td className="text-center">◎ 全国対応</td>
                   <td className="text-center">○ 東京・神奈川・千葉・埼玉・茨城・栃木</td>
-                  <td className="text-center">要確認</td>
-                  <td className="text-center">要確認</td>
                   <td className="text-center">○ 千葉・茨城（守谷市・取手市）</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                  <td className="text-center">要確認</td>
-                  <td className="text-center">記載なし</td>
-                  <td className="text-center">24時間365日</td>
-                  <td className="text-center">24時間365日</td>
                   <td className="text-center">24時間365日</td>
                   <td className="text-center">8:00〜20:00</td>
-                  <td className="text-center">6:00〜20:00</td>
-                  <td className="text-center">要確認</td>
                   <td className="text-center">9:00〜18:00</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">対応害虫・害獣</th>
-                  <td className="text-center">要確認</td>
-                  <td className="text-center">害虫・害獣・ハト</td>
-                  <td className="text-center">害獣・害虫全般</td>
-                  <td className="text-center">害獣・害鳥</td>
                   <td className="text-center">害虫・ネズミ</td>
                   <td className="text-center">害虫・害獣（シロアリ・ネズミ等）</td>
-                  <td className="text-center">害虫・害獣（業者紹介）</td>
-                  <td className="text-center">要確認</td>
                   <td className="text-center">害虫・害獣・害鳥</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">無料診断</th>
-                  <td className="text-center">要確認</td>
-                  <td className="text-center">△ 記載なし</td>
                   <td className="text-center">◎ 無料</td>
                   <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">◎ 無料</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">要確認</td>
                   <td className="text-center">◎ 無料</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">キャンセル</th>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">△ 記載なし</td>
                   <td className="text-center">○ 可能</td>
-                  <td className="text-center">△ 記載なし</td>
-                  <td className="text-center">△ 記載なし</td>
                   <td className="text-center">△ 記載なし</td>
                   <td className="text-center">△ 記載なし</td>
                 </tr>
                 <tr>
                   <th className="bg-gray-800 text-white border border-gray-300">公式サイト</th>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
-                  <td className="text-center">
-                    <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
-                  </td>
                   <td className="text-center">
                     <a href="#" className="btn btn-primary btn-sm">公式サイトへ →</a>
                   </td>
@@ -241,344 +151,11 @@ export default function DaniPage() {
           </div>
           <h2 className="heading-primary text-center mt-16 mb-8">ダニ駆除業者の詳細</h2>
 
-          {/* 衛生害虫110番 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank rank-1">1</span>
-                <h3 className="text-2xl font-bold text-black">衛生害虫110番（ダニ駆除）</h3>
-              </div>
-              <img src="/images/hero-pest-new.jpg" alt="衛生害虫110番" className="w-full h-48 object-cover rounded-lg" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">衛生害虫110番の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>当サイトでは公式サイトの表記を確認できていないため、特徴の記載を控えています。依頼前に業者へ直接ご確認ください</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆衛生害虫110番の基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆衛生害虫110番の口コミ</h4>
-                <a href="https://www.google.com/search?q=衛生害虫110番+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-          </div>
-
-          {/* ダスキン */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank rank-2">2</span>
-                <h3 className="text-2xl font-bold text-black">ダスキン（ダニ駆除）</h3>
-              </div>
-              <CompanyVisual id="/images/companies/duskin.png" name="ダスキン" size="wide" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">ダスキンの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>ダスキンの害虫獣駆除サービス「ターミニックス」です。公式サイトの「ターミニックス全国店舗一覧」から依頼先の店舗を探す仕組みです</li>
-                <li>公式サイトの害虫獣の一覧（ゴキブリ・シロアリ・ネズミ・ハト・ハチ・トコジラミなど）に、ダニ駆除のサービスは掲載されていません（2026年10月18日確認）</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆ダスキンの基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>全国の店舗が対応（一部対応できない地域あり。公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ゴキブリ・シロアリ・ネズミ・ハト・ハチ・トコジラミ など（ダニ駆除の掲載なし）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆ダスキンの口コミ</h4>
-                <a href="https://www.google.com/search?q=ダスキン+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-          </div>
-
-          {/* 駆除ザウルス */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank rank-3">3</span>
-                <h3 className="text-2xl font-bold text-black">駆除ザウルス（ダニ駆除）</h3>
-              </div>
-              <CompanyVisual id="/images/companies/kujyo-zaurus.png" name="駆除ザウルス" size="wide" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">駆除ザウルスの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>公式サイトで「全国対応（北海道、沖縄県、一部地域を除く）」「完全自社施工」と案内しています</li>
-                <li>「お見積り」「現地調査」無料、電話は24時間365日受付（公式表記）</li>
-                <li>公式表記で「創業21年」「最長10年 安心の再発保証」</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日受付<br />
-                無料相談はこちら
-              </a>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆駆除ザウルスの基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>全国（北海道・沖縄県・一部地域を除く。公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日受付（公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>害獣・害虫全般（公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>要見積もり</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>最長10年の再発保証（公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・調査・見積もりは無料</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>クレジットカード・電子マネーに対応（公式FAQ）</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-xs text-gray-600 mt-2">出典：駆除ザウルス 公式サイト（https://kujyo-zaurus.com/ ・ https://kujyo-zaurus.com/company/）2026年10月17日確認</p>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆駆除ザウルスの口コミ</h4>
-                <a href="https://www.google.com/search?q=駆除ザウルス+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                24時間365日受付<br />
-                無料相談はこちら
-              </a>
-            </div>
-          </div>
-
-          {/* 害獣プロテック */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">4</span>
-                <h3 className="text-2xl font-bold text-black">害獣プロテック（害獣駆除）</h3>
-              </div>
-              <CompanyVisual id="/images/companies/protec.png" name="害獣プロテック" size="wide" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>株式会社花光・株式会社廣光が運営する害獣駆除サービスです。相談・現地調査・見積もり・出張費用は0円（公式表記）</li>
-                <li>電話は24時間365日受付、土日祝も作業に対応（公式表記）</li>
-                <li>最長10年の破損保証（条件あり・期間は施工内容による。公式表記）</li>
-                <li>公式サイトの対応はネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥などで、ダニ駆除の記載はありません（2026年10月18日確認）</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <AffBanner slug="protec" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害獣プロテックの基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>関東（千葉・埼玉・東京・栃木・神奈川・群馬・茨城）、関西（三重・京都・兵庫・和歌山・大阪・奈良・滋賀）、東海（岐阜・愛知・静岡）、九州（佐賀・大分・山口・熊本・福岡・長崎）、北陸・中部（富山・山梨・新潟・石川・福井・長野）、東北（福島）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>24時間365日受付（公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>ネズミ・イタチ・ハクビシン・アライグマ・コウモリ・害鳥など（ダニの記載なし）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>公式に料金表なし（現地調査のうえで見積もり）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>最長10年の破損保証（条件あり）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>相談・現地調査・見積もり・出張費用は0円</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>作業日確定後に前受け金、施工後に作業完了金（公式表記）</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害獣プロテックの口コミ</h4>
-                <a href="https://www.google.com/search?q=害獣プロテック+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <AffText slug="protec" variant="button" label="害獣プロテックの公式サイトで無料相談" />
-            </div>
-          </div>
-
           {/* ムシプロテック */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">5</span>
+                <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">ムシプロテック（ダニ駆除）</h3>
               </div>
               <p className="text-sm mb-3"><Link href="/agents/mushi-protec" className="text-amber-700 underline">ムシプロテックの口コミ・評判と公式の料金表記はこちら</Link></p>
@@ -659,7 +236,7 @@ export default function DaniPage() {
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">6</span>
+                <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">サンキョークリーンサービス（ダニ駆除）</h3>
               </div>
               <CompanyVisual id="/images/companies/sankyo.png" name="サンキョークリーンサービス" size="wide" />
@@ -741,177 +318,11 @@ export default function DaniPage() {
             </div>
           </div>
 
-          {/* 街角害虫駆除相談所 */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">7</span>
-                <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（ダニ駆除）</h3>
-              </div>
-              <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">街角害虫駆除相談所の特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>トラベルブック株式会社が運営する「街角相談所」の害虫駆除窓口で、専門業者を紹介するサービスです（公式表記）</li>
-                <li>電話受付は6:00〜20:00です（公式表記）</li>
-                <li>公式の相談フォームの対象はシロアリ・ゴキブリ・ハチ・ネズミ・アライグマ・イタチ・ハクビシン・コウモリ・その他で、ダニは個別の選択肢にありません（2026年10月18日確認）</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆街角害虫駆除相談所の基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>6:00〜20:00（公式表記）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>シロアリ・ゴキブリ・ハチ・ネズミ・アライグマ・イタチ・ハクビシン・コウモリ・その他</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>公式サイトに記載なし</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆街角害虫駆除相談所の口コミ</h4>
-                <a href="https://www.google.com/search?q=街角害虫駆除相談所+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-          </div>
-
-          {/* 害虫駆除対策センター */}
-          <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
-            <div className="mb-4">
-              <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">8</span>
-                <h3 className="text-2xl font-bold text-black">害虫駆除対策センター（ダニ駆除）</h3>
-              </div>
-              <img src="/images/hero-pest-new.jpg" alt="害虫駆除対策センター" className="w-full h-48 object-cover rounded-lg" />
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">害虫駆除対策センターの特徴</h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>当サイトでは公式サイトの表記を確認できていないため、特徴の記載を控えています。依頼前に業者へ直接ご確認ください</li>
-              </ul>
-            </div>
-
-            <div className="text-center mb-6">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="font-bold text-lg text-black mb-3">◆害虫駆除対策センターの基本情報</h4>
-              <div className="overflow-x-auto">
-                <table className="table w-full bg-white text-black">
-                  <tbody>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応エリア</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">電話受付時間</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">対応可能な害獣・害虫</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">駆除最低料金</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">保証期間</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">無料診断の有無</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                    <tr>
-                      <th className="bg-gray-800 text-white border border-gray-300">支払い方法</th>
-                      <td>公式表記を未確認（依頼前に業者へご確認ください）</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="font-bold text-lg text-black">◆害虫駆除対策センターの口コミ</h4>
-                <a href="https://www.google.com/search?q=害虫駆除対策センター+ダニ駆除+口コミ" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-sm">
-                  Google口コミを見る →
-                </a>
-              </div>
-              <div className="space-y-4">
-                <div className="border-2 border-base-200 p-4 rounded-lg bg-base-50">
-                  <p className="text-sm text-gray-900">実際の口コミは上記「Google口コミを見る」から最新の評価をご確認ください。当サイトでは出典が確認できない個人の体験談は掲載していません。</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a href="#" className="btn btn-primary btn-lg">
-                無料相談はこちら
-              </a>
-            </div>
-          </div>
-
           {/* Qujolia */}
           <div className="mb-16 bg-white shadow-lg rounded-lg p-8 company-detail">
             <div className="mb-4">
               <div className="flex items-center gap-3 mb-3 flex-wrap">
-                <span className="rank">9</span>
+                <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除）</h3>
               </div>
               <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
