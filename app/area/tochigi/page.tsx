@@ -8,11 +8,11 @@ import { AffBanner, AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/tochigi" },
-  title: "栃木の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-  description: "栃木の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。地域別の料金相場、害虫カレンダー、業者の選び方をご説明します。即日対応が可能な業者も掲載しています。",
+  title: "栃木の害虫駆除｜県の相談窓口と業者10社の比較",
+  description: "栃木県で害虫駆除を考えたら、まず地域の県健康福祉センター生活衛生課（宇都宮市は市保健所）に相談でき、専門的な相談は衛生害虫防除等相談室が受け付けています（栃木県公式）。駆除を依頼できる業者10社も比較しています。",
   openGraph: {
-    title: "栃木の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "栃木の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "栃木の害虫駆除｜県の相談窓口と業者10社の比較",
+    description: "栃木県の害虫の相談窓口（県健康福祉センター・宇都宮市保健所・衛生害虫防除等相談室）と、駆除を依頼できる業者10社を比較しています。",
     url: "https://gaichu-pro.com/area/tochigi",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -95,8 +95,29 @@ export default function TokyoPage() {
     { name: "栃木県 医薬・生活衛生課 生活衛生・動物愛護担当", description: "「住まいのねずみや害虫について相談したい」ページの問い合わせ先", contact: "028-623-3110", hours: "", url: "https://www.pref.tochigi.lg.jp/e07/advice/kurashi/eisei/gd0407058.html" },
   ];
 
+  const faqs = [
+    {
+      q: "栃木県で害虫について相談できる公的な窓口はどこですか？",
+      a: "衛生害虫（人に害を与える動物）に関する相談は、お住まいの地域を管轄する県の健康福祉センター生活衛生課で受け付けています。宇都宮市にお住まいの場合は宇都宮市保健所 生活衛生課が窓口です。受付時間は、各健康福祉センターが9時〜17時、宇都宮市保健所が8時30分〜17時15分です（土日祝日・年末年始を除く）。",
+    },
+    {
+      q: "市町ごとの管轄の窓口と電話番号を教えてください。",
+      a: "県西健康福祉センター（鹿沼市・日光市）0289-64-3029、県東健康福祉センター（真岡市・益子町・茂木町・市貝町・芳賀町）0285-83-7220、県南健康福祉センター（栃木市・小山市・下野市・上三川町・壬生町・野木町）0285-22-6119、県北健康福祉センター（大田原市・矢板市・那須塩原市・さくら市・那須烏山市・塩谷町・高根沢町・那須町・那珂川町）0287-22-2364、安足健康福祉センター（足利市・佐野市）0284-41-5897、宇都宮市保健所（宇都宮市）028-626-1108です。",
+    },
+    {
+      q: "より専門的な相談はどこにできますか？",
+      a: "栃木県のページでは、栃木県ペストコントロール協会内の「衛生害虫防除等相談室」（宇都宮市若草3-13-22 邦和理工（株）内、028-625-0606、9時〜16時・日祝除く）が、より専門的な相談に対応していると案内されています。",
+    },
+  ];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+
   return (
     <div className="min-h-screen bg-base-200">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
@@ -118,11 +139,19 @@ export default function TokyoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            栃木の害虫駆除の基礎知識と業者比較
+            栃木の害虫駆除の相談窓口と業者比較
           </h1>
-          <p className="text-lg text-gray-700">
-            栃木の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
-          </p>
+          <div className="text-left bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-2">
+            <p>
+              栃木県では、衛生害虫（人に害を与える動物）に関する相談を、お住まいの地域を管轄する県の健康福祉センター生活衛生課で受け付けています。宇都宮市にお住まいの場合は、宇都宮市保健所 生活衛生課（028-626-1108）が窓口です。
+            </p>
+            <p>
+              より専門的な相談は、栃木県ペストコントロール協会内の「衛生害虫防除等相談室」（028-625-0606・9時〜16時・日祝除く）が対応しています。駆除作業を依頼する場合は、下の業者10社の比較をご覧ください。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.pref.tochigi.lg.jp/e07/advice/kurashi/eisei/gd0407058.html" target="_blank" rel="nofollow noopener" className="underline">栃木県「住まいのねずみや害虫について相談したい」</a>（2026年10月24日確認）。管轄の市町と電話番号は<a href="#tochigi-faq" className="underline">よくある質問</a>にまとめています。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1186,7 +1215,7 @@ export default function TokyoPage() {
                         )}
                       </div>
                       {org.url && (
-                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月24日確認）</p>
                       )}
                     </div>
                   </div>
@@ -1194,6 +1223,24 @@ export default function TokyoPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* よくある質問 */}
+      <section id="tochigi-faq" className="py-16 px-4 scroll-mt-20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">栃木の害虫相談のよくある質問</h2>
+          <div className="space-y-4">
+            {faqs.map((f, i) => (
+              <div key={i} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-lg text-black">{f.q}</h3>
+                  <p className="text-gray-700">{f.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.pref.tochigi.lg.jp/e07/advice/kurashi/eisei/gd0407058.html" target="_blank" rel="nofollow noopener" className="underline">栃木県「住まいのねずみや害虫について相談したい」</a>（2026年10月24日確認）</p>
         </div>
       </section>
 
