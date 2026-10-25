@@ -8,11 +8,11 @@ import { AffBanner, AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/tokyo" },
-  title: "東京の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-  description: "東京都内の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。23区・多摩地域の料金相場、害虫カレンダー、業者の選び方をご説明します。即日対応が可能な業者も掲載しています。",
+  title: "東京の害虫駆除｜保健所の相談窓口と業者10社の比較",
+  description: "東京都では、ねずみ・衛生害虫の相談はお住まいの地域の保健所（23区は区の保健所、多摩・島しょは都保健所と八王子市・町田市の保健所）が受け付けています（東京都公式）。駆除を依頼できる業者10社も比較しています。",
   openGraph: {
-    title: "東京の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "東京都内の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "東京の害虫駆除｜保健所の相談窓口と業者10社の比較",
+    description: "東京都の害虫の相談窓口（区・都・市の保健所、東京都ペストコントロール協会）と、駆除を依頼できる業者10社を比較しています。",
     url: "https://gaichu-pro.com/area/tokyo",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -91,12 +91,33 @@ export default function TokyoPage() {
 
   const consultations = [
     { name: "東京都 保健医療局 健康安全部 環境保健衛生課 指導担当", description: "東京都のねずみ・衛生害虫情報（スズメバチ等）ページの問い合わせ先", contact: "03-5320-4391", hours: "", url: "https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/suzumebachi" },
-    { name: "お住まいの区・市町村の保健所（特別区保健所／都保健所）", description: "23区は各区の保健所、多摩・島しょは都保健所（西多摩・南多摩・多摩府中・多摩小平・島しょ）および八王子市・町田市の保健所", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.hokeniryo.metro.tokyo.lg.jp/kenkou/shisetsu" },
+    { name: "お住まいの区・市町村の保健所（特別区保健所／都保健所）", description: "23区は各区の保健所、多摩・島しょは都保健所（西多摩・南多摩・多摩立川・多摩府中・多摩小平・島しょ）および八王子市・町田市の保健所", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon" },
     { name: "公益社団法人 東京都ペストコントロール協会", description: "ネズミ・害虫の相談（協会事務局）。害虫相談員の紹介も案内", contact: "03-3254-0014（代表）", hours: "業務時間 平日午前9時〜午後5時", url: "https://www.pestcontrol-tokyo.jp/overview.html" },
   ];
 
+  const faqs = [
+    {
+      q: "東京都で害虫について相談できる公的な窓口はどこですか？",
+      a: "東京都保健医療局は、ねずみ・衛生害虫に関する相談を、お住まいの地域を所管する保健所で受け付けると案内しています。23区にお住まいの場合は各区の保健所、八王子市・町田市にお住まいの場合は市の保健所、そのほかの多摩地域・島しょ地域にお住まいの場合は都の保健所が窓口です。",
+    },
+    {
+      q: "多摩地域・島しょ地域の保健所の所管区域と電話番号を教えてください。",
+      a: "西多摩保健所（青梅市・福生市・羽村市・あきる野市・瑞穂町・日の出町・檜原村・奥多摩町）0428-22-6141、南多摩保健所（日野市・多摩市・稲城市）042-371-7661、多摩立川保健所（立川市・昭島市・国分寺市・国立市・東大和市・武蔵村山市）042-524-5171、多摩府中保健所（武蔵野市・三鷹市・府中市・調布市・小金井市・狛江市）042-362-2334、多摩小平保健所（小平市・東村山市・清瀬市・東久留米市・西東京市）042-450-3111、島しょ保健所（都庁第一本庁舎30階）03-5320-4342、八王子市保健所 042-645-5111、町田市保健所 042-724-4241です。23区の保健所の連絡先は、東京都の「特別区保健所・保健センター一覧」に掲載されています。",
+    },
+    {
+      q: "ネズミ・害虫について、より専門的な相談はどこにできますか？",
+      a: "公益社団法人 東京都ペストコントロール協会（千代田区鍛冶町2-9-5 東園ビル4階）が、ネズミ・害虫の防除に関する害虫相談を行い、お近くの害虫相談員の紹介も案内しています。電話は03-3254-0014（代表）、業務時間は平日午前9時〜午後5時です。",
+    },
+  ];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+
   return (
     <div className="min-h-screen bg-base-200">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
@@ -118,11 +139,19 @@ export default function TokyoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            東京の害虫駆除の基礎知識と業者比較
+            東京の害虫駆除の相談窓口と業者比較
           </h1>
-          <p className="text-lg text-gray-700">
-            東京都内の害虫駆除業者と料金相場を比較しています。23区・多摩地域・島しょ地域の区分、公的な相談窓口、業者の選び方をご説明します。
-          </p>
+          <div className="text-left bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-2">
+            <p>
+              東京都では、ねずみ・衛生害虫に関する相談を、お住まいの地域を所管する保健所で受け付けています。23区は各区の保健所、八王子市と町田市は市の保健所、そのほかの多摩地域と島しょ地域は都の保健所が窓口です。
+            </p>
+            <p>
+              ネズミ・害虫の相談や害虫相談員の紹介は、公益社団法人 東京都ペストコントロール協会（03-3254-0014・平日9時〜17時）も受け付けています。駆除作業を依頼する場合は、下の業者10社の比較をご覧ください。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「ねずみ・衛生害虫」</a>（2026年10月25日確認）。多摩・島しょの保健所の所管区域と電話番号は<a href="#tokyo-faq" className="underline">よくある質問</a>にまとめています。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1186,7 +1215,7 @@ export default function TokyoPage() {
                         )}
                       </div>
                       {org.url && (
-                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月17日確認）</p>
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月25日確認）</p>
                       )}
                     </div>
                   </div>
@@ -1194,6 +1223,24 @@ export default function TokyoPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* よくある質問 */}
+      <section id="tokyo-faq" className="py-16 px-4 scroll-mt-20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">東京の害虫相談のよくある質問</h2>
+          <div className="space-y-4">
+            {faqs.map((f, i) => (
+              <div key={i} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-lg text-black">{f.q}</h3>
+                  <p className="text-gray-700">{f.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon" target="_blank" rel="nofollow noopener" className="underline mr-2">東京都保健医療局「ねずみ・衛生害虫」</a><a href="https://www.hokeniryo.metro.tokyo.lg.jp/shisetsu/jigyosyo/hokenjyo/" target="_blank" rel="nofollow noopener" className="underline mr-2">都保健所一覧</a><a href="https://www.hokeniryo.metro.tokyo.lg.jp/kenkou/shisetsu/seire_list" target="_blank" rel="nofollow noopener" className="underline mr-2">中核市・政令市保健所・保健センター一覧</a><a href="https://www.hokeniryo.metro.tokyo.lg.jp/kenkou/shisetsu/kuho_list" target="_blank" rel="nofollow noopener" className="underline mr-2">特別区保健所・保健センター一覧</a><a href="https://www.pestcontrol-tokyo.jp/overview.html" target="_blank" rel="nofollow noopener" className="underline">東京都ペストコントロール協会「協会の概要」</a>（2026年10月25日確認）</p>
         </div>
       </section>
 
