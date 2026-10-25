@@ -45,6 +45,19 @@ export default function Home() {
   ];
   const stats = siteStats(pests);
 
+  // 業者別の詳細ページ（口コミ・評判・料金・対応エリア）
+  const agentLinks = [
+    { name: "ハウスプロテクト", href: "/agents/house-protect" },
+    { name: "害獣プロテック", href: "/agents/protec" },
+    { name: "害獣セーフガード", href: "/agents/gaiju-safe-guard" },
+    { name: "ハウスガード24", href: "/agents/house-guard-24" },
+    { name: "街角害獣駆除相談所", href: "/agents/machikado-gaiju-kujo" },
+    { name: "害獣害虫駆除王", href: "/agents/kujo-oh" },
+    { name: "蜂バスター", href: "/agents/hachi-buster" },
+    { name: "ムシプロテック", href: "/agents/mushi-protec" },
+    { name: "イーバスター", href: "/agents/e-buster" },
+  ];
+
   const regions = prefectureRegions();
 
   const features = [
@@ -190,6 +203,23 @@ export default function Home() {
           <p className="top-note">
             ※料金は目安です。被害状況・建物の構造により変動します。ご依頼の前に、現地調査・見積もりをお受けください。
           </p>
+        </div>
+      </section>
+
+      {/* 業者別の口コミ・評判ページ（各社の詳細ページへ） */}
+      <section id="agents" className="top-section">
+        <div className="top-container">
+          <h2 className="heading-primary text-center">業者別の口コミ・評判</h2>
+          <div className="pest-grid rv-auto">
+            {agentLinks.map((a) => (
+              <Link key={a.href} href={a.href} className="pest-tile">
+                <span>{a.name}</span>
+              </Link>
+            ))}
+            <Link href="/agents" className="pest-tile">
+              <span>業者一覧</span>
+            </Link>
+          </div>
         </div>
       </section>
 
