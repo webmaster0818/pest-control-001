@@ -9,9 +9,9 @@ import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/anaguma" },
   title: "アナグマ駆除の基礎知識 | 駆除方法と再発防止",
-  description: "アナグマ駆除の料金相場と業者の比較に加え、アナグマの特徴、被害の傾向、鳥獣保護管理法上の扱い、業者に依頼する前に確認することを公的機関の資料をもとにご説明します。",
+  description: "アナグマ駆除業者の比較に加え、アナグマの特徴、被害の傾向、鳥獣保護管理法上の扱い、業者に依頼する前に確認することを公的機関の資料をもとにご説明します。",
   openGraph: {
-    title: "アナグマ駆除業者比較 | 料金相場・特徴・法律上の扱い",
+    title: "アナグマ駆除業者比較 | 特徴・被害・法律上の扱い",
     description: "アナグマ駆除業者を料金・保証・対応エリアの観点から比較し、アナグマの特徴や鳥獣保護管理法上の扱いもご説明します。",
     url: "https://gaichu-pro.com/anaguma",
     images: [DEFAULT_OG_IMAGE],
@@ -131,12 +131,6 @@ export default function AnagumaPage() {
     },
   ];
 
-  const priceTable = [
-    { type: "戸建て（侵入口封鎖含む）", price: "80,000〜150,000円", note: "1〜2回の施工" },
-    { type: "マンション（1室）", price: "50,000〜100,000円", note: "1回の施工" },
-    { type: "店舗・飲食店", price: "100,000〜200,000円", note: "定期メンテナンス含む" },
-    { type: "追加作業（清掃・消毒）", price: "+20,000〜50,000円", note: "被害状況により" },
-  ];
 
   const checklist = [
     "足跡・糞・食痕などの痕跡から、アナグマであることを確認したうえで提案しているか",
@@ -1165,26 +1159,16 @@ export default function AnagumaPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">アナグマ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table bg-white text-black shadow-xl border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">物件タイプ</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.type}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
-                    <td className="text-sm border border-gray-300">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="heading-primary text-center">アナグマ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、建物の大きさや構造、被害の状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限らないため、作業の前に見積書を受け取り、作業内容と金額を確認してから依頼してください。複数の業者から見積もりを取って比べること、納得できない請求はその場で支払わずに消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月26日確認）
+              </p>
+            </div>
           </div>
           <p className="text-sm text-gray-300 mt-4 text-center">
             ※ 被害の程度や建物の構造、侵入口の数によって料金は変動します。捕獲を伴う場合の許可申請や、捕獲後の対応にかかる費用の扱いは業者によって異なるため、見積もりの際にご確認ください。

@@ -9,10 +9,10 @@ import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/itachi" },
   title: "イタチ駆除の基礎知識 | 駆除方法と再発防止",
-  description: "イタチ駆除の料金相場と業者の選び方をご説明します。ニホンイタチとチョウセンイタチ（シベリアイタチ）の違い、鳥獣保護管理法による捕獲の許可、屋根裏への侵入と侵入口封鎖などの対策を、環境省・農林水産省の資料にもとづきご紹介します。",
+  description: "イタチ駆除業者の選び方をご説明します。ニホンイタチとチョウセンイタチ（シベリアイタチ）の違い、鳥獣保護管理法による捕獲の許可、屋根裏への侵入と侵入口封鎖などの対策を、環境省・農林水産省の資料にもとづきご紹介します。",
   openGraph: {
-    title: "イタチ駆除の基礎知識と業者比較 | 種類・法的扱い・駆除方法・料金相場",
-    description: "ニホンイタチとチョウセンイタチ（シベリアイタチ）の特徴と法的扱い、被害、駆除方法、料金相場、駆除業者の比較を掲載しています。",
+    title: "イタチ駆除の基礎知識と業者比較 | 種類・法的扱い・駆除方法・業者の選び方",
+    description: "ニホンイタチとチョウセンイタチ（シベリアイタチ）の特徴と法的扱い、被害、駆除方法、駆除業者の比較を掲載しています。",
     url: "https://gaichu-pro.com/itachi",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -263,12 +263,6 @@ export default function ItachiPage() {
     "nies_chosen"
   ];
 
-  const priceTable = [
-    { type: "戸建て（侵入口封鎖含む）", price: "80,000〜150,000円", note: "1〜2回の施工" },
-    { type: "マンション（1室）", price: "50,000〜100,000円", note: "1回の施工" },
-    { type: "店舗・飲食店", price: "100,000〜200,000円", note: "定期メンテナンス含む" },
-    { type: "追加作業（清掃・消毒）", price: "+20,000〜50,000円", note: "被害状況により" },
-  ];
 
   const checklist = [
     "侵入口の調査を屋根・床下・配管まわりを含めた建物全体で行うか",
@@ -1306,7 +1300,7 @@ export default function ItachiPage() {
               ))}
             </ul>
             <p className="text-xs text-gray-500 mt-2">
-              当サイトでは、本ページの特徴・被害・法令に関する記述を上記の公式資料にもとづいて掲載しています。料金相場は目安であり、上記の公式資料にもとづくものではありません。
+              当サイトでは、本ページの特徴・被害・法令に関する記述を上記の公式資料にもとづいて掲載しています。
             </p>
           </div>
         </div>
@@ -1315,26 +1309,16 @@ export default function ItachiPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">イタチ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table bg-white text-black shadow-xl border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">物件タイプ</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.type}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
-                    <td className="text-sm border border-gray-300">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="heading-primary text-center">イタチ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、建物の大きさや構造、被害の状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限らないため、作業の前に見積書を受け取り、作業内容と金額を確認してから依頼してください。複数の業者から見積もりを取って比べること、納得できない請求はその場で支払わずに消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月26日確認）
+              </p>
+            </div>
           </div>
           <p className="text-sm text-gray-300 mt-4 text-center">
             ※ 被害の程度や建物の構造、侵入口の数によって料金は変動します。

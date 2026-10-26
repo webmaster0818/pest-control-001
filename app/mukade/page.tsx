@@ -7,10 +7,10 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/mukade" },
-  title: "ムカデ・ゲジゲジ駆除業者比較 | 料金相場と侵入防止対策",
+  title: "ムカデ・ゲジゲジ駆除業者比較 | 咬まれた時の対処と侵入防止対策",
   description: "ムカデ・ゲジゲジ駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。ムカデの生態、咬まれた場合の対処法、屋内への侵入を防ぐ方法を自治体の公表情報にもとづいてご説明します。",
   openGraph: {
-    title: "ムカデ・ゲジゲジ駆除業者比較 | 料金相場と侵入防止対策",
+    title: "ムカデ・ゲジゲジ駆除業者比較 | 咬まれた時の対処と侵入防止対策",
     description: "ムカデ・ゲジゲジ駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。ムカデに咬まれた場合の対処法もご説明します。",
     url: "https://gaichu-pro.com/mukade",
     images: [DEFAULT_OG_IMAGE],
@@ -58,12 +58,6 @@ export default function MukadePage() {
     },
   ];
 
-  const priceTable = [
-    { size: "小規模の作業", price: "8,000〜15,000円", note: "作業範囲・建物の構造により変動" },
-    { size: "中規模の作業", price: "15,000〜30,000円", note: "作業範囲・建物の構造により変動" },
-    { size: "大規模の作業", price: "30,000〜50,000円+", note: "作業範囲・建物の構造により変動" },
-    { size: "高所作業（2階以上など）", price: "+10,000〜20,000円", note: "追加料金" },
-  ];
 
   const seasonCalendar = [
     {
@@ -1236,26 +1230,16 @@ export default function MukadePage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ムカデ・ゲジゲジ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>作業の規模・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="heading-primary text-center">ムカデ・ゲジゲジ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、建物の大きさや構造、被害の状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限らないため、作業の前に見積書を受け取り、作業内容と金額を確認してから依頼してください。複数の業者から見積もりを取って比べること、納得できない請求はその場で支払わずに消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月26日確認）
+              </p>
+            </div>
           </div>
           <div className="alert alert-info mt-8">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">

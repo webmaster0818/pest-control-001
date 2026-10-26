@@ -7,11 +7,11 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/ari" },
-  title: "アリ駆除業者比較 | イエヒメアリ・ルリアリの料金相場と対策方法",
-  description: "アリ駆除業者10社を、料金・実績・対応速度の観点から比較しています。イエヒメアリ、ルリアリの駆除料金相場（10,000円〜30,000円）、侵入経路対策、季節別アリ対策カレンダーをご説明します。",
+  title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの特徴と対策方法",
+  description: "アリ駆除業者を、対応エリア・受付時間などの観点から比較しています。イエヒメアリ・クロアリ・ヒアリの特徴、侵入経路の対策、季節別アリ対策カレンダー、料金の確かめ方をご説明します。",
   openGraph: {
-    title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの料金相場と対策方法",
-    description: "アリ駆除業者を、料金・実績・対応速度の観点から比較しています。アリ駆除の費用相場、侵入経路の対策、季節別のカレンダーを掲載しています。",
+    title: "アリ駆除業者比較 | イエヒメアリ・ヒアリの特徴と対策方法",
+    description: "アリ駆除業者を比較しています。アリの特徴、侵入経路の対策、季節別のカレンダー、料金の確かめ方を掲載しています。",
     url: "https://gaichu-pro.com/ari",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -60,12 +60,6 @@ export default function AriPage() {
     },
   ];
 
-  const priceTable = [
-    { size: "屋内の部分的なアリ駆除（1箇所）", price: "8,000〜15,000円", note: "ベイト剤設置・薬剤施工" },
-    { size: "屋内＋侵入経路対策（一般的な戸建て）", price: "15,000〜30,000円", note: "発生状況により変動" },
-    { size: "広範囲・巣が特定しづらいケース", price: "30,000円〜", note: "複数回施工・要見積もり" },
-    { size: "ヒアリ等の外来アリ対応", price: "要見積もり", note: "自治体・専門業者へ相談" },
-  ];
 
   const seasonCalendar = [
     {
@@ -1219,26 +1213,16 @@ export default function AriPage() {
       {/* 料金相場 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">アリ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>巣のサイズ・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="heading-primary text-center">アリ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、建物の大きさや構造、被害の状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限らないため、作業の前に見積書を受け取り、作業内容と金額を確認してから依頼してください。複数の業者から見積もりを取って比べること、納得できない請求はその場で支払わずに消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月26日確認）
+              </p>
+            </div>
           </div>
           <div className="alert alert-info mt-8">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
