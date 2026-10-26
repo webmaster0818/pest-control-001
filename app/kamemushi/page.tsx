@@ -7,100 +7,77 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/kamemushi" },
-  title: "カメムシ駆除業者比較 | 大量発生時の料金相場と対策方法",
-  description: "カメムシ駆除業者10社を、料金・実績・対応速度の観点から比較しています。カメムシ駆除料金相場（15,000円〜50,000円）、大量発生時の対処法、侵入防止対策をご説明します。",
+  title: "カメムシ駆除業者の比較と料金の確かめ方｜侵入時期と対策",
+  description: "カメムシ駆除の料金は住宅の大きさや構造、発生状況で異なります（国民生活センター）。見積もりで確認する点と、業者9社の対応範囲・受付時間、自治体が案内する侵入時期・対策をまとめています。",
   openGraph: {
-    title: "カメムシ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "カメムシ駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
+    title: "カメムシ駆除業者の比較と料金の確かめ方｜侵入時期と対策",
+    description: "カメムシ駆除業者9社の比較と、料金の確かめ方（国民生活センター）、自治体が案内する侵入時期・対策をまとめています。",
     url: "https://gaichu-pro.com/kamemushi",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function KamemushiPage() {
-  const beeTypes = [
+  const SRC_DATE = "2026年10月26日確認";
+
+  const invasionFacts = [
     {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
+      title: "屋内に入りやすい時期",
+      body: "札幌市は10月中旬頃、堺市は10〜11月ごろに、カメムシが越冬場所を探して屋内へ侵入することがあると案内しています。春先には屋外に戻ります（札幌市）。",
     },
     {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
-      color: "badge-warning",
+      title: "入ってくる場所",
+      body: "体が平たく、窓枠や溝、換気口などのごく狭い場所からでも侵入します（札幌市）。" +
+        "2〜3ミリメートル程度の隙間があれば屋内に入ってくるとされています（堺市）。",
     },
     {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
-      color: "badge-info",
+      title: "人への害",
+      body: "東京都の資料では、衛生上の害はないものの独特の悪臭があるため嫌われる「不快害虫」とされています。" +
+        "分泌される臭気は手につくと取れにくく、屋外に干した洗濯物を汚すことがあります（札幌市）。",
     },
   ];
 
-  const emergencySteps = [
-    {
-      step: "1",
-      title: "すぐに現場から離れる",
-      description: "カメムシが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
-    },
-    {
-      step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
-    },
-    {
-      step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
-    },
-  ];
-
-  const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
-  ];
-
-  const seasonCalendar = [
-    {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
-    },
-    {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
-    },
-    {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、カメムシの数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
-    },
-    {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのカメムシが死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
-    },
+  const selfMeasures = [
+    "侵入が始まる前に大きな穴をふさぎ、窓枠や溝、換気口の周囲に専用の殺虫剤を散布しておく（札幌市）",
+    "網戸や窓の隙間を隙間テープでふさぐ（堺市）",
+    "10〜11月は外干しをやめて室内干しにし、洗濯物への付着を防ぐ（堺市）",
+    "見つけたら潰さずに、ガムテープや紙でそっと捕まえるか、市販のカメムシ用殺虫剤で駆除する（堺市・札幌市）",
+    "多数侵入された場合は、くん煙剤ですき間に潜んだカメムシを室内に追い出して捕まえる方法もある（札幌市）",
+    "夜間の照明は最低限にし、紫外線をカットした防虫ランプに替える（堺市）",
   ];
 
   const checklist = [
-    "即日対応可能か（緊急性が高いため）",
-    "防護服と専用機材を完備しているか",
-    "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
-    "自治体の補助金制度について案内があるか",
+    "電話の段階で、作業内容・出張費・キャンセル料の有無を確認する",
+    "作業の前に見積書を受け取り、金額の根拠を確認する",
+    "複数社から見積もりを取り、比べたうえで依頼する",
+    "広告の「〇〇円から」という表示の金額で作業を頼めるとは限らないことを踏まえる",
+    "納得できない請求は、その場で支払わずに消費者ホットライン「188」に相談する",
   ];
+
+  const faqs = [
+    {
+      q: "カメムシ駆除を業者に頼むと料金はいくらですか？",
+      a: "駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります（国民生活センター）。" +
+        "当サイトではカメムシ駆除の料金の目安を示していないため、現地調査のうえで見積書を受け取り、作業内容と金額を確認してから依頼してください。" +
+        "下の比較表のとおり、掲載業者の多くは無料の調査・見積もりに対応しています。",
+    },
+    {
+      q: "「〇〇円から」と広告している業者に頼んでも大丈夫ですか？",
+      a: "国民生活センターは、広告に「〇〇円から」「基本料金□□円」と表示されていても、その料金で駆除作業を依頼できるとは限らず、" +
+        "特に3ケタ台など極端な格安料金で依頼できることはまずないと注意を呼びかけています。" +
+        "作業後に広告と大きく異なる高額な料金を請求された相談事例も公表されています。複数社から見積もりを取って比べること、納得できない場合はその場で支払わないことが勧められています。",
+    },
+    {
+      q: "業者に頼む前に自分でできるカメムシ対策はありますか？",
+      a: "札幌市は、侵入が始まる前に大きな穴をふさぎ、窓枠や溝、換気口の周囲に専用の殺虫剤を散布しておく方法を案内しています。" +
+        "堺市は、網戸や窓の隙間を隙間テープでふさぐこと、10〜11月は室内干しにすること、見つけたカメムシは潰さずにガムテープや紙で捕まえることを勧めています。",
+    },
+  ];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
 
   const areas = [
     { name: "東京", href: "/area/tokyo" },
@@ -110,6 +87,7 @@ export default function KamemushiPage() {
 
   return (
     <div className="min-h-screen bg-base-200">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
@@ -129,10 +107,10 @@ export default function KamemushiPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              カメムシ駆除の基礎知識と業者比較
+              カメムシ駆除業者の比較と料金の確かめ方
             </h1>
             <p className="text-xl mb-8">
-              カメムシの駆除方法と再発防止策をご説明します
+              業者9社の対応範囲・受付時間と、自治体が案内する侵入時期・対策をまとめています
             </p>
             </div>
         </div>
@@ -142,11 +120,21 @@ export default function KamemushiPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            カメムシ駆除の基礎知識と業者比較
+            カメムシ駆除の料金は見積もりで確認を
           </h2>
-          <p className="text-lg text-gray-700">
-            カメムシの特徴・被害状況から駆除方法まで、対処法をご説明します
-          </p>
+          <div className="text-left bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-2">
+            <p>
+              カメムシ駆除の作業内容や料金は、住宅の大きさや構造、発生状況によって異なります。国民生活センターは、広告の「〇〇円から」の金額で依頼できるとは限らないとして、複数社から見積もりを取って比べることを勧めています。
+            </p>
+            <p>
+              カメムシは10〜11月ごろ、越冬のために2〜3ミリメートル程度の隙間から屋内に入ることがあります（札幌市・堺市）。下の比較表では、業者9社の対応エリア・受付時間・無料調査の有無を公式サイトの記載で比べています。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline mr-2">国民生活センター</a>
+              <a href="https://www.city.sapporo.jp/hokenjo/f3seikatu/f80mushi/2_juukyo/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline mr-2">札幌市</a>
+              <a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline">堺市</a>（2026年10月26日確認）。料金の確かめ方は<a href="#kamemushi-faq" className="underline">よくある質問</a>にまとめています。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1115,197 +1103,95 @@ export default function KamemushiPage() {
         </div>
       </section>
 
-      {/* カメムシの種類と危険性 */}
+      {/* 侵入の時期と特徴 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">カメムシの種類と危険性</h2>
+          <h2 className="heading-primary text-center">カメムシが家に入る時期と特徴</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
+            {invasionFacts.map((f) => (
+              <div key={f.title} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <h3 className="card-title text-xl text-black">{f.title}</h3>
+                  <p className="text-gray-700">{f.body}</p>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-600 mt-4">
+            出典：<a href="https://www.city.sapporo.jp/hokenjo/f3seikatu/f80mushi/2_juukyo/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline mr-2">札幌市「カメムシ」</a>
+            <a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline mr-2">堺市「カメムシ」</a>
+            <a href="https://www.hokeniryo.metro.tokyo.lg.jp/documents/d/hokeniryo/21kamemusi" target="_blank" rel="nofollow noopener" className="underline">東京都保健医療局「カメムシ」（PDF）</a>（{SRC_DATE}）
+          </p>
         </div>
       </section>
 
-      {/* 緊急対処法 */}
-      <section className="py-16 px-4 bg-error/10">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center text-error">
-            カメムシに刺された場合の対処法
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencySteps.map((step) => (
-              <div key={step.step} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
-                  <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-gray-700">{step.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="alert alert-error mt-8 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* カメムシの巣を見つけたら */}
+      {/* 自分でできる対策 */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">カメムシの巣を見つけたら</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card bg-error text-error-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">避けるべき行動</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>自分で駆除しようとする</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>巣に近づく、刺激する</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>水をかける、棒でつつく</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-success text-success-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">すべきこと</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>巣から最低10m以上離れる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>すぐに専門業者に連絡</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>家族や近隣に注意喚起</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 料金相場 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">カメムシ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>巣のサイズ・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span>
-              <strong>自治体の補助金制度：</strong>費用は発生範囲・被害状況・施工回数で変わります。
-              正確な金額は複数業者の無料見積もりで比較するのが確実です。
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* 季節別対策カレンダー */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">季節別カメムシ対策カレンダー</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season) => (
-              <div key={season.season} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
-                  </div>
-                  <p className="font-bold text-primary mb-2">{season.activity}</p>
-                  <p className="text-gray-700">{season.advice}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 業者選びのポイント */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">業者選びのポイント</h2>
+          <h2 className="heading-primary text-center">業者に頼む前に自分でできる対策</h2>
           <div className="card bg-white shadow-xl">
             <div className="card-body">
-              <h3 className="card-title text-xl mb-4">見積もり時のチェックリスト</h3>
-              <div className="space-y-3">
-                {checklist.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <input type="checkbox" className="checkbox checkbox-primary mt-1" />
-                    <span className="text-lg">{item}</span>
-                  </div>
+              <ul className="space-y-3">
+                {selfMeasures.map((m, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="mark mark-ok" aria-hidden="true"></span>
+                    <span>{m}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
+              <p className="text-gray-700 mt-4">
+                屋外の広い範囲に生息する虫のため、発生源を抑えることはできないとされています（札幌市）。網戸の取り付けなど、家屋への侵入を防ぐ対策が中心になります（東京都）。
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 料金の確かめ方 */}
+      <section className="py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">カメムシ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります。広告の「〇〇円から」といった表示の料金で依頼できるとは限らないため、見積書で作業内容と金額を確認してから依頼してください。
+              </p>
+              <h3 className="card-title text-xl text-black mt-4">見積もり時のチェックリスト</h3>
+              <ul className="space-y-3">
+                {checklist.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="mark mark-ok" aria-hidden="true"></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-gray-600 mt-4">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（{SRC_DATE}）
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* よくある質問 */}
+      <section id="kamemushi-faq" className="py-16 px-4 bg-base-100 scroll-mt-20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">カメムシ駆除のよくある質問</h2>
+          <div className="space-y-4">
+            {faqs.map((f, i) => (
+              <div key={i} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-lg text-black">{f.q}</h3>
+                  <p className="text-gray-700">{f.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4">
+            出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline mr-2">国民生活センター</a>
+            <a href="https://www.city.sapporo.jp/hokenjo/f3seikatu/f80mushi/2_juukyo/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline mr-2">札幌市「カメムシ」</a>
+            <a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline">堺市「カメムシ」</a>（{SRC_DATE}）
+          </p>
         </div>
       </section>
 
