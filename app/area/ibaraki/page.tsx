@@ -8,11 +8,11 @@ import { AffBanner, AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/ibaraki" },
-  title: "茨城の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-  description: "茨城の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。地域別の料金相場、害虫カレンダー、業者の選び方をご説明します。即日対応が可能な業者も掲載しています。",
+  title: "茨城の害虫駆除｜県の相談窓口と業者10社の比較",
+  description: "茨城県で害虫駆除を考えたら、まず住所地を管轄する保健所に駆除方法を相談でき、駆除や会員業者の紹介は茨城県ペストコントロール協会が行っています（茨城県公式）。駆除を依頼できる業者10社も比較しています。",
   openGraph: {
-    title: "茨城の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "茨城の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "茨城の害虫駆除｜県の相談窓口と業者10社の比較",
+    description: "茨城県の害虫の相談窓口（住所地の保健所・茨城県ペストコントロール協会）と、駆除を依頼できる業者10社を比較しています。",
     url: "https://gaichu-pro.com/area/ibaraki",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -92,13 +92,47 @@ export default function TokyoPage() {
   ];
 
   const consultations = [
-    { name: "住所地管轄の保健所", description: "ねずみ・ゴキブリ・ハチ等の衛生害虫の駆除方法などの相談（県では薬剤の配布や駆除は行わない）", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.pref.ibaraki.jp/hokenfukushi/seiei/suido/seiei/kankyo/pest.html" },
+    { name: "住所地管轄の保健所", description: "ねずみ・ゴキブリ・ハチ等の衛生害虫の駆除方法などの相談（県では薬剤の配布や駆除は行わない）。管轄の市町村と電話番号はページ下のよくある質問にまとめています", contact: "各保健所の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.pref.ibaraki.jp/hokenfukushi/koso/iji/koso/healthcenter/index.html" },
     { name: "お住まいの市町村", description: "スズメバチ等の駆除に関する助成金の有無の問い合わせ先", contact: "各市町村の連絡先は公式サイトをご確認ください", hours: "", url: "https://www.pref.ibaraki.jp/hokenfukushi/seiei/suido/seiei/kankyo/pest.html" },
     { name: "一般社団法人 茨城県ペストコントロール協会", description: "県生活衛生課の所管団体。駆除や会員業者の紹介を実施", contact: "029-248-6421", hours: "平日（月～金）9:30～12:00 / 13:00～16:30", url: "https://www.pestcontrol-ibaraki.jp/" },
   ];
 
+  const faqs = [
+    {
+      q: "茨城県で害虫について相談できる公的な窓口はどこですか？",
+      a: "ねずみ・ゴキブリ・ハチ等の衛生害虫の駆除方法などの相談は、住所地を管轄する保健所で受け付けています。水戸市にお住まいの場合は水戸市保健所が窓口です。県では薬剤の配布や駆除は行っておらず、駆除は土地の所有者または管理者が自らの責任で行うと案内されています。",
+    },
+    {
+      q: "市町村ごとの管轄の保健所と電話番号を教えてください。",
+      a: "中央保健所（笠間市・小美玉市・茨城町・大洗町・城里町）029-241-0100、" +
+        "ひたちなか保健所（常陸太田市・ひたちなか市・常陸大宮市・那珂市・東海村・大子町）029-265-5515、" +
+        "日立保健所（日立市・高萩市・北茨城市）0294-22-4188、" +
+        "潮来保健所（鹿嶋市・潮来市・神栖市・行方市・鉾田市）0299-66-2114、" +
+        "竜ケ崎保健所（龍ケ崎市・取手市・牛久市・守谷市・稲敷市・美浦村・阿見町・河内町・利根町）0297-62-2161、" +
+        "土浦保健所（土浦市・石岡市・かすみがうら市）029-821-5342、" +
+        "つくば保健所（常総市・つくば市・つくばみらい市）029-851-9287、" +
+        "筑西保健所（結城市・下妻市・筑西市・桜川市・八千代町）0296-24-3911、" +
+        "古河保健所（古河市・坂東市・五霞町・境町）0280-32-3021、" +
+        "水戸市保健所（水戸市）029-305-6290（保健総務課）です。",
+    },
+    {
+      q: "駆除をしてくれる業者を紹介してもらえる窓口はありますか？",
+      a: "県生活衛生課の所管団体である一般社団法人茨城県ペストコントロール協会が、駆除や会員業者の紹介を行っています。所在地は水戸市元吉田町1736-8（ウメザワ産業株式会社内）、電話は029-248-6421、受付時間は平日（月〜金）9:30〜12:00／13:00〜16:30です。",
+    },
+    {
+      q: "業者から高額な料金を請求された場合はどこに相談できますか？",
+      a: "茨城県のページでは、高額請求に関することなどの消費者トラブルは、お住まいの地域の消費生活センターに相談するよう案内されています。スズメバチ等の駆除の助成金の有無は、お住まいの市町村に問い合わせてください。",
+    },
+  ];
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+
   return (
     <div className="min-h-screen bg-base-200">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 {/* パンくずリスト */}
       <Breadcrumb items={[
         { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
@@ -120,11 +154,19 @@ export default function TokyoPage() {
       <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            茨城の害虫駆除の基礎知識と業者比較
+            茨城の害虫駆除の相談窓口と業者比較
           </h1>
-          <p className="text-lg text-gray-700">
-            茨城の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
-          </p>
+          <div className="text-left bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-2">
+            <p>
+              茨城県では、ねずみ・ゴキブリ・ハチ等の衛生害虫の駆除方法などの相談を、住所地を管轄する保健所で受け付けています（水戸市にお住まいの場合は水戸市保健所）。県では薬剤の配布や駆除は行っておらず、駆除は土地の所有者または管理者が行います。
+            </p>
+            <p>
+              駆除や会員業者の紹介は、県生活衛生課の所管団体である一般社団法人茨城県ペストコントロール協会（029-248-6421・平日9:30〜12:00／13:00〜16:30）が行っています。スズメバチ等の駆除の助成金の有無はお住まいの市町村が窓口です。駆除作業を依頼する場合は、下の業者10社の比較をご覧ください。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.pref.ibaraki.jp/hokenfukushi/seiei/suido/seiei/kankyo/pest.html" target="_blank" rel="nofollow noopener" className="underline">茨城県「衛生害虫等に関する相談」</a>・<a href="https://www.pref.ibaraki.jp/hokenfukushi/koso/iji/koso/healthcenter/index.html" target="_blank" rel="nofollow noopener" className="underline">茨城県「県内保健所一覧」</a>・<a href="https://www.pestcontrol-ibaraki.jp/" target="_blank" rel="nofollow noopener" className="underline">茨城県ペストコントロール協会</a>（2026年10月27日確認）。管轄の市町村と電話番号は<a href="#ibaraki-faq" className="underline">よくある質問</a>にまとめています。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1156,7 +1198,7 @@ export default function TokyoPage() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">茨城県公式サイト</a>))}（2025年12月時点の公式ページの記載。2026年10月17日は県公式サイトのシステム障害のため再確認できていません）</p>
+          <p className="text-xs text-gray-600 mt-4">出典：{Array.from(new Set(areas.map((a) => a.url).filter(Boolean))).map((u, i) => (<a key={i} href={u} target="_blank" rel="nofollow noopener" className="underline mr-2">茨城県公式サイト</a>))}（2026年10月27日確認）</p>
         </div>
       </section>
 
@@ -1188,7 +1230,7 @@ export default function TokyoPage() {
                         )}
                       </div>
                       {org.url && (
-                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2025年12月時点の公式ページの記載。2026年10月17日は県公式サイトのシステム障害のため再確認できていません）</p>
+                        <p className="text-xs text-gray-600 mt-2">出典：<a href={org.url} target="_blank" rel="nofollow noopener" className="underline">公式ページ</a>（2026年10月27日確認）</p>
                       )}
                     </div>
                   </div>
@@ -1196,6 +1238,24 @@ export default function TokyoPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* よくある質問 */}
+      <section id="ibaraki-faq" className="py-16 px-4 scroll-mt-20">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="heading-primary text-center">茨城の害虫相談のよくある質問</h2>
+          <div className="space-y-4">
+            {faqs.map((f, i) => (
+              <div key={i} className="card bg-white shadow-xl">
+                <div className="card-body">
+                  <h3 className="card-title text-lg text-black">{f.q}</h3>
+                  <p className="text-gray-700">{f.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-600 mt-4">出典：<a href="https://www.pref.ibaraki.jp/hokenfukushi/seiei/suido/seiei/kankyo/pest.html" target="_blank" rel="nofollow noopener" className="underline">茨城県「衛生害虫等に関する相談」</a>・<a href="https://www.pref.ibaraki.jp/hokenfukushi/koso/iji/koso/healthcenter/index.html" target="_blank" rel="nofollow noopener" className="underline">茨城県「県内保健所一覧」</a>・<a href="https://www.pestcontrol-ibaraki.jp/" target="_blank" rel="nofollow noopener" className="underline">茨城県ペストコントロール協会</a>（2026年10月27日確認）</p>
         </div>
       </section>
 
