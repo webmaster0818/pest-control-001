@@ -6,7 +6,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: "/price" },
   title: "害虫駆除の料金相場",
-  description: "害虫駆除の料金相場をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、地域別の料金差、追加料金が発生するケースをご紹介します。",
+  description: "害虫駆除の料金相場をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、追加料金が発生するケースをご紹介します。",
 };
 
 export default function PricePage() {
@@ -124,12 +124,6 @@ export default function PricePage() {
     "会社情報が不明確（住所・電話番号が不明）",
   ];
 
-  const regionalPrices = [
-    { region: "東京", level: "やや高め", note: "都心部の人件費・家賃が影響", multiplier: "110-120%" },
-    { region: "大阪", level: "標準", note: "全国平均に近い料金設定", multiplier: "100-110%" },
-    { region: "名古屋", level: "やや安め", note: "競争が激しく、料金は比較的安め", multiplier: "90-100%" },
-    { region: "地方都市", level: "安め", note: "人件費が比較的低い", multiplier: "80-95%" },
-  ];
 
   return (
     <div className="min-h-screen bg-base-200">
@@ -174,7 +168,7 @@ export default function PricePage() {
             </h1>
             <p className="text-xl mb-8">
               適正な価格の目安を、業者選びにお役立てください。
-              害虫別・地域別の料金相場をご説明します。
+              害虫別の料金の目安と、料金の確かめ方をご説明します。
             </p>
           </div>
         </div>
@@ -276,39 +270,20 @@ export default function PricePage() {
         </div>
       </section>
 
-      {/* 地域別の料金差 */}
+      {/* 料金の確かめ方（旧「地域別の料金差」は出典がないため削除 2026-10-28） */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">地域別の料金差</h2>
-          <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
-              <thead>
-                <tr>
-                  <th>地域</th>
-                  <th>料金レベル</th>
-                  <th>全国平均比</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {regionalPrices.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.region}</td>
-                    <td>
-                      <span className={`badge ${
-                        row.level === "やや高め" ? "badge-error" :
-                        row.level === "標準" ? "badge-info" :
-                        "badge-success"
-                      }`}>
-                        {row.level}
-                      </span>
-                    </td>
-                    <td className="font-semibold">{row.multiplier}</td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 className="text-3xl font-bold mb-8 text-center">見積もりと料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-base-content/80">
+                駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限りません。
+                複数の業者から見積もりを取って比べること、料金や作業内容に納得できない場合はその場での支払いを避け、消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-base-content/60 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月28日確認）
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -375,7 +350,7 @@ export default function PricePage() {
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
+            各社の料金と見積もりの確かめ方をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">
