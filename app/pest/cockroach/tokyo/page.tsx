@@ -62,23 +62,6 @@ export default function CockroachTokyoPage() {
     },
   ];
 
-  const priceComparison = [
-    {
-      area: "東京23区",
-      price: "20,000〜35,000円/件",
-      note: "飲食店多く高め",
-    },
-    {
-      area: "多摩地域",
-      price: "15,000〜28,000円/件",
-      note: "標準的",
-    },
-    {
-      area: "全国平均",
-      price: "15,000〜30,000円/件",
-      note: "参考値",
-    },
-  ];
 
   const seasonCalendar = [
     {
@@ -168,7 +151,7 @@ export default function CockroachTokyoPage() {
             東京のゴキブリ駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            東京都内の害虫駆除業者と料金相場を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
+            東京都内の害虫駆除業者と料金を比較しています。23区・多摩地域別の特徴と業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -1115,39 +1098,18 @@ export default function CockroachTokyoPage() {
         </div>
       </section>
 
-      {/* 東京のゴキブリ駆除料金相場 */}
+      {/* 東京のゴキブリ駆除の料金の確かめ方 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">東京のゴキブリ駆除料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">エリア</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金相場</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceComparison.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.area}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.price}</td>
-                    <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <div>
-              <h3 className="font-bold">東京の料金が高い理由</h3>
-              <p className="text-sm">
-                都心部の家賃・人件費の高さ、高層ビルや複雑な建物構造、
-                飲食店など商業施設の需要が多いことが料金に影響しています。
+          <h2 className="heading-primary text-center">東京のゴキブリ駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限りません。
+                複数の業者から見積もりを取って比べること、料金や作業内容に納得できない場合はその場での支払いを避け、消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月28日確認）
               </p>
             </div>
           </div>
@@ -1297,7 +1259,7 @@ export default function CockroachTokyoPage() {
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
+            各社の料金と見積もりの確かめ方をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

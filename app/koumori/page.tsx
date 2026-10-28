@@ -1169,7 +1169,7 @@ export default function KoumoriPage() {
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
+            各社の料金をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">

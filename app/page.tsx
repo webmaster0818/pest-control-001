@@ -298,7 +298,7 @@ export default function Home() {
             害虫駆除のご相談について
           </h2>
           <p className="top-cta-text">
-            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
+            各社の料金をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="top-cta-actions">
             <Link href="/price" className="btn btn-lg btn-neutral btn-arrow">
