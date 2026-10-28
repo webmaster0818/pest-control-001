@@ -1,7 +1,8 @@
 import { getAff } from "@/app/data/affiliateCodes";
 import { officialVisuals, affSlugByImageKey, imageKeyFromPath } from "@/app/data/companyVisuals";
+import { AffBanner } from "@/app/components/AffLink";
 
-// 業者の画像枠。公式画像の利用確認済み=その画像／それ以外（アフィリエイトありの表・一覧も含む）=社名表記。
+// 業者の画像枠。ASP 提供バナーあり=そのバナー（提供コードのまま）／公式画像の利用確認済み=その画像／それ以外=社名表記。
 // size: thumb=比較表の見出し・一覧 / wide=業者紹介の横長枠 / mini=表のセル内
 export default function CompanyVisual({
   id,
@@ -20,9 +21,14 @@ export default function CompanyVisual({
   const affSlug = affSlugByImageKey[key] ?? key;
   const aff = getAff(affSlug);
   if (aff?.bannerHtml) {
-    // ASP バナーは業者紹介のカードと業者ページだけに置く（縮小して表・一覧に並べない＝素材の改変・計測画像の表示回数増を避ける）。
-    // 業者紹介カード（wide）には既存の <AffBanner> が同じカード内にあるため、ここでは何も出さない。
+    // 2026-10-28 okina 承認：比較表・一覧の小さい枠（thumb/mini）とハブページにも、提供バナーを置く（コードは affiliateCodes.ts のまま・表示サイズだけ CSS で縮める）。
+    // 業者紹介カード（wide）には既存の <AffBanner> が同じカード内にあるため、二重に出さない。
     if (size === "wide") return null;
+    return (
+      <div className={`cv cv-${size} cv-banner`}>
+        <AffBanner slug={affSlug} />
+      </div>
+    );
   }
   const v = officialVisuals[key];
   if (v) {

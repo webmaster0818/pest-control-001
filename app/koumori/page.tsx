@@ -207,7 +207,7 @@ export default function KoumoriPage() {
                   <th className="text-center border border-gray-300">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">5</span>
-                      <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="害獣駆除110番" size="thumb" />
                       <strong className="text-black">害獣駆除110番</strong>
                     </div>
                   </th>
@@ -631,7 +631,7 @@ export default function KoumoriPage() {
                 <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">害獣駆除110番（コウモリ駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="害獣駆除110番" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="害獣駆除110番" size="wide" />
             </div>
 
             <div className="mb-6">

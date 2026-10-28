@@ -94,14 +94,14 @@ export default function TokojiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-3">3</span>
-                      <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="アサンテ" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">アサンテ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">4</span>
-                      <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="Qujolia" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
                   </th>
@@ -341,7 +341,7 @@ export default function TokojiPage() {
                 <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">アサンテ（トコジラミ駆除）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="アサンテ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="アサンテ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -427,7 +427,7 @@ export default function TokojiPage() {
                 <span className="rank">4</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（トコジラミ駆除）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="Qujolia" size="wide" />
             </div>
 
             <div className="mb-6">

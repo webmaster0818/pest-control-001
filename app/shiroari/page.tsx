@@ -149,7 +149,7 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-3">3</span>
-                      <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="街角害虫駆除相談所" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">街角害虫駆除相談所</strong>
                     </div>
                   </th>
@@ -163,7 +163,7 @@ export default function ShiroariPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">5</span>
-                      <img src="/images/hero-pest-new.jpg" alt="キャッツ" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="キャッツ" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">キャッツ</strong>
                     </div>
                   </th>
@@ -408,7 +408,7 @@ export default function ShiroariPage() {
                 <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">街角害虫駆除相談所（シロアリ駆除）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="街角害虫駆除相談所" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="街角害虫駆除相談所" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -580,7 +580,7 @@ export default function ShiroariPage() {
                 <span className="rank">5</span>
                 <h3 className="text-2xl font-bold text-black">キャッツ（シロアリ駆除専門）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="キャッツ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="キャッツ" size="wide" />
             </div>
 
             <div className="mb-6">

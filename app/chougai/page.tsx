@@ -165,21 +165,21 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-1">1</span>
-                      <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="害鳥根絶の匠" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">害鳥根絶の匠</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-2">2</span>
-                      <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="日本鳩対策センター" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">日本鳩対策センター</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-3">3</span>
-                      <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="みんなのハト対策屋さん" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">みんなのハト対策屋さん</strong>
                     </div>
                   </th>
@@ -201,28 +201,28 @@ export default function ChougaiPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">6</span>
-                      <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="トータルクリーン" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">トータルクリーン</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">7</span>
-                      <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="スピナ" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">スピナ</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">8</span>
-                      <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="鳩110番" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">鳩110番</strong>
                     </div>
                   </th>
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">9</span>
-                      <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="プロテクト" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">プロテクト</strong>
                     </div>
                   </th>
@@ -331,7 +331,7 @@ export default function ChougaiPage() {
                 <span className="rank rank-1">1</span>
                 <h3 className="text-2xl font-bold text-black">害鳥根絶の匠（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="害鳥根絶の匠" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="害鳥根絶の匠" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -418,7 +418,7 @@ export default function ChougaiPage() {
                 <span className="rank rank-2">2</span>
                 <h3 className="text-2xl font-bold text-black">日本鳩対策センター（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="日本鳩対策センター" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="日本鳩対策センター" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -505,7 +505,7 @@ export default function ChougaiPage() {
                 <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">みんなのハト対策屋さん（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="みんなのハト対策屋さん" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="みんなのハト対策屋さん" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -760,7 +760,7 @@ export default function ChougaiPage() {
                 <span className="rank">6</span>
                 <h3 className="text-2xl font-bold text-black">トータルクリーン（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="トータルクリーン" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="トータルクリーン" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -847,7 +847,7 @@ export default function ChougaiPage() {
                 <span className="rank">7</span>
                 <h3 className="text-2xl font-bold text-black">スピナ（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="スピナ" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="スピナ" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -934,7 +934,7 @@ export default function ChougaiPage() {
                 <span className="rank">8</span>
                 <h3 className="text-2xl font-bold text-black">鳩110番（鳥害駆除）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="鳩110番" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="鳩110番" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -1021,7 +1021,7 @@ export default function ChougaiPage() {
                 <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">プロテクト（鳥害駆除専門）</h3>
               </div>
-              <img src="/images/hero-animal-new.jpg" alt="プロテクト" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="プロテクト" size="wide" />
             </div>
 
             <div className="mb-6">

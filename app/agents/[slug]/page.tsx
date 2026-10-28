@@ -7,6 +7,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { brandAreas } from "@/app/data/brandAreas";
 import { AffBanner, AffText, hasAff } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
+import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 const SITE = "https://gaichu-pro.com";
 const UPDATED = "2026-06-10";
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: { absolute: a.metaTitle },
     description: a.metaDesc,
     alternates: { canonical: url },
-    openGraph: { title: a.metaTitle, description: a.metaDesc, url, type: "article", images: [a.image] },
+    // 提携業者（ASP コードあり）の a.image は出どころ不明の画像のため使わない（2026-10-28 okina 承認）。サイト既定の OG 画像にする
+    openGraph: { title: a.metaTitle, description: a.metaDesc, url, type: "article", images: [hasAff(a.slug) ? DEFAULT_OG_IMAGE : a.image] },
   };
 }
 
@@ -55,7 +57,7 @@ export default async function AgentPage({ params }: Props) {
     "@type": "Article",
     headline: `${a.name}の口コミ・評判・料金`,
     description: a.metaDesc,
-    image: `${SITE}${a.image}`,
+    image: hasAff(a.slug) ? `${SITE}${DEFAULT_OG_IMAGE.url}` : `${SITE}${a.image}`,
     datePublished: `${a.updated ?? UPDATED}T00:00:00+09:00`,
     dateModified: `${a.updated ?? UPDATED}T00:00:00+09:00`,
     author: { "@type": "Organization", name: "害虫・害獣駆除プロ比較ナビ編集部", url: SITE },
@@ -110,11 +112,6 @@ export default async function AgentPage({ params }: Props) {
               )}
             </aside>
           </div>
-          {hasAff(a.slug) && (
-            <div className="ph-visual">
-              <Image src={a.image} alt={`${a.name}の害獣・害虫駆除サービス`} width={1200} height={800} className="ph-visual-img" priority />
-            </div>
-          )}
         </header>
 
         <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">

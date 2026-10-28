@@ -211,7 +211,7 @@ export default function MukadePage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank">9</span>
-                      <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="ハチお助け本舗" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">ハチお助け本舗</strong>
                     </div>
                   </th>
@@ -1020,7 +1020,7 @@ export default function MukadePage() {
                 <span className="rank">9</span>
                 <h3 className="text-2xl font-bold text-black">ハチお助け本舗（ハチ駆除専門）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="ハチお助け本舗" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="ハチお助け本舗" size="wide" />
             </div>
 
             <div className="mb-6">

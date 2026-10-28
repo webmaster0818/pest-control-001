@@ -82,7 +82,7 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-1">1</span>
-                      <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="mushi-protec" name="ムシプロテック" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">ムシプロテック</strong>
                       <AffText slug="mushi-protec" variant="small" label="公式サイト" />
                     </div>
@@ -97,7 +97,7 @@ export default function DaniPage() {
                   <th className="text-center">
                     <div className="flex flex-col items-center gap-2">
                       <span className="rank rank-3">3</span>
-                      <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-20 h-20 rounded-lg object-cover" />
+                      <CompanyVisual id="name-only" name="Qujolia" size="thumb" />
                       <strong className="text-lg font-bold text-gray-900">Qujolia</strong>
                     </div>
                   </th>
@@ -159,7 +159,7 @@ export default function DaniPage() {
                 <h3 className="text-2xl font-bold text-black">ムシプロテック（ダニ駆除）</h3>
               </div>
               <p className="text-sm mb-3"><Link href="/agents/mushi-protec" className="text-amber-700 underline">ムシプロテックの口コミ・評判と公式の料金表記はこちら</Link></p>
-              <img src="/images/hero-pest-new.jpg" alt="ムシプロテック" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="mushi-protec" name="ムシプロテック" size="wide" />
             </div>
 
             <div className="mb-6">
@@ -325,7 +325,7 @@ export default function DaniPage() {
                 <span className="rank rank-3">3</span>
                 <h3 className="text-2xl font-bold text-black">Qujolia（ダニ駆除）</h3>
               </div>
-              <img src="/images/hero-pest-new.jpg" alt="Qujolia" className="w-full h-48 object-cover rounded-lg" />
+              <CompanyVisual id="name-only" name="Qujolia" size="wide" />
             </div>
 
             <div className="mb-6">
