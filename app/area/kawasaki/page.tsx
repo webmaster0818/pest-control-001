@@ -27,38 +27,6 @@ export default function KawasakiPage() {
     { rank: 5, name: "コウモリ", icon: "", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
-  const priceComparison = [
-    {
-      pest: "シロアリ駆除",
-      yokohama: "12,000〜18,000円/坪",
-      national: "10,000〜15,000円/坪",
-      note: "建物の構造・被害の範囲により変動",
-    },
-    {
-      pest: "ハチ駆除",
-      yokohama: "15,000〜35,000円",
-      national: "15,000〜30,000円",
-      note: "建物の構造・被害の範囲により変動",
-    },
-    {
-      pest: "ゴキブリ駆除",
-      yokohama: "20,000〜35,000円",
-      national: "15,000〜30,000円",
-      note: "建物の構造・被害の範囲により変動",
-    },
-    {
-      pest: "ネズミ駆除",
-      yokohama: "100,000〜180,000円",
-      national: "80,000〜150,000円",
-      note: "建物の構造・被害の範囲により変動",
-    },
-    {
-      pest: "コウモリ駆除",
-      yokohama: "120,000〜350,000円",
-      national: "100,000〜300,000円",
-      note: "建物の構造・被害の範囲により変動",
-    },
-  ];
 
   const seasonCalendar = [
     {
@@ -119,7 +87,7 @@ export default function KawasakiPage() {
             川崎の害虫駆除の基礎知識と業者比較
           </h1>
           <p className="text-lg text-gray-700">
-            川崎の害虫駆除業者と料金相場を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
+            川崎の害虫駆除業者と料金を比較しています。地域の区分、公的な相談窓口、業者の選び方をご説明します。
           </p>
         </div>
       </section>
@@ -1066,40 +1034,18 @@ export default function KawasakiPage() {
 
           </section>
 
-      {/* 川崎の害虫駆除料金相場 */}
+      {/* 川崎の害虫駆除の料金の確かめ方 */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">川崎の害虫駆除料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="bg-gray-800 text-white border border-gray-300">害虫</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">料金の目安</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">全国の目安</th>
-                  <th className="bg-gray-800 text-white border border-gray-300">備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceComparison.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold border border-gray-300">{row.pest}</td>
-                    <td className="text-primary font-semibold border border-gray-300">{row.yokohama}</td>
-                    <td className="text-gray-700 border border-gray-300">{row.national}</td>
-                    <td className="text-sm text-gray-700 border border-gray-300">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <div>
-              <h3 className="font-bold">料金が変わる主な要因</h3>
-              <p className="text-sm">
-                料金は、建物の構造や作業の高さ、被害の範囲、施工の回数、清掃・消毒の有無によって変わります。表の金額は目安のため、複数の業者から見積もりを取り、内訳を比較してご確認ください。
+          <h2 className="heading-primary text-center">川崎の害虫駆除の料金の確かめ方</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">
+                駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限りません。
+                複数の業者から見積もりを取って比べること、料金や作業内容に納得できない場合はその場での支払いを避け、消費者ホットライン「188」に相談することが勧められています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月28日確認）
               </p>
             </div>
           </div>
@@ -1228,7 +1174,7 @@ export default function KawasakiPage() {
             </h2>
           </div>
           <p className="text-lg mb-8 text-gray-900">
-            お住まいの地域の料金相場をご確認のうえ、業者選びにお役立てください。
+            各社の料金と見積もりの確かめ方をご確認のうえ、業者選びにお役立てください。
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/price" className="btn btn-lg btn-neutral">
