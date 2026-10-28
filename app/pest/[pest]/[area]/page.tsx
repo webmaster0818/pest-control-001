@@ -25,7 +25,6 @@ const EXISTING_STATIC_PATHS: Record<string, string[]> = {
     "saitama", "saitama-city", "sapporo", "sendai", "tokyo", "yokohama",
   ],
   dani: ["tokyo"],
-  nezumi: ["nagoya", "osaka", "tokyo", "yokohama"],
   termite: [
     "chiba", "fukuoka", "hamamatsu", "hiroshima", "kanagawa", "kawasaki",
     "kitakyushu", "kobe", "kumamoto", "kyoto", "nagoya", "niigata", "osaka",
@@ -185,7 +184,9 @@ export default async function PestAreaPage({ params }: Props) {
               <br className="hidden md:block" />
               {hasMunicipal
                 ? "自治体の対応・費用の助成・対応業者"
-                : "捕獲の許可・相談窓口・対応業者"}
+                : p.pestSlug === "nezumi"
+                  ? "法令・相談窓口・対応業者"
+                  : "捕獲の許可・相談窓口・対応業者"}
             </h1>
             <p className="ph-lead">
               {hasMunicipal
@@ -342,12 +343,16 @@ export default async function PestAreaPage({ params }: Props) {
           {/* 法令 */}
           {p.legalNotes.length > 0 && (
           <section id="legal" className="scroll-mt-20 mb-12">
+            {/* 家ネズミ3種（ドブネズミ・クマネズミ・ハツカネズミ）は鳥獣保護管理法の対象外（環境省・法第80条・施行規則第78条）。2026-10-28 見出しを訂正 */}
             <h2 className="h2-sec">
-              {p.pestName}の捕獲には許可が必要です
+              {p.pestSlug === "nezumi"
+                ? "ネズミの捕獲と法令（家ネズミ3種は鳥獣保護管理法の対象外）"
+                : `${p.pestName}の捕獲には許可が必要です`}
             </h2>
             <p className="text-slate-700 leading-loose mb-6">
-              {p.pestName}
-              を含む野生鳥獣は、鳥獣保護管理法により原則として捕獲が禁止されています。以下は、公的機関のページに記載されている内容をそのまま引用したものです。
+              {p.pestSlug === "nezumi"
+                ? "家の中や周りで見かけるドブネズミ・クマネズミ・ハツカネズミ（いえねずみ類3種）は、鳥獣保護管理法の対象外とされています。以下は、公的機関のページに記載されている内容をそのまま引用したものです。"
+                : `${p.pestName}を含む野生鳥獣は、鳥獣保護管理法により原則として捕獲が禁止されています。以下は、公的機関のページに記載されている内容をそのまま引用したものです。`}
             </p>
             <div className="space-y-4">
               {p.legalNotes.map((n, i) => (
