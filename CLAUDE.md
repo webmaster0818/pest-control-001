@@ -119,3 +119,11 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 新設9ページ: /pest/wasp/{asahikawa,chiba-city,kagawa,tottori,shimane,tokushima,miyazaki}、/pest/araiguma/tokyo、/pest/hakubishin/tokyo。旭川市は scripts/gen_hachi_cities2.py、他は当日取得した公式ページ本文から作った JSON を scripts/merge_pest_batch2.py で pestAreas.ts 末尾と sitemap に追加。「」引用は scripts/verify_pest_batch2.py で公式本文と照合（不一致0）。
 - 保留: 福岡市（駆除しない＋区の窓口のみで、助成・貸出・委託業者の記載なし＝最低3項目に届かず）、岡崎市（bot遮断）、名古屋市 #15（旧形式の作り直し＝既存ページの削除を伴うため要承認）。県ページで公式ページを特定できなかった市町村は各ページの cautions に列挙（高松市・倉吉市・延岡市など。日向市・西都市は当日サイト障害/メンテ）。
 - companySlugs: ハチは duskin/hachi-otasuke/taiyo、東京のアライグマ・ハクビシンは神奈川の同種ページと同じ8社（新規の社なし）。sitemap 472→481。
+
+---
+## 作業ログ 2026-11-01 (jiro) — 第3弾（網羅表 5章 #23・#24 ＋ 政令市・中核市のハチ）
+- 新設10ページ: /pest/wasp/{sapporo,hamamatsu,hiroshima-city,kumamoto-city,okayama-city,fukushima-city,nagano-city,matsue}、/pest/araiguma/osaka-city、/pest/hakubishin/setagaya。生成 `scripts/gen_pest_batch3.py`、マージ `scripts/merge_pest_batch3.py`、「」引用の照合 `scripts/verify_pest_batch3.py`（レコードごとに自分の出典本文だけと照合・206件・不一致0。「！」は引用内のみ＝札幌市のページ名「ハチに注意！～…」）。証拠テキストは scratchpad b3/raw。
+- 市の選定は pestAreas.ts の既存自治体行（57市）から、当日の公式ページで最低3項目（駆除の可否／助成／窓口／貸出／業者案内）が確認できた市。助成の記載がない市は「記載がない（制度がないと市が明記しているわけではない）」と書き分けた（浜松・岡山・長野・松江は「なし」と市が明記）。
+- 保留: 仙台市（市が駆除しない旨の明記なし・助成の記載なし＝窓口と業者案内の2項目）、新潟市（/pest/wasp/niigata を 10/31 に「新潟市 蜂の巣駆除 助成金」向けに改訂済み＝食い合いを避ける。判断待ち）、名古屋市・岡崎市・福岡市（前回どおり）。業者×エリア #25〜#30 は今回は未着手（蜂バスター /area-list/tokyo は市区町村の列挙と全国共通文のみで拠点・料金の地域差なし）。
+- 気づいた既存ページの誤り（触っていない）: /pest/araiguma/osaka（大阪府）の govContacts は鶴見区ページの旧記載「大阪市では原則としてアライグマの捕獲は行っておりません。また、捕獲檻の貸し出しも行っておりません。」を載せているが、健康局 0000687502（2026-09-30）・鶴見区 0000664985（2026-10-15）とも現在は捕獲檻の貸出ありに変わっている。
+- sitemap 481→491。
