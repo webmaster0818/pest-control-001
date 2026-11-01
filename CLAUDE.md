@@ -113,3 +113,9 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 保留: 岡崎市（city.okazaki.lg.jp が Incapsula で curl・headless Chrome・WebFetch とも本文を取得できず、当日確認できないため）。旭川市は確認済み・次回分。
 - 1市のページで municipalSupport を2行にすると「掲載自治体 2件」と出るため、同じ市の補足ページは govContacts に入れた。
 - 既存の重複44組・osaka スラッグは触っていない（新スラッグは既存と重複なしを確認）。sitemap 462→472。
+
+---
+## 作業ログ 2026-11-01 (jiro) — 第2弾（網羅表 5章 #14・#16・#18〜#22・#1・#2）
+- 新設9ページ: /pest/wasp/{asahikawa,chiba-city,kagawa,tottori,shimane,tokushima,miyazaki}、/pest/araiguma/tokyo、/pest/hakubishin/tokyo。旭川市は scripts/gen_hachi_cities2.py、他は当日取得した公式ページ本文から作った JSON を scripts/merge_pest_batch2.py で pestAreas.ts 末尾と sitemap に追加。「」引用は scripts/verify_pest_batch2.py で公式本文と照合（不一致0）。
+- 保留: 福岡市（駆除しない＋区の窓口のみで、助成・貸出・委託業者の記載なし＝最低3項目に届かず）、岡崎市（bot遮断）、名古屋市 #15（旧形式の作り直し＝既存ページの削除を伴うため要承認）。県ページで公式ページを特定できなかった市町村は各ページの cautions に列挙（高松市・倉吉市・延岡市など。日向市・西都市は当日サイト障害/メンテ）。
+- companySlugs: ハチは duskin/hachi-otasuke/taiyo、東京のアライグマ・ハクビシンは神奈川の同種ページと同じ8社（新規の社なし）。sitemap 472→481。
