@@ -30,7 +30,7 @@ const EXISTING_STATIC_PATHS: Record<string, string[]> = {
     "kitakyushu", "kobe", "kumamoto", "kyoto", "nagoya", "niigata", "osaka",
     "saitama", "saitama-city", "sapporo", "sendai", "tokyo", "yokohama",
   ],
-  wasp: ["chiba", "fukuoka", "nagoya", "osaka", "saitama", "tokyo", "yokohama"],
+  wasp: ["chiba", "fukuoka", "osaka", "saitama", "tokyo", "yokohama"],
 };
 
 // app/area/ 配下に実在するエリアページ。無い県（福島県など）へ /area/{slug}/ を張ると404になるため、
