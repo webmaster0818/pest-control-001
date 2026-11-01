@@ -485,7 +485,7 @@ export default async function PestAreaPage({ params }: Props) {
                         )}
                       </th>
                       <td className="border border-slate-200">
-                        {a.priceRows[0]
+                        {a.priceRows[0] && !a.priceRows[0].item.includes("保証")
                           ? `${a.priceRows[0].item}：${a.priceRows[0].price}`
                           : "当サイト掲載データに記載なし"}
                       </td>
@@ -514,6 +514,7 @@ export default async function PestAreaPage({ params }: Props) {
           </section>
 
           {/* 確認項目 */}
+          {p.checkPoints.length > 0 && (
           <section id="check" className="scroll-mt-20 mb-12">
             <h2 className="h2-sec">
               業者を選ぶ際の確認項目
@@ -532,6 +533,7 @@ export default async function PestAreaPage({ params }: Props) {
               ))}
             </ul>
           </section>
+          )}
 
           {/* 確認できなかったこと */}
           {p.cautions.length > 0 && (
