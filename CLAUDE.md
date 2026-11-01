@@ -105,3 +105,11 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 10/18 okina指摘「FVがすっきりしすぎ・明朝は使わない・害虫らしさと数字を」に対応：明朝を全廃（見出しもNoto Sans JP 700/800・字間を詰めた）、FV 3案（app/components/TopHero.tsx・`FV_VARIANT=1|2|3` でビルド時に切替・既定2）、害虫アイコン8種（Nano Banana Pro・グリーンバック→クロマキー・public/images/pests/*.webp・各ハブへリンク）、数字帯（app/lib/siteStats.ts がビルド時に数える：業者22・都道府県43・自治体400・種類19）。
 - 10/18 2回目（okina「アイコンがポップすぎ・シルエットと文字だけに・塗りと線の2種・『害虫の種類から探す』→『種類から探す』」）：アイコンを単色シルエットの SVG に作り直し（Nano Banana Pro で白地に黒のシルエットを生成→potracer でベクター化。A=塗り public/images/pests/a/*.svg、B=同じ輪郭の線だけ（線幅3/100・小さな穴は埋めて輪郭を単純化）public/images/pests/b/*.svg、色 #1d2733）。`ICON_SET=a|b` でビルド時に切替（既定 a）。FVのボタンを「種類から探す」に（同じ文言のボタン・リンクはほかに無し。TOPの見出し h2「害虫の種類から探す」はそのまま）。
 - 10/18 本番反映（97f64fc・okina 採用＝FV-3＋線だけのアイコン）：表・一覧のサムネイルには ASP バナーを置かない（素材の縮小改変・計測画像の表示回数増を避ける。置くかどうかは okina 判断待ち）。公開前に origin/main ビルドと全464ページ比較（head・sitemap 一致、本文差分は TOP のみ）、aff-set-diff 一致（1930件・ページごとの件数も一致）、ng-lint/heading-lint/site-precheck は main と同じ結果、内部リンク切れ0。本番 HTML 464 ページを取得して aff-set-diff 一致を再確認。copy-audit の「しましょう」20件は main 時点から同じ（自治体資料の引用内）。
+
+---
+## 作業ログ 2026-11-01 (jiro) — ハチ × 市 第1弾（網羅表 projects/okina-coverage-20261101/gaichu.md 5章 #3〜#13）
+- 新設10ページ: /pest/wasp/{saitama-city,kyoto-city,shizuoka-city,maebashi,takasaki,yokosuka,mito,himeji,nagasaki-city,oita-city}。テンプレートは既存の app/pest/[pest]/[area]/page.tsx（pestAreas.ts に1件=1ページ）。市ごとに metaTitle・FAQ3問・相談窓口（govContacts）・municipalSupport 1行。
+- 各市の公式ページを 2026-11-01 に curl で開き直して確認（pestAreas.ts の既存行は 9/28〜10/12 確認分）。生成 `scripts/gen_hachi_cities1.py`、「」引用の原文照合 `scripts/verify_hachi_cities1.py`（176件・不一致0）。
+- 保留: 岡崎市（city.okazaki.lg.jp が Incapsula で curl・headless Chrome・WebFetch とも本文を取得できず、当日確認できないため）。旭川市は確認済み・次回分。
+- 1市のページで municipalSupport を2行にすると「掲載自治体 2件」と出るため、同じ市の補足ページは govContacts に入れた。
+- 既存の重複44組・osaka スラッグは触っていない（新スラッグは既存と重複なしを確認）。sitemap 462→472。
