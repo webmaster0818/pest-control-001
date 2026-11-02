@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   title: "シロアリ駆除の基礎知識 | 料金相場・業者の選び方",
   description: "シロアリ駆除の料金相場、業者の選び方、駆除方法をご説明します。バリア工法とベイト工法の違い、見積もり時のチェックポイントをわかりやすく紹介します。",
   openGraph: {
-    title: "シロアリ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "シロアリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "シロアリ駆除業者比較 | 料金相場・主要業者",
+    description: "シロアリ駆除業者を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/shiroari",
     images: [DEFAULT_OG_IMAGE],
   },

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "トコジラミ駆除の基礎知識 | 南京虫対策",
   description: "トコジラミ（南京虫）の特徴、刺された場合の対処、血糞などの発見のサイン、薬剤抵抗性、業者に依頼する前に確認することを、東京都・大阪府・厚生労働省の公開情報にもとづいてご説明します。駆除業者の比較も掲載しています。",
   openGraph: {
-    title: "トコジラミ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "トコジラミ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "トコジラミ駆除業者比較 | 料金相場・主要業者",
+    description: "トコジラミ駆除業者を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/tokojirami",
     images: [DEFAULT_OG_IMAGE],
   },

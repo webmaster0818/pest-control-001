@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "コウモリ駆除の基礎知識 | 法律と安全な追い出し方法",
   description: "コウモリ駆除の料金相場、法律知識、安全な追い出し方法をご説明します。鳥獣保護管理法に基づく正しい対処法と業者の選び方をご紹介します。",
   openGraph: {
-    title: "コウモリ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "コウモリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "コウモリ駆除業者比較 | 料金相場・主要業者",
+    description: "コウモリ駆除業者を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/koumori",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -809,8 +809,7 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つ業者</li>
-                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>「工務店歴50年以上のプロ」が駆除と再発防止施工を担当（公式サイトの記載・2026年11月3日確認）</li>
                 <li>最短30分で対応</li>
               </ul>
             </div>

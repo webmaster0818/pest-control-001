@@ -72,7 +72,7 @@ export default function Home() {
     "@type": "WebSite",
     "name": "害虫・害獣駆除プロ比較ナビ",
     "url": "https://pest-control-001.pages.dev",
-    "description": "全国の害虫・害獣駆除業者を、料金・サービス内容・口コミの観点から比較できる情報サイトです。",
+    "description": "全国の害虫・害獣駆除業者を、料金・サービス内容の観点から比較できる情報サイトです。",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://pest-control-001.pages.dev/search?q={search_term_string}",
@@ -206,10 +206,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 業者別の口コミ・評判ページ（各社の詳細ページへ） */}
+      {/* 業者別の詳細ページ（各社のページへ） */}
       <section id="agents" className="top-section">
         <div className="top-container">
-          <h2 className="heading-primary text-center">業者別の口コミ・評判</h2>
+          <h2 className="heading-primary text-center">業者別の詳細ページ</h2>
           <div className="pest-grid rv-auto">
             {agentLinks.map((a) => (
               <Link key={a.href} href={a.href} className="pest-tile">

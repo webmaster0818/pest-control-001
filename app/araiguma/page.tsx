@@ -984,8 +984,7 @@ export default function AraigumaPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つ業者</li>
-                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>「工務店歴50年以上のプロ」が駆除と再発防止施工を担当（公式サイトの記載・2026年11月3日確認）</li>
                 <li>最短30分で対応</li>
               </ul>
             </div>

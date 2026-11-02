@@ -23,7 +23,7 @@ function Copy() {
     <>
       <p className="fv-eyebrow">実際の口コミと評判で選ぶ！</p>
       <h1 className="fv-title">
-        全国の害虫・害獣駆除業者を<br className="hidden sm:block" />料金・口コミで比較
+        全国の害虫・害獣駆除業者を<br className="hidden sm:block" />料金・サービス内容で比較
       </h1>
       <p className="fv-lead">
         シロアリ、ハチ、ゴキブリ、ネズミ、コウモリなどの駆除業者の情報を掲載し、業者選びを支援します。

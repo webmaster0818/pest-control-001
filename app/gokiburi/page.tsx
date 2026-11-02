@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "ゴキブリ駆除の基礎知識 | 駆除方法と予防策",
   description: "ゴキブリ駆除の料金相場、業者の選び方、自力駆除との比較をご説明します。再発防止策と予防方法で、ゴキブリのいない快適な生活を実現します。",
   openGraph: {
-    title: "ゴキブリ駆除業者比較 | 料金相場・口コミ・主要業者",
-    description: "ゴキブリ駆除業者を、料金・サービス・口コミの観点から比較しています。",
+    title: "ゴキブリ駆除業者比較 | 料金相場・主要業者",
+    description: "ゴキブリ駆除業者を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/gokiburi",
     images: [DEFAULT_OG_IMAGE],
   },

@@ -8,11 +8,11 @@ import { AffBanner, AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/hamamatsu" },
-  title: "浜松の害虫駆除業者比較 | 料金相場・口コミ・おすすめ8社",
-  description: "浜松の害虫駆除業者8社を、料金・サービス・口コミの観点から比較しています。見積もりは無料です。",
+  title: "浜松の害虫駆除業者比較 | 料金相場・おすすめ8社",
+  description: "浜松の害虫駆除業者8社を、料金・サービス内容の観点から比較しています。見積もりは無料です。",
   openGraph: {
-    title: "浜松の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "浜松市内の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "浜松の害虫駆除業者比較 | 料金相場・主要10社",
+    description: "浜松市内の害虫駆除業者10社を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/area/hamamatsu",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -565,8 +565,7 @@ export default function HamamatsuPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つ業者</li>
-                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>「工務店歴50年以上のプロ」が駆除と再発防止施工を担当（公式サイトの記載・2026年11月3日確認）</li>
                 <li>最短30分で対応</li>
               </ul>
             </div>

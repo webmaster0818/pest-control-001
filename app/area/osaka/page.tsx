@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "大阪の害虫駆除業者 | 地域別料金相場と選び方",
   description: "大阪の害虫駆除業者と料金を比較しています。地域の区分と公的な相談窓口、季節ごとの害虫カレンダー、業者の選び方をご説明します。",
   openGraph: {
-    title: "大阪の害虫駆除業者比較 | 料金相場・口コミ・主要10社",
-    description: "大阪の害虫駆除業者10社を、料金・サービス・口コミの観点から比較しています。",
+    title: "大阪の害虫駆除業者比較 | 料金相場・主要10社",
+    description: "大阪の害虫駆除業者10社を、料金・サービス内容の観点から比較しています。",
     url: "https://gaichu-pro.com/area/osaka",
     images: [DEFAULT_OG_IMAGE],
   },
@@ -569,8 +569,7 @@ export default function TokyoPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣プロテックの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>50年以上の経験を持つ業者</li>
-                <li>工務店歴50年、建物の構造を踏まえた施工</li>
+                <li>「工務店歴50年以上のプロ」が駆除と再発防止施工を担当（公式サイトの記載・2026年11月3日確認）</li>
                 <li>最短30分で対応</li>
               </ul>
             </div>

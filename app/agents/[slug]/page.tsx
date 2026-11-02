@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import Breadcrumb from "@/app/components/Breadcrumb";
-import { agents, getAgent } from "../agentsData";
+import { agents, getAgent, hasSourcedReviews } from "../agentsData";
 import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { brandAreas } from "@/app/data/brandAreas";
 import { AffBanner, AffText, hasAff } from "@/app/components/AffLink";
@@ -40,11 +40,12 @@ export default async function AgentPage({ params }: Props) {
     return <div className="max-w-4xl mx-auto px-4 py-20 text-center">該当する業者の情報はありません。</div>;
   }
 
+  const rv = hasSourcedReviews(a) || !!a.keepReviewWording;
   const toc: [string, string][] = [
     ["about", `${a.name}の概要`],
     ["taiou", "対応している害獣・害虫の種類"],
     ["price", `${a.name}の料金体系と相場`],
-    ["reviews", "利用者の口コミ・評判"],
+    ["reviews", rv ? "利用者の口コミ・評判" : "口コミの掲載について"],
     ["merit", "メリットとデメリット"],
     ["recommend", `${a.name}の利用が適している方`],
     ["compare", "他社と比較する際の確認項目"],
@@ -55,7 +56,7 @@ export default async function AgentPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${a.name}の口コミ・評判・料金`,
+    headline: rv ? `${a.name}の口コミ・評判・料金` : `${a.name}の料金・サービス内容`,
     description: a.metaDesc,
     image: hasAff(a.slug) ? `${SITE}${DEFAULT_OG_IMAGE.url}` : `${SITE}${a.image}`,
     datePublished: `${a.updated ?? UPDATED}T00:00:00+09:00`,
@@ -79,7 +80,7 @@ export default async function AgentPage({ params }: Props) {
         items={[
           { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
           { label: "駆除業者", href: "/agents" },
-          { label: `${a.name}の口コミ・評判` },
+          { label: rv ? `${a.name}の口コミ・評判` : a.name },
         ]}
       />
 
@@ -87,11 +88,11 @@ export default async function AgentPage({ params }: Props) {
         <header className="ph" data-no-reveal>
           <div className="ph-inner ph-grid">
             <div className="ph-copy">
-              <p className="eyebrow">害獣・害虫駆除業者の口コミ・評判</p>
+              <p className="eyebrow">{rv ? "害獣・害虫駆除業者の口コミ・評判" : "害獣・害虫駆除業者の調査"}</p>
               <h1 className="ph-title">
-                {a.name}の口コミ・評判
+                {rv ? `${a.name}の口コミ・評判` : `${a.name}の料金・サービス内容`}
                 <br className="hidden md:block" />
-                <span className="ph-title-sub">料金・サービス内容・メリットとデメリット</span>
+                <span className="ph-title-sub">{rv ? "料金・サービス内容・メリットとデメリット" : "対応範囲・保証・メリットとデメリット"}</span>
               </h1>
               <p className="ph-lead">{a.heroLead}</p>
               <div className="ph-badges">
@@ -200,7 +201,7 @@ export default async function AgentPage({ params }: Props) {
           </section>
 
           <section id="reviews" className="scroll-mt-20 mb-14">
-            <h2 className="h2-sec">利用者の口コミ・評判</h2>
+            <h2 className="h2-sec">{rv ? "利用者の口コミ・評判" : "口コミの掲載について"}</h2>
             <div className="rv-summary">
               {a.satisfaction && (
                 <div className="text-center">
