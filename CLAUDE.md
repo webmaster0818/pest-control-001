@@ -168,3 +168,11 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 旧ベタ書き app/pest/wasp/nagoya/page.tsx（「名古屋のハチ駆除業者おすすめ10社」・害虫全般の10社比較表・季節カレンダー・名古屋市の公式情報なし）を削除し、pestAreas.ts に1件追加。URL は同じ。EXISTING_STATIC_PATHS.wasp から nagoya を外した。sitemap は lastmod のみ 2026-11-01 に（URL 数 532 のまま）。
 - 生成 `scripts/gen_pest_nagoya_wasp.py`、マージ `scripts/merge_pest_nagoya_wasp.py`、照合 `scripts/verify_pest_nagoya_wasp.py`（「」引用20件・不一致0・引用外「！」0。架空引用と引用外「！」の負のテストで NG を確認）。証拠テキストは scratchpad ngy/raw2/nagoya（当日 curl・HTMLコメント除去、PDF は pdftotext）。
 - 内容: 市は駆除なし・駆除方法の相談に応じる（ハチのページ＋野生鳥獣等Q＆A集 令和8年4月）、生活保護世帯・市民税非課税世帯（在宅寝たきり高齢者・身体障害者等を含む）は昆虫等駆除費及び消毒費補助制度で補助できる場合あり（金額・申請方法はページに記載なし＝個別案内ページは当日見つからず）、相談は千種・中村・中・南の保健センター環境薬務課（担当区・住居衛生等の電話）、防護服の貸出は記載なし、スズメバチトラップは6月以降は危険と市が案内。companySlugs は他のハチ市ページと同じ duskin/hachi-otasuke/taiyo（旧ページにあった house-protect・protec のアフィリエイト（バナー各1・テキストリンク各2）は無くなる）。
+
+---
+## 作業ログ 2026-11-02 (jiro-2) — 第8弾（23区のアライグマ・ハクビシン ＋ 重複ネズミ8件の整理 ＋ description 160字超の修正）
+- 新設8ページ: /pest/araiguma/{bunkyo,edogawa,meguro,adachi}、/pest/hakubishin/{bunkyo,edogawa,meguro,adachi}。生成 `scripts/gen_pest_batch8.py`、マージ `scripts/merge_pest_batch8.py`、照合 `scripts/verify_pest_batch8.py`（「」引用105件・不一致0・引用外「！」0。1語変更の負のテストで NG を確認）。証拠テキストは /tmp/j2-1102-gaichu/raw（当日 curl・HTMLコメント除去、PDF は pdftotext）。
+- 文京（都の計画に基づく防除事業 H26.11〜・有資格業者が庭等屋外に箱わな・原則2週間・年度内1回・費用の記載なし）、江戸川（保健所が平地に箱ワナ・無料・1カ月・天井裏/床下は東京都PCO協会）、目黒（H29.8〜・委託事業者が天井裏等に設置・原則3週間/最大6週間・貸出と回収は区負担・年度1回。実績PDFは画像で未照合）、足立（屋内も可・無料・原則2週間・回数制限なし＋屋内侵入口閉塞工事の助成 最大10万円・日本PCO協会会員の工事）。
+- description が同じにならないよう種名を入れた。site-precheck [11b]（160字超）が既存9ページ（11/1 作成分：hakubishin chiba-city/tokyo/nerima、araiguma tokyo/kawaguchi、wasp utsunomiya/nagoya、nezumi funabashi/shinjuku）でも落ちていたため、末尾の「公式ページから整理しています」等を削って160字以内に（事実は変えていない）。
+- 重複ネズミ8件（aichi・chiba・fukuoka・hokkaido・hyogo・kanagawa・kyoto・saitama の2件目＝getPestArea が返さない側）を削除。前後のビルド出力を比較し、ページ本体・URL は不変、変化は関連リンク・/pest ハブの同じリンクの2回目が消えた62ページのみ。
+- sitemap 532→540（新8＋description 変更9を lastmod 2026-11-02）。
