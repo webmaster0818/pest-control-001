@@ -8,98 +8,22 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/hachi" },
-  title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場と緊急対処法",
-  description: "ハチ駆除業者10社を、料金・対応速度・実績の観点から比較しています。スズメバチ、アシナガバチ、ミツバチの駆除料金相場（8,000円〜50,000円）、緊急時の対処法、季節別ハチ対策カレンダーをご説明します。即日対応が可能な業者も掲載しています。",
+  title: "ハチ駆除業者の比較｜9社の対応エリア・受付時間と見積もりの注意点",
+  description: "ハチ駆除に対応する9社の対応エリア・電話受付時間・見積もりの扱いを各社の公式表記で比較しています。国民生活センターが呼びかける見積もりの注意点と、刺されたときの応急処置（埼玉県・札幌市の案内）もまとめています。",
   openGraph: {
-    title: "ハチ駆除業者比較 | スズメバチ・アシナガバチの料金相場",
-    description: "ハチ駆除業者10社を、料金・対応速度・実績の観点から比較しています。即日対応が可能な業者も掲載しています。",
+    title: "ハチ駆除業者の比較｜9社の対応エリア・受付時間と見積もりの注意点",
+    description: "ハチ駆除に対応する9社の対応エリア・電話受付時間・見積もりの扱いを、各社の公式表記で比較しています。",
     url: "https://gaichu-pro.com/hachi",
     images: [DEFAULT_OG_IMAGE],
   },
 };
 
 export default function HachiPage() {
-  const beeTypes = [
-    {
-      name: "スズメバチ",
-      danger: "非常に危険",
-      description: "攻撃性が高く、刺されると重症化しやすい種類です。巣に近づくだけで攻撃されることがあります。",
-      features: ["体長: 2〜4cm", "攻撃性: 極めて高い", "巣の場所: 軒下、屋根裏、土中"],
-      color: "badge-error",
-    },
-    {
-      name: "アシナガバチ",
-      danger: "危険",
-      description: "スズメバチより攻撃性は低いものの、巣を刺激すると集団で攻撃することがあります。",
-      features: ["体長: 1.5〜2.5cm", "攻撃性: 中程度", "巣の場所: 軒下、ベランダ"],
-      color: "badge-warning",
-    },
-    {
-      name: "ミツバチ",
-      danger: "注意",
-      description: "おとなしい性格ですが、巣を守るために攻撃することがあります。アレルギー反応にご注意ください。",
-      features: ["体長: 1〜1.5cm", "攻撃性: 低い", "巣の場所: 樹木の空洞、屋根裏"],
-      color: "badge-info",
-    },
-  ];
-
-  const emergencySteps = [
-    {
-      step: "1",
-      title: "すぐに現場から離れる",
-      description: "ハチが追ってこない距離（20m以上）まで速やかに離れてください。手で払わないでください。",
-    },
-    {
-      step: "2",
-      title: "刺された部位を冷やす",
-      description: "流水で患部を洗い流し、氷や冷水で冷やしてください。毒は絞り出すようにしてください。",
-    },
-    {
-      step: "3",
-      title: "アレルギー症状を確認",
-      description: "呼吸困難、めまい、全身の発疹などアナフィラキシー症状が出た場合は、すぐに救急車を呼んでください。",
-    },
-  ];
-
-  const priceTable = [
-    { size: "初期の小さな巣（直径10cm未満）", price: "8,000〜15,000円", note: "4月〜6月頃" },
-    { size: "中型の巣（直径10〜30cm）", price: "15,000〜30,000円", note: "7月〜8月頃" },
-    { size: "大型の巣（直径30cm以上）", price: "30,000〜50,000円+", note: "9月〜10月頃" },
-    { size: "高所作業（2階以上、屋根裏）", price: "+10,000〜20,000円", note: "追加料金" },
-  ];
-
-  const seasonCalendar = [
-    {
-      season: "春（4〜5月）",
-      activity: "女王バチの活動開始",
-      advice: "巣作りの初期段階です。この時期の駆除が最も安全で、費用も抑えられます。",
-      risk: "低",
-    },
-    {
-      season: "夏（6〜8月）",
-      activity: "巣の成長ピーク",
-      advice: "働きバチが増え、巣が急速に大きくなる時期です。駆除は専門業者へのご依頼をおすすめします。",
-      risk: "中",
-    },
-    {
-      season: "秋（9〜10月）",
-      activity: "攻撃性が最も高い",
-      advice: "新女王バチが誕生する時期です。巣が最大になり、ハチの数も最も多くなります。ご自身での駆除は避けてください。",
-      risk: "高",
-    },
-    {
-      season: "冬（11〜3月）",
-      activity: "活動停止",
-      advice: "ほとんどのハチが死滅する時期です。空の巣の撤去に適しています。",
-      risk: "低",
-    },
-  ];
-
   const checklist = [
     "即日対応可能か（緊急性が高いため）",
     "防護服と専用機材を完備しているか",
     "高所作業の経験が豊富か",
-    "再発時の保証はあるか（1年以上推奨）",
+    "再発時の保証はあるか",
     "自治体の補助金制度について案内があるか",
   ];
 
@@ -133,21 +57,32 @@ export default function HachiPage() {
               ハチ駆除の基礎知識と業者比較
             </h1>
             <p className="text-xl mb-8">
-              スズメバチ・アシナガバチの危険性から駆除方法まで、安全な対処法をご紹介します
+              対応エリア・受付時間・見積もりの扱いを各社の公式表記で比較しています
             </p>
             </div>
         </div>
       </section>
 
-      {/* キャッチコピー */}
+      {/* 冒頭の要約 */}
       <section className="py-8 px-4 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            ハチ駆除の基礎知識と業者比較
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
+            ハチ駆除業者を比べるときの要点
           </h2>
-          <p className="text-lg text-gray-700">
-            ハチの特徴・被害状況から駆除方法まで、対処法をご説明します
-          </p>
+          <div className="bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-3">
+            <p>
+              このページでは、ハチ駆除に対応する9社を、対応エリア・電話受付時間・見積もりの扱いなど各社の公式サイトの表記で比較しています。日本全国（沖縄・離島を除く）で24時間365日受付としているのはハチお助け本舗で、ほかの8社は対応エリアや営業所が一部の地域に限られます。
+            </p>
+            <p>
+              国民生活センターは、ウェブサイトの広告等で提示された料金と異なる高額な請求を受けた事例が多くみられるとして、複数社から見積もりを取って比較・検討する前提で話を聞くこと、料金や作業内容に納得できない場合はその場での支払いを避けることを呼びかけています。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年11月2日確認）
+            </p>
+            <p>
+              スズメバチの巣の駆除費を補助している市町村もあります。都道府県・市ごとの自治体の対応（駆除の扱い・補助・防護服の貸出）は、<Link href="/pest#area" className="underline">エリア別のハチ駆除のページ</Link>で各自治体の公式ページをもとにまとめています。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1108,176 +1043,30 @@ export default function HachiPage() {
         </div>
       </section>
 
-      {/* ハチの種類と危険性 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ハチの種類と危険性</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {beeTypes.map((bee) => (
-              <div key={bee.name} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-2xl">{bee.name}</h3>
-                  <div className={`badge ${bee.color} badge-lg`}>{bee.danger}</div>
-                  <p className="text-gray-700 mt-4">{bee.description}</p>
-                  <div className="divider"></div>
-                  <ul className="space-y-2">
-                    {bee.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-primary">•</span>
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 緊急対処法 */}
       <section className="py-16 px-4 bg-error/10">
         <div className="max-w-5xl mx-auto">
           <h2 className="heading-primary text-center text-error">
             ハチに刺された場合の対処法
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencySteps.map((step) => (
-              <div key={step.step} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="badge badge-error badge-lg mb-4">ステップ {step.step}</div>
-                  <h3 className="card-title text-xl">{step.title}</h3>
-                  <p className="text-gray-700">{step.description}</p>
-                </div>
-              </div>
-            ))}
+          <div className="card bg-white shadow-xl mb-6">
+            <div className="card-body">
+              <p className="text-gray-700">
+                埼玉県は、ハチに刺されたときの応急処置として「① 刺された人はなるべく動かない。」「② ポイズンリムーバーで毒を吸い出す。」「③ 流水で洗い流す」「④ 冷やす」「⑤ 早めに病院へ」の順を案内しています。同資料は「一般的にスズメバチに刺される危険な時期は、７月～１０月と言われており」としています。
+              </p>
+              <p className="text-xs text-gray-600 mt-2">
+                出典：<a href="https://www.pref.saitama.lg.jp/documents/4719/hachi_ni_sasaretara.pdf" target="_blank" rel="nofollow noopener" className="underline">埼玉県 環境部 水環境課「ハチに刺されたら」（PDF）</a>（2026年11月2日確認）
+              </p>
+            </div>
           </div>
-          <div className="alert alert-error mt-8 shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
+          <div className="alert alert-error shadow-lg">
             <div>
-              <h3 className="font-bold">アナフィラキシーショックの症状</h3>
-              <p className="text-sm">呼吸困難、めまい、全身の発疹、吐き気などの症状が出たら、すぐに救急車（119番）を呼んでください。</p>
+              <h3 className="font-bold">すぐに病院で治療を受けるべき場合</h3>
+              <p className="text-sm">札幌市保健所は、「一度に多くのハチに刺された」場合や、刺された直後に「呼吸困難、顔面蒼白、全身のじんましん、吐き気、激しい悪寒などのショック症状」があらわれた場合は、すぐに病院で治療を受けるよう案内しています。</p>
+              <p className="text-xs mt-2">
+                出典：<a href="https://www.city.sapporo.jp/hokenjo/f3seikatu/f80mushi/hati/hati2.html" target="_blank" rel="nofollow noopener" className="underline">札幌市「ハチに刺されたら」</a>（2026年11月2日確認）
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ハチの巣を見つけたら */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ハチの巣を見つけたら</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card bg-error text-error-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">避けるべき行動</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>自分で駆除しようとする</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>巣に近づく、刺激する</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>市販のスプレーを使う（興奮させる）</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ng" aria-hidden="true"></span>
-                    <span>水をかける、棒でつつく</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-success text-success-content shadow-xl">
-              <div className="card-body">
-                <h3 className="card-title text-2xl">すべきこと</h3>
-                <ul className="space-y-3 mt-4">
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>巣から最低10m以上離れる</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>すぐに専門業者に連絡</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>家族や近隣に注意喚起</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mark mark-ok" aria-hidden="true"></span>
-                    <span>窓やドアを閉めて侵入を防ぐ</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 料金相場 */}
-      <section className="py-16 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ハチ駆除の料金相場</h2>
-          <div className="overflow-x-auto">
-            <table className="table w-full bg-white text-black shadow-xl">
-              <thead>
-                <tr>
-                  <th>巣のサイズ・場所</th>
-                  <th>料金相場</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {priceTable.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.size}</td>
-                    <td className="text-primary font-semibold">{row.price}</td>
-                    <td className="text-sm text-gray-700">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-            <span>
-              <strong>自治体の補助金制度：</strong>スズメバチ駆除には自治体から補助金が出る場合があります。
-              お住まいの市区町村にお問い合わせください。
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* 季節別対策カレンダー */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">季節別ハチ対策カレンダー</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season) => (
-              <div key={season.season} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="card-title text-xl">{season.season}</h3>
-                    <div className={`badge ${
-                      season.risk === "高" ? "badge-error" :
-                      season.risk === "中" ? "badge-warning" :
-                      "badge-success"
-                    } badge-lg`}>
-                      危険度: {season.risk}
-                    </div>
-                  </div>
-                  <p className="font-bold text-primary mb-2">{season.activity}</p>
-                  <p className="text-gray-700">{season.advice}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

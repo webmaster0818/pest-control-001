@@ -8,10 +8,10 @@ import { AffBanner, AffText } from "@/app/components/AffLink";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/area/tochigi" },
-  title: "栃木の害虫駆除｜県の相談窓口と業者10社の比較",
-  description: "栃木県で害虫駆除を考えたら、まず地域の県健康福祉センター生活衛生課（宇都宮市は市保健所）に相談でき、専門的な相談は衛生害虫防除等相談室が受け付けています（栃木県公式）。駆除を依頼できる業者10社も比較しています。",
+  title: "栃木県の害虫駆除｜県の相談窓口・害虫別の自治体情報と業者10社の比較",
+  description: "栃木県の害虫の相談は県健康福祉センター生活衛生課（宇都宮市は市保健所）、専門的な相談は衛生害虫防除等相談室が受け付けています（栃木県公式）。ハチ・ハクビシン・アライグマなど害虫別の県内自治体の情報と、業者10社の比較も掲載しています。",
   openGraph: {
-    title: "栃木の害虫駆除｜県の相談窓口と業者10社の比較",
+    title: "栃木県の害虫駆除｜県の相談窓口・害虫別の自治体情報と業者10社の比較",
     description: "栃木県の害虫の相談窓口（県健康福祉センター・宇都宮市保健所・衛生害虫防除等相談室）と、駆除を依頼できる業者10社を比較しています。",
     url: "https://gaichu-pro.com/area/tochigi",
     images: [DEFAULT_OG_IMAGE],
@@ -27,29 +27,6 @@ export default function TokyoPage() {
     { rank: 5, name: "コウモリ", icon: "", description: "コウモリの特徴、駆除方法、業者の選び方は、リンク先のページでご説明しています。", link: "/koumori" },
   ];
 
-
-  const seasonCalendar = [
-    {
-      season: "春（3月〜5月）",
-      pests: ["シロアリの羽アリ発生", "ゴキブリの活動開始", "ハチの巣作り開始"],
-      advice: "シロアリの羽アリを見かけた場合は、早めの点検をおすすめします。ゴキブリ対策も早めに始めることが大切です。",
-    },
-    {
-      season: "夏（6月〜8月）",
-      pests: ["ゴキブリのピーク", "ハチの攻撃性増加", "湿気でカビ・ダニ発生"],
-      advice: "ゴキブリ・ハチの被害が最も多い時期です。梅雨明けの点検が重要です。",
-    },
-    {
-      season: "秋（9月〜11月）",
-      pests: ["ネズミの侵入増加", "ハチの活動最盛期", "越冬準備の害虫増加"],
-      advice: "ネズミが暖かい場所を求めて屋内に侵入する時期です。侵入口の封鎖が欠かせません。",
-    },
-    {
-      season: "冬（12月〜2月）",
-      pests: ["ネズミ被害継続", "ゴキブリ（暖房で活動）", "コウモリの越冬"],
-      advice: "暖房のある場所ではゴキブリが活動を続けます。ネズミ駆除に適した時期です。",
-    },
-  ];
 
   const areas = [
     { name: "県北地域", description: "大田原市・那須塩原市・日光市・矢板市 など", url: "https://www.pref.tochigi.lg.jp/c05/pref/kouhou/iken/documents/20251121160253.pdf" },
@@ -117,8 +94,22 @@ export default function TokyoPage() {
               より専門的な相談は、栃木県ペストコントロール協会内の「衛生害虫防除等相談室」（028-625-0606・9時〜16時・日祝除く）が対応しています。駆除作業を依頼する場合は、下の業者10社の比較をご覧ください。
             </p>
             <p className="text-xs text-gray-600">
-              出典：<a href="https://www.pref.tochigi.lg.jp/e07/advice/kurashi/eisei/gd0407058.html" target="_blank" rel="nofollow noopener" className="underline">栃木県「住まいのねずみや害虫について相談したい」</a>（2026年10月24日確認）。管轄の市町と電話番号は<a href="#tochigi-faq" className="underline">よくある質問</a>にまとめています。
+              出典：<a href="https://www.pref.tochigi.lg.jp/e07/advice/kurashi/eisei/gd0407058.html" target="_blank" rel="nofollow noopener" className="underline">栃木県「住まいのねずみや害虫について相談したい」</a>（2026年11月2日確認）。管轄の市町と電話番号は<a href="#tochigi-faq" className="underline">よくある質問</a>にまとめています。
             </p>
+          </div>
+          <div className="text-left mt-6 text-gray-800">
+            <h2 className="text-lg font-bold text-gray-900 mb-2">害虫・害獣ごとの栃木県の情報</h2>
+            <p className="mb-3">
+              栃木県は、ハクビシンの県内の分布を「県内全域」とし、「栃木県内では、イノシシに次いで農業被害が多く発生しています（イチゴ、ブドウなど）。」と案内しています。
+            </p>
+            <p className="text-xs text-gray-600 mb-4">
+              出典：<a href="https://www.pref.tochigi.lg.jp/d04/gairaishu/hakubishin.html" target="_blank" rel="nofollow noopener" className="underline">栃木県「優先対策種「ハクビシン」について」</a>（2026年11月2日確認）
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><Link href="/pest/wasp/tochigi" className="link link-primary">栃木県のハチ駆除</Link>：県内の市町の公式ページに記載された、ハチの巣の駆除の扱い・補助制度・防護服の貸出</li>
+              <li><Link href="/pest/hakubishin/tochigi" className="link link-primary">栃木県のハクビシン</Link>・<Link href="/pest/araiguma/tochigi" className="link link-primary">アライグマ</Link>・<Link href="/pest/itachi/tochigi" className="link link-primary">イタチ</Link>：捕獲の許可と県内の相談窓口</li>
+              <li><Link href="/pest/koumori/tochigi" className="link link-primary">栃木県のコウモリ</Link>・<Link href="/pest/nezumi/tochigi" className="link link-primary">ネズミ</Link>：県内の相談窓口と対応業者</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1079,37 +1070,6 @@ export default function TokyoPage() {
                 出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月28日確認）
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 栃木の害虫カレンダー */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">栃木の害虫カレンダー</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season, idx) => (
-              <div key={idx} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-xl text-black">{season.season}</h3>
-                  <ul className="space-y-2 mt-4">
-                    {season.pests.map((pest, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-error text-xl">•</span>
-                        <span className="text-sm text-gray-900">{pest}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="divider"></div>
-                  <div className="alert alert-warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                    </svg>
-                    <span className="text-xs">{season.advice}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
