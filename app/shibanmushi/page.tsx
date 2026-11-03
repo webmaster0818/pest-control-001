@@ -7,8 +7,8 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/shibanmushi" },
-  title: "シバンムシ駆除業者比較 | 畳・木材食害の料金相場と対策",
-  description: "シバンムシ駆除業者を比較しています。タバコシバンムシ・ジンサンシバンムシの特徴と食品の被害、シバンムシアリガタバチによる刺咬、発生源の特定と予防方法を、自治体の公開情報にもとづいてご説明します。",
+  title: "シバンムシ駆除の業者料金と比較｜公式料金22,000円〜・発生源の対策",
+  description: "シバンムシ駆除の業者料金を公式で公表しているのは、比較9社のうち大洋防疫研究所の22,000円〜（税込）のみです。各社の対応状況と、発生源の特定・予防方法を自治体の公開情報にもとづいてご説明します。",
   openGraph: {
     title: "シバンムシ駆除業者比較 | 食品害虫の特徴と対策",
     description: "シバンムシ駆除業者を比較しています。食品害虫としての特徴、シバンムシアリガタバチ、発生源の特定と予防方法をご説明します。",
@@ -63,6 +63,19 @@ export default function ShibanmushiPage() {
           <p className="text-lg text-gray-700">
             タバコシバンムシ・ジンサンシバンムシの特徴、シバンムシアリガタバチ、発生源の特定と予防方法をご説明します
           </p>
+        </div>
+      </section>
+
+      {/* 料金の答え */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto border-l-4 border-orange-500 bg-orange-50 p-6 rounded">
+          <h2 className="text-xl font-bold text-gray-900 mb-3">シバンムシ駆除を業者に頼むといくら？</h2>
+          <p className="text-gray-800 leading-relaxed">
+            当ページで比較している9社のうち、シバンムシ駆除の料金を公式サイトで公表しているのは<strong>大洋防疫研究所の「22,000円〜（税込・一般家庭向け）」</strong>のみです（2026年11月3日確認）。
+            株式会社アサンテはシバンムシを対応害虫に掲載していますが料金の記載はなく、他の業者は見積もり制か、シバンムシ駆除の掲載がありません。
+            自治体は、発生源の食品の処分と密閉容器での保管を基本の対策として案内しています（板橋区・横浜市衛生研究所）。業者に頼む前に下の「発生源の特定」も確認してください。
+          </p>
+          <p className="text-sm mt-3"><a href="#price" className="underline text-primary">各社の料金の公表状況を見る</a></p>
         </div>
       </section>
 
@@ -1101,23 +1114,24 @@ export default function ShibanmushiPage() {
 </div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.city.itabashi.tokyo.jp/kenko/eisei/doubutsu/sumai/1004041.html" target="_blank" rel="nofollow noopener" className="underline">板橋区「すまいの虫図鑑・シバンムシ」</a>（2026年10月17日確認）、<a href="https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/eiken/kankyoeisei/gaichu/shibamushi.html" target="_blank" rel="nofollow noopener" className="underline">横浜市衛生研究所「食品の管理は大丈夫ですか？（その2 シバンムシ類）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p016904.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「食品を食べる害虫『シバンムシ類』」</a>（2026年10月17日確認）、<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-      {/* 料金相場 */}
-      <section className="py-16 px-4">
+      {/* 料金 */}
+      <section className="py-16 px-4" id="price">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">シバンムシ駆除の料金相場</h2>
+          <h2 className="heading-primary text-center">シバンムシ駆除の料金（各社公式の公表状況）</h2>
 <div className="overflow-x-auto">
 <table className="table w-full bg-white text-black shadow-xl">
-<thead><tr><th>発生状況・作業内容</th><th>料金相場</th><th>備考</th></tr></thead>
+<thead><tr><th>業者</th><th>シバンムシ駆除の料金（公式）</th></tr></thead>
 <tbody>
-<tr><td className="font-bold">発生範囲が狭い場合</td><td className="text-primary font-semibold">8,000〜15,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">発生範囲が中程度の場合</td><td className="text-primary font-semibold">15,000〜30,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">発生範囲が広い場合</td><td className="text-primary font-semibold">30,000〜50,000円+</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">追加作業がある場合</td><td className="text-primary font-semibold">+10,000〜20,000円</td><td className="text-sm text-gray-700">追加料金（内容は業者により異なります）</td></tr>
+<tr><td className="font-bold">大洋防疫研究所</td><td className="text-primary font-semibold">22,000円〜（税込・一般家庭向け料金）</td></tr>
+<tr><td className="font-bold">株式会社アサンテ</td><td>公式に記載なし（シバンムシは対応害虫に掲載）</td></tr>
+<tr><td className="font-bold">有限会社北日本消毒</td><td>要見積もり（公式サイトに料金表なし）</td></tr>
+<tr><td className="font-bold">ほか6社</td><td>公式にシバンムシ駆除の掲載なし</td></tr>
 </tbody>
 </table>
 </div>
+<p className="text-xs text-gray-600 mt-2">出典：大洋防疫研究所 公式サイト「料金表」（https://taiyouboueki.co.jp/charge_list/）2026年11月3日確認。その他は各社の詳細欄の出典（2026年10月18日確認）。</p>
 <div className="alert alert-info mt-8">
-<span>表の金額は当サイトが掲載している目安で、公的な基準ではありません。シバンムシ駆除の費用は発生範囲・被害状況・施工回数で変わるため、複数業者の無料見積もりで比較することをおすすめします。</span>
+<span>実際の費用は発生範囲・発生源の食品や畳の状態・施工回数で変わります。料金表のない業者は無料の現地調査・見積もりで確認してください。</span>
 </div>
         </div>
       </section>
