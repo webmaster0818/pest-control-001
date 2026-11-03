@@ -28,28 +28,6 @@ export default function MiyagiPage() {
   ];
 
 
-  const seasonCalendar = [
-    {
-      season: "春（3月〜5月）",
-      pests: ["シロアリの羽アリ発生", "ゴキブリの活動開始", "ハチの巣作り開始"],
-      advice: "シロアリの羽アリを見かけた場合は、早めの点検をおすすめします。ゴキブリ対策も早めに始めることが大切です。",
-    },
-    {
-      season: "夏（6月〜8月）",
-      pests: ["ゴキブリのピーク", "ハチの攻撃性増加", "湿気でカビ・ダニ発生"],
-      advice: "ゴキブリ・ハチの被害が最も多い時期です。梅雨明けの点検が重要です。",
-    },
-    {
-      season: "秋（9月〜11月）",
-      pests: ["ネズミの侵入増加", "ハチの活動最盛期", "越冬準備の害虫増加"],
-      advice: "ネズミが暖かい場所を求めて屋内に侵入する時期です。侵入口の封鎖が欠かせません。",
-    },
-    {
-      season: "冬（12月〜2月）",
-      pests: ["ネズミ被害継続", "ゴキブリ（暖房で活動）", "コウモリの越冬"],
-      advice: "暖房のある場所ではゴキブリが活動を続けます。ネズミ駆除に適した時期です。",
-    },
-  ];
 
   const areas = [
     { name: "広域仙台都市圏", description: "構成する市町村は、宮城県の公式サイトをご確認ください。", url: "https://www.pref.miyagi.jp/site/profile/kouiki.html" },
@@ -1055,36 +1033,6 @@ export default function MiyagiPage() {
         </div>
       </section>
 
-      {/* 宮城の害虫カレンダー */}
-      <section className="py-16 px-4 bg-base-100">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">宮城の害虫カレンダー</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {seasonCalendar.map((season, idx) => (
-              <div key={idx} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <h3 className="card-title text-xl text-black">{season.season}</h3>
-                  <ul className="space-y-2 mt-4">
-                    {season.pests.map((pest, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-error text-xl">•</span>
-                        <span className="text-sm text-gray-900">{pest}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="divider"></div>
-                  <div className="alert alert-warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                    </svg>
-                    <span className="text-xs">{season.advice}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 宮城の地域区分 */}
       <section className="py-16 px-4">
