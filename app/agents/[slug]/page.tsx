@@ -41,6 +41,7 @@ export default async function AgentPage({ params }: Props) {
   }
 
   const rv = hasSourcedReviews(a) || !!a.keepReviewWording;
+  const rvTitle = rv && !a.noReviewWording; // title 相当の見出し（h1・パンくず・headline）に「口コミ・評判」を出すか
   const toc: [string, string][] = [
     ["about", `${a.name}の概要`],
     ["taiou", "対応している害獣・害虫の種類"],
@@ -56,7 +57,7 @@ export default async function AgentPage({ params }: Props) {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: rv ? `${a.name}の口コミ・評判・料金` : `${a.name}の料金・サービス内容`,
+    headline: rvTitle ? `${a.name}の口コミ・評判・料金` : `${a.name}の料金・サービス内容`,
     description: a.metaDesc,
     image: hasAff(a.slug) ? `${SITE}${DEFAULT_OG_IMAGE.url}` : `${SITE}${a.image}`,
     datePublished: `${a.updated ?? UPDATED}T00:00:00+09:00`,
@@ -80,7 +81,7 @@ export default async function AgentPage({ params }: Props) {
         items={[
           { label: "害虫・害獣駆除プロ比較ナビ", href: "/" },
           { label: "駆除業者", href: "/agents" },
-          { label: rv ? `${a.name}の口コミ・評判` : a.name },
+          { label: rvTitle ? `${a.name}の口コミ・評判` : a.name },
         ]}
       />
 
@@ -88,11 +89,11 @@ export default async function AgentPage({ params }: Props) {
         <header className="ph" data-no-reveal>
           <div className="ph-inner ph-grid">
             <div className="ph-copy">
-              <p className="eyebrow">{rv ? "害獣・害虫駆除業者の口コミ・評判" : "害獣・害虫駆除業者の調査"}</p>
+              <p className="eyebrow">{rvTitle ? "害獣・害虫駆除業者の口コミ・評判" : "害獣・害虫駆除業者の調査"}</p>
               <h1 className="ph-title">
-                {rv ? `${a.name}の口コミ・評判` : `${a.name}の料金・サービス内容`}
+                {rvTitle ? `${a.name}の口コミ・評判` : `${a.name}の料金・サービス内容`}
                 <br className="hidden md:block" />
-                <span className="ph-title-sub">{rv ? "料金・サービス内容・メリットとデメリット" : "対応範囲・保証・メリットとデメリット"}</span>
+                <span className="ph-title-sub">{rvTitle ? "料金・サービス内容・メリットとデメリット" : "対応範囲・保証・メリットとデメリット"}</span>
               </h1>
               <p className="ph-lead">{a.heroLead}</p>
               <div className="ph-badges">

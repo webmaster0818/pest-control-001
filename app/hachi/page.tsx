@@ -444,7 +444,7 @@ export default function HachiPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">有限会社北日本消毒の特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>有限会社北日本消毒は富山県富山市に所在し、公式サイトでは「富山県の専門業者として40年以上の実績」と案内しています（設立 昭和51年9月）</li>
+                <li>有限会社北日本消毒は富山県富山市に所在し、公式サイトでは「富山県の専門業者として40年以上の実績」と案内しています（設立 昭和51年9月。公式サイト https://kitanihonshoudoku.co.jp/ で2026年11月4日確認）</li>
                 <li>対応エリアは富山県・石川県・新潟県・岐阜県、営業時間は8:30〜17:30（土日祝・時間外も対応と公式表記）</li>
                 <li>公式サイトにハチ駆除のページがあり、現地調査と見積もりは無料（高所・閉所など危険箇所を除く）と案内しています</li>
               </ul>
