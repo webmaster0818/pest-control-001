@@ -22,7 +22,7 @@ export default function AgentsIndexPage() {
         <p className="eyebrow">駆除業者の一覧</p>
         <h1 className="agents-title">害獣・害虫駆除業者の一覧</h1>
         <p className="agents-lead">
-          主要な害獣・害虫駆除業者の料金・対応害獣・保証内容を、編集部が中立的な立場で調査し、まとめています。出典をたどれる口コミがある業者は、各社のページで出典つきで紹介しています。依頼前の比較にお役立てください。
+          主要な害獣・害虫駆除業者の料金・対応害獣・保証内容を、編集部が中立的な立場で調査し、まとめています。出典をたどれる口コミがある業者は、各社のページで出典を明記して紹介しています。依頼前の比較にお役立てください。
         </p>
         <div className="agents-grid rv-auto">
           {agents.map((a) => (
