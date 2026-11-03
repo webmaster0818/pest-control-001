@@ -669,7 +669,7 @@ export default function AnagumaPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミの評価が高い</li>
+                <li>公式サイトに「Googleクチコミ件数は業界トップクラス」との記載（2024年2月時点・同社調べ。<a href="https://house-protect.net/" target="_blank" rel="noopener noreferrer" className="underline">出典：ハウスプロテクト公式サイト</a>、2026年11月3日確認）</li>
                 <li>2300件以上の実績掲載</li>
                 <li>最短即日対応</li>
               </ul>

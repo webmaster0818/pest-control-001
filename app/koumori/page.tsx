@@ -471,7 +471,7 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">ハウスプロテクトの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>Google口コミ3000件・星4.7</li>
+                <li>全社のクチコミ5702件の平均点4.7（2024年6月時点・同社調べ。<a href="https://house-protect.net/" target="_blank" rel="noopener noreferrer" className="underline">出典：ハウスプロテクト公式サイト</a>、2026年11月3日確認）</li>
                 <li>施工実績2300件以上</li>
                 <li>最短即日対応</li>
               </ul>
@@ -551,7 +551,7 @@ export default function KoumoriPage() {
             <div className="mb-6">
               <h4 className="font-bold text-lg text-black mb-3">害獣BUZZの特徴</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-900">
-                <li>口コミ460件・星4.7</li>
+                <li>1717件の口コミの平均点4.7（<a href="https://gaiju-buzz.com/" target="_blank" rel="noopener noreferrer" className="underline">出典：害獣BUZZ公式サイト</a>、2026年11月3日確認）</li>
                 <li>実績650件以上を公開</li>
                 <li>最短30分で対応</li>
               </ul>
