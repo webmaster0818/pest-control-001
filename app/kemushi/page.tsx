@@ -7,10 +7,10 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import CompanyVisual from "@/app/components/CompanyVisual";
 export const metadata: Metadata = {
   alternates: { canonical: "/kemushi" },
-  title: "毛虫駆除業者比較 | チャドクガ・イラガの発生時期と対策",
-  description: "毛虫駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。チャドクガ・イラガなどの発生時期、毒毛に触れた場合の対処法、庭木の予防方法を自治体の公表情報にもとづいてご説明します。",
+  title: "毛虫駆除業者比較 | イラガ・チャドクガの駆除を頼める業者と自治体の対応",
+  description: "イラガ・チャドクガなど毛虫の駆除業者9社を比較。比較9社のうち公式サイトに毛虫の駆除を掲載しているのはアサンテとミヤコ消毒の2社です（2026年11月3日確認）。自治体が個人の敷地の駆除を行わない例、発生時期、毒毛の対処法もご説明します。",
   openGraph: {
-    title: "毛虫駆除業者比較 | チャドクガ・イラガの発生時期と対策",
+    title: "毛虫駆除業者比較 | イラガ・チャドクガの駆除を頼める業者と自治体の対応",
     description: "毛虫駆除業者9社を、料金・対応エリア・受付時間の観点から比較しています。チャドクガ・イラガの発生時期と対処法もご説明します。",
     url: "https://gaichu-pro.com/kemushi",
     images: [DEFAULT_OG_IMAGE],
@@ -127,7 +127,7 @@ export default function KemushiPage() {
         <div className="hero-content text-center relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              毛虫駆除の基礎知識と業者比較
+              毛虫（イラガ・チャドクガ）駆除業者の比較と基礎知識
             </h1>
             <p className="text-xl mb-8">
               チャドクガ・イラガなどの発生時期と、毒毛に触れた場合の対処法をご説明します
@@ -145,6 +145,32 @@ export default function KemushiPage() {
           <p className="text-lg text-gray-700">
             自治体の公表情報にもとづき、毛虫の種類・被害・駆除時の注意点をご説明します
           </p>
+        </div>
+      </section>
+
+      {/* イラガ・チャドクガの駆除を業者に頼む前に（2026-11-03 追加） */}
+      <section className="py-10 px-4 bg-base-100">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="heading-primary mb-6">イラガ・チャドクガの駆除を業者に頼む前に確認すること</h2>
+          <div className="bg-white border border-gray-300 rounded-lg p-6 space-y-4 text-gray-800">
+            <p>
+              <strong>自宅の庭木に出た毛虫は、自治体が駆除するのではなく、自分で駆除するか業者に依頼するのが基本です。</strong>
+              杉並区は「区では個人の敷地にある樹木について、消毒作業は一切行っていません。」「なお、区では個人で駆除ができない場合は樹木消毒業者を案内しています。」と案内しています。
+              目黒区も「保健所では、個人の敷地内の害虫の駆除は行っていません。ご自分で駆除できない方には、駆除業者を紹介しています。」と案内しています。
+              お住まいの自治体に業者の案内があるかを先に確認すると、依頼先を探しやすくなります。
+            </p>
+            <p>
+              <strong>当サイトの比較9社のうち、公式サイトに毛虫の駆除を掲載しているのは株式会社アサンテと株式会社ミヤコ消毒の2社です。</strong>
+              アサンテは対応害虫一覧に「毛虫（樹木害虫）」を掲載し、ミヤコ消毒は「その他の害虫駆除」のページで「チャドクガを中心にケムシ類を状況に合わせた適切な処理をして駆除いたします。」と案内しています。
+              イラガを名前で挙げた案内は、両社の該当ページでは確認できませんでした。ほかの7社は公式サイトに毛虫の記載がないため、依頼する前に対応できるかを各社にご確認ください。
+            </p>
+            <p className="text-xs text-gray-600">
+              出典：<a href="https://www.city.suginami.tokyo.jp/s102/846.html" target="_blank" rel="nofollow noopener" className="underline">杉並区「樹木に発生する毛虫」</a>／
+              <a href="https://www.city.meguro.tokyo.jp/seikatsueisei/kenkoufukushi/eisei/cyadokuga.html" target="_blank" rel="nofollow noopener" className="underline">目黒区「チャドクガにご注意」</a>／
+              <a href="https://www.asante.co.jp/vermin/" target="_blank" rel="nofollow noopener" className="underline">株式会社アサンテ「害虫・害獣・鳥類の駆除対策」</a>／
+              <a href="https://www.kkmiyako.com/business/pest" target="_blank" rel="nofollow noopener" className="underline">ミヤコ消毒「その他の害虫駆除」</a>（いずれも2026年11月3日確認）
+            </p>
+          </div>
         </div>
       </section>
 
