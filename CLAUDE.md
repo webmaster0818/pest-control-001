@@ -176,3 +176,11 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - description が同じにならないよう種名を入れた。site-precheck [11b]（160字超）が既存9ページ（11/1 作成分：hakubishin chiba-city/tokyo/nerima、araiguma tokyo/kawaguchi、wasp utsunomiya/nagoya、nezumi funabashi/shinjuku）でも落ちていたため、末尾の「公式ページから整理しています」等を削って160字以内に（事実は変えていない）。
 - 重複ネズミ8件（aichi・chiba・fukuoka・hokkaido・hyogo・kanagawa・kyoto・saitama の2件目＝getPestArea が返さない側）を削除。前後のビルド出力を比較し、ページ本体・URL は不変、変化は関連リンク・/pest ハブの同じリンクの2回目が消えた62ページのみ。
 - sitemap 532→540（新8＋description 変更9を lastmod 2026-11-02）。
+
+---
+## 作業ログ 2026-11-03 (jiro-2) — 第9弾（23区・八王子市のアライグマ ＋ 江東区・板橋区のアライグマ・ハクビシン）
+- 新設7ページ: /pest/araiguma/{setagaya,nerima,hachioji,koto,itabashi}、/pest/hakubishin/{koto,itabashi}。生成 `scripts/gen_pest_batch9.py`（共通部）＋`scripts/gen_pest_batch9_areas.py`（地域データ）、マージ `scripts/merge_pest_batch9.py`、照合 `scripts/verify_pest_batch9.py`（「」引用109件・不一致0・引用外「！」0。1語変更の負のテストで NG を確認）。証拠テキストは /tmp/j2-1103-gaichu/raw2（当日 curl・HTMLコメント除去、PDF は pdftotext）。
+- 世田谷・練馬・八王子は既存のハクビシンページと同じ区市の事業（両種が対象と明記）。アライグマ固有の事実として、都の計画の外来生物法による防除の記述、練馬区の年度別アライグマ捕獲数、世田谷区の分布の説明を入れた。
+- 江東（区が専門業者に委託・現地調査で痕跡確認時のみ設置・2週間/最大3週間・年度原則1回・利用者は従事者証を携帯・費用の記載なし＝「無料」と書かない）、板橋（H29〜・設置から処分まで区負担・エサのみ用意・原則1週間/最長4週間・年度内1回）。
+- 保留: 杉並区のアライグマ（区のページは「ハクビシン等」で、箱わなの対象にアライグマが含まれる明記なし）。
+- 既存ページの変化は関連リンクの追加のみ（88ページ。hakubishin の setagaya/nerima/hachioji と nezumi/koto に「◯◯のほかの害虫・害獣」欄が出る）。アフィリエイト計測リンクは既存ページで不変・新7ページで63件増。sitemap 540→547。
