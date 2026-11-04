@@ -491,24 +491,19 @@ export default function DaniPage() {
 </div><p className="text-sm text-gray-600 mt-6">出典：<a href="https://www.pref.osaka.lg.jp/o100090/kankyoeisei/kininarumusi/iyanamusi_syosassi.html" target="_blank" rel="nofollow noopener" className="underline">大阪府「身のまわり ちょっと気になる いやな虫（小冊子）」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/002/002/011/002/p084017.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市「住まいの衛生害虫について」</a>（2026年10月17日確認）、<a href="https://www.city.saitama.lg.jp/sciencenavi/kenkou/003/p041407.html" target="_blank" rel="nofollow noopener" className="underline">さいたま市健康科学研究センター「どの家庭にも生息している『ヒョウヒダニ類』」</a>（2026年10月17日確認）</p>
         </div>
       </section>
-      {/* 料金相場 */}
-      <section className="py-16 px-4">
+      {/* 料金（各社の公表状況と確かめ方。旧「料金相場」表は出典がないため削除 2026-11-04） */}
+      <section className="py-16 px-4" id="price">
         <div className="max-w-5xl mx-auto">
-          <h2 className="heading-primary text-center">ダニ駆除の料金相場</h2>
-<div className="overflow-x-auto">
-<table className="table w-full bg-white text-black shadow-xl">
-<thead><tr><th>発生状況・作業内容</th><th>料金相場</th><th>備考</th></tr></thead>
-<tbody>
-<tr><td className="font-bold">発生範囲が狭い場合</td><td className="text-primary font-semibold">8,000〜15,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">発生範囲が中程度の場合</td><td className="text-primary font-semibold">15,000〜30,000円</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">発生範囲が広い場合</td><td className="text-primary font-semibold">30,000〜50,000円+</td><td className="text-sm text-gray-700">施工範囲・回数により変わります</td></tr>
-<tr><td className="font-bold">追加作業がある場合</td><td className="text-primary font-semibold">+10,000〜20,000円</td><td className="text-sm text-gray-700">追加料金（内容は業者により異なります）</td></tr>
-</tbody>
-</table>
-</div>
-<div className="alert alert-info mt-8">
-<span>表の金額は当サイトが掲載している目安で、公的な基準ではありません。ダニ駆除の費用は発生範囲・被害状況・施工回数で変わるため、複数業者の無料見積もりで比較することをおすすめします。</span>
-</div>
+          <h2 className="heading-primary text-center">ダニ駆除の料金（各社の公表状況と確かめ方）</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-gray-700">当ページで比較している3社のうち、ダニ駆除の料金を公式サイトに記載しているのはムシプロテックとサンキョークリーンサービスで、Qujolia は現地調査のうえでの見積もりです。各社の記載は上の「基本情報」の「駆除最低料金」の欄をご確認ください。</p>
+              <p className="text-gray-700 mt-2">駆除の作業内容や料金は、住宅の大きさや構造、害虫の発生状況によって異なります。広告の「〇〇円から」「基本料金□□円」といった表示の料金で依頼できるとは限らないため、複数の業者から見積もりを取り、見積書で作業内容と金額を確認してから依頼してください。</p>
+              <p className="text-xs text-gray-600 mt-4">
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年11月4日確認）
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* 発生時期 */}

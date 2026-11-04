@@ -6,51 +6,16 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: "/price" },
   title: "害虫駆除の料金相場",
-  description: "害虫駆除の料金相場をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ別の料金目安、追加料金が発生するケースをご紹介します。",
+  description: "害虫駆除の料金の調べ方をご説明します。シロアリ、ハチ、ゴキブリ、ネズミ、コウモリの各社の公式料金の確認先、追加料金が発生するケース、見積もりの確かめ方をご紹介します。",
 };
 
 export default function PricePage() {
   const pestPrices = [
-    {
-      pest: "シロアリ駆除",
-      icon: "",
-      priceRange: "8,000〜15,000円/坪",
-      average: "約12,000円/坪",
-      details: "30坪の住宅で30万円〜45万円程度です。工法により料金が変わります。",
-      link: "/shiroari",
-    },
-    {
-      pest: "ハチ駆除",
-      icon: "",
-      priceRange: "15,000〜50,000円",
-      average: "約25,000円",
-      details: "巣のサイズ・場所により変わります。高所作業には追加料金がかかります。",
-      link: "/hachi",
-    },
-    {
-      pest: "ゴキブリ駆除",
-      icon: "",
-      priceRange: "15,000〜50,000円",
-      average: "約25,000円",
-      details: "物件の広さと被害状況により変わります。飲食店は高額になる傾向があります。",
-      link: "/gokiburi",
-    },
-    {
-      pest: "ネズミ駆除",
-      icon: "",
-      priceRange: "80,000〜200,000円",
-      average: "約120,000円",
-      details: "侵入口の封鎖と清掃を含みます。複数回の施工が一般的です。",
-      link: "/nezumi",
-    },
-    {
-      pest: "コウモリ駆除",
-      icon: "",
-      priceRange: "100,000〜350,000円",
-      average: "約200,000円",
-      details: "追い出し・侵入口の封鎖・清掃を含む費用です。法令に沿った対応が必要です。",
-      link: "/koumori",
-    },
+    { pest: "シロアリ駆除", link: "/shiroari" },
+    { pest: "ハチ駆除", link: "/hachi" },
+    { pest: "ゴキブリ駆除", link: "/gokiburi" },
+    { pest: "ネズミ駆除", link: "/nezumi" },
+    { pest: "コウモリ駆除", link: "/koumori" },
   ];
 
   const includedServices = [
@@ -67,27 +32,22 @@ export default function PricePage() {
   const additionalCases = [
     {
       case: "高所作業（2階以上、屋根裏）",
-      fee: "+10,000〜30,000円",
       reason: "特殊機材や安全装備が必要",
     },
     {
       case: "深夜・早朝作業",
-      fee: "+20%〜50%",
       reason: "割増料金が発生",
     },
     {
       case: "被害範囲が広い",
-      fee: "変動",
       reason: "作業量・薬剤量が増加",
     },
     {
       case: "侵入口が多数",
-      fee: "+10,000〜50,000円/箇所",
       reason: "封鎖作業が増加",
     },
     {
       case: "清掃・消毒追加",
-      fee: "+20,000〜100,000円",
       reason: "糞尿処理や消毒作業",
     },
   ];
@@ -96,22 +56,18 @@ export default function PricePage() {
     {
       tip: "複数業者の相見積もり",
       description: "3社以上から見積もりを取り、料金とサービス内容を比較してください。",
-      effect: "10〜30%の節約",
     },
     {
       tip: "閑散期に依頼",
       description: "冬季（12月〜2月）は害虫の活動が少なく、業者の予約も取りやすいため、料金の相談がしやすい時期です。",
-      effect: "5〜15%の節約",
     },
     {
       tip: "定期契約の検討",
       description: "飲食店や複数物件の場合、年間契約で割引が適用されることがあります。",
-      effect: "15〜25%の節約",
     },
     {
       tip: "早期発見・早期対応",
       description: "被害が軽いうちに駆除すれば、作業範囲が小さく済みます。",
-      effect: "大幅な節約",
     },
   ];
 
@@ -167,43 +123,30 @@ export default function PricePage() {
               害虫駆除の料金相場
             </h1>
             <p className="text-xl mb-8">
-              適正な価格の目安を、業者選びにお役立てください。
-              害虫別の料金の目安と、料金の確かめ方をご説明します。
+              害虫・害獣ごとの各社の公式料金の確認先と、見積もりで料金を確かめる方法をご説明します。
             </p>
           </div>
         </div>
       </section>
 
-      {/* 害虫別の料金相場 */}
+      {/* 害虫別の料金の確認先（旧「料金範囲・平均相場」は出典がないため削除 2026-11-04） */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">害虫別の料金相場</h2>
-          <div className="space-y-6">
-            {pestPrices.map((item) => (
-              <div key={item.pest} className="card bg-white shadow-xl">
-                <div className="card-body">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-1">
-                      <h3 className="card-title text-2xl mb-2">{item.pest}</h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                          <span className="text-sm text-base-content/60">料金範囲:</span>
-                          <p className="text-primary font-bold text-xl">{item.priceRange}</p>
-                        </div>
-                        <div>
-                          <span className="text-sm text-base-content/60">平均相場:</span>
-                          <p className="font-bold text-xl">{item.average}</p>
-                        </div>
-                      </div>
-                      <p className="text-base-content/70 text-sm mb-4">{item.details}</p>
-                      <Link href={item.link} className="btn btn-primary btn-sm">
-                        {item.pest}の詳細を見る →
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+          <h2 className="text-3xl font-bold mb-8 text-center">害虫別の料金の確認先</h2>
+          <div className="card bg-white shadow-xl">
+            <div className="card-body">
+              <p className="text-base-content/80">
+                主要業者が公式サイトで公表している料金は「料金インデックス」に、害虫ごとの各社の料金表記は各ページの業者比較に、確認日とあわせて掲載しています。
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <Link href="/price-index" className="btn btn-primary btn-sm">料金インデックス →</Link>
+                {pestPrices.map((item) => (
+                  <Link key={item.pest} href={item.link} className="btn btn-outline btn-sm">
+                    {item.pest}の業者比較 →
+                  </Link>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -261,7 +204,6 @@ export default function PricePage() {
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
                   <h3 className="card-title text-lg">{item.case}</h3>
-                  <div className="badge badge-warning badge-lg">{item.fee}</div>
                   <p className="text-base-content/70 text-sm mt-2">{item.reason}</p>
                 </div>
               </div>
@@ -281,7 +223,7 @@ export default function PricePage() {
                 複数の業者から見積もりを取って比べること、料金や作業内容に納得できない場合はその場での支払いを避け、消費者ホットライン「188」に相談することが勧められています。
               </p>
               <p className="text-xs text-base-content/60 mt-2">
-                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年10月28日確認）
+                出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline">国民生活センター「【広告の格安料金に要注意！】作業後に高額請求する害虫駆除トラブル」（2025年3月4日公表）</a>（2026年11月4日確認）
               </p>
             </div>
           </div>
@@ -296,7 +238,6 @@ export default function PricePage() {
             {savingTips.map((item, idx) => (
               <div key={idx} className="card bg-white shadow-xl">
                 <div className="card-body">
-                  <div className="badge badge-success badge-lg mb-4">{item.effect}</div>
                   <h3 className="card-title text-xl">{item.tip}</h3>
                   <p className="text-base-content/70">{item.description}</p>
                 </div>

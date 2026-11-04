@@ -224,7 +224,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/dani</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -584,7 +584,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/price</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -626,7 +626,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/tokojirami</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1612,7 +1612,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/araiguma/saitama</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1942,7 +1942,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/araiguma/tochigi</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -3269,6 +3269,30 @@
   <url>
     <loc>https://gaichu-pro.com/pest/hakubishin/itabashi</loc>
     <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/araiguma/minato-ku</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/hakubishin/minato-ku</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/araiguma/shinagawa</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/hakubishin/shinagawa</loc>
+    <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
