@@ -218,7 +218,7 @@ export default async function AgentPage({ params }: Props) {
               {a.goodReviews.map((r, i) => (
                 <div key={i} className="rounded-xl border border-slate-200 p-5">
                   <p className="font-bold text-slate-800 mb-1">{r.title}</p>
-                  <p className="text-slate-700 text-sm leading-relaxed mb-2">{r.body}</p>
+                  <p className="text-slate-700 text-sm leading-relaxed mb-2 whitespace-pre-line">{r.body}</p>
                   <p className="text-xs text-slate-400">
                     {r.url ? <a href={r.url} target="_blank" rel="nofollow noopener" className="underline">{r.meta}</a> : r.meta}
                   </p>
@@ -232,7 +232,7 @@ export default async function AgentPage({ params }: Props) {
               {a.badReviews.map((r, i) => (
                 <div key={i} className="rounded-xl border border-slate-200 bg-slate-50 p-5">
                   <p className="font-bold text-slate-800 mb-1">{r.title}</p>
-                  <p className="text-slate-700 text-sm leading-relaxed mb-2">{r.body}</p>
+                  <p className="text-slate-700 text-sm leading-relaxed mb-2 whitespace-pre-line">{r.body}</p>
                   <p className="text-xs text-slate-400">
                     {r.url ? <a href={r.url} target="_blank" rel="nofollow noopener" className="underline">{r.meta}</a> : r.meta}
                   </p>
@@ -240,7 +240,7 @@ export default async function AgentPage({ params }: Props) {
               ))}
             </div>
             </>)}
-            {a.goodReviews.length + a.badReviews.length > 0 && <p className="text-xs text-slate-500 mt-4">※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。</p>}
+            {a.goodReviews.length + a.badReviews.length > 0 && <p className="text-xs text-slate-500 mt-4">{a.reviewsNote ?? "※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。"}</p>}
           </section>
 
           <section id="merit" className="scroll-mt-20 mb-14">

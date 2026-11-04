@@ -18,16 +18,6 @@ export default function PricePage() {
     { pest: "コウモリ駆除", link: "/koumori" },
   ];
 
-  const includedServices = [
-    { service: "現地調査・診断", included: "◎", note: "多くの業者で無料" },
-    { service: "薬剤散布・設置", included: "◎", note: "基本料金に含まれる" },
-    { service: "作業員の人件費", included: "◎", note: "基本料金に含まれる" },
-    { service: "駆除保証（1年）", included: "○", note: "業者により異なる" },
-    { service: "侵入口封鎖", included: "△", note: "別途料金の場合あり" },
-    { service: "清掃・消毒", included: "△", note: "別途料金の場合あり" },
-    { service: "高所作業費", included: "×", note: "追加料金が一般的" },
-    { service: "出張費（遠方）", included: "×", note: "距離により追加" },
-  ];
 
   const additionalCases = [
     {
@@ -151,41 +141,15 @@ export default function PricePage() {
         </div>
       </section>
 
-      {/* 料金に含まれるもの・含まれないもの */}
+      {/* 見積もり時の確認ポイント（旧「料金に含まれるもの」の表は出典がないため削除 2026-11-04 okina 承認） */}
       <section className="py-16 px-4 bg-base-100">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">料金に含まれるもの・含まれないもの</h2>
-          <div className="overflow-x-auto">
-            <table className="table table-zebra bg-white shadow-xl">
-              <thead>
-                <tr>
-                  <th>サービス内容</th>
-                  <th className="text-center">含まれる</th>
-                  <th>備考</th>
-                </tr>
-              </thead>
-              <tbody>
-                {includedServices.map((row, idx) => (
-                  <tr key={idx}>
-                    <td className="font-bold">{row.service}</td>
-                    <td className="text-center text-2xl">
-                      {row.included === "◎" && <span className="text-success">◎</span>}
-                      {row.included === "○" && <span className="text-info">○</span>}
-                      {row.included === "△" && <span className="text-warning">△</span>}
-                      {row.included === "×" && <span className="text-error">×</span>}
-                    </td>
-                    <td className="text-sm text-base-content/70">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="alert alert-info mt-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">見積もり時の確認ポイント</h2>
+          <div className="alert alert-info">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
             <div>
-              <h3 className="font-bold">見積もり時の確認ポイント</h3>
               <p className="text-sm">
                 見積書に「どこまでが基本料金に含まれるか」「どんな場合に追加料金が発生するか」を
                 明記してもらうことをおすすめします。内容が曖昧な見積書にはご注意ください。
