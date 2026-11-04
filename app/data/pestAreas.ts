@@ -2393,21 +2393,9 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "なお、捕獲するには鳥獣保護管理法による許可が必要です。許可についてはお住いの市町村へお問合せください。（ハクビシンの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -4638,12 +4626,6 @@ export const pestAreas: PestArea[] = [
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -6994,12 +6976,6 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "アライグマの捕獲等の事務は市町村が担っています。被害、捕獲に関する相談は市町村へお願いします。※市町村により担当課が異なりますので、市町村の代表連絡先へお問い合わせください。",
         org: "埼玉県 環境部 みどり自然課 野生生物担当",
         source: "https://www.pref.saitama.lg.jp/a0508/gairai/araigumaboujojissikeikaku.html",
@@ -8878,21 +8854,9 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "なお、捕獲するには鳥獣保護管理法による許可が必要です。許可についてはお住いの市町村へお問合せください。（ハクビシンの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -10438,21 +10402,9 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "なお、捕獲するには鳥獣保護管理法による許可が必要です。許可についてはお住いの市町村へお問合せください。（ハクビシンの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -15981,21 +15933,9 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "なお、捕獲するには鳥獣保護管理法による許可が必要です。許可についてはお住いの市町村へお問合せください。（ハクビシンの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -22933,12 +22873,6 @@ export const pestAreas: PestArea[] = [
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {
@@ -30208,12 +30142,6 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "アライグマの捕獲等の事務は市町村が担っています。被害、捕獲に関する相談は市町村へお願いします。※市町村により担当課が異なりますので、市町村の代表連絡先へお問い合わせください。",
         org: "埼玉県 環境部 みどり自然課 野生生物担当",
         source: "https://www.pref.saitama.lg.jp/a0508/gairai/araigumaboujojissikeikaku.html",
@@ -36404,21 +36332,9 @@ export const pestAreas: PestArea[] = [
         confirmedDate: "2026-09-25",
       },
       {
-        text: "なお、捕獲するには鳥獣保護管理法による許可が必要です。許可についてはお住いの市町村へお問合せください。（ハクビシンの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
         text: "もし、個人の敷地内の自宅や農作物に被害を被っていて駆除したいときは、市役所等に「有害鳥獣捕獲許可」を持つ駆除業者などに依頼することになります。詳しくは、お住いの市町村へお問合せください。",
         org: "埼玉県 環境部 西部環境管理事務所（業務案内（鳥獣保護））",
         source: "https://www.pref.saitama.lg.jp/b0502/gyoumu-tyoujyuu/index.html",
-        confirmedDate: "2026-09-25",
-      },
-      {
-        text: "野生鳥獣による生活環境被害を防止するために、鳥獣保護管理法による有害鳥獣捕獲も考えられます。この場合、被害を受けている道路・公園等の公共の場所においては管理者が、私有地についてはその土地や建物の所有者などの個人が、市町村に申請をして許可を受けたうえで、直接専門業者等に依頼をします。なお、かかった費用は依頼者が負担することになります。（カラスの項）",
-        org: "埼玉県 環境部 東部環境管理事務所",
-        source: "https://www.pref.saitama.lg.jp/b0507/toukan-kikaku-1/konnnatoki.html",
         confirmedDate: "2026-09-25",
       },
       {

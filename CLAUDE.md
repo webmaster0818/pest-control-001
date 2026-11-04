@@ -193,3 +193,4 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 新設4ページ: /pest/{araiguma,hakubishin}/{minato-ku,shinagawa}。生成 `scripts/gen_pest_batch10.py`＋`gen_pest_batch10_areas.py`、マージ `merge_pest_batch10.py`、照合 `verify_pest_batch10.py`（「」引用69件・不一致0・1語変更の負のテストで NG）。証拠は /tmp/j2-1104-gaichu/raw2。
 - 港区（2019.4〜・区委託の専門業者が現地調査→資格業者が捕獲・引取り・箱わな原則2週間・年度内1回・餌代自己負担・申込は各総合支所協働推進係。環境政策係の電話がHPと広報で違う点を明記）、品川区（カラス・外来種総合窓口 03-3777-1157・区が契約する専門業者に箱わな設置を依頼・期間/費用の記載なし）。
 - sitemap 547→551、変更5URL lastmod 2026-11-04。
+- 追加（11/4 親指示）：埼玉県「こんなときは」の別動物の項の引用を削除。Q6「（ハクビシンの項）」を itachi・koumori・nezumi の埼玉ページから、Q7「（カラスの項）」を araiguma・hakubishin・itachi・koumori・nezumi の埼玉ページから（データ上14件・表示5ページ・hakubishin のハクビシンの項は残す）。pestAreas.ts 全体で「（〇〇の項）」型はこの2種のみ。
