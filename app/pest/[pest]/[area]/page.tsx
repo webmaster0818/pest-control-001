@@ -426,7 +426,8 @@ export default async function PestAreaPage({ params }: Props) {
           </section>
           )}
 
-          {/* 被害の種類 */}
+          {/* 被害の種類（2026-11-05 別地域・別動物の引用を外した結果0件になるページがあるため、0件のときは出さない） */}
+          {p.damage.length > 0 && (
           <section id="damage" className="scroll-mt-20 mb-12">
             <h2 className="h2-sec">
               被害の種類
@@ -443,6 +444,7 @@ export default async function PestAreaPage({ params }: Props) {
               ))}
             </ul>
           </section>
+          )}
 
           {/* 業者比較 */}
           <section id="companies" className="scroll-mt-20 mb-12" data-no-reveal>
