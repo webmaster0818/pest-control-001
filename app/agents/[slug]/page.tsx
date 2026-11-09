@@ -240,7 +240,7 @@ export default async function AgentPage({ params }: Props) {
               ))}
             </div>
             </>)}
-            {a.goodReviews.length + a.badReviews.length > 0 && <p className="text-xs text-slate-500 mt-4">{a.reviewsNote ?? "※ 口コミは各種口コミサイト・Googleのクチコミ等で見られる利用者の声をもとに、編集部が傾向を要約したものです。感じ方には個人差があります。"}</p>}
+            {a.goodReviews.length + a.badReviews.length > 0 && <p className="text-xs text-slate-500 mt-4">{a.reviewsNote ?? "※ 口コミは、各口コミの下に記載した出典（公式サイトに掲載された利用者の声、第三者サイトの口コミ・アンケートなど）から、口コミごとに引用または要約したものです。「」で囲んだ部分は原文のままです。出典の確認日は各口コミに記載しています。感じ方には個人差があります。"}</p>}
           </section>
 
           <section id="merit" className="scroll-mt-20 mb-14">
