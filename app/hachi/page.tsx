@@ -6,6 +6,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/hachi" },
   title: "ハチ駆除業者の比較｜9社の対応エリア・受付時間と見積もりの注意点",
@@ -62,6 +63,9 @@ export default function HachiPage() {
             </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="hachi" />
 
       {/* 冒頭の要約 */}
       <section className="py-8 px-4 bg-white">

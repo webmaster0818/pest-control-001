@@ -6,6 +6,7 @@ import RelatedLinkList from "@/app/components/RelatedLinkList";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/gokiburi" },
   title: "ゴキブリ駆除の基礎知識 | 駆除方法と予防策",
@@ -142,6 +143,9 @@ export default function GokiburiPage() {
           </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="gokiburi" />
 
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">

@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/tokojirami" },
   title: "トコジラミ駆除の基礎知識 | 南京虫対策",
@@ -53,6 +54,9 @@ export default function TokojiPage() {
             </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="tokojirami" />
 
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">

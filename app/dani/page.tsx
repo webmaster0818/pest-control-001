@@ -7,6 +7,7 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/dani" },
   title: "ダニ駆除の基礎知識 | ダニ・マダニ・ツツガムシ対策",
@@ -55,6 +56,9 @@ export default function DaniPage() {
             </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="dani" />
 
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">

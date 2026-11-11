@@ -7,6 +7,7 @@ import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 import { AffBanner, AffText } from "@/app/components/AffLink";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/shiroari" },
   title: "シロアリ駆除の基礎知識 | 料金相場・業者の選び方",
@@ -109,6 +110,9 @@ export default function ShiroariPage() {
           </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="shiroari" />
 
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">

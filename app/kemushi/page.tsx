@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
 
 import CompanyVisual from "@/app/components/CompanyVisual";
+import EstimatorSection from "@/app/components/EstimatorSection";
 export const metadata: Metadata = {
   alternates: { canonical: "/kemushi" },
   title: "毛虫駆除業者比較 | イラガ・チャドクガの駆除を頼める業者と自治体の対応",
@@ -135,6 +136,9 @@ export default function KemushiPage() {
             </div>
         </div>
       </section>
+
+      {/* 見積機能（依頼内容を選んだ状態で開始・okina 2026-11-11 承認） */}
+      <EstimatorSection pest="kemushi" />
 
       {/* キャッチコピー */}
       <section className="py-8 px-4 bg-white">

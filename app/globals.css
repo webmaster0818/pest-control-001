@@ -610,3 +610,4 @@ article.bg-white, .agents-index { background: var(--surface); }
 }
 @media (prefers-reduced-motion: reduce) { .est-progress-bar span, .est-choice { transition: none; } }
 .est-card-body.is-text { grid-template-columns: 1fr; }
+.est-section-sub { padding: 56px 0; }
