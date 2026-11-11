@@ -460,7 +460,7 @@ function Result({
             </ul>
           </div>
         )}
-        {noPriceNames.length > 0 && priced.length > 0 && <p className="est-note-line">{noPriceNames.join("・")}は料金表を公式に出しておらず、現地調査のうえで見積もりになります。</p>}
+        {noPriceNames.length > 0 && priced.length > 0 && <p className="est-note-line">{noPriceNames.join("・")}は、{cat}の料金を公式サイトに数字で出しておらず、現地調査のうえで見積もりになります。</p>}
         {building === "shugo-rent" && (
           <p className="est-note-line">賃貸住宅では、駆除の手配や費用の負担を管理会社・大家さんが行う場合があります。業者に依頼する前に、管理会社・大家さんに連絡しておくと安心です。</p>
         )}
