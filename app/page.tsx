@@ -5,6 +5,8 @@ import CompanyVisual from "@/app/components/CompanyVisual";
 import { prefectureRegions } from "@/app/lib/areaLinks";
 import { siteStats } from "@/app/lib/siteStats";
 import TopHero, { type PestIcon } from "@/app/components/TopHero";
+import Estimator from "@/app/components/Estimator";
+import { estimatorLinks } from "@/app/lib/estimatorLinks";
 
 // canonical は metadata で "/" を渡すと末尾スラッシュが落ちるため、<link> を直接置く（React 19 が head へ移す）。
 export const metadata: Metadata = {};
@@ -59,6 +61,7 @@ export default function Home() {
   ];
 
   const regions = prefectureRegions();
+  const est = estimatorLinks();
 
   const features = [
     { title: "害虫・害獣の種類別に情報を掲載", description: "シロアリ、ハチ、ゴキブリ、ネズミ、コウモリ、ダニ、トコジラミ、鳥害などの駆除情報を、種類別に比較できます。" },
@@ -91,6 +94,15 @@ export default function Home() {
 
       {/* ファーストビュー（FV-3・線だけのアイコン） */}
       <TopHero stats={stats} icons={pestIcons} />
+
+      {/* 見積機能（料金の目安と提携業者。okina 2026-11-11 承認） */}
+      <section id="estimate" className="top-section est-section" data-no-reveal>
+        <div className="top-container">
+          <h2 id="estimate-title" className="heading-primary text-center">かんたん料金診断</h2>
+          <p className="est-lead">いくつかの質問に答えると、料金の目安（提携業者の公式表記）と、条件に合う業者がわかります。入力は選ぶだけで、個人情報の入力はありません。</p>
+          <Estimator helpLinks={est.helpLinks} areaLinks={est.areaLinks} />
+        </div>
+      </section>
 
       {/* おすすめ業者比較（料金を含むためアニメーションなし） */}
       <section className="top-section" data-no-reveal>
