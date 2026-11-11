@@ -519,7 +519,7 @@ function Result({
                               .filter((r) => !r.extra)
                               .map((r) => `${r.label} ${r.price}${r.tax !== "税の表記なし" && !r.price.includes(r.tax) ? `（${r.tax}）` : ""}`)
                               .join(" / ")
-                          : p.priceNote ?? "公式に料金表なし（見積もりで決まる）"}
+                          : p.prices.length > 0 ? `${cat}の料金は公式に記載なし（見積もりで決まる）` : p.priceNote ?? "公式に料金表なし（見積もりで決まる）"}
                       </dd>
                     </div>
                     <div>
