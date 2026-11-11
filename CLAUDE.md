@@ -259,3 +259,10 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - ネズミ: 鹿児島市（駆除は自身か業者・公共部分は環境衛生課・町内会等の一斉駆除に衛生指導員/業者派遣と噴霧機器貸出・計画書は2週間前）、尼崎市（私有地は駆除せず・県知事登録「建築物ねずみ昆虫等防除業」名簿＝業者名は転記しない・兵庫県PCO）。被害の種類は公式に記載がないため空。
 - 函館の「駆除を検討しましょう。」は copy-audit の NG 語になるため引用せず地の文に。ASP 計測リンクは既存ページで不変・新5ページで16件増。ng-lint 14→14。precheck 577p 全OK。sitemap 572→577。
 - 保留: 青森市・倉敷市・下関市・那覇市・佐世保市（駆除なし＋業者案内のみ）、呉市のネズミ（一般的な助言のみ）、岡崎・豊橋（Incapsula）。
+
+---
+## 作業ログ 2026-11-11 (jiro-2) — 見積機能「かんたん料金診断」（okina 承認・TOP＋ハブ13ページ）
+- 部品: app/components/Estimator.tsx（client）、EstimatorSection.tsx（ハブ用・initialPest）、設問 app/data/estimatorQuestions.ts、提携9社の公式データ app/data/estimatorPartners.ts（11/11 公式確認。根拠 scratchpad/estimator/partners_verified.json）、案内先 app/lib/estimatorLinks.ts（ビルド時に実在ページのみ）、地方→県 app/data/regions.ts（areaLinks.ts と共用）。アイコン追加 public/images/pests/{ari,mukade,kemushi,tokojirami,other}.svg
+- 料金の目安は提携業者の公式表記だけ（独自の相場は出さない＝11/4 の削除方針）。1㎡・1坪単価・年間プラン・単位不明の基本料金は inSummary:false で見出し金額から除外。追加費用は extra:true
+- 履歴に積まない（戻るボタンの乗っ取り対策）。GA4 イベント estimator_step／estimator_result／estimator_partner_click
+- 業者のデータを変えるときは estimatorPartners.ts だけ。/agents の各社ページの記載（例 e-buster 保証・エリア）は 11/11 の公式確認と食い違う箇所がある（未修正）
