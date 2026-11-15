@@ -124,6 +124,11 @@ export default function KamemushiPage() {
           </h2>
           <div className="text-left bg-base-100 border border-gray-300 rounded p-5 text-gray-800 space-y-2">
             <p>
+              <strong>当ページで比較している9社のうち、カメムシ駆除の料金表を公式サイトで公表している業者はありません</strong>（2026年11月15日確認）。
+              カメムシ駆除をサービスとして掲載しているのは有限会社北日本消毒（対応エリアは富山県・石川県・新潟県・岐阜県）のみで、自社の料金表の掲載はなく、カメムシ駆除のページでは複数社に見積もりを依頼して比べることを勧めています。
+              ほかの8社の公式サイトにはカメムシ駆除の掲載がないため、依頼する場合は対応の可否と料金を問い合わせて確認してください。
+            </p>
+            <p>
               カメムシ駆除の作業内容や料金は、住宅の大きさや構造、発生状況によって異なります。国民生活センターは、広告の「〇〇円から」の金額で依頼できるとは限らないとして、複数社から見積もりを取って比べることを勧めています。
             </p>
             <p>
@@ -132,7 +137,7 @@ export default function KamemushiPage() {
             <p className="text-xs text-gray-600">
               出典：<a href="https://www.kokusen.go.jp/news/data/n-20250304_1.html" target="_blank" rel="nofollow noopener" className="underline mr-2">国民生活センター</a>
               <a href="https://www.city.sapporo.jp/hokenjo/f3seikatu/f80mushi/2_juukyo/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline mr-2">札幌市</a>
-              <a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline">堺市</a>（2026年10月26日確認）。料金の確かめ方は<a href="#kamemushi-faq" className="underline">よくある質問</a>にまとめています。
+              <a href="https://www.city.sakai.lg.jp/kenko/kenko/sodan/gaichu/mijika/kamemusi.html" target="_blank" rel="nofollow noopener" className="underline">堺市</a>（2026年10月26日確認）、<a href="https://kitanihonshoudoku.co.jp/service/stink-bug-control/" target="_blank" rel="nofollow noopener" className="underline">北日本消毒「富山県、石川県のカメムシ駆除」</a>・比較9社の公式サイト（2026年11月15日確認）。料金の確かめ方は<a href="#kamemushi-faq" className="underline">よくある質問</a>にまとめています。
             </p>
           </div>
         </div>
