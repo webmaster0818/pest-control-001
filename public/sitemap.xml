@@ -1942,7 +1942,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/araiguma/tochigi</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -2584,7 +2584,7 @@
   </url>
   <url>
     <loc>https://gaichu-pro.com/pest/wasp/ishikawa</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -3519,8 +3519,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gaichu-pro.com/pest/nezumi/naha</loc>
-    <lastmod>2026-11-14</lastmod>
+    <loc>https://gaichu-pro.com/pest/araiguma/yokosuka</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gaichu-pro.com/pest/hakubishin/yokosuka</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
