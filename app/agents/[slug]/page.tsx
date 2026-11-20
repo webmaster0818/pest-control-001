@@ -46,6 +46,7 @@ export default async function AgentPage({ params }: Props) {
     ["about", `${a.name}の概要`],
     ["taiou", "対応している害獣・害虫の種類"],
     ["price", `${a.name}の料金体系と相場`],
+    ...(a.flow && a.flow.length > 0 ? ([["flow", `${a.name}の依頼の流れ`]] as [string, string][]) : []),
     ["reviews", rv ? "利用者の口コミ・評判" : "口コミの掲載について"],
     ["merit", "メリットとデメリット"],
     ["recommend", `${a.name}の利用が適している方`],
@@ -201,6 +202,21 @@ export default async function AgentPage({ params }: Props) {
             )}
           </section>
 
+          {a.flow && a.flow.length > 0 && (
+            <section id="flow" className="scroll-mt-20 mb-14">
+              <h2 className="h2-sec">{a.name}の依頼の流れ</h2>
+              <ol className="space-y-3">
+                {a.flow.map((f, i) => (
+                  <li key={i} className="rounded-xl border border-slate-200 p-4">
+                    <p className="font-bold text-slate-800 mb-1">{i + 1}. {f.step}</p>
+                    <p className="text-slate-700 text-sm leading-relaxed">{f.body}</p>
+                  </li>
+                ))}
+              </ol>
+              {a.flowNote && <p className="text-sm text-slate-500 mt-3">{a.flowNote}</p>}
+            </section>
+          )}
+
           <section id="reviews" className="scroll-mt-20 mb-14">
             <h2 className="h2-sec">{rv ? "利用者の口コミ・評判" : "口コミの掲載について"}</h2>
             <div className="rv-summary">
@@ -329,6 +345,9 @@ export default async function AgentPage({ params }: Props) {
                   ))}
                 </ul>
               </div>
+            )}
+            {a.relatedLinks && a.relatedLinks.length > 0 && (
+              <RelatedLinkList title="あわせて確認したいページ" links={a.relatedLinks} />
             )}
             <RelatedLinkList
               title={`${a.name}のエリア別ページ（拠点・対応市区町村・受付時間）`}
