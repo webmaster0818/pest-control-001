@@ -1167,7 +1167,7 @@ export default function MukadePage() {
             <div>
               <h3 className="font-bold">川崎市の案内</h3>
               <p className="text-sm">
-                川崎市は、咬まれた場合の対処として「流水などで患部を冷やしながら毒を絞り出します。そして、抗ヒスタミン剤含有のステロイド軟膏を塗り、腫れがひどければ水で湿布します。」「必要に応じて医療機関を受診しましょう。」と案内しています。
+                川崎市は、咬まれた場合の対処として「流水などで患部を冷やしながら毒を絞り出します。そして、抗ヒスタミン剤含有のステロイド軟膏を塗り、腫れがひどければ水で湿布します。」とし、必要に応じて医療機関を受診するよう案内しています。
               </p>
               <p className="text-xs mt-2">
                 出典：<a href={KAWASAKI_MUKADE_URL} target="_blank" rel="nofollow noopener" className="underline">川崎市「くらしに身近な虫たち」掲載資料「ムカデ」（PDF）</a>（2026年10月17日確認）
