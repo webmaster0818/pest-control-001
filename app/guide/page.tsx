@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Breadcrumb from "@/app/components/Breadcrumb";
 import type { Metadata } from "next";
 import { DEFAULT_OG_IMAGE } from "@/app/lib/og";
+import { guideArticles } from "@/app/data/guideArticles";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://gaichu-pro.com/guide" },
@@ -40,6 +41,22 @@ export default function GuidePage() {
           <p className="text-lg text-gray-700">
             業者選びで確認すべき5つのポイントと、悪質な業者の見分け方をご説明します
           </p>
+        </div>
+      </section>
+
+      {/* 駆除のガイド記事（app/data/guideArticles.ts から自動で一覧） */}
+      <section className="py-10 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-4">駆除のガイド（公的機関の資料にもとづく解説）</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            {guideArticles.map((g) => (
+              <li key={g.slug}>
+                <Link href={`/guide/${g.slug}`} className="underline">
+                  {g.h1}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
