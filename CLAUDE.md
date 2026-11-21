@@ -325,3 +325,10 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 ## 作業ログ 2026-11-21 (jiro-2) — /pest/araiguma/kawaguchi 冒頭の手直し
 - before（GSC 10/23〜11/19）69表示・0クリック・8.8位（直近7日 20表示・0クリック・8.4位。主な検索語「アライグマ 川口市」28表示・8.2位）。冒頭に即答2段落を追加（相談先 自然保護対策課・敷地内に限り捕獲罠を設置することがあり設置費用は市負担・判別がつかない小動物でも設置することがある／ハクビシン・タヌキは市の積極的な駆除なし・有害鳥獣捕獲許可の届出で特別に駆除できることがある・許可権限の一部は市長に移譲）。市のページ 47924（更新日 2026年06月22日）・26241（更新日 2025年03月20日）を 11/21 に curl で確認。title・description・料金・掲載業者は不変（91a5d28）。
 - 前後ビルド比較で表示テキストが変わったのは対象1ページのみ。外部リンク 10,642→10,642（全ページ一致）。ng-lint 14→14。precheck 590p 全OK（gaichu_mirror 変換）。
+
+---
+## 作業ログ 2026-11-21 20:00 (jiro-2) — kwexp 初日（競合 xs556641.xsrv.jp 害獣駆除業者NAVI）・ガイド記事5本
+- 新テンプレート: `app/guide/[slug]/page.tsx`＋データ `app/data/guideArticles.ts`（1件=1ページ /guide/{slug}。即答→節（表・箇条・節ごとの出典）→FAQ（FAQPage）→出典と確認日→掲載範囲→関連ページ）。/guide に一覧を自動表示。sitemap は手で追加。
+- 新設: /guide/{shiroari-jibun-de,hachinosu-jibun-de,nezumi-kujo-saihatsu,gaiju-hojokin,nezumi-jibun-de}。出典は 11/21 に curl で確認（証拠 /tmp/gk/raw）。「」引用は原文照合（不一致0）。料金・相場は書いていない（費用系4語は判断待ち）。
+- 原文の「難しいです」「しましょう」は copy-audit/ng-lint に当たるため引用せず地の文に。見出しに「限界」は使わない。
+- 前後ビルド比較：新5ページ＋/guide のみ変化。precheck 595p 全OK（gaichu_mirror）。ng-lint の guide/ 該当0。sitemap 590→595（d448f32）。
