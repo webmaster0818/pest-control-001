@@ -361,3 +361,8 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 - 見送り（窓口・一般的な助言のみ／公式ページを特定できず）: 福岡市・姫路市・八戸市・山形市・高崎市・川越市・倉敷市・高松市・津市のネズミ、群馬県・富山県・三重県・滋賀県のネズミ、水戸市・高崎市・富山市・富山県・三重県・山口県・滋賀県のコウモリ、福井市・高松市のハチ、金沢市のハチ（/pest/wasp/ishikawa に掲載済み）。
 - Yahoo! 検索（tools/yahoo_top.py）が 8件目で 429 → /tmp/yahoo_429_20261122（今夜は取得しない）。以降は WebSearch の allowed_domains で探索。
 - 前後ビルド比較：新2ページ＋関連リンク・ハブへの「山梨県」「香川県」追加のみ（87ページ）。外部リンク 10,867→10,867（全ページ一致）。precheck 605p 全OK（gaichu_mirror 変換）。heading-lint 新ページ該当0。sitemap 603→605。
+
+---
+## 作業ログ 2026-11-23 (jiro-2) — 0:00 受け皿強化（/agents/kujo-oh・machikado-gaiju-kujo・gaiju-safe-guard）
+- Yahoo! 上位（3語×上位3）との差分を、各公式（kujo-oh.com・kujo.machikado-sodan.com／machikado-tantei.com 運営者情報・gaiju-safe-guard.com／home-meister.com を 11/23 に curl）で確かめた事実だけで追加（流れ・FAQ・基本情報の行・関連リンク）。料金の金額は足していない。
+- precheck 605p 全OK（gaichu_mirror）。ASP 計測リンクは3ページとも本番と同数。src 865b7af・sitemap lastmod 3件。判断待ちは growth/okina/ukezara-audit.md。
