@@ -366,3 +366,9 @@ ssh saburo: ssh saburo.hasegawa@100.82.52.10
 ## 作業ログ 2026-11-23 (jiro-2) — 0:00 受け皿強化（/agents/kujo-oh・machikado-gaiju-kujo・gaiju-safe-guard）
 - Yahoo! 上位（3語×上位3）との差分を、各公式（kujo-oh.com・kujo.machikado-sodan.com／machikado-tantei.com 運営者情報・gaiju-safe-guard.com／home-meister.com を 11/23 に curl）で確かめた事実だけで追加（流れ・FAQ・基本情報の行・関連リンク）。料金の金額は足していない。
 - precheck 605p 全OK（gaichu_mirror）。ASP 計測リンクは3ページとも本番と同数。src 865b7af・sitemap lastmod 3件。判断待ちは growth/okina/ukezara-audit.md。
+
+---
+## 作業ログ 2026-11-23 (jiro-2) — /pest/wasp/niigata 冒頭の手直し
+- before（GSC 10/26〜11/22・データは 11/20 まで）62表示・0クリック・13.5位（直近7日 8表示・7.5位）。主な検索語「蜂の巣駆除 新潟」9表示・12.1位、「長岡市 スズメバチ 駆除 補助金」5表示・4.4位、「蜂の巣駆除 市役所 無料」4表示・6.0位。冒頭が新潟市だけで、長岡市・市役所が無料でやるか・防護服の貸出に答えていなかった。
+- 冒頭を2段落に（掲載10市町に個人の家・敷地のハチの巣を市役所・町役場が駆除すると書く所はなし・新潟市の窓口・長岡市の窓口と業者案内／補助は阿賀町のみ・新潟市と長岡市は記載なし・柏崎市と南魚沼市はなしと明記・防護服の貸出は湯沢町（無料）と阿賀町）。10市町の公式ページを 11/23 に curl で再確認（全200・記載に変化なし）。補助の金額は冒頭に書かず表へ案内。title・description・料金・掲載業者は不変（7516851）。
+- 前後ビルド比較で表示テキストが変わったのは対象1ページのみ。外部リンク 12,437→12,437（全ページ一致）。ng-lint 14→14。precheck 605p 全OK（gaichu_mirror 変換）。本番 09:22 反映・copy-audit 0。
